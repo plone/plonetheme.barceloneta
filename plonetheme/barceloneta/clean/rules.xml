@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"    
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <theme href="/++theme++clean/index.html"/>
+    <!-- Attributes -->
+  <copy attributes="*" theme="/html" content="/html"/>
+
+  <!-- Base tag -->
+  <before theme="/html/head/title" content="/html/head/base"/>
+
+  <!-- Title -->
+  <replace theme="/html/head/title" content="/html/head/title" />
+
+  <!-- Pull in Plone Meta -->
+  <after theme-children="/html/head" content="/html/head/meta" />
+
+  <!-- Script -->
+  <after theme-children="/html/head" content="/html/head/script" />
+
+  <!-- CSS -->
+  <after theme-children="/html/head" content="/html/head/link" />
+
+  <append theme="/html/head">
+    <link rel="stylesheet" type="text/css"
+            href="++theme++clean/mockup/widgets.min.css"/>
+    <script type="text/javascript"
+              src="++theme++clean/mockup/widgets.min.js"></script>
+  </append>
+
+
+
+  <replace theme="/html/body" content="/html/body" />
+
+
+</rules>
