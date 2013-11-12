@@ -9,7 +9,6 @@
     <!-- TODO: clean up unused weights and styles. -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" media="screen"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel="stylesheet"/>
-    <link rel="stylesheet" href="/++theme++barceloneta/less/style.css"/>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -53,14 +52,23 @@
           href="/++theme++barceloneta/favicon/apple-touch-icon-57x57-precomposed.png" />
     <link rel="apple-touch-icon-precomposed"
           href="/++theme++barceloneta/favicon/apple-touch-icon-precomposed.png" />
+
+    <link rel="stylesheet" type="text/css" href="less/style.css"/>
+
+    <script type="text/javascript"
+              src="/++resource++plone.app.jquery.js"></script>
+
+    <script type="text/javascript"
+              src="/++resource++plonetheme.barceloneta.js"></script>
+
+    <script type="text/javascript"
+              src="js/dropdown.js"></script>
   </head>
-
-
 
   <body>
 
-  
-
+    <div id="content-topbar">
+    </div>
 
     <div class="navbar navbar-inverse" id="content-header" role="navigation">
       <div class="container">
@@ -80,32 +88,19 @@
     </div><!-- /.navbar -->
 
     <div class="container">
-
-      <div class="row row-offcanvas row-offcanvas-right">
-
-        <div class="col-xs-12 col-sm-9">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
-          <div class="row">
-             <article id="portal-column-content">
-             </article>
-          </div><!--/row-->
-        </div><!--/span-->
-
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-          <aside id="portal-column-one">
-          </aside>
-        </div><!--/span-->
+      <div class="row">
+        <aside id="global_statusmessage">
+        </aside>
+      </div>
+      <div id="main-container" class="row row-offcanvas row-offcanvas-right">        
       </div><!--/row-->
-
-      <hr>
-
-      <footer id="portal-footer-wrapper">
-      </footer>
 
     </div><!--/.container-->
 
+    <footer id="portal-footer-wrapper">
+    <div class="container" id="portal-footer">
+    </div>
+    </footer>
 
   </body>
 </html>
