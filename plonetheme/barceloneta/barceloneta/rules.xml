@@ -19,10 +19,10 @@
   <after theme-children="/html/head" content="/html/head/meta" />
 
   <!-- Script -->
-  <after theme-children="/html/head" content="/html/head/script" />
+  <!-- <after theme-children="/html/head" content="/html/head/script" /> -->
 
   <!-- CSS -->
-  <after theme-children="/html/head" content="/html/head/link" />
+  <!-- <after theme-children="/html/head" content="/html/head/link" /> -->
 
   <append theme="/html/head">
     <link rel="stylesheet" type="text/css"
@@ -31,9 +31,50 @@
               src="++theme++barceloneta/mockup/widgets.min.js"></script>
   </append>
 
-  <replace css:theme-children="#portal-column-one" css:content-children="#portal-column-one" /> 
-  <replace css:theme-children="#portal-column-content" css:content-children="#portal-column-content" />
-  <replace css:theme-children="#portal-top" css:content-children="#portal-top" />
-  <replace css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper" />
+  <copy css:theme-children="#portal-column-one" css:content-children="#portal-column-one" /> 
+  <copy css:theme-children="#portal-column-content" css:content-children="#portal-column-content" />
+  <copy css:theme-children="#portal-top" css:content-children="#portal-top" />
+  <copy css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper" />
+  <copy css:theme-children="#portal-personaltools-wrapper" css:content-children="#portal-personaltools-wrapper" />
+  <drop css:theme="#portal-top #portal-personaltools-wrapper"/>
+
+  <!-- Action Menu -->
+
+  <!-- Edit bar -->
+  <rules if-content="//*[@id='edit-bar']">
+    <before css:theme="#content-header" method="raw">
+      <div class="navbar navbar-fixed-top navbar-inverse" id="edit-zone" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg"  
+                  xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                  version="1.0" id="plone-logo" class="plone-logo"  
+                  x="0px" y="0px" width="215px" height="26px"  
+                  viewBox="0 0 56 56" enable-background="new 0 0 56 56">
+                  <path d="M28 0C12.537 0 0 12.5 0 28c0.001 15.5 12.5 28 28 28c15.464-0.003 27.998-12.536 28-28 C55.998 12.5 43.5 0 28 0z M43.759 43.759c-4.042 4.038-9.597 6.527-15.76 6.528c-6.164-0.001-11.717-2.492-15.759-6.528 C8.202 39.7 5.7 34.2 5.7 28c0.001-6.163 2.49-11.717 6.528-15.76C16.283 8.2 21.8 5.7 28 5.7 c6.164 0 11.7 2.5 15.8 6.528c4.039 4 6.5 9.6 6.5 15.76C50.286 34.2 47.8 39.7 43.8 43.759z M24.385 9.854c3.346 0 6.1 2.7 6.1 6.059c0 3.347-2.714 6.06-6.06 6.06s-6.059-2.712-6.059-6.06 C18.327 12.6 21 9.9 24.4 9.854z M42.764 28.017c0 3.349-2.711 6.059-6.061 6.059c-3.341 0-6.058-2.711-6.058-6.059 c0-3.348 2.719-6.058 6.058-6.058C40.054 22 42.8 24.7 42.8 28.017z M24.365 34.098c3.347 0 6.1 2.7 6.1 6.1 c0 3.347-2.712 6.06-6.059 6.06c-3.346 0-6.06-2.712-6.06-6.06C18.306 36.8 21 34.1 24.4 34.098z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse">
+              <header id="edit-bar">
+                <!-- copy edit bar -->
+                 <xsl:copy-of select="//*[@id='edit-bar']/*"/>
+              </header>
+              <header id="portal-personaltools-wrapper">
+                <!-- copy personaltools -->
+                 <xsl:copy-of select="//*[@id='portal-personaltools-wrapper']/*"/>
+              </header>
+            </div><!-- /.nav-collapse -->
+        </div>
+    </div><!-- /.navbar -->
+  </before>
+  </rules>
 
 </rules>

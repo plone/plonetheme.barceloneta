@@ -16,9 +16,8 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <!-- Diazo theme to test difference in (un-styled) plone and (un-styled) 
-       plone with diazo. 
-    -->
+  <!-- Diazo themes -->
+  
   <plone:static directory="clean" name="clean" type="theme"/>
 
   <plone:static directory="barceloneta" name="barceloneta" type="theme"/>
