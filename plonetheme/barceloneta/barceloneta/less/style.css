@@ -6061,6 +6061,13 @@ footer {
   padding: 30px 0;
 }
 /* Behaviors and BS3 patterns */
+.hiddenStructure {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
 .contentViews {
   margin-bottom: 0;
   padding-left: 0;
