@@ -6590,11 +6590,6 @@ footer {
 .portalMessage.info .alert-link {
   color: #2d6987;
 }
-/* Breadcrumb */
-#portal-breadcrumbs {
-  background-image: url('../img/backgr_breadcrumb.png');
-  background-repeat: repeat-x;
-}
 /* Styles */
 ul,
 ol {
