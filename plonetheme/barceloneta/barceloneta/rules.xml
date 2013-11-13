@@ -51,11 +51,15 @@
   </xsl:template>
 
   <xsl:template match="//ul[@id='portal-globalnav']">
-    <xsl:copy>
-        <xsl:attribute name="class">col-md-9 col-xs-12 col-md-offset-3</xsl:attribute>
-        <xsl:copy-of select="@*" />
-        <xsl:apply-templates />
-    </xsl:copy>
+    <div class="row" id="globalnav-wrapper">
+      <div class="container">    
+      <xsl:copy>
+          <xsl:attribute name="class">col-md-12 col-xs-12 col-md-offset-3</xsl:attribute>
+          <xsl:copy-of select="@*" />
+          <xsl:apply-templates />
+      </xsl:copy>
+      </div>
+    </div>
   </xsl:template>
 
   <!-- Central column -->
@@ -66,16 +70,24 @@
     <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
   </xsl:variable>
 
+  <!-- full-width breadcrumb -->
+  <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
+
+  <xsl:template match="//*[@id='portal-breadcrumbs']">
+    <xsl:copy>
+      <div class="breadcrumbs" id="portal-breadcrumbs">
+        <div class="container">
+          <xsl:apply-templates />
+        </div>
+      </div>
+    </xsl:copy>
+  </xsl:template>
+
   <replace css:theme="#content-container" method="raw">
       <div class="{$central}">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
-          <div class="row">
-            <div class="col-xs-12 col-sm-12">
-               <xsl:copy-of select="//section[@id='viewlet-above-content']"/>
-            </div>
-          </div>
           <div class="row">
             <div class="col-xs-12 col-sm-12">
                <xsl:copy-of select="//div[@id='content']"/>

@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml">
+
+    <browser:viewlet
+    name="barceloneta.hero"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+    class=".hero.HeroViewlet"
+    permission="zope2.View"
+    />
+
+    <browser:viewlet
+    name="plone.globalnav2"
+    manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+    class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+    permission="zope2.View"
+    />
+
+
+</configure>

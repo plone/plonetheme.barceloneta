@@ -12,6 +12,8 @@
   <include package="plone.app.theming" />
   <include package="plone.app.widgets" />
 
+  <include package=".browser" />
+
   <genericsetup:registerProfile
       name="default"
       title="Barceloneta Theme"
