@@ -72,7 +72,7 @@
     <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
   </xsl:variable>
     
-  <replace css:theme-children="#main-container" method="raw">
+  <replace css:theme-children="#content-container" method="raw">
       <div class="{$central}">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
@@ -102,25 +102,25 @@
   <!-- Left column -->
 
   <rules if-content="//*[@id='portal-column-one']">
-    <before css:theme-chindren="#main_container">
+    <replace css:theme="#column1-container">
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
           <aside id="portal-column-one">
              <xsl:copy-of select="//*[@id='portal-column-one']/*"/>
           </aside>
         </div>
-    </before>
+    </replace>
   </rules>
 
   <!-- Right column -->
 
   <rules if-content="//*[@id='portal-column-two']">
-    <after css:theme-chindren="#main_container">
+    <replace css:theme="#column2-container">
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
           <aside id="portal-column-two">
              <xsl:copy-of select="//*[@id='portal-column-two']/*"/>
           </aside>
         </div>
-    </after>
+    </replace>
   </rules>
 
   <drop css:content="#portal-personaltools-wrapper" />
