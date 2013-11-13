@@ -39,7 +39,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 @media print{*{text-shadow:none !important;color:#000 !important;background:transparent !important;box-shadow:none !important} a,a:visited{text-decoration:underline} a[href]:after{content:" (" attr(href) ")"} abbr[title]:after{content:" (" attr(title) ")"} a[href^="javascript:"]:after,a[href^="#"]:after{content:""} pre,blockquote{border:1px solid #999;page-break-inside:avoid} thead{display:table-header-group} tr,img{page-break-inside:avoid} img{max-width:100% !important} @page {margin:2cm .5cm}p,h2,h3{orphans:3;widows:3} h2,h3{page-break-after:avoid} select{background:#fff !important} .navbar{display:none} .table td,.table th{background-color:#fff !important} .btn>.caret,.dropup>.btn>.caret{border-top-color:#000 !important} .label{border:1px solid #000} .table{border-collapse:collapse !important} .table-bordered th,.table-bordered td{border:1px solid #ddd !important}}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
-body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.428571429;color:#333;background-color:#fff}
+body{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.428571429;color:#333;background-color:#fff}
 input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
 a{color:#428bca;text-decoration:none}a:hover,a:focus{color:#2a6496;text-decoration:underline}
 a:focus{outline:thin dotted #333;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
@@ -63,7 +63,7 @@ cite{font-style:normal}
 .text-left{text-align:left}
 .text-right{text-align:right}
 .text-center{text-align:center}
-h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;color:inherit}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small{font-weight:normal;line-height:1;color:#999}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:500;line-height:1.1;color:inherit}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small{font-weight:normal;line-height:1;color:#999}
 h1,h2,h3{margin-top:20px;margin-bottom:10px}h1 small,h2 small,h3 small,h1 .small,h2 .small,h3 .small{font-size:65%}
 h4,h5,h6{margin-top:10px;margin-bottom:10px}h4 small,h5 small,h6 small,h4 .small,h5 .small,h6 .small{font-size:75%}
 h1,.h1{font-size:36px}
@@ -938,9 +938,10 @@ footer{padding:30px 0}
 ul,ol{list-style-type:none}
 #content-header{background-color:transparent;border:0}
 body.userrole-anonymous{padding-top:35px}
-.userrole-anonymous #edit-zone{background:rgba(235,235,235,0.5);min-height:20px;border:0}
+.userrole-anonymous #edit-zone{background:rgba(235,235,235,0.5);min-height:20px;border:0}.userrole-anonymous #edit-zone .actionMenu>li>a{padding-top:2px;padding-bottom:2px}
 @media (min-width:767px){.userrole-anonymous .actionMenu>li>a{padding:5px}}#above-content-wrapper{padding:0;margin:0}
 #globalnav-wrapper{background:#3483be;background-repeat:repeat-x}#globalnav-wrapper #portal-globalnav>li>a{color:#fff;font-size:1.1em}
+.hero{background:url('../img/ticks.png');background-repeat:repeat-x}.hero .jumbotron{background:url('../img/Plone_Bg_watermark.png');margin-bottom:0}
 #portal-breadcrumbs{background:url('../img/backgr_breadcrumb.png');background-repeat:repeat-x;padding-top:10px;padding-bottom:10px}
 .hiddenStructure{display:none}
 @media screen and (max-width:767px){.row-offcanvas{position:relative;-webkit-transition:all .25s ease-out;-moz-transition:all .25s ease-out;transition:all .25s ease-out} .row-offcanvas-right .sidebar-offcanvas{right:-50%;} .row-offcanvas-left .sidebar-offcanvas{left:-50%;} .row-offcanvas-right.active{right:50%;} .row-offcanvas-left.active{left:50%;} .sidebar-offcanvas{position:absolute;top:0;width:50%;}}

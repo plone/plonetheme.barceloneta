@@ -26,7 +26,7 @@ class HeroViewlet(ViewletBase):
 
     @property
     @memoize
-    def page_title(self):
+    def show(self):
         '''
         Get the page title. If we are in the portal_factory we want use the
         "Add $FTI_TITLE" form (see #12117).
@@ -36,6 +36,7 @@ class HeroViewlet(ViewletBase):
          - to check the isTemporary method of the edit view instead of the
            creation_flag
         '''
+        
         if (hasattr(aq_base(self.context), 'isTemporary') and
                 self.context.isTemporary()):
             # if we are in the portal_factory we want the page title to be

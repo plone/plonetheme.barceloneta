@@ -44,6 +44,7 @@ ul, ol {
     border: 0;
 }
 
+
 /* Anonymous user toolbar */
 
 body.userrole-anonymous {
@@ -54,6 +55,11 @@ body.userrole-anonymous {
   background:rgba(235,235,235,0.5);
   min-height: 20px;
   border: 0px;
+
+  .actionMenu>li>a {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -82,6 +88,20 @@ body.userrole-anonymous {
     font-size: 1.1em;
   }
 }
+
+
+/* Hero */
+
+.hero {
+  background: url('../img/ticks.png');
+  background-repeat: repeat-x;
+
+  .jumbotron {
+    background: url('../img/Plone_Bg_watermark.png');
+    margin-bottom: 0px;
+  }
+}
+
 
 
 /* Breadcrumbs */
