@@ -16,6 +16,15 @@
     <replace theme="/html/head/title" content="/html/head/title" />
     <!-- Pull in Plone Meta -->
     <after theme-children="/html/head" content="/html/head/meta" />
+    <!-- Copy over the id/class attributes on the body tag.
+         This is important for per-section styling -->
+    <copy attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+    <!-- dont use Plone icons, use the theme -->
+    <drop css:content="head link[rel='apple-touch-icon']" />
+    <drop css:content="head link[rel='shortcut icon']" />
+    <!-- dont use Plone viewport, use the theme -->
+    <!-- <drop css:content="head meta[name='viewport']" /> -->
     <!-- Script -->
     <!-- <after theme="/html/body/footer" content="/html/head/script" /> -->
     <!-- CSS -->
