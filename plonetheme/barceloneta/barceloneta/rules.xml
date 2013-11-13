@@ -2,69 +2,62 @@
 <rules xmlns="http://namespaces.plone.org/diazo"
        xmlns:css="http://namespaces.plone.org/diazo/css"
        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"    
-       xmlns:xi="http://www.w3.org/2001/XInclude">
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <theme href="/++theme++barceloneta/index.html"/>
   <notheme if-path="@@manage-viewlets" />
 
   <rules if-content="//*[@id='portal-top']">
-
-      <!-- Attributes -->
-      <copy attributes="*" theme="/html" content="/html"/>
-
-      <!-- Base tag -->
-      <before theme="/html/head/title" content="/html/head/base"/>
-
-      <!-- Title -->
-      <replace theme="/html/head/title" content="/html/head/title" />
-
-      <!-- Pull in Plone Meta -->
-      <after theme-children="/html/head" content="/html/head/meta" />
-
-      <!-- Script -->
-      <!-- <after theme="/html/body/footer" content="/html/head/script" /> -->
-
-      <!-- CSS -->
-      <!-- <before theme-children="/html/head" content="/html/head/link" /> -->
-
-
+    <!-- Attributes -->
+    <copy attributes="*" theme="/html" content="/html"/>
+    <!-- Base tag -->
+    <before theme="/html/head/title" content="/html/head/base"/>
+    <!-- Title -->
+    <replace theme="/html/head/title" content="/html/head/title" />
+    <!-- Pull in Plone Meta -->
+    <after theme-children="/html/head" content="/html/head/meta" />
+    <!-- Copy over the id/class attributes on the body tag.
+         This is important for per-section styling -->
+    <copy attributes="class" css:content="body" css:theme="body" />
+    <copy attributes="id dir" css:content="body" css:theme="body" />
+    <!-- dont use Plone icons, use the theme -->
+    <drop css:content="head link[rel='apple-touch-icon']" />
+    <drop css:content="head link[rel='shortcut icon']" />
+    <!-- dont use Plone viewport, use the theme -->
+    <!-- <drop css:content="head meta[name='viewport']" /> -->
+    <!-- Script -->
+    <!-- <after theme="/html/body/footer" content="/html/head/script" /> -->
+    <!-- CSS -->
+    <!-- <before theme-children="/html/head" content="/html/head/link" /> -->
   </rules>
 
   <!-- SearchBox -->
-
   <xsl:template match="//div[@id='portal-searchbox']">
     <xsl:copy>
-        <xsl:attribute name="class">col-md-3 col-xs-12</xsl:attribute>
-        <xsl:copy-of select="@*" />
-        <xsl:apply-templates />
+      <xsl:attribute name="class">col-md-3 col-xs-12</xsl:attribute>
+      <xsl:copy-of select="@*" />
+      <xsl:apply-templates />
     </xsl:copy>
   </xsl:template>
 
   <!-- Portal Logo -->
-
   <xsl:template match="//a[@id='portal-logo']">
     <xsl:copy>
-        <xsl:attribute name="class">col-md-3 col-xs-12</xsl:attribute>
-        <xsl:copy-of select="@*" />
-        <xsl:apply-templates />
+      <xsl:attribute name="class">col-md-3 col-xs-12</xsl:attribute>
+      <xsl:copy-of select="@*" />
+      <xsl:apply-templates />
     </xsl:copy>
   </xsl:template>
 
-
   <xsl:template match="//ul[@id='portal-globalnav']">
-    <tete>
     <xsl:copy>
         <xsl:attribute name="class">col-md-9 col-xs-12 col-md-offset-3</xsl:attribute>
         <xsl:copy-of select="@*" />
         <xsl:apply-templates />
     </xsl:copy>
-  </tete>
   </xsl:template>
 
-
   <!-- Central column -->
-    
   <xsl:variable name="central">
     <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-6</xsl:if>
     <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-9</xsl:if>
@@ -72,7 +65,7 @@
     <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
   </xsl:variable>
     
-  <replace css:theme-children="#content-container" method="raw">
+  <replace css:theme="#content-container" method="raw">
       <div class="{$central}">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
@@ -96,11 +89,9 @@
   </replace>
 
   <!-- Alert message -->
-
   <replace css:theme-children="#global_statusmessage" css:content-children="#global_statusmessage" />
 
   <!-- Left column -->
-
   <rules if-content="//*[@id='portal-column-one']">
     <replace css:theme="#column1-container">
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
@@ -112,7 +103,6 @@
   </rules>
 
   <!-- Right column -->
-
   <rules if-content="//*[@id='portal-column-two']">
     <replace css:theme="#column2-container">
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
@@ -136,10 +126,10 @@
         <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">                <svg xmlns="http://www.w3.org/2000/svg"  
+                <span class="sr-only">                <svg xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
-                  version="1.0" id="plone-logo" class="plone-logo"  
-                  x="0px" y="0px" width="215px" height="26px"  
+                  version="1.0" id="plone-logo" class="plone-logo"
+                  x="0px" y="0px" width="215px" height="26px"
                   viewBox="0 0 56 56" enable-background="new 0 0 56 56">
                   <path d="M28 0C12.537 0 0 12.5 0 28c0.001 15.5 12.5 28 28 28c15.464-0.003 27.998-12.536 28-28 C55.998 12.5 43.5 0 28 0z M43.759 43.759c-4.042 4.038-9.597 6.527-15.76 6.528c-6.164-0.001-11.717-2.492-15.759-6.528 C8.202 39.7 5.7 34.2 5.7 28c0.001-6.163 2.49-11.717 6.528-15.76C16.283 8.2 21.8 5.7 28 5.7 c6.164 0 11.7 2.5 15.8 6.528c4.039 4 6.5 9.6 6.5 15.76C50.286 34.2 47.8 39.7 43.8 43.759z M24.385 9.854c3.346 0 6.1 2.7 6.1 6.059c0 3.347-2.714 6.06-6.06 6.06s-6.059-2.712-6.059-6.06 C18.327 12.6 21 9.9 24.4 9.854z M42.764 28.017c0 3.349-2.711 6.059-6.061 6.059c-3.341 0-6.058-2.711-6.058-6.059 c0-3.348 2.719-6.058 6.058-6.058C40.054 22 42.8 24.7 42.8 28.017z M24.365 34.098c3.347 0 6.1 2.7 6.1 6.1 c0 3.347-2.712 6.06-6.059 6.06c-3.346 0-6.06-2.712-6.06-6.06C18.306 36.8 21 34.1 24.4 34.098z"/>
                 </svg>
