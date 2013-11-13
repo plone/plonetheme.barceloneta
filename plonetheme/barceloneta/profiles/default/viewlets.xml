@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<object>
+
+  <order manager="plone.portalheader" skinname="My Theme"
+         based-on="Plone Default">
+    <viewlet name="plone.logo" insert-before="*"/>
+  </order>
+  <order manager="plone.portaltop" skinname="*">
+    <viewlet name="plone.searchbox"
+             insert-after="plone.logo"/>
+  </order>
+
+</object>
