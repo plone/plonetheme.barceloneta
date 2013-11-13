@@ -1,15 +1,11 @@
 @import "bootstrap/bootstrap.less";
-
+@import "toolbar.less";
 /*
  * Style tweaks
  * --------------------------------------------------
  */
 html {
     overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
-
-body {
-    padding-top: 70px;
 }
 
 footer {
@@ -22,24 +18,6 @@ footer {
     .text-hide();
     margin: 0;
 }
-.contentViews {
-    .nav();
-    .navbar-nav();
-}
-
-#contentActionMenus {
-    .nav();
-    .navbar-nav();
-}
-
-.actionMenu {
-    .nav();
-    .navbar-nav();
-}
-
-.actionMenuSelected {
-    .dropdown-header();
-}
 
 #portal-logo {
     .navbar-brand();
@@ -48,10 +26,6 @@ footer {
 #portal-globalnav {
     .nav();
     .navbar-nav();
-}
-
-#portal-personaltools-wrapper {
-    float: right;
 }
 
 .portalMessage.info {

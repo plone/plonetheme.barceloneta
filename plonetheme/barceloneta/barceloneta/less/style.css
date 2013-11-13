@@ -6045,29 +6045,8 @@ td.visible-print {
     display: none !important;
   }
 }
-/*
- * Style tweaks
- * --------------------------------------------------
- */
-html {
-  overflow-x: hidden;
-  /* Prevent scroll on narrow devices */
-
-}
 body {
   padding-top: 70px;
-}
-footer {
-  padding: 30px 0;
-}
-/* Behaviors and BS3 patterns */
-.hiddenStructure {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
 }
 .contentViews {
   margin-bottom: 0;
@@ -6299,14 +6278,14 @@ footer {
     padding-bottom: 15px;
   }
 }
-.actionMenu {
+#portal-personaltools-wrapper .actionMenu {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
   margin: 7.5px -15px;
 }
-.actionMenu:before,
-.actionMenu:after {
+#portal-personaltools-wrapper .actionMenu:before,
+#portal-personaltools-wrapper .actionMenu:after {
   content: " ";
   /* 1 */
 
@@ -6314,11 +6293,11 @@ footer {
   /* 2 */
 
 }
-.actionMenu:after {
+#portal-personaltools-wrapper .actionMenu:after {
   clear: both;
 }
-.actionMenu:before,
-.actionMenu:after {
+#portal-personaltools-wrapper .actionMenu:before,
+#portal-personaltools-wrapper .actionMenu:after {
   content: " ";
   /* 1 */
 
@@ -6326,61 +6305,61 @@ footer {
   /* 2 */
 
 }
-.actionMenu:after {
+#portal-personaltools-wrapper .actionMenu:after {
   clear: both;
 }
-.actionMenu > li {
+#portal-personaltools-wrapper .actionMenu > li {
   position: relative;
   display: block;
 }
-.actionMenu > li > a {
+#portal-personaltools-wrapper .actionMenu > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
 }
-.actionMenu > li > a:hover,
-.actionMenu > li > a:focus {
+#portal-personaltools-wrapper .actionMenu > li > a:hover,
+#portal-personaltools-wrapper .actionMenu > li > a:focus {
   text-decoration: none;
   background-color: #eeeeee;
 }
-.actionMenu > li.disabled > a {
+#portal-personaltools-wrapper .actionMenu > li.disabled > a {
   color: #999999;
 }
-.actionMenu > li.disabled > a:hover,
-.actionMenu > li.disabled > a:focus {
+#portal-personaltools-wrapper .actionMenu > li.disabled > a:hover,
+#portal-personaltools-wrapper .actionMenu > li.disabled > a:focus {
   color: #999999;
   text-decoration: none;
   background-color: transparent;
   cursor: not-allowed;
 }
-.actionMenu .open > a,
-.actionMenu .open > a:hover,
-.actionMenu .open > a:focus {
+#portal-personaltools-wrapper .actionMenu .open > a,
+#portal-personaltools-wrapper .actionMenu .open > a:hover,
+#portal-personaltools-wrapper .actionMenu .open > a:focus {
   background-color: #eeeeee;
   border-color: #428bca;
 }
-.actionMenu .open > a .caret,
-.actionMenu .open > a:hover .caret,
-.actionMenu .open > a:focus .caret {
+#portal-personaltools-wrapper .actionMenu .open > a .caret,
+#portal-personaltools-wrapper .actionMenu .open > a:hover .caret,
+#portal-personaltools-wrapper .actionMenu .open > a:focus .caret {
   border-top-color: #2a6496;
   border-bottom-color: #2a6496;
 }
-.actionMenu .nav-divider {
+#portal-personaltools-wrapper .actionMenu .nav-divider {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
-.actionMenu > li > a > img {
+#portal-personaltools-wrapper .actionMenu > li > a > img {
   max-width: none;
 }
-.actionMenu > li > a {
+#portal-personaltools-wrapper .actionMenu > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
-  .actionMenu .open .dropdown-menu {
+  #portal-personaltools-wrapper .actionMenu .open .dropdown-menu {
     position: static;
     float: none;
     width: auto;
@@ -6389,29 +6368,39 @@ footer {
     border: 0;
     box-shadow: none;
   }
-  .actionMenu .open .dropdown-menu > li > a,
-  .actionMenu .open .dropdown-menu .dropdown-header {
+  #portal-personaltools-wrapper .actionMenu .open .dropdown-menu > li > a,
+  #portal-personaltools-wrapper .actionMenu .open .dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
-  .actionMenu .open .dropdown-menu > li > a {
+  #portal-personaltools-wrapper .actionMenu .open .dropdown-menu > li > a {
     line-height: 20px;
   }
-  .actionMenu .open .dropdown-menu > li > a:hover,
-  .actionMenu .open .dropdown-menu > li > a:focus {
+  #portal-personaltools-wrapper .actionMenu .open .dropdown-menu > li > a:hover,
+  #portal-personaltools-wrapper .actionMenu .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
 @media (min-width: 768px) {
-  .actionMenu {
+  #portal-personaltools-wrapper .actionMenu {
     float: left;
     margin: 0;
   }
-  .actionMenu > li {
+  #portal-personaltools-wrapper .actionMenu > li {
     float: left;
   }
-  .actionMenu > li > a {
+  #portal-personaltools-wrapper .actionMenu > li > a {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+}
+@media (min-width: 768px) {
+  #portal-personaltools-wrapper .actionMenu {
+    float: right !important;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-collapse #portal-personaltools-wrapper .actionMenu:last-child {
+    margin-right: -15px;
   }
 }
 .actionMenuSelected {
@@ -6420,6 +6409,27 @@ footer {
   font-size: 12px;
   line-height: 1.428571429;
   color: #999999;
+}
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html {
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
+
+}
+footer {
+  padding: 30px 0;
+}
+/* Behaviors and BS3 patterns */
+.hiddenStructure {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
 }
 #portal-logo {
   float: left;
@@ -6550,9 +6560,6 @@ footer {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-}
-#portal-personaltools-wrapper {
-  float: right;
 }
 .portalMessage.info {
   padding: 15px;
