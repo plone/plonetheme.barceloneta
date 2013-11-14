@@ -8,9 +8,6 @@ html {
     overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 
-footer {
-    padding: 30px 0;
-}
 
 /* Behaviors and BS3 patterns */
 
@@ -44,14 +41,9 @@ ul, ol {
     border: 0;
 }
 
-
 /* Anonymous user toolbar */
 
-body.userrole-anonymous {
-  padding-top: 35px;
-}
-
-.userrole-anonymous #edit-zone {
+#edit-zone {
   background:rgba(235,235,235,0.5);
   min-height: 20px;
   border: 0px;
@@ -62,10 +54,33 @@ body.userrole-anonymous {
   }
 }
 
+
+
+/* Authenticated user toolbar */
+
+body.userrole-authenticated {
+  padding-top: 70px;
+}
+
+.userrole-authenticated #edit-zone {
+  background:rgba(15,15,15,0.8);
+  min-height: 50px;
+  border: 0px;
+
+  .actionMenu>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
 @media (min-width: 767px) {
 
-  .userrole-anonymous .actionMenu>li>a {
+  .actionMenu>li>a {
     padding: 5px;
+  }
+
+  .userrole-authenticated .actionMenu>li>a {
+    padding: 15px;
   }
 
 }
@@ -88,9 +103,22 @@ body.userrole-anonymous {
   #portal-globalnav>li>a {
     color: white;
     font-size: 1.1em;
+    text-transform: uppercase;
   }
+
+  #portal-globalnav>li>a:hover {
+    background-color: rgba(154,189,214,1);
+  }
+
 }
 
+/* Search */
+
+#searchGadget {
+  border: 1px solid @input-border;
+  border-radius: 3px;
+  float: right;
+}
 
 /* Hero */
 
@@ -122,6 +150,55 @@ body.userrole-anonymous {
 .hiddenStructure {
   display: none;
 }
+
+/*Content*/
+
+#content {
+  ul {
+    counter-reset: my-disc;
+    padding-left: 0;
+  }
+  li {
+    
+  }
+  li:before {
+    content: counter(my-disc, disc);
+    counter-increment: my-disc;
+    list-style-type: disc;
+    font-size: 30px;
+    color: @disc-style;
+    
+  }
+}
+/* Footer */
+
+footer {
+    padding: 30px 0;
+}
+#portal-footer-wrapper {
+  background-color: @footer-bg;
+  color: @footer-text-main;
+  p {
+    border-bottom: 1px solid @sep-line;
+    padding-bottom: 28px;
+  }
+}
+#portal-footer {
+  text-align: center;
+}
+#portal-siteactions {
+  li {
+    display: inline-block;
+    margin-left: 50px;
+  }
+}
+
+/* Ajax less */
+
+body.ajax_load {
+  padding-top: 0px;
+}
+
 
 /*
  * Off Canvas

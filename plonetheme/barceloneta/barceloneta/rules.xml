@@ -17,10 +17,6 @@
     <replace theme="/html/head/title" content="/html/head/title" />
     <!-- Pull in Plone Meta -->
     <after theme-children="/html/head" content="/html/head/meta" />
-    <!-- Copy over the id/class attributes on the body tag.
-         This is important for per-section styling -->
-    <copy attributes="class" css:content="body" css:theme="body" />
-    <copy attributes="id dir" css:content="body" css:theme="body" />
     <!-- dont use Plone icons, use the theme -->
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
@@ -31,6 +27,11 @@
     <!-- CSS -->
     <!-- <before theme-children="/html/head" content="/html/head/link" /> -->
   </rules>
+
+  <!-- Copy over the id/class attributes on the body tag.
+       This is important for per-section styling -->
+  <copy attributes="class" css:content="body" css:theme="body" />
+  <copy attributes="id dir" css:content="body" css:theme="body" />
 
   <!-- SearchBox -->
   <xsl:template match="//div[@id='portal-searchbox']">
@@ -75,7 +76,7 @@
 
   <xsl:template match="//*[@id='portal-breadcrumbs']">
     <xsl:copy>
-      <div class="breadcrumbs" id="portal-breadcrumbs">
+      <div class="breadcrumb" id="portal-breadcrumbs">
         <div class="container">
           <xsl:apply-templates />
         </div>
@@ -127,7 +128,28 @@
   </rules>
 
   <drop css:content="#portal-personaltools-wrapper" />
-  <replace css:theme-children="#portal-top" css:content-children="#portal-top" />
+
+  <!-- Content header -->
+  <replace css:theme="#content-header" css:if-content="#portal-top">
+    <div class="navbar navbar-inverse" id="content-header" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <xsl:copy-of select="//*[@id='portal-top']/*"/>
+          <header id="portal-top">
+          </header>
+        </div>
+      </div>
+    </div>
+  </replace>
+
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
 
   <!-- toolbar -->

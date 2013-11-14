@@ -572,7 +572,7 @@ textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon
 .nav .caret{border-top-color:#428bca;border-bottom-color:#428bca}
 .nav a:hover .caret{border-top-color:#2a6496;border-bottom-color:#2a6496}
 .nav-tabs .dropdown-menu{margin-top:-1px;border-top-right-radius:0;border-top-left-radius:0}
-.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}.navbar:before,.navbar:after{content:" ";display:table;}
+.navbar{position:relative;min-height:50px;margin-bottom:20px;margin-bottom:0;border:1px solid transparent}.navbar:before,.navbar:after{content:" ";display:table;}
 .navbar:after{clear:both}
 .navbar:before,.navbar:after{content:" ";display:table;}
 .navbar:after{clear:both}
@@ -914,7 +914,6 @@ th.hidden-lg,td.hidden-lg{display:table-cell !important}
 @media (min-width:768px){.navbar-collapse #portal-personaltools-wrapper .actionMenu:last-child{margin-right:-15px}}
 .actionMenuSelected{display:block;padding:3px 20px;font-size:12px;line-height:1.428571429;color:#999}
 html{overflow-x:hidden;}
-footer{padding:30px 0}
 .hiddenStructure{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0;margin:0}
 #portal-logo{float:left;padding:15px 15px;font-size:18px;line-height:20px}#portal-logo:hover,#portal-logo:focus{text-decoration:none}
 @media (min-width:768px){.navbar>.container #portal-logo{margin-left:-15px}}
@@ -937,11 +936,21 @@ footer{padding:30px 0}
 .portalMessage.info .alert-link{color:#2d6987}
 ul,ol{list-style-type:none}
 #content-header{background-color:transparent;border:0}
-body.userrole-anonymous{padding-top:35px}
-.userrole-anonymous #edit-zone{background:rgba(235,235,235,0.5);min-height:20px;border:0}.userrole-anonymous #edit-zone .actionMenu>li>a{padding-top:2px;padding-bottom:2px}
-@media (min-width:767px){.userrole-anonymous .actionMenu>li>a{padding:5px}}#above-content-wrapper{padding:0;margin:0}
-#globalnav-wrapper{background:#3483be;box-shadow:0 5px 5px #aaa;z-index:50;position:relative}#globalnav-wrapper #portal-globalnav>li>a{color:#fff;font-size:1.1em}
+#edit-zone{background:rgba(235,235,235,0.5);min-height:20px;border:0}#edit-zone .actionMenu>li>a{padding-top:2px;padding-bottom:2px}
+body.userrole-authenticated{padding-top:70px}
+.userrole-authenticated #edit-zone{background:rgba(15,15,15,0.8);min-height:50px;border:0}.userrole-authenticated #edit-zone .actionMenu>li>a{padding-top:15px;padding-bottom:15px}
+@media (min-width:767px){.actionMenu>li>a{padding:5px} .userrole-authenticated .actionMenu>li>a{padding:15px}}#above-content-wrapper{padding:0;margin:0}
+#globalnav-wrapper{background:#3483be;box-shadow:0 5px 5px #aaa;z-index:50;position:relative}#globalnav-wrapper #portal-globalnav>li>a{color:#fff;font-size:1.1em;text-transform:uppercase}
+#globalnav-wrapper #portal-globalnav>li>a:hover{background-color:#9abdd6}
+#searchGadget{border:1px solid #ccc;border-radius:3px;float:right}
 .hero{background:url('../img/ticks.png');background-repeat:repeat-x}.hero .jumbotron{background:url('../img/Plone_Bg_watermark.png');margin-bottom:0}.hero .jumbotron img{width:100%}
 #portal-breadcrumbs{background:url('../img/backgr_breadcrumb.png');background-repeat:repeat-x;padding-top:10px;padding-bottom:10px}
 .hiddenStructure{display:none}
+#content ul{counter-reset:my-disc;padding-left:0}
+#content li:before{content:counter(my-disc, disc);counter-increment:my-disc;list-style-type:disc;font-size:30px;color:#a2c5e0}
+footer{padding:30px 0}
+#portal-footer-wrapper{background-color:#2e3133;color:#777e83}#portal-footer-wrapper p{border-bottom:1px solid #777e83;padding-bottom:28px}
+#portal-footer{text-align:center}
+#portal-siteactions li{display:inline-block;margin-left:50px}
+body.ajax_load{padding-top:0}
 @media screen and (max-width:767px){.row-offcanvas{position:relative;-webkit-transition:all .25s ease-out;-moz-transition:all .25s ease-out;transition:all .25s ease-out} .row-offcanvas-right .sidebar-offcanvas{right:-50%;} .row-offcanvas-left .sidebar-offcanvas{left:-50%;} .row-offcanvas-right.active{right:50%;} .row-offcanvas-left.active{left:50%;} .sidebar-offcanvas{position:absolute;top:0;width:50%;}}

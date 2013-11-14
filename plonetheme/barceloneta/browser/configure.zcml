@@ -8,6 +8,7 @@
     manager="plone.app.layout.viewlets.interfaces.IAboveContent"
     class=".hero.HeroViewlet"
     permission="zope2.View"
+    layer="plonetheme.barceloneta.interfaces.IThemeSpecific"
     />
 
     <browser:viewlet
@@ -15,6 +16,7 @@
     manager="plone.app.layout.viewlets.interfaces.IAboveContent"
     class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
     permission="zope2.View"
+    layer="plonetheme.barceloneta.interfaces.IThemeSpecific"
     />
 
 

@@ -8,7 +8,8 @@
     <!-- Action Menu -->
 
     <!-- Edit bar -->
-    <replace css:theme="#portal-toolbar" method="raw">
+
+    <replace css:theme="#portal-toolbar" method="raw" css:if-not-content=".ajax_load">
       <div class="navbar navbar-fixed-top navbar-inverse" id="edit-zone" role="navigation">
         <div class="container">
           <div class="navbar-header">
