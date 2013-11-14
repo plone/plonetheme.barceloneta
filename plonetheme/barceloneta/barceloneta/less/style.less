@@ -81,7 +81,9 @@ body.userrole-anonymous {
 
 #globalnav-wrapper {
   background: rgb(52,131,190,1);
-  background-repeat: repeat-x;
+  box-shadow: 0px 5px 5px #aaa;
+  z-index: 50;
+  position: relative;
 
   #portal-globalnav>li>a {
     color: white;
@@ -99,6 +101,9 @@ body.userrole-anonymous {
   .jumbotron {
     background: url('../img/Plone_Bg_watermark.png');
     margin-bottom: 0px;
+    img {
+      width: 100%;
+    }
   }
 }
 

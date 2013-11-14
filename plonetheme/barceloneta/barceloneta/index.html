@@ -35,10 +35,297 @@
 
     <script type="text/javascript" src="/++resource++plonetheme.barceloneta.js"></script>
   </head>
-  <body>
-    <section id="portal-toolbar">
-    </section>
-    <div class="navbar navbar-inverse" id="content-header" role="navigation">
+
+  <body class="template-document_view portaltype-document site-Plone section-front-page icons-on userrole-manager userrole-authenticated userrole-owner pat-plone-widgets pat-plone-barceloneta" dir="ltr" style=""><div class="navbar navbar-fixed-top navbar-inverse" id="edit-zone" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.0" id="plone-logo" class="plone-logo" x="0px" y="0px" width="215px" height="26px" viewBox="0 0 56 56" enable-background="new 0 0 56 56">
+                <path d="M28 0C12.537 0 0 12.5 0 28c0.001 15.5 12.5 28 28 28c15.464-0.003 27.998-12.536 28-28 C55.998 12.5 43.5 0 28 0z M43.759 43.759c-4.042 4.038-9.597 6.527-15.76 6.528c-6.164-0.001-11.717-2.492-15.759-6.528 C8.202 39.7 5.7 34.2 5.7 28c0.001-6.163 2.49-11.717 6.528-15.76C16.283 8.2 21.8 5.7 28 5.7 c6.164 0 11.7 2.5 15.8 6.528c4.039 4 6.5 9.6 6.5 15.76C50.286 34.2 47.8 39.7 43.8 43.759z M24.385 9.854c3.346 0 6.1 2.7 6.1 6.059c0 3.347-2.714 6.06-6.06 6.06s-6.059-2.712-6.059-6.06 C18.327 12.6 21 9.9 24.4 9.854z M42.764 28.017c0 3.349-2.711 6.059-6.061 6.059c-3.341 0-6.058-2.711-6.058-6.059 c0-3.348 2.719-6.058 6.058-6.058C40.054 22 42.8 24.7 42.8 28.017z M24.365 34.098c3.347 0 6.1 2.7 6.1 6.1 c0 3.347-2.712 6.06-6.059 6.06c-3.346 0-6.06-2.712-6.06-6.06C18.306 36.8 21 34.1 24.4 34.098z"></path>
+                </svg>
+              </span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse">
+            <header id="edit-bar">
+              <p class="hiddenStructure">Vistes</p><ul class="contentViews" id="content-views">
+
+            
+              <li id="contentview-folderContents" class="plain">
+                <a href="http://localhost:8080/Plone/folder_contents">Continguts</a>
+              </li>
+            
+            
+              <li id="contentview-view" class="selected">
+                <a href="http://localhost:8080/Plone/front-page">Visualitza</a>
+              </li>
+            
+            
+              <li id="contentview-edit" class="plain">
+                <a href="http://localhost:8080/Plone/front-page/edit">Edita</a>
+              </li>
+            
+            
+              <li id="contentview-local_roles" class="plain">
+                <a href="http://localhost:8080/Plone/front-page/@@sharing">Comparteix</a>
+              </li>
+            
+
+        </ul><div class="contentActions">
+
+    
+
+        
+
+        
+
+        <ul id="contentActionMenus">
+    
+        <li class="actionMenu deactivated dropdown" id="plone-contentmenu-workflow">
+          <a href="http://localhost:8080/Plone/front-page/content_status_history" data-toggle="dropdown" title="Canvia l&#39;estat d&#39;aquest element" class="actionMenuHeader dropdown-toggle label-state-published">
+             
+                <span>Estat:</span>
+                <span class="state-published">Publicat</span>
+                <span class="arrowDownAlternative">▼</span>
+             
+          </a>
+          <ul class="actionMenuContent dropdown-menu">
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/front-page/content_status_modify?workflow_action=reject" title="Retornant l&#39;element s&#39;enviarà a l&#39;autor original enlloc de publicar-lo. Preferiblement, hauríeu d&#39;incloure el motiu pel qual no ha estat publicat. " id="workflow-transition-reject" class="kssIgnore">
+                        
+                        <span class="subMenuTitle">Retorna</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/front-page/content_status_modify?workflow_action=retract" title="Si heu enviat l&#39;element per error o voleu realitzar edicions addicionals, aixó ho recuperarà." id="workflow-transition-retract" class="kssIgnore">
+                        
+                        <span class="subMenuTitle">Retira</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li class="actionSeparator">
+                    <a href="http://localhost:8080/Plone/front-page/content_status_history" title="" id="workflow-transition-advanced" class="kssIgnore">
+                        
+                        <span class="subMenuTitle">Avançat...</span>
+                    </a>
+                    
+                  </li>
+                
+          </ul>
+        </li>
+
+    
+    
+        <li class="actionMenu deactivated dropdown" id="plone-contentmenu-factories">
+          <a href="http://localhost:8080/Plone/folder_factories" data-toggle="dropdown" title="Afegeix nous elements dins d&#39;aquest element" class="actionMenuHeader dropdown-toggle label-">
+             
+                <span>Afegeix un nou…</span>
+                
+                <span class="arrowDownAlternative">▼</span>
+             
+          </a>
+          <ul class="actionMenuContent dropdown-menu">
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/++add++Folder" title="" id="folder" class="contenttype-folder">
+                        
+                        <span class="subMenuTitle">Carpeta</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/++add++Collection" title="Col·lecció" id="collection" class="contenttype-collection">
+                        
+                        <span class="subMenuTitle">Col·lecció</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/++add++Link" title="" id="link" class="contenttype-link">
+                        
+                        <span class="subMenuTitle">Enllaç</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/++add++Event" title="Els esdeveniments es poden mostrar en els calendaris." id="event" class="contenttype-event">
+                        
+                        <span class="subMenuTitle">Esdeveniment</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/++add++File" title="Permet pujar un fitxer al lloc web." id="file" class="contenttype-file">
+                        
+                        <span class="subMenuTitle">Fitxer</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/++add++Image" title="Les imatges poden ser referenciades en les pàgines o mostrades en un àlbum." id="image" class="contenttype-image">
+                        
+                        <span class="subMenuTitle">Imatge</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/++add++News%20Item" title="" id="news-item" class="contenttype-news-item">
+                        
+                        <span class="subMenuTitle">Notícia</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/++add++Document" title="" id="document" class="contenttype-document">
+                        
+                        <span class="subMenuTitle">Pàgina</span>
+                    </a>
+                    
+                  </li>
+                
+          </ul>
+        </li>
+
+    
+    
+        <li class="actionMenu deactivated dropdown" id="plone-contentmenu-display">
+          <a href="http://localhost:8080/Plone/select_default_view" data-toggle="dropdown" title="Seleccioneu el mode de visualització d&#39;aquesta carpeta, o escolliu un element com la seva vista per defecte." class="actionMenuHeader dropdown-toggle label-">
+             
+                <span>Mostra</span>
+                
+                <span class="arrowDownAlternative">▼</span>
+             
+          </a>
+          <ul class="actionMenuContent dropdown-menu">
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=folder_listing" title="" id="folder-folder_listing" class="">
+                        
+                        <span class="subMenuTitle">Vista estàndard</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=folder_summary_view" title="" id="folder-folder_summary_view" class="">
+                        
+                        <span class="subMenuTitle">Vista resum</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=folder_full_view" title="" id="folder-folder_full_view" class="">
+                        
+                        <span class="subMenuTitle">Tot el contingut</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=folder_tabular_view" title="" id="folder-folder_tabular_view" class="">
+                        
+                        <span class="subMenuTitle">Vista tabular</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li>
+                    <a href="http://localhost:8080/Plone/selectViewTemplate?templateId=event_listing" title="" id="folder-event_listing" class="">
+                        
+                        <span class="subMenuTitle">event_listing</span>
+                    </a>
+                    
+                  </li>
+                
+                
+                  <li class="actionSeparator">
+                    
+                    <div id="folderDefaultPageDisplay" class="actionMenuSelected">
+                        
+                        <span class="subMenuTitle">Element: Benvinguts a Plone</span>
+                    </div>
+                  </li>
+                
+                
+                  <li class="actionSeparator">
+                    <a href="http://localhost:8080/Plone/select_default_page" title="Canvia l&#39;element que es fa servir com a vista per defecte en aquesta carpeta" id="folderChangeDefaultPage" class="">
+                        
+                        <span class="subMenuTitle">Canvia l'element com a vista per defecte...</span>
+                    </a>
+                    
+                  </li>
+                
+          </ul>
+        </li>
+
+    
+
+</ul>
+
+
+    
+
+</div><div id="portal-personaltools-wrapper">
+
+<p class="hiddenStructure">Eines personals</p>
+
+<ul class="actionMenu deactivated" id="portal-personaltools">
+  
+  <li class="actionMenuHeader dropdown">
+    <a id="user-name" data-toggle="dropdown" href="http://localhost:8080/Plone/useractions">
+      <span>admin</span>
+      <span class="arrowDownAlternative">▼</span>
+    </a>
+    <ul class="actionMenuContent dropdown-menu">
+        <li id="personaltools-preferences">
+            <a href="http://localhost:8080/Plone/@@personal-preferences">Preferències</a>
+        </li>
+        <li id="personaltools-plone_setup">
+            <a href="http://localhost:8080/Plone/@@overview-controlpanel">Configuració del lloc</a>
+        </li>
+        <li id="personaltools-logout">
+            <a href="http://localhost:8080/Plone/logout">Surt</a>
+        </li>
+    </ul>
+  
+</li></ul>
+
+
+
+</div>
+            </header>
+          </div>
+        </div>
+      </div><div class="navbar navbar-inverse" id="content-header" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -50,32 +337,237 @@
         </div>
         <div class="collapse navbar-collapse">
           <header id="portal-top">
-          </header>
+      <div id="portal-header">
+    <p class="hiddenStructure">
+  <a accesskey="2" href="http://localhost:8080/Plone#content">Ves al contingut.</a> |
+
+  <a accesskey="6" href="http://localhost:8080/Plone#portal-globalnav">Salta a la navegació</a>
+</p>
+
+<a class="col-md-3 col-xs-12" id="portal-logo" title="Lloc web" accesskey="1" href="./Benvinguts a Plone — Lloc web_files/Benvinguts a Plone — Lloc web.html">
+    <img src="./Benvinguts a Plone — Lloc web_files/logo.png" alt="Lloc web" title="Lloc web" height="56" width="215"></a>
+
+<div class="col-md-3 col-xs-12" id="portal-searchbox">
+
+    <form id="searchGadget_form" action="http://localhost:8080/Plone/@@search">
+
+      <div class="pat-livesearch" data-pat-livesearch="{&quot;url&quot;: &quot;http://localhost:8080/Plone/@@getVocabulary?name=plone.app.vocabularies.Catalog&quot;, &quot;baseCriteria&quot;: [{&quot;i&quot;: &quot;portal_type&quot;, &quot;o&quot;: &quot;plone.app.querystring.operation.selection.is&quot;, &quot;v&quot;: [&quot;Collection&quot;, &quot;Document&quot;, &quot;Event&quot;, &quot;File&quot;, &quot;Folder&quot;, &quot;Image&quot;, &quot;Link&quot;, &quot;News Item&quot;]}]}">
+        <label class="hiddenStructure" for="searchGadget">Cerca</label>
+
+        <input name="SearchableText" type="text" size="18" title="Cerca en el lloc" placeholder="Cerca en el lloc" accesskey="4" autocomplete="off" class="searchField pat-livesearch-input" id="searchGadget">
+
+        
+
+        <div class="pat-livesearch-container pull-right"><div class="pat-livesearch-results"></div></div>
+        </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="http://localhost:8080/Plone/@@search" accesskey="5">Cerca avançada…</a>
+    </div>
+
+</div>
+
+
+
+</div>
+
+    </header>
         </div>
       </div>
-    </div>
-    <div class="row" id="above-content-wrapper">
-        <div id="above-content">
+    </div><div class="row" id="above-content-wrapper">
+        <section id="viewlet-above-content">
+    <p class="hiddenStructure">Navigation</p>
+
+    <div class="row" id="globalnav-wrapper"><div class="container"><ul class="col-md-12 col-xs-12 col-md-offset-3" id="portal-globalnav"><li id="portaltab-index_html" class="selected"><a href="./Benvinguts a Plone — Lloc web_files/Benvinguts a Plone — Lloc web.html" title="">Inici</a></li>
+    <li id="portaltab-news" class="plain"><a href="http://localhost:8080/Plone/news" title="Noticies del lloc">Noticies</a></li>
+    <li id="portaltab-events" class="plain"><a href="http://localhost:8080/Plone/events" title="Esdeveniments del lloc">Esdeveniments</a></li>
+    <li id="portaltab-Members" class="plain"><a href="http://localhost:8080/Plone/Members" title="Contenidor per als directoris personals dels usuaris del portal">Usuaris</a></li>
+    <li id="portaltab-test-page" class="plain"><a href="http://localhost:8080/Plone/test-page" title="page">Test page</a></li></ul></div></div>
+
+
+<div class="hero">
+    <div class="container">
+        <div class="jumbotron">
+          <h1>Welcome!</h1>
+          <p>Plone 5 rocks!</p>
+          <p><a href="http://plone.org/" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
         </div>
     </div>
-    <div class="container">
+</div>
+<section><div class="breadcrumbs" id="portal-breadcrumbs"><div class="container">
+
+  <span id="breadcrumbs-you-are-here" class="hiddenStructure">Sou a:</span>
+  <ol>
+    <li id="breadcrumbs-home">
+      <a href="./Benvinguts a Plone — Lloc web_files/Benvinguts a Plone — Lloc web.html">Inici</a>
+    </li>
+    
+  </ol>
+</div></div></section>
+</section>
+    </div><div class="container">
       <div class="row">
-        <aside id="global_statusmessage"></aside>
+        <aside id="global_statusmessage">
+      
+
+    <dl class="portalMessage info" id="kssPortalMessage" style="display:none">
+        <dt>Info</dt>
+        <dd></dd>
+    </dl>
+
+    
+
+    </aside>
       </div>
 
       <div id="main-container" class="row row-offcanvas row-offcanvas-right">
         <div id="column1-container">
         </div>
-        <div id="content-container">
+        
+      <div class="col-xs-12 col-sm-12">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+               <div id="content">
+
+          
+
+          <header>
+            <div id="viewlet-above-content-title"></div>
+              
+               
+               
+            
+            <h1 class="documentFirstHeading">Benvinguts a Plone</h1>
+        
+              
+            <div id="viewlet-below-content-title"><div class="documentByLine" id="plone-document-byline">
+  
+
+  
+  
+    <span class="documentAuthor">
+      per <a href="http://localhost:8080/Plone/author/admin">admin</a>
+         —
+    </span>
+  
+  
+
+  
+  
+
+  <span class="documentModified">
+    <span>darrera modificació</span>
+    13/11/2013 15:03
+  </span>
+  
+
+  
+
+  <span class="contentHistory" id="content-history">
+    —
+    <a href="http://localhost:8080/Plone/front-page/@@historyview">Historial</a>
+  </span>
+
+  
+
+  
+
+</div>
+</div>
+
+            
+               
+               
+            
+            <div class="documentDescription description">Felicitats! Heu instal·lat Plone satisfactòriament.</div>
+        
+            
+          </header>
+
+          <section id="viewlet-above-content-body">
+</section>
+          <section id="content-core">
+            
+    
+        <div id="parent-fieldname-text"><p class="discreet">Si esteu veient aquesta pàgina en lloc del web que esperàveu, és perquè el propietari d'aquest lloc web tot just ha acabat d'instal·lar Plone. No contacteu amb l'Equip de Plone o amb les llistes de correu de Plone per a reportar-ho.</p><h2>Per començar</h2><p>Abans de començar a explorar el vostre lloc Plone acabat de crear, si us plau, feu el següent:</p><ol>    <li>Asseguréu-vos que heu accedit com a usuari administrador/gestor.        <span class="discreet">(Heu de visualitzar un link Administració del lloc dalt de tot a la dreta)</span></li>    <li><a href="http://localhost:8080/Plone/@@mail-controlpanel">Configureu el vostre servidor de correu</a>. <span class="discreet">(Plone necessita un servidor SMTP vàlid per a verificar usuaris i enviar recordatoris de contrasenya)</span></li>    <li><a href="http://localhost:8080/Plone/@@security-controlpanel">Decidiu quin nivell de seguretat voleu al vostre lloc</a>. <span class="discreet">(Qui pot registrar-se, polítiques de contrasenya, etc)</span></li></ol><h2>Posi's còmode</h2><p>Després d'això, us suggerim que porteu a terme un o més d'aquests punts:</p><ul>    <li>Descobriu <a class="link-plain" href="http://plone.org/documentation/whatsnew">Què hi ha de nou a Plone</a>.</li>    <li>Llegiu la <a class="link-plain" href="http://plone.org/documentation">documentació</a>,  en especial        <a class="link-plain" href="http://plone.org/documentation/phc_topic_area?topic=Basic+Use">Quina documentació hauria de llegir</a>        i        <a class="link-plain" href="http://plone.org/documentation/faq/server-recommendations">Recomanacions per a la configuració del servidor</a>.    </li>    <li>Exploreu els <a class="link-plain" href="http://plone.org/products">productes addicionals disponibles</a> per a Plone.</li>    <li>Llegiu i/o subscriviu-vos als <a class="link-plain" href="http://plone.org/support">fòrums de suport</a>.</li></ul><h2>Faci'l a la seva manera</h2><p>Plone disposa de molts paràmetres diferents que es poden utilitzar per fer-lo tal i com el voleu. Alguns exemples són:</p><ul>    <li>    Escolliu un tema diferent, o bé seleccioneu-lo dels    <a href="http://localhost:8080/Plone/@@skins-controlpanel">que s'inclouen</a>, o un dels    <a class="link-plain" href="http://plone.org/products/by-category/themes">temes disponibles       a plone.org</a>. <span class="discreet">(Assegureu-vos que el tema és       compatible amb la versió de Plone que esteu utilitzant actualment)</span>    </li>    <li>    <a href="http://localhost:8080/Plone/@@types-controlpanel">    Decidiu quin tipus de flux de treball voleu al vostre lloc. </a>    <span class="discreet">(El predeterminat és    un flux de treball per a un lloc web stàndard. Si voleu utilitzar Plone com una intranet tancada,    hauríeu d'ajustar els paràmetres del flux de treball en conseqüència)</span>    </li>    <li>       Per defecte, Plone utilitza un editor visual per al contingut.    <span class="discreet">(En cas que preferiu sintaxi basada en text i/o sintaxi tipus wiki,        podeu canviar-ho al     <a href="http://localhost:8080/Plone/@@markup-controlpanel">panell de control del marcatge</a>)</span>    </li>    <li>...i trobareu molts més paràmetres disponibles a la        <a href="http://localhost:8080/Plone/plone_control_panel">Configuració del lloc</a>.    </li></ul><h2>Digui'ns com l'utilitza</h2><p>Esteu fent alguna cosa interessant amb Plone? Desplegament de llocs grans, casos d'ús interessants? Teniu una empresa que proporciona solucions basades en Plone?</p><ul>    <li>Afegiu els vostres llocs a la <a class="link-plain" href="http://plone.net/sites">Relació de llocs Plone</a>.        <span class="discreet">(O vegeu quins llocs ja hi són!)</span>    </li>    <li>Afegiu la vostra empresa com a <a class="link-plain" href="http://plone.net/providers">proveïdora de Plone</a>.</li>    <li>Afegiu un <a class="link-plain" href="http://plone.net/case-studies">cas d'estudi</a> que descrigui        el projecte implementat i el client.</li></ul><h2>Descubriu més sobre la nostra arquitectura</h2><p>Plone està basat en el servidor d'aplicacions Zope, i utilitza programació en llenguatge Python. Trobareu més informació sobre aquestes tecnologies a:</p><ul><li>El lloc web del <a class="link-plain" href="http://plone.org/">Sistema de Gestió de Continguts     de codi obert Plone</a>.</li><li>El lloc web del <a class="link-plain" href="http://zope2.zope.org/">servidor d'aplicacions Zope</a>.</li><li>El lloc web del llenguatge de programació <a class="link-plain" href="http://www.python.org/">Python</a>.</li></ul><h2>Feu una donació a la Fundació Plone</h2><p>Plone ha estat possible només gràcies a l'esforç de milers de persones i centenars d'empreses. La Fundació Plone:</p><ul>    <li>...protegeix i promociona Plone.</li>    <li>...és una organització benèfica registrada 501(c)(3)</li>    <li>...les donacions són deduïbles dels impostos.</li>    <li><a href="http://plone.org/foundation/foundation-donations">Mostreu el vostre suport!</a></li></ul><p>Gràcies per utilitzar el nostre producte, esperem que us agradi!</p><p>— L'Equip de Plone</p></div>
+    
+
+          </section>
+          <section id="viewlet-below-content-body">
+
+
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions">
+        
+
+        
+
+    </div>
+
+</section>
+
+          
         </div>
+            </div>
+          </div>
+          <footer class="row">
+            <div class="col-xs-12 col-sm-12">
+             <div id="viewlet-below-content">
+
+
+
+<div class="row">
+    <a class="managePortletsFallback" href="http://localhost:8080/Plone/front-page/@@manage-portlets">Administrar portlets</a>
+</div>
+
+</div>
+            </div>
+          </footer>
+      </div><!--/row-->
+  
         <div id="column2-container">
         </div>
       </div><!--/row-->
 
-    </div><!--/.container-->
+    </div><!--/.container--><footer id="portal-footer-wrapper">
+      <div class="container" id="portal-footer">
+      <div id="portal-footer">
+          <p>
+               El 
+                    <a href="http://plone.org/">Plone<sup>®</sup> Open Source CMS/WCM</a>
+                és <abbr title="Copyright">©</abbr> 2000-2013 de la 
+                    <a href="http://plone.org/foundation">Fundació Plone</a> i amics.
 
-    <footer id="portal-footer-wrapper">
-      <div class="container" id="portal-footer"></div>
+               Distribuït sota la llicència 
+                         <a href="http://creativecommons.org/licenses/GPL/2.0/">Llicència GNU GPL</a>.
+          </p>
+
+</div>
+
+<div id="portal-colophon">
+<div class="colophonWrapper">
+<ul>
+  <li>
+    <a href="http://plone.org/" title="Aquest lloc web s&#39;ha desenvolupat amb Plone Open Source CMS/WCM.">Powered by Plone &amp; Python</a>
+  </li>
+</ul>
+</div>
+</div>
+
+<ul id="portal-siteactions">
+
+    <li id="siteaction-sitemap"><a href="http://localhost:8080/Plone/sitemap" title="Mapa del lloc" accesskey="3">Mapa del lloc</a></li>
+    <li id="siteaction-accessibility"><a href="http://localhost:8080/Plone/accessibility-info" title="Accessibilitat" accesskey="0">Accessibilitat</a></li>
+    <li id="siteaction-contact"><a href="http://localhost:8080/Plone/contact-info" title="Contacte" accesskey="9">Contacte</a></li>
+</ul>
+
+
+    </div>
     </footer>
-  </body>
-</html>
+</body></html>
