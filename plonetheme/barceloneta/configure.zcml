@@ -28,6 +28,58 @@
 
   <!-- Static mockup resources -->
   <browser:resource
+      name="plonetheme.barceloneta-favicon.ico"
+      file="static/barceloneta-favicon.ico"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-apple-touch-icon.png"
+      file="static/barceloneta-apple-touch-icon.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-apple-touch-icon-144x144-precomposed.png"
+      file="static/barceloneta-apple-touch-icon-144x144-precomposed.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-apple-touch-icon-114x114-precomposed.png"
+      file="static/barceloneta-apple-touch-icon-114x114-precomposed.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-apple-touch-icon-72x72-precomposed.png"
+      file="static/barceloneta-apple-touch-icon-72x72-precomposed.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-apple-touch-icon-57x57-precomposed.png"
+      file="static/barceloneta-apple-touch-icon-57x57-precomposed.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-apple-touch-icon-precomposed.png"
+      file="static/barceloneta-apple-touch-icon-precomposed.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+
+  <browser:resource
+      name="plonetheme.barceloneta-ticks.png"
+      file="static/barceloneta-ticks.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-bg-watermark.png"
+      file="static/barceloneta-bg-watermark.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-bg-breadcrumb.png"
+      file="static/barceloneta-bg-breadcrumb.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+
+  <browser:resource
       name="plonetheme.barceloneta-select2.png"
       file="static/barceloneta-select2.png"
       layer=".interfaces.IBarcelonetaLayer"
