@@ -1,23 +1,23 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:zcml="http://namespaces.zope.org/zcml">
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="plone">
 
-    <browser:viewlet
-    name="barceloneta.hero"
-    manager="plone.app.layout.viewlets.interfaces.IAboveContent"
-    class=".hero.HeroViewlet"
-    permission="zope2.View"
-    layer="plonetheme.barceloneta.interfaces.IThemeSpecific"
-    />
+  <browser:viewlet
+      name="barceloneta.hero"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      class=".hero.HeroViewlet"
+      permission="zope2.View"
+      layer="..interfaces.IBarcelonetaLayer"
+      />
 
-    <browser:viewlet
-    name="plone.globalnav2"
-    manager="plone.app.layout.viewlets.interfaces.IAboveContent"
-    class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
-    permission="zope2.View"
-    layer="plonetheme.barceloneta.interfaces.IThemeSpecific"
-    />
-
+  <browser:viewlet
+      name="plone.globalnav2"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+      permission="zope2.View"
+      layer="..interfaces.IBarcelonetaLayer"
+      />
 
 </configure>
