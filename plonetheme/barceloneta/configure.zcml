@@ -163,6 +163,12 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
 
+  <browser:resource
+      name="plonetheme.barceloneta-legacy.js"
+      file="static/barceloneta-legacy.js"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+
   <configure zcml:condition="installed mockup">
     <browser:resource
         name="plonetheme.barceloneta.js"
