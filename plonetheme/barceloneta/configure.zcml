@@ -27,14 +27,10 @@
   <plone:static directory="theme" name="barceloneta" type="theme"/>
 
   <!-- Static mockup resources -->
+
   <browser:resource
-      name="plonetheme.barceloneta-favicon.ico"
-      file="static/barceloneta-favicon.ico"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon.png"
-      file="static/barceloneta-apple-touch-icon.png"
+      name="plonetheme.barceloneta-apple-touch-icon-114x114-precomposed.png"
+      file="static/barceloneta-apple-touch-icon-114x114-precomposed.png"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
@@ -43,8 +39,8 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon-114x114-precomposed.png"
-      file="static/barceloneta-apple-touch-icon-114x114-precomposed.png"
+      name="plonetheme.barceloneta-apple-touch-icon-57x57-precomposed.png"
+      file="static/barceloneta-apple-touch-icon-57x57-precomposed.png"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
@@ -53,8 +49,8 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon-57x57-precomposed.png"
-      file="static/barceloneta-apple-touch-icon-57x57-precomposed.png"
+      name="plonetheme.barceloneta-apple-touch-icon.png"
+      file="static/barceloneta-apple-touch-icon.png"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
@@ -62,10 +58,9 @@
       file="static/barceloneta-apple-touch-icon-precomposed.png"
       layer=".interfaces.IBarcelonetaLayer"
       />
-
   <browser:resource
-      name="plonetheme.barceloneta-ticks.png"
-      file="static/barceloneta-ticks.png"
+      name="plonetheme.barceloneta-bg-breadcrumb.png"
+      file="static/barceloneta-bg-breadcrumb.png"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
@@ -74,43 +69,265 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-bg-breadcrumb.png"
-      file="static/barceloneta-bg-breadcrumb.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-
-  <browser:resource
-      name="plonetheme.barceloneta-select2.png"
-      file="static/barceloneta-select2.png"
+      name="plonetheme.barceloneta-bootstrap-glyphicons-halflings-regular.eot"
+      file="static/barceloneta-bootstrap-glyphicons-halflings-regular.eot"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-select2-spinner.gif"
-      file="static/barceloneta-select2-spinner.gif"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-
-  <browser:resource
-      name="plonetheme.barceloneta-glyphicons-halflings-regular.eot"
-      file="static/barceloneta-glyphicons-halflings-regular.eot"
+      name="plonetheme.barceloneta-bootstrap-glyphicons-halflings-regular.svg"
+      file="static/barceloneta-bootstrap-glyphicons-halflings-regular.svg"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-glyphicons-halflings-regular.svg"
-      file="static/barceloneta-glyphicons-halflings-regular.svg"
+      name="plonetheme.barceloneta-bootstrap-glyphicons-halflings-regular.ttf"
+      file="static/barceloneta-bootstrap-glyphicons-halflings-regular.ttf"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-glyphicons-halflings-regular.ttf"
-      file="static/barceloneta-glyphicons-halflings-regular.ttf"
+      name="plonetheme.barceloneta-bootstrap-glyphicons-halflings-regular.woff"
+      file="static/barceloneta-bootstrap-glyphicons-halflings-regular.woff"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-glyphicons-halflings-regular.woff"
-      file="static/barceloneta-glyphicons-halflings-regular.woff"
+      name="plonetheme.barceloneta-dropzone-spritemap@2x.png"
+      file="static/barceloneta-dropzone-spritemap@2x.png"
       layer=".interfaces.IBarcelonetaLayer"
       />
-
+  <browser:resource
+      name="plonetheme.barceloneta-dropzone-spritemap.png"
+      file="static/barceloneta-dropzone-spritemap.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-favicon.ico"
+      file="static/barceloneta-favicon.ico"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-jqtree-jqtree-circle.png"
+      file="static/barceloneta-jqtree-jqtree-circle.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-BoldItalic-webfont.eot"
+      file="static/barceloneta-OpenSans-BoldItalic-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-BoldItalic-webfont.svg"
+      file="static/barceloneta-OpenSans-BoldItalic-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-BoldItalic-webfont.ttf"
+      file="static/barceloneta-OpenSans-BoldItalic-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-BoldItalic-webfont.woff"
+      file="static/barceloneta-OpenSans-BoldItalic-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Bold-webfont.eot"
+      file="static/barceloneta-OpenSans-Bold-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Bold-webfont.svg"
+      file="static/barceloneta-OpenSans-Bold-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Bold-webfont.ttf"
+      file="static/barceloneta-OpenSans-Bold-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Bold-webfont.woff"
+      file="static/barceloneta-OpenSans-Bold-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-ExtraBoldItalic-webfont.eot"
+      file="static/barceloneta-OpenSans-ExtraBoldItalic-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-ExtraBoldItalic-webfont.svg"
+      file="static/barceloneta-OpenSans-ExtraBoldItalic-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-ExtraBoldItalic-webfont.ttf"
+      file="static/barceloneta-OpenSans-ExtraBoldItalic-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-ExtraBoldItalic-webfont.woff"
+      file="static/barceloneta-OpenSans-ExtraBoldItalic-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-ExtraBold-webfont.eot"
+      file="static/barceloneta-OpenSans-ExtraBold-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-ExtraBold-webfont.svg"
+      file="static/barceloneta-OpenSans-ExtraBold-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-ExtraBold-webfont.ttf"
+      file="static/barceloneta-OpenSans-ExtraBold-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-ExtraBold-webfont.woff"
+      file="static/barceloneta-OpenSans-ExtraBold-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Italic-webfont.eot"
+      file="static/barceloneta-OpenSans-Italic-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Italic-webfont.svg"
+      file="static/barceloneta-OpenSans-Italic-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Italic-webfont.ttf"
+      file="static/barceloneta-OpenSans-Italic-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Italic-webfont.woff"
+      file="static/barceloneta-OpenSans-Italic-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-LightItalic-webfont.eot"
+      file="static/barceloneta-OpenSans-LightItalic-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-LightItalic-webfont.svg"
+      file="static/barceloneta-OpenSans-LightItalic-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-LightItalic-webfont.ttf"
+      file="static/barceloneta-OpenSans-LightItalic-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-LightItalic-webfont.woff"
+      file="static/barceloneta-OpenSans-LightItalic-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Light-webfont.eot"
+      file="static/barceloneta-OpenSans-Light-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Light-webfont.svg"
+      file="static/barceloneta-OpenSans-Light-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Light-webfont.ttf"
+      file="static/barceloneta-OpenSans-Light-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Light-webfont.woff"
+      file="static/barceloneta-OpenSans-Light-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Regular-webfont.eot"
+      file="static/barceloneta-OpenSans-Regular-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Regular-webfont.svg"
+      file="static/barceloneta-OpenSans-Regular-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Regular-webfont.ttf"
+      file="static/barceloneta-OpenSans-Regular-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Regular-webfont.woff"
+      file="static/barceloneta-OpenSans-Regular-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-SemiboldItalic-webfont.eot"
+      file="static/barceloneta-OpenSans-SemiboldItalic-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-SemiboldItalic-webfont.svg"
+      file="static/barceloneta-OpenSans-SemiboldItalic-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-SemiboldItalic-webfont.ttf"
+      file="static/barceloneta-OpenSans-SemiboldItalic-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-SemiboldItalic-webfont.woff"
+      file="static/barceloneta-OpenSans-SemiboldItalic-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Semibold-webfont.eot"
+      file="static/barceloneta-OpenSans-Semibold-webfont.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Semibold-webfont.svg"
+      file="static/barceloneta-OpenSans-Semibold-webfont.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Semibold-webfont.ttf"
+      file="static/barceloneta-OpenSans-Semibold-webfont.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-OpenSans-Semibold-webfont.woff"
+      file="static/barceloneta-OpenSans-Semibold-webfont.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-select2-select2.png"
+      file="static/barceloneta-select2-select2.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-select2-select2-spinner.gif"
+      file="static/barceloneta-select2-select2-spinner.gif"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-select2-select2x2.png"
+      file="static/barceloneta-select2-select2x2.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-ticks.png"
+      file="static/barceloneta-ticks.png"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
   <browser:resource
       name="plonetheme.barceloneta-tinymce-icomoon.eot"
       file="static/barceloneta-tinymce-icomoon.eot"
@@ -122,44 +339,18 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon.woff"
-      file="static/barceloneta-tinymce-icomoon.woff"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
       name="plonetheme.barceloneta-tinymce-icomoon.ttf"
       file="static/barceloneta-tinymce-icomoon.ttf"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon-small.eot"
-      file="static/barceloneta-tinymce-icomoon-small.eot"
+      name="plonetheme.barceloneta-tinymce-icomoon.woff"
+      file="static/barceloneta-tinymce-icomoon.woff"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon-small.svg"
-      file="static/barceloneta-tinymce-icomoon-small.svg"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon-small.woff"
-      file="static/barceloneta-tinymce-icomoon-small.woff"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon-small.ttf"
-      file="static/barceloneta-tinymce-icomoon-small.ttf"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-
-  <browser:resource
-      name="plonetheme.barceloneta-dropzone-spritemap.png"
-      file="static/barceloneta-dropzone-spritemap.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-dropzone-spritemap@2x.png"
-      file="static/barceloneta-dropzone-spritemap@2x.png"
+      name="plonetheme.barceloneta-tinymce-loader.gif"
+      file="static/barceloneta-tinymce-loader.gif"
       layer=".interfaces.IBarcelonetaLayer"
       />
 
