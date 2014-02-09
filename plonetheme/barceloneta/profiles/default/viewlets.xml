@@ -1,8 +1,6 @@
 <?xml version="1.0"?>
 <object>
  <order manager="plone.abovecontent" skinname="Plone Default">
-  <viewlet name="plone.globalnav2"/>
-  <viewlet name="barceloneta.hero"/>
   <viewlet name="plone.path_bar"/>
  </order>
  <order manager="plone.belowcontent" skinname="Plone Default">
@@ -34,7 +32,4 @@
   <viewlet name="plone.contentactions"/>
   <viewlet name="plone.personal_bar"/>
  </order>
- <hidden manager="plone.portalheader" skinname="Plone Default">
-  <viewlet name="plone.global_sections"/>
- </hidden>
 </object>

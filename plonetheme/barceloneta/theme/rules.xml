@@ -33,36 +33,6 @@
   <copy attributes="class" css:content="body" css:theme="body" />
   <copy attributes="id dir" css:content="body" css:theme="body" />
 
-  <!-- SearchBox -->
-  <xsl:template match="//div[@id='portal-searchbox']">
-    <xsl:copy>
-      <xsl:attribute name="class">col-md-3 col-xs-12</xsl:attribute>
-      <xsl:copy-of select="@*" />
-      <xsl:apply-templates />
-    </xsl:copy>
-  </xsl:template>
-
-  <!-- Portal Logo -->
-  <xsl:template match="//a[@id='portal-logo']">
-    <xsl:copy>
-      <xsl:attribute name="class">col-md-3 col-xs-12</xsl:attribute>
-      <xsl:copy-of select="@*" />
-      <xsl:apply-templates />
-    </xsl:copy>
-  </xsl:template>
-
-  <xsl:template match="//ul[@id='portal-globalnav']">
-    <div class="row" id="globalnav-wrapper">
-      <div class="container">    
-      <xsl:copy>
-          <xsl:attribute name="class">col-md-12 col-xs-12 col-md-offset-3</xsl:attribute>
-          <xsl:copy-of select="@*" />
-          <xsl:apply-templates />
-      </xsl:copy>
-      </div>
-    </div>
-  </xsl:template>
-
   <!-- Central column -->
   <xsl:variable name="central">
     <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-6</xsl:if>
@@ -70,6 +40,14 @@
     <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-9</xsl:if>
     <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12</xsl:if>
   </xsl:variable>
+
+  <!-- move global nav -->
+  <drop css:content="ul#portal-globalnav" />
+  <replace css:theme-children="ul#portal-globalnav" css:content-children="ul#portal-globalnav" method="raw" />
+
+  <!-- hero unit on homepage only -->
+  <drop css:if-not-content="body.template-document_view.section-front-page"
+        css:theme="div.hero" />
 
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
@@ -130,25 +108,7 @@
   <drop css:content="#portal-personaltools-wrapper" />
 
   <!-- Content header -->
-  <replace css:theme="#content-header" css:if-content="#portal-top">
-    <div class="navbar navbar-inverse" id="content-header" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse">
-          <xsl:copy-of select="//*[@id='portal-top']/*"/>
-          <header id="portal-top">
-          </header>
-        </div>
-      </div>
-    </div>
-  </replace>
+  <replace css:theme="#portal-top" css:content-children="#portal-top" />
 
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
 

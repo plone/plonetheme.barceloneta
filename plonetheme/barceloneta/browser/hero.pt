@@ -1,9 +1,0 @@
-<div class="hero">
-    <div class="container">
-        <div class="jumbotron">
-          <h1 i18n:translate="heading_welcome_to">Welcome!</h1>
-          <p>Plone 5 rocks!</p>
-          <p><a href="http://plone.org" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
-        </div>
-    </div>
-</div>
