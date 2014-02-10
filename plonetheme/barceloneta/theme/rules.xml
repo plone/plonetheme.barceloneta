@@ -20,12 +20,10 @@
     <!-- dont use Plone icons, use the theme -->
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
-    <!-- dont use Plone viewport, use the theme -->
-    <!-- <drop css:content="head meta[name='viewport']" /> -->
     <!-- Script -->
-    <!-- <after theme="/html/body/footer" content="/html/head/script" /> -->
+    <after theme="/html/body/footer" content="/html/head/script" />
     <!-- CSS -->
-    <!-- <before theme-children="/html/head" content="/html/head/link" /> -->
+    <before theme-children="/html/head" content="/html/head/link" />
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag.
