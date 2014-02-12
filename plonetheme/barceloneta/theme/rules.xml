@@ -6,7 +6,7 @@
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <theme href="/++theme++barceloneta/index.html"/>
-  <notheme if-path="@@manage-viewlets" />
+  <notheme css:if-not-content="#visual-portal-wrapper" />
 
   <rules if-content="//*[@id='portal-top']">
     <!-- Attributes -->
