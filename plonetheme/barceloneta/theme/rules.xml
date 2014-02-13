@@ -28,8 +28,7 @@
 
   <!-- Copy over the id/class attributes on the body tag.
        This is important for per-section styling -->
-  <copy attributes="class" css:content="body" css:theme="body" />
-  <copy attributes="id dir" css:content="body" css:theme="body" />
+  <copy attributes="*" css:content="body" css:theme="body" />
 
   <!-- Central column -->
   <xsl:variable name="central">
