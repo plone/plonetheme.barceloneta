@@ -102,8 +102,6 @@
     </replace>
   </rules>
 
-  <drop css:content="#portal-personaltools-wrapper" />
-
   <!-- Content header -->
   <replace css:theme="#portal-top" css:content-children="#portal-top" />
 
