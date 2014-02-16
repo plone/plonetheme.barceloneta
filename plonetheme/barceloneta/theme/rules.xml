@@ -110,6 +110,8 @@
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
 
   <!-- toolbar -->
-  <xi:include href="toolbar-rules.xml" />
+  <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
+  <replace css:theme="#portal-toolbar" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
+
 
 </rules>
