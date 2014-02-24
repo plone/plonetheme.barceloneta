@@ -35,6 +35,7 @@ setup(name='plonetheme.barceloneta',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.theming',
       ],
       extras_require={
           'test': [
