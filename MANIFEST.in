@@ -1,0 +1,5 @@
+recursive-include plonetheme *
+recursive-include *.rst
+include *
+global-exclude *.pyc
+prune design
