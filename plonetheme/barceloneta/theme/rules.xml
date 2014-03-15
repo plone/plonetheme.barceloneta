@@ -52,7 +52,7 @@
   <xsl:template match="//*[@id='portal-breadcrumbs']">
     <xsl:copy>
       <div class="breadcrumb" id="portal-breadcrumbs">
-        <div class="container">
+        <div class="container-fluid">
           <xsl:apply-templates />
         </div>
       </div>
