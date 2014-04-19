@@ -328,28 +328,63 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon.eot"
-      file="static/barceloneta-tinymce-icomoon.eot"
+      name="plonetheme.barceloneta-tinymce-content.css"
+      file="static/barceloneta-tinymce-content.min.css"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon.svg"
-      file="static/barceloneta-tinymce-icomoon.svg"
+      name="plonetheme.barceloneta-tinymce-font-tinymce-small.eot"
+      file="static/barceloneta-tinymce-font-tinymce-small.eot"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon.ttf"
-      file="static/barceloneta-tinymce-icomoon.ttf"
+      name="plonetheme.barceloneta-tinymce-font-tinymce-small.svg"
+      file="static/barceloneta-tinymce-font-tinymce-small.svg"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-tinymce-icomoon.woff"
-      file="static/barceloneta-tinymce-icomoon.woff"
+      name="plonetheme.barceloneta-tinymce-font-tinymce-small.ttf"
+      file="static/barceloneta-tinymce-font-tinymce-small.ttf"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-tinymce-loader.gif"
-      file="static/barceloneta-tinymce-loader.gif"
+      name="plonetheme.barceloneta-tinymce-font-tinymce-small.woff"
+      file="static/barceloneta-tinymce-font-tinymce-small.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-tinymce-font-tinymce.eot"
+      file="static/barceloneta-tinymce-font-tinymce.eot"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-tinymce-font-tinymce.svg"
+      file="static/barceloneta-tinymce-font-tinymce.svg"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-tinymce-font-tinymce.ttf"
+      file="static/barceloneta-tinymce-font-tinymce.ttf"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-tinymce-font-tinymce.woff"
+      file="static/barceloneta-tinymce-font-tinymce.woff"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-tinymce-img-anchor.gif"
+      file="static/barceloneta-tinymce-img-anchor.gif"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-tinymce-img-loader.gif"
+      file="static/barceloneta-tinymce-img-loader.gif"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+  <browser:resource
+      name="plonetheme.barceloneta-tinymce-img-object.gif"
+      file="static/barceloneta-tinymce-img-object.gif"
       layer=".interfaces.IBarcelonetaLayer"
       />
 
