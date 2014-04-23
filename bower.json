@@ -1,0 +1,8 @@
+{
+  "name": "barceloneta",
+  "version": "1.6.0",
+  "description": "Barceloneta dependencies",
+  "dependencies": {
+    "bootstrap": "3.1.1"
+  }
+}

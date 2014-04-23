@@ -394,15 +394,17 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
 
+  <browser:resource
+      name="plonetheme.barceloneta.css"
+      file="static/barceloneta.css"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
+
+
   <configure zcml:condition="installed mockup">
     <browser:resource
         name="plonetheme.barceloneta.js"
         file="static/barceloneta.js"
-        layer=".interfaces.IBarcelonetaLayer"
-        />
-    <browser:resource
-        name="plonetheme.barceloneta.css"
-        file="static/barceloneta.css"
         layer=".interfaces.IBarcelonetaLayer"
         />
   </configure>
@@ -411,11 +413,6 @@
     <browser:resource
         name="plonetheme.barceloneta.js"
         file="static/barceloneta.min.js"
-        layer=".interfaces.IBarcelonetaLayer"
-        />
-    <browser:resource
-        name="plonetheme.barceloneta.css"
-        file="static/barceloneta.min.css"
         layer=".interfaces.IBarcelonetaLayer"
         />
   </configure>

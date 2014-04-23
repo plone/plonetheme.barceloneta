@@ -1,0 +1,12 @@
+In order to develop plonetheme.barceloneta you need to execute on the root of the package:
+
+bower install 
+npm install
+
+If you change the images/fonts files you can copy to the package at:
+
+grunt copy
+
+After executing this commands you can run grunt to watch the changes:
+
+grunt watch
