@@ -6964,6 +6964,18 @@ html {
   border: 1px solid #767676;
   border-radius: 3px;
   float: right;
+  transition: all 1s;
+}
+#searchGadget::-webkit-input-placeholder,
+#searchGadget:-moz-placeholder,
+#searchGadget::-moz-placeholder,
+#searchGadget:-ms-input-placeholder,
+#searchGadget [placeholder] {
+  color: red;
+}
+#searchGadget:focus {
+  width: 300px;
+  color: #333;
 }
 /* Hero */
 .hero {
@@ -6973,6 +6985,7 @@ html {
 .hero .jumbotron {
   background: url('++resource++plonetheme.barceloneta-bg-watermark.png');
   background-position: bottom right;
+  background-repeat: no-repeat;
   margin-bottom: 0px;
   padding-left: 0;
   padding-right: 0;
@@ -7139,6 +7152,7 @@ button #content .documentByLine > span,
   padding-bottom: 30px;
   margin-top: 40px;
   margin-bottom: 0;
+  font-weight: 600;
 }
 /* Footer */
 footer {
@@ -7158,17 +7172,32 @@ footer {
 #portal-footer-wrapper .portletWrapper {
   display: inline-block;
 }
+#portal-footer-wrapper .portletWrapper:first-child {
+  display: block;
+  border-bottom: 1px solid #454545;
+  padding-bottom: 1em;
+  margin-bottom: .5em;
+}
 #portal-footer-wrapper .portlet {
   background: transparent;
   border: 0;
-  text-transform: uppercase;
-  font-size: 85%;
-  font-weight: bold;
+  font-weight: 200;
 }
 #portal-footer-wrapper .portlet .portletContent li {
   background: transparent;
   display: inline-block;
   border: 0;
+  white-space: nowrap;
+  padding: 10px 30px;
+}
+#portal-footer-wrapper .portlet .portletItem:before {
+  content: "";
+}
+#portal-footer-wrapper .portletActions {
+  text-transform: uppercase;
+  font-size: 85%;
+  font-weight: 600;
+  margin-right: 15px;
 }
 #portal-footer {
   text-align: center;
@@ -7244,9 +7273,11 @@ body.ajax_load {
 /* Form elements */
 .discreet {
   color: #999999;
+  font-weight: 200;
 }
 .formHelp {
   font-style: italic;
+  font-weight: 200;
   color: #999999;
 }
 .formControls {
@@ -7363,4 +7394,96 @@ fieldset[disabled] .link-parent.active {
   background-color: #333333;
 }
 /* help classes */
+body {
+  margin-left: 50px;
+}
+/*we need to activate it just with edit-zone activated*/
+#content .field input[type="text"] {
+  font-size: 1em;
+}
+/*style cleaner MODALS*/
+.modal-content {
+  border: 0;
+  box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.67);
+  border-radius: 4px;
+}
+.modal .modal-dialog .modal-header {
+  border-bottom: 0;
+  padding: 20px 20px 0;
+}
+.modal .modal-dialog .modal-header h3 {
+  font-size: 36px;
+}
+.modal .modal-dialog .modal-header a.close {
+  margin-top: -2px;
+  font-size: 300%;
+  font-weight: 200;
+  opacity: .33;
+}
+.modal .modal-dialog .modal-header a.close:hover,
+.modal .modal-dialog .modal-header a.close :focus {
+  opacity: .67;
+}
+/*complet route to win*/
+.modal-footer {
+  border-top: 0;
+  padding: 0;
+}
+/* PLONE LESS*/
+.required {
+  margin-left: -5px;
+  /*compensate &nbsp; space*/
+}
+.required:after {
+  color: #B3005D;
+  content: "*";
+  top: .25em;
+  position: relative;
+  font-size: 150%;
+  line-height: 0;
+}
+[type="checkbox"].required,
+[type="radio"].required {
+  margin-right: 1em;
+}
+[type="checkbox"].required:after,
+[type="radio"].required:after {
+  margin-left: .75em;
+  top: .1em;
+}
+#content .field input[type="text"][id$="title"] {
+  font-size: 200%;
+  height: auto;
+}
+.picker__select--month,
+.picker__select--year {
+  display: inline-block;
+}
+.picker__weekday {
+  font-size: 1em;
+  text-align: center;
+}
+.pattern-pickadate-wrapper .pattern-pickadate-date-wrapper .picker__holder {
+  margin: 0;
+}
+/* FI PLONE LESS*/
+/*footer for pages really short*/
+body,
+html {
+  height: 100%;
+}
+.outer-wrapper {
+  min-height: 100%;
+  margin: 0 auto -100px;
+}
+/*100px is footer height*/
+#portal-footer-wrapper {
+  min-height: 100px;
+}
+#portal-footer-wrapper .portlet {
+  margin-bottom: 0;
+}
+#portal-footer {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=++resource++plonetheme.barceloneta/barceloneta.css.map */
