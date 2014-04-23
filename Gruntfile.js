@@ -2,6 +2,40 @@ module.exports = function (grunt) {
     'use strict';
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        // we could just concatenate everything, really
+        // but we like to have it the complex way.
+        // also, in this way we do not have to worry
+        // about putting files in the correct order
+        // (the dependency tree is walked by r.js)
+        requirejs: {
+            compile: {
+                // What we do here:
+                //  1. we define dependencies else the compilation will fail,
+                //     and the call to define won't be rewritten
+                //     and we have a big error
+                //  2. but then we load plone.mockup also in the live site,
+                //     and this will result in double-loading
+                //     all the dependencies with catastrophic effects
+                //     (global states and registries will be rewritten,
+                //     nothing will work)
+                //  3. So we stub out every single dependency.
+                //  4. Result: 10 lines of code to do absolutely nothing.
+                //     Amazing :)
+                options: {
+                    baseUrl: "./",
+                    paths: {
+                        "jquery": "bower_components/jquery/jquery",
+                        "mockup-registry": "bower_components/mockup-core/js/registry",
+                        "mockup-patterns-base": "bower_components/mockup-core/js/pattern",
+                        "bootstrap-carousel": "bower_components/bootstrap/js/carousel"
+                    },
+                    name: "js/barceloneta",
+                    out: "plonetheme/barceloneta/static/barceloneta.js",
+                    optimize: "none",
+                    stubModules: ['jquery', 'mockup-registry', 'mockup-patterns-base']
+                }
+            }
+        },
         less: {
             dist: {
                 options: {
@@ -13,18 +47,19 @@ module.exports = function (grunt) {
                     sourceMapFilename: 'plonetheme/barceloneta/static/barceloneta.css.map'
                 },
                 files: {
-                    'plonetheme/barceloneta/static/barceloneta.css': 'less/barceloneta.less'
+                    'plonetheme/barceloneta/static/barceloneta.css': 'less/barceloneta.less',
+                    'less/barceloneta.css': 'less/barceloneta.less'
                 }
             }
         },
         copy: {
-              barceloneta: {
+            barceloneta: {
                 files: [
-                  { expand: true, cwd: 'images/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
-                  { expand: true, cwd: 'fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' }
+                    { expand: true, cwd: 'less/images/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
+                    { expand: true, cwd: 'less/fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' }
                 ]
-              }
-            },
+            }
+        },
         sed: {
           'barceloneta-images': {
             path: 'plonetheme/barceloneta/static/barceloneta.css',
@@ -39,8 +74,8 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: ['less/*.less',],
-                tasks: ['less', 'sed']
+                files: ['less/*.less', 'js/*.js'],
+                tasks: ['less', 'sed', 'requirejs']
             }
         }
     });
@@ -49,6 +84,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-sed');
     grunt.registerTask('default', ['watch']);
 };

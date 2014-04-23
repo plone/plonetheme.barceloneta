@@ -3,6 +3,11 @@
   "version": "1.6.0",
   "description": "Barceloneta dependencies",
   "dependencies": {
-    "bootstrap": "3.1.1"
+    "bootstrap": "3.1.1",
+    "jquery": "1.9.1",
+    "mockup-core": "1.2.4"
+  },
+  "resolutions": {
+    "jquery": "1.9.1"
   }
 }
