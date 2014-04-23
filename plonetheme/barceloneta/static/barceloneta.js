@@ -1,1 +1,51 @@
-!function(){"use strict";domready(function(){var a=document.createElement("link"),b=window.getScriptPath().path();a.setAttribute("rel","stylesheet"),a.setAttribute("type","text/css"),a.setAttribute("href",b+"++resource++mockup/build/barceloneta.min.css"),document.getElementsByTagName("head")[0].appendChild(a);var c=document.createElement("script");c.setAttribute("type","text/javascript"),c.setAttribute("src",b+"++resource++mockup/js/config.js"),c.onload=function(){requirejs.config({baseUrl:b+"++resource++mockup/"}),require(["mockup-bundles-barceloneta"])},document.getElementsByTagName("head")[0].appendChild(c)})}();
+// Author: Rok Garbas
+// Contact: rok@garbas.si
+// Version: 1.0
+// Description:
+//
+// License:
+//
+// Copyright (C) 2010 Plone Foundation
+//
+// This program is free software; you can redistribute it and/or modify it
+// under the terms of the GNU General Public License as published by the Free
+// Software Foundation; either version 2 of the License.
+//
+// This program is distributed in the hope that it will be useful, but WITHOUT
+// ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+// FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+// more details.
+//
+// You should have received a copy of the GNU General Public License along with
+// this program; if not, write to the Free Software Foundation, Inc., 51
+// Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+//
+
+define([
+  'jquery',
+  'mockup-registry',
+  'mockup-patterns-base',
+  'bootstrap-js'
+], function($, Registry, Base) {
+  'use strict';
+
+  // BBB: we need to hook pattern to classes which plone was using until now
+  var PloneBarceloneta = Base.extend({
+    name: 'plone-barceloneta',
+    init: function() {
+      var self = this;
+
+    }
+
+  });
+
+  // initialize only if we are in top frame
+  if (window.parent === window) {
+    $(document).ready(function() {
+      $('body').addClass('pat-plone-barceloneta');
+      Registry.scan($('body'));
+    });
+  }
+
+  return PloneBarceloneta;
+});
