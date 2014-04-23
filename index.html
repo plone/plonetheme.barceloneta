@@ -1,0 +1,728 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/plone/Products.CMFPlone/master/Products/CMFPlone/static/plone.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="less/barceloneta.css" media="all">
+    <script src="js/plone.min.js"></script>
+    <script src="plonetheme/barceloneta/static/barceloneta.js"></script>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div id="main-container" class="row row-offcanvas row-offcanvas-right">
+        <div id="content-container">
+
+<h1 class="documentFirstHeading">Plone User Interface elements test page</h1>
+
+<div class="documentDescription">
+This page lists the common user interface elements that exist in Plone, and
+shows you how they are rendered. It also tests a couple of common Internet
+Explorer rendering bugs, so you can see if your changes have triggered any
+bad behaviour on this front.
+</div>
+
+<div id="content-core">
+<pre>
+Headlines
+</pre>
+
+<div class="hero" role="banner">
+    <div class="container-fluid">
+        <div class="jumbotron">
+          <h1>Welcome!</h1>
+          <p>Plone 5 rocks!</p>
+          <p><a href="http://plone.org" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+        </div>
+    </div>
+</div>
+
+<h1>Headline h1</h1>
+<p>And a paragraph</p>
+<h2>Headline h2</h2>
+<p>And a paragraph</p>
+<h3>Headline h3</h3>
+<p>And a paragraph</p>
+<h4>Headline h4</h4>
+<p>And a paragraph</p>
+<h5>Headline h5</h5>
+<p>And a paragraph</p>
+<h6>Headline h6</h6>
+
+<pre>Example document rendering</pre>
+
+<div class="portalMessage info">
+    <strong>
+        Info
+    </strong>
+    <span tal:omit-tag="">
+        The portalMessage class, can also contain <a href="#">links</a> - used to
+        give the user temporary status messages.
+    </span>
+</div>
+
+<dl class="portalMessage error">
+    <dt>
+        Error
+    </dt>
+    <dd>
+        The portalMessage 'error' class, can also contain <a href="#">links</a> - used to
+        give the user temporary status messages.
+    </dd>
+</dl>
+
+<dl class="portalMessage warning">
+    <dt>
+        Warning
+    </dt>
+    <dd>
+        The portalMessage 'warning' class, can also contain <a href="#">links</a> - used to
+        give the user temporary status messages.
+    </dd>
+</dl>
+
+<h1 class="documentFirstHeading">Document Headline</h1>
+
+<div id="plone-document-byline" class="documentByLine">
+    <span class="documentAuthor">
+      by
+      <a href="http://localhost:8080/Plone/author/admin">admin</a>
+    </span>
+
+   <span class="documentModified">
+     &mdash;
+     <span>
+       last modified
+     </span>
+     May 21, 2010 10:02 AM
+   </span>
+
+   <span id="content-history" class="contentHistory">
+     &mdash;
+     <a href="http://localhost:8080/Plone/front-page/@@historyview" rel="#pb_4" class="link-overlay" style="cursor: pointer;">History</a>
+   </span>
+</div>
+
+<div class="documentDescription">
+The document description
+</div>
+
+<p>
+Normal document body text,
+<strong>strong text</strong>,
+<em>emphasised text</em>,
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo. Vestibulum vitae urna et mi volutpat luctus. Nulla auctor, lacus ut consectetuer sagittis, erat odio vulputate sapien, eu placerat diam mauris id turpis. Aenean quis ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque rutrum. Sed mattis turpis sit amet ipsum viverra pharetra. Nunc facilisis, augue non dapibus gravida, risus quam vulputate quam, non venenatis dui massa in leo. Maecenas scelerisque dapibus libero. Suspendisse potenti.
+example <a href="#">Normal internal site link</a> inside a paragraph,
+example <a href="http://plone.org">External link to plone.org</a>,
+example <a href="https://plone.org">Secure (HTTPS) link to plone.org</a>,
+example <a href="mailto:some@address">Mailto link</a>,
+example <a href="ftp://some.site">FTP link</a>,
+example <a href="news://some.site">NNTP (news) link</a>,
+example <a href="webcal://some.site">WebCal link</a>,
+example <a href="feed://some.site">RSS feed link</a>,
+example <a href="irc://some.network/#channel">IRC link</a>.
+</p>
+
+<ul>
+    <li>Unordered list element 1
+        <ul>
+            <li>Unordered list subelement 1</li>
+        </ul>
+    </li>
+    <li>Unordered list element 2</li>
+    <li>Unordered list element 3</li>
+</ul>
+
+<ol>
+    <li>Ordered list element 1
+        <ol><li>Ordered list subelement 1</li></ol>
+    </li>
+    <li>Ordered list element 2</li>
+    <li>Ordered list element 3</li>
+</ol>
+
+<dl>
+    <dt>Definition list term</dt>
+    <dd>Definition List description, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo.
+    </dd>
+    <dd>Another Definition List description, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo.
+    </dd>
+</dl>
+
+<h3>Definition List deprecation</h3>
+
+As of Plone 5, we try to get rid of Definition Lists where they don't act as
+definition lists. We replace them in the following manners.
+
+<h4>in portlets</h4>
+
+<div style="width: 300px"> <!-- just to make these look like portlets -->
+
+<section class="portlet">
+  <header class="portletHeader">Portlet header</header>
+  <ul class="portletContent">
+    <li class="portletItem">Item one</li>
+    <li class="portletItem">Item two</li>
+  </ul>
+  <footer class="portletFooter">Portlet footer</footer>
+</section>
+
+If a portlet has only one item:
+
+<section class="portlet">
+  <header class="portletHeader">Portlet header</header>
+  <div class="portletContent">
+    There might be a login form here.
+    <form>
+      <input type="text" value="login" /> <br />
+      <input type="password" value="password" /> <br />
+      <input type="submit" />
+    </form>
+  </div>
+  <footer class="portletFooter">Portlet footer</footer>
+</section>
+
+</div>
+
+<h4>in portal messages</h4>
+
+<div class="portalMessage info">
+  <strong>Not important</strong>
+  This message is here to tell you something went just as you expected.
+</div>
+<div class="portalMessage warning">
+  <strong>You might run into problems</strong>
+  Please check your settings, be sure what you're doing is right.
+</div>
+<div class="portalMessage error">
+  <strong>Something went wrong</strong>
+  This is bad, you must notice this.
+</div>
+
+<h4>in listings</h4>
+
+<div>
+  <article>
+    <heading><a href="">Item one</a></heading>
+    <p>Description</p>
+  </article>
+  <article>
+    <heading><a href="">Item two</a></heading>
+    <p>Description</p>
+  </article>
+</div>
+
+<h2>
+Table of class <code>listing</code>
+</h2>
+
+<table class="listing" id="someid" summary="Sortable table example">
+    <!-- By giving a table an ID, it gets the sortable option.
+         Use class="nosort" to override on a table or column basis. -->
+    <thead>
+        <tr>
+            <th>Table heading</th>
+            <th>Another heading (sortable, click to sort)</th>
+            <th class="nosort">Fixed column (not sortable)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 1</td>
+            <td>Another item</td>
+        </tr>
+        <tr class="even">
+            <td>Even table item</td>
+            <td>Item 2</td>
+            <td>Yet another item</td>
+        </tr>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 3</td>
+            <td>And one more item</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>
+Table of class <code>vertical listing</code>
+</h2>
+
+<table class="vertical listing" summary="Vertical listing example">
+    <tbody>
+        <tr>
+            <th>Table heading</th>
+            <td>Odd table item</td>
+        </tr>
+        <tr>
+            <th>Another heading</th>
+            <td>Even table item</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Forms</h2>
+
+<form>
+    <fieldset>
+        <legend>Fieldset legend</legend>
+
+        <div class="field">
+            <label for="onefield">Text field</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This is the help for this form field. And <a href="#">links are also possible</a>.
+            </div>
+            <input type="text" id="onefield" value="Some content" />
+        </div>
+        <div class="field error">
+            <label for="anotherfield">Text field with error</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This field is just here to demonstrate an error message.
+            </div>
+            <div>This is the error message.</div>
+            <input type="text" id="anotherfield" value="Some content" />
+        </div>
+        <div class="field">
+            <label for="onecheckbox">Checkbox</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This is a checkbox field.
+            </div>
+            <input type="checkbox" id="onecheckbox" />
+        </div>
+        <div class="field error">
+            <label for="anothercheckbox">Checkbox with error</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This checkbox field is just here to demonstrate an error message.
+            </div>
+            <div>This is the error message.</div>
+            <input type="checkbox" id="anothercheckbox" />
+        </div>
+        <div class="field">
+            <label for="onestylishcheckbox">Checkbox without border</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This is a checkbox field.
+            </div>
+            <input type="checkbox"
+                   class="noborder"
+                   id="onestylishcheckbox" />
+        </div>
+        <div class="field error">
+            <label for="anotherstylishcheckbox">
+            Checkbox without border with error</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This checkbox field is just here to demonstrate an error message.
+            </div>
+            <div>This is the error message.</div>
+            <input type="checkbox"
+                   class="noborder"
+                   id="anotherstylishcheckbox" />
+        </div>
+        <div class="field">
+            <label>Radio</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This is a checkbox field.
+            </div>
+            <label>First
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group1" />
+            </label>
+            <br />
+            <label>Second
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group1" />
+            </label>
+            <br />
+            <label>Third
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group1" />
+            </label>
+            <br />
+        </div>
+        <div class="field error">
+            <label>Radio with error</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This checkbox field is just here to demonstrate an error message.
+            </div>
+            <div>This is the error message.</div>
+            <label>First
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group2" />
+            </label>
+            <br />
+            <label>Second
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group2" />
+            </label>
+            <br />
+            <label>Third
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group2" />
+            </label>
+            <br />
+        </div>
+        <div class="formControls">
+            <input class="context"
+                   type="submit"
+                   value="Context submit" />
+            <input class="standalone"
+                   type="submit"
+                   value="Standalone submit" />
+            <input class="destructive"
+                   type="submit"
+                   value="Destructive submit" />
+            <input type="submit"
+                   value="Submit" />
+        </div>
+        <div class="formControls">
+            <input class="context"
+                   type="button"
+                   value="Context button" />
+            <input class="standalone"
+                   type="button"
+                   value="Standalone button" />
+            <input class="destructive"
+                   type="button"
+                   value="Destructive button" />
+            <input type="button"
+                   value="Button" />
+        </div>
+    </fieldset>
+</form>
+
+<h2>Table with form elements</h2>
+
+<form>
+    <table id="sortable"
+         class="listing"
+         summary="Content listing"
+         cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="nosort">
+                    <input class="noborder"
+                           type="checkbox"
+                           src="select_all_icon.png"
+                           name="selectButton"
+                           title="Select all items"
+                           onClick="toggleSelect(this,'paths:list');"
+                           tal:attributes="src string:${context/portal_url}/select_all_icon.png"
+                           alt="Select all items"
+                           i18n:attributes="title label_select_all_items; alt label_select_all_items;" />
+                </th>
+                <th>&nbsp;Title&nbsp;</th>
+                <th>&nbsp;Stuff&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td>
+                   <input type="checkbox"
+                          class="noborder"
+                          name="paths:list" id="#"
+                          value="#" />
+                </td>
+                <td><a href="#">Title</a></td>
+                <td>with class noborder</td>
+            </tr>
+            <tr class="even">
+                <td>
+                   <input type="checkbox"
+                          class="noborder"
+                              name="paths:list" id="#"
+                          value="#" />
+                </td>
+                <td><a href="#">Title</a></td>
+                <td>with class noborder</td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<div>
+    <h2>Collapsible form</h2>
+    <form id="searchform" name="search" method="get" class="enableAutoFocus" action="search">
+
+        <div class="field collapsible">
+            <label class="collapser collapsed" for="created">New items since</label>
+
+            <div class="collapse" style="display: none;">
+                    <div class="formHelp">
+                    Return items added since you were last logged on, the last week, etc.
+                    </div>
+
+
+                    <select id="created" name="created:list:date">
+                        <option value="2010/09/06 17:50:45.971272 GMT-7">Last log-in</option>
+                        <option value="2010/09/05"> Yesterday </option>
+                        <option value="2010/08/30"> Last week </option>
+                        <option value="2010/08/06"> Last month </option>
+                        <option selected="selected" class="default_option" value="1970/02/01"> Ever </option>
+                    </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="field collapsible">
+            <label class="collapser collapsed" for="Creator">Author</label>
+
+            <div class="collapse" style="display: none;">
+                <div class="formHelp">
+                Return items created by a particular person.
+                </div>
+
+
+                <select id="Creator" name="Creator">
+                    <option class="default_option" value="">Any Author</option>
+
+                        <option value="admin">admin</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div id="clear-space-before-submit" class="visualClear"><!-- --></div>
+
+    </form>
+</div>
+
+<div>
+    <h2>Select All/None</h2>
+    <form id="searchform" name="search" method="get" class="enableAutoFocus" action="search">
+
+                    <div>
+                        <label>Item type</label>
+
+                <div>
+                        <div class="formHelp">
+                        Return items of a specific type.
+                        </div>
+
+                        <span class="optionsToggle">
+                            <input type="checkbox" checked="checked" class="noborder" id="pt_toggle" value="#" name="pt_toggle" onclick="javascript:toggleSelect(this, 'portal_type:list', true)" src="http://localhost:8080/Plone/select_all_icon.png">
+                            <label for="pt_toggle">Select All/None
+                            </label>
+                        </span>
+                        <br>
+                        <div style="float: left; margin-right: 2em;">
+
+                            <input type="checkbox" id="portal_type_1_1" checked="checked" class="noborder" value="Document" name="portal_type:list">
+                            <label for="portal_type_1_1">Page</label>
+                            <br>
+
+
+                            <input type="checkbox" id="portal_type_1_2" checked="checked" class="noborder" value="Folder" name="portal_type:list">
+                            <label for="portal_type_1_2">Folder</label>
+                            <br>
+
+                        </div>
+                        <div style="float: left; margin-right: 2em;">
+
+                            <input type="checkbox" id="portal_type_2_1" checked="checked" class="noborder" value="Topic" name="portal_type:list">
+                            <label for="portal_type_2_1">Collection</label>
+                            <br>
+
+                        </div>
+                    <div id="clear-after-item-type" class="visualClear">
+                </div>
+            </form>
+</div>
+
+
+<div>
+    <h2>Action menu</h2>
+    <dl class="actionMenu" id="actioMenuDemo">
+        <dt class="actionMenuHeader">
+            <a href="#">Action menu title</a>
+        </dt>
+        <dd class="actionMenuContent">
+            Menu content
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h2>Collapsible section</h2>
+    <dl class="collapsible">
+        <dt class="collapsibleHeader">
+            Collapsable section title
+        </dt>
+        <dd class="collapsibleContent">
+            Collapsible section content
+        </dd>
+    </dl>
+</div>
+
+
+<h2>The Internet Explorer "Peekaboo" bug</h2>
+
+<p>
+Also known as the "disappearing text" bug. Full explanation of this bug can be
+found on
+<a href="http://www.positioniseverything.net/explorer/peekaboo.html">
+the page dedicated to this at positioniseverything.net</a>.
+</p>
+
+<h2>Widgets</h2>
+
+<p>
+    <textarea class="pat-tinymce">Content to be edited</textarea>
+</p>
+
+<p>
+    <input class="pat-pickadate" type="text" name="form.widgets.IDublinCore.effective" value="" data-pat-pickadate="{&quot;date&quot;: {&quot;format&quot;: &quot;mmmm d, yyyy&quot;, &quot;monthsShort&quot;: [&quot;gen.&quot;, &quot;feb.&quot;, &quot;mar\u00e7&quot;, &quot;abr.&quot;, &quot;maig&quot;, &quot;juny&quot;, &quot;jul.&quot;, &quot;ag.&quot;, &quot;set.&quot;, &quot;oct.&quot;, &quot;nov.&quot;, &quot;des.&quot;], &quot;max&quot;: [2034, 1, 1], &quot;clear&quot;: &quot;Clear&quot;, &quot;min&quot;: [1914, 1, 1], &quot;monthsFull&quot;: [&quot;gener&quot;, &quot;febrer&quot;, &quot;mar\u00e7&quot;, &quot;abril&quot;, &quot;maig&quot;, &quot;juny&quot;, &quot;juliol&quot;, &quot;agost&quot;, &quot;setembre&quot;, &quot;octubre&quot;, &quot;novembre&quot;, &quot;desembre&quot;], &quot;weekdaysShort&quot;: [&quot;dg.&quot;, &quot;dl.&quot;, &quot;dt.&quot;, &quot;dc.&quot;, &quot;dj.&quot;, &quot;dv.&quot;, &quot;ds.&quot;], &quot;weekdaysFull&quot;: [&quot;diumenge&quot;, &quot;dilluns&quot;, &quot;dimarts&quot;, &quot;dimecres&quot;, &quot;dijous&quot;, &quot;divendres&quot;, &quot;dissabte&quot;], &quot;firstDay&quot;: 0, &quot;selectYears&quot;: 200, &quot;placeholder&quot;: &quot;Enter date...&quot;, &quot;today&quot;: &quot;Avui&quot;}, &quot;time&quot;: {&quot;placeholder&quot;: &quot;Enter time...&quot;, &quot;today&quot;: &quot;Avui&quot;, &quot;format&quot;: &quot;h:i a&quot;}}" style="display: none;">
+</p>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+        TEST
+      <div class="carousel-caption">
+        XXX
+      </div>
+    </div>
+    <div class="item active">
+        TEST
+      <div class="carousel-caption">
+        XXX
+      </div>
+    </div>
+    <div class="item active">
+        TEST
+      <div class="carousel-caption">
+        XXX
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+<!--********** Start of peekaboo demo ***********-->
+
+<div id="floatholder">
+
+<div id="float">
+<br />
+<span>&nbsp;Float&nbsp;
+<br /><br />
+<a href="#">&nbsp;test link&nbsp;</a>
+</span>
+</div>
+
+This is bare text. <a href="#">Test link</a>
+<div style="border: 3px solid #f00; background: #dde;">This is text inside a div.
+<a href="#">Test link</a></div>
+This is bare text. <a href="#">Test link</a>
+<div style="border: 3px solid #0c0; background: #dde;">This is text inside a div.
+<a href="#">Test link</a></div>
+This is bare text. <a href="#">Test link</a>
+<div style="border: 3px solid #00f; background: #dde;">This is text inside a div.
+<a href="#">Test link</a></div>
+This is bare text. <a href="#">Test link</a>
+
+<div id="clear">Clearing div</div>  <!--******* Note: a cleared <br> will not prevent bug *******-->
+
+<div style="border: 3px solid #00f; background: #dde;">This div is after the cleared div. (purple box) If cleared div
+does not touch float, bug is not triggered. <a href="#">Test link</a></div>
+</div>
+      </div><!--/row-->
+
+    </div><!--/.container-->
+</div>
+<footer id="portal-footer-wrapper" role="contentinfo">
+      <div class="container-fluid" id="portal-footer">
+      
+<div class="portletWrapper" >
+  <section class="portlet portletClassic" id="portal-footer">
+    <div class="portletContent">
+      El 
+           <a href="http://plone.org">Plone<sup>®</sup> Open Source CMS/WCM</a>
+       és <abbr title="Copyright">©</abbr> 2000-2014 de la 
+           <a href="http://plone.org/foundation">Fundació Plone</a> i amics.
+
+      Distribuït sota la llicència 
+                <a href="http://creativecommons.org/licenses/GPL/2.0/">Llicència GNU GPL</a>.
+    </div>
+  </section>
+</div>
+
+<div class="portletWrapper" >
+    <section class="portlet portletActions">
+        <ul class="portletContent">
+            <li class="portletItem odd first ">
+                <a href="#">
+                    <span>Mapa del lloc</span>
+                </a>
+            </li>
+            <li class="portletItem even  ">
+                <a href="#">
+                    <span>Accessibilitat</span>
+                </a>
+            </li>
+            <li class="portletItem odd  last">
+                <a href="index.html" class="pat-modal" data-pat-modal="{}">
+                    <span>Contacte</span>
+                </a>
+            </li> 
+        </ul>
+    </section>
+</div>
+
+<div class="portletWrapper">
+  <section class="portlet portletClassic" id="portal-colophon">
+    <div class="portletContent">
+      <a href="http://plone.org" target="_blank" title="Aquest lloc web s'ha desenvolupat amb Plone Open Source CMS/WCM.">Powered by Plone &amp; Python</a>
+    </div>
+  </section>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,7 +1,3 @@
-define('jquery',{});
-define('mockup-registry',{});
-define('mockup-patterns-base',{});
-define('bootstrap-js',{});
 // Author: Rok Garbas
 // Contact: rok@garbas.si
 // Version: 1.0
@@ -25,13 +21,13 @@ define('bootstrap-js',{});
 // Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 //
 
-define('plonetheme/barceloneta/static/barceloneta',[
+define([
   'jquery',
   'mockup-registry',
   'mockup-patterns-base',
-  'bootstrap-js'
+  'bootstrap-carousel'
 ], function($, Registry, Base) {
-  
+  'use strict';
 
   // BBB: we need to hook pattern to classes which plone was using until now
   var PloneBarceloneta = Base.extend({
@@ -53,4 +49,3 @@ define('plonetheme/barceloneta/static/barceloneta',[
 
   return PloneBarceloneta;
 });
-

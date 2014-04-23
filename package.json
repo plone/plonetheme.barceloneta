@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "devDependencies": {
     "grunt": "~0.4.4",
-    "grunt-cli": "~0.1.13",
     "grunt-contrib-requirejs": "~0.4.3",
     "grunt-contrib-less": "~0.9.0",
     "grunt-contrib-copy": "~0.5.0",

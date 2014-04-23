@@ -25,14 +25,14 @@ module.exports = function (grunt) {
                     baseUrl: "./",
                     paths: {
                         "jquery": "bower_components/jquery/jquery",
-                        "bootstrap-js": "bower_components/bootstrap/dist/js/bootstrap.min",
                         "mockup-registry": "bower_components/mockup-core/js/registry",
-                        "mockup-patterns-base": "bower_components/mockup-core/js/pattern"
+                        "mockup-patterns-base": "bower_components/mockup-core/js/pattern",
+                        "bootstrap-carousel": "bower_components/bootstrap/js/carousel"
                     },
-                    name: "plonetheme/barceloneta/static/barceloneta",
-                    out: "plonetheme/barceloneta/static/barceloneta.min.js",
+                    name: "js/barceloneta",
+                    out: "plonetheme/barceloneta/static/barceloneta.js",
                     optimize: "none",
-                    stubModules: ['jquery', 'mockup-registry', 'mockup-patterns-base', 'bootstrap-js']
+                    stubModules: ['jquery', 'mockup-registry', 'mockup-patterns-base']
                 }
             }
         },
@@ -47,15 +47,16 @@ module.exports = function (grunt) {
                     sourceMapFilename: 'plonetheme/barceloneta/static/barceloneta.css.map'
                 },
                 files: {
-                    'plonetheme/barceloneta/static/barceloneta.css': 'less/barceloneta.less'
+                    'plonetheme/barceloneta/static/barceloneta.css': 'less/barceloneta.less',
+                    'less/barceloneta.css': 'less/barceloneta.less'
                 }
             }
         },
         copy: {
             barceloneta: {
                 files: [
-                    { expand: true, cwd: 'images/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
-                    { expand: true, cwd: 'fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' }
+                    { expand: true, cwd: 'less/images/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
+                    { expand: true, cwd: 'less/fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' }
                 ]
             }
         },
@@ -73,8 +74,7 @@ module.exports = function (grunt) {
         },
         watch: {
             scripts: {
-                files: ['less/*.less', 'plonetheme/barceloneta/static/*.js',
-                        '!plonetheme/barceloneta/static/*.min.js'],
+                files: ['less/*.less', 'js/*.js'],
                 tasks: ['less', 'sed', 'requirejs']
             }
         }
