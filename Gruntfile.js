@@ -25,10 +25,22 @@ module.exports = function (grunt) {
                 ]
               }
             },
+        sed: {
+          'barceloneta-images': {
+            path: 'plonetheme/barceloneta/static/barceloneta.css',
+            pattern: 'url\\(\'images/barceloneta-',
+            replacement: 'url(\'++resource++plonetheme.barceloneta-'
+          },
+          'barceloneta-fonts': {
+            path: 'plonetheme/barceloneta/static/barceloneta.css',
+            pattern: 'url\\(\'fonts/barceloneta-',
+            replacement: 'url(\'++resource++plonetheme.barceloneta-'
+          }
+        },
         watch: {
             scripts: {
                 files: ['less/*.less',],
-                tasks: ['less']
+                tasks: ['less', 'sed']
             }
         }
     });
@@ -37,5 +49,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-sed');
     grunt.registerTask('default', ['watch']);
 };
