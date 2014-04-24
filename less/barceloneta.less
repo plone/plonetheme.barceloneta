@@ -163,7 +163,7 @@
 @link-darkbg: #16a1e3;
 @input-color-placeholder: @validgrey;
 @input-border:  @validgrey;
-@input-bg-disabled: @gray-lighter;         
+@input-bg-disabled: @gray-lighter;
 
 
 /*
@@ -270,7 +270,7 @@ html {
   border-radius: 50px;
   float: right;
   transition: all 1s;
-  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, [placeholder] {color:red;} 
+  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, [placeholder] {color:red;}
   &:focus {width: 300px; color: #333;}
 }
 
@@ -378,7 +378,7 @@ ol li:before {
       margin: auto .25em;
     }
     :first-child {margin-left:0;}
-  } 
+  }
   .documentDescription {
     font-style: italic;
     font-size: 120%;
@@ -629,6 +629,37 @@ body { margin-left: 50px;} /*we need to activate it just with edit-zone activate
 .picker__select--month, .picker__select--year {display: inline-block;}
 .picker__weekday { font-size: 1em; text-align: center;}
 .pattern-pickadate-wrapper .pattern-pickadate-date-wrapper .picker__holder {margin:0;}
+
+#plone-document-byline .actionMenu {
+    .nav();
+    .navbar-nav();
+    @media (min-width: @grid-float-breakpoint) {
+      .pull-right();
+    }
+}
+.navbar-collapse {
+  @media (min-width: @grid-float-breakpoint) {
+    #plone-document-byline .actionMenu:last-child {
+      margin-right: -@navbar-padding-horizontal;
+    }
+  }
+}
+#plone-document-byline {
+    .nav();
+    .navbar-nav();
+}
+#edit-zone.navbar-fixed-left {
+  #plone-document-byline .actionMenu > li {float:none !important; position: static; position: initial;}
+  #plone-document-byline .actionMenu > li > a {position: static; position: initial;}
+}
+#edit-zone.navbar-fixed-left.expanded {
+  #plone-document-byline {
+    float:none !important;
+    margin-right:0 !important;
+  }
+}
+.icon-info-circled:before { content: '\e811'; } /* '' */
+
 /* FI PLONE LESS*/
 
 
@@ -640,14 +671,3 @@ body, html {height: 100%;}
   & .portlet {margin-bottom: 0;}
 }
 #portal-footer { margin-bottom: 0; }
-
-
-
-
-
-
-
-
-
-
-
