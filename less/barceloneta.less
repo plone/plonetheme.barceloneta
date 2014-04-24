@@ -198,6 +198,16 @@ html {
     .nav();
     .navbar-nav();
 }
+@media screen and (max-width: 767px) {
+  #portal-globalnav {
+    padding: 0;
+    margin: 0;
+    li {
+      &:first-child {border:0;}
+      a {margin: 0 -15px; padding:20px 15px;}
+    }
+  }
+}
 
 .portalMessage.info {
   .alert();
@@ -233,7 +243,7 @@ html {
 
 #globalnav-wrapper {
   background: rgb(0,123,179,1);
-  box-shadow: 0px 5px 5px #aaa;
+  box-shadow: 0px 5px 5px rgba(0,0,0,.17);
   z-index: 50;
   position: relative;
   padding:0; margin:0;
@@ -242,7 +252,7 @@ html {
     color: white;
     font-size: 1.1em;
     text-transform: uppercase;
-    font-weight:bold;
+    font-weight:600;
   }
 
   #portal-globalnav>li>a:hover,
@@ -252,11 +262,12 @@ html {
 
 }
 
+
 /* Search */
 
 #searchGadget {
   border: 1px solid @input-border;
-  border-radius: 3px;
+  border-radius: 50px;
   float: right;
   transition: all 1s;
   &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, [placeholder] {color:red;}
@@ -310,6 +321,9 @@ html {
     margin-left: 5px;
     margin-right: 5px;
   }
+}
+@media screen and (max-width: 767px) {
+  .breadcrumb { padding: 0; }
 }
 
 
@@ -593,6 +607,7 @@ body { margin-left: 50px;} /*we need to activate it just with edit-zone activate
 
 /*style cleaner MODALS*/
 .modal-content {border:0; box-shadow: 0 0 0 500px rgba(0,0,0,.67); border-radius: 4px;}
+.modal .modal-dialog {box-shadow: 0 0 100px rgba(0,0,0,.17);}
 .modal .modal-dialog .modal-header {border-bottom: 0; padding: 20px 20px 0;
   h3 {font-size: 36px;}
   a.close { margin-top: -2px;font-size: 300%;font-weight: 200;opacity: .33;

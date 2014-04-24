@@ -24,15 +24,11 @@ module.exports = function (grunt) {
                 options: {
                     baseUrl: "./",
                     paths: {
-                        "jquery": "bower_components/jquery/jquery",
-                        "mockup-registry": "bower_components/mockup-core/js/registry",
-                        "mockup-patterns-base": "bower_components/mockup-core/js/pattern",
                         "bootstrap-carousel": "bower_components/bootstrap/js/carousel"
                     },
                     name: "js/barceloneta",
                     out: "plonetheme/barceloneta/static/barceloneta.js",
-                    optimize: "none",
-                    stubModules: ['jquery', 'mockup-registry', 'mockup-patterns-base']
+                    optimize: "none"
                 }
             }
         },
