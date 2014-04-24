@@ -7670,6 +7670,9 @@ fieldset[disabled] .link-parent.active {
     float: right !important;
   }
 }
+.navbar-collapse {
+  max-height: auto;
+}
 @media (min-width: 768px) {
   .navbar-collapse #plone-document-byline .actionMenu:last-child {
     margin-right: -15px;
