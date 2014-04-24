@@ -6843,6 +6843,19 @@ html {
     margin-right: -15px;
   }
 }
+@media screen and (max-width: 767px) {
+  #portal-globalnav {
+    padding: 0;
+    margin: 0;
+  }
+  #portal-globalnav li:first-child {
+    border: 0;
+  }
+  #portal-globalnav li a {
+    margin: 0 -15px;
+    padding: 20px 15px;
+  }
+}
 .portalMessage.info {
   padding: 15px;
   margin-bottom: 20px;
@@ -6943,7 +6956,7 @@ html {
 /* Global nav wrapper */
 #globalnav-wrapper {
   background: #007bb3;
-  box-shadow: 0px 5px 5px #aaa;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.17);
   z-index: 50;
   position: relative;
   padding: 0;
@@ -6953,7 +6966,7 @@ html {
   color: white;
   font-size: 1.1em;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
 }
 #globalnav-wrapper #portal-globalnav > li > a:hover,
 #globalnav-wrapper #portal-globalnav > li.selected > a {
@@ -6962,7 +6975,7 @@ html {
 /* Search */
 #searchGadget {
   border: 1px solid #767676;
-  border-radius: 3px;
+  border-radius: 50px;
   float: right;
   transition: all 1s;
 }
@@ -7019,6 +7032,11 @@ html {
   color: #999;
   margin-left: 5px;
   margin-right: 5px;
+}
+@media screen and (max-width: 767px) {
+  .breadcrumb {
+    padding: 0;
+  }
 }
 .hiddenStructure {
   display: none;
@@ -7406,6 +7424,9 @@ body {
   border: 0;
   box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.67);
   border-radius: 4px;
+}
+.modal .modal-dialog {
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.17);
 }
 .modal .modal-dialog .modal-header {
   border-bottom: 0;
