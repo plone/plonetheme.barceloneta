@@ -77,14 +77,47 @@ module.exports = function (grunt) {
                 files: ['less/*.less', 'js/*.js'],
                 tasks: ['less', 'sed', 'requirejs']
             }
+        },
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src : ['plonetheme/barceloneta/static/*.css',]
+                },
+                options: {
+                    watchTask: true,
+                    debugInfo: true,
+                    server: {
+                        baseDir: "."
+                    },
+                }
+            }
+        },
+        // To use browser-sync directly with Plone you should serve Plone
+        // through a web server e.g. Nginx or Apache with VH enabled.
+        // If not, then the links are broken because of the proxy made by
+        // BrowserSync
+        PloneBrowserSync: {
+            dev: {
+                bsFiles: {
+                    src : ['plonetheme/barceloneta/static/*.css',]
+                },
+                options: {
+                    watchTask: true,
+                    debugInfo: true,
+                    proxy: "http://localhost:8081"
+                }
+            }
         }
     });
 
     // grunt.loadTasks('tasks');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-sed');
     grunt.registerTask('default', ['watch']);
+    grunt.registerTask('bsync', ["browserSync", "watch"]);
+    grunt.registerTask('plone-bsync', ["PloneBrowserSync", "watch"]);
 };
