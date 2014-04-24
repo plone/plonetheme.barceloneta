@@ -39,8 +39,7 @@
   </xsl:variable>
 
   <!-- move global nav -->
-  <drop css:content="ul#portal-globalnav" />
-  <replace css:theme-children="ul#portal-globalnav" css:content-children="ul#portal-globalnav" method="raw" />
+  <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
 
   <!-- hero unit on homepage only -->
   <drop css:if-not-content="body.template-document_view.section-front-page"
@@ -48,16 +47,6 @@
 
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
-
-  <xsl:template match="//*[@id='portal-breadcrumbs']">
-    <xsl:copy>
-      <div class="breadcrumb" id="portal-breadcrumbs">
-        <div class="container-fluid">
-          <xsl:apply-templates />
-        </div>
-      </div>
-    </xsl:copy>
-  </xsl:template>
 
   <replace css:theme="#content-container" method="raw">
       <div class="{$central}">

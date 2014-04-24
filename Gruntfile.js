@@ -75,7 +75,7 @@ module.exports = function (grunt) {
             }
         },
         browserSync: {
-            dev: {
+            html: {
                 bsFiles: {
                     src : ['plonetheme/barceloneta/static/*.css',]
                 },
@@ -86,21 +86,15 @@ module.exports = function (grunt) {
                         baseDir: "."
                     },
                 }
-            }
-        },
-        // To use browser-sync directly with Plone you should serve Plone
-        // through a web server e.g. Nginx or Apache with VH enabled.
-        // If not, then the links are broken because of the proxy made by
-        // BrowserSync
-        PloneBrowserSync: {
-            dev: {
+            },
+            plone: {
                 bsFiles: {
                     src : ['plonetheme/barceloneta/static/*.css',]
                 },
                 options: {
                     watchTask: true,
                     debugInfo: true,
-                    proxy: "http://localhost:8081"
+                    proxy: "http://localhost:8080/VirtualHostBase/http/localhost:8080/VirtualHostRoot/"
                 }
             }
         }
@@ -114,6 +108,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-sed');
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('bsync', ["browserSync", "watch"]);
-    grunt.registerTask('plone-bsync', ["PloneBrowserSync", "watch"]);
+    grunt.registerTask('bsync', ["browserSync:html", "watch"]);
+    grunt.registerTask('plone-bsync', ["browserSync:plone", "watch"]);
 };
