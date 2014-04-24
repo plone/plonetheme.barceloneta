@@ -7502,7 +7502,8 @@ fieldset[disabled] .link-parent.active {
   background-color: #bbb;
 }
 /* help classes */
-body {
+#edit-zone.navbar-fixed-left ~ .outer-wrapper,
+#edit-zone.navbar-fixed-left ~ .portal-footer-wrapper {
   margin-left: 50px;
 }
 /*we need to activate it just with edit-zone activated*/
