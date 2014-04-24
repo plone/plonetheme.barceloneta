@@ -94,7 +94,7 @@ module.exports = function (grunt) {
                 options: {
                     watchTask: true,
                     debugInfo: true,
-                    proxy: "http://localhost:8080/VirtualHostBase/http/localhost:8080/VirtualHostRoot/"
+                    proxy: "localhost:8080"
                 }
             }
         }
