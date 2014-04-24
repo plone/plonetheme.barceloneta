@@ -7079,6 +7079,7 @@ ol li:before {
   color: #999999;
 }
 .navbar li:before,
+.dropdown-menu li:before,
 .breadcrumb li:before,
 .navTree li:before,
 .field li:before,
@@ -7087,6 +7088,7 @@ ol li:before {
 .pagination li:before,
 .select2-drop li:before,
 .navbar li:before,
+.dropdown-menu li:before,
 .breadcrumb li:before,
 .navTree li:before,
 .field li:before,
@@ -7097,6 +7099,7 @@ ol li:before {
   content: none;
 }
 .navbar li,
+.dropdown-menu li,
 .breadcrumb li,
 .navTree li,
 .field li,
@@ -7105,8 +7108,8 @@ ol li:before {
 .pagination li,
 .select2-drop li {
   margin-bottom: initial;
-  padding-left: initial;
-  text-indent: initial;
+  padding-left: 0;
+  text-indent: 0;
 }
 #content .documentFirstHeading {
   margin-top: 0;
@@ -7329,6 +7332,50 @@ textarea {
 textarea {
   resize: vertical;
 }
+.btn,
+button,
+[type="submit"],
+.context,
+.standalone {
+  /*border: 0; padding: 12px 24px;*/
+  letter-spacing: .05em;
+}
+.btn:hover,
+button:hover,
+[type="submit"]:hover,
+.context:hover,
+.standalone:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.17);
+}
+.btn:focus,
+.btn:active,
+button:focus,
+button:active,
+[type="submit"]:focus,
+[type="submit"]:active,
+.context:focus,
+.context:active,
+.standalone:focus,
+.standalone:active {
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.17);
+  outline: 0 none !important;
+}
+.btn.disabled,
+button.disabled,
+[type="submit"].disabled,
+.context.disabled,
+.standalone.disabled {
+  background-color: #e5e5e5;
+  color: #999;
+  border-color: #ddd;
+}
+/*changes some Bootstrap styles on buttons to be applied on BCNeta*/
+.btn-default {
+  background-color: #ddd;
+}
+.btn-default:hover {
+  background-color: #bbb;
+}
 .label {
   color: inherit;
   font-size: 100%;
@@ -7355,9 +7402,12 @@ textarea {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  /*border: 0; padding: 12px 24px;*/
+  letter-spacing: .05em;
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
+  background-color: #ddd;
 }
 .link-parent:focus,
 .link-parent:active:focus,
@@ -7387,6 +7437,19 @@ fieldset[disabled] .link-parent {
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.link-parent:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.17);
+}
+.link-parent:focus,
+.link-parent:active {
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.17);
+  outline: 0 none !important;
+}
+.link-parent.disabled {
+  background-color: #e5e5e5;
+  color: #999;
+  border-color: #ddd;
 }
 .link-parent:hover,
 .link-parent:focus,
@@ -7423,6 +7486,9 @@ fieldset[disabled] .link-parent.active {
 .link-parent .badge {
   color: #ffffff;
   background-color: #333333;
+}
+.link-parent:hover {
+  background-color: #bbb;
 }
 /* help classes */
 body {
@@ -7702,6 +7768,47 @@ body {
   content: '\e811';
 }
 /* '' */
+/*fix folder contents tables and lists*/
+.popover.columns ul li {
+  padding: 7px 2.5em;
+  border-bottom: 1px solid #ddd;
+}
+.popover.columns ul li input {
+  margin: 4px 5px 0;
+}
+.popover.columns ul li:hover {
+  background: #eee;
+}
+.pat-structure .popover .popover-title {
+  padding-bottom: 8px;
+}
+/*cancells that line, ideal is to remove it*/
+.item-dragging {
+  background-color: #fea;
+}
+.pat-structure .btn .label,
+.pat-structure button .label,
+.pat-structure [type="submit"] .label,
+.pat-structure .context .label,
+.pat-structure .standalone .label {
+  padding: 0 5px;
+  color: #fff;
+}
+/*edit-zone info*/
+#edit-zone a + ul li:not(.dropdown-header) > span {
+  color: #ccc;
+  padding: 8px;
+  display: block;
+}
+#edit-zone a + ul li:not(.dropdown-header) > span a {
+  display: inline;
+  color: #16a1e3;
+  padding: 0 !important;
+}
+#edit-zone a + ul li:not(.dropdown-header) > span a:hover {
+  text-decoration: underline;
+  background: none !important;
+}
 /* FI PLONE LESS*/
 /*footer for pages really short*/
 body,
@@ -7747,5 +7854,10 @@ html {
 }
 .portletNavigationTree li:first-child a {
   border-top: 0;
+}
+/*forms holly checkbox with long label to not be displayed down*/
+[type="checkbox"] ~ label,
+[type="radio"] ~ label {
+  display: inline;
 }
 /*# sourceMappingURL=++resource++plonetheme.barceloneta/barceloneta.css.map */

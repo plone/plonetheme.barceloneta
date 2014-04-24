@@ -364,12 +364,12 @@ ol li:before {
   color: @gray-light;
 }
 // reset list styles in certain contexts
-.navbar, .breadcrumb, .navTree, .field, #portal-globalnav, .historyTools, .pagination, .select2-drop {
+.navbar, .dropdown-menu, .breadcrumb, .navTree, .field, #portal-globalnav, .historyTools, .pagination, .select2-drop {
   li:before, li:before { content: none; }
   li {
     margin-bottom: initial;
-    padding-left: initial;
-    text-indent: initial;
+    padding-left: 0;
+    text-indent: 0;
   }
 }
 
@@ -589,6 +589,14 @@ select:extend(.form-control all),
 textarea:extend(.form-control all) {font-size:100%;}
 textarea {resize:vertical;} //no free resize
 
+.btn {/*border: 0; padding: 12px 24px;*/ letter-spacing: .05em; 
+  &:hover {box-shadow: 0 2px 2px rgba(0,0,0,.17);}
+  &:focus, &:active {box-shadow: inset 0 5px 5px rgba(0,0,0,.17); outline: 0 none !important;}
+  &.disabled {background-color: #e5e5e5; color:#999; border-color:#ddd;}}/*changes some Bootstrap styles on buttons to be applied on BCNeta*/
+.btn-default {background-color:#ddd;
+  &:hover {background-color: #bbb;}
+}
+
 button:extend(.btn all),
 [type="submit"]:extend(.btn all),
 .context:extend(.btn all),
@@ -669,6 +677,23 @@ body { margin-left: 50px;} /*we need to activate it just with edit-zone activate
 }
 .icon-info-circled:before { content: '\e811'; } /* '' */
 
+/*fix folder contents tables and lists*/
+.popover.columns ul li {padding: 7px 2.5em; border-bottom:1px solid #ddd;
+  input {margin: 4px 5px 0;}
+  &:hover {background: #eee;}}
+.pat-structure .popover .popover-title {padding-bottom: 8px;}/*cancells that line, ideal is to remove it*/
+.item-dragging {background-color: #fea;}
+.pat-structure .btn .label {padding: 0 5px; color: #fff;}
+
+/*edit-zone info*/
+#edit-zone a+ul li:not(.dropdown-header) > span {
+  color:#ccc;
+  padding: 8px;
+  display: block;
+  & a {display: inline; color: @link-darkbg; padding: 0 !important;
+    &:hover {text-decoration: underline; background: none !important;}
+  }
+}
 /* FI PLONE LESS*/
 
 
@@ -697,3 +722,6 @@ body, html {height: 100%;}
   }
   li:first-child a {border-top: 0;}
 }
+
+/*forms holly checkbox with long label to not be displayed down*/
+[type="checkbox"] ~ label,[type="radio"] ~ label { display: inline; }
