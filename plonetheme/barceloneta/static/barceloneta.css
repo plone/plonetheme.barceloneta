@@ -7111,6 +7111,17 @@ ol li:before {
   padding-left: 0;
   text-indent: 0;
 }
+.history-list p {
+  margin-bottom: 0;
+}
+.history-list li {
+  margin-bottom: 15px;
+  padding-left: 0;
+  text-indent: 0;
+}
+.history-list .historyTools form {
+  display: inline;
+}
 #content .documentFirstHeading {
   margin-top: 0;
 }
