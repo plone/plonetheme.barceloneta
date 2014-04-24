@@ -300,7 +300,7 @@ html {
 
 #breadcrumbs-you-are-here {margin-right: 10px;}
 #portal-breadcrumbs {
-  background: url('@{pathPrefix}images/barceloneta-bg-breadcrumb.png');
+  /*background: url('@{pathPrefix}images/barceloneta-bg-breadcrumb.png');*/
   background-repeat: repeat-x;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -614,7 +614,7 @@ body { margin-left: 50px;} /*we need to activate it just with edit-zone activate
     &:hover, :focus {opacity: .67;}
   }
 } /*complet route to win*/
-.modal-footer {border-top: 0; padding: 0;}
+.modal-footer {border-top: 0;}
 
 /* PLONE LESS*/
 .required {
@@ -665,9 +665,26 @@ body { margin-left: 50px;} /*we need to activate it just with edit-zone activate
 
 /*footer for pages really short*/
 body, html {height: 100%;}
-.outer-wrapper { min-height: 100%; margin:0 auto -100px; } /*100px is footer height*/
+.outer-wrapper { 
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -139px;
+  padding: 0 0 139px;
+  } /*139px is footer height*/
 #portal-footer-wrapper {
-  min-height: 100px;
+  min-height: 139px;
   & .portlet {margin-bottom: 0;}
 }
 #portal-footer { margin-bottom: 0; }
+
+/*portlet navigation tree*/
+.portletNavigationTree {
+  margin-top: 10px;
+  ul {margin-bottom: 0}
+  li a {padding: 10px 15px; display: block; border-top: 1px solid #ddd; background: #f2f2f2;
+    &:hover {background: #e5e5e5; text-decoration: none;}
+    &.navTreeCurrentItem {background: #ddd;}
+  }
+  li:first-child a {border-top: 0;}
+}

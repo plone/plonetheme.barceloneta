@@ -7017,7 +7017,7 @@ html {
   margin-right: 10px;
 }
 #portal-breadcrumbs {
-  background: url('++resource++plonetheme.barceloneta-bg-breadcrumb.png');
+  /*background: url('@{pathPrefix}images/barceloneta-bg-breadcrumb.png');*/
   background-repeat: repeat-x;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -7454,7 +7454,6 @@ body {
 /*complet route to win*/
 .modal-footer {
   border-top: 0;
-  padding: 0;
 }
 /* PLONE LESS*/
 .required {
@@ -7704,16 +7703,42 @@ html {
 }
 .outer-wrapper {
   min-height: 100%;
-  margin: 0 auto -100px;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -139px;
+  padding: 0 0 139px;
 }
-/*100px is footer height*/
+/*139px is footer height*/
 #portal-footer-wrapper {
-  min-height: 100px;
+  min-height: 139px;
 }
 #portal-footer-wrapper .portlet {
   margin-bottom: 0;
 }
 #portal-footer {
   margin-bottom: 0;
+}
+/*portlet navigation tree*/
+.portletNavigationTree {
+  margin-top: 10px;
+}
+.portletNavigationTree ul {
+  margin-bottom: 0;
+}
+.portletNavigationTree li a {
+  padding: 10px 15px;
+  display: block;
+  border-top: 1px solid #ddd;
+  background: #f2f2f2;
+}
+.portletNavigationTree li a:hover {
+  background: #e5e5e5;
+  text-decoration: none;
+}
+.portletNavigationTree li a.navTreeCurrentItem {
+  background: #ddd;
+}
+.portletNavigationTree li:first-child a {
+  border-top: 0;
 }
 /*# sourceMappingURL=++resource++plonetheme.barceloneta/barceloneta.css.map */
