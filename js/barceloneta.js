@@ -22,9 +22,6 @@
 //
 
 define([
-  'jquery',
-  'mockup-registry',
-  'mockup-patterns-base',
   'bootstrap-carousel'
 ], function($, Registry, Base) {
   'use strict';

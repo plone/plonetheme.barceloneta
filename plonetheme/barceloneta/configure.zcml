@@ -68,43 +68,8 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-bootstrap-glyphicons-halflings-regular.eot"
-      file="static/barceloneta-bootstrap-glyphicons-halflings-regular.eot"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-bootstrap-glyphicons-halflings-regular.svg"
-      file="static/barceloneta-bootstrap-glyphicons-halflings-regular.svg"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-bootstrap-glyphicons-halflings-regular.ttf"
-      file="static/barceloneta-bootstrap-glyphicons-halflings-regular.ttf"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-bootstrap-glyphicons-halflings-regular.woff"
-      file="static/barceloneta-bootstrap-glyphicons-halflings-regular.woff"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-dropzone-spritemap@2x.png"
-      file="static/barceloneta-dropzone-spritemap@2x.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-dropzone-spritemap.png"
-      file="static/barceloneta-dropzone-spritemap.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
       name="plonetheme.barceloneta-favicon.ico"
       file="static/barceloneta-favicon.ico"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-jqtree-jqtree-circle.png"
-      file="static/barceloneta-jqtree-jqtree-circle.png"
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
@@ -308,89 +273,8 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
   <browser:resource
-      name="plonetheme.barceloneta-select2-select2.png"
-      file="static/barceloneta-select2-select2.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-select2-select2-spinner.gif"
-      file="static/barceloneta-select2-select2-spinner.gif"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-select2-select2x2.png"
-      file="static/barceloneta-select2-select2x2.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
       name="plonetheme.barceloneta-ticks.png"
       file="static/barceloneta-ticks.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-content.css"
-      file="static/barceloneta-tinymce-content.min.css"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-font-tinymce-small.eot"
-      file="static/barceloneta-tinymce-font-tinymce-small.eot"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-font-tinymce-small.svg"
-      file="static/barceloneta-tinymce-font-tinymce-small.svg"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-font-tinymce-small.ttf"
-      file="static/barceloneta-tinymce-font-tinymce-small.ttf"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-font-tinymce-small.woff"
-      file="static/barceloneta-tinymce-font-tinymce-small.woff"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-font-tinymce.eot"
-      file="static/barceloneta-tinymce-font-tinymce.eot"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-font-tinymce.svg"
-      file="static/barceloneta-tinymce-font-tinymce.svg"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-font-tinymce.ttf"
-      file="static/barceloneta-tinymce-font-tinymce.ttf"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-font-tinymce.woff"
-      file="static/barceloneta-tinymce-font-tinymce.woff"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-img-anchor.gif"
-      file="static/barceloneta-tinymce-img-anchor.gif"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-img-loader.gif"
-      file="static/barceloneta-tinymce-img-loader.gif"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-tinymce-img-object.gif"
-      file="static/barceloneta-tinymce-img-object.gif"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-
-  <browser:resource
-      name="plonetheme.barceloneta-legacy.js"
-      file="static/barceloneta-legacy.js"
       layer=".interfaces.IBarcelonetaLayer"
       />
 
@@ -400,21 +284,16 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
 
+  <browser:resource
+      name="plonetheme.barceloneta.css.map"
+      file="static/barceloneta.css"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
 
-  <configure zcml:condition="installed mockup">
-    <browser:resource
-        name="plonetheme.barceloneta.js"
-        file="static/barceloneta.js"
-        layer=".interfaces.IBarcelonetaLayer"
-        />
-  </configure>
-
-  <configure zcml:condition="not-installed mockup">
-    <browser:resource
-        name="plonetheme.barceloneta.js"
-        file="static/barceloneta.min.js"
-        layer=".interfaces.IBarcelonetaLayer"
-        />
-  </configure>
+  <browser:resource
+      name="plonetheme.barceloneta.js"
+      file="static/barceloneta.js"
+      layer=".interfaces.IBarcelonetaLayer"
+      />
 
 </configure>

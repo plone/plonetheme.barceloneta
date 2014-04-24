@@ -1,6 +1,3 @@
-define('jquery',{});
-define('mockup-registry',{});
-define('mockup-patterns-base',{});
 /* ========================================================================
  * Bootstrap: carousel.js v3.1.1
  * http://getbootstrap.com/javascript/#carousel
@@ -233,9 +230,6 @@ define("bootstrap-carousel", function(){});
 //
 
 define('js/barceloneta',[
-  'jquery',
-  'mockup-registry',
-  'mockup-patterns-base',
   'bootstrap-carousel'
 ], function($, Registry, Base) {
   
