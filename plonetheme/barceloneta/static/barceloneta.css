@@ -6972,8 +6972,8 @@ html {
   margin-bottom: 0px;
   border: 0px;
 }
-#mainnavigation-wrapper .navbar-toggle {
-  background-color: red;
+#mainnavigation-wrapper .navbar-toggle .icon-bar {
+  background: white;
 }
 #mainnavigation-wrapper #portal-globalnav > li > a {
   color: white;
@@ -7111,15 +7111,16 @@ ol li:before {
   padding-left: 0;
   text-indent: 0;
 }
-.history-list p {
+#history-list p {
   margin-bottom: 0;
+  margin-left: 30px;
 }
-.history-list li {
+#history-list li {
   margin-bottom: 15px;
   padding-left: 0;
   text-indent: 0;
 }
-.history-list .historyTools form {
+#history-list .historyTools form {
   display: inline;
 }
 #content .documentFirstHeading {
@@ -7507,6 +7508,10 @@ fieldset[disabled] .link-parent.active {
   margin-left: 50px;
 }
 /*we need to activate it just with edit-zone activated*/
+#edit-zone.navbar-fixed-top ~ .outer-wrapper {
+  margin-top: 50px;
+}
+/*we need to activate it just with edit-zone activated*/
 #content .field input[type="text"] {
   font-size: 1em;
 }
@@ -7671,7 +7676,7 @@ fieldset[disabled] .link-parent.active {
   }
 }
 .navbar-collapse {
-  max-height: auto;
+  max-height: inherit;
 }
 @media (min-width: 768px) {
   .navbar-collapse #plone-document-byline .actionMenu:last-child {
