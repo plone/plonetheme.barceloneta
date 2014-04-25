@@ -1,9 +1,12 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" type="text/css" href="http://plone.github.io/mockup/dev/build/plone.min.css" media="all">
+    <!-- <link rel="stylesheet" type="text/css" href="http://plone.github.io/mockup/dev/build/plone.min.css" media="all"> -->
+    <link rel="stylesheet" type="text/css" href="../Products.CMFPlone/Products/CMFPlone/static/plone.min.css" media="all">
     <link rel="stylesheet" type="text/css" href="less/barceloneta.css" media="all">
-    <script src="http://plone.github.io/mockup/dev/build/plone.min.js"></script>
+    <!-- <script src="http://plone.github.io/mockup/dev/build/plone.min.js"></script> -->
+    <script src="../Products.CMFPlone/Products/CMFPlone/static/plone.min.js"></script>
+
     <script src="plonetheme/barceloneta/static/barceloneta.js"></script>
 </head>
 
@@ -27,16 +30,47 @@ bad behaviour on this front.
 Headlines
 </pre>
 
-<div class="row" id="globalnav-wrapper" role="navigation">
-      <div class="container-fluid">
-        <ul class="col-md-12 col-xs-12 col-md-offset-3" id="portal-globalnav">
-        <li id="portaltab-index_html" class="selected"><a href="#" title="">Inici</a></li>
-    <li id="portaltab-news" class="plain"><a href="#" title="Noticies del lloc">Noticies</a></li>
-    <li id="portaltab-events" class="plain"><a href="#" title="Esdeveniments del lloc">Esdeveniments</a></li>
-    <li id="portaltab-Members" class="plain"><a href="#" title="Contenidor per als directoris personals dels usuaris del portal">Usuaris</a></li>
-    <li id="portaltab-test-page" class="plain"><a href="#" title="">Test page</a></li></ul>
-      </div>
-    </div>
+<div class="row" id="mainnavigation-wrapper">
+        <div class="container-fluid" id="mainnavigation">
+    <p class="hiddenStructure">Navigation</p>
+    <nav class="navbar" id="portal-globalnav-wrapper" role="navigation">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="portal-globalnav-collapse">
+          <ul class="nav navbar-nav" id="portal-globalnav">
+              
+                <li id="portaltab-index_html" class="selected">
+                    <a href="http://localhost:8080/Plone" title="">Inici</a>
+                </li>
+              
+              
+                <li id="portaltab-news" class="plain">
+                    <a href="http://localhost:8080/Plone/news" title="Noticies del lloc">Noticies</a>
+                </li>
+              
+              
+                <li id="portaltab-events" class="plain">
+                    <a href="http://localhost:8080/Plone/events" title="Esdeveniments del lloc">Esdeveniments</a>
+                </li>
+              
+              
+                <li id="portaltab-Members" class="plain">
+                    <a href="http://localhost:8080/Plone/Members" title="Contenidor per als directoris personals dels usuaris del portal">Usuaris</a>
+                </li>
+              
+          </ul>
+        </div>
+    </nav>
+  </div>
+</div>
 
 <div class="hero" role="banner">
     <div class="container-fluid">

@@ -9,22 +9,10 @@ module.exports = function (grunt) {
         // (the dependency tree is walked by r.js)
         requirejs: {
             compile: {
-                // What we do here:
-                //  1. we define dependencies else the compilation will fail,
-                //     and the call to define won't be rewritten
-                //     and we have a big error
-                //  2. but then we load plone.mockup also in the live site,
-                //     and this will result in double-loading
-                //     all the dependencies with catastrophic effects
-                //     (global states and registries will be rewritten,
-                //     nothing will work)
-                //  3. So we stub out every single dependency.
-                //  4. Result: 10 lines of code to do absolutely nothing.
-                //     Amazing :)
                 options: {
                     baseUrl: "./",
                     paths: {
-                        "bootstrap-carousel": "bower_components/bootstrap/js/carousel"
+                        'bootstrap-carousel': 'bower_components/bootstrap/js/carousel'
                     },
                     name: "js/barceloneta",
                     out: "plonetheme/barceloneta/static/barceloneta.js",
@@ -52,7 +40,8 @@ module.exports = function (grunt) {
             barceloneta: {
                 files: [
                     { expand: true, cwd: 'less/images/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
-                    { expand: true, cwd: 'less/fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' }
+                    { expand: true, cwd: 'less/fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
+                    { expand: true, cwd: 'bower_components/bootstrap/', src: 'fonts/**', dest: 'plonetheme/barceloneta/static/vendor/bootstrap/' }
                 ]
             }
         },
@@ -66,6 +55,11 @@ module.exports = function (grunt) {
             path: 'plonetheme/barceloneta/static/barceloneta.css',
             pattern: 'url\\(\'fonts/barceloneta-',
             replacement: 'url(\'++resource++plonetheme.barceloneta-'
+          },
+          'bootstrap-fonts': {
+            path: 'plonetheme/barceloneta/static/barceloneta.css',
+            pattern: 'url\\(\'../bower_components/bootstrap/dist/',
+            replacement: 'url(\'++resource++plonetheme.barceloneta.vendor/bootstrap/'
           }
         },
         watch: {

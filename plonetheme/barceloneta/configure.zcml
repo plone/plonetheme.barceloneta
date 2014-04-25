@@ -296,4 +296,10 @@
       layer=".interfaces.IBarcelonetaLayer"
       />
 
+  <browser:resourceDirectory
+      name="plonetheme.barceloneta.vendor"
+      directory="static/vendor"
+      />
+
+
 </configure>
