@@ -377,13 +377,14 @@ ol li:before {
   li {margin-bottom: 15px; padding-left: 0; text-indent: 0;}
   .historyTools form {display: inline;}
 }
-
+.croppedDescription {margin-left: 30px} /*adds padding on search results description*/
 #content {
   .documentFirstHeading {
     margin-top: 0;
   }
   .documentByLine {
     color: @gray-light;
+    /*
     > span {
       .label;
       .label-default;
@@ -391,6 +392,7 @@ ol li:before {
       padding: .3em .5em;
       margin: auto .25em;
     }
+    */ //remove styling of author from list to keep it simple
     :first-child {margin-left:0;}
   }
   .documentDescription {
@@ -626,6 +628,9 @@ button:extend(.btn all),
 
 #edit-zone.navbar-fixed-left ~ .outer-wrapper, #edit-zone.navbar-fixed-left ~ .portal-footer-wrapper  { margin-left: 50px;} /*we need to activate it just with edit-zone activated*/
 #edit-zone.navbar-fixed-top ~ .outer-wrapper { margin-top: 50px;} /*we need to activate it just with edit-zone activated*/
+#edit-zone.navbar-fixed-left.compressed ~ .outer-wrapper, #edit-zone.navbar-fixed-left.compressed ~ .portal-footer-wrapper  { margin-left: 0;} /*we need to activate it just with edit-zone activated*/
+#edit-zone.navbar-fixed-top.compressed ~ .outer-wrapper { margin-top: 0;} /*cancells outer-wrapper margin on compressed bar*/
+
 
 #content .field input[type="text"] {font-size: 1em;}
 
@@ -662,7 +667,7 @@ button:extend(.btn all),
     }
 }
 .navbar-collapse {
-  max-height: inherit;
+  max-height: inherit; padding-left: 0; padding-right: 0;
   @media (min-width: @grid-float-breakpoint) {
     #plone-document-byline .actionMenu:last-child {
       margin-right: -@navbar-padding-horizontal;

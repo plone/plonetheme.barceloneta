@@ -7123,51 +7123,24 @@ ol li:before {
 #history-list .historyTools form {
   display: inline;
 }
+.croppedDescription {
+  margin-left: 30px;
+}
+/*adds padding on search results description*/
 #content .documentFirstHeading {
   margin-top: 0;
 }
 #content .documentByLine {
   color: #999999;
-}
-#content .documentByLine > span {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #ffffff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-  color: inherit;
-  font-size: 100%;
-  padding: 0;
-  background-color: #999999;
-  background: #eeeeee;
-  padding: .3em .5em;
-  margin: auto .25em;
-}
-#content .documentByLine > span[href]:hover,
-#content .documentByLine > span[href]:focus {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-#content .documentByLine > span:empty {
-  display: none;
-}
-.btn #content .documentByLine > span,
-button #content .documentByLine > span,
-[type="submit"] #content .documentByLine > span,
-.context #content .documentByLine > span,
-.standalone #content .documentByLine > span {
-  position: relative;
-  top: -1px;
-}
-#content .documentByLine > span[href]:hover,
-#content .documentByLine > span[href]:focus {
-  background-color: #808080;
+  /*
+    > span {
+      .label;
+      .label-default;
+      background:@gray-lighter;
+      padding: .3em .5em;
+      margin: auto .25em;
+    }
+    */
 }
 #content .documentByLine :first-child {
   margin-left: 0;
@@ -7512,6 +7485,15 @@ fieldset[disabled] .link-parent.active {
   margin-top: 50px;
 }
 /*we need to activate it just with edit-zone activated*/
+#edit-zone.navbar-fixed-left.compressed ~ .outer-wrapper,
+#edit-zone.navbar-fixed-left.compressed ~ .portal-footer-wrapper {
+  margin-left: 0;
+}
+/*we need to activate it just with edit-zone activated*/
+#edit-zone.navbar-fixed-top.compressed ~ .outer-wrapper {
+  margin-top: 0;
+}
+/*cancells outer-wrapper margin on compressed bar*/
 #content .field input[type="text"] {
   font-size: 1em;
 }
@@ -7677,6 +7659,8 @@ fieldset[disabled] .link-parent.active {
 }
 .navbar-collapse {
   max-height: inherit;
+  padding-left: 0;
+  padding-right: 0;
 }
 @media (min-width: 768px) {
   .navbar-collapse #plone-document-byline .actionMenu:last-child {
