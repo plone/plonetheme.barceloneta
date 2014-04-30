@@ -11,10 +11,12 @@
 
     <style>
     /*styles just to fit example test page*/
-    body {margin: 30px 0 0 !important;}
-    .test-contents {position: fixed;background: rgba(255,255,255,.9);z-index: 99999;right: 10px; top:10px; box-shadow: 0 0 5px rgba(0,0,0,.1);padding: 10px;font-size: 80%;}
+    body {margin: 30px 0 0 !important; background: #f7f7f7;}
+    .test-contents {position: fixed;background: rgba(255,255,255,.9);z-index: 99999;top:10px; box-shadow: 0 0 5px rgba(0,0,0,.1);padding: 10px 10px 10px 20px;font-size: 80%;max-height: 90%; overflow-y: scroll; width: 150px; right:-130px; transition: all .25s;}
+    .test-contents:hover {right:0; transition: all .25s;}
+    .test-contents:before {content:"‹"; position: absolute; left:7px; top:-7px; font-size: 24px; color:#999;}
     #content-core > h1 {text-transform: uppercase;font-weight: bold;font-size: 60px;border-top: 8px solid;padding-top: 30px;}
-    .test-example {border: 1px solid #ddd; box-shadow: 0 0 5px rgba(0,0,0,.1); padding: 10px 20px; margin: 30px 0;}
+    .test-example {border: 1px solid #ddd; box-shadow: 0 0 5px rgba(0,0,0,.1); padding: 10px 20px; margin: 30px 0; background: #fff;}
     .test-example:before {content:"Example";position: absolute;border: 1px solid #ddd;padding: 5px 10px;margin-left: -21px;margin-top: -42px;background: #f7f7f7;}
     .accent-label {background: #c00; font-size: 12px; color: #fff; padding: 2px 5px; border-radius: 50px;}
     </style>
@@ -59,8 +61,17 @@
                 <li><a href="#basic">Basic</a></li>
                 <li><a href="#checks">Checks and radios</a></li>
                 <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#groups">Groups</a></li>
               </ul>
             </li>
+            <li>
+              <a href="#alerts">Alerts</a>
+              <ul>
+                <li><a href="#standard-alerts">Standard</a></li>
+                <li><a href="#deprecated-alerts">Deprecated</a></li>
+              </ul>
+            </li>
+            <li><a href="#listing-bar">Listing bar</a></li>
           </ul>
 
           <div id="content-core">
@@ -80,7 +91,14 @@
             <div class="test-example">
               <h3> Paragraph, strong, em, abbr, a links, documentDescription, address</h3>
               <p>Normal document body text, <strong>strong text</strong>, <em>emphasised text</em>, <abbr title="abbreviation">abbr</abbr>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo. Vestibulum vitae urna et mi volutpat luctus. Nulla auctor, lacus ut consectetuer sagittis, erat odio vulputate sapien, eu placerat diam mauris id turpis. Aenean quis ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque rutrum. Sed mattis turpis sit amet ipsum viverra pharetra. Nunc facilisis, augue non dapibus gravida, risus quam vulputate quam, non venenatis dui massa in leo. Maecenas scelerisque dapibus libero. Suspendisse potenti. example <a href="#">Normal internal site link</a> inside a paragraph, example <a href="http://plone.org">External link to plone.org</a>, example <a href="https://plone.org">Secure (HTTPS) link to plone.org</a>, example <a href="mailto:some@address">Mailto link</a>, example <a href="ftp://some.site">FTP link</a>, example <a href="news://some.site">NNTP (news) link</a>, example <a href="webcal://some.site">WebCal link</a>, example <a href="feed://some.site">RSS feed link</a>, example <a href="irc://some.network/#channel">IRC link</a>.</p>
+              <p class="discreet">Discreet paragraph</p>
               <div class="documentDescription">The document description</div>
+              <div id="plone-document-byline" class="documentByLine">
+                <span class="documentAuthor"> by <a href="http://localhost:8080/Plone/author/admin">admin</a></span>
+                <span class="documentModified"> &mdash; <span> last modified </span> May 21, 2010 10:02 AM </span>
+                <span id="content-history" class="contentHistory"> &mdash; <a href="http://localhost:8080/Plone/front-page/@@historyview" rel="#pb_4" class="link-overlay" style="cursor: pointer;">History</a></span>
+              </div>
+              <p>DocumentByLine is not used anymore on the content <span class="accent-label">Moved to plonebar</span></p>
               <address>
                 <strong>Plone Fundation</strong><br>
                 PO Box 344 <br>
@@ -374,6 +392,16 @@
                 </fieldset>
               </form>
             </div>
+            <h2 id="groups">Groups</h2>
+            <div class="test-example">
+              <p>Replaces Plone4 input+submit group</p>
+              <div class="input-group">
+                <input class="searchPage form-control" name="SearchableText" type="text" size="25" title="Search Site" value="page">
+                <span class="input-group-btn">
+                  <input class="searchPage allowMultiSubmit btn btn-primary" type="submit" value="Search">
+                </span>
+              </div>
+            </div>
             <br>
             <br>
             <h1 id="forms">Alerts</h1>
@@ -392,8 +420,9 @@
                   <strong>Error</strong> You have not configured a mail host or a site 'From' address, various features including contact forms, email notification and password reset will not work. Go to the  <a href="http://plone.iskra.cat:8080/Plone/@@mail-controlpanel">Mail control panel</a> to fix this.
               </div>
             </div>
-            <h2 id="deprecated-alerts">Deprecatred alerts</h2>
+            <h2 id="deprecated-alerts">Deprecated alerts</h2>
             <div class="test-example">
+              <p>Alerts in DL not anymore <span class="accent-label">Changed</span></p>
               <dl class="portalMessage warning">
                   <dt> Warning</dt>
                   <dd>
@@ -402,6 +431,35 @@
                   </dd>
               </dl>
             </div>
+            <br>
+            <br>
+            <h1 id="listing-bar">Listing bar</h1>
+            <h2>Plone pages listings</h2>
+            <div class="test-example">
+              <p>Need to be changed in structure a correct markup <span class="accent-label">Must be changed</span>
+              <p class="discreet">Appears on search page</p>
+              <div class="listingBar">
+                  <span class="previous">
+                      <a href="">« Previous 10 items</a>
+                  </span>
+                  <span class="next">
+                    <a href=""> Next 10 items »</a>
+                  </span>
+                  <a href="">1</a>
+                  [<span>2</span>]
+                  <a href="">3</a> 
+                  <a href="">4</a>
+                  <a href="">5</a> 
+                  <a href="">6</a>
+                  <a href="">7</a>
+                  <span>
+                    <a href="">8</a>
+                  </span>
+              </div>
+            </div>
+
+
+
 
 
             <div class="row" id="mainnavigation-wrapper">
@@ -458,108 +516,9 @@
 
 
 
-<div class="portalMessage info">
-    <strong>
-        Info
-    </strong>
-    <span tal:omit-tag="">
-        The portalMessage class, can also contain <a href="#">links</a> - used to
-        give the user temporary status messages.
-    </span>
-</div>
 
-<dl class="portalMessage error">
-    <dt>
-        Error
-    </dt>
-    <dd>
-        The portalMessage 'error' class, can also contain <a href="#">links</a> - used to
-        give the user temporary status messages.
-    </dd>
-</dl>
 
-<dl class="portalMessage warning">
-    <dt>
-        Warning
-    </dt>
-    <dd>
-        The portalMessage 'warning' class, can also contain <a href="#">links</a> - used to
-        give the user temporary status messages.
-    </dd>
-</dl>
 
-<h1 class="documentFirstHeading">Document Headline</h1>
-
-<div id="plone-document-byline" class="documentByLine">
-    <span class="documentAuthor">
-      by
-      <a href="http://localhost:8080/Plone/author/admin">admin</a>
-    </span>
-
-   <span class="documentModified">
-     &mdash;
-     <span>
-       last modified
-     </span>
-     May 21, 2010 10:02 AM
-   </span>
-
-   <span id="content-history" class="contentHistory">
-     &mdash;
-     <a href="http://localhost:8080/Plone/front-page/@@historyview" rel="#pb_4" class="link-overlay" style="cursor: pointer;">History</a>
-   </span>
-</div>
-
-<div class="documentDescription">
-The document description
-</div>
-
-<p>
-Normal document body text,
-<strong>strong text</strong>,
-<em>emphasised text</em>,
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo. Vestibulum vitae urna et mi volutpat luctus. Nulla auctor, lacus ut consectetuer sagittis, erat odio vulputate sapien, eu placerat diam mauris id turpis. Aenean quis ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque rutrum. Sed mattis turpis sit amet ipsum viverra pharetra. Nunc facilisis, augue non dapibus gravida, risus quam vulputate quam, non venenatis dui massa in leo. Maecenas scelerisque dapibus libero. Suspendisse potenti.
-example <a href="#">Normal internal site link</a> inside a paragraph,
-example <a href="http://plone.org">External link to plone.org</a>,
-example <a href="https://plone.org">Secure (HTTPS) link to plone.org</a>,
-example <a href="mailto:some@address">Mailto link</a>,
-example <a href="ftp://some.site">FTP link</a>,
-example <a href="news://some.site">NNTP (news) link</a>,
-example <a href="webcal://some.site">WebCal link</a>,
-example <a href="feed://some.site">RSS feed link</a>,
-example <a href="irc://some.network/#channel">IRC link</a>.
-</p>
-
-<ul>
-    <li>Unordered list element 1
-        <ul>
-            <li>Unordered list subelement 1</li>
-        </ul>
-    </li>
-    <li>Unordered list element 2</li>
-    <li>Unordered list element 3</li>
-</ul>
-
-<ol>
-    <li>Ordered list element 1
-        <ol><li>Ordered list subelement 1</li></ol>
-    </li>
-    <li>Ordered list element 2</li>
-    <li>Ordered list element 3</li>
-</ol>
-
-<dl>
-    <dt>Definition list term</dt>
-    <dd>Definition List description, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo.
-    </dd>
-    <dd>Another Definition List description, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo.
-    </dd>
-</dl>
-
-<h3>Definition List deprecation</h3>
-
-As of Plone 5, we try to get rid of Definition Lists where they don't act as
-definition lists. We replace them in the following manners.
 
 <h4>in portlets</h4>
 
@@ -591,20 +550,7 @@ If a portlet has only one item:
 
 </div>
 
-<h4>in portal messages</h4>
 
-<div class="portalMessage info">
-  <strong>Not important</strong>
-  This message is here to tell you something went just as you expected.
-</div>
-<div class="portalMessage warning">
-  <strong>You might run into problems</strong>
-  Please check your settings, be sure what you're doing is right.
-</div>
-<div class="portalMessage error">
-  <strong>Something went wrong</strong>
-  This is bad, you must notice this.
-</div>
 
 <h4>in listings</h4>
 
@@ -619,213 +565,7 @@ If a portlet has only one item:
   </article>
 </div>
 
-<h2>
-Table of class <code>listing</code>
-</h2>
 
-<table class="listing" id="someid" summary="Sortable table example">
-    <!-- By giving a table an ID, it gets the sortable option.
-         Use class="nosort" to override on a table or column basis. -->
-    <thead>
-        <tr>
-            <th>Table heading</th>
-            <th>Another heading (sortable, click to sort)</th>
-            <th class="nosort">Fixed column (not sortable)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="odd">
-            <td>Odd table item</td>
-            <td>Item 1</td>
-            <td>Another item</td>
-        </tr>
-        <tr class="even">
-            <td>Even table item</td>
-            <td>Item 2</td>
-            <td>Yet another item</td>
-        </tr>
-        <tr class="odd">
-            <td>Odd table item</td>
-            <td>Item 3</td>
-            <td>And one more item</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2>
-Table of class <code>vertical listing</code>
-</h2>
-
-<table class="vertical listing" summary="Vertical listing example">
-    <tbody>
-        <tr>
-            <th>Table heading</th>
-            <td>Odd table item</td>
-        </tr>
-        <tr>
-            <th>Another heading</th>
-            <td>Even table item</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2>Forms</h2>
-
-<form>
-    <fieldset>
-        <legend>Fieldset legend</legend>
-
-        <div class="field">
-            <label for="onefield">Text field</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title title_required;"
-                  i18n:translate="label_required">(Required)</span>
-            <div class="formHelp">
-                This is the help for this form field. And <a href="#">links are also possible</a>.
-            </div>
-            <input type="text" id="onefield" value="Some content" />
-        </div>
-        <div class="field error">
-            <label for="anotherfield">Text field with error</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title title_required;"
-                  i18n:translate="label_required">(Required)</span>
-            <div class="formHelp">
-                This field is just here to demonstrate an error message.
-            </div>
-            <div>This is the error message.</div>
-            <input type="text" id="anotherfield" value="Some content" />
-        </div>
-        <div class="field">
-            <label for="onecheckbox">Checkbox</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title title_required;"
-                  i18n:translate="label_required">(Required)</span>
-            <div class="formHelp">
-                This is a checkbox field.
-            </div>
-            <input type="checkbox" id="onecheckbox" />
-        </div>
-        <div class="field error">
-            <label for="anothercheckbox">Checkbox with error</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title title_required;"
-                  i18n:translate="label_required">(Required)</span>
-            <div class="formHelp">
-                This checkbox field is just here to demonstrate an error message.
-            </div>
-            <div>This is the error message.</div>
-            <input type="checkbox" id="anothercheckbox" />
-        </div>
-        <div class="field">
-            <label for="onestylishcheckbox">Checkbox without border</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title title_required;"
-                  i18n:translate="label_required">(Required)</span>
-            <div class="formHelp">
-                This is a checkbox field.
-            </div>
-            <input type="checkbox"
-                   class="noborder"
-                   id="onestylishcheckbox" />
-        </div>
-        <div class="field error">
-            <label for="anotherstylishcheckbox">
-            Checkbox without border with error</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title title_required;"
-                  i18n:translate="label_required">(Required)</span>
-            <div class="formHelp">
-                This checkbox field is just here to demonstrate an error message.
-            </div>
-            <div>This is the error message.</div>
-            <input type="checkbox"
-                   class="noborder"
-                   id="anotherstylishcheckbox" />
-        </div>
-        <div class="field">
-            <label>Radio</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title title_required;"
-                  i18n:translate="label_required">(Required)</span>
-            <div class="formHelp">
-                This is a checkbox field.
-            </div>
-            <label>First
-            <input class="noborder"
-                   type="radio"
-                   name="radio_group1" />
-            </label>
-            <br />
-            <label>Second
-            <input class="noborder"
-                   type="radio"
-                   name="radio_group1" />
-            </label>
-            <br />
-            <label>Third
-            <input class="noborder"
-                   type="radio"
-                   name="radio_group1" />
-            </label>
-            <br />
-        </div>
-        <div class="field error">
-            <label>Radio with error</label>
-            <span class="fieldRequired" title="Required"
-                  i18n:attributes="title title_required;"
-                  i18n:translate="label_required">(Required)</span>
-            <div class="formHelp">
-                This checkbox field is just here to demonstrate an error message.
-            </div>
-            <div>This is the error message.</div>
-            <label>First
-            <input class="noborder"
-                   type="radio"
-                   name="radio_group2" />
-            </label>
-            <br />
-            <label>Second
-            <input class="noborder"
-                   type="radio"
-                   name="radio_group2" />
-            </label>
-            <br />
-            <label>Third
-            <input class="noborder"
-                   type="radio"
-                   name="radio_group2" />
-            </label>
-            <br />
-        </div>
-        <div class="formControls">
-            <input class="context"
-                   type="submit"
-                   value="Context submit" />
-            <input class="standalone"
-                   type="submit"
-                   value="Standalone submit" />
-            <input class="destructive"
-                   type="submit"
-                   value="Destructive submit" />
-            <input type="submit"
-                   value="Submit" />
-        </div>
-        <div class="formControls">
-            <input class="context"
-                   type="button"
-                   value="Context button" />
-            <input class="standalone"
-                   type="button"
-                   value="Standalone button" />
-            <input class="destructive"
-                   type="button"
-                   value="Destructive button" />
-            <input type="button"
-                   value="Button" />
-        </div>
-    </fieldset>
-</form>
 
 <h2>Table with form elements</h2>
 
