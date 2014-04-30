@@ -8,95 +8,455 @@
     <script src="../Products.CMFPlone/Products/CMFPlone/static/plone.min.js"></script>
 
     <script src="plonetheme/barceloneta/static/barceloneta.js"></script>
+
+    <style>
+    /*styles just to fit example test page*/
+    body {margin: 30px 0 0 !important;}
+    .test-contents {position: fixed;background: rgba(255,255,255,.9);z-index: 99999;right: 10px; top:10px; box-shadow: 0 0 5px rgba(0,0,0,.1);padding: 10px;font-size: 80%;}
+    #content-core > h1 {text-transform: uppercase;font-weight: bold;font-size: 60px;border-top: 8px solid;padding-top: 30px;}
+    .test-example {border: 1px solid #ddd; box-shadow: 0 0 5px rgba(0,0,0,.1); padding: 10px 20px; margin: 30px 0;}
+    .test-example:before {content:"Example";position: absolute;border: 1px solid #ddd;padding: 5px 10px;margin-left: -21px;margin-top: -42px;background: #f7f7f7;}
+    .accent-label {background: #c00; font-size: 12px; color: #fff; padding: 2px 5px; border-radius: 50px;}
+    </style>
 </head>
 
 <body>
 
-<div class="container-fluid">
+<div class="container-fluid" id="content">
     <div id="main-container" class="row row-offcanvas row-offcanvas-right">
         <div id="content-container">
 
-<h1 class="documentFirstHeading">Plone User Interface elements test page</h1>
+          <h1 class="documentFirstHeading">Plone User Interface elements test page</h1>
 
 
-<div class="documentDescription">
-This page lists the common user interface elements that exist in Plone, and
-shows you how they are rendered. It also tests a couple of common Internet
-Explorer rendering bugs, so you can see if your changes have triggered any
-bad behaviour on this front.
-</div>
+          <p class="documentDescription">
+          This page lists the common user interface elements that exist in Plone, and
+          shows you how they are rendered. It also tests a couple of common Internet
+          Explorer rendering bugs, so you can see if your changes have triggered any
+          bad behaviour on this front.
+          </p>
 
-<div id="content-core">
-<pre>
-  Headlines
-  <code>XRSX</code>
-</pre>
-
-<div class="row" id="mainnavigation-wrapper">
-        <div class="container-fluid" id="mainnavigation">
-    <p class="hiddenStructure">Navigation</p>
-    <nav class="navbar" id="portal-globalnav-wrapper" role="navigation">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="portal-globalnav-collapse">
-          <ul class="nav navbar-nav" id="portal-globalnav">
-              
-                <li id="portaltab-index_html" class="selected">
-                    <a href="http://localhost:8080/Plone" title="">Inici</a>
-                </li>
-              
-              
-                <li id="portaltab-news" class="plain">
-                    <a href="http://localhost:8080/Plone/news" title="Noticies del lloc">Noticies</a>
-                </li>
-              
-              
-                <li id="portaltab-events" class="plain">
-                    <a href="http://localhost:8080/Plone/events" title="Esdeveniments del lloc">Esdeveniments</a>
-                </li>
-              
-              
-                <li id="portaltab-Members" class="plain">
-                    <a href="http://localhost:8080/Plone/Members" title="Contenidor per als directoris personals dels usuaris del portal">Usuaris</a>
-                </li>
-              
+          <ul class="test-contents">
+            <li>
+              <a href="#typo">Typography</a>
+              <ul>
+                <li><a href="#heads">Headings</a></li>
+                <li><a href="#bodies">Body copies</a></li>
+                <li><a href="#lists">Lists</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#code">Code</a>
+              <ul>
+                <li><a href="#codei">Inline Kbd, Code</a></li>
+                <li><a href="#codeb">Block Pre</a></li>
+              </ul>
+            </li>
+            <li><a href="#tables">Tables</a></li>
+            <li>
+              <a href="#forms">Forms</a>
+              <ul>
+                <li><a href="#basic">Basic</a></li>
+                <li><a href="#checks">Checks and radios</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+              </ul>
+            </li>
           </ul>
-        </div>
-    </nav>
-  </div>
-</div>
 
-<div class="hero" role="banner">
-    <div class="container-fluid">
-        <div class="jumbotron">
-          <h1>Welcome!</h1>
-          <p>Plone 5 rocks!</p>
-          <p><a href="http://plone.org" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
-        </div>
-    </div>
-</div>
+          <div id="content-core">
+            <h1 id="typo">Typography</h1>
+            <h2 id="heads">Headings</h2>
+            <div class="test-example">
+              <h1>Headline h1</h1>
+              <h1 class="documentFirstHeading">Headline documentFirstHeading</h1>
+              <h2>Headline h2</h2>
+              <h3>Headline h3</h3>
+              <h4>Headline h4</h4>
+              <h5>Headline h5</h5>
+              <h6>Headline h6</h6>
+              <p>Paragraf line p</p>
+            </div>
+            <h2 id="bodies">Body copies</h2>
+            <div class="test-example">
+              <h3> Paragraph, strong, em, abbr, a links, documentDescription, address</h3>
+              <p>Normal document body text, <strong>strong text</strong>, <em>emphasised text</em>, <abbr title="abbreviation">abbr</abbr>. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo. Vestibulum vitae urna et mi volutpat luctus. Nulla auctor, lacus ut consectetuer sagittis, erat odio vulputate sapien, eu placerat diam mauris id turpis. Aenean quis ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque rutrum. Sed mattis turpis sit amet ipsum viverra pharetra. Nunc facilisis, augue non dapibus gravida, risus quam vulputate quam, non venenatis dui massa in leo. Maecenas scelerisque dapibus libero. Suspendisse potenti. example <a href="#">Normal internal site link</a> inside a paragraph, example <a href="http://plone.org">External link to plone.org</a>, example <a href="https://plone.org">Secure (HTTPS) link to plone.org</a>, example <a href="mailto:some@address">Mailto link</a>, example <a href="ftp://some.site">FTP link</a>, example <a href="news://some.site">NNTP (news) link</a>, example <a href="webcal://some.site">WebCal link</a>, example <a href="feed://some.site">RSS feed link</a>, example <a href="irc://some.network/#channel">IRC link</a>.</p>
+              <div class="documentDescription">The document description</div>
+              <address>
+                <strong>Plone Fundation</strong><br>
+                PO Box 344 <br>
+                Fortville IN 46040, USA<br>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+                <a href="mailto:#">plone.mail@example.com</a>
+              </address>
+              <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+              </blockquote>
+            </div>
+            <h2 id="lists">Lists</h2>
+            <div class="test-example">
+              <h3>Ul, Ol, Dl <span class="accent-label">DL is deprecated in Plone as a builder element</span></h3>
+              <ul>
+                <li>Unordered list element 1
+                    <ul>
+                        <li>Unordered list subelement 1</li>
+                    </ul>
+                </li>
+                <li>Unordered list element 2</li>
+                <li>Unordered list element 3</li>
+              </ul>
+              <ol>
+                <li>Ordered list element 1
+                    <ol>
+                        <li>Ordered list subelement 1</li>
+                    </ol>
+                </li>
+                <li>Ordered list element 2</li>
+                <li>Ordered list element 3</li>
+              </ul>
+              <dl>
+                <dt>Definition list term</dt>
+                <dd>Definition List description, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo.
+                </dd>
+                <dd>Another Definition List description, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo.
+                </dd>
+              </dl>
+            </div>
+            <br>
+            <br>
+            <h1 id="code">Code</h1>
+            <h2 id="codei">Inline Kbd, Code</h2>
+            <div class="test-example">
+              <h3>Kbd, Code</h3>
+              <kbd>kbd</kbd>
+              <code>code</code>
+              <pre>Example document <code>code inside pre</code></pre>
+            </div>
+            <h2 id="codeb">Block Pre</h2>
+            <div class="test-example">
+              <h3>Pre with code in it</h3>
+              <pre>Example document <code>code inside pre</code></pre>
+            </div>
+            <br>
+            <br>
+            <h1 id="tables">Tables</h1>
+            <h2>Plone tables styles</h2>
+            <div class="test-example">
+              <h3>Table</h3>
+              <table summary="Sortable table example">
+                  <!-- By giving a table an ID, it gets the sortable option.
+                       Use class="nosort" to override on a table or column basis. -->
+                  <thead>
+                      <tr>
+                          <th>Table</th>
+                          <th>Another heading (sortable, click to sort)</th>
+                          <th class="nosort">Fixed column (not sortable)</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="odd">
+                          <td>Odd table item</td>
+                          <td>Item 1</td>
+                          <td>Another item</td>
+                      </tr>
+                      <tr class="even">
+                          <td>Even table item</td>
+                          <td>Item 2</td>
+                          <td>Yet another item</td>
+                      </tr>
+                      <tr class="odd">
+                          <td>Odd table item</td>
+                          <td>Item 3</td>
+                          <td>And one more item</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <h3>Table .listing</h3>
+              <table class="listing" id="someid" summary="Sortable table example">
+                  <!-- By giving a table an ID, it gets the sortable option.
+                       Use class="nosort" to override on a table or column basis. -->
+                  <thead>
+                      <tr>
+                          <th>.Listing</th>
+                          <th>Another heading (sortable, click to sort)</th>
+                          <th class="nosort">Fixed column (not sortable)</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr class="odd">
+                          <td>Odd table item</td>
+                          <td>Item 1</td>
+                          <td>Another item</td>
+                      </tr>
+                      <tr class="even">
+                          <td>Even table item</td>
+                          <td>Item 2</td>
+                          <td>Yet another item</td>
+                      </tr>
+                      <tr class="odd">
+                          <td>Odd table item</td>
+                          <td>Item 3</td>
+                          <td>And one more item</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <h3>Table .vertical</h3>
+              <table class="vertical listing" summary="Vertical listing example">
+                <tbody>
+                    <tr>
+                        <th>.vertical.listing</th>
+                        <td>Odd table item</td>
+                    </tr>
+                    <tr>
+                        <th>Another heading</th>
+                        <td>Even table item</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            <br>
+            <h1 id="forms">Forms</h1>
+            <h2 id="basic">Basic</h2>
+            <div class="test-example">
+              <form>
+                <fieldset>
+                  <legend>Fieldset legend</legend>
 
-<h1>Headline h1</h1>
-<p>And a paragraph</p>
-<h2>Headline h2</h2>
-<p>And a paragraph</p>
-<h3>Headline h3</h3>
-<p>And a paragraph</p>
-<h4>Headline h4</h4>
-<p>And a paragraph</p>
-<h5>Headline h5</h5>
-<p>And a paragraph</p>
-<h6>Headline h6</h6>
+                  <div class="field">
+                      <label for="onefield">Text field</label>
+                      <span class="fieldRequired" title="Required">(Required)</span>
+                      <div class="formHelp">
+                          This is the help for this form field. And <a href="#">links are also possible</a>.
+                      </div>
+                      <input type="text" id="onefield" value="Some content">
+                  </div>
+                  <div class="field error">
+                      <label for="anotherfield">Text field with error</label>
+                      <span class="fieldRequired" title="Required">(Required)</span>
+                      <div class="formHelp">
+                          This field is just here to demonstrate an error message.
+                      </div>
+                      <div>This is the error message.</div>
+                      <input type="text" id="anotherfield" value="Some content">
+                  </div>
+                  <div class="field">
+                    <label for="exampleInputFile">File input</label>
+                    <p class="formHelp">Example block-level help text here.</p>
+                    <input type="file" id="exampleInputFile"> 
+                  </div>
+                  <div class="field">
+                    <label for="exampleInputFile">Select</label>
+                    <select>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="exampleInputFile">Select Multiple</label>
+                    <select multiple>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="exampleInputFile">Textarea</label>
+                    <textarea rows="3"></textarea>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <h2 id="checks">Checks and radios</h2>
+            <div class="test-example">
+              <form>
+                <fieldset>
+                  <legend>Fieldset legend</legend>
+                  <div class="field">
+                      <label for="onecheckbox">Checkbox</label>
+                      <span class="fieldRequired" title="Required" i18n:attributes="title title_required;" i18n:translate="label_required">(Required)</span>
+                      <div class="formHelp">
+                          This is a checkbox field.
+                      </div>
+                      <input type="checkbox" id="onecheckbox">
+                  </div>
+                  <div class="field error">
+                      <label for="anothercheckbox">Checkbox with error</label>
+                      <span class="fieldRequired" title="Required" i18n:attributes="title title_required;" i18n:translate="label_required">(Required)</span>
+                      <div class="formHelp">
+                          This checkbox field is just here to demonstrate an error message.
+                      </div>
+                      <div>This is the error message.</div>
+                      <input type="checkbox" id="anothercheckbox">
+                  </div>
+                  <div class="field">
+                      <label for="onestylishcheckbox">Checkbox without border</label>
+                      <span class="fieldRequired" title="Required" i18n:attributes="title title_required;" i18n:translate="label_required">(Required)</span>
+                      <div class="formHelp">
+                          This is a checkbox field.
+                      </div>
+                      <input type="checkbox" class="noborder" id="onestylishcheckbox">
+                  </div>
+                  <div class="field error">
+                      <label for="anotherstylishcheckbox">
+                      Checkbox without border with error</label>
+                      <span class="fieldRequired" title="Required" i18n:attributes="title title_required;" i18n:translate="label_required">(Required)</span>
+                      <div class="formHelp">
+                          This checkbox field is just here to demonstrate an error message.
+                      </div>
+                      <div>This is the error message.</div>
+                      <input type="checkbox" class="noborder" id="anotherstylishcheckbox">
+                  </div>
+                  <div class="field">
+                      <label>Radio</label>
+                      <span class="fieldRequired" title="Required" i18n:attributes="title title_required;" i18n:translate="label_required">(Required)</span>
+                      <div class="formHelp">
+                          This is a checkbox field.
+                      </div>
+                      <label>First
+                      <input class="noborder" type="radio" name="radio_group1">
+                      </label>
+                      <br>
+                      <label>Second
+                      <input class="noborder" type="radio" name="radio_group1">
+                      </label>
+                      <br>
+                      <label>Third
+                      <input class="noborder" type="radio" name="radio_group1">
+                      </label>
+                      <br>
+                  </div>
+                  <div class="field error">
+                      <label>Radio with error</label>
+                      <span class="fieldRequired" title="Required" i18n:attributes="title title_required;" i18n:translate="label_required">(Required)</span>
+                      <div class="formHelp">
+                          This checkbox field is just here to demonstrate an error message.
+                      </div>
+                      <div>This is the error message.</div>
+                      <label>First
+                      <input class="noborder" type="radio" name="radio_group2">
+                      </label>
+                      <br>
+                      <label>Second
+                      <input class="noborder" type="radio" name="radio_group2">
+                      </label>
+                      <br>
+                      <label>Third
+                      <input class="noborder" type="radio" name="radio_group2">
+                      </label>
+                      <br>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <h2 id="buttons">Buttons</h2>
+            <div class="test-example">
+              <form>
+                <fieldset>
+                  <legend>Fieldset legend</legend>              
+                  <div class="formControls">
+                      <input class="context" type="submit" value="Context submit">
+                      <input class="standalone" type="submit" value="Standalone submit">
+                      <input class="destructive" type="submit" value="Destructive submit">
+                      <input type="submit" value="Submit">
+                  </div>
+                  <div class="formControls">
+                      <input class="context" type="button" value="Context button">
+                      <input class="standalone" type="button" value="Standalone button">
+                      <input class="destructive" type="button" value="Destructive button">
+                      <input type="button" value="Button">
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <br>
+            <br>
+            <h1 id="forms">Alerts</h1>
+            <h2 id="standard-alerts">Standard alerts</h2>
+            <div class="test-example">
+              <div class="portalMessage">
+                  <strong>Non defined</strong> You have not configured a mail host or a site 'From' address, various features including contact forms, email notification and password reset will not work. Go to the  <a href="http://plone.iskra.cat:8080/Plone/@@mail-controlpanel">Mail control panel</a> to fix this.
+              </div>
+              <div class="portalMessage info">
+                  <strong>Info</strong> You have not configured a mail host or a site 'From' address, various features including contact forms, email notification and password reset will not work. Go to the  <a href="http://plone.iskra.cat:8080/Plone/@@mail-controlpanel">Mail control panel</a> to fix this.
+              </div>
+              <div class="portalMessage warning">
+                  <strong>Warning</strong> You have not configured a mail host or a site 'From' address, various features including contact forms, email notification and password reset will not work. Go to the  <a href="http://plone.iskra.cat:8080/Plone/@@mail-controlpanel">Mail control panel</a> to fix this.
+              </div>
+              <div class="portalMessage error">
+                  <strong>Error</strong> You have not configured a mail host or a site 'From' address, various features including contact forms, email notification and password reset will not work. Go to the  <a href="http://plone.iskra.cat:8080/Plone/@@mail-controlpanel">Mail control panel</a> to fix this.
+              </div>
+            </div>
+            <h2 id="deprecated-alerts">Deprecatred alerts</h2>
+            <div class="test-example">
+              <dl class="portalMessage warning">
+                  <dt> Warning</dt>
+                  <dd>
+                      The portalMessage 'warning' class, can also contain <a href="#">links</a> - used to
+                      give the user temporary status messages.
+                  </dd>
+              </dl>
+            </div>
 
-<pre>Example document rendering</pre>
+
+            <div class="row" id="mainnavigation-wrapper">
+              <div class="container-fluid" id="mainnavigation">
+                <p class="hiddenStructure">Navigation</p>
+                <nav class="navbar" id="portal-globalnav-wrapper" role="navigation">
+
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="portal-globalnav-collapse">
+                      <ul class="nav navbar-nav" id="portal-globalnav">
+                          
+                            <li id="portaltab-index_html" class="selected">
+                                <a href="http://localhost:8080/Plone" title="">Inici</a>
+                            </li>
+                          
+                          
+                            <li id="portaltab-news" class="plain">
+                                <a href="http://localhost:8080/Plone/news" title="Noticies del lloc">Noticies</a>
+                            </li>
+                          
+                          
+                            <li id="portaltab-events" class="plain">
+                                <a href="http://localhost:8080/Plone/events" title="Esdeveniments del lloc">Esdeveniments</a>
+                            </li>
+                          
+                          
+                            <li id="portaltab-Members" class="plain">
+                                <a href="http://localhost:8080/Plone/Members" title="Contenidor per als directoris personals dels usuaris del portal">Usuaris</a>
+                            </li>
+                          
+                      </ul>
+                    </div>
+                </nav>
+              </div>
+            </div>
+
+            <div class="hero" role="banner">
+                <div class="container-fluid">
+                    <div class="jumbotron">
+                      <h1>Welcome!</h1>
+                      <p>Plone 5 rocks!</p>
+                      <p><a href="http://plone.org" class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+
+
 
 <div class="portalMessage info">
     <strong>
