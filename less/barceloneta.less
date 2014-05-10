@@ -247,12 +247,12 @@ html {
   z-index: 50;
   position: relative;
   padding:0; margin:0;
-  
+
   #portal-globalnav-wrapper {
     margin-bottom: 0px;
     border: 0px;
   }
-  
+
   .navbar-toggle .icon-bar {
     background: white;
   }
@@ -596,7 +596,7 @@ select:extend(.form-control all),
 textarea:extend(.form-control all) {font-size:100%;}
 textarea {resize:vertical;} //no free resize
 
-.btn {/*border: 0; padding: 12px 24px;*/ letter-spacing: .05em; 
+.btn {/*border: 0; padding: 12px 24px;*/ letter-spacing: .05em;
   &:hover {box-shadow: 0 2px 2px rgba(0,0,0,.17);}
   &:focus, &:active {box-shadow: inset 0 5px 5px rgba(0,0,0,.17); outline: 0 none !important;}
   &.disabled {background-color: #e5e5e5; color:#999; border-color:#ddd;}}/*changes some Bootstrap styles on buttons to be applied on BCNeta*/
@@ -626,10 +626,6 @@ button:extend(.btn all),
 /* help classes */
 .visualClear:extend(.clearfix all) {}
 
-#edit-zone.navbar-fixed-left ~ .outer-wrapper, #edit-zone.navbar-fixed-left ~ #portal-footer-wrapper  { margin-left: 50px;} /*we need to activate it just with edit-zone activated*/
-#edit-zone.navbar-fixed-top ~ .outer-wrapper { margin-top: 50px;} /*we need to activate it just with edit-zone activated*/
-#edit-zone.navbar-fixed-left.compressed ~ .outer-wrapper, #edit-zone.navbar-fixed-left.compressed ~ #portal-footer-wrapper  { margin-left: 0;} /*we need to activate it just with edit-zone activated*/
-#edit-zone.navbar-fixed-top.compressed ~ .outer-wrapper { margin-top: 0;} /*cancells outer-wrapper margin on compressed bar*/
 
 
 #content .field input[type="text"] {font-size: 1em;}
@@ -645,7 +641,6 @@ button:extend(.btn all),
 } /*complet route to win*/
 .modal-footer {border-top: 0;}
 
-/* PLONE LESS*/
 .required {
   margin-left:-5px; /*compensate &nbsp; space*/
   &:after {color: #B3005D; content:"*"; top:.25em; position:relative; font-size:150%; line-height: 0;}
@@ -659,36 +654,7 @@ button:extend(.btn all),
 .picker__weekday { font-size: 1em; text-align: center;}
 .pattern-pickadate-wrapper .pattern-pickadate-date-wrapper .picker__holder {margin:0;}
 
-#plone-document-byline .actionMenu {
-    .nav();
-    .navbar-nav();
-    @media (min-width: @grid-float-breakpoint) {
-      .pull-right();
-    }
-}
-.navbar-collapse {
-  max-height: inherit; padding-left: 0; padding-right: 0;
-  @media (min-width: @grid-float-breakpoint) {
-    #plone-document-byline .actionMenu:last-child {
-      margin-right: -@navbar-padding-horizontal;
-    }
-  }
-}
-#plone-document-byline {
-    .nav();
-    .navbar-nav();
-}
-#edit-zone.navbar-fixed-left {
-  #plone-document-byline .actionMenu > li {float:none !important; position: static; position: initial;}
-  #plone-document-byline .actionMenu > li > a {position: static; position: initial;}
-}
-#edit-zone.navbar-fixed-left.expanded {
-  #plone-document-byline {
-    float:none !important;
-    margin-right:0 !important;
-  }
-}
-.icon-info-circled:before { content: '\e811'; } /* '' */
+
 
 /*fix folder contents tables and lists*/
 .popover.columns ul li {padding: 7px 2.5em; border-bottom:1px solid #ddd;
@@ -698,21 +664,11 @@ button:extend(.btn all),
 .item-dragging {background-color: #fea;}
 .pat-structure .btn .label {padding: 0 5px; color: #fff;}
 
-/*edit-zone info*/
-#edit-zone a+ul li:not(.dropdown-header) > span {
-  color:#ccc;
-  padding: 8px;
-  display: block;
-  & a {display: inline; color: @link-darkbg; padding: 0 !important;
-    &:hover {text-decoration: underline; background: none !important;}
-  }
-}
-/* FI PLONE LESS*/
 
 
 /*footer for pages really short*/
 body, html {height: 100%;}
-.outer-wrapper { 
+.outer-wrapper {
   min-height: 100%;
   height: auto !important;
   height: 100%;

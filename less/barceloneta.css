@@ -6452,11 +6452,7 @@ button.close {
 #portal-globalnav:before,
 #portal-globalnav:after,
 .visualClear:before,
-.visualClear:after,
-#plone-document-byline .actionMenu:before,
-#plone-document-byline .actionMenu:after,
-#plone-document-byline:before,
-#plone-document-byline:after {
+.visualClear:after {
   content: " ";
   display: table;
 }
@@ -6475,9 +6471,7 @@ button.close {
 .panel-body:after,
 .modal-footer:after,
 #portal-globalnav:after,
-.visualClear:after,
-#plone-document-byline .actionMenu:after,
-#plone-document-byline:after {
+.visualClear:after {
   clear: both;
 }
 .center-block {
@@ -6972,8 +6966,8 @@ html {
   margin-bottom: 0px;
   border: 0px;
 }
-#mainnavigation-wrapper .navbar-toggle {
-  background-color: red;
+#mainnavigation-wrapper .navbar-toggle .icon-bar {
+  background: white;
 }
 #mainnavigation-wrapper #portal-globalnav > li > a {
   color: white;
@@ -7079,6 +7073,7 @@ ol li:before {
   color: #999999;
 }
 .navbar li:before,
+.dropdown-menu li:before,
 .breadcrumb li:before,
 .navTree li:before,
 .field li:before,
@@ -7087,6 +7082,7 @@ ol li:before {
 .pagination li:before,
 .select2-drop li:before,
 .navbar li:before,
+.dropdown-menu li:before,
 .breadcrumb li:before,
 .navTree li:before,
 .field li:before,
@@ -7097,6 +7093,7 @@ ol li:before {
   content: none;
 }
 .navbar li,
+.dropdown-menu li,
 .breadcrumb li,
 .navTree li,
 .field li,
@@ -7105,54 +7102,39 @@ ol li:before {
 .pagination li,
 .select2-drop li {
   margin-bottom: initial;
-  padding-left: initial;
-  text-indent: initial;
+  padding-left: 0;
+  text-indent: 0;
 }
+#history-list p {
+  margin-bottom: 0;
+  margin-left: 30px;
+}
+#history-list li {
+  margin-bottom: 15px;
+  padding-left: 0;
+  text-indent: 0;
+}
+#history-list .historyTools form {
+  display: inline;
+}
+.croppedDescription {
+  margin-left: 30px;
+}
+/*adds padding on search results description*/
 #content .documentFirstHeading {
   margin-top: 0;
 }
 #content .documentByLine {
   color: #999999;
-}
-#content .documentByLine > span {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #ffffff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-  color: inherit;
-  font-size: 100%;
-  padding: 0;
-  background-color: #999999;
-  background: #eeeeee;
-  padding: .3em .5em;
-  margin: auto .25em;
-}
-#content .documentByLine > span[href]:hover,
-#content .documentByLine > span[href]:focus {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-#content .documentByLine > span:empty {
-  display: none;
-}
-.btn #content .documentByLine > span,
-button #content .documentByLine > span,
-[type="submit"] #content .documentByLine > span,
-.context #content .documentByLine > span,
-.standalone #content .documentByLine > span {
-  position: relative;
-  top: -1px;
-}
-#content .documentByLine > span[href]:hover,
-#content .documentByLine > span[href]:focus {
-  background-color: #808080;
+  /*
+    > span {
+      .label;
+      .label-default;
+      background:@gray-lighter;
+      padding: .3em .5em;
+      margin: auto .25em;
+    }
+    */
 }
 #content .documentByLine :first-child {
   margin-left: 0;
@@ -7329,6 +7311,50 @@ textarea {
 textarea {
   resize: vertical;
 }
+.btn,
+button,
+[type="submit"],
+.context,
+.standalone {
+  /*border: 0; padding: 12px 24px;*/
+  letter-spacing: .05em;
+}
+.btn:hover,
+button:hover,
+[type="submit"]:hover,
+.context:hover,
+.standalone:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.17);
+}
+.btn:focus,
+.btn:active,
+button:focus,
+button:active,
+[type="submit"]:focus,
+[type="submit"]:active,
+.context:focus,
+.context:active,
+.standalone:focus,
+.standalone:active {
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.17);
+  outline: 0 none !important;
+}
+.btn.disabled,
+button.disabled,
+[type="submit"].disabled,
+.context.disabled,
+.standalone.disabled {
+  background-color: #e5e5e5;
+  color: #999;
+  border-color: #ddd;
+}
+/*changes some Bootstrap styles on buttons to be applied on BCNeta*/
+.btn-default {
+  background-color: #ddd;
+}
+.btn-default:hover {
+  background-color: #bbb;
+}
 .label {
   color: inherit;
   font-size: 100%;
@@ -7355,9 +7381,12 @@ textarea {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  /*border: 0; padding: 12px 24px;*/
+  letter-spacing: .05em;
   color: #333333;
   background-color: #ffffff;
   border-color: #cccccc;
+  background-color: #ddd;
 }
 .link-parent:focus,
 .link-parent:active:focus,
@@ -7387,6 +7416,19 @@ fieldset[disabled] .link-parent {
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.link-parent:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.17);
+}
+.link-parent:focus,
+.link-parent:active {
+  box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.17);
+  outline: 0 none !important;
+}
+.link-parent.disabled {
+  background-color: #e5e5e5;
+  color: #999;
+  border-color: #ddd;
 }
 .link-parent:hover,
 .link-parent:focus,
@@ -7424,11 +7466,10 @@ fieldset[disabled] .link-parent.active {
   color: #ffffff;
   background-color: #333333;
 }
-/* help classes */
-body {
-  margin-left: 50px;
+.link-parent:hover {
+  background-color: #bbb;
 }
-/*we need to activate it just with edit-zone activated*/
+/* help classes */
 #content .field input[type="text"] {
   font-size: 1em;
 }
@@ -7462,7 +7503,6 @@ body {
 .modal-footer {
   border-top: 0;
 }
-/* PLONE LESS*/
 .required {
   margin-left: -5px;
   /*compensate &nbsp; space*/
@@ -7499,210 +7539,32 @@ body {
 .pattern-pickadate-wrapper .pattern-pickadate-date-wrapper .picker__holder {
   margin: 0;
 }
-#plone-document-byline .actionMenu {
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-  margin: 7.5px -15px;
+/*fix folder contents tables and lists*/
+.popover.columns ul li {
+  padding: 7px 2.5em;
+  border-bottom: 1px solid #ddd;
 }
-#plone-document-byline .actionMenu > li {
-  position: relative;
-  display: block;
+.popover.columns ul li input {
+  margin: 4px 5px 0;
 }
-#plone-document-byline .actionMenu > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
+.popover.columns ul li:hover {
+  background: #eee;
 }
-#plone-document-byline .actionMenu > li > a:hover,
-#plone-document-byline .actionMenu > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
+.pat-structure .popover .popover-title {
+  padding-bottom: 8px;
 }
-#plone-document-byline .actionMenu > li.disabled > a {
-  color: #999999;
+/*cancells that line, ideal is to remove it*/
+.item-dragging {
+  background-color: #fea;
 }
-#plone-document-byline .actionMenu > li.disabled > a:hover,
-#plone-document-byline .actionMenu > li.disabled > a:focus {
-  color: #999999;
-  text-decoration: none;
-  background-color: transparent;
-  cursor: not-allowed;
+.pat-structure .btn .label,
+.pat-structure button .label,
+.pat-structure [type="submit"] .label,
+.pat-structure .context .label,
+.pat-structure .standalone .label {
+  padding: 0 5px;
+  color: #fff;
 }
-#plone-document-byline .actionMenu .open > a,
-#plone-document-byline .actionMenu .open > a:hover,
-#plone-document-byline .actionMenu .open > a:focus {
-  background-color: #eeeeee;
-  border-color: #007bb3;
-}
-#plone-document-byline .actionMenu .nav-divider {
-  height: 1px;
-  margin: 9px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
-#plone-document-byline .actionMenu > li > a > img {
-  max-width: none;
-}
-#plone-document-byline .actionMenu > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 20px;
-}
-@media (max-width: 767px) {
-  #plone-document-byline .actionMenu .open .dropdown-menu {
-    position: static;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-  }
-  #plone-document-byline .actionMenu .open .dropdown-menu > li > a,
-  #plone-document-byline .actionMenu .open .dropdown-menu .dropdown-header {
-    padding: 5px 15px 5px 25px;
-  }
-  #plone-document-byline .actionMenu .open .dropdown-menu > li > a {
-    line-height: 20px;
-  }
-  #plone-document-byline .actionMenu .open .dropdown-menu > li > a:hover,
-  #plone-document-byline .actionMenu .open .dropdown-menu > li > a:focus {
-    background-image: none;
-  }
-}
-@media (min-width: 768px) {
-  #plone-document-byline .actionMenu {
-    float: left;
-    margin: 0;
-  }
-  #plone-document-byline .actionMenu > li {
-    float: left;
-  }
-  #plone-document-byline .actionMenu > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  #plone-document-byline .actionMenu.navbar-right:last-child {
-    margin-right: -15px;
-  }
-}
-@media (min-width: 768px) {
-  #plone-document-byline .actionMenu {
-    float: right !important;
-  }
-}
-@media (min-width: 768px) {
-  .navbar-collapse #plone-document-byline .actionMenu:last-child {
-    margin-right: -15px;
-  }
-}
-#plone-document-byline {
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-  margin: 7.5px -15px;
-}
-#plone-document-byline > li {
-  position: relative;
-  display: block;
-}
-#plone-document-byline > li > a {
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-}
-#plone-document-byline > li > a:hover,
-#plone-document-byline > li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-#plone-document-byline > li.disabled > a {
-  color: #999999;
-}
-#plone-document-byline > li.disabled > a:hover,
-#plone-document-byline > li.disabled > a:focus {
-  color: #999999;
-  text-decoration: none;
-  background-color: transparent;
-  cursor: not-allowed;
-}
-#plone-document-byline .open > a,
-#plone-document-byline .open > a:hover,
-#plone-document-byline .open > a:focus {
-  background-color: #eeeeee;
-  border-color: #007bb3;
-}
-#plone-document-byline .nav-divider {
-  height: 1px;
-  margin: 9px 0;
-  overflow: hidden;
-  background-color: #e5e5e5;
-}
-#plone-document-byline > li > a > img {
-  max-width: none;
-}
-#plone-document-byline > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 20px;
-}
-@media (max-width: 767px) {
-  #plone-document-byline .open .dropdown-menu {
-    position: static;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-  }
-  #plone-document-byline .open .dropdown-menu > li > a,
-  #plone-document-byline .open .dropdown-menu .dropdown-header {
-    padding: 5px 15px 5px 25px;
-  }
-  #plone-document-byline .open .dropdown-menu > li > a {
-    line-height: 20px;
-  }
-  #plone-document-byline .open .dropdown-menu > li > a:hover,
-  #plone-document-byline .open .dropdown-menu > li > a:focus {
-    background-image: none;
-  }
-}
-@media (min-width: 768px) {
-  #plone-document-byline {
-    float: left;
-    margin: 0;
-  }
-  #plone-document-byline > li {
-    float: left;
-  }
-  #plone-document-byline > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  #plone-document-byline.navbar-right:last-child {
-    margin-right: -15px;
-  }
-}
-#edit-zone.navbar-fixed-left #plone-document-byline .actionMenu > li {
-  float: none !important;
-  position: static;
-  position: initial;
-}
-#edit-zone.navbar-fixed-left #plone-document-byline .actionMenu > li > a {
-  position: static;
-  position: initial;
-}
-#edit-zone.navbar-fixed-left.expanded #plone-document-byline {
-  float: none !important;
-  margin-right: 0 !important;
-}
-.icon-info-circled:before {
-  content: '\e811';
-}
-/* '' */
-/* FI PLONE LESS*/
 /*footer for pages really short*/
 body,
 html {
@@ -7747,5 +7609,10 @@ html {
 }
 .portletNavigationTree li:first-child a {
   border-top: 0;
+}
+/*forms holly checkbox with long label to not be displayed down*/
+[type="checkbox"] ~ label,
+[type="radio"] ~ label {
+  display: inline;
 }
 /*# sourceMappingURL=++resource++plonetheme.barceloneta/barceloneta.css.map */
