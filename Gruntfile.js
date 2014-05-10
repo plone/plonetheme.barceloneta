@@ -23,7 +23,7 @@ module.exports = function (grunt) {
         less: {
             dist: {
                 options: {
-                    paths: ['bower_components/...'],
+                    paths: ['bower_components/...', '../mockup/bower_components', '../mockup/less'],
                     strictMath: false,
                     sourceMap: true,
                     outputSourceFiles: true,
@@ -32,7 +32,8 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'plonetheme/barceloneta/static/barceloneta.css': 'less/barceloneta.less',
-                    'less/barceloneta.css': 'less/barceloneta.less'
+                    'less/barceloneta.css': 'less/barceloneta.less',
+                    '../mockup/build/plone.min.css': '../mockup/less/plone.less',
                 }
             }
         },
@@ -60,11 +61,16 @@ module.exports = function (grunt) {
             path: 'plonetheme/barceloneta/static/barceloneta.css',
             pattern: 'url\\(\'../bower_components/bootstrap/dist/',
             replacement: 'url(\'++resource++plonetheme.barceloneta.vendor/bootstrap/'
+          },
+          'plone-fonts': {
+            path: '../mockup/build/plone.min.css',
+            pattern: 'url\\(\'fonts/plone-',
+            replacement: 'url(\'++resource++plone-'
           }
         },
         watch: {
             scripts: {
-                files: ['less/*.less', 'js/*.js'],
+                files: ['less/*.less', 'js/*.js', '../mockup/less/*.less'],
                 tasks: ['less', 'sed', 'requirejs']
             }
         },
