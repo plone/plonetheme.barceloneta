@@ -7616,3 +7616,7 @@ html {
   display: inline;
 }
 /*# sourceMappingURL=++resource++plonetheme.barceloneta/barceloneta.css.map */
+
+.navbar li.actionMenuHeader{
+  float: left;
+}
