@@ -28,12 +28,12 @@ module.exports = function (grunt) {
                     sourceMap: true,
                     outputSourceFiles: true,
                     sourceMapURL: '++resource++plonetheme.barceloneta/barceloneta.css.map',
-                    sourceMapFilename: 'plonetheme/barceloneta/static/barceloneta.css.map'
+                    sourceMapFilename: 'plonetheme/barceloneta/theme/css/barceloneta.css.map'
                 },
                 files: {
-                    'plonetheme/barceloneta/static/barceloneta.css': 'less/barceloneta.less',
-                    'less/barceloneta.css': 'less/barceloneta.less',
-                    '../mockup/build/plone.min.css': '../mockup/less/plone.less',
+                    'plonetheme/barceloneta/theme/css/barceloneta.css': 'less/barceloneta.plone.less',
+                    'less/barceloneta.css': 'less/barceloneta.plone.less',
+                    // '../mockup/build/plone.min.css': '../mockup/less/plone.less',
                 }
             }
         },
@@ -41,27 +41,27 @@ module.exports = function (grunt) {
             barceloneta: {
                 files: [
                     { expand: true, cwd: 'less/images/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
-                    { expand: true, cwd: 'less/fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
+                    // { expand: true, cwd: 'less/fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
                     { expand: true, cwd: 'bower_components/bootstrap/', src: 'fonts/**', dest: 'plonetheme/barceloneta/static/vendor/bootstrap/' }
                 ]
             }
         },
         sed: {
           'barceloneta-images': {
-            path: 'plonetheme/barceloneta/static/barceloneta.css',
+            path: 'plonetheme/barceloneta/theme/css/barceloneta.css',
             pattern: 'url\\(\'images/barceloneta-',
             replacement: 'url(\'++resource++plonetheme.barceloneta-'
           },
-          'barceloneta-fonts': {
-            path: 'plonetheme/barceloneta/static/barceloneta.css',
-            pattern: 'url\\(\'fonts/barceloneta-',
-            replacement: 'url(\'++resource++plonetheme.barceloneta-'
-          },
-          'bootstrap-fonts': {
-            path: 'plonetheme/barceloneta/static/barceloneta.css',
-            pattern: 'url\\(\'../bower_components/bootstrap/dist/',
-            replacement: 'url(\'++resource++plonetheme.barceloneta.vendor/bootstrap/'
-          },
+          // 'barceloneta-fonts': {
+          //   path: 'plonetheme/barceloneta/static/barceloneta.css',
+          //   pattern: 'url\\(\'fonts/barceloneta-',
+          //   replacement: 'url(\'++resource++plonetheme.barceloneta-'
+          // },
+          // 'bootstrap-fonts': {
+          //   path: 'plonetheme/barceloneta/static/barceloneta.css',
+          //   pattern: 'url\\(\'../bower_components/bootstrap/dist/',
+          //   replacement: 'url(\'++resource++plonetheme.barceloneta.vendor/bootstrap/'
+          // },
           'plone-fonts': {
             path: '../mockup/build/plone.min.css',
             pattern: 'url\\(\'fonts/plone-',
@@ -77,7 +77,7 @@ module.exports = function (grunt) {
         browserSync: {
             html: {
                 bsFiles: {
-                    src : ['plonetheme/barceloneta/static/*.css',]
+                    src : ['plonetheme/barceloneta/theme/css/*.css',]
                 },
                 options: {
                     watchTask: true,
@@ -89,7 +89,7 @@ module.exports = function (grunt) {
             },
             plone: {
                 bsFiles: {
-                    src : ['plonetheme/barceloneta/static/*.css',]
+                    src : ['plonetheme/barceloneta/theme/css/*.css',]
                 },
                 options: {
                     watchTask: true,
