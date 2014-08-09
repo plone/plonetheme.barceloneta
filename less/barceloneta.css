@@ -4160,6 +4160,9 @@ ul.picker__list {
     width: 1170px;
   }
 }
+#edit-zone {
+  display: none;
+}
 #portal-footer-wrapper {
   padding: 30px 15px;
   background-color: #2e3133;
@@ -4676,14 +4679,50 @@ body.template-login_form #content-core .portletFooter {
 .discussion .hide {
   display: none;
 }
+.discussion .comment {
+  margin-bottom: 12px;
+  padding-left: 40px;
+}
 .discussion .commentImage {
   float: left !important;
   border-radius: 50px;
   overflow: hidden;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: 3px;
 }
 .discussion .commentDate {
   float: right !important;
   display: inline;
+  font-size: 12px;
+}
+.discussion .commentBody p {
+  margin-bottom: 0;
+}
+.discussion .commentActions input,
+.discussion .reply-to-comment-button {
+  border: 0;
+  padding: 0;
+  text-shadow: none;
+  font-weight: 300;
+  background: none;
+  color: #007bb3;
+}
+.discussion .commentActions input:hover,
+.discussion .reply-to-comment-button:hover {
+  text-decoration: underline;
+  box-shadow: none;
+  color: #004666;
+}
+.discussion .commentActions input {
+  margin-right: 6px;
+  color: #bb4f45;
+}
+.discussion .commentActions input:hover {
+  color: #833730;
+}
+.discussion .reply {
+  border-bottom: 1px solid #e5e5e5;
 }
 #commenting:before,
 #commenting:after {
@@ -4693,138 +4732,50 @@ body.template-login_form #content-core .portletFooter {
 #commenting:after {
   clear: both;
 }
-/*
-.commentImage {
-    float: left;
-    margin-right: 0.5em;
-    height: 3.5em;
-}
-*/
-/*
-.commentDate {
-    display: block;
-    line-height: 1.5em;
-    padding-top: 0.5em;
-    color: #76797C;
-}
-*/
-.commentBody {
-  clear: both;
-  margin: 1em 0;
-  overflow: auto;
-  border: 1px solid #ccc;
-}
-.commentBody p {
-  float: left;
-}
-.commentActions {
-  float: right;
-  text-align: right;
-}
-.discussion .discreet {
-  color: #666666;
-}
-.loginbutton {
-  margin-bottom: 1.25em;
-}
-.commentactionsform {
-  display: inline;
-}
 .replyTreeLevel0 {
-  margin-left: 0em;
+  margin-left: 0;
 }
 .replyTreeLevel1 {
-  margin-left: 1em;
+  margin-left: 24px;
 }
 .replyTreeLevel2 {
-  margin-left: 2em;
+  margin-left: 48px;
 }
 .replyTreeLevel3 {
-  margin-left: 3em;
+  margin-left: 72px;
 }
 .replyTreeLevel4 {
-  margin-left: 4em;
+  margin-left: 96px;
 }
 .replyTreeLevel5 {
-  margin-left: 5em;
+  margin-left: 120px;
 }
 .replyTreeLevel6 {
-  margin-left: 6em;
+  margin-left: 144px;
 }
 .replyTreeLevel7 {
-  margin-left: 7em;
+  margin-left: 168px;
 }
 .replyTreeLevel8 {
-  margin-left: 8em;
+  margin-left: 192px;
 }
 .replyTreeLevel9 {
-  margin-left: 9em;
+  margin-left: 216px;
 }
 .replyTreeLevel10 {
-  margin-left: 10em;
+  margin-left: 240px;
 }
-.defaultuserimg {
-  border: 0;
-}
-/* Reply Form
-   -------------------------------------------------------------------------- */
-.reply fieldset {
-  /* Fix bouncing fieldset when reply form is shown. */
-  margin: 0 !important;
-}
-.reply .text-widget {
-  /* Make sure the input fields are always below the label. This sometimes
-     * break when the reply form is copied from the main comment form.
-     */
-  display: block;
-}
-.reply-to-comment-button {
-  /* Hide the reply-to-comment button and show it only if Javascript
-    * is enabled. Since the reply functions rely on jQuery.
-    */
-  display: none;
-}
-.cancelreplytocomment {
-  /* Hide the cancel button in the comment form, show it only in the reply form
-     * in order to close it.
-     */
-  display: none;
-}
-/* Moderation View
-   -------------------------------------------------------------------------- */
-#bulkactions {
-  text-align: left;
-}
-#dobulkaction {
-  margin: 0.3em 0;
-}
-.comment-publish-button {
-  float: left;
-  margin-right: 0.5em;
-}
-.comment-delete-button {
-  float: left;
-}
-#review-comments {
-  margin: 0;
-  width: 100%;
-}
-#review-comments tbody tr {
-  vertical-align: top;
-}
-#fieldset-moderate-comments {
-  padding: 2em 1em;
-}
-/* Discussion Control Panel
-   -------------------------------------------------------------------------- */
-/*
 .template-discussion-settings .unclickable {
-    opacity: 0.6;
-    filter: alpha(opacity = 50);
+  opacity: 0.6;
+  filter: alpha(opacity=60);
 }
-*/
-/* editing comments */
-.overlay-edit-comment textarea {
-  height: 10em;
+#viewlet-below-content .loginbutton {
+  margin: 12px 0;
+}
+#viewlet-below-content .reply .loginbutton {
+  display: none;
+}
+#viewlet-below-content .reply ~ .reply .loginbutton {
+  display: inline-block;
 }
 /*# sourceMappingURL=++resource++plonetheme.barceloneta/barceloneta.css.map */

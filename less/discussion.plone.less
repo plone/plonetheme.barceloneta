@@ -6,180 +6,73 @@
   .hide {
     display: none;
   }
-
+  .comment {
+    margin-bottom: 12px;
+    padding-left: 40px;
+  }
   .commentImage {
     .pull-left();
     border-radius: 50px;
     overflow: hidden;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 3px;
   }
-
   .commentDate {
     .pull-right();
     display: inline;
+    font-size: @plone-font-size-small;
+  }
+  .commentBody p {
+    margin-bottom: 0;
+  }
+  .commentActions input, .reply-to-comment-button {
+    border:0;
+    padding: 0;
+    text-shadow:none;
+    font-weight: @plone-font-weight-regular;
+    background:none;
+    color:@plone-link-color;
+    &:hover {
+      text-decoration: underline;
+      box-shadow: none;
+      color: darken(@plone-link-color,15%);
+    }
+  }
+  .commentActions input {
+    margin-right: @plone-padding-base-vertical;
+    color: @plone-btn-destructive-bg;
+    &:hover {
+      color: darken(@plone-btn-destructive-bg,15%);
+    }
+  }
+  .reply {
+    border-bottom: @plone-portlet-border;
   }
 }
 #commenting {
   .clearfix();
 }
 
-
-/*
-.commentImage {
-    float: left;
-    margin-right: 0.5em;
-    height: 3.5em;
-}
-*/
-
-/*
-.commentDate {
-    display: block;
-    line-height: 1.5em;
-    padding-top: 0.5em;
-    color: #76797C;
-}
-*/
-
-.commentBody {
-    clear: both;
-    margin: 1em 0;
-    overflow: auto;
-    border: 1px solid #ccc;
-}
-
-.commentBody p {
-    float: left;
- }
+.replyTreeLevel0 { margin-left: 0; }
+.replyTreeLevel1 { margin-left: @plone-padding-base-horizontal*2;}
+.replyTreeLevel2 { margin-left: @plone-padding-base-horizontal*4;}
+.replyTreeLevel3 { margin-left: @plone-padding-base-horizontal*6;}
+.replyTreeLevel4 { margin-left: @plone-padding-base-horizontal*8;}
+.replyTreeLevel5 { margin-left: @plone-padding-base-horizontal*10;}
+.replyTreeLevel6 { margin-left: @plone-padding-base-horizontal*12;}
+.replyTreeLevel7 { margin-left: @plone-padding-base-horizontal*14;}
+.replyTreeLevel8 { margin-left: @plone-padding-base-horizontal*16;}
+.replyTreeLevel9 { margin-left: @plone-padding-base-horizontal*18;}
+.replyTreeLevel10{ margin-left: @plone-padding-base-horizontal*20;}
 
 
-.commentActions {
-    float: right;
-    text-align: right;
-}
-
-.discussion .discreet {
-    color: #666666;
-}
-.loginbutton {
-    margin-bottom: 1.25em;
-}
-.commentactionsform {
-    display: inline;
-}
-
-.replyTreeLevel0 {
-    margin-left: 0em;
-}
-.replyTreeLevel1 {
-    margin-left: 1em;
-}
-.replyTreeLevel2 {
-    margin-left: 2em;
-}
-.replyTreeLevel3 {
-    margin-left: 3em;
-}
-.replyTreeLevel4 {
-    margin-left: 4em;
-}
-.replyTreeLevel5 {
-    margin-left: 5em;
-}
-.replyTreeLevel6 {
-    margin-left: 6em;
-}
-.replyTreeLevel7 {
-    margin-left: 7em;
-}
-.replyTreeLevel8 {
-    margin-left: 8em;
-}
-.replyTreeLevel9 {
-    margin-left: 9em;
-}
-.replyTreeLevel10 {
-    margin-left: 10em;
-}
-.defaultuserimg {
-    border: 0;
-}
+//*// Discussion Control Panel
+.template-discussion-settings .unclickable {  .opacity(.6);}
 
 
-/* Reply Form
-   -------------------------------------------------------------------------- */
-
-.reply fieldset {
-    /* Fix bouncing fieldset when reply form is shown. */
-    margin: 0 !important;
-}
-
-.reply .text-widget {
-    /* Make sure the input fields are always below the label. This sometimes
-     * break when the reply form is copied from the main comment form.
-     */
-    display: block;
-}
-
-.reply-to-comment-button {
-   /* Hide the reply-to-comment button and show it only if Javascript
-    * is enabled. Since the reply functions rely on jQuery.
-    */
-    display: none;
-}
-
-.cancelreplytocomment {
-    /* Hide the cancel button in the comment form, show it only in the reply form
-     * in order to close it.
-     */
-    display: none;
-}
-
-
-/* Moderation View
-   -------------------------------------------------------------------------- */
-
-#bulkactions {
-    text-align: left;
-}
-
-#dobulkaction {
-    margin: 0.3em 0;
-}
-
-.comment-publish-button {
-    float: left;
-    margin-right: 0.5em;
-}
-
-.comment-delete-button {
-    float: left;
-}
-
-#review-comments {
-    margin: 0;
-    width: 100%;
-}
-#review-comments tbody tr {
-    vertical-align: top
-}
-
-#fieldset-moderate-comments {
-    padding: 2em 1em;
-}
-
-/* Discussion Control Panel
-   -------------------------------------------------------------------------- */
-/*
-.template-discussion-settings .unclickable {
-    opacity: 0.6;
-    filter: alpha(opacity = 50);
-}
-*/
-
-
-
-/* editing comments */
-
-.overlay-edit-comment textarea {
-    height: 10em;
-}
+//*// Button to login
+#viewlet-below-content .loginbutton {margin: @plone-padding-base-horizontal 0;}
+//first button login out
+#viewlet-below-content .reply .loginbutton {display: none;}
+#viewlet-below-content .reply ~ .reply .loginbutton {display: inline-block;}
