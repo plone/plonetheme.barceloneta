@@ -4135,6 +4135,9 @@ ul.picker__list {
 .gigantic p {
   font-size: 150%;
 }
+#content {
+  margin-bottom: 48px;
+}
 .container,
 .container-fluid {
   padding-right: 15px;
@@ -4664,5 +4667,167 @@ body.template-login_form #content-core .portletFooter {
 .newsImageContainer figcaption {
   font-size: 12px;
   background: #fcfcfd;
+}
+.discussion:before,
+.discussion:after {
+  content: " ";
+  display: table;
+}
+.discussion:after {
+  clear: both;
+}
+.discussion .hide {
+  display: none;
+}
+.discussion .commentImage {
+  float: left !important;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.discussion .commentDate {
+  float: right !important;
+  display: inline;
+}
+#commenting:before,
+#commenting:after {
+  content: " ";
+  display: table;
+}
+#commenting:after {
+  clear: both;
+}
+/*
+.commentImage {
+    float: left;
+    margin-right: 0.5em;
+    height: 3.5em;
+}
+*/
+/*
+.commentDate {
+    display: block;
+    line-height: 1.5em;
+    padding-top: 0.5em;
+    color: #76797C;
+}
+*/
+.commentBody {
+  clear: both;
+  margin: 1em 0;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+.commentBody p {
+  float: left;
+}
+.commentActions {
+  float: right;
+  text-align: right;
+}
+.discussion .discreet {
+  color: #666666;
+}
+.loginbutton {
+  margin-bottom: 1.25em;
+}
+.commentactionsform {
+  display: inline;
+}
+.replyTreeLevel0 {
+  margin-left: 0em;
+}
+.replyTreeLevel1 {
+  margin-left: 1em;
+}
+.replyTreeLevel2 {
+  margin-left: 2em;
+}
+.replyTreeLevel3 {
+  margin-left: 3em;
+}
+.replyTreeLevel4 {
+  margin-left: 4em;
+}
+.replyTreeLevel5 {
+  margin-left: 5em;
+}
+.replyTreeLevel6 {
+  margin-left: 6em;
+}
+.replyTreeLevel7 {
+  margin-left: 7em;
+}
+.replyTreeLevel8 {
+  margin-left: 8em;
+}
+.replyTreeLevel9 {
+  margin-left: 9em;
+}
+.replyTreeLevel10 {
+  margin-left: 10em;
+}
+.defaultuserimg {
+  border: 0;
+}
+/* Reply Form
+   -------------------------------------------------------------------------- */
+.reply fieldset {
+  /* Fix bouncing fieldset when reply form is shown. */
+  margin: 0 !important;
+}
+.reply .text-widget {
+  /* Make sure the input fields are always below the label. This sometimes
+     * break when the reply form is copied from the main comment form.
+     */
+  display: block;
+}
+.reply-to-comment-button {
+  /* Hide the reply-to-comment button and show it only if Javascript
+    * is enabled. Since the reply functions rely on jQuery.
+    */
+  display: none;
+}
+.cancelreplytocomment {
+  /* Hide the cancel button in the comment form, show it only in the reply form
+     * in order to close it.
+     */
+  display: none;
+}
+/* Moderation View
+   -------------------------------------------------------------------------- */
+#bulkactions {
+  text-align: left;
+}
+#dobulkaction {
+  margin: 0.3em 0;
+}
+.comment-publish-button {
+  float: left;
+  margin-right: 0.5em;
+}
+.comment-delete-button {
+  float: left;
+}
+#review-comments {
+  margin: 0;
+  width: 100%;
+}
+#review-comments tbody tr {
+  vertical-align: top;
+}
+#fieldset-moderate-comments {
+  padding: 2em 1em;
+}
+/* Discussion Control Panel
+   -------------------------------------------------------------------------- */
+/*
+.template-discussion-settings .unclickable {
+    opacity: 0.6;
+    filter: alpha(opacity = 50);
+}
+*/
+/* editing comments */
+.overlay-edit-comment textarea {
+  height: 10em;
 }
 /*# sourceMappingURL=++resource++plonetheme.barceloneta/barceloneta.css.map */
