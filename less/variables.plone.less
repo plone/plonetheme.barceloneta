@@ -143,10 +143,23 @@
 @plone-screen-sm-max:              (@plone-screen-md-min - 1);
 @plone-screen-md-max:              (@plone-screen-lg-min - 1);
 
+@plone-grid-columns:				12;
 @plone-grid-gutter-width:         30px;
 @plone-grid-float-breakpoint:     @plone-screen-sm-min;
 //** Point at which the navbar begins collapsing.
 @plone-grid-float-breakpoint-max: (@plone-grid-float-breakpoint - 1);
+
+
+//*// CONTAINERS
+@plone-container-tablet:             ((720px + @plone-grid-gutter-width));
+@plone-container-sm:                 @plone-container-tablet;
+
+@plone-container-desktop:            ((940px + @plone-grid-gutter-width));
+@plone-container-md:                 @plone-container-desktop;
+
+@plone-container-large-desktop:      ((1140px + @plone-grid-gutter-width));
+@plone-container-lg:                 @plone-container-large-desktop;
+
 
 //*// Buttons
 @plone-btn-standalone-color:          		@plone-gray-dark;

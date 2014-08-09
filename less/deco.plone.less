@@ -7,34 +7,14 @@
 //*// Original deco here: https://github.com/limi/deco.gs
 
 
-// breaking deco
-body > main { max-width: 960px; margin: 0 auto;}
-body #portal-globalnav-wrapper .navbar-collapse {max-width: 960px; margin: 0 auto;}
-body #portal-globalnav-wrapper .navbar-nav {margin-left: -15px; margin-right: -15px;}
-body #portal-header {max-width: 960px; margin: 15px auto;}
-//also footer
-
-//breadcrumbs breaking
-#portal-breadcrumbs {
-	position: absolute;width: 100%;left: 0;margin-top: -50px;z-index: 0;
-	.container-fluid {margin: 0 auto; max-width: 960px;}
-}
-#portal-mainnavigation {z-index: 1;position: relative;margin-bottom: 50px;} //need to adjust nav
-
-
-
 //*// Adapted deco
 @media (min-width: @plone-grid-float-breakpoint) {
 	div.row {
-	  margin-left: -15px;
-	  margin-right: -15px;
 	  position: relative;
 	}
 
 	div.cell {
 	  float: left;
-	  padding-left: 15px;
-	  padding-right: 15px;
 	  top: 0;
 	}
 	 

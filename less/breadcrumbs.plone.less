@@ -7,7 +7,7 @@
   > * > span { //you are here
     display: inline-block;
     color: @plone-gray-light;
-    padding: @plone-breadcrumb-padding-vertical 0 @plone-breadcrumb-padding-vertical @plone-breadcrumb-padding-horizontal;
+    padding: @plone-breadcrumb-padding-vertical 0;
     font-weight: @plone-font-weight-light;
     @media (max-width: @plone-screen-sm-min) {
       display: none;
@@ -53,5 +53,14 @@
       color: @plone-breadcrumb-active-color;
     }
   }
+  /* uncomment to hide breadcrumbs on home
   body.section-front-page & {display: none;} //not breadcrumbs on homepage
+  */
 }
+
+
+//breadcrumbs breaking
+#portal-breadcrumbs {
+  position: absolute;width: 100%;left: 0;margin-top: -50px;z-index: 0;
+}
+#portal-mainnavigation {z-index: 1;position: relative;margin-bottom: 50px;} //need to adjust nav
