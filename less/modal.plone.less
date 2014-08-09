@@ -55,12 +55,19 @@
     outline: none;
     background-clip: padding-box;
     box-shadow: 0 0 25px rgba(0,0,0,.15);
+    .container();
+    padding-left: 0;
+    padding-right: 0;
   }
   &.fade {
     opacity: 0;
     -webkit-transition: opacity .33s ease;
     transition: opacity .33s ease;
-    &.in {opacity: 1; }
+    &.in {
+      opacity: 1; 
+      -webkit-transition: opacity .33s ease;
+      transition: opacity .33s ease;
+    }
     & .modal-dialog {
       -webkit-transform: translate(0, -25%);
       -ms-transform: translate(0, -25%);
