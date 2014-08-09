@@ -43,7 +43,7 @@
 
   <!-- hero unit on homepage only -->
   <drop css:if-not-content="body.template-document_view.section-front-page"
-        css:theme="div.hero" />
+        css:theme="div.principal" />
 
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
