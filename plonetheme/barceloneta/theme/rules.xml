@@ -54,8 +54,8 @@
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
           <div class="row">
-            <div class="col-xs-12 col-sm-12" role="main">
-               <xsl:copy-of select="//div[@id='content']"/>
+            <div class="col-xs-12 col-sm-12">
+               <xsl:copy-of select="//article[@id='content']"/>
             </div>
           </div>
           <footer class="row">
