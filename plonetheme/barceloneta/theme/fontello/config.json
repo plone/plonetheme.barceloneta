@@ -3536,7 +3536,7 @@
     },
     {
       "uid": "44e04715aecbca7f266a17d5a7863c68",
-      "css": "addNew",
+      "css": "plone-contentmenu-factories",
       "code": 59402,
       "src": "fontawesome"
     },
@@ -3560,7 +3560,7 @@
     },
     {
       "uid": "414fe97e4af5215a06d29be0f2cecdf5",
-      "css": "workflow",
+      "css": "plone-contentmenu-workflow",
       "code": 59404,
       "src": "entypo"
     },
@@ -3572,7 +3572,7 @@
     },
     {
       "uid": "05ef9b5e8742971aa85b23cfcbe71594",
-      "css": "grantAccess",
+      "css": "local_roles",
       "code": 59396,
       "src": "mfglabs"
     },

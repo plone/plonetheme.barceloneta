@@ -62,11 +62,11 @@ module.exports = function (grunt) {
           //   pattern: 'url\\(\'../bower_components/bootstrap/dist/',
           //   replacement: 'url(\'++resource++plonetheme.barceloneta.vendor/bootstrap/'
           // },
-          'plone-fonts': {
-            path: '../mockup/build/plone.min.css',
-            pattern: 'url\\(\'fonts/plone-',
-            replacement: 'url(\'++resource++plone-'
-          }
+          // 'plone-fonts': {
+          //   path: '../mockup/build/plone.min.css',
+          //   pattern: 'url\\(\'fonts/plone-',
+          //   replacement: 'url(\'++resource++plone-'
+          // }
         },
         watch: {
             scripts: {
