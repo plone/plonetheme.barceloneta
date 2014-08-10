@@ -1,0 +1,19 @@
+//*// CONTENTS //*//
+
+
+
+body#visual-portal-wrapper.pat-plone {
+	[class*="contenttype-"]:before {
+		font-family:"Fontello"; content:"WWWWW"; background-color: rgba(0,0,0,.1); font-size: 100%; 
+		padding: 0; margin:0; position: relative; left: inherit; display: inline-block; color: inherit;
+		width: 20px; height: 20px; text-align: center; border-radius: 50px; margin-right: @plone-padding-base-vertical;
+	}
+	.contenttype-folder:before {content: 'F';}
+	.contenttype-document:before {content:"D";}
+	.contenttype-file:before {content:"Q";}
+	.contenttype-link:before {content:"L";}
+	.contenttype-image:before {content:"I";}
+	.contenttype-collection:before {content:"C";}
+	.contenttype-event:before {content:"E";}
+	.contenttype-news-item:before {content:"N";}
+}

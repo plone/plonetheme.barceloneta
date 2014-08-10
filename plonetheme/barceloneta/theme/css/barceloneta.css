@@ -1556,6 +1556,9 @@ label .required:after {
   font-weight: 300;
   color: #696969;
 }
+.widget input + label {
+  display: inline;
+}
 .standalone,
 .context,
 .destructive,
@@ -3508,6 +3511,47 @@ a.link-category:focus {
 #category li {
   display: inline-block;
 }
+body#visual-portal-wrapper.pat-plone [class*="contenttype-"]:before {
+  font-family: "Fontello";
+  content: "WWWWW";
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: inherit;
+  display: inline-block;
+  color: inherit;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50px;
+  margin-right: 6px;
+}
+body#visual-portal-wrapper.pat-plone .contenttype-folder:before {
+  content: 'F';
+}
+body#visual-portal-wrapper.pat-plone .contenttype-document:before {
+  content: "D";
+}
+body#visual-portal-wrapper.pat-plone .contenttype-file:before {
+  content: "Q";
+}
+body#visual-portal-wrapper.pat-plone .contenttype-link:before {
+  content: "L";
+}
+body#visual-portal-wrapper.pat-plone .contenttype-image:before {
+  content: "I";
+}
+body#visual-portal-wrapper.pat-plone .contenttype-collection:before {
+  content: "C";
+}
+body#visual-portal-wrapper.pat-plone .contenttype-event:before {
+  content: "E";
+}
+body#visual-portal-wrapper.pat-plone .contenttype-news-item:before {
+  content: "N";
+}
 #textAdjust .decrease-text {
   font-size: 12px;
 }
@@ -3576,7 +3620,7 @@ a.link-category:focus {
   -webkit-overflow-scrolling: touch;
   outline: 0;
   z-index: 1040;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.9);
 }
 .modal .modal-dialog {
   width: 100%;
@@ -4159,6 +4203,9 @@ ul.picker__list {
   .container {
     width: 1170px;
   }
+}
+#edit-zone > .container {
+  max-width: 200px;
 }
 #portal-footer-wrapper {
   padding: 30px 15px;
