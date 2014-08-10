@@ -21,7 +21,7 @@
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
     <!-- Script -->
-    <before theme="/html/head/script" content="/html/head/script" />
+    <after theme="/html/body/footer" content="/html/head/script" />
     <!-- CSS -->
     <before theme-children="/html/head" content="/html/head/link" />
   </rules>
