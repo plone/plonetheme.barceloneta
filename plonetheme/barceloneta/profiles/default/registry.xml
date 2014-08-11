@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records prefix="Products.CMFPlone.resources/barceloneta"
+            interface='Products.CMFPlone.resources.interfaces.IResourceRegistry'>
+      <value key="js">++resource++plonetheme.barceloneta.js</value>
+      <value key="css">
+        <element>++theme++barceloneta/css/barceloneta.css</element>
+      </value>
+  </records>
+
+
+  <records prefix="Products.CMFPlone.bundles/barceloneta"
+            interface='Products.CMFPlone.resources.interfaces.IBundleRegistry'>
+    <value key="resource">barceloneta</value>
+    <value key="enabled">True</value>
+  </records>
+</registry>
