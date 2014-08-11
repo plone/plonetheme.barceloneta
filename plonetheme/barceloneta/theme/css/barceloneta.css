@@ -3959,6 +3959,9 @@ ul.picker__list {
 #portal-header #portal-searchbox form > div > * {
   font-size: 14px;
 }
+#portal-header #portal-anontools {
+  float: right;
+}
 @media (min-width: 768px) {
   #portal-header #portal-searchbox {
     position: relative;
