@@ -1,0 +1,66 @@
+//*// BREADCRUMBS //*//
+
+.breadcrumb {
+  border-radius: @plone-border-radius-base;
+  background-color: @plone-breadcrumb-bg;
+  margin-bottom: @plone-line-height-computed;
+  > * > span { //you are here
+    display: inline-block;
+    color: @plone-gray-light;
+    padding: @plone-breadcrumb-padding-vertical 0;
+    font-weight: @plone-font-weight-light;
+    @media (max-width: @plone-screen-sm-min) {
+      display: none;
+    }
+  }
+  ol {
+    display: inline-block;
+    padding: @plone-breadcrumb-padding-vertical @plone-breadcrumb-padding-horizontal ;
+    list-style: none;
+    margin: 0;
+    > li {
+      font-weight: @plone-font-weight-regular;
+      display: inline-block;
+      line-height: 0; // match ol & span height
+      position: relative;
+      padding: 0 @plone-breadcrumb-padding-horizontal*2 0 0;
+      + li:after {
+        content: "";
+        position: absolute;
+        padding: 0 5px;
+        color: @plone-breadcrumb-bg;
+        border-left: 5px solid;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        left: -21px;
+        top: -15px;
+        padding: 0 !important;
+      }
+      + li:before {
+        content: "";
+        position: absolute;
+        padding: 0 5px;
+        color: @plone-breadcrumb-color;
+        border-left: 5px solid;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        left: -20px;
+        top: -15px;
+        padding: 0 !important;
+      }
+    }
+    > #breadcrumbs-current {
+      color: @plone-breadcrumb-active-color;
+    }
+  }
+  /* uncomment to hide breadcrumbs on home
+  body.section-front-page & {display: none;} //not breadcrumbs on homepage
+  */
+}
+
+
+//breadcrumbs breaking
+#portal-breadcrumbs {
+  position: absolute;width: 100%;left: 0;margin-top: -50px;z-index: 0;
+}
+#portal-mainnavigation {z-index: 1;position: relative;margin-bottom: 50px;} //need to adjust nav

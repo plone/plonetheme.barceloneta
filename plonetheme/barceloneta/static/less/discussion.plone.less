@@ -1,0 +1,78 @@
+//*// DISCUSSION //*//
+
+
+.discussion { 
+  .clearfix();
+  .hide {
+    display: none;
+  }
+  .comment {
+    margin-bottom: 12px;
+    padding-left: 40px;
+  }
+  .commentImage {
+    .pull-left();
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 3px;
+  }
+  .commentDate {
+    .pull-right();
+    display: inline;
+    font-size: @plone-font-size-small;
+  }
+  .commentBody p {
+    margin-bottom: 0;
+  }
+  .commentActions input, .reply-to-comment-button {
+    border:0;
+    padding: 0;
+    text-shadow:none;
+    font-weight: @plone-font-weight-regular;
+    background:none;
+    color:@plone-link-color;
+    &:hover {
+      text-decoration: underline;
+      box-shadow: none;
+      color: darken(@plone-link-color,15%);
+    }
+  }
+  .commentActions input {
+    margin-right: @plone-padding-base-vertical;
+    color: @plone-btn-destructive-bg;
+    &:hover {
+      color: darken(@plone-btn-destructive-bg,15%);
+    }
+  }
+  .reply {
+    border-bottom: @plone-portlet-border;
+  }
+}
+#commenting {
+  .clearfix();
+}
+
+.replyTreeLevel0 { margin-left: 0; }
+.replyTreeLevel1 { margin-left: @plone-padding-base-horizontal*2;}
+.replyTreeLevel2 { margin-left: @plone-padding-base-horizontal*4;}
+.replyTreeLevel3 { margin-left: @plone-padding-base-horizontal*6;}
+.replyTreeLevel4 { margin-left: @plone-padding-base-horizontal*8;}
+.replyTreeLevel5 { margin-left: @plone-padding-base-horizontal*10;}
+.replyTreeLevel6 { margin-left: @plone-padding-base-horizontal*12;}
+.replyTreeLevel7 { margin-left: @plone-padding-base-horizontal*14;}
+.replyTreeLevel8 { margin-left: @plone-padding-base-horizontal*16;}
+.replyTreeLevel9 { margin-left: @plone-padding-base-horizontal*18;}
+.replyTreeLevel10{ margin-left: @plone-padding-base-horizontal*20;}
+
+
+//*// Discussion Control Panel
+.template-discussion-settings .unclickable {  .opacity(.6);}
+
+
+//*// Button to login
+#viewlet-below-content .loginbutton {margin: @plone-padding-base-horizontal 0;}
+//first button login out
+#viewlet-below-content .reply .loginbutton {display: none;}
+#viewlet-below-content .reply ~ .reply .loginbutton {display: inline-block;}
