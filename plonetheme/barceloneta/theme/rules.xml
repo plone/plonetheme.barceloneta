@@ -23,7 +23,7 @@
     <!-- Script -->
     <after theme-children="/html/head" content="/html/head/script" />
     <!-- CSS -->
-    <before theme-children="/html/head" content="/html/head/link" />
+    <after theme-children="/html/head" content="/html/head/link" />
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag.
