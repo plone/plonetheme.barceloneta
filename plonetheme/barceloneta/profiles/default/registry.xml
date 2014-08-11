@@ -3,9 +3,9 @@
 
   <records prefix="Products.CMFPlone.resources/barceloneta"
             interface='Products.CMFPlone.resources.interfaces.IResourceRegistry'>
-      <value key="js">++resource++plonetheme.barceloneta.js</value>
+      <value key="js">++plone++barceloneta/js/barceloneta.js</value>
       <value key="css">
-        <element>++theme++barceloneta/css/barceloneta.css</element>
+        <element>++plone++barceloneta/less/barceloneta.plone.less</element>
       </value>
   </records>
 
@@ -14,5 +14,6 @@
             interface='Products.CMFPlone.resources.interfaces.IBundleRegistry'>
     <value key="resource">barceloneta</value>
     <value key="enabled">True</value>
+    <value key="depends">plone</value>
   </records>
 </registry>

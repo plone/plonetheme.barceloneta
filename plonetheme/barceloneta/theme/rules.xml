@@ -20,10 +20,10 @@
     <!-- dont use Plone icons, use the theme -->
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
-    <!-- Script -->
-    <after theme-children="/html/head" content="/html/head/script" />
     <!-- CSS -->
     <after theme-children="/html/head" content="/html/head/link" />
+    <!-- Script -->
+    <after theme-children="/html/head" content="/html/head/script" />
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag.

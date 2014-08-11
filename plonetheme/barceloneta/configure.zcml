@@ -10,8 +10,6 @@
 
   <include package="plone.app.theming" />
   <include package="plone.app.widgets" />
-  <include package="mockup"
-      zcml:condition="installed mockup" />
 
   <genericsetup:registerProfile
       name="default"
@@ -25,82 +23,11 @@
   <plone:static directory="clean" name="clean" type="theme"/>
   <plone:static directory="theme" name="barceloneta" type="theme"/>
 
-  <!-- Static mockup resources -->
-
-  <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon-114x114-precomposed.png"
-      file="static/barceloneta-apple-touch-icon-114x114-precomposed.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon-144x144-precomposed.png"
-      file="static/barceloneta-apple-touch-icon-144x144-precomposed.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon-57x57-precomposed.png"
-      file="static/barceloneta-apple-touch-icon-57x57-precomposed.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon-72x72-precomposed.png"
-      file="static/barceloneta-apple-touch-icon-72x72-precomposed.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon.png"
-      file="static/barceloneta-apple-touch-icon.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-apple-touch-icon-precomposed.png"
-      file="static/barceloneta-apple-touch-icon-precomposed.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-bg-breadcrumb.png"
-      file="static/barceloneta-bg-breadcrumb.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-bg-watermark.png"
-      file="static/barceloneta-bg-watermark.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-  <browser:resource
-      name="plonetheme.barceloneta-favicon.ico"
-      file="static/barceloneta-favicon.ico"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-
-  <browser:resource
-      name="plonetheme.barceloneta-ticks.png"
-      file="static/barceloneta-ticks.png"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-
-<!--   <browser:resource
-      name="plonetheme.barceloneta.css"
-      file="static/barceloneta.css"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-
-  <browser:resource
-      name="plonetheme.barceloneta.css.map"
-      file="static/barceloneta.css"
-      layer=".interfaces.IBarcelonetaLayer"
-      /> -->
-
-  <browser:resource
-      name="plonetheme.barceloneta.js"
-      file="static/barceloneta.js"
-      layer=".interfaces.IBarcelonetaLayer"
-      />
-
-  <browser:resourceDirectory
-      name="plonetheme.barceloneta.vendor"
-      directory="static/vendor"
-      />
+  <plone:static
+    directory="static"
+    type="plone"
+    name="barceloneta"
+    />
 
 
 </configure>
