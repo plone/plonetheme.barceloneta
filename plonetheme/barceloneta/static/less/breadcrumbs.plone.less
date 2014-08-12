@@ -4,6 +4,7 @@
   border-radius: @plone-border-radius-base;
   background-color: @plone-breadcrumb-bg;
   margin-bottom: @plone-line-height-computed;
+  margin-top: -@plone-line-height-computed;
   > * > span { //you are here
     display: inline-block;
     color: @plone-gray-light;
@@ -57,10 +58,3 @@
   body.section-front-page & {display: none;} //not breadcrumbs on homepage
   */
 }
-
-
-//breadcrumbs breaking
-#portal-breadcrumbs {
-  position: absolute;width: 100%;left: 0;margin-top: -50px;z-index: 0;
-}
-#portal-mainnavigation {z-index: 1;position: relative;margin-bottom: 50px;} //need to adjust nav
