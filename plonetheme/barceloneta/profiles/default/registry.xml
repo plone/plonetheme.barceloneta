@@ -1,6 +1,15 @@
 <?xml version="1.0"?>
 <registry>
 
+  <records prefix="Products.CMFPlone.resources/bootstrap-carousel"
+            interface='Products.CMFPlone.resources.interfaces.IResourceRegistry'>
+      <value key="js">++plone++barceloneta/js/barceloneta.js</value>
+      <value key="css">
+        <element>++plone++barceloneta/less/barceloneta.plone.less</element>
+      </value>
+  </records>
+    
+
   <records prefix="Products.CMFPlone.resources/barceloneta"
             interface='Products.CMFPlone.resources.interfaces.IResourceRegistry'>
       <value key="js">++plone++barceloneta/js/barceloneta.js</value>

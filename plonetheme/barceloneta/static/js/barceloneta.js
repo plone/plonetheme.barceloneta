@@ -22,11 +22,13 @@
 //
 
 define([
-  'bootstrap-carousel'
-], function($, Registry, Base) {
+  'jquery',
+  'mockup-patterns-base',
+  'mockup-registry'
+], function($, Base, Registry) {
   'use strict';
 
-  // BBB: we need to hook pattern to classes which plone was using until now
+  // BBB: wes need to hook pattern to classes which plone was using until now
   var PloneBarceloneta = Base.extend({
     name: 'plone-barceloneta',
     init: function() {
