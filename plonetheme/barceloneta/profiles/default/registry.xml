@@ -11,7 +11,9 @@
 
   <records prefix="Products.CMFPlone.bundles/barceloneta"
             interface='Products.CMFPlone.resources.interfaces.IBundleRegistry'>
-    <value key="resource">barceloneta</value>
+    <value key="resources">
+      <element>barceloneta</element>
+    </value>
     <value key="enabled">True</value>
     <value key="depends">plone</value>
   </records>
