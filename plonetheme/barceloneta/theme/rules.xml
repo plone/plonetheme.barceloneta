@@ -50,9 +50,9 @@
 
   <replace css:theme="#content-container" method="raw">
       <div class="{$central}">
-          <p class="pull-right visible-xs">
+<!--           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
+          </p> -->
           <div class="row">
             <div class="col-xs-12 col-sm-12">
                <xsl:copy-of select="//article[@id='content']"/>
