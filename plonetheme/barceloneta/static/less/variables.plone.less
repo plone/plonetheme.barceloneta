@@ -11,20 +11,14 @@
 
 //colors
 @plone-link-color:							#007bb3; //plone blue
-	@plone-toolbar-published-color:				@plone-link-color; //published and external same color
 @plone-link-color-on-dark:					#16a1e3; //plone blue
-	@plone-toolbar-draft-color:					#fab82a; // lime-yellow //draft is visible 
-	@plone-toolbar-pending-color:				#e2e721; // orange
-	@plone-toolbar-private-color:				#c4183c; // red
-	@plone-toolbar-internal-color:				#fab82a; // is draft
-	@plone-toolbar-internally-published-color:	#883dfa; // is intranet
 											//if you need different contrast
-	@plone-default-published-color:				@plone-link-color; //published and external same color
-	@plone-default-draft-color:					darken(@plone-toolbar-draft-color,15%); // lime-yellow //draft is visible 
-	@plone-default-pending-color:				darken(@plone-toolbar-pending-color,15%); // orange
-	@plone-default-private-color:				@plone-toolbar-private-color; // red
-	@plone-default-internal-color:				darken(@plone-toolbar-internal-color,15%); // is draft
-	@plone-default-internally-published-color:	darken(@plone-toolbar-internally-published-color,5%); // is intranet
+@plone-default-published-color:				@plone-link-color; //published and external same color
+@plone-default-draft-color:					darken(@plone-toolbar-draft-color, 15%); // lime-yellow //draft is visible 
+@plone-default-pending-color:				darken(@plone-toolbar-pending-color, 15%); // orange
+@plone-default-private-color:				@plone-toolbar-private-color; // red
+@plone-default-internal-color:				darken(@plone-toolbar-internal-color, 15%); // is draft
+@plone-default-internally-published-color:	darken(@plone-toolbar-internally-published-color, 5%); // is intranet
 
 
 
@@ -119,18 +113,6 @@
 	@plone-state-error-bg:                		#EC9C8D;
 	@plone-state-error-border:            		1px solid darken(@plone-state-error-bg,2%);
 	@plone-state-error-bullet:					#ac493f;
-
-
-//*// TOOLBAR
-@plone-toolbar-bg:							rgba(0,0,0,.9);
-	@plone-toolbar-submenu-bg:					rgba(20,20,20,.9);
-	@plone-toolbar-font-primary:				'Roboto Condensed', sans-serif;
-	@plone-toolbar-font-secundary:				'Roboto', sans-serif;
-	@plone-toolbar-separator-color:				rgba(255,255,255,.17);
-	@plone-toolbar-link:						@plone-link-color;
-	@plone-toolbar-text-color:					rgba(255,255,255,.9);	
-	@plone-toolbar-submenu-text-color:			@plone-gray-lighter;
-	@plone-toolbar-submenu-header-color:		@plone-gray-light;
 
 
 //*// DEVICES
