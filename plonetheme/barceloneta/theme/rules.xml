@@ -20,10 +20,10 @@
     <!-- dont use Plone icons, use the theme -->
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
-    <!-- Script -->
-    <after theme-children="/html/head" content="/html/head/script" />
     <!-- CSS -->
     <after theme-children="/html/head" content="/html/head/link" />
+    <!-- Script -->
+    <after theme-children="/html/head" content="/html/head/script" />
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag.
@@ -43,18 +43,20 @@
 
   <!-- hero unit on homepage only -->
   <drop css:if-not-content="body.template-document_view.section-front-page"
-        css:theme="div.hero" />
+        css:theme="div.principal" />
 
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
 
   <replace css:theme="#content-container" method="raw">
       <div class="{$central}">
-          <p class="pull-right visible-xs">
+<!--           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
+          </p> -->
           <div class="row">
-            <div class="col-xs-12 col-sm-12" role="main">
+            <div class="col-xs-12 col-sm-12">
+               <xsl:copy-of select="//article[@id='content']"/>
+               <!-- Just in case for legacy templates -->
                <xsl:copy-of select="//div[@id='content']"/>
             </div>
           </div>

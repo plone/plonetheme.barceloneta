@@ -27,13 +27,11 @@ module.exports = function (grunt) {
                     strictMath: false,
                     sourceMap: true,
                     outputSourceFiles: true,
-                    sourceMapURL: '++resource++plonetheme.barceloneta/barceloneta.css.map',
+                    sourceMapURL: '++theme++barceloneta/css/barceloneta.css.map',
                     sourceMapFilename: 'plonetheme/barceloneta/theme/css/barceloneta.css.map'
                 },
                 files: {
-                    'plonetheme/barceloneta/theme/css/barceloneta.css': 'less/barceloneta.plone.less',
-                    'less/barceloneta.css': 'less/barceloneta.plone.less',
-                    // '../mockup/build/plone.min.css': '../mockup/less/plone.less',
+                    'plonetheme/barceloneta/theme/css/barceloneta.css': 'plonetheme/barceloneta/static/less/barceloneta.plone.less',
                 }
             }
         },
@@ -62,16 +60,16 @@ module.exports = function (grunt) {
           //   pattern: 'url\\(\'../bower_components/bootstrap/dist/',
           //   replacement: 'url(\'++resource++plonetheme.barceloneta.vendor/bootstrap/'
           // },
-          'plone-fonts': {
-            path: '../mockup/build/plone.min.css',
-            pattern: 'url\\(\'fonts/plone-',
-            replacement: 'url(\'++resource++plone-'
-          }
+          // 'plone-fonts': {
+          //   path: '../mockup/build/plone.min.css',
+          //   pattern: 'url\\(\'fonts/plone-',
+          //   replacement: 'url(\'++resource++plone-'
+          // }
         },
         watch: {
             scripts: {
-                files: ['less/*.less', 'js/*.js', '../mockup/less/*.less'],
-                tasks: ['less', 'sed', 'requirejs']
+                files: ['plonetheme/barceloneta/static/less/*.less', '../mockup/less/*.less'],
+                tasks: ['less', 'sed']
             }
         },
         browserSync: {

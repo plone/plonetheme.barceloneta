@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records prefix="plone.resources/barceloneta"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+      <value key="css">
+        <element>++plone++barceloneta/less/barceloneta.plone.less</element>
+      </value>
+  </records>
+
+
+  <records prefix="plone.bundles/barceloneta"
+            interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <element>barceloneta</element>
+    </value>
+    <value key="enabled">True</value>
+    <value key="depends">plone</value>
+  </records>
+</registry>

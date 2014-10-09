@@ -4167,8 +4167,8 @@ ul.picker__list {
   background: #d9d7d7;
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, transparent 14%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, transparent 64%, transparent);
   background-size: 20px 20px;
-  margin-top: -50px;
-  margin-bottom: 50px;
+  margin-top: -20px;
+  margin-bottom: 20px;
   padding: 50px 0;
 }
 .principal .container-fluid {
@@ -4181,16 +4181,8 @@ ul.picker__list {
 .gigantic p {
   font-size: 150%;
 }
-#main-container {
+#content {
   margin-bottom: 48px;
-}
-#main-container:before,
-#main-container:after {
-  content: " ";
-  display: table;
-}
-#main-container:after {
-  clear: both;
 }
 .container,
 .container-fluid {
@@ -4213,9 +4205,6 @@ ul.picker__list {
   .container {
     width: 1170px;
   }
-}
-#edit-zone > .container {
-  max-width: 200px;
 }
 #portal-footer-wrapper {
   padding: 30px 15px;
@@ -4879,4 +4868,4 @@ body.template-logged_out #content-core .portletFooter {
 #viewlet-below-content .reply ~ .reply .loginbutton {
   display: inline-block;
 }
-/*# sourceMappingURL=++theme++barceloneta/css/barceloneta.css.map */
+/*# sourceMappingURL=++resource++plonetheme.barceloneta/barceloneta.css.map */
