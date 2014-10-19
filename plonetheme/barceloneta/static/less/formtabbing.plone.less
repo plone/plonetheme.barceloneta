@@ -1,6 +1,5 @@
 //*// FORM TABBING //*//
-
-.autotabs {
+.pat-autotoc.autotabs, .autotabs {
 	background: @plone-portlet-content-bg;
 	padding: @plone-padding-base-vertical @plone-padding-base-horizontal;
 	border: @plone-portlet-border;
@@ -25,7 +24,7 @@
 				text-decoration: none;
 				background: @plone-portlet-content-bg;
 			}
-			&.active {
+			&.active, &.active:hover {
 				color: @plone-gray;
 				cursor: default;
 				background: @plone-portlet-content-bg;
