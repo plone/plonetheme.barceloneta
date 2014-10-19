@@ -25,6 +25,7 @@
 }
 
 .plone-navbar {
+  .clearfix();
   background-color: @plone-sitenav-bg;
   position: relative;
   min-height: @plone-sitenav-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
@@ -144,7 +145,7 @@
 }
 
 .plone-navbar-nav {
-  margin: -1px -@plone-sitenav-padding-horizontal (@plone-sitenav-padding-vertical / 2);
+  margin: -1px -@plone-sitenav-padding-horizontal -1px;
 
   > li > a {
     padding-top:    10px;
