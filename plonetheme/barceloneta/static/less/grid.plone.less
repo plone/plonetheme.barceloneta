@@ -4,10 +4,6 @@
 
 
 
-
-
-
-
 // Container widths
 .container {
   .container-fixed();
@@ -60,3 +56,20 @@
 @media (min-width: @plone-screen-lg-min) {
   .make-grid(lg);
 }
+
+
+// toolbar needs to match grid 
+#edit-zone.plone-toolbar-top .plone-toolbar-container {
+  .container-fixed(); 
+  @media (min-width: @plone-screen-sm-min) {
+    width: @plone-container-sm;
+  }
+  @media (min-width: @plone-screen-md-min) {
+    width: @plone-container-md;
+  }
+  @media (min-width: @plone-screen-lg-min) {
+    width: @plone-container-lg;
+  }
+  margin: 0 auto; height: 50px;
+}
+#edit-zone.plone-toolbar-top.compressed .plone-toolbar-container {width: auto;}

@@ -1,6 +1,6 @@
 //*// SITE NAV //*//
 
-.nav {
+.plone-nav {
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
@@ -24,7 +24,7 @@
   }
 }
 
-.navbar {
+.plone-navbar {
   background-color: @plone-sitenav-bg;
   position: relative;
   min-height: @plone-sitenav-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
@@ -38,7 +38,7 @@
 
 }
 
-.navbar-header {
+.plone-navbar-header {
   .clearfix(); //without extend
 
   @media (min-width: @plone-grid-float-breakpoint) {
@@ -46,7 +46,7 @@
   }
 }
 
-.navbar-collapse {
+.plone-navbar-collapse {
   overflow-x: visible;
   padding-right: @plone-sitenav-padding-horizontal;
   padding-left:  @plone-sitenav-padding-horizontal;
@@ -64,7 +64,7 @@
     border-top: 0;
     box-shadow: none;
 
-    &.collapse {
+    &.plone-collapse {
       display: block !important;
       height: auto !important;
       padding-bottom: 0; // Override default setting
@@ -86,7 +86,7 @@
   }
 }
 
-.navbar-toggle {
+.plone-navbar-toggle {
   z-index: 1; //just in case
   position: relative;
   float: right;
@@ -143,7 +143,7 @@
   }
 }
 
-.navbar-nav {
+.plone-navbar-nav {
   margin: -1px -@plone-sitenav-padding-horizontal (@plone-sitenav-padding-vertical / 2);
 
   > li > a {
@@ -164,7 +164,6 @@
   // Uncollapse the nav
   @media (min-width: @plone-grid-float-breakpoint) {
     float: left;
-    margin: -1px @plone-sitenav-padding-horizontal (@plone-sitenav-padding-vertical / 2);
 
     > li {
       float: left;
