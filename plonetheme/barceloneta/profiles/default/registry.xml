@@ -14,6 +14,8 @@
     <value key="resources">
       <element>barceloneta</element>
     </value>
+    <value key="csscompilation">++plone++barceloneta/less/barceloneta-compiled.css</value>
+    <value key="last_compilation">2014-08-14 00:00:00</value>
     <value key="enabled">True</value>
     <value key="depends">plone</value>
   </records>
