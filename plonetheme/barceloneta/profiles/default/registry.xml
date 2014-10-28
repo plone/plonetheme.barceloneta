@@ -8,6 +8,11 @@
       </value>
   </records>
 
+  <record name="plone.lessvariables">
+    <value purge="false">
+      <element key="plone-body-bg">#fafafa</element>
+    </value>
+  </record>
 
   <records prefix="plone.bundles/barceloneta"
             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
