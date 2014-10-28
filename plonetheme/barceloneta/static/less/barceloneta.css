@@ -3512,7 +3512,6 @@ a.link-category:focus {
 }
 body#visual-portal-wrapper.pat-plone [class*="contenttype-"]:before {
   font-family: "Fontello";
-  content: "WWWWW";
   background-color: rgba(0, 0, 0, 0.1);
   font-size: 100%;
   padding: 0;

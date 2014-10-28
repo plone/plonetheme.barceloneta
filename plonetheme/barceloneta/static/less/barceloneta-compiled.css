@@ -2874,7 +2874,6 @@ a.link-category:focus {
 }
 body#visual-portal-wrapper.pat-plone .outer-wrapper [class*="contenttype-"]:before {
   font-family: "Fontello";
-  content: "WWWWW";
   font-size: 100%;
   padding: 0;
   margin: 0;
@@ -2916,7 +2915,6 @@ body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"] {
 }
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"]:after {
   font-family: "Fontello";
-  content: "WWWWW";
   font-size: 100%;
   padding: 0;
   margin: 0;
