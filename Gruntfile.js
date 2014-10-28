@@ -7,23 +7,10 @@ module.exports = function (grunt) {
         // also, in this way we do not have to worry
         // about putting files in the correct order
         // (the dependency tree is walked by r.js)
-        requirejs: {
-            compile: {
-                options: {
-                    baseUrl: "./",
-                    paths: {
-                        'bootstrap-carousel': 'bower_components/bootstrap/js/carousel'
-                    },
-                    name: "js/barceloneta",
-                    out: "plonetheme/barceloneta/static/barceloneta.js",
-                    optimize: "none"
-                }
-            }
-        },
         less: {
             dist: {
                 options: {
-                    paths: ['bower_components/...', '../mockup/bower_components', '../mockup/less'],
+                    paths: [],
                     strictMath: false,
                     sourceMap: true,
                     outputSourceFiles: true,
@@ -35,41 +22,11 @@ module.exports = function (grunt) {
                 }
             }
         },
-        copy: {
-            barceloneta: {
-                files: [
-                    { expand: true, cwd: 'less/images/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
-                    // { expand: true, cwd: 'less/fonts/', src: 'barceloneta-*', dest: 'plonetheme/barceloneta/static/' },
-                    { expand: true, cwd: 'bower_components/bootstrap/', src: 'fonts/**', dest: 'plonetheme/barceloneta/static/vendor/bootstrap/' }
-                ]
-            }
-        },
-        sed: {
-          'barceloneta-images': {
-            path: 'plonetheme/barceloneta/theme/css/barceloneta.css',
-            pattern: 'url\\(\'images/barceloneta-',
-            replacement: 'url(\'++resource++plonetheme.barceloneta-'
-          },
-          // 'barceloneta-fonts': {
-          //   path: 'plonetheme/barceloneta/static/barceloneta.css',
-          //   pattern: 'url\\(\'fonts/barceloneta-',
-          //   replacement: 'url(\'++resource++plonetheme.barceloneta-'
-          // },
-          // 'bootstrap-fonts': {
-          //   path: 'plonetheme/barceloneta/static/barceloneta.css',
-          //   pattern: 'url\\(\'../bower_components/bootstrap/dist/',
-          //   replacement: 'url(\'++resource++plonetheme.barceloneta.vendor/bootstrap/'
-          // },
-          // 'plone-fonts': {
-          //   path: '../mockup/build/plone.min.css',
-          //   pattern: 'url\\(\'fonts/plone-',
-          //   replacement: 'url(\'++resource++plone-'
-          // }
-        },
+
         watch: {
             scripts: {
-                files: ['plonetheme/barceloneta/static/less/*.less', '../mockup/less/*.less'],
-                tasks: ['less', 'sed']
+                files: ['plonetheme/barceloneta/static/less/*.less'],
+                tasks: ['less']
             }
         },
         browserSync: {
