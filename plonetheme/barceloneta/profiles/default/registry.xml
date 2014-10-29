@@ -9,6 +9,12 @@
   </records>
 
   <record name="plone.lessvariables">
+    <field type="plone.registry.field.Dict">
+      <title>Less variables</title>
+      <description>Variables that are going to be compiled on less</description>
+      <key_type type="plone.registry.field.ASCIILine" />
+      <value_type type="plone.registry.field.TextLine" />
+    </field>
     <value purge="false">
       <element key="plone-body-bg">#fafafa</element>
     </value>
