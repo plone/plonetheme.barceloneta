@@ -20,6 +20,11 @@
     </value>
   </record>
 
+  <records interface="Products.CMFPlone.interfaces.ITinyMCESchema"
+           prefix="plone">
+    <value key="content_css" purge="false">++plone++barceloneta/less/barceloneta-compiled.css</value>
+  </records>
+
   <records prefix="plone.bundles/barceloneta"
             interface='Products.CMFPlone.interfaces.IBundleRegistry'>
     <value key="resources">
