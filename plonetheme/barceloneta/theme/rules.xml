@@ -24,6 +24,9 @@
     <after theme-children="/html/head" content="/html/head/link" />
     <!-- Script -->
     <after theme-children="/html/head" content="/html/head/script" />
+    <append theme="/html/head">
+      <link rel="stylesheet" href="++theme++barceloneta/less/barceloneta-compiled.css"/>
+    </append>
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag.

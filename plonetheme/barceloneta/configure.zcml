@@ -23,11 +23,4 @@
   <plone:static directory="clean" name="clean" type="theme"/>
   <plone:static directory="theme" name="barceloneta" type="theme"/>
 
-  <plone:static
-    directory="static"
-    type="plone"
-    name="barceloneta"
-    />
-
-
 </configure>
