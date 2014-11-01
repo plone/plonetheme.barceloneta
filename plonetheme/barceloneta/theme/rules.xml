@@ -25,6 +25,11 @@
     <!-- Script -->
     <after theme-children="/html/head" content="/html/head/script" />
     <append theme="/html/head">
+      <!--
+        Make sure the *compiled* CSS for this theme is included at the end.
+        This file can be built (e.g. using Grunt) from the .less files and is
+        served up statically.
+       -->
       <link rel="stylesheet" href="++theme++barceloneta/less/barceloneta-compiled.css"/>
     </append>
   </rules>

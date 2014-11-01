@@ -4,7 +4,10 @@ Changelog
 1.6.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+* Return to being a clean Diazo theme so that we are a safe starting point for
+  people building their own themes and a good practice example that works when
+  copying the theme in the TTW theme editor.
+  [optilude, bloodbare]
 
 
 1.6.1 (2014-11-01)

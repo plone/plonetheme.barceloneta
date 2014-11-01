@@ -14,25 +14,25 @@ module.exports = function (grunt) {
                     strictMath: false,
                     sourceMap: true,
                     outputSourceFiles: true,
-                    sourceMapURL: '++theme++barceloneta/css/barceloneta.css.map',
-                    sourceMapFilename: 'plonetheme/barceloneta/theme/css/barceloneta.css.map'
+                    sourceMapURL: '++theme++barceloneta/less/barceloneta-compiled.css.map',
+                    sourceMapFilename: 'plonetheme/barceloneta/theme/less/barceloneta-compiled.css.map'
                 },
                 files: {
-                    'plonetheme/barceloneta/theme/css/barceloneta.css': 'plonetheme/barceloneta/static/less/barceloneta.plone.less',
+                    'plonetheme/barceloneta/theme/less/barceloneta-compiled.css': 'plonetheme/barceloneta/theme/less/barceloneta.plone.less',
                 }
             }
         },
 
         watch: {
             scripts: {
-                files: ['plonetheme/barceloneta/static/less/*.less'],
+                files: ['plonetheme/barceloneta/theme/less/*.less'],
                 tasks: ['less']
             }
         },
         browserSync: {
             html: {
                 bsFiles: {
-                    src : ['plonetheme/barceloneta/theme/css/*.css',]
+                    src : ['plonetheme/barceloneta/theme/less/*.less']
                 },
                 options: {
                     watchTask: true,
@@ -44,7 +44,7 @@ module.exports = function (grunt) {
             },
             plone: {
                 bsFiles: {
-                    src : ['plonetheme/barceloneta/theme/css/*.css',]
+                    src : ['plonetheme/barceloneta/theme/less/*.less']
                 },
                 options: {
                     watchTask: true,
@@ -60,7 +60,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-sed');
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('bsync', ["browserSync:html", "watch"]);

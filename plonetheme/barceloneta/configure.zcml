@@ -8,9 +8,6 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="plone">
 
-  <include package="plone.app.theming" />
-  <include package="plone.app.widgets" />
-
   <genericsetup:registerProfile
       name="default"
       title="Barceloneta Theme"
@@ -20,7 +17,6 @@
       />
 
   <!-- Diazo themes -->
-  <plone:static directory="clean" name="clean" type="theme"/>
   <plone:static directory="theme" name="barceloneta" type="theme"/>
 
 </configure>
