@@ -15,10 +15,13 @@ module.exports = function (grunt) {
                     sourceMap: true,
                     outputSourceFiles: true,
                     sourceMapURL: '++theme++barceloneta/less/barceloneta-compiled.css.map',
-                    sourceMapFilename: 'plonetheme/barceloneta/theme/less/barceloneta-compiled.css.map'
+                    sourceMapFilename: 'plonetheme/barceloneta/theme/less/barceloneta-compiled.css.map',
+                    modifyVars: {
+                        "isPlone": "false"
+                    }
                 },
                 files: {
-                    'plonetheme/barceloneta/theme/less/barceloneta-compiled.css': 'plonetheme/barceloneta/theme/less/barceloneta.plone.less',
+                    'plonetheme/barceloneta/theme/less/barceloneta-compiled.css': 'plonetheme/barceloneta/theme/less/barceloneta.plone.local.less',
                 }
             }
         },
