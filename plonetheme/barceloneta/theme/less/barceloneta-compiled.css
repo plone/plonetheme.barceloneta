@@ -1529,8 +1529,8 @@ fieldset[disabled] input[type="checkbox"] {
 .formHelp {
   margin-top: 0;
   margin-bottom: 0;
-  color: #8c8c8c;
-  font-weight: 100;
+  color: #666666;
+  font-weight: 300;
   font-style: italic;
 }
 .formControls {
@@ -3145,7 +3145,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
 .plone-modal-open {
   padding-right: 0;
 }
-.plone-modal-open > *:not(.plone-modal-wrapper) {
+.plone-modal-open > *:not(.plone-modal-wrapper,.select2-drop) {
   -webkit-filter: blur(1px);
   -moz-filter: blur(1px);
   -o-filter: blur(1px);
