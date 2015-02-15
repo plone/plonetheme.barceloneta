@@ -1511,6 +1511,11 @@ fieldset[disabled] input[type="checkbox"] {
   padding: 12px;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
+.plone-modal-body .formControls {
+  border: none;
+  background: transparent;
+  box-shadow: none; 
+}
 label .required:after {
   color: #c4183c;
   content: "⋆";

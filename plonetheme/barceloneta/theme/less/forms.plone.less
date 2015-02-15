@@ -221,6 +221,14 @@ input[type="checkbox"] {
   padding: @plone-padding-base-horizontal;
   box-shadow: inset 0 10px 10px -10px rgba(0,0,0,.05);
 }
+// don't show formControls in modal body,
+// because the actual controls get moved to the footer
+.plone-modal-body .formControls {
+  border: none;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
 
 //*// Required
 label .required {
