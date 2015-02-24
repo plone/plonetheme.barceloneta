@@ -4,6 +4,11 @@ Changelog
 1.6.2 (unreleased)
 ------------------
 
+* Change ``min-height`` of textarea fields from auto to ``4em`` (description,
+  etc.), respectively ``12em`` for IRichText widgets (e.g. when displayed
+  without a visual editor).
+  [thet]
+
 * Return to being a clean Diazo theme so that we are a safe starting point for
   people building their own themes and a good practice example that works when
   copying the theme in the TTW theme editor.

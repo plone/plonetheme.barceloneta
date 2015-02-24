@@ -123,8 +123,12 @@ output {
 }
 // Reset height for `textarea`s
 textarea {
-  min-height: auto;
+  min-height: 4em;
   resize: vertical; //as default, only vertical resize
+
+  &[name='form.widgets.IRichText.text'] {
+    min-height: 12em;
+  }
 }
 
 // Search inputs in iOS
