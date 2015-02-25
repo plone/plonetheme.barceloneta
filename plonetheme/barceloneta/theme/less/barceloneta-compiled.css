@@ -1440,6 +1440,7 @@ textarea {
 }
 textarea[name='form.widgets.IRichText.text'] {
   min-height: 12em;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 input[type="search"] {
   -webkit-appearance: none;

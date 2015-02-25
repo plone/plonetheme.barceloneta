@@ -4,6 +4,11 @@ Changelog
 1.6.2 (unreleased)
 ------------------
 
+* Change font family of ``form.widgets.IRichText.text`` textareas to monospace.
+  This affects the texteditor only in non-Richtext mode and helps editing e.g.
+  Restructured Text.
+  [thet]
+
 * Change ``min-height`` of textarea fields from auto to ``4em`` (description,
   etc.), respectively ``12em`` for IRichText widgets (e.g. when displayed
   without a visual editor).
