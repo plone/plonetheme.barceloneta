@@ -3351,6 +3351,17 @@ ul.picker__list {
 #portal-header #portal-logo {
   float: left;
 }
+#portal-header #portal-languageselector {
+  float: left;
+  clear: both;
+  display: inline-block;
+  margin-right: 29px;
+  padding-top: 5px;
+}
+#portal-header #portal-languageselector li {
+  display: inline-block;
+  margin-right: 10px;
+}
 #portal-header #portal-searchbox {
   padding-top: 20px;
   clear: left;
@@ -3381,6 +3392,10 @@ ul.picker__list {
   font-size: 14px;
 }
 @media (min-width: 768px) {
+  #portal-header #portal-languageselector {
+    float: right;
+    clear: none;
+  }
   #portal-header #portal-searchbox {
     position: relative;
     margin-top: 5px;
