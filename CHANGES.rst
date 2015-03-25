@@ -1,7 +1,13 @@
 Changelog
 =========
 
-1.6.2 (unreleased)
+1.6.3 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+1.6.2 (2015-03-21)
 ------------------
 
 * Change font family of ``form.widgets.IRichText.text`` textareas to monospace.
