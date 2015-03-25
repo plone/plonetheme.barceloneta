@@ -7,6 +7,17 @@
 	#portal-logo {
 		float: left;
 	}
+	#portal-languageselector {
+		float: left;
+		clear: both;
+		display: inline-block;
+		margin-right: 29px;
+		padding-top: 5px;
+		li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+	}  
 
 	//mobile search
 	#portal-searchbox {
@@ -37,6 +48,11 @@
 
 	//non mobile search
 	@media (min-width: @plone-grid-float-breakpoint) {
+		#portal-languageselector {
+			float: right;
+			clear: none;
+		}
+
 	    #portal-searchbox {
 	    	position: relative;
 	    	margin-top: 5px; //visual balance
