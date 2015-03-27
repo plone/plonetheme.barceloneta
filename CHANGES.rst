@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.6.3 (unreleased)
+1.6.3 (2015-03-26)
 ------------------
 
-- Nothing changed yet.
+- Add language selector widget
+  [bloodbare]
 
 
 1.6.2 (2015-03-21)
