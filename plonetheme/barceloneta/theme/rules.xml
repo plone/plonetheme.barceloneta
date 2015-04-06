@@ -98,9 +98,16 @@
 
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
 
+  <!-- Customizations to the searchbox -->
+  <replace css:content="#searchGadget">
+     <div class="inner-addon left-addon">
+      <xsl:copy-of select="//*[@id='searchGadget']" />
+      <span class="glyphicon glyphicon-search"></span>
+     </div>
+  </replace>
+  <drop css:content="#searchGadget_form .searchButton" />
+
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
-
-
 </rules>
