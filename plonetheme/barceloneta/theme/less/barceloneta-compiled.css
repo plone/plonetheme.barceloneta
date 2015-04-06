@@ -58,7 +58,7 @@ input[type="text"]#searchGadget {
   position: absolute;
   top: 10px;
   right: 34px;
-  color: #e6e4e4;
+  color: #cccccc;
 }
 .inner-addon.left-addon {
   width: 90%;
