@@ -4,6 +4,9 @@ Changelog
 1.6.4 (unreleased)
 ------------------
 
+- Cleanup: Remove unused resources.
+  [thet]
+
 - Fix toggling navigation at mobile widths.
   [davisagli]
 
