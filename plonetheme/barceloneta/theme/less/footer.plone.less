@@ -73,29 +73,3 @@
     margin-left: 0;
   }
 }
-
-//*// sticked footer, remove it if you do not want a sticked footer
-
-#portal-footer-wrapper {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 150px;
-}
-body {padding-bottom: 150px; display: inline-block; width: 100%;} //footer-height
-html {position: relative;min-height: 100%;}
-
-
-
-//changes on mobile
-@media (max-width: @plone-screen-xs-max) {
-  #portal-footer-wrapper .portlet .portletContent li {padding: 10px;}
-  #portal-footer-wrapper {height: 250px;} //footer-height changes
-    body {padding-bottom: 250px;} 
-}
-
-
-//adjustments of absolute footer with toolbar
-.plone-toolbar-left-default #portal-footer-wrapper {padding: 30px 15px 30px 75px;}
-.plone-toolbar-left-expanded #portal-footer-wrapper {padding: 30px 15px 30px 135px;}

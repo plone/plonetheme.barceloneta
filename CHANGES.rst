@@ -4,7 +4,10 @@ Changelog
 1.6.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove sticky footer (it required a hardcoded height, which does not work
+  for an element that may have varying content).
+
+- Add clearfix to `.row`.
 
 
 1.6.3 (2015-03-26)
