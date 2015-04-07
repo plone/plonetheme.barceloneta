@@ -56,8 +56,10 @@
   &:extend(.clearfix all);
   -webkit-overflow-scrolling: touch;
 
+  display: none;
   &.in {
     overflow-y: auto;
+    display: block;
   }
 
   @media (min-width: @plone-grid-float-breakpoint) {

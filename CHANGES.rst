@@ -4,7 +4,8 @@ Changelog
 1.6.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix toggling navigation at mobile widths.
+  [davisagli]
 
 
 1.6.3 (2015-03-26)
