@@ -7,6 +7,13 @@ Changelog
 - Fix toggling navigation at mobile widths.
   [davisagli]
 
+- Remove sticky footer (it required a hardcoded height, which does not work
+  for an element that may have varying content).
+  [davisagli]
+
+- Add clearfix to `.row`.
+  [davisagli]
+
 
 1.6.3 (2015-03-26)
 ------------------
