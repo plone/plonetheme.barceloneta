@@ -2622,31 +2622,37 @@ fieldset[disabled] .link-parent.active {
 }
 #upgrade-products .configlets li,
 #install-products .configlets li,
-#activated-products .configlets li {
+#activated-products .configlets li,
+#broken-products .configlets li {
   padding: 12px;
   border-top: 1px dotted #e5e5e5;
 }
 #upgrade-products .configlets li:first-child,
 #install-products .configlets li:first-child,
-#activated-products .configlets li:first-child {
+#activated-products .configlets li:first-child,
+#broken-products .configlets li:first-child {
   border-top: 0;
 }
 #upgrade-products .configlets h3,
 #install-products .configlets h3,
 #activated-products .configlets h3,
+#broken-products .configlets h3,
 #upgrade-products .configlets p,
 #install-products .configlets p,
-#activated-products .configlets p {
+#activated-products .configlets p,
+#broken-products .configlets p {
   margin: 0;
 }
 #upgrade-products .configlets .portletContent:last-child,
 #install-products .configlets .portletContent:last-child,
-#activated-products .configlets .portletContent:last-child {
+#activated-products .configlets .portletContent:last-child,
+#broken-products .configlets .portletContent:last-child {
   margin-bottom: 0;
 }
 #upgrade-products .configlets .pull-right,
 #install-products .configlets .pull-right,
-#activated-products .configlets .pull-right {
+#activated-products .configlets .pull-right,
+#broken-products .configlets .pull-right {
   margin: 0 0 12px 12px;
 }
 .managedPortletActions {
