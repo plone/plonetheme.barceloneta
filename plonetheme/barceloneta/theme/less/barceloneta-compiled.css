@@ -3435,7 +3435,7 @@ ul.picker__list {
     width: 70px;
     display: inline-block;
     margin-left: -1px;
-    margin-top: -4px;
+    vertical-align: top;
   }
   #portal-header #portal-searchbox label {
     font-size: 86.667%;
