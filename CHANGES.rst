@@ -4,6 +4,9 @@ Changelog
 1.6.4 (unreleased)
 ------------------
 
+- no one likes the star for required field label, try circle
+  [vangheem]
+
 - add plone-loader style so you can add decent loader to javascript
   [vangheem]
 

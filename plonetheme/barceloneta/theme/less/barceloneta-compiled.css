@@ -1558,12 +1558,12 @@ fieldset[disabled] input[type="checkbox"] {
 }
 label .required:after {
   color: #c4183c;
-  content: "⋆";
-  font-size: 250%;
+  content: "•";
+  font-size: 200%;
   line-height: 0;
   position: relative;
-  top: 8px;
-  margin-left: -8px;
+  top: 7px;
+  margin-left: -4px;
 }
 [type="checkbox"].required,
 [type="radio"].required {
