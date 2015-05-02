@@ -4,6 +4,9 @@ Changelog
 1.6.4 (unreleased)
 ------------------
 
+- fix in and out widget button style
+  [vangheme]
+
 - no one likes the star for required field label, try circle
   [vangheem]
 
