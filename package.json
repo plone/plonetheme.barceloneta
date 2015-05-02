@@ -1,6 +1,7 @@
 {
   "name": "plonetheme.barceloneta",
   "version": "1.0.0",
+  "private": true,
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-browser-sync": "^0.8.2",

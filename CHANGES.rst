@@ -4,6 +4,12 @@ Changelog
 1.6.4 (unreleased)
 ------------------
 
+- add plone-loader style so you can add decent loader to javascript
+  [vangheem]
+
+- add styles for search form
+  [vangheem]
+
 - Cleanup: Remove unused resources.
   [thet]
 
