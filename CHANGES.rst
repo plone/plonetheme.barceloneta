@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.4 (unreleased)
+1.6.4 (2015-05-04)
 ------------------
 
 - fix in and out widget button style
