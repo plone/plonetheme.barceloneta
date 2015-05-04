@@ -32,6 +32,7 @@ Changelog
 - pat-modal pattern has been renamed to pat-plone-modal
   [jcbrand]
 
+
 1.6.3 (2015-03-26)
 ------------------
 
