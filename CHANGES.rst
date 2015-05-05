@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.5 (unreleased)
+1.6.5 (2015-05-05)
 ------------------
 
 - Fix extending barceloneta with xi:include
