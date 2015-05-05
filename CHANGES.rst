@@ -4,7 +4,8 @@ Changelog
 1.6.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix extending barceloneta with xi:include
+  [pbauer]
 
 
 1.6.4 (2015-05-04)
