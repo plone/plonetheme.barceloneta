@@ -4119,6 +4119,7 @@ body.template-logged_out #content-core .portletFooter {
   background: #fafafa;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
   padding: 12px 12px 12px 36px;
+  margin-left: 5px;
 }
 .event.summary strong,
 .event.summary li > span {
