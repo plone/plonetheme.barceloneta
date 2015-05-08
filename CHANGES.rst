@@ -4,7 +4,8 @@ Changelog
 1.6.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- provide some spacing between event summary and content
+  [vangheem]
 
 
 1.6.5 (2015-05-05)
@@ -17,8 +18,6 @@ Changelog
 1.6.4 (2015-05-04)
 ------------------
 
-- provide some spacing between event summary and content
-  [vangheem]
 
 - fix in and out widget button style
   [vangheme]
