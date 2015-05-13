@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.6 (unreleased)
+1.6.6 (2015-05-13)
 ------------------
 
 - provide some spacing between event summary and content
