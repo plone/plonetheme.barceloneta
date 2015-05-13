@@ -156,4 +156,17 @@
 	margin-top: -@plone-padding-base-vertical;
 	form {display: inline-block;}
 }
-.managedPortlet {.portlet;}
+.managedPortlet {
+	.portlet;
+
+	&.inheritedPortlet{
+		margin: 5px 15px;
+
+		.portletHeader{
+			padding: 3px 15px;
+		}
+	}
+	&.blockedPortlet{
+		opacity: 0.7;
+	}
+}
