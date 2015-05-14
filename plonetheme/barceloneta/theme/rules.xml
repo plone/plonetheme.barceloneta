@@ -56,9 +56,7 @@
           </p> -->
           <div class="row">
             <div class="col-xs-12 col-sm-12">
-               <xsl:copy-of select="//article[@id='content']"/>
-               <!-- Just in case for legacy templates -->
-               <xsl:copy-of select="//div[@id='content']"/>
+               <xsl:apply-templates css:select="#content"/>
             </div>
           </div>
           <footer class="row">
