@@ -4,14 +4,13 @@ Changelog
 1.6.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- tweak manage portlets styles
+  [vangheem]
 
 
 1.6.6 (2015-05-13)
 ------------------
 
-- tweak manage portlets styles
-  [vangheem]
 
 - provide some spacing between event summary and content
   [vangheem]
