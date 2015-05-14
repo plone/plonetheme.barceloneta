@@ -4,6 +4,9 @@ Changelog
 1.6.7 (unreleased)
 ------------------
 
+- remove loader since it is in mockup now
+  [vangheem]
+
 - tweak manage portlets styles
   [vangheem]
 
