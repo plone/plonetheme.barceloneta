@@ -1469,6 +1469,9 @@ fieldset[disabled] input[type="checkbox"] {
 .field {
   margin-bottom: 15px;
 }
+.field span.option {
+  display: block;
+}
 .field.error {
   background: #fbe8e4;
   -webkit-box-shadow: 0 0 0 5px #fbe8e4;
