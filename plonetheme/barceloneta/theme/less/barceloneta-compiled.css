@@ -1565,20 +1565,6 @@ label .required:after {
   top: 7px;
   margin-left: -4px;
 }
-[type="checkbox"].required,
-[type="radio"].required {
-  margin-right: 12px;
-}
-[type="checkbox"].required:after,
-[type="radio"].required:after {
-  color: #c4183c;
-  content: "⋆";
-  font-size: 250%;
-  line-height: 0;
-  position: relative;
-  top: 4px;
-  margin-left: 12px;
-}
 .searchField.portlet-search-gadget,
 #sharing-user-group-search,
 #select-rules {
