@@ -1606,6 +1606,9 @@ label .required:after {
 .ordered-selection-field td button {
   margin-left: 5px;
 }
+.folder-factories {
+  list-style: none;
+}
 .widget input + label {
   display: inline;
 }
