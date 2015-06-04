@@ -4,6 +4,9 @@ Changelog
 1.6.7 (unreleased)
 ------------------
 
+- hide crud-form select header by default
+  [vangheem]
+
 - remove loader since it is in mockup now
   [vangheem]
 

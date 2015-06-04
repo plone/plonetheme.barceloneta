@@ -356,7 +356,8 @@ hr {
   border-top: 1px solid #cccccc;
 }
 .sr-only,
-.hiddenStructure {
+.hiddenStructure,
+.crud-form .header-select {
   position: absolute;
   width: 1px;
   height: 1px;
