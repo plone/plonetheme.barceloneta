@@ -4,6 +4,9 @@ Changelog
 1.6.7 (unreleased)
 ------------------
 
+- provide more sane default widths and heights to select[multiple] and textareas
+  [vangheem]
+
 - hide crud-form select header by default
   [vangheem]
 

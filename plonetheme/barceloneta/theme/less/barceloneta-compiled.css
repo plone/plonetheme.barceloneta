@@ -1359,6 +1359,7 @@ input[type="range"] {
 select[multiple],
 select[size] {
   height: auto;
+  min-width: 10em;
 }
 select[size="1"] {
   height: 34px;
@@ -1444,7 +1445,8 @@ fieldset[disabled] select {
   opacity: 1;
 }
 textarea {
-  min-height: 4em;
+  min-height: 9em;
+  min-width: 10em;
   resize: vertical;
 }
 textarea[name='form.widgets.IRichText.text'] {
@@ -2290,6 +2292,15 @@ fieldset[disabled] .link-parent.active {
   .autotabs .autotoc-nav a:not(.active) {
     box-shadow: inset 0 -1px #e5e5e5;
   }
+}
+.autotabs ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.autotabs ul li {
+  list-style: none;
+  display: inline-block;
 }
 .folder-listing {
   font-weight: 500;

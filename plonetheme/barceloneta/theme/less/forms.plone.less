@@ -66,6 +66,7 @@ input[type="range"] {
 select[multiple],
 select[size] {
   height: auto;
+  min-width: 10em;
 }
 select[size="1"] {
   height: @plone-input-height-base;
@@ -123,7 +124,8 @@ output {
 }
 // Reset height for `textarea`s
 textarea {
-  min-height: 4em;
+  min-height: 9em;
+  min-width: 10em;
   resize: vertical; //as default, only vertical resize
 
   &[name='form.widgets.IRichText.text'] {
