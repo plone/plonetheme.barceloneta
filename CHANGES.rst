@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.7 (unreleased)
+1.6.7 (2015-06-05)
 ------------------
 
 - provide more sane default widths and heights to select[multiple] and
