@@ -4,7 +4,8 @@ Changelog
 1.6.7 (unreleased)
 ------------------
 
-- provide more sane default widths and heights to select[multiple] and textareas
+- provide more sane default widths and heights to select[multiple] and
+  textareas
   [vangheem]
 
 - hide crud-form select header by default
@@ -15,6 +16,9 @@ Changelog
 
 - tweak manage portlets styles
   [vangheem]
+
+- fixed rules for copying content.
+  [hvozdovych]
 
 
 1.6.6 (2015-05-13)
