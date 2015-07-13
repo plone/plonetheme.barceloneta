@@ -28,6 +28,10 @@
 	margin-left: auto;
 }
 
+@media (min-width: @plone-screen-sm-min) { .container {width: @plone-container-sm;}}
+@media (min-width: @plone-screen-md-min) { .container {width: @plone-container-md;}}
+@media (min-width: @plone-screen-lg-min) { .container {width: @plone-container-lg;}}
+
 @media (min-width: @plone-screen-sm-min) { .plone-toolbar-top-default .container {width: @plone-container-sm;}}
 @media(min-width: (@plone-screen-sm-min + @plone-left-toolbar)) { .plone-toolbar-left-default .container {width: (@plone-container-sm);}}
 @media(min-width: (@plone-screen-sm-min + @plone-left-toolbar-expanded)) {.plone-toolbar-left-expanded .container {width: (@plone-container-sm);}}
