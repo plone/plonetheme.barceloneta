@@ -2718,7 +2718,7 @@ fieldset[disabled] .link-parent.active {
   padding: 0;
 }
 .portletNavigationTree.portletSiteSetup a span {
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   display: block;
   color: #4d4d4d;
@@ -2738,8 +2738,14 @@ fieldset[disabled] .link-parent.active {
   padding-bottom: 10px;
 }
 .portletNavigationTree.portletSiteSetup .inner-configlet:hover {
-  background: #fcfcfd;
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.67);
+  border-radius: 5px;
+}
+.portletNavigationTree.portletSiteSetup .inner-configlet:hover span {
+  color: #333;
+}
+.template-overview-controlpanel .portlet.portletSiteSetup .portletContent > ul > li {
+  height: 120px;
 }
 #portlet-prefs ul ul {
   padding-top: 10px;

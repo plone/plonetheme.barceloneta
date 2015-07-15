@@ -141,17 +141,24 @@
 			// 	margin-top: 2px;
 			// 	display:none; //remove to show images
 			// }
-			span {font-size: 60px; text-align: center; display: block; color: #4d4d4d;}
+			span {font-size: 50px; text-align: center; display: block; color: #4d4d4d;}
 		}
 		ul {background: #edecec; padding-bottom: 20px;}
 		li {vertical-align: top;}
 		ul > li > a:hover:after {content:""}
 		.inner-configlet {
 			margin-top: 10px; padding-bottom: 10px;
-			&:hover {background: #fcfcfd; border-radius: 15px;}
+			&:hover {
+				background: rgba(255,255,255,.67);
+				border-radius: 5px;
+				span {
+					color: #333;
+				}
+			}
 		}
 	}
 }
+.template-overview-controlpanel .portlet.portletSiteSetup .portletContent > ul > li {height: 120px;}
 
 #portlet-prefs ul ul {
 	padding-top: 10px;
