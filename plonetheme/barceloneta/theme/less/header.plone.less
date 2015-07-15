@@ -19,15 +19,22 @@
         }
     }
 
-    //mobile search
-    #portal-searchbox {
-        padding-top: 20px;
-        clear:left;
-        width: 67%;
-        position: absolute;
-        z-index: 2;
-        margin-top: 64px;
-        white-space: nowrap;
+	#portal-anontools {
+		float: left;
+		ul {
+			padding-right: 0px;
+		}
+	}
+	//mobile search
+	#portal-searchbox {
+		padding-top: 20px;
+		clear:left;
+		width: 67%;
+		position: absolute;
+		z-index: 2;
+		margin-left:3px;
+		margin-top: 60px;
+		white-space: nowrap;
 
         .searchSection {display: none;} //non on mobile
         [type="text"] {
@@ -45,12 +52,16 @@
         }
     }
 
-    //non mobile search
-    @media (min-width: @plone-grid-float-breakpoint) {
-        #portal-languageselector {
-            float: right;
-            clear: none;
-        }
+	//non mobile search
+	@media (min-width: @plone-grid-float-breakpoint) {
+		#portal-languageselector {
+			float: right;
+			clear: none;
+		}
+	
+		#portal-anontools {
+			float: right;
+		}
 
         #portal-searchbox {
             position: relative;
