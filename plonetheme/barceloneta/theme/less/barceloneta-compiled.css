@@ -2701,14 +2701,63 @@ fieldset[disabled] .link-parent.active {
   margin-top: -3px;
   color: #777777;
 }
-.portletNavigationTree.portetSiteSetup a {
-  padding-left: 30px;
+.portlet.portletSiteSetup .portletContent > ul > li a:before {
+  content: "";
 }
-.portletNavigationTree.portetSiteSetup a img {
+.portlet.portletSiteSetup .portletContent > ul li:hover {
+  background: #edecec;
+}
+.portletNavigationTree nav.portletContent > ul > li a {
+  border: none;
+  padding: 0px;
+}
+.portletNavigationTree.portletSiteSetup a {
+  border: none;
+  text-align: center;
+  height: 100%;
+  padding: 0;
+}
+.portletNavigationTree.portletSiteSetup a span {
+  font-size: 60px;
+  text-align: center;
+  display: block;
+  color: #4d4d4d;
+}
+.portletNavigationTree.portletSiteSetup ul {
+  background: #edecec;
+  padding-bottom: 20px;
+}
+.portletNavigationTree.portletSiteSetup li {
+  vertical-align: top;
+}
+.portletNavigationTree.portletSiteSetup ul > li > a:hover:after {
+  content: "";
+}
+.portletNavigationTree.portletSiteSetup .inner-configlet {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.portletNavigationTree.portletSiteSetup .inner-configlet:hover {
+  background: #fcfcfd;
+  border-radius: 15px;
+}
+#portlet-prefs ul ul {
+  padding-top: 10px;
+}
+#portlet-prefs ul ul li {
+  padding-top: 10px;
+}
+#portlet-prefs ul ul li a {
+  text-align: inherit;
+  padding-left: 40px;
+}
+#portlet-prefs ul ul li a:before {
+  content: "•";
   position: absolute;
-  margin-left: -22px;
-  margin-top: 2px;
-  display: none;
+  font-size: 25px;
+  margin-top: -9px;
+  left: 15px;
+  color: #a7daf2;
 }
 #upgrade-products .configlets li,
 #install-products .configlets li,
