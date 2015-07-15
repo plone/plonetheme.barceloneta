@@ -2707,7 +2707,7 @@ fieldset[disabled] .link-parent.active {
 .portlet.portletSiteSetup .portletContent > ul li:hover {
   background: #edecec;
 }
-.portletNavigationTree nav.portletContent > ul > li a {
+.portletNavigationTree.portletSiteSetup nav.portletContent > ul > li a {
   border: none;
   padding: 0px;
 }
