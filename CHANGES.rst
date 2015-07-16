@@ -8,6 +8,9 @@ Changelog
   does not reference original theme file
   [vangheem]
 
+- various mobile fixes
+  [agitator]
+
 
 1.6.7 (2015-06-05)
 ------------------

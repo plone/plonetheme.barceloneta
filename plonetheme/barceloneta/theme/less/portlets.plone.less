@@ -31,18 +31,18 @@
 			margin: 0;
 			font-weight: @plone-font-weight-regular;
 			color: @plone-gray;
-		}	
+		}
 		> ul {
 			padding: 0;
 			list-style: none;
-			position: relative;		
+			position: relative;
 			> li {
 				a {
 				display: block;
 				padding: 10px 15px 26px 30px;
 				position: relative;
 				z-index: 1;
-				}	
+				}
 				> a {border-top: @plone-portlet-border;}
 				&:first-child > a {border-top: 0;}
 				& a:before {
@@ -59,7 +59,7 @@
 		}
 		table {width: 100%; text-align: center; text-align: middle; border-collapse: collapse; border-spacing: 0;
 			tr {line-height: 30px; }
-			thead {background: @plone-portlet-footer-bg; border-bottom: @plone-portlet-border; 
+			thead {background: @plone-portlet-footer-bg; border-bottom: @plone-portlet-border;
 				th {color: @plone-gray-light; font-weight: @plone-font-weight-light; height: 40px; text-align: center;}
 			}
 			td {}
@@ -89,7 +89,7 @@
 			.today > * {background: @plone-portlet-contrast-bg; font-weight: 500; box-shadow: 0 0 0 5px @plone-portlet-contrast-bg;} //using shadow to expand background is because then table is only 20px per cell and not 30px
 			tbody tr:first-child td > * {margin-top: 10px;}
 			tbody tr:last-child td > * {margin-bottom: 10px;}
-		}	
+		}
 	}
 	.formControls {border:0; background: none; padding: 0; box-shadow: none;}
 	.portletFooter {
@@ -122,18 +122,6 @@
 	}
 }
 
-//*// Site Setup
-.portletNavigationTree.portetSiteSetup {
-	a {
-		padding-left: 30px; //adjust icons of products
-		img {
-			position: absolute;
-			margin-left: -22px;
-			margin-top: 2px;
-			display:none; //remove to show images
-		}
-	}
-}
 #upgrade-products .configlets,
 #install-products .configlets,
 #activated-products .configlets,
