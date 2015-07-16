@@ -4,7 +4,9 @@ Changelog
 1.6.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- do not use absolute prefix to reference index.html to copying themes
+  does not reference original theme file
+  [vangheem]
 
 
 1.6.7 (2015-06-05)

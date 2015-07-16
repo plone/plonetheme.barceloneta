@@ -5,7 +5,7 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <theme href="/++theme++barceloneta/index.html"/>
+  <theme href="index.html"/>
   <notheme css:if-not-content="#visual-portal-wrapper" />
 
   <rules if-content="//*[@id='portal-top']">
