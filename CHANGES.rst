@@ -4,6 +4,9 @@ Changelog
 1.6.8 (unreleased)
 ------------------
 
+- added a:hover styles for h1 h2 h3
+  [agitator]
+
 - do not use absolute prefix to reference index.html to copying themes
   does not reference original theme file
   [vangheem]
