@@ -4,15 +4,39 @@ Changelog
 1.6.8 (unreleased)
 ------------------
 
-- added a:hover styles for h1 h2 h3
+- New control panel overview and portlet layout.
+  [sneridagh]
+
+- Fixed bug in portlet navigation due to a CSS error.
+  [sneridagh]
+
+- Fix problem with CSS leaking from the cp overview to the portlet.
+  [sneridagh]
+
+- Fix map.
+  [sneridagh]
+
+- Added a:hover styles for h1 h2 h3.
   [agitator]
 
-- do not use absolute prefix to reference index.html to copying themes
-  does not reference original theme file
+- Role for gigantic is complementary.
+  [bloodbare]
+
+- Do not use absolute prefix to reference index.html to copying themes
+  does not reference original theme file.
   [vangheem]
 
-- various mobile fixes
+- Toolbar fixes.
+  [bloodbare]
+
+- Various mobile fixes.
   [agitator]
+
+- Update index.html. Change plone.org link to plone.com.
+  [kimnguyen]
+
+- Do not uppercase the colophon.
+  [gforcada]
 
 
 1.6.7 (2015-06-05)
