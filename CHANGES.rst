@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.8 (unreleased)
+1.6.8 (2015-07-18)
 ------------------
 
 - New control panel overview and portlet layout.
