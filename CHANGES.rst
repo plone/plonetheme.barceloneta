@@ -4,6 +4,8 @@ Changelog
 1.6.9 (unreleased)
 ------------------
 
+- Updated font-weight on portlet headers
+  [pigeonflight]
 - Update font-weight on portlet management items
   [vangheem]
 
