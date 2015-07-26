@@ -2954,6 +2954,9 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet.inheritedPortlet .portletHeader {
   padding: 3px 15px;
 }
+.managedPortlet .portletHeader {
+  font-weight: 300;
+}
 .managedPortlet.blockedPortlet {
   opacity: 0.7;
 }

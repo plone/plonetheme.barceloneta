@@ -4,7 +4,8 @@ Changelog
 1.6.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update font-weight on portlet management items
+  [vangheem]
 
 
 1.6.8 (2015-07-18)
