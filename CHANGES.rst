@@ -6,8 +6,12 @@ Changelog
 
 - Updated font-weight on portlet headers
   [pigeonflight]
+
 - Update font-weight on portlet management items
   [vangheem]
+
+- Updated to index.html: link to plone.com opens in new window/tab
+  [tkimnguyen]
 
 
 1.6.8 (2015-07-18)
@@ -42,7 +46,7 @@ Changelog
   [agitator]
 
 - Update index.html. Change plone.org link to plone.com.
-  [kimnguyen]
+  [tkimnguyen]
 
 - Do not uppercase the colophon.
   [gforcada]
