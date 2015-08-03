@@ -4,6 +4,9 @@ Changelog
 1.6.9 (unreleased)
 ------------------
 
+- Hide searchbox, personaltools, breadcrumbs in print.css
+  [gomez]
+
 - Updated font-weight on portlet headers
   [pigeonflight]
 
