@@ -5,6 +5,25 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
+    <!--
+    You can include this rules file in your own theme as follows
+
+    <rules xmlns="http://namespaces.plone.org/diazo"
+           xmlns:css="http://namespaces.plone.org/diazo/css"
+           xmlns:xhtml="http://www.w3.org/1999/xhtml"
+           xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+           xmlns:xi="http://www.w3.org/2001/XInclude">
+        <xi:include href="++theme++barceloneta/backend.xml" />
+        <rules css:if-content="body.viewpermission-view,body.viewpermission-none">
+           <theme href="index.html" />
+           ... your rules
+        </rules>
+    </rules>
+
+    This will include the toolbar in your theme and use bareceloneta to theme
+    all your backend pages such as site setup and edit.
+    -->
+
   <!-- toolbar -->
   <before css:theme-children="body" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated"/>
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous"/>
@@ -16,8 +35,13 @@
 
 <!-- Cut down barceloneta without just for backend UI -->
 <rules css:if-not-content="body.viewpermission-view,body.viewpermission-none">
-       <theme href="../++theme++barceloneta/index.html" />
+  <theme href="../++theme++barceloneta/index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
+
+  <!-- We can't control the bundle from here due to include. Just hard code -->
+  <after css:theme-children="head">
+    <link rel="stylesheet" type="text/css" href="/++theme++barceloneta/less/barceloneta-compiled.css"/>
+  </after>
 
 
   <rules if-content="//*[@id='portal-top']">
@@ -44,10 +68,8 @@
     <!-- Script -->
     <after theme-children="/html/head" content="/html/head/script" />
 
-  <!-- move global nav -->
-<!--
-  <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
--->
+  <!-- we don't need global nav -->
+  <drop css:theme="#mainnavigation-wrapper"/>
 
   <!-- hero unit on homepage only -->
   <drop css:if-not-content="body.template-document_view.section-front-page"
@@ -55,6 +77,10 @@
 
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content"/>
+  <after css:theme-children="head">
+      <style>.plone-breadcrumb {margin-top: 0px;}</style>
+  </after>
+
 
   <!-- Central column -->
   <replace css:theme="#content-container" method="raw">
@@ -109,10 +135,8 @@
   </rules>
 
   <!-- Content header -->
-<!--
-  <replace css:theme="#portal-top" css:content-children="#portal-top" />
-  <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
--->
+  <drop css:theme="#portal-top"  />
+  <drop css:theme="#portal-footer-wrapper" />
 
 </rules>
 </rules>
