@@ -1,7 +1,13 @@
 Changelog
 =========
 
-1.6.9 (unreleased)
+1.6.10 (unreleased)
+-------------------
+
+- Nothing changed yet.
+
+
+1.6.9 (2015-08-22)
 ------------------
 
 - Hide searchbox, personaltools, breadcrumbs in print.css
