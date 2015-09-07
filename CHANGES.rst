@@ -1,10 +1,12 @@
 Changelog
 =========
 
-1.6.10 (unreleased)
+1.6.10 (2015-09-07)
 -------------------
 
-- Nothing changed yet.
+- Add a pared down version of barceloneta to include in your theme to save you
+  making a custom backend theme.
+  [djay]
 
 
 1.6.9 (2015-08-22)
