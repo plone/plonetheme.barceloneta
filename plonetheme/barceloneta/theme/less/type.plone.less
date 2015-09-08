@@ -39,12 +39,12 @@ small { font-size: 85%; }
 cite { font-style: normal; }
 mark { background-color: @plone-state-warning-bg; padding: .2em; }
 .discreet { color: @plone-text-discreet; font-weight: @plone-font-weight-regular;}
-.documentByLine {color: @plone-text-discreet; font-weight: @plone-font-weight-regular;}
+.documentByLine {color: @plone-text-discreet; font-weight: @plone-font-weight-regular; margin-bottom: (@plone-line-height-computed / 2); }
 
 //*// Page header
 .documentFirstHeading {
   padding-bottom: ((@plone-line-height-computed / 2) - 1);
-  margin: 0 0 @plone-line-height-computed;
+  margin: 0 0 (@plone-line-height-computed / 2);
   border-bottom: 1px solid @plone-page-header-border-color;
 }
 .tileHeadline {
