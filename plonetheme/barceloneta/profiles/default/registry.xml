@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<registry>
-  <record name="plone.lessvariables">
-    <value purge="false">
-      <element key="barcelonetaLessPath">\"{site_url}/++theme++barceloneta/less/\"</element>
-    </value>
-  </record>
-</registry>
