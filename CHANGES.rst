@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.11 (unreleased)
+1.6.11 (2015-09-08)
 -------------------
 
 - Bring back document byline (closes `#741`_).
