@@ -18,6 +18,6 @@ and then served up from the theme. See rules.xml for the relevant Diazo rules.
 Notes
 -----
 
-- Make sure that Development Mode is enabled by going to the `Site Setup` > `Resource Registries`, this ensures that your changes show up and aren't cached.
+- Make sure that Development Mode is enabled by going to the `Site Setup` > `Resource Registries` and check the `Development Mode` box, this ensures that your changes show up and aren't cached.
 
 - If you want to modify plonetheme.barceloneta LESS you can either run `grunt less` to do a one-off compile or `grunt watch` to compile on change, this should be done from the plonetheme.barceloneta src folder
