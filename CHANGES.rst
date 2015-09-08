@@ -4,7 +4,8 @@ Changelog
 1.6.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Prefer rules with CSS selectors over XPath whenever possible
+  [davilima6]
 
 
 1.6.10 (2015-09-07)
