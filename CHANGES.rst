@@ -4,6 +4,9 @@ Changelog
 1.6.11 (unreleased)
 -------------------
 
+- Bring back document byline (closes `#741`_).
+  [rodfersou]
+
 - Prefer rules with CSS selectors over XPath whenever possible
   [davilima6]
 
@@ -176,3 +179,5 @@ Changelog
 
 * Initial release
   [esteele]
+
+.. _`#741`: https://github.com/plone/Products.CMFPlone/issues/741

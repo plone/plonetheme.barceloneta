@@ -296,6 +296,15 @@ th {
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
+  #portal-searchbox {
+    display: None;
+  }
+  #portal-personaltools {
+    display: None;
+  }
+  #portal-breadcrumbs {
+    display: None;
+  }
 }
 * {
   -webkit-box-sizing: border-box;
@@ -451,10 +460,11 @@ mark {
 .documentByLine {
   color: #777777;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 .documentFirstHeading {
   padding-bottom: 9px;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   border-bottom: 1px solid #cccccc;
 }
 .tileHeadline {
@@ -2477,7 +2487,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet .portletHeader {
   background: #f2f1f1;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 18px;
   padding: 13px 15px;
   color: #696969;
@@ -2766,7 +2776,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletHeader {
   background: #f2f1f1;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 18px;
   padding: 13px 15px;
   color: #696969;
@@ -4008,7 +4018,7 @@ body.template-logged_out #content-core > :last-child {
 body.template-login_form #content-core .portletHeader,
 body.template-logged_out #content-core .portletHeader {
   background: #f2f1f1;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 18px;
   padding: 13px 15px;
   color: #696969;
