@@ -4,7 +4,8 @@ Changelog
 1.6.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix display of album_view title links (closes `#911`_).
+  [ichim-david]
 
 
 1.6.11 (2015-09-08)
@@ -187,3 +188,4 @@ Changelog
   [esteele]
 
 .. _`#741`: https://github.com/plone/Products.CMFPlone/issues/741
+.. _`#911`: https://github.com/plone/Products.CMFPlone/issues/911
