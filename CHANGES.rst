@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.12 (unreleased)
+1.6.12 (2015-09-12)
 -------------------
 
 - Fix display of album_view title links (closes `#911`_).
