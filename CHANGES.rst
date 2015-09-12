@@ -4,7 +4,8 @@ Changelog
 1.6.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- provide basic table styles
+  [vangheem]
 
 
 1.6.12 (2015-09-12)
