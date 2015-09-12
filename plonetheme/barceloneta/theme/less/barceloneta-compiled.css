@@ -2397,6 +2397,9 @@ fieldset[disabled] .link-parent.active {
   font-weight: 300;
   color: #777777;
 }
+.photoalbumEntryWrapper {
+  display: block;
+}
 .photoAlbumEntry {
   display: inline-block;
   margin: 5px;
