@@ -28,6 +28,10 @@
   border-radius: 0 0 @plone-border-radius-base  @plone-border-radius-base;
   box-shadow: 0 1px 2px rgba(0,0,0,.17);
 }
+
+.picker__wrap {
+  margin: 0; /* overrides -1px used to get rid of unecessary scrollbar */
+}
 .picker__list-item:hover {
   background: @plone-table-bg-hover;
   color: @plone-gray-dark;
@@ -47,14 +51,14 @@ ul.picker__list {
   margin: 0;
   padding: 0;
 }
-.picker__button--clear, .picker__footer button {
+.picker--time .picker__button--clear {
   width: 100%;
   border-left: 0;
   border-right: 0;
   border-bottom: 0;
   border-radius: 0;
 }
-.picker__footer button { width:50% !important; }
+
 .picker__table {
   width: 100%;
   text-align: center;
@@ -64,26 +68,15 @@ ul.picker__list {
 .picker__header {text-align: center; position: relative;}
 .picker__nav--next, .picker__nav--prev {
   position: absolute;
+  top: 0.5em;
 }
-.picker__nav--next:before, .picker__nav--prev:before {
-  content: "«";
-  font-size: 25px;
-  font-weight: 100;
-  margin-left: 5px;
-  top: -2px;
-  position: relative;
-  color: #08c;
+
+.picker__select--month, .picker__select--year {
+  width:35%;
+  display: inline-block;
+  margin: 0 6px;
+  font-size: 1em;
 }
-.picker__nav--prev:before {
-  content: "»";
-  font-size: 25px;
-  font-weight: 100;
-  margin-right: 5px;
-  top: -2px;
-  position: relative;
-  color: #08c;
-}
-.picker__select--month, .picker__select--year {width:35%; display: inline-block; margin: 0 6px;}
 
 .picker__day--infocus:hover, .picker__day--outfocus:hover {
   cursor: pointer;
@@ -99,12 +92,4 @@ ul.picker__list {
 .picker__day--today {
   font-weight: 600;
 }
-
-
-
-
-
-
-
-
 
