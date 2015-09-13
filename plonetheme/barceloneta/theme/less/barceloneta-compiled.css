@@ -3512,6 +3512,9 @@ ul.picker__list {
   margin: 0 6px;
   font-size: 1em;
 }
+.picker__day {
+  font-weight: 400;
+}
 .picker__day--infocus:hover,
 .picker__day--outfocus:hover {
   cursor: pointer;
@@ -3521,12 +3524,10 @@ ul.picker__list {
 .picker__day--highlighted {
   background: #007bb3;
   color: #fff;
+  font-weight: 600;
 }
 .picker__day--outfocus {
   color: #cccccc;
-}
-.picker__day--today {
-  font-weight: 600;
 }
 .pat-sortable > *:hover {
   cursor: move;

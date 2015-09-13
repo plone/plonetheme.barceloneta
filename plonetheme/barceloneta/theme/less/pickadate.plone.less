@@ -78,6 +78,9 @@ ul.picker__list {
   font-size: 1em;
 }
 
+.picker__day {
+  font-weight: 400;
+}
 .picker__day--infocus:hover, .picker__day--outfocus:hover {
   cursor: pointer;
   background: @plone-table-bg-hover;
@@ -85,11 +88,9 @@ ul.picker__list {
 .picker__day--highlighted:hover, .picker__day--highlighted {
   background: @plone-link-color;
   color: #fff;
+  font-weight: 600;
 }
 .picker__day--outfocus {
   color: @plone-gray-lighter;
-}
-.picker__day--today {
-  font-weight: 600;
 }
 
