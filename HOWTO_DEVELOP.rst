@@ -8,11 +8,11 @@ After executing these commands you can run grunt to watch for any less changes::
 
      grunt watch
 
-This will make sure that the many .less files are compiled to .css on the fly
-and then served up from the theme.
+This will make sure that the many .less files are compiled to .css on the fly and then served up from the theme.
+
 See rules.xml for the relevant Diazo rules.
 
-| If you prefer to do a one time compile of the less files you can run::
+If you prefer to do a one time compile of the less files you can run::
 
     grunt less
 
