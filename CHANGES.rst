@@ -4,6 +4,9 @@ Changelog
 1.6.13 (unreleased)
 -------------------
 
+- Fix display of date widget arrows and footer buttons (refs `#891`_).
+  [ichim-david]
+
 - provide basic table styles
   [vangheem]
 
@@ -195,4 +198,5 @@ Changelog
   [esteele]
 
 .. _`#741`: https://github.com/plone/Products.CMFPlone/issues/741
+.. _`#891`: https://github.com/plone/Products.CMFPlone/issues/891
 .. _`#911`: https://github.com/plone/Products.CMFPlone/issues/911
