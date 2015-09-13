@@ -4,6 +4,11 @@ Changelog
 1.6.13 (unreleased)
 -------------------
 
+- Clean Gruntfile.js, package.json and HOWTO_DEVELOP.rst of grunt
+  plugins and information which this package no longer uses since
+  commit 9f5434
+  [ichim-david]
+
 - provide basic table styles
   [vangheem]
 
