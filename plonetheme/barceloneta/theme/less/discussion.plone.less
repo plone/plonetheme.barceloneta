@@ -1,15 +1,21 @@
 //*// DISCUSSION //*//
 
-
-.discussion { 
+#commenting {
   .clearfix();
-  .hide {
-    display: none;
-  }
+}
+#commenting legend,
+.discussion legend {
+  padding: 0.5em 0.5em 0.5em 0;
+  font-weight: normal;
+}
+
+.discussion {
+  .clearfix();
   .comment {
     margin-bottom: 12px;
     padding-left: 40px;
   }
+
   .commentImage {
     .pull-left();
     border-radius: 50px;
@@ -18,33 +24,51 @@
     margin-left: -40px;
     margin-top: 3px;
   }
+
+  .documentByLine {
+    font-weight: normal;
+  }
+
   .commentDate {
     .pull-right();
     display: inline;
     font-size: @plone-font-size-small;
+    color: #76797C;
   }
-  .commentBody p {
-    margin-bottom: 0;
-  }
-  .commentActions input, .reply-to-comment-button {
-    border:0;
-    padding: 0;
-    text-shadow:none;
-    background:none;
-    vertical-align: top;
-    color:@plone-link-color;
-    &:hover {
-      text-decoration: underline;
-      box-shadow: none;
-      color: darken(@plone-link-color,15%);
+
+  .commentBody {
+    margin: 1em 0;
+    padding: 1em;
+    overflow: auto;
+    border: 1px solid #ccc;
+    p {
+      float: left;
+      margin-bottom: 0;
     }
+
   }
+
+  .commentactionsform {
+    display: inline;
+    margin-left: 6px;
+  }
+
+  .commentActions {
+    float: right;
+    text-align: right;
+  }
+
   .reply {
     border-bottom: @plone-portlet-border;
   }
 }
-#commenting {
-  .clearfix();
+
+//*// Reply Form
+.cancelreplytocomment {
+  /* Hide the cancel button in the comment form, show it only in the reply form
+   * in order to close it.
+   */
+  display: none;
 }
 
 .replyTreeLevel0 { margin-left: 0; }
@@ -59,13 +83,16 @@
 .replyTreeLevel9 { margin-left: @plone-padding-base-horizontal*18;}
 .replyTreeLevel10{ margin-left: @plone-padding-base-horizontal*20;}
 
-
-//*// Discussion Control Panel
-.template-discussion-settings .unclickable {  .opacity(.6);}
-
-
 //*// Button to login
 #viewlet-below-content .loginbutton {margin: @plone-padding-base-horizontal 0;}
 //first button login out
 #viewlet-below-content .reply .loginbutton {display: none;}
 #viewlet-below-content .reply ~ .reply .loginbutton {display: inline-block;}
+
+//*// Moderation View
+#dobulkaction {
+  margin: 0.3em 0;
+}
+
+//*// Discussion Control Panel
+.template-discussion-settings .unclickable {  .opacity(.6);}

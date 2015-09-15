@@ -4494,6 +4494,19 @@ body.template-logged_out #content-core .portletFooter {
   font-size: 12px;
   background: #fcfcfd;
 }
+#commenting:before,
+#commenting:after {
+  content: " ";
+  display: table;
+}
+#commenting:after {
+  clear: both;
+}
+#commenting legend,
+.discussion legend {
+  padding: 0.5em 0.5em 0.5em 0;
+  font-weight: normal;
+}
 .discussion:before,
 .discussion:after {
   content: " ";
@@ -4501,9 +4514,6 @@ body.template-logged_out #content-core .portletFooter {
 }
 .discussion:after {
   clear: both;
-}
-.discussion .hide {
-  display: none;
 }
 .discussion .comment {
   margin-bottom: 12px;
@@ -4517,46 +4527,41 @@ body.template-logged_out #content-core .portletFooter {
   margin-left: -40px;
   margin-top: 3px;
 }
+.discussion .documentByLine {
+  font-weight: normal;
+}
 .discussion .commentDate {
   float: right !important;
   display: inline;
   font-size: 12px;
+  color: #76797C;
+}
+.discussion .commentBody {
+  margin: 1em 0;
+  padding: 1em;
+  overflow: auto;
+  border: 1px solid #ccc;
 }
 .discussion .commentBody p {
+  float: left;
   margin-bottom: 0;
 }
-.discussion .commentActions input,
-.discussion .reply-to-comment-button {
-  border: 0;
-  padding: 0;
-  text-shadow: none;
-  font-weight: 300;
-  background: none;
-  color: #007bb3;
+.discussion .commentactionsform {
+  display: inline;
+  margin-left: 6px;
 }
-.discussion .commentActions input:hover,
-.discussion .reply-to-comment-button:hover {
-  text-decoration: underline;
-  box-shadow: none;
-  color: #004666;
-}
-.discussion .commentActions input {
-  margin-right: 6px;
-  color: #bb4f45;
-}
-.discussion .commentActions input:hover {
-  color: #833730;
+.discussion .commentActions {
+  float: right;
+  text-align: right;
 }
 .discussion .reply {
   border-bottom: 1px solid #e5e5e5;
 }
-#commenting:before,
-#commenting:after {
-  content: " ";
-  display: table;
-}
-#commenting:after {
-  clear: both;
+.cancelreplytocomment {
+  /* Hide the cancel button in the comment form, show it only in the reply form
+   * in order to close it.
+   */
+  display: none;
 }
 .replyTreeLevel0 {
   margin-left: 0;
@@ -4591,10 +4596,6 @@ body.template-logged_out #content-core .portletFooter {
 .replyTreeLevel10 {
   margin-left: 240px;
 }
-.template-discussion-settings .unclickable {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
 #viewlet-below-content .loginbutton {
   margin: 12px 0;
 }
@@ -4603,6 +4604,13 @@ body.template-logged_out #content-core .portletFooter {
 }
 #viewlet-below-content .reply ~ .reply .loginbutton {
   display: inline-block;
+}
+#dobulkaction {
+  margin: 0.3em 0;
+}
+.template-discussion-settings .unclickable {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
 }
 .searchPage {
   position: relative;

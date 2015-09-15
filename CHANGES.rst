@@ -4,6 +4,10 @@ Changelog
 1.6.13 (unreleased)
 -------------------
 
+- Harmonize plone.app.discussion styles and discussion.plone.less styles
+  refs (refs `#764`_)
+  [ichim-david]
+
 - Fix display of date widget arrows and footer buttons (refs `#891`_).
   [ichim-david]
 
@@ -203,5 +207,6 @@ Changelog
   [esteele]
 
 .. _`#741`: https://github.com/plone/Products.CMFPlone/issues/741
+.. _`#764`: https://github.com/plone/Products.CMFPlone/issues/764
 .. _`#891`: https://github.com/plone/Products.CMFPlone/issues/891
 .. _`#911`: https://github.com/plone/Products.CMFPlone/issues/911
