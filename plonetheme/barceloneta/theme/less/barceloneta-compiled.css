@@ -385,6 +385,9 @@ hr {
   overflow: visible;
   clip: auto;
 }
+body {
+  word-wrap: break-word;
+}
 h1,
 h2,
 h3,
