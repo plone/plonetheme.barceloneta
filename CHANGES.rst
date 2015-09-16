@@ -4,6 +4,10 @@ Changelog
 1.6.13 (unreleased)
 -------------------
 
+- Remove hero-element from index.html. Instead include a view @@hero.
+  Fixes https://github.com/plone/Products.CMFPlone/issues/974
+  [pbauer]
+
 - Harmonize plone.app.discussion styles and discussion.plone.less styles
   refs (refs `#764`_)
   [ichim-david]
