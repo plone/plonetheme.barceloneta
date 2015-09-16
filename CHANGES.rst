@@ -23,6 +23,9 @@ Changelog
 - provide basic table styles
   [vangheem]
 
+- Fixed (refs `#979`_ and `#981`_) related to text not wrapping when unusual
+  (and artificial) text with no white-space exists in the page
+
 
 1.6.12 (2015-09-12)
 -------------------
