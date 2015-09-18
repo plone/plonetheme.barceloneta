@@ -4,6 +4,9 @@ Changelog
 1.6.13 (unreleased)
 -------------------
 
+- Add spaces beetween checks and labels in search filter (closes `#982`_).
+  [rodfersou]
+
 - Center buttons on ordered selection lists (closes `#1017`_).
   [rodfersou]
 
@@ -230,5 +233,6 @@ Changelog
 .. _`#764`: https://github.com/plone/Products.CMFPlone/issues/764
 .. _`#891`: https://github.com/plone/Products.CMFPlone/issues/891
 .. _`#911`: https://github.com/plone/Products.CMFPlone/issues/911
+.. _`#982`: https://github.com/plone/Products.CMFPlone/issues/982
 .. _`#1003`: https://github.com/plone/Products.CMFPlone/issues/1003
 .. _`#1017`: https://github.com/plone/Products.CMFPlone/issues/1017
