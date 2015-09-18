@@ -1675,8 +1675,13 @@ label .required:after {
   font-weight: 300;
   color: #696969;
 }
+.ordered-selection-field td {
+  vertical-align: middle;
+  text-align: center;
+}
 .ordered-selection-field td button {
-  margin-left: 5px;
+  float: left;
+  margin-left: 2rem;
 }
 .folder-factories {
   list-style: none;
