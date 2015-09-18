@@ -4,6 +4,9 @@ Changelog
 1.6.13 (unreleased)
 -------------------
 
+- Center checkboxes on user/group matrix (closes `1003`_).
+  [rodfersou]
+
 - Remove hero-element from index.html. Instead include a view @@hero.
   Fixes https://github.com/plone/Products.CMFPlone/issues/974
   [pbauer]
@@ -224,3 +227,4 @@ Changelog
 .. _`#764`: https://github.com/plone/Products.CMFPlone/issues/764
 .. _`#891`: https://github.com/plone/Products.CMFPlone/issues/891
 .. _`#911`: https://github.com/plone/Products.CMFPlone/issues/911
+.. _`#1003`: https://github.com/plone/Products.CMFPlone/issues/1003
