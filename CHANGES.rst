@@ -4,6 +4,9 @@ Changelog
 1.6.13 (unreleased)
 -------------------
 
+- Center buttons on ordered selection lists (closes `#1017`_).
+  [rodfersou]
+
 - Center checkboxes on user/group matrix (closes `1003`_).
   [rodfersou]
 
@@ -228,3 +231,4 @@ Changelog
 .. _`#891`: https://github.com/plone/Products.CMFPlone/issues/891
 .. _`#911`: https://github.com/plone/Products.CMFPlone/issues/911
 .. _`#1003`: https://github.com/plone/Products.CMFPlone/issues/1003
+.. _`#1017`: https://github.com/plone/Products.CMFPlone/issues/1017
