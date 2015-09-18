@@ -470,9 +470,6 @@ mark {
   margin: 0 0 10px;
   border-bottom: 1px solid #cccccc;
 }
-.tileHeadline {
-  padding-top: 20px;
-}
 ul,
 ol {
   margin-top: 0;
@@ -2399,6 +2396,9 @@ fieldset[disabled] .link-parent.active {
 .folder-listing .documentByLine {
   font-weight: 300;
   color: #777777;
+}
+.tileImage {
+  margin: 5px 0px;
 }
 .photoalbumEntryWrapper {
   display: block;
@@ -4493,7 +4493,15 @@ body.template-logged_out #content-core .portletFooter {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
   overflow: hidden;
 }
+.newsImageContainer a {
+  display: table;
+}
+.newsImageContainer a img {
+  display: block;
+}
 .newsImageContainer figcaption {
+  display: table-caption;
+  caption-side: bottom;
   font-size: 12px;
   background: #fcfcfd;
 }
@@ -4611,7 +4619,7 @@ body.template-logged_out #content-core .portletFooter {
 #dobulkaction {
   margin: 0.3em 0;
 }
-.template-discussion-settings .unclickable {
+.template-discussion-controlpanel .unclickable {
   opacity: 0.6;
   filter: alpha(opacity=60);
 }
