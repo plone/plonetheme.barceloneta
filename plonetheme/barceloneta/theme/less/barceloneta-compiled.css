@@ -3127,6 +3127,13 @@ fieldset[disabled] .link-parent.active {
 .template-member-registration input.quickSearch {
   margin-bottom: 0.5em;
 }
+.template-usergroup-groupprefs .listingCheckbox,
+.template-usergroup-userprefs .listingCheckbox,
+.template-usergroup-controlpanel .listingCheckbox,
+.template-member-registration .listingCheckbox {
+  vertical-align: middle;
+  text-align: center;
+}
 .link-category {
   display: inline;
   padding: .2em .6em .3em;
