@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<registry>
+
+<records prefix="plone.resources/fonts.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/fonts.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/variables.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/variables.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.prefixes.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.prefixes.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.tabfocus.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.tabfocus.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.images.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.images.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.forms.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.forms.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.borderradius.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.borderradius.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.buttons.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.buttons.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.clearfix.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.clearfix.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.gridframework.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.gridframework.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/mixin.grid.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/mixin.grid.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/normalize.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/normalize.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/print.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/print.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/scaffolding.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/scaffolding.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/type.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/type.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/code.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/code.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/deco.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/deco.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/grid.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/grid.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/tables.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/tables.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/forms.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/forms.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/buttons.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/buttons.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/states.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/states.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/breadcrumbs.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/breadcrumbs.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/pagination.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/pagination.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/formtabbing.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/formtabbing.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/views.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/views.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/thumbs.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/thumbs.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/alerts.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/alerts.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/portlets.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/portlets.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/controlpanels.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/controlpanels.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/tags.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/tags.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/contents.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/contents.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/accessibility.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/accessibility.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/toc.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/toc.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/dropzone.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/dropzone.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/modal.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/modal.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/pickadate.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/pickadate.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/sortable.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/sortable.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/tablesorter.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/tablesorter.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/tooltip.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/tooltip.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/tree.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/tree.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/header.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/header.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/sitenav.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/sitenav.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/main.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/main.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/footer.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/footer.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/loginform.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/loginform.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/sitemap.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/sitemap.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/event.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/event.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/image.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/image.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/behaviors.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/behaviors.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/discussion.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/discussion.plone.less</element>
+    </value>
+</records>
+
+<records prefix="plone.resources/search.plone.less"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++theme++barceloneta/less/search.plone.less</element>
+    </value>
+</records>
+
+</registry>
