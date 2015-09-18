@@ -2398,7 +2398,15 @@ fieldset[disabled] .link-parent.active {
   color: #777777;
 }
 .tileImage {
-  margin: 5px 0px;
+  padding-right: 5px;
+  float: left;
+}
+.tileImageNoFloat {
+  margin-bottom: 5px;
+}
+.tileFooter {
+  clear: both;
+  margin-top: 5px;
 }
 .photoalbumEntryWrapper {
   display: block;
