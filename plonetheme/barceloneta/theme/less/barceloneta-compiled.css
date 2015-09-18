@@ -4680,4 +4680,7 @@ body.template-logged_out #content-core .portletFooter {
 #searchform .input-group input.searchPage.btn {
   width: 120px;
 }
+#search-filter input {
+  margin-right: 0.5rem;
+}
 /*# sourceMappingURL=++theme++barceloneta/less/barceloneta-compiled.css.map */
