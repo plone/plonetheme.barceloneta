@@ -3139,6 +3139,10 @@ fieldset[disabled] .link-parent.active {
   vertical-align: middle;
   text-align: center;
 }
+.template-usergroup-groupprefs form,
+.template-usergroup-userprefs form {
+  overflow: scroll;
+}
 .link-category {
   display: inline;
   padding: .2em .6em .3em;
