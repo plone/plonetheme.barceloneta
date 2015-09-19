@@ -2633,7 +2633,7 @@ fieldset[disabled] .link-parent.active {
   padding-left: 15px;
   list-style: none;
 }
-.portlet .portletContent > ul time {
+.portlet .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
@@ -2922,7 +2922,7 @@ fieldset[disabled] .link-parent.active {
   padding-left: 15px;
   list-style: none;
 }
-.managedPortlet .portletContent > ul time {
+.managedPortlet .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
@@ -4174,8 +4174,8 @@ body.template-logged_out #content-core .portletContent > ul ul {
   padding-left: 15px;
   list-style: none;
 }
-body.template-login_form #content-core .portletContent > ul time,
-body.template-logged_out #content-core .portletContent > ul time {
+body.template-login_form #content-core .portletContent > ul .portletItemDetails,
+body.template-logged_out #content-core .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
