@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.13 (unreleased)
+1.6.13 (2015-09-20)
 -------------------
 
 - Add spaces beetween checks and labels in search filter (closes `#982`_).
