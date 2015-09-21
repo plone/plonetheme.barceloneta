@@ -4347,6 +4347,9 @@ body.template-logged_out #content-core .portletFooter {
   top: 5px;
   position: relative;
 }
+.vevent span.cal_month {
+  font-size: 1.1em;
+}
 .event.summary {
   font-weight: 300;
   max-width: 300px;
