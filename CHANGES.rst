@@ -7,6 +7,9 @@ Changelog
 - Title under thumb in albumview (closes `#1091`_).
   [polyester]
 
+- Don't include diazo bundle in backend theme
+  [instification]
+
 
 1.6.14 (2015-09-27)
 -------------------
