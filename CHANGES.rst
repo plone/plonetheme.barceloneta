@@ -4,7 +4,8 @@ Changelog
 1.6.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Title under thumb in albumview (closes `#1091`_).
+  [polyester]
 
 
 1.6.14 (2015-09-27)
@@ -249,3 +250,4 @@ Changelog
 .. _`#982`: https://github.com/plone/Products.CMFPlone/issues/982
 .. _`#1003`: https://github.com/plone/Products.CMFPlone/issues/1003
 .. _`#1017`: https://github.com/plone/Products.CMFPlone/issues/1017
+.. _`#1091`: https://github.com/plone/Products.CMFPlone/issues/1091
