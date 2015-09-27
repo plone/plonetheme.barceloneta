@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.6.14 (unreleased)
+1.6.14 (2015-09-27)
 -------------------
 
 - Fix in barceloneta word wrap in event listing.
