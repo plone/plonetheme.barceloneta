@@ -60,9 +60,11 @@
     <copy attributes="*" css:content="body" css:theme="body" />
 
     <!-- CSS -->
+    <drop css:content="head link[data-bundle='diazo']" />
     <after css:theme-children="head" css:content="head link" />
 
     <!-- Script -->
+    <drop css:content="head script[data-bundle='diazo']" />
     <after css:theme-children="head" css:content="head script" />
 
     <!-- We don't need global nav -->
