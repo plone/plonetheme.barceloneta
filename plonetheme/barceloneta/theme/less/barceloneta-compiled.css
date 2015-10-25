@@ -3776,7 +3776,7 @@ ul.picker__list {
 .plone-nav > li > a:hover,
 .plone-nav > li > a:focus {
   text-decoration: none;
-  background-color: #757778;
+  background-color: #7099bf;
 }
 .plone-navbar {
   background-color: #007bb1;
@@ -3876,8 +3876,8 @@ ul.picker__list {
   outline: 0;
 }
 .plone-navbar-toggle:hover {
-  background-color: #4f5151;
-  border-color: #363737;
+  background-color: #46739c;
+  border-color: #365979;
 }
 .plone-navbar-toggle .icon-bar:after {
   content: "Menu";
@@ -3904,7 +3904,7 @@ ul.picker__list {
 .plone-navbar-nav > .selected > a:hover,
 .plone-navbar-nav > .selected > a:focus {
   color: white;
-  background-color: #757778;
+  background-color: #7099bf;
 }
 @media (min-width: 768px) {
   .plone-navbar-nav {
