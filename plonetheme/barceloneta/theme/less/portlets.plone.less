@@ -13,9 +13,6 @@
 		font-size: @plone-font-size-large;
 		padding: 13px 15px;
 		color: @plone-portlet-header-color;
-		> a {
-		color: @plone-link-color-on-grey;
-		}
 	}
 	&.portletCalendar .portletHeader {
 		text-align: center;
@@ -45,7 +42,6 @@
 				padding: 10px 15px 26px 30px;
 				position: relative;
 				z-index: 1;
-				color: @plone-link-color-on-grey;
 				}
 				> a {border-top: @plone-portlet-border;}
 				&:first-child > a {border-top: 0;}
@@ -64,7 +60,7 @@
 		table {width: 100%; text-align: center; text-align: middle; border-collapse: collapse; border-spacing: 0;
 			tr {line-height: 30px; }
 			thead {background: @plone-portlet-footer-bg; border-bottom: @plone-portlet-border;
-				th {color: @plone-gray; font-weight: @plone-font-weight-light; height: 40px; text-align: center;}
+				th {color: @plone-gray-light; font-weight: @plone-font-weight-light; height: 40px; text-align: center;}
 			}
 			td {}
 			td > * {border-radius: 50%; display: inline-block; width: 20px; height: 20px; line-height: 20px;}
@@ -84,13 +80,13 @@
 
 			}
 			.cal_next_month, .cal_prev_month {
-				color: #000;
+				color: #cccccc;
 				&.cal_has_events > a {color: lighten(@plone-portlet-list-bullet, 15%);}
 				&.cal_has_events > a:after {color: lighten(@plone-portlet-list-bullet, 25%);}
 				&.cal_has_events > a:hover {color: darken(@plone-link-color,15%);}
 				&.cal_has_events > a:hover:after {color: @plone-portlet-list-bullet;}
 			}
-			.today > * {background: @plone-portlet-contrast-bg; font-weight: 500; box-shadow: 0 0 0 5px @plone-portlet-contrast-bg; color: #000;} //using shadow to expand background is because then table is only 20px per cell and not 30px
+			.today > * {background: @plone-portlet-contrast-bg; font-weight: 500; box-shadow: 0 0 0 5px @plone-portlet-contrast-bg;} //using shadow to expand background is because then table is only 20px per cell and not 30px
 			tbody tr:first-child td > * {margin-top: 10px;}
 			tbody tr:last-child td > * {margin-bottom: 10px;}
 		}
