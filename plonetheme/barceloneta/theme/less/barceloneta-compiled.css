@@ -339,12 +339,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #007bb1;
+  color: #007bb3;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #004665;
+  color: #004666;
   text-decoration: underline;
 }
 a:focus {
@@ -375,13 +375,6 @@ hr {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-  color: #fff;
-  background-color: #000;
-}
-.sr-only a,
-.hiddenStructure a {
-  color: #fff;
-  background-color: #000;
 }
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
@@ -419,7 +412,7 @@ h1 a:focus,
 h2 a:focus,
 h3 a:focus {
   text-decoration: none;
-  border-bottom: 2px #004665 solid;
+  border-bottom: 2px #004666 solid;
 }
 h4,
 h5,
@@ -451,7 +444,7 @@ p {
 .documentDescription {
   font-size: 18px;
   font-weight: 500;
-  color: #696969;
+  color: #777777;
   margin-bottom: 10px;
 }
 small {
@@ -465,11 +458,11 @@ mark {
   padding: .2em;
 }
 .discreet {
-  color: #696969;
+  color: #777777;
   font-weight: 300;
 }
 .documentByLine {
-  color: #696969;
+  color: #777777;
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -1884,8 +1877,8 @@ button .badge {
 }
 .context {
   color: #ffffff;
-  background-color: #007bb1;
-  border-color: #00587e;
+  background-color: #2385c4;
+  border-color: #1b6899;
 }
 .context:hover,
 .context:focus,
@@ -1893,8 +1886,8 @@ button .badge {
 .context.active,
 .open > .dropdown-toggle.context {
   color: #ffffff;
-  background-color: #00587e;
-  border-color: #002d41;
+  background-color: #1b6899;
+  border-color: #124465;
 }
 .context:active,
 .context.active,
@@ -1916,11 +1909,11 @@ fieldset[disabled] .context:active,
 .context.disabled.active,
 .context[disabled].active,
 fieldset[disabled] .context.active {
-  background-color: #007bb1;
-  border-color: #00587e;
+  background-color: #2385c4;
+  border-color: #1b6899;
 }
 .context .badge {
-  color: #007bb1;
+  color: #2385c4;
   background-color: #ffffff;
 }
 .destructive {
@@ -2240,9 +2233,6 @@ fieldset[disabled] .link-parent.active {
   top: -15px;
   padding: 0 !important;
 }
-.plone-breadcrumb ol a {
-  color: #086ca3;
-}
 .plone-breadcrumb ol > #breadcrumbs-current {
   color: #777777;
 }
@@ -2266,7 +2256,7 @@ fieldset[disabled] .link-parent.active {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #007bb1;
+  color: #007bb3;
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
   margin-left: -1px;
@@ -2282,7 +2272,7 @@ fieldset[disabled] .link-parent.active {
 }
 .listingBar > li a:hover,
 .listingBar > li a:focus {
-  color: #004665;
+  color: #004666;
   background-color: #f2f1f1;
   border-color: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -2294,8 +2284,8 @@ fieldset[disabled] .link-parent.active {
   z-index: 2;
   font-weight: 300;
   color: #ffffff;
-  background-color: #007bb1;
-  border-color: #007bb1;
+  background-color: #007bb3;
+  border-color: #007bb3;
   cursor: default;
 }
 .listingBar > .disabled > a,
@@ -2448,6 +2438,10 @@ fieldset[disabled] .link-parent.active {
   max-width: 200px;
   max-height: 200px;
 }
+.photoAlbumEntryTitle {
+    clear: both;
+    display: block;
+}
 .portalMessage {
   padding: 15px;
   padding-left: 45px;
@@ -2467,7 +2461,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portalMessage a {
   font-weight: 300;
-  color: #005074;
+  color: #005176;
 }
 .portalMessage > strong:before,
 .portalMessage > dt:before {
@@ -2574,9 +2568,6 @@ fieldset[disabled] .link-parent.active {
   padding: 13px 15px;
   color: #696969;
 }
-.portlet .portletHeader > a {
-  color: #086ca3;
-}
 .portlet.portletCalendar .portletHeader {
   text-align: center;
   position: relative;
@@ -2627,7 +2618,6 @@ fieldset[disabled] .link-parent.active {
   padding: 10px 15px 26px 30px;
   position: relative;
   z-index: 1;
-  color: #086ca3;
 }
 .portlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
@@ -2655,7 +2645,7 @@ fieldset[disabled] .link-parent.active {
   position: relative;
   margin-top: -26px;
   font-size: 12px;
-  color: #696969;
+  color: #777777;
 }
 .portlet .portletContent > ul li:hover {
   background: #fcfcfd;
@@ -2678,7 +2668,7 @@ fieldset[disabled] .link-parent.active {
   border-bottom: 1px solid #e5e5e5;
 }
 .portlet .portletContent table thead th {
-  color: #696969;
+  color: #777777;
   font-weight: 100;
   height: 40px;
   text-align: center;
@@ -2712,7 +2702,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet .portletContent table .cal_next_month,
 .portlet .portletContent table .cal_prev_month {
-  color: #000;
+  color: #cccccc;
 }
 .portlet .portletContent table .cal_next_month.cal_has_events > a,
 .portlet .portletContent table .cal_prev_month.cal_has_events > a {
@@ -2724,7 +2714,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet .portletContent table .cal_next_month.cal_has_events > a:hover,
 .portlet .portletContent table .cal_prev_month.cal_has_events > a:hover {
-  color: #004665;
+  color: #004666;
 }
 .portlet .portletContent table .cal_next_month.cal_has_events > a:hover:after,
 .portlet .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
@@ -2734,7 +2724,6 @@ fieldset[disabled] .link-parent.active {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
-  color: #000;
 }
 .portlet .portletContent table tbody tr:first-child td > * {
   margin-top: 10px;
@@ -2868,9 +2857,6 @@ fieldset[disabled] .link-parent.active {
   padding: 13px 15px;
   color: #696969;
 }
-.managedPortlet .portletHeader > a {
-  color: #086ca3;
-}
 .managedPortlet.portletCalendar .portletHeader {
   text-align: center;
   position: relative;
@@ -2921,7 +2907,6 @@ fieldset[disabled] .link-parent.active {
   padding: 10px 15px 26px 30px;
   position: relative;
   z-index: 1;
-  color: #086ca3;
 }
 .managedPortlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
@@ -2949,7 +2934,7 @@ fieldset[disabled] .link-parent.active {
   position: relative;
   margin-top: -26px;
   font-size: 12px;
-  color: #696969;
+  color: #777777;
 }
 .managedPortlet .portletContent > ul li:hover {
   background: #fcfcfd;
@@ -2972,7 +2957,7 @@ fieldset[disabled] .link-parent.active {
   border-bottom: 1px solid #e5e5e5;
 }
 .managedPortlet .portletContent table thead th {
-  color: #696969;
+  color: #777777;
   font-weight: 100;
   height: 40px;
   text-align: center;
@@ -3006,7 +2991,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletContent table .cal_next_month,
 .managedPortlet .portletContent table .cal_prev_month {
-  color: #000;
+  color: #cccccc;
 }
 .managedPortlet .portletContent table .cal_next_month.cal_has_events > a,
 .managedPortlet .portletContent table .cal_prev_month.cal_has_events > a {
@@ -3018,7 +3003,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletContent table .cal_next_month.cal_has_events > a:hover,
 .managedPortlet .portletContent table .cal_prev_month.cal_has_events > a:hover {
-  color: #004665;
+  color: #004666;
 }
 .managedPortlet .portletContent table .cal_next_month.cal_has_events > a:hover:after,
 .managedPortlet .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
@@ -3028,7 +3013,6 @@ fieldset[disabled] .link-parent.active {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
-  color: #000;
 }
 .managedPortlet .portletContent table tbody tr:first-child td > * {
   margin-top: 10px;
@@ -3182,7 +3166,7 @@ fieldset[disabled] .link-parent.active {
 }
 a.link-category:hover,
 a.link-category:focus {
-  color: #007bb1;
+  color: #007bb3;
   text-decoration: none;
   cursor: pointer;
 }
@@ -3240,9 +3224,6 @@ body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-news-item:befor
 }
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"] {
   padding: 5px 15px 5px 50px;
-}
-body#visual-portal-wrapper.pat-plone #edit-zone a {
-  color: #ffffff;
 }
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"]:after {
   font-family: "Fontello";
@@ -3519,7 +3500,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
 }
 .picker__list-item--highlighted:hover,
 .picker--focused .picker__list-item--highlighted {
-  background: #007bb1;
+  background: #007bb3;
   color: #fff;
 }
 li.picker__list-item {
@@ -3573,7 +3554,7 @@ ul.picker__list {
 }
 .picker__day--highlighted:hover,
 .picker__day--highlighted {
-  background: #007bb1;
+  background: #007bb3;
   color: #fff;
   font-weight: 600;
 }
@@ -3597,7 +3578,7 @@ ul.picker__list {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.17);
 }
 .pat-tablesorter th:hover {
-  color: #007bb1;
+  color: #007bb3;
 }
 .pat-tablesorter .sortdirection {
   font-size: 75%;
@@ -3776,11 +3757,10 @@ ul.picker__list {
 .plone-nav > li > a:hover,
 .plone-nav > li > a:focus {
   text-decoration: none;
-  background-color: #757778;
+  background-color: #9abdd6;
 }
 .plone-navbar {
-  background-color: #007bb1;
-  color: white;
+  background-color: #007bb3;
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
@@ -3876,8 +3856,8 @@ ul.picker__list {
   outline: 0;
 }
 .plone-navbar-toggle:hover {
-  background-color: #4f5151;
-  border-color: #363737;
+  background-color: #6499c0;
+  border-color: #4581ab;
 }
 .plone-navbar-toggle .icon-bar:after {
   content: "Menu";
@@ -3904,7 +3884,7 @@ ul.picker__list {
 .plone-navbar-nav > .selected > a:hover,
 .plone-navbar-nav > .selected > a:focus {
   color: white;
-  background-color: #757778;
+  background-color: #9abdd6;
 }
 @media (min-width: 768px) {
   .plone-navbar-nav {
@@ -3941,20 +3921,6 @@ ul.picker__list {
 }
 #content {
   margin-bottom: 48px;
-}
-#content-core a {
-  color: #007bb1;
-  text-decoration: none;
-  border-bottom: 1px solid #cccccc;
-}
-#content-core a:hover,
-#content-core a:focus {
-  color: #004665;
-}
-#content-core a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
 }
 .container,
 .container-fluid {
@@ -4033,10 +3999,6 @@ ul.picker__list {
 #portal-footer-wrapper p {
   border-bottom: 1px solid #cccccc;
   padding-bottom: 28px;
-}
-#portal-footer-wrapper abbr,
-#portal-footer-wrapper ul {
-  color: #cccccc;
 }
 #portal-footer-wrapper a {
   color: #16a1e3;
@@ -4132,10 +4094,6 @@ body.template-logged_out #content-core .portletHeader {
   padding: 13px 15px;
   color: #696969;
 }
-body.template-login_form #content-core .portletHeader > a,
-body.template-logged_out #content-core .portletHeader > a {
-  color: #086ca3;
-}
 body.template-login_form #content-core.portletCalendar .portletHeader,
 body.template-logged_out #content-core.portletCalendar .portletHeader {
   text-align: center;
@@ -4197,7 +4155,6 @@ body.template-logged_out #content-core .portletContent > ul > li a {
   padding: 10px 15px 26px 30px;
   position: relative;
   z-index: 1;
-  color: #086ca3;
 }
 body.template-login_form #content-core .portletContent > ul > li > a,
 body.template-logged_out #content-core .portletContent > ul > li > a {
@@ -4230,7 +4187,7 @@ body.template-logged_out #content-core .portletContent > ul .portletItemDetails 
   position: relative;
   margin-top: -26px;
   font-size: 12px;
-  color: #696969;
+  color: #777777;
 }
 body.template-login_form #content-core .portletContent > ul li:hover,
 body.template-logged_out #content-core .portletContent > ul li:hover {
@@ -4259,7 +4216,7 @@ body.template-logged_out #content-core .portletContent table thead {
 }
 body.template-login_form #content-core .portletContent table thead th,
 body.template-logged_out #content-core .portletContent table thead th {
-  color: #696969;
+  color: #777777;
   font-weight: 100;
   height: 40px;
   text-align: center;
@@ -4300,7 +4257,7 @@ body.template-login_form #content-core .portletContent table .cal_next_month,
 body.template-logged_out #content-core .portletContent table .cal_next_month,
 body.template-login_form #content-core .portletContent table .cal_prev_month,
 body.template-logged_out #content-core .portletContent table .cal_prev_month {
-  color: #000;
+  color: #cccccc;
 }
 body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a,
 body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a,
@@ -4318,7 +4275,7 @@ body.template-login_form #content-core .portletContent table .cal_next_month.cal
 body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a:hover,
 body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover,
 body.template-logged_out #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover {
-  color: #004665;
+  color: #004666;
 }
 body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a:hover:after,
 body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a:hover:after,
@@ -4331,7 +4288,6 @@ body.template-logged_out #content-core .portletContent table .today > * {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
-  color: #000;
 }
 body.template-login_form #content-core .portletContent table tbody tr:first-child td > *,
 body.template-logged_out #content-core .portletContent table tbody tr:first-child td > * {
@@ -4433,7 +4389,7 @@ body.template-logged_out #content-core .portletFooter {
   overflow: hidden;
 }
 .cal_month {
-  background: #00b0fe;
+  background: #00afff;
   font-weight: 300;
   display: block;
   color: #fff;
