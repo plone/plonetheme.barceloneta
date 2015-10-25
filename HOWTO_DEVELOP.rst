@@ -21,3 +21,8 @@ Note
 
 - Make sure that Development Mode is enabled by going to the `Site Setup` > `Resource Registries`
   and check the `Development Mode` checkbox, this ensures that your changes show up and aren't cached.
+
+Note
+----
+
+All css is compiled from LESS files. Do NOT edit the file barceloneta.css.original-reference, it is not read and is just there for reference purposes.
