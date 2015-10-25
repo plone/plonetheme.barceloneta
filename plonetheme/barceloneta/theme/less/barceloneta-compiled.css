@@ -3943,18 +3943,23 @@ ul.picker__list {
   margin-bottom: 48px;
 }
 #content-core a {
-  color: #007bb1;
-  text-decoration: none;
   border-bottom: 1px solid #cccccc;
 }
 #content-core a:hover,
 #content-core a:focus {
-  color: #004665;
+  border-bottom: none;
 }
 #content-core a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+#content-core .pat-structure a,
+#content-core .pat-resourceregistry a {
+  border-bottom: none;
+}
+a.plone-toolbar-logo {
+  color: #fff;
 }
 .container,
 .container-fluid {

@@ -21,18 +21,22 @@
 #content {margin-bottom: @plone-padding-base-horizontal * 4;}
 
 #content-core a {
-  color: @plone-link-color;
-  text-decoration: none;
   border-bottom: 1px solid @plone-gray-lighter;
 
   &:hover,
   &:focus {
-    color: @plone-link-hover-color;
+    border-bottom: none;
   }
 
   &:focus {
     .tab-focus(); //--> NOT DONE
   }
+}
+#content-core .pat-structure a, #content-core .pat-resourceregistry a {
+  border-bottom: none;
+}
+a.plone-toolbar-logo {
+	color: #fff;
 }
 
 //*// Containers
