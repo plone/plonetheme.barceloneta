@@ -4,10 +4,12 @@ Changelog
 1.6.15 (unreleased)
 -------------------
 
+Fixes:
+
 - Title under thumb in albumview (closes `#1091`_).
   [polyester]
 
-- Don't include diazo bundle in backend theme
+- Don't include diazo bundle in backend theme.
   [instification]
 
 - Discard duplicated ids for columns (closes `#1105`_)
