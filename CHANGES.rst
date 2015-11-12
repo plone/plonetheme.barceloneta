@@ -9,12 +9,16 @@ Changelog
 
 - Increase contrast, eliminate contrast-checker false positives
   [polyester]
+Fixes:
 
 - Title under thumb in albumview (closes `#1091`_).
   [polyester]
 
-- Don't include diazo bundle in backend theme
+- Don't include diazo bundle in backend theme.
   [instification]
+
+- Discard duplicated ids for columns (closes `#1105`_)
+  [davilima6]
 
 
 1.6.14 (2015-09-27)
@@ -260,3 +264,4 @@ Changelog
 .. _`#1003`: https://github.com/plone/Products.CMFPlone/issues/1003
 .. _`#1017`: https://github.com/plone/Products.CMFPlone/issues/1017
 .. _`#1091`: https://github.com/plone/Products.CMFPlone/issues/1091
+.. _`#1105`: https://github.com/plone/Products.CMFPlone/issues/1105
