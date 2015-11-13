@@ -9,9 +9,10 @@
 @plone-gray-lighter:						lighten(#000, 80%);   // #ccc //disableds like
 
 //colors
-@plone-link-color:							#007bb3; //plone blue
+@plone-link-color:							#007bb1; //plone blue made slightly darker for wcag 2.0
 @plone-link-color-on-dark:					#16a1e3; //plone blue
 											//if you need different contrast
+@plone-link-color-on-grey:		  			#086ca3; //valid wcag 2.0
 @plone-default-published-color:				@plone-link-color; //published and external same color
 @plone-default-draft-color:					darken(@plone-toolbar-draft-color, 15%); // lime-yellow //draft is visible
 @plone-default-pending-color:				darken(@plone-toolbar-pending-color, 15%); // orange
@@ -156,7 +157,7 @@
 	@plone-btn-standalone-bg:             	   	#e5e5e5;
 	@plone-btn-standalone-border:          	   	darken(@plone-btn-standalone-bg, 20%);
 @plone-btn-context-color:              		#fff;
-	@plone-btn-context-bg:                 		#2385c4;
+	@plone-btn-context-bg:                 		#007bb1;
 	@plone-btn-context-border:             		darken(@plone-btn-context-bg, 10%);
 @plone-btn-destructive-color:              #fff;
 	@plone-btn-destructive-bg:                 #bb4f45;
@@ -223,7 +224,7 @@
 @plone-portlet-event-bullet:				#dbecfe;
 @plone-portlet-list-bullet:					#64bee8;
 @plone-portlet-list-hover-bg:				#fcfcfd;
-@plone-portlet-list-small-text:				@plone-gray-light;
+@plone-portlet-list-small-text:				@plone-gray;
 
 
 
@@ -253,6 +254,7 @@
 //** Text color of current page in the breadcrumb
 @plone-breadcrumb-active-color:       @plone-gray-light;
 
+
 //*// SITE NAV
 @plone-sitenav-height:                        50px;
 	@plone-sitenav-margin-bottom:             @plone-line-height-computed;
@@ -261,7 +263,7 @@
 	@plone-sitenav-padding-vertical:          ((@plone-sitenav-height - @plone-line-height-computed) / 2);
 	@plone-sitenav-collapse-max-height:       340px;
 	@plone-sitenav-link-padding:              10px 15px;
-	@plone-sitenav-link-hover-bg:             #9abdd6;
+	@plone-sitenav-link-hover-bg:             #7099bf;
 	@plone-sitenav-bg:      			      @plone-link-color;
 	@plone-sitenav-hover-bg:      			  @plone-link-color;
 
@@ -295,7 +297,7 @@
 
 //*// TYPE
 //** Text muted color
-@plone-text-discreet:               @plone-gray-light;
+@plone-text-discreet:               @plone-gray;
 //** Abbreviations and acronyms border color
 @plone-abbr-border-color:           @plone-gray-light;
 //** Headings small color

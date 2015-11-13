@@ -4,6 +4,11 @@ Changelog
 1.6.15 (unreleased)
 -------------------
 
+- underline links in #content-core (criterion 1.4.1)
+  [polyester]
+
+- Increase contrast, eliminate contrast-checker false positives
+  [polyester]
 Fixes:
 
 - Title under thumb in albumview (closes `#1091`_).
