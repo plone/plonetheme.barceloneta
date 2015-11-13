@@ -3958,6 +3958,11 @@ ul.picker__list {
 #content-core .pat-resourceregistry a {
   border-bottom: none;
 }
+#content-core .pat-structure a.btn,
+#content-core .pat-resourceregistry a.btn,
+#content-core .pat-structure .pagination a {
+  border-bottom: 1px solid #cccccc;
+}
 a.plone-toolbar-logo {
   color: #fff;
 }
