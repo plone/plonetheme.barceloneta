@@ -3,7 +3,10 @@ Changelog
 
 1.6.15 (unreleased)
 -------------------
-
+- add css-rules for thumbnails in listings and portlets
+  related to https://github.com/plone/Products.CMFPlone/issues/1226
+  [fgrcon]
+  
 - underline links in #content-core (criterion 1.4.1)
   [polyester]
 
