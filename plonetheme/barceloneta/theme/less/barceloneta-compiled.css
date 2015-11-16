@@ -535,8 +535,8 @@ code {
 kbd {
   padding: 2px 4px;
   font-size: 90%;
-  color: #ffffff;
-  background-color: #333333;
+  color: #fff;
+  background-color: #333;
   border-radius: 2px;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
@@ -550,7 +550,7 @@ pre {
   word-wrap: break-word;
   color: #4d4d4d;
   background-color: #f5f5f5;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 pre code {
@@ -1264,7 +1264,7 @@ pre code {
 }
 table {
   max-width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 4px;
   font-weight: 300;
   color: #696969;
@@ -1469,9 +1469,9 @@ select {
   font-size: 14px;
   line-height: 1.42857143;
   color: #696969;
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1580,7 +1580,7 @@ fieldset[disabled] input[type="checkbox"] {
 .field.error .input-group-addon {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.5);
-  background-color: #ec9c8d;
+  background-color: #EC9C8D;
 }
 .field.error .form-control-feedback {
   color: rgba(0, 0, 0, 0.5);
@@ -1883,7 +1883,7 @@ button .badge {
   background-color: #4d4d4d;
 }
 .context {
-  color: #ffffff;
+  color: #fff;
   background-color: #007bb1;
   border-color: #00587e;
 }
@@ -1892,7 +1892,7 @@ button .badge {
 .context:active,
 .context.active,
 .open > .dropdown-toggle.context {
-  color: #ffffff;
+  color: #fff;
   background-color: #00587e;
   border-color: #002d41;
 }
@@ -1921,10 +1921,10 @@ fieldset[disabled] .context.active {
 }
 .context .badge {
   color: #007bb1;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .destructive {
-  color: #ffffff;
+  color: #fff;
   background-color: #bb4f45;
   border-color: #963f37;
 }
@@ -1933,7 +1933,7 @@ fieldset[disabled] .context.active {
 .destructive:active,
 .destructive.active,
 .open > .dropdown-toggle.destructive {
-  color: #ffffff;
+  color: #fff;
   background-color: #963f37;
   border-color: #692c26;
 }
@@ -1962,7 +1962,7 @@ fieldset[disabled] .destructive.active {
 }
 .destructive .badge {
   color: #bb4f45;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .link-parent {
   display: inline-block;
@@ -2267,7 +2267,7 @@ fieldset[disabled] .link-parent.active {
   line-height: 1.42857143;
   text-decoration: none;
   color: #007bb1;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
   margin-left: -1px;
 }
@@ -2293,7 +2293,7 @@ fieldset[disabled] .link-parent.active {
 .listingBar > .active > a:focus {
   z-index: 2;
   font-weight: 300;
-  color: #ffffff;
+  color: #fff;
   background-color: #007bb1;
   border-color: #007bb1;
   cursor: default;
@@ -2317,7 +2317,7 @@ fieldset[disabled] .link-parent.active {
 }
 .pat-autotoc.autotabs,
 .autotabs {
-  background: #ffffff;
+  background: #fff;
   padding: 6px 12px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
@@ -2348,7 +2348,7 @@ fieldset[disabled] .link-parent.active {
 .pat-autotoc.autotabs .autotoc-nav a:hover,
 .autotabs .autotoc-nav a:hover {
   text-decoration: none;
-  background: #ffffff;
+  background: #fff;
 }
 .pat-autotoc.autotabs .autotoc-nav a.active,
 .autotabs .autotoc-nav a.active,
@@ -2356,8 +2356,8 @@ fieldset[disabled] .link-parent.active {
 .autotabs .autotoc-nav a.active:hover {
   color: #696969;
   cursor: default;
-  background: #ffffff;
-  border-bottom-color: #ffffff;
+  background: #fff;
+  border-bottom-color: #fff;
 }
 .pat-autotoc.autotabs .autotoc-nav .autotab-heading,
 .autotabs .autotoc-nav .autotab-heading {
@@ -2527,7 +2527,7 @@ fieldset[disabled] .link-parent.active {
   content: "!";
 }
 .portalMessage.error {
-  background-color: #ec9c8d;
+  background-color: #EC9C8D;
   border: 1px solid #eb9484;
   color: rgba(0, 0, 0, 0.5);
 }
@@ -2597,7 +2597,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet.portletCalendar .portletHeader .calendarPrevious:hover,
 .portlet.portletCalendar .portletHeader .calendarNext:hover {
-  background: #ffffff;
+  background: #fff;
   text-decoration: none;
 }
 .portlet.portletCalendar .portletHeader .calendarNext {
@@ -2607,7 +2607,7 @@ fieldset[disabled] .link-parent.active {
 .portlet .portletContent {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
-  background: #ffffff;
+  background: #fff;
   font-weight: 300;
 }
 .portlet .portletContent > *,
@@ -2891,7 +2891,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet.portletCalendar .portletHeader .calendarPrevious:hover,
 .managedPortlet.portletCalendar .portletHeader .calendarNext:hover {
-  background: #ffffff;
+  background: #fff;
   text-decoration: none;
 }
 .managedPortlet.portletCalendar .portletHeader .calendarNext {
@@ -2901,7 +2901,7 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet .portletContent {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
-  background: #ffffff;
+  background: #fff;
   font-weight: 300;
 }
 .managedPortlet .portletContent > *,
@@ -3242,7 +3242,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"] {
   padding: 5px 15px 5px 50px;
 }
 body#visual-portal-wrapper.pat-plone #edit-zone a {
-  color: #ffffff;
+  color: #fff;
 }
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"]:after {
   font-family: "Fontello";
@@ -3282,6 +3282,10 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-event:after {
 }
 body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
   content: '\e80f';
+}
+.image-icon,
+.image-tile {
+  float: right;
 }
 #textAdjust .decrease-text {
   font-size: 12px;
@@ -3502,7 +3506,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
 .picker__holder {
   width: 180px;
   margin: -1px 0 0 0;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   max-height: 300px;
@@ -4171,7 +4175,7 @@ body.template-login_form #content-core.portletCalendar .portletHeader .calendarP
 body.template-logged_out #content-core.portletCalendar .portletHeader .calendarPrevious:hover,
 body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext:hover,
 body.template-logged_out #content-core.portletCalendar .portletHeader .calendarNext:hover {
-  background: #ffffff;
+  background: #fff;
   text-decoration: none;
 }
 body.template-login_form #content-core.portletCalendar .portletHeader .calendarNext,
@@ -4183,7 +4187,7 @@ body.template-login_form #content-core .portletContent,
 body.template-logged_out #content-core .portletContent {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
-  background: #ffffff;
+  background: #fff;
   font-weight: 300;
 }
 body.template-login_form #content-core .portletContent > *,
@@ -4504,7 +4508,7 @@ body.template-logged_out #content-core .portletFooter {
 .autotabs .autotoc-nav .events-month-prev:hover:after,
 .autotabs .autotoc-nav .events-week-prev:hover:after,
 .autotabs .autotoc-nav .events-day-prev:hover:after {
-  color: #ffffff;
+  color: #fff;
 }
 .autotabs .autotoc-nav .events-month-next,
 .autotabs .autotoc-nav .events-week-next,
@@ -4544,7 +4548,7 @@ body.template-logged_out #content-core .portletFooter {
 .autotabs .autotoc-nav .events-month-next:hover:after,
 .autotabs .autotoc-nav .events-week-next:hover:after,
 .autotabs .autotoc-nav .events-day-next:hover:after {
-  color: #ffffff;
+  color: #fff;
 }
 .image-product {
   margin: 0;
