@@ -20,3 +20,15 @@
 .tileImage { padding-right: 5px; float:left; }
 .tileImageNoFloat { margin-bottom: 5px; }
 .tileFooter { clear: both; margin-top: 5px; }
+
+//
+#content article.entry::after,
+#viewlet-below-content-title::after,
+#relatedItemBox ul li::after, 
+#searchresults ul li::after  {
+  content: " ";
+  display: block;
+  clear: both;
+  height:2px;
+  visibility: hidden;
+}
