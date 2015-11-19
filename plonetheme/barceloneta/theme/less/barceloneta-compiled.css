@@ -2434,6 +2434,9 @@ fieldset[disabled] .link-parent.active {
   height: 2px;
   visibility: hidden;
 }
+.icon-group-right .image-icon {
+  float: none;
+}
 .photoalbumEntryWrapper {
   display: block;
 }

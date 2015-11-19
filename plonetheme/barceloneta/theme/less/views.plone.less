@@ -21,7 +21,7 @@
 .tileImageNoFloat { margin-bottom: 5px; }
 .tileFooter { clear: both; margin-top: 5px; }
 
-//
+// clear floats:
 #content article.entry::after,
 #viewlet-below-content-title::after,
 #relatedItemBox ul li::after, 
@@ -29,6 +29,10 @@
   content: " ";
   display: block;
   clear: both;
-  height:2px;
+  height:2px;  //allow minimal vertical space for thumbs
   visibility: hidden;
+}
+//structure pattern, fix thumb positioning in foldercontents
+.icon-group-right .image-icon {
+  float:none;
 }
