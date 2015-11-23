@@ -3,6 +3,10 @@ Changelog
 
 1.6.15 (unreleased)
 -------------------
+- fixed some css rules(  missing clearfixes, aligning thumbs, ...)
+  https://github.com/plone/plonetheme.barceloneta/issues/62
+  [fgrcon]
+
 - add css-rules for thumbnails in listings and portlets
   related to https://github.com/plone/Products.CMFPlone/issues/1226
   [fgrcon]
