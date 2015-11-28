@@ -3,20 +3,22 @@ Changelog
 
 1.6.15 (unreleased)
 -------------------
-- fixed some css rules(  missing clearfixes, aligning thumbs, ...)
+
+Fixes:
+
+- Fixed some css rules (missing clearfixes, aligning thumbs, ...).
   https://github.com/plone/plonetheme.barceloneta/issues/62
   [fgrcon]
 
-- add css-rules for thumbnails in listings and portlets
-  related to https://github.com/plone/Products.CMFPlone/issues/1226
+- Added css-rules for thumbnails in listings and portlets.
+  Related to `#1226`_.
   [fgrcon]
-  
-- underline links in #content-core (criterion 1.4.1)
+
+- Underline links in #content-core (criterion 1.4.1).
   [polyester]
 
-- Increase contrast, eliminate contrast-checker false positives
+- Increased contrast, eliminated contrast-checker false positives.
   [polyester]
-Fixes:
 
 - Title under thumb in albumview (closes `#1091`_).
   [polyester]
@@ -44,7 +46,7 @@ Fixes:
 - Center buttons on ordered selection lists (closes `#1017`_).
   [rodfersou]
 
-- Center checkboxes on user/group matrix (closes `1003`_).
+- Center checkboxes on user/group matrix (closes `#1003`_).
   [rodfersou]
 
 - Remove hero-element from index.html. Instead include a view @@hero.
@@ -267,8 +269,11 @@ Fixes:
 .. _`#764`: https://github.com/plone/Products.CMFPlone/issues/764
 .. _`#891`: https://github.com/plone/Products.CMFPlone/issues/891
 .. _`#911`: https://github.com/plone/Products.CMFPlone/issues/911
+.. _`#979`: https://github.com/plone/Products.CMFPlone/issues/979
+.. _`#981`: https://github.com/plone/Products.CMFPlone/issues/981
 .. _`#982`: https://github.com/plone/Products.CMFPlone/issues/982
 .. _`#1003`: https://github.com/plone/Products.CMFPlone/issues/1003
 .. _`#1017`: https://github.com/plone/Products.CMFPlone/issues/1017
 .. _`#1091`: https://github.com/plone/Products.CMFPlone/issues/1091
 .. _`#1105`: https://github.com/plone/Products.CMFPlone/issues/1105
+.. _`#1226`: https://github.com/plone/Products.CMFPlone/issues/1226
