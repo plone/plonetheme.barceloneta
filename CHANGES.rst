@@ -41,6 +41,9 @@ Fixes:
 - Discard duplicated ids for columns (closes `#1105`_)
   [davilima6]
 
+- Add comment to alert on duplicate resource registering
+  [davilima6]
+
 
 1.6.14 (2015-09-27)
 -------------------
