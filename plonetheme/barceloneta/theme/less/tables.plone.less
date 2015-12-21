@@ -148,7 +148,9 @@ table {
   > thead > tr {
     > th,
     > td {
-      border-bottom-width: @plone-table-border-color;
+      // This used to be a mismatched property value.
+      // I think this is the intention but am not to sure.
+      border-bottom: 1px solid @plone-table-border-color;
     }
   }
 }
