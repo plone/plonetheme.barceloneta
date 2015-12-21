@@ -21,7 +21,7 @@ module.exports = function (grunt) {
                     }
                 },
                 files: {
-                    'plonetheme/barceloneta/theme/less/barceloneta-compiled.css': 'plonetheme/barceloneta/theme/less/barceloneta.plone.local.less',
+                    'plonetheme/barceloneta/theme/less/barceloneta-compiled.css': 'plonetheme/barceloneta/theme/less/barceloneta.plone.local.less'
                 }
             }
         },
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
                     debugInfo: true,
                     server: {
                         baseDir: "."
-                    },
+                    }
                 }
             },
             plone: {
