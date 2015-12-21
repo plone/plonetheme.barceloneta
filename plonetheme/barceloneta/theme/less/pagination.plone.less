@@ -6,7 +6,6 @@
   list-style: none;
   margin: @plone-line-height-computed 0;
   > li {
-    font-weight: @plone-font-weight-regular;
     display: inline;
     line-height: 0;
     position: relative;
@@ -39,7 +38,7 @@
       &:focus {
         color: @plone-pagination-hover-color;
         background-color: @plone-pagination-hover-bg;
-        border-color: @plone-pagination-hover-border;
+        border: @plone-pagination-hover-border;
         .box-shadow(0 1px 2px rgba(0,0,0,.05));
       }
     }
@@ -52,7 +51,7 @@
       font-weight: @plone-font-weight-regular;
       color: @plone-pagination-active-color;
       background-color: @plone-pagination-active-bg;
-      border-color: @plone-pagination-active-border;
+      border: @plone-pagination-active-border;
       cursor: default;
     }
   }
@@ -62,7 +61,7 @@
     > a:focus {
       color: @plone-pagination-disabled-color;
       background-color: @plone-pagination-disabled-bg;
-      border-color: @plone-pagination-disabled-border;
+      border: @plone-pagination-disabled-border;
       cursor: default;
     }
   }
