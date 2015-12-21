@@ -62,7 +62,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 nav,
 section,
@@ -542,7 +541,7 @@ kbd {
 }
 pre {
   display: block;
-  padding: 9.5px;
+  padding: 10px;
   margin: 0 0 10px;
   font-size: 13px;
   line-height: 1.42857143;
@@ -1241,7 +1240,8 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
   height: 50px;
 }
 @media (min-width: 768px) {
@@ -1380,7 +1380,7 @@ table > tfoot > tr > td {
 }
 table > thead > tr > th,
 table > thead > tr > td {
-  border-bottom-width: #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 table col[class*="col-"] {
   position: static;
@@ -2253,7 +2253,6 @@ fieldset[disabled] .link-parent.active {
   margin: 20px 0;
 }
 .listingBar > li {
-  font-weight: 300;
   display: inline;
   line-height: 0;
   position: relative;
@@ -2284,7 +2283,7 @@ fieldset[disabled] .link-parent.active {
 .listingBar > li a:focus {
   color: #004665;
   background-color: #f2f1f1;
-  border-color: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
@@ -2295,7 +2294,7 @@ fieldset[disabled] .link-parent.active {
   font-weight: 300;
   color: #fff;
   background-color: #007bb1;
-  border-color: #007bb1;
+  border: #007bb1;
   cursor: default;
 }
 .listingBar > .disabled > a,
@@ -2303,7 +2302,7 @@ fieldset[disabled] .link-parent.active {
 .listingBar > .disabled > a:focus {
   color: #cccccc;
   background-color: #fcfcfd;
-  border-color: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
   cursor: default;
 }
 @media (max-width: 480px) {
@@ -2679,7 +2678,7 @@ fieldset[disabled] .link-parent.active {
 .portlet .portletContent table {
   width: 100%;
   text-align: center;
-  text-align: middle;
+  vertical-align: middle;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -2973,7 +2972,7 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet .portletContent table {
   width: 100%;
   text-align: center;
-  text-align: middle;
+  vertical-align: middle;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -3449,7 +3448,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
 .plone-modal.fade.in {
   opacity: 1;
   -webkit-transition: opacity .25s ease;
-  transition: opacity .25 ease;
+  transition: opacity .25s ease;
 }
 .plone-modal.fade .plone-modal-dialog {
   -webkit-transform: translate(0, -25%);
@@ -3746,7 +3745,7 @@ ul.picker__list {
   #portal-header #portal-searchbox [type="text"] {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    width: calc(180px);
+    width: 180px;
     display: inline-block;
   }
   #portal-header #portal-searchbox [type="submit"] {
@@ -3940,7 +3939,7 @@ ul.picker__list {
 }
 .principal {
   background: #d9d7d7;
-  background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, transparent 14%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, transparent 64%, transparent);
+  background: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, transparent 14%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, transparent 64%, transparent);
   background-size: 20px 20px;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -4271,7 +4270,7 @@ body.template-login_form #content-core .portletContent table,
 body.template-logged_out #content-core .portletContent table {
   width: 100%;
   text-align: center;
-  text-align: middle;
+  vertical-align: middle;
   border-collapse: collapse;
   border-spacing: 0;
 }
