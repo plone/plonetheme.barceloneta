@@ -10,7 +10,18 @@ New:
 
 Fixes:
 
-- *add item here*
+- Remove trailing comma's in Grunt file.
+  [coen]
+
+- Use border radius variables in portlets.
+  [coen]
+
+- Mismatched properties and values.
+  [allcaps]
+
+- Ignore diff of map file.
+  [allcaps]
+
 
 
 1.6.15 (2015-11-28)
