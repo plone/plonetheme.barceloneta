@@ -8,11 +8,25 @@
 		border-top: @plone-portlet-border;
 		padding: @plone-padding-base-vertical 0;
 	}
-
 	ul {
+		list-style: none;
 		position: relative;
 		font-size: @plone-font-size-base;
 		padding-left:20px;
+	    & li {
+			position: relative;
+		}
+	    & li:before {
+			content: "•";
+			display: inline;
+			font-size: @plone-font-size-h3+1;
+			color: lighten(@plone-portlet-list-bullet, 15%);
+			top: 5px;
+			position: relative;
+		}
+	}
+	// Only the first sub level may be split into columns.
+	> ul {
 		-moz-column-count: 3;
 	    -moz-column-gap: 20px;
 	    -webkit-column-count: 3;
@@ -20,11 +34,5 @@
 	    column-count: 3;
 	    column-gap: 20px;
 	    // remember that columns does not work on IE9
-	    & li {position: relative;}
-	    & li:before {
-	    	content:"•"; display: inline; font-size: @plone-font-size-h3+1;
-					color: lighten(@plone-portlet-list-bullet, 15%); top: 5px; position:relative;
-
-	    }
 	}
 }

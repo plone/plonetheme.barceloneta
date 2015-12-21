@@ -10,7 +10,21 @@ New:
 
 Fixes:
 
-- *add item here*
+- Fix sitemap layout. Drop the columns (closes `#57`_).
+  [allcaps]
+
+- Remove trailing comma's in Grunt file.
+  [allcaps]
+
+- Use border radius variables in portlets.
+  [allcaps]
+
+- Mismatched properties and values.
+  [allcaps]
+
+- Ignore diff of map file.
+  [allcaps]
+
 
 
 1.6.15 (2015-11-28)

@@ -4400,15 +4400,10 @@ body.template-logged_out #content-core .portletFooter {
   padding: 6px 0;
 }
 #portal-sitemap ul {
+  list-style: none;
   position: relative;
   font-size: 14px;
   padding-left: 20px;
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  column-count: 3;
-  column-gap: 20px;
 }
 #portal-sitemap ul li {
   position: relative;
@@ -4420,6 +4415,14 @@ body.template-logged_out #content-core .portletFooter {
   color: #a7daf2;
   top: 5px;
   position: relative;
+}
+#portal-sitemap > ul {
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
 }
 .vevent span.cal_month {
   font-size: 1.1em;
