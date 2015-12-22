@@ -9,7 +9,7 @@
 	> :last-child {border-radius: 0 0 @plone-border-radius-base @plone-border-radius-base;}
 	.portletHeader {
 		background: @plone-portlet-header-bg;
-		font-weight: @plone-font-weight-bold;
+		font-weight: @plone-font-weight-medium;
 		font-size: @plone-font-size-large;
 		padding: 13px 15px;
 		color: @plone-portlet-header-color;
@@ -20,7 +20,19 @@
 	&.portletCalendar .portletHeader {
 		text-align: center;
 		position: relative;
-		.calendarPrevious, .calendarNext { width:30px; height:30px; padding: 0 1px 2px; border-radius:50%; position: absolute; display: inline-block; left: 5px; font-size: @plone-font-size-h3; margin-top:-3px; line-height: 28px; font-weight: @plone-font-weight-light;}
+		.calendarPrevious, .calendarNext {
+			width: 30px;
+			height: 30px;
+			padding: 0 1px 2px;
+			border-radius: 50%;
+			position: absolute;
+			display: inline-block;
+			left: 5px;
+			font-size: @plone-font-size-h3;
+			margin-top: -3px;
+			line-height: 28px;
+			font-weight: @plone-font-weight-medium;
+		}
 		.calendarPrevious:hover, .calendarNext:hover {background: @plone-portlet-content-bg; text-decoration: none;}
 		.calendarNext {right: 5px; left: inherit;}
 	}
@@ -32,7 +44,6 @@
 		& > *, & > div:not(.portalMessage) { //all but ul and tables and portalMessage
 			padding: 10px 15px;
 			margin: 0;
-			font-weight: @plone-font-weight-regular;
 			color: @plone-gray;
 		}
 		> ul {
@@ -54,9 +65,20 @@
 					color: lighten(@plone-portlet-list-bullet, 15%);
 				}
 			}
-			ul {padding-left:15px; list-style: none;
+			ul {
+				padding-left:15px;
+				list-style: none;
 			}
-			.portletItemDetails {display: block; z-index: 0; padding: 0 15px 10px 30px; font-weight:@plone-font-weight-light; position: relative; margin-top:-26px; font-size: @plone-font-size-small; color: @plone-portlet-list-small-text;}
+			.portletItemDetails {
+				display: block;
+				z-index: 0;
+				padding: 0 15px 10px 30px;
+				font-weight: @plone-font-weight-regular;
+				position: relative;
+				margin-top: -26px;
+				font-size: @plone-font-size-small;
+				color: @plone-portlet-list-small-text;
+			}
 			li:hover {background: @plone-portlet-list-hover-bg;
 				a:before {color: @plone-portlet-list-bullet;}
 			}

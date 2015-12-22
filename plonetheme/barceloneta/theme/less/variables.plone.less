@@ -54,13 +54,14 @@
 @plone-line-height-computed:    floor((@plone-font-size-base * @plone-line-height-base)); // ~20px
 
 @plone-headings-font-family:    inherit;
-	@plone-headings-font-weight:    300;
+	@plone-headings-font-weight:    @plone-font-weight-regular;
 	@plone-headings-line-height:    1.1;
 	@plone-headings-color:          inherit;
 
-@plone-font-weight-light:		100; //default theme uses 100, 300, 500, change it on your site. Standard regular is 400
-	@plone-font-weight-regular:		300;
-	@plone-font-weight-bold:		500;
+@plone-font-weight-light:		300;
+@plone-font-weight-regular:		400;
+@plone-font-weight-medium:		500;
+@plone-font-weight-bold:		700;
 
 
 
@@ -198,7 +199,7 @@
 @plone-alert-icon-size:							20px;
 @plone-alert-padding:							15px;
 	@plone-alert-border-radius:					4px;
-	@plone-alert-link-font-weight:				300; //it depends on your font-family
+	@plone-alert-link-font-weight:				@plone-font-weight-regular; //it depends on your font-family
 @plone-alert-info-bg:						@plone-state-info-bg;
 	@plone-alert-info-text:						@plone-state-info-text; //the text on alert is black with opacity to use the same color and match the bg.
 	@plone-alert-info-border:					@plone-state-info-border;

@@ -1,18 +1,6 @@
 @font-face {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 100;
-  src: local('Roboto Thin'), local('Roboto-Thin'), url("roboto/Roboto-Thin.ttf") format('truetype');
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: italic;
-  font-weight: 100;
-  src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url("roboto/Roboto-ThinItalic.ttf") format('truetype');
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 300;
   src: local('Roboto Light'), local('Roboto-Light'), url("roboto/Roboto-Light.ttf") format('truetype');
 }
@@ -21,6 +9,18 @@
   font-style: italic;
   font-weight: 300;
   src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url("roboto/Roboto-LightItalic.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('Roboto-Regular'), url("roboto/Roboto-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url("roboto/Roboto-Italic.ttf") format('truetype');
 }
 @font-face {
   font-family: "Roboto";
@@ -35,13 +35,25 @@
   src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url("roboto/Roboto-MediumItalic.ttf") format('truetype');
 }
 @font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url("roboto/Roboto-Bold.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url("roboto/Roboto-BoldItalic.ttf") format('truetype');
+}
+@font-face {
   font-family: "Roboto Condensed";
   font-style: normal;
   font-weight: 300;
   src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url("roboto/RobotoCondensed-Light.ttf") format('truetype');
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto Condensed";
   font-style: italic;
   font-weight: 300;
   src: local('Roboto Condensed Thin Italic'), local('RobotoCondensed-LightItalic'), url("roboto/RobotoCondensed-LightItalic.ttf") format('truetype');
@@ -323,6 +335,7 @@ html {
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.42857143;
   color: #4d4d4d;
   background-color: #fafafa;
@@ -401,7 +414,7 @@ h4,
 h5,
 h6 {
   font-family: inherit;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.1;
   color: inherit;
 }
@@ -449,7 +462,7 @@ p {
 }
 .documentDescription {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: #696969;
   margin-bottom: 10px;
 }
@@ -465,11 +478,11 @@ mark {
 }
 .discreet {
   color: #696969;
-  font-weight: 300;
+  font-weight: 400;
 }
 .documentByLine {
   color: #696969;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 .documentFirstHeading {
@@ -1266,7 +1279,7 @@ table {
   max-width: 100%;
   background-color: #fff;
   border-radius: 4px;
-  font-weight: 300;
+  font-weight: 400;
   color: #696969;
 }
 th {
@@ -1409,7 +1422,7 @@ legend {
   color: #4d4d4d;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
-  font-weight: 100;
+  font-weight: 300;
 }
 label {
   display: inline-block;
@@ -1591,13 +1604,13 @@ fieldset[disabled] input[type="checkbox"] {
 }
 .field.error div.error {
   padding-left: 30px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .field.error div.error:before {
   background-color: #ac493f;
   content: "×";
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: -30px;
   margin-right: 5px;
   display: inline-block;
@@ -1626,7 +1639,7 @@ fieldset[disabled] input[type="checkbox"] {
   margin-top: 0;
   margin-bottom: 0;
   color: #666666;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
 }
 .formControls {
@@ -1703,7 +1716,7 @@ label .required:after {
 button {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   text-shadow: 0 1px rgba(0, 0, 0, 0.25);
   vertical-align: middle;
@@ -1967,7 +1980,7 @@ fieldset[disabled] .destructive.active {
 .link-parent {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   text-shadow: 0 1px rgba(0, 0, 0, 0.25);
   vertical-align: middle;
@@ -2196,7 +2209,7 @@ fieldset[disabled] .link-parent.active {
   display: inline-block;
   color: #777777;
   padding: 8px 0;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   .plone-breadcrumb > * > span {
@@ -2210,7 +2223,7 @@ fieldset[disabled] .link-parent.active {
   margin: 0;
 }
 .plone-breadcrumb ol > li {
-  font-weight: 300;
+  font-weight: 400;
   display: inline-block;
   line-height: 0;
   position: relative;
@@ -2257,7 +2270,7 @@ fieldset[disabled] .link-parent.active {
   line-height: 0;
   position: relative;
   padding: 0;
-  font-weight: 100;
+  font-weight: 300;
 }
 .listingBar > li a {
   position: relative;
@@ -2291,7 +2304,7 @@ fieldset[disabled] .link-parent.active {
 .listingBar > .active > a:hover,
 .listingBar > .active > a:focus {
   z-index: 2;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   background-color: #007bb1;
   border: #007bb1;
@@ -2338,7 +2351,7 @@ fieldset[disabled] .link-parent.active {
   margin-bottom: -1px;
   border-radius: 4px 4px 0 0;
   background: #fcfcfd;
-  font-weight: 300;
+  font-weight: 400;
 }
 .pat-autotoc.autotabs .autotoc-nav a:last-child,
 .autotabs .autotoc-nav a:last-child {
@@ -2392,7 +2405,7 @@ fieldset[disabled] .link-parent.active {
   display: inline-block;
 }
 .folder-listing {
-  font-weight: 500;
+  font-weight: 700;
   list-style: none;
   position: relative;
   padding-left: 20px;
@@ -2409,7 +2422,7 @@ fieldset[disabled] .link-parent.active {
   color: #a7daf2;
 }
 .folder-listing .documentByLine {
-  font-weight: 300;
+  font-weight: 400;
   color: #777777;
 }
 .tileImage {
@@ -2448,7 +2461,7 @@ fieldset[disabled] .link-parent.active {
   text-align: center;
   vertical-align: middle;
   display: table-cell;
-  font-weight: 300;
+  font-weight: 400;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   border: 1px solid #e5e5e5;
   border-radius: 4px;
@@ -2468,23 +2481,23 @@ fieldset[disabled] .link-parent.active {
   border-radius: 4px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.17);
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   text-shadow: 0 1px rgba(255, 255, 255, 0.1);
 }
 .portalMessage > strong,
 .portalMessage > dt {
-  font-weight: 500;
+  font-weight: 700;
   padding-right: 5px;
   color: rgba(0, 0, 0, 0.5);
 }
 .portalMessage a {
-  font-weight: 300;
+  font-weight: 400;
   color: #005074;
 }
 .portalMessage > strong:before,
 .portalMessage > dt:before {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: -30px;
   margin-right: 10px;
   display: inline-block;
@@ -2605,7 +2618,7 @@ fieldset[disabled] .link-parent.active {
   font-size: 24px;
   margin-top: -3px;
   line-height: 28px;
-  font-weight: 100;
+  font-weight: 500;
 }
 .portlet.portletCalendar .portletHeader .calendarPrevious:hover,
 .portlet.portletCalendar .portletHeader .calendarNext:hover {
@@ -2620,13 +2633,12 @@ fieldset[disabled] .link-parent.active {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
   background: #fff;
-  font-weight: 300;
+  font-weight: 400;
 }
 .portlet .portletContent > *,
 .portlet .portletContent > div:not(.portalMessage) {
   padding: 10px 15px;
   margin: 0;
-  font-weight: 300;
   color: #696969;
 }
 .portlet .portletContent > ul {
@@ -2663,7 +2675,7 @@ fieldset[disabled] .link-parent.active {
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
-  font-weight: 100;
+  font-weight: 400;
   position: relative;
   margin-top: -26px;
   font-size: 12px;
@@ -2691,7 +2703,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet .portletContent table thead th {
   color: #696969;
-  font-weight: 100;
+  font-weight: 300;
   height: 40px;
   text-align: center;
 }
@@ -2765,7 +2777,7 @@ fieldset[disabled] .link-parent.active {
   background: #fcfcfd;
   padding: 10px 15px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
 .portletNavigationTree nav.portletContent > ul > li a {
@@ -2778,7 +2790,7 @@ fieldset[disabled] .link-parent.active {
   background: #fcfcfd;
   color: #696969;
   display: block;
-  font-weight: 300;
+  font-weight: 400;
 }
 .portletNavigationTree .portletContent {
   border-top: 0;
@@ -2899,7 +2911,7 @@ fieldset[disabled] .link-parent.active {
   font-size: 24px;
   margin-top: -3px;
   line-height: 28px;
-  font-weight: 100;
+  font-weight: 500;
 }
 .managedPortlet.portletCalendar .portletHeader .calendarPrevious:hover,
 .managedPortlet.portletCalendar .portletHeader .calendarNext:hover {
@@ -2914,13 +2926,12 @@ fieldset[disabled] .link-parent.active {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
   background: #fff;
-  font-weight: 300;
+  font-weight: 400;
 }
 .managedPortlet .portletContent > *,
 .managedPortlet .portletContent > div:not(.portalMessage) {
   padding: 10px 15px;
   margin: 0;
-  font-weight: 300;
   color: #696969;
 }
 .managedPortlet .portletContent > ul {
@@ -2957,7 +2968,7 @@ fieldset[disabled] .link-parent.active {
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
-  font-weight: 100;
+  font-weight: 400;
   position: relative;
   margin-top: -26px;
   font-size: 12px;
@@ -2985,7 +2996,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletContent table thead th {
   color: #696969;
-  font-weight: 100;
+  font-weight: 300;
   height: 40px;
   text-align: center;
 }
@@ -3059,7 +3070,7 @@ fieldset[disabled] .link-parent.active {
   background: #fcfcfd;
   padding: 10px 15px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
 .managedPortlet.inheritedPortlet {
@@ -3179,7 +3190,7 @@ fieldset[disabled] .link-parent.active {
   display: inline;
   padding: .2em .6em .3em;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1;
   color: #4d4d4d;
   text-align: center;
@@ -4082,7 +4093,7 @@ a.plone-toolbar-logo {
 #portal-footer-wrapper .portlet {
   background: transparent;
   border: 0;
-  font-weight: 100;
+  font-weight: 300;
   box-shadow: none;
   margin-bottom: 0;
 }
@@ -4115,7 +4126,7 @@ a.plone-toolbar-logo {
 #portal-footer-wrapper .portlet .portletActions {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   margin-right: 15px;
 }
 #portal-siteactions {
@@ -4181,7 +4192,7 @@ body.template-logged_out #content-core.portletCalendar .portletHeader .calendarN
   font-size: 24px;
   margin-top: -3px;
   line-height: 28px;
-  font-weight: 100;
+  font-weight: 500;
 }
 body.template-login_form #content-core.portletCalendar .portletHeader .calendarPrevious:hover,
 body.template-logged_out #content-core.portletCalendar .portletHeader .calendarPrevious:hover,
@@ -4200,7 +4211,7 @@ body.template-logged_out #content-core .portletContent {
   font-size: 14px;
   border-top: 1px solid #e5e5e5;
   background: #fff;
-  font-weight: 300;
+  font-weight: 400;
 }
 body.template-login_form #content-core .portletContent > *,
 body.template-logged_out #content-core .portletContent > *,
@@ -4208,7 +4219,6 @@ body.template-login_form #content-core .portletContent > div:not(.portalMessage)
 body.template-logged_out #content-core .portletContent > div:not(.portalMessage) {
   padding: 10px 15px;
   margin: 0;
-  font-weight: 300;
   color: #696969;
 }
 body.template-login_form #content-core .portletContent > ul,
@@ -4252,7 +4262,7 @@ body.template-logged_out #content-core .portletContent > ul .portletItemDetails 
   display: block;
   z-index: 0;
   padding: 0 15px 10px 30px;
-  font-weight: 100;
+  font-weight: 400;
   position: relative;
   margin-top: -26px;
   font-size: 12px;
@@ -4286,7 +4296,7 @@ body.template-logged_out #content-core .portletContent table thead {
 body.template-login_form #content-core .portletContent table thead th,
 body.template-logged_out #content-core .portletContent table thead th {
   color: #696969;
-  font-weight: 100;
+  font-weight: 300;
   height: 40px;
   text-align: center;
 }
@@ -4380,7 +4390,7 @@ body.template-logged_out #content-core .portletFooter {
   background: #fcfcfd;
   padding: 10px 15px;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
 #portal-anontools ul {
@@ -4420,7 +4430,7 @@ body.template-logged_out #content-core .portletFooter {
   font-size: 1.1em;
 }
 .event.summary {
-  font-weight: 300;
+  font-weight: 400;
   max-width: 300px;
   float: right;
   background: #fafafa;
@@ -4455,19 +4465,19 @@ body.template-logged_out #content-core .portletFooter {
 }
 .cal_month {
   background: #00b0fe;
-  font-weight: 300;
+  font-weight: 400;
   display: block;
   color: #fff;
   padding: 6px 12px;
 }
 .cal_day {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 700;
   display: block;
 }
 .cal_wkday {
   font-size: 12px;
-  font-weight: 100;
+  font-weight: 300;
   display: block;
   padding: 0 12px 6px;
 }
