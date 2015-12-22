@@ -10,11 +10,15 @@ New:
 
 Fixes:
 
+- Fix sitemap layout. Only split the fist sub level into columns.
+  (closes `#57`_).
+  [allcaps]
+
 - Remove trailing comma's in Grunt file.
-  [coen]
+  [allcaps]
 
 - Use border radius variables in portlets.
-  [coen]
+  [allcaps]
 
 - Mismatched properties and values.
   [allcaps]
