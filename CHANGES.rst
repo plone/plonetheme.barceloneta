@@ -10,6 +10,9 @@ New:
 
 Fixes:
 
+- Restore the principal aka jumbotron background.
+  [allcaps]
+
 - Fix sitemap layout. Drop the columns. (closes `#57`_).
   [allcaps]
 
