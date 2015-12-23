@@ -3949,8 +3949,8 @@ ul.picker__list {
   }
 }
 .principal {
-  background: #d9d7d7;
   background: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, transparent 14%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, transparent 64%, transparent);
+  background-color: #d9d7d7;
   background-size: 20px 20px;
   margin-top: -20px;
   margin-bottom: 20px;
