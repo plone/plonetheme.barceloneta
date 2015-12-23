@@ -10,6 +10,8 @@ New:
 
 Fixes:
 
+- Add weight to all fonts (contributes to `#24`_).
+
 - Restore the principal aka jumbotron background.
   [allcaps]
 
