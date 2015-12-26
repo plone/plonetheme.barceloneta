@@ -32,6 +32,40 @@ module.exports = function (grunt) {
                 tasks: ['less']
             }
         },
+
+        "goog-webfont-dl": {
+          roboto: {
+              options: {
+                  ttf: true,
+                  eot: true,
+                  woff: true,
+                  woff2: true,
+                  svg: true,
+                  fontname: 'Roboto',
+                  fontstyles: '300,400,500,700,300italic,400italic,700italic',
+                  fontdest: 'plonetheme/barceloneta/theme/less/roboto',
+                  cssdest: 'plonetheme/barceloneta/theme/less/roboto.less',
+                  cssprefix: 'roboto/',
+                  subset: 'latin,latin-ext' // greek,greek-ext,vietnamese,cyrillic-ext,cyrillic
+              }
+          },
+          "roboto-condensed": {
+              options: {
+                  ttf: true,
+                  eot: true,
+                  woff: true,
+                  woff2: true,
+                  svg: true,
+                  fontname: 'Roboto Condensed',
+                  fontstyles: '300,300italic',
+                  fontdest: 'plonetheme/barceloneta/theme/less/roboto-condensed',
+                  cssdest: 'plonetheme/barceloneta/theme/less/roboto-condensed.less',
+                  cssprefix: 'roboto-condensed/',
+                  subset: 'latin,latin-ext' // greek,greek-ext,vietnamese,cyrillic-ext,cyrillic
+              }
+          }
+        },
+
         browserSync: {
             html: {
                 bsFiles: {
@@ -60,6 +94,7 @@ module.exports = function (grunt) {
 
     // grunt.loadTasks('tasks');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-goog-webfont-dl');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.registerTask('default', ['watch']);

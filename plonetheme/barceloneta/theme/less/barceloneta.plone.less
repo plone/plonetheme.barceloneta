@@ -1,20 +1,30 @@
 //*// PLONE 5 BARCELONETA LESS //*//
 
-//*// Font families
-@import "fonts.plone.less";
+//*// Variables
 
-//*// Core variables and mixins
+// Products.CMFPlone Toolbar
+@import url("https://raw.githubusercontent.com/plone/Products.CMFPlone/master/Products/CMFPlone/static/patterns/toolbar/src/css/variables.less");
+// Barceloneta variables
 @import "variables.plone.less";
-	@import "mixin.prefixes.plone.less";
-	@import "mixin.tabfocus.plone.less";
-	@import "mixin.images.plone.less";
-	@import "mixin.forms.plone.less";
-	@import "mixin.borderradius.plone.less";
-	@import "mixin.buttons.plone.less";
-	@import "mixin.clearfix.plone.less";
-	@import "mixin.gridframework.plone.less"; //grid Bootstrap
-	@import "mixin.grid.plone.less"; //grid Bootstrap
 
+
+//*// Fonts
+@import "roboto.less";
+@import "roboto-condensed.less";
+// Google Fonts CDN example:
+// @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic|Roboto+Condensed:300italic,300&subset=latin,latin-ext);
+
+
+//*// Mixins
+@import "mixin.prefixes.plone.less";
+@import "mixin.tabfocus.plone.less";
+@import "mixin.images.plone.less";
+@import "mixin.forms.plone.less";
+@import "mixin.borderradius.plone.less";
+@import "mixin.buttons.plone.less";
+@import "mixin.clearfix.plone.less";
+@import "mixin.gridframework.plone.less"; //grid Bootstrap
+@import "mixin.grid.plone.less"; //grid Bootstrap
 
 //*// Reset and dependencies
 @import "normalize.plone.less";

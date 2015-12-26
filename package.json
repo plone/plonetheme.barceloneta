@@ -6,6 +6,7 @@
     "grunt": "~0.4.4",
     "grunt-browser-sync": "^0.8.2",
     "grunt-contrib-less": "latest",
-    "grunt-contrib-watch": "latest"
+    "grunt-contrib-watch": "latest",
+    "grunt-goog-webfont-dl": "^0.1.2"
   }
 }

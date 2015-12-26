@@ -6,11 +6,15 @@ Changelog
 
 New:
 
-- *add item here*
+- Grunt task `grunt goog-webfont-dl` to download Google Fonts and their
+  @font-face declarations. Configuration happens in Grunt.js and gives control
+  over font type, font family, weight, style and subset.
+  [allcaps]
 
 Fixes:
 
 - Add weight to all fonts (contributes to `#24`_).
+  [allcaps]
 
 - Restore the principal aka jumbotron background.
   [allcaps]
