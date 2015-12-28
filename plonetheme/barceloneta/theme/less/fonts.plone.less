@@ -1,84 +1,111 @@
 //*// FONTS //*//
 
-// Roboto Fonts are availeble the following weights (* is used in Barceloneta):
-//
-//  - 100 Thin
-//  - 300 Light  *
-//  - 400 Normal *
-//  - 500 Medium
-//  - 700 Bold   *
-//  - 900 Ultra-Bold
+// 300 Light
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:     'Roboto-Light';
+	@font-family:   'Roboto';
+	@font-weight:   300;
+	@font-style:    normal;
+	@svg-id:        'robotolight';
+    @local:         ~"local('Roboto Light'),";
+);
 
+// 300 Light Italic
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:		'Roboto-LightItalic';
+	@font-family:	'Roboto';
+	@font-weight:	300;
+	@font-style:	italic;
+	@svg-id:		'robotolight_italic';
+    @local:         ~"local('Roboto Light Italic'),";
+);
 
-// 300
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 300;
-	src: local('Roboto Light'), local('Roboto-Light'), url("roboto/Roboto-Light.ttf") format('truetype');
-}
-@font-face {
-	font-family: "Roboto";
-	font-style: italic;
-	font-weight: 300;
-	src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url("roboto/Roboto-LightItalic.ttf") format('truetype');
-}
+// 400 Regular
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:		'Roboto-Regular';
+	@font-family:	'Roboto';
+	@font-weight:	400;
+	@font-style:	normal;
+	@svg-id:		'robotoregular';
+    @local:         ~"local('Roboto Regular'),";
+);
 
-// 400
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
-	src: local('Roboto Regular'), local('Roboto-Regular'), url("roboto/Roboto-Regular.ttf") format('truetype');
-}
-@font-face {
-	font-family: "Roboto";
-	font-style: italic;
-	font-weight: 400;
-	src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url("roboto/Roboto-Italic.ttf") format('truetype');
-}
+// 400 Italic
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:		'Roboto-Italic';
+	@font-family:	'Roboto';
+	@font-weight:	400;
+	@font-style:	italic;
+	@svg-id:		'robotoitalic';
+    @local:         ~"local('Roboto Italic'),";
+);
 
-// 500
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 500;
-	src: local('Roboto Medium'), local('Roboto-Medium'), url("roboto/Roboto-Medium.ttf") format('truetype');
-}
-@font-face {
-	font-family: "Roboto";
-	font-style: italic;
-	font-weight: 500;
-	src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url("roboto/Roboto-MediumItalic.ttf") format('truetype');
-}
+// 500 Medium
+.font-face(
+    @font-path:     'roboto/';
+    @file-name:		'Roboto-Medium';
+	@font-family:	'Roboto';
+	@font-weight:	500;
+	@font-style:	normal;
+	@svg-id:		'robotomedium';
+    @local:         ~"local('Roboto Medium'),";
+);
 
-// 700
-@font-face {
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 700;
-	src: local('Roboto Bold'), local('Roboto-Bold'), url("roboto/Roboto-Bold.ttf") format('truetype');
-}
-@font-face {
-	font-family: "Roboto";
-	font-style: italic;
-	font-weight: 700;
-	src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url("roboto/Roboto-BoldItalic.ttf") format('truetype');
-}
+// 500 Medium Italic
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:		'Roboto-MediumItalic';
+	@font-family:	'Roboto';
+	@font-weight:	500;
+	@font-style:	italic;
+	@svg-id:		'robotomedium_italic';
+    @local:         ~"local('Roboto Medium Italic'),";
+);
 
+// 700 Bold
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:		'Roboto-Bold';
+	@font-family:	'Roboto';
+	@font-weight:	700;
+	@font-style:	normal;
+	@svg-id:		'robotobold';
+    @local:         ~"local('Roboto Bold'),";
+);
 
-//*// Condensed (Toolbar)
-// 300
-@font-face {
-	font-family: "Roboto Condensed";
-	font-style: normal;
-	font-weight: 300;
-	src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url("roboto/RobotoCondensed-Light.ttf") format('truetype');
-}
+// 700 Bold Italic
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:		'Roboto-BoldItalic';
+	@font-family:	'Roboto';
+	@font-weight:	700;
+	@font-style:	italic;
+	@svg-id:		'robotobold_italic';
+    @local:         ~"local('Roboto Bold Italic'),";
+);
 
-@font-face {
-	font-family: "Roboto Condensed";
-	font-style: italic;
-	font-weight: 300;
-	src: local('Roboto Condensed Thin Italic'), local('RobotoCondensed-LightItalic'), url("roboto/RobotoCondensed-LightItalic.ttf") format('truetype');
-}
+// 300 Light Condensed (toolbar)
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:		'RobotoCondensed-Light';
+	@font-family:	'Roboto Condensed';
+	@font-weight:	300;
+	@font-style:	normal;
+	@svg-id:		'roboto_condensedlight';
+    @local:         ~"local('Roboto Condensed Light'),";
+);
+
+// 300 Light Condensed Italic (toolbar)
+.font-face(
+    @font-path:     'roboto/';
+	@file-name:		'RobotoCondensed-LightItalic';
+	@font-family:	'Roboto Condensed';
+	@font-weight:	300;
+	@font-style:	italic;
+	@svg-id:		'roboto_condensedlight_italic';
+    @local:         ~"local('Roboto Condensed Thin Italic'),";
+);

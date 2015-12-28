@@ -10,7 +10,14 @@ New:
 
 Fixes:
 
+- Fix @font-face. Load eot, svg and woff.
+  [allcaps]
+
+- Add Roboto fonts with full glyph set
+  [allcaps]
+
 - Add weight to all fonts (contributes to `#24`_).
+  [allcaps]
 
 - Restore the principal aka jumbotron background.
   [allcaps]
