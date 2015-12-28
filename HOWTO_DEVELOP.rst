@@ -26,3 +26,9 @@ Note
 ----
 
 All css is compiled from LESS files. Do NOT edit the file barceloneta.css.original-reference, it is not read and is just there for reference purposes.
+
+
+Fonts
+-----
+
+Read `plonetheme.barceloneta/plonetheme/barceloneta/theme/less/roboto/README.rst if you need to update the shipped fonts.
