@@ -10,6 +10,9 @@ New:
 
 Fixes:
 
+- Add 2014 Roboto
+  [allcaps]
+
 - Fix @font-face. Load eot, svg and woff.
   [allcaps]
 
