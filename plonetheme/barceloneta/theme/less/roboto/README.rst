@@ -7,14 +7,16 @@ font files are from.
 Download
 --------
 
-The Roboto fonts in this directory are downloaded from:
+The Roboto ttf fonts in this directory are downloaded from:
 
-    `http://www.fontsquirrel.com/fonts/roboto`
+    `http://www.fontsquirrel.com/fonts/roboto-2014`
+	
+Other formats are generated with:
 
-Download settings:
+	`http://www.fontsquirrel.com/tools/webfont-generator`
+	
 
-    Choose a subset:     No Subsetting
-    Choose font formats: TTF, EOT, WOFF, SVG. All checked.
+For the used settings upload the `generator_config.txt` file to the generator. 
 
 
 Subsetting
@@ -32,6 +34,7 @@ Roboto fonts shipped with Barceloneta are available in the following file types:
 TTF - Works in most browsers except IE and iPhone.
 EOT - IE only.
 WOFF - Compressed, emerging standard.
+WOFF2 - Better compressed, emerging standard.
 SVG - iPhone/iPad.
 
 
@@ -39,8 +42,9 @@ Changes
 -------
 
   - All downloaded fonts are moved into one `roboto` directory
-  - The downloaded file names where renamed. Dropped `-webfont`.
-  - `Apache License.txt` is also moved into the `roboto` directory
+  - `Apache License.txt` is moved into the `roboto` directory
+  - `generator_config.txt` is moved into the `roboto` directory
+  - Changed the .ttf files to lower case.
 
 
 SVG IDs
@@ -49,24 +53,25 @@ SVG IDs
 SVG fonts need the correct ID in the font-face declaration. These are the
 id's as supplied in the font-face declarations by Font Squirrel:
 
-  - robotoblack_italic
-  - robotobold
-  - roboto_condensedbold
-  - robotoblack
-  - roboto_condensedbold_italic
-  - robotobold_italic
-  - roboto_condensedregular
-  - roboto_condenseditalic
-  - robotoitalic
-  - robotolight
-  - roboto_condensedlight
-  - roboto_condensedlight_italic
-  - robotolight_italic
-  - robotomedium
-  - robotomedium_italic
-  - robotoregular
-  - robotothin
-  - robotothin_italic
+ - roboto-black.svg#robotoblack
+ - roboto-blackitalic.svg#robotoblack_italic
+ - roboto-bold.svg#robotobold
+ - roboto-bolditalic.svg#robotobold_italic
+ - roboto-italic.svg#robotoitalic
+ - roboto-light.svg#robotolight
+ - roboto-lightitalic.svg#robotolight_italic
+ - roboto-medium.svg#robotomedium
+ - roboto-mediumitalic.svg#robotomedium_italic
+ - roboto-regular.svg#robotoregular
+ - roboto-thin.svg#robotothin
+ - roboto-thinitalic.svg#robotothin_italic
+ 
+ - robotocondensed-regular.svg#roboto_condensedregular
+ - robotocondensed-lightitalic.svg#roboto_condensedlight_italic
+ - robotocondensed-bolditalic.svg#roboto_condensedbold_italic
+ - robotocondensed-italic.svg#roboto_condenseditalic
+ - robotocondensed-light.svg#roboto_condensedlight
+ - robotocondensed-bold.svg#roboto_condensedbold
 
 
 Local
