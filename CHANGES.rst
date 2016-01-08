@@ -1,6 +1,18 @@
 Changelog
 =========
 
+1.6.17 (unreleased)
+-------------------
+
+New:
+
+- *add item here*
+
+Fixes:
+
+- *add item here*
+
+
 1.6.16 (2016-01-08)
 -------------------
 
