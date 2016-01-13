@@ -6,7 +6,8 @@ Changelog
 
 New:
 
-- *add item here*
+- Modernize pagination markup and switches deprecated ``listingBar`` CSS class to ``pagination``.
+  [davilima6]
 
 Fixes:
 
@@ -15,7 +16,6 @@ Fixes:
 
 1.6.16 (2016-01-08)
 -------------------
-
 
 Fixes:
 
@@ -48,7 +48,6 @@ Fixes:
 
 - Ignore diff of map file.
   [allcaps]
-
 
 
 1.6.15 (2015-11-28)
@@ -131,6 +130,7 @@ Fixes:
 - Renamed the news.plone.less into behaviors.plone.less as it no longer make
   sense
   [sneridagh]
+
 
 1.6.12 (2015-09-12)
 -------------------
@@ -234,7 +234,6 @@ Fixes:
 1.6.6 (2015-05-13)
 ------------------
 
-
 - provide some spacing between event summary and content
   [vangheem]
 
@@ -248,7 +247,6 @@ Fixes:
 
 1.6.4 (2015-05-04)
 ------------------
-
 
 - fix in and out widget button style
   [vangheme]
