@@ -216,11 +216,12 @@
 
 
 //*// PORTLETS
+@plone-border-base:							1px solid;
 @plone-portlet-header-bg:					#f2f1f1;
 @plone-portlet-header-color:				@plone-gray;
 @plone-portlet-content-bg:					#fff;
 @plone-portlet-footer-bg:					#fcfcfd;
-@plone-portlet-border:						1px solid #e5e5e5;
+@plone-portlet-border:						@plone-border-base #e5e5e5;
 @plone-portlet-contrast-bg:					#e5e5e5;
 @plone-portlet-event-bullet:				#dbecfe;
 @plone-portlet-list-bullet:					#64bee8;
@@ -277,7 +278,7 @@
 	@plone-pagination-hover-border:              @plone-portlet-border;
 @plone-pagination-active-color:              @plone-portlet-content-bg;
 	@plone-pagination-active-bg:                 @plone-link-color;
-	@plone-pagination-active-border:             @plone-link-color;
+	@plone-pagination-active-border:             @plone-border-base @plone-link-color;
 @plone-pagination-disabled-color:            @plone-gray-lighter;
 	@plone-pagination-disabled-bg:               @plone-portlet-footer-bg;
 	@plone-pagination-disabled-border:           @plone-portlet-border;
