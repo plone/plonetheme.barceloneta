@@ -38,6 +38,7 @@ setup(name='plonetheme.barceloneta',
       install_requires=[
           'setuptools',
           'plone.app.theming',
+          'plone.batching >1.0.999'
       ],
       extras_require={
           'test': [
