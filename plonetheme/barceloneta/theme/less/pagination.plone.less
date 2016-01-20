@@ -6,14 +6,12 @@
   list-style: none;
   margin: @plone-line-height-computed 0;
   li {
-    display: inline;
-    line-height: 0;
+    display: block;
+    float: left; // Collapse white-space
     position: relative;
     padding: 0;
     font-weight: @plone-font-weight-light;
     > a, > span {
-      position: relative;
-      float: left; // Collapse white-space
       padding: @plone-padding-base-vertical @plone-padding-base-horizontal;
       line-height: @plone-line-height-base;
       text-decoration: none;

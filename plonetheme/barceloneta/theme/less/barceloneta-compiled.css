@@ -2270,22 +2270,19 @@ fieldset[disabled] .link-parent.active {
   color: #777777;
 }
 .pagination {
-  display: inline-block;
   padding: 0;
   list-style: none;
   margin: 20px 0;
 }
 .pagination li {
-  display: inline;
-  line-height: 0;
+  display: block;
+  float: left;
   position: relative;
   padding: 0;
   font-weight: 300;
 }
 .pagination li > a,
 .pagination li > span {
-  position: relative;
-  float: left;
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
