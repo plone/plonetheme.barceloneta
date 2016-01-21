@@ -2269,71 +2269,65 @@ fieldset[disabled] .link-parent.active {
 .plone-breadcrumb ol > #breadcrumbs-current {
   color: #777777;
 }
-.listingBar {
-  display: inline-block;
+.pagination {
   padding: 0;
   list-style: none;
   margin: 20px 0;
 }
-.listingBar > li {
-  display: inline;
-  line-height: 0;
+.pagination li {
+  display: block;
+  float: left;
   position: relative;
   padding: 0;
   font-weight: 300;
 }
-.listingBar > li a {
-  position: relative;
-  float: left;
+.pagination li > a,
+.pagination li > span {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
   color: #007bb1;
   background-color: #fff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5 !important;
   margin-left: -1px;
 }
-.listingBar > li:first-child > a {
+.pagination li:first-child > a {
   margin-left: 0;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-.listingBar > li:last-child > a {
+.pagination li:last-child > a {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
 }
-.listingBar > li a:hover,
-.listingBar > li a:focus {
+.pagination li > a:hover,
+.pagination li > a:focus {
   color: #004665;
   background-color: #f2f1f1;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5 !important;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
-.listingBar > .active > a,
-.listingBar > .active > a:hover,
-.listingBar > .active > a:focus {
+.pagination li.active > span {
   z-index: 2;
   font-weight: 400;
   color: #fff;
   background-color: #007bb1;
-  border: #007bb1;
+  border: 1px solid #007bb1 !important;
   cursor: default;
 }
-.listingBar > .disabled > a,
-.listingBar > .disabled > a:hover,
-.listingBar > .disabled > a:focus {
+.pagination li.disabled > span {
   color: #cccccc;
   background-color: #fcfcfd;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5 !important;
   cursor: default;
 }
 @media (max-width: 480px) {
-  .listingBar li {
+  .pagination li {
     display: none;
   }
-  .listingBar li.previous,
-  .listingBar li.next {
+  .pagination li.previous,
+  .pagination li.next {
     display: inline;
   }
 }

@@ -2714,13 +2714,13 @@ body {
 .breadcrumb ol > #breadcrumbs-current {
   color: #777777;
 }
-.listingBar {
+.pagination {
   display: inline-block;
   padding: 0;
   list-style: none;
   margin: 20px 0;
 }
-.listingBar > li {
+.pagination > li {
   font-weight: 300;
   display: inline;
   line-height: 0;
@@ -2728,7 +2728,7 @@ body {
   padding: 0;
   font-weight: 100;
 }
-.listingBar > li a {
+.pagination > li a {
   position: relative;
   float: left;
   padding: 6px 12px;
@@ -2739,26 +2739,26 @@ body {
   border: 1px solid #e5e5e5;
   margin-left: -1px;
 }
-.listingBar > li:first-child > a {
+.pagination > li:first-child > a {
   margin-left: 0;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-.listingBar > li:last-child > a {
+.pagination > li:last-child > a {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
 }
-.listingBar > li a:hover,
-.listingBar > li a:focus {
+.pagination > li a:hover,
+.pagination > li a:focus {
   color: #004666;
   background-color: #f2f1f1;
   border-color: 1px solid #e5e5e5;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
-.listingBar > .active > a,
-.listingBar > .active > a:hover,
-.listingBar > .active > a:focus {
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus {
   z-index: 2;
   font-weight: 300;
   color: #ffffff;
@@ -2766,20 +2766,20 @@ body {
   border-color: #007bb3;
   cursor: default;
 }
-.listingBar > .disabled > a,
-.listingBar > .disabled > a:hover,
-.listingBar > .disabled > a:focus {
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
   color: #cccccc;
   background-color: #fcfcfd;
   border-color: 1px solid #e5e5e5;
   cursor: default;
 }
 @media (max-width: 480px) {
-  .listingBar li {
+  .pagination li {
     display: none;
   }
-  .listingBar li.previous,
-  .listingBar li.next {
+  .pagination li.previous,
+  .pagination li.next {
     display: inline;
   }
 }
