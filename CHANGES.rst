@@ -11,7 +11,8 @@ New:
 
 Fixes:
 
-- *add item here*
+- Follow best practice for readme.rst
+  [allcaps]
 
 
 1.6.16 (2016-01-08)
