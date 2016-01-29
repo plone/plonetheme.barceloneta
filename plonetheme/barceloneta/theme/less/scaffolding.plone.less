@@ -19,12 +19,18 @@ html {
 body {
   font-family: @plone-font-family-base;
   font-size: @plone-font-size-base;
-  font-weight: @plone-font-weight-medium;
   line-height: @plone-line-height-base;
   color: @plone-text-color;
   background-color: @plone-body-bg;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 //*// Reset fonts for relevant elements
@@ -93,12 +99,6 @@ hr {
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
-  color: #fff;
-  background-color: #000;
-}
-.sr-only a, .hiddenStructure a {
-  color: #fff;
-  background-color: #000;
 }
 
 // Use in conjunction with .sr-only to only display content when it's focused.
