@@ -14,6 +14,8 @@ Fixes:
 - Follow best practice for readme.rst
   [allcaps]
 
+- Fix sticky footer. (closes `#36`)
+
 
 1.6.16 (2016-01-08)
 -------------------
