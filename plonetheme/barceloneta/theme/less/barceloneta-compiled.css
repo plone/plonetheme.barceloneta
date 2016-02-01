@@ -3324,6 +3324,10 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-event:after {
 body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
   content: '\e80f';
 }
+.image-icon,
+.image-tile {
+  float: right;
+}
 #textAdjust .decrease-text {
   font-size: 12px;
 }
