@@ -332,4 +332,6 @@ Fixes:
 .. _`#1091`: https://github.com/plone/Products.CMFPlone/issues/1091
 .. _`#1105`: https://github.com/plone/Products.CMFPlone/issues/1105
 .. _`#1226`: https://github.com/plone/Products.CMFPlone/issues/1226
+.. _`#24`: https://github.com/plone/plonetheme.barceloneta/issues/24
+.. _`#57`: https://github.com/plone/plonetheme.barceloneta/issues/57
 .. _`#321`: https://github.com/plone/plone.app.contenttypes/issues/321
