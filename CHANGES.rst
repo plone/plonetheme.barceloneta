@@ -11,6 +11,9 @@ New:
 
 Fixes:
 
+- Inline ``style`` tags in head are no more skipped
+  [keul]
+
 - Follow best practice for readme.rst
   [allcaps]
 

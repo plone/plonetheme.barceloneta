@@ -22,6 +22,7 @@
     <drop css:content="head link[rel='shortcut icon']" />
     <!-- CSS -->
     <after css:theme-children="head" css:content="head link" />
+    <after css:theme-children="head" css:content="head style" />
     <!-- Script -->
     <after css:theme-children="head" css:content="head script" />
   </rules>
