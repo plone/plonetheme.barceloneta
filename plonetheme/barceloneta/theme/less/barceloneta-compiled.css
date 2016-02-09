@@ -2270,6 +2270,7 @@ fieldset[disabled] .link-parent.active {
   color: #777777;
 }
 .pagination {
+  display: inline-block;
   padding: 0;
   list-style: none;
   margin: 20px 0;
@@ -3414,6 +3415,9 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
 }
 .plone-modal .plone-modal-dialog .plone-modal-body {
   padding: 12px;
+}
+.plone-modal .plone-modal-dialog .plone-modal-body .modal-image {
+  text-align: center;
 }
 .plone-modal .plone-modal-dialog .plone-modal-footer {
   border-top: 1px solid #cccccc;
