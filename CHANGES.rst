@@ -14,6 +14,9 @@ Fixes:
 - Follow best practice for readme.rst
   [allcaps]
 
+- Center the leadimage on the modal window.
+  Partially close `#321`_.
+  [keul]
 
 1.6.16 (2016-01-08)
 -------------------
@@ -329,3 +332,4 @@ Fixes:
 .. _`#1091`: https://github.com/plone/Products.CMFPlone/issues/1091
 .. _`#1105`: https://github.com/plone/Products.CMFPlone/issues/1105
 .. _`#1226`: https://github.com/plone/Products.CMFPlone/issues/1226
+.. _`#321`: https://github.com/plone/plone.app.contenttypes/issues/321
