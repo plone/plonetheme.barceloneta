@@ -10,7 +10,8 @@ Incompatibilities:
 
 New:
 
-- *add item here*
+- Action control panel specific rendering
+  [ebrehault]
 
 Fixes:
 
