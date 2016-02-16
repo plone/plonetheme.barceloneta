@@ -11,6 +11,9 @@ New:
 
 Fixes:
 
+- Add ``barceloneta-mixin-font`` to the registerless profile.
+  [pcdummy]
+
 - Inline ``style`` tags in head are no more skipped
   [keul]
 
