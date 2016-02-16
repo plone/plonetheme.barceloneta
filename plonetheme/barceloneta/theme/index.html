@@ -54,5 +54,23 @@
     <footer id="portal-footer-wrapper" role="contentinfo">
       <div class="container" id="portal-footer"></div>
     </footer>
+
+    <!-- STICKY FOOTER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+      function stickyFooter() {
+        var footerHeight = $('#portal-footer-wrapper').outerHeight()
+        $('body').css('padding-bottom', footerHeight);
+        $('footer').css('height', footerHeight);
+      }
+
+      $(document).ready(function(){
+        stickyFooter();
+      });
+
+      $( window ).resize(function() {
+        stickyFooter();
+      });
+    </script>
   </body>
 </html>

@@ -339,6 +339,8 @@ th {
   box-sizing: border-box;
 }
 html {
+  position: relative;
+  min-height: 100%;
   font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -4067,6 +4069,13 @@ a.plone-toolbar-logo {
   .plone-toolbar-left-expanded .container {
     width: 1170px;
   }
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
 }
 #portal-footer-wrapper {
   padding: 30px 15px;
