@@ -23,6 +23,8 @@ Fixes:
 - Center the leadimage on the modal window.
   Partially close `#321`_.
   [keul]
+- Fix sticky footer. (closes `#36`)
+
 
 1.6.16 (2016-01-08)
 -------------------

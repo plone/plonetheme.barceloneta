@@ -347,7 +347,6 @@ html {
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  font-weight: 500;
   line-height: 1.42857143;
   color: #4d4d4d;
   background-color: #fafafa;
@@ -399,13 +398,6 @@ hr {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-  color: #fff;
-  background-color: #000;
-}
-.sr-only a,
-.hiddenStructure a {
-  color: #fff;
-  background-color: #000;
 }
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
@@ -3270,9 +3262,6 @@ body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-news-item:befor
 }
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"] {
   padding: 5px 15px 5px 50px;
-}
-body#visual-portal-wrapper.pat-plone #edit-zone a {
-  color: #fff;
 }
 body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"]:after {
   font-family: "Fontello";
