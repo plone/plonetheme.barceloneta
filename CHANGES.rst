@@ -11,6 +11,9 @@ New:
 
 Fixes:
 
+- Complete the ``theme.xml`` GenericSetup registry file with an a xmlheader and a ``themes`` tag.
+  [thet]
+
 - Add ``barceloneta-mixin-font`` to the registerless profile.
   [pcdummy]
 
