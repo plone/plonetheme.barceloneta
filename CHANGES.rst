@@ -24,6 +24,10 @@ Fixes:
   Partially close `#321`_.
   [keul]
 
+- Fix filenames for roboto-lightitalic.ttf, -mediumitalic.ttd
+  and -bolditalic.ttf to match those in less files
+  [datakurre]
+
 1.6.16 (2016-01-08)
 -------------------
 
