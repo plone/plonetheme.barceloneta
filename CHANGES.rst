@@ -11,6 +11,10 @@ New:
 
 Fixes:
 
+- Move hero to content
+  Issue https://github.com/plone/Products.CMFPlone/issues/974
+  [gyst]
+
 - Add ``barceloneta-mixin-font`` to the registerless profile.
   [pcdummy]
 

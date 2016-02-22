@@ -33,8 +33,10 @@
   <!-- move global nav -->
   <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
 
-  <!-- include view @@hero on homepage only -->
-  <after css:theme="#mainnavigation-wrapper" css:content=".principal" href="/@@hero" css:if-content="body.template-document_view.section-front-page" />
+  <!-- move hero to top -->
+  <replace css:theme-children="#hero .gigantic" css:content-children=".hero"/>
+  <drop css:theme="#hero" css:if-not-content=".hero" />
+  <drop css:content=".hero" />
 
   <!-- full-width breadcrumb -->
   <replace css:content="#viewlet-above-content" css:theme="#above-content" />
