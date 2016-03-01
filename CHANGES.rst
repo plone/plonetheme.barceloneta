@@ -21,6 +21,12 @@ Fixes:
 
 - Fix code analysis errors reported by http://jenkins.plone.org/view/Pkgs/job/package-plonetheme.barceloneta
   [gforcada]
+- Fixed html validation:
+  - section lacks heading
+  - the banner role is unnecessary for element header
+  - element main does not need a role attribute
+  - the contentinfo role is unnecessary for element footer.
+  [maurits]
 
 
 1.6.17 (2016-02-27)
