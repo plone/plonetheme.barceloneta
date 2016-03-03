@@ -43,6 +43,8 @@ Fixes:
 - Center the leadimage on the modal window.
   Partially close `#321`_.
   [keul]
+- Fix sticky footer. (closes `#36`)
+
 
 - Fix filenames for roboto-lightitalic.ttf, -mediumitalic.ttd
   and -bolditalic.ttf to match those in less files
