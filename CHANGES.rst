@@ -14,7 +14,9 @@ New:
 
 Fixes:
 
-- *add item here*
+- Improved "feel" for the Site Setup (@@overview-controlpanel)
+  https://github.com/plone/Products.CMFPlone/issues/1435
+  [pigeonflight]
 
 
 1.6.17 (2016-02-27)

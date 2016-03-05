@@ -3099,6 +3099,10 @@ fieldset[disabled] .link-parent.active {
 .portletNavigationTree.portletSiteSetup nav.portletContent > ul > li a {
   border: none;
   padding: 0px;
+  color: #4D4D4D;
+}
+.portletNavigationTree.portletSiteSetup nav.portletContent > ul > li a:hover {
+  text-decoration: none;
 }
 .portletNavigationTree.portletSiteSetup a {
   border: none;
@@ -3129,6 +3133,7 @@ fieldset[disabled] .link-parent.active {
 .portletNavigationTree.portletSiteSetup .inner-configlet:hover {
   background: rgba(255, 255, 255, 0.67);
   border-radius: 5px;
+  box-shadow: inset 1px 1px 3px #bbbbbb;
 }
 .portletNavigationTree.portletSiteSetup .inner-configlet:hover span {
   color: #333;
