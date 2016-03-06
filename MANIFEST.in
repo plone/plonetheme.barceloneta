@@ -1,4 +1,4 @@
 recursive-include plonetheme *
-include *
+include *.rst *.js *.json *.html
 global-exclude *.pyc
 prune design
