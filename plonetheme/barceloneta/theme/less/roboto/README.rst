@@ -16,7 +16,7 @@ Other formats are generated with:
     `http://www.fontsquirrel.com/tools/webfont-generator`
 
 
-For the used settings upload the `generator_config.txt` file to the generator. 
+For the used settings upload the `generator_config.txt` file to the generator.
 
 
 Subsetting
@@ -65,7 +65,7 @@ id's as supplied in the font-face declarations by Font Squirrel:
  - roboto-regular.svg#robotoregular
  - roboto-thin.svg#robotothin
  - roboto-thinitalic.svg#robotothin_italic
- 
+
  - robotocondensed-regular.svg#roboto_condensedregular
  - robotocondensed-lightitalic.svg#roboto_condensedlight_italic
  - robotocondensed-bolditalic.svg#roboto_condensedbold_italic
