@@ -10,11 +10,11 @@ Download
 The Roboto ttf fonts in this directory are downloaded from:
 
     `http://www.fontsquirrel.com/fonts/roboto-2014`
-	
+
 Other formats are generated with:
 
-	`http://www.fontsquirrel.com/tools/webfont-generator`
-	
+    `http://www.fontsquirrel.com/tools/webfont-generator`
+
 
 For the used settings upload the `generator_config.txt` file to the generator. 
 
