@@ -18,6 +18,9 @@ Fixes:
   https://github.com/plone/Products.CMFPlone/issues/1435
   [pigeonflight]
 
+- Fix code analysis errors reported by http://jenkins.plone.org/view/Pkgs/job/package-plonetheme.barceloneta
+  [gforcada]
+
 
 1.6.17 (2016-02-27)
 -------------------
