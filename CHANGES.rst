@@ -21,10 +21,10 @@ Fixes:
 
 - Fix code analysis errors reported by http://jenkins.plone.org/view/Pkgs/job/package-plonetheme.barceloneta
   [gforcada]
+- Drop toolbar for anonymous users.
 - Fixed html validation:
-  - section lacks heading
-  - the banner role is unnecessary for element header
-  - element main does not need a role attribute
+  - the banner role is unnecessary for element header,
+  - element main does not need a role attribute,
   - the contentinfo role is unnecessary for element footer.
   [maurits]
 
