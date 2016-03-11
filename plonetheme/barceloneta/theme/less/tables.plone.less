@@ -50,6 +50,25 @@ th { text-align: left; color: @plone-gray-dark;}
   }
 }
 
+//*// invisible grid table plone class
+.invisible-grid {
+  width: 100%;
+  margin-bottom: @plone-line-height-computed;
+  border: 0;
+  background: transparent;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: 0;
+      }
+    }
+  }
+}
+
 // Zebra-striping
 .listing {
   > tbody > tr:nth-child(odd) {
