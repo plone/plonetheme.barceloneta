@@ -10,6 +10,9 @@ Incompatibilities:
 
 New:
 
+- added invisible-grid table styles
+  [agitator]
+
 - Action control panel specific rendering
   [ebrehault]
 
