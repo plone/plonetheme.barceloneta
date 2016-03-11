@@ -3196,6 +3196,15 @@ fieldset[disabled] .link-parent.active {
 .template-usergroup-userprefs form {
   overflow: scroll;
 }
+.template-actions-controlpanel #content-core .addAction {
+  height: 2em;
+}
+.template-actions-controlpanel #content-core section.portlet {
+  clear: both;
+}
+.template-actions-controlpanel #content-core ol.configlets li {
+  margin: 1.2em;
+}
 .link-category {
   display: inline;
   padding: .2em .6em .3em;
