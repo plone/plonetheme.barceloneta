@@ -1330,6 +1330,20 @@ th {
 .listing .listing {
   background-color: #fafafa;
 }
+.invisible-grid {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0;
+  background: transparent;
+}
+.invisible-grid > thead > tr > th,
+.invisible-grid > tbody > tr > th,
+.invisible-grid > tfoot > tr > th,
+.invisible-grid > thead > tr > td,
+.invisible-grid > tbody > tr > td,
+.invisible-grid > tfoot > tr > td {
+  border: 0;
+}
 .listing > tbody > tr:nth-child(odd) > td,
 .listing > tbody > tr:nth-child(odd) > th {
   background-color: #f6f6f6;
@@ -3195,6 +3209,15 @@ fieldset[disabled] .link-parent.active {
 .template-usergroup-groupprefs form,
 .template-usergroup-userprefs form {
   overflow: scroll;
+}
+.template-actions-controlpanel #content-core .addAction {
+  height: 2em;
+}
+.template-actions-controlpanel #content-core section.portlet {
+  clear: both;
+}
+.template-actions-controlpanel #content-core ol.configlets li {
+  margin: 1.2em;
 }
 .link-category {
   display: inline;
