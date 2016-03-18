@@ -3713,104 +3713,7 @@ ul.picker__list {
   background: #cccccc;
 }
 #portal-header {
-  margin: 0 auto 15px;
-  padding-top: 15px;
-  margin-bottom: 20px;
-}
-#portal-header #portal-logo {
-  float: left;
-}
-#portal-header #portal-languageselector {
-  float: left;
-  clear: both;
-  display: inline-block;
-  margin-right: 29px;
-  padding-top: 5px;
-}
-#portal-header #portal-languageselector li {
-  display: inline-block;
-  margin-right: 10px;
-}
-#portal-header #portal-anontools {
-  float: right;
-}
-#portal-header #portal-anontools ul {
-  padding-right: 0px;
-}
-#portal-header #portal-searchbox {
-  padding-top: 20px;
-  clear: left;
-  width: 67%;
-  position: absolute;
-  z-index: 2;
-  margin-left: 3px;
-  margin-top: 60px;
-  white-space: nowrap;
-}
-#portal-header #portal-searchbox .searchSection {
-  display: none;
-}
-#portal-header #portal-searchbox [type="text"] {
-  width: 100%;
-  display: inline-block;
-}
-#portal-header #portal-searchbox [type="submit"] {
-  display: none;
-}
-#portal-header #portal-searchbox label {
-  font-size: 86.667%;
-}
-#portal-header #portal-searchbox form > div {
-  font-size: 0;
-}
-#portal-header #portal-searchbox form > div > * {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  #portal-header #portal-languageselector {
-    float: right;
-    clear: none;
-  }
-  #portal-header #portal-anontools {
-    float: right;
-  }
-  #portal-header #portal-searchbox {
-    position: relative;
-    margin-top: 5px;
-    margin-bottom: -5px;
-    margin-left: 1em;
-    padding-top: 0;
-    clear: none;
-    float: right;
-    max-width: 50%;
-    width: 250px;
-    white-space: nowrap;
-  }
-  #portal-header #portal-searchbox .searchSection {
-    display: inherit;
-  }
-  #portal-header #portal-searchbox [type="text"] {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    width: 180px;
-    display: inline-block;
-  }
-  #portal-header #portal-searchbox [type="submit"] {
-    display: none;
-    width: 70px;
-    display: inline-block;
-    margin-left: -1px;
-    vertical-align: top;
-  }
-  #portal-header #portal-searchbox label {
-    font-size: 86.667%;
-  }
-  #portal-header #portal-searchbox form > div {
-    font-size: 0;
-  }
-  #portal-header #portal-searchbox form > div > * {
-    font-size: 14px;
-  }
+  margin: 15px auto 20px;
 }
 #portal-header:before,
 #portal-header:after {
@@ -3819,6 +3722,82 @@ ul.picker__list {
 }
 #portal-header:after {
   clear: both;
+}
+#portal-logo {
+  float: left;
+}
+#portal-languageselector {
+  clear: both;
+  display: inline-block;
+  float: left;
+  margin-right: 29px;
+  padding-top: 5px;
+}
+#portal-languageselector li {
+  display: inline-block;
+  margin-right: 10px;
+}
+#portal-anontools {
+  float: right;
+}
+#portal-anontools ul {
+  padding-right: 0;
+}
+#portal-searchbox {
+  clear: left;
+  margin-left: 3px;
+  margin-top: 60px;
+  padding-top: 20px;
+  position: absolute;
+  white-space: nowrap;
+  width: 67%;
+  z-index: 2;
+}
+#portal-searchbox .searchSection {
+  display: none;
+}
+#portal-searchbox [type="submit"] {
+  display: none;
+}
+#portal-searchbox label {
+  font-size: 86.667%;
+}
+#searchbox_currentfolder_only {
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  #portal-header {
+    margin-bottom: 15px;
+  }
+  #portal-languageselector {
+    clear: none;
+    float: right;
+  }
+  #portal-searchbox {
+    clear: none;
+    float: right;
+    margin-left: 1em;
+    margin-top: 5px;
+    max-width: 50%;
+    padding-top: 0;
+    position: relative;
+    width: 250px;
+  }
+  #portal-searchbox .searchSection {
+    display: inherit;
+  }
+  #portal-searchbox [type="text"] {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    float: left;
+    width: 180px;
+  }
+  #portal-searchbox [type="submit"] {
+    display: inline-block;
+    margin-left: -1px;
+    vertical-align: top;
+    width: 70px;
+  }
 }
 .plone-nav {
   margin-bottom: 0;
