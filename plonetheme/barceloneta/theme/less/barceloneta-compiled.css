@@ -1496,6 +1496,7 @@ output {
 }
 /*.form-control,*/
 input[type="text"],
+input[type="email"],
 input[type="password"],
 textarea,
 select {
@@ -1517,6 +1518,7 @@ select {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 input[type="text"]:focus,
+input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
@@ -1526,6 +1528,7 @@ select:focus {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(100, 190, 232, 0.6);
 }
 input[type="text"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
 input[type="password"]::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder {
@@ -1533,26 +1536,31 @@ select::-moz-placeholder {
   opacity: 1;
 }
 input[type="text"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 select:-ms-input-placeholder {
   color: #777777;
 }
 input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 select::-webkit-input-placeholder {
   color: #777777;
 }
 input[type="text"][disabled],
+input[type="email"][disabled],
 input[type="password"][disabled],
 textarea[disabled],
 select[disabled],
 input[type="text"][readonly],
+input[type="email"][readonly],
 input[type="password"][readonly],
 textarea[readonly],
 select[readonly],
 fieldset[disabled] input[type="text"],
+fieldset[disabled] input[type="email"],
 fieldset[disabled] input[type="password"],
 fieldset[disabled] textarea,
 fieldset[disabled] select {

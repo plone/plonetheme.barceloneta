@@ -11,6 +11,7 @@ Incompatibilities:
 New:
 
 - isolate calendar portlet styles
+- extended form styles for input type="email"
   [agitator]
 
 - added invisible-grid table styles
