@@ -2188,6 +2188,23 @@ fieldset[disabled] .link-parent.active {
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.btn .caret {
+  margin-left: 0;
+}
+.btn-lg .caret {
+  border-width: 5px 5px 0;
+  border-bottom-width: 0;
+}
 .state-draft {
   color: #d39105;
 }

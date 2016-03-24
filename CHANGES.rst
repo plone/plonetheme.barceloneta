@@ -10,16 +10,19 @@ Incompatibilities:
 
 New:
 
-- extended form styles for input type="email"
+- Add missing caret styles.
+  [thet]
+  
+- Extended form styles for input type="email".
   [agitator]
 
-- isolate calendar portlet styles
+- Isolate calendar portlet styles.
   [agitator]
 
-- added invisible-grid table styles
+- Added invisible-grid table styles.
   [agitator]
 
-- Action control panel specific rendering
+- Action control panel specific rendering.
   [ebrehault]
 
 Fixes:
