@@ -2706,42 +2706,42 @@ fieldset[disabled] .link-parent.active {
 .portlet .portletContent > ul li:hover a:before {
   color: #64bee8;
 }
-.portlet .portletContent table {
+.portlet.portletCalendar table {
   width: 100%;
   text-align: center;
   vertical-align: middle;
   border-collapse: collapse;
   border-spacing: 0;
 }
-.portlet .portletContent table tr {
+.portlet.portletCalendar table tr {
   line-height: 30px;
 }
-.portlet .portletContent table thead {
+.portlet.portletCalendar table thead {
   background: #fcfcfd;
   border-bottom: 1px solid #e5e5e5;
 }
-.portlet .portletContent table thead th {
+.portlet.portletCalendar table thead th {
   color: #696969;
   font-weight: 300;
   height: 40px;
   text-align: center;
 }
-.portlet .portletContent table td > * {
+.portlet.portletCalendar table td > * {
   border-radius: 50%;
   display: inline-block;
   width: 20px;
   height: 20px;
   line-height: 20px;
 }
-.portlet .portletContent table .cal_has_events {
+.portlet.portletCalendar table .cal_has_events {
   position: relative;
 }
-.portlet .portletContent table .cal_has_events a:hover {
+.portlet.portletCalendar table .cal_has_events a:hover {
   background: #dbecfe;
   text-decoration: none;
   box-shadow: 0 0 0 5px #dbecfe;
 }
-.portlet .portletContent table .cal_has_events a:after {
+.portlet.portletCalendar table .cal_has_events a:after {
   content: "•";
   position: absolute;
   margin-left: 50%;
@@ -2750,39 +2750,39 @@ fieldset[disabled] .link-parent.active {
   color: #a7daf2;
   margin-top: 9px;
 }
-.portlet .portletContent table .cal_has_events a:hover:after {
+.portlet.portletCalendar table .cal_has_events a:hover:after {
   color: #64bee8;
 }
-.portlet .portletContent table .cal_next_month,
-.portlet .portletContent table .cal_prev_month {
+.portlet.portletCalendar table .cal_next_month,
+.portlet.portletCalendar table .cal_prev_month {
   color: #000;
 }
-.portlet .portletContent table .cal_next_month.cal_has_events > a,
-.portlet .portletContent table .cal_prev_month.cal_has_events > a {
+.portlet.portletCalendar table .cal_next_month.cal_has_events > a,
+.portlet.portletCalendar table .cal_prev_month.cal_has_events > a {
   color: #a7daf2;
 }
-.portlet .portletContent table .cal_next_month.cal_has_events > a:after,
-.portlet .portletContent table .cal_prev_month.cal_has_events > a:after {
+.portlet.portletCalendar table .cal_next_month.cal_has_events > a:after,
+.portlet.portletCalendar table .cal_prev_month.cal_has_events > a:after {
   color: #d3edf8;
 }
-.portlet .portletContent table .cal_next_month.cal_has_events > a:hover,
-.portlet .portletContent table .cal_prev_month.cal_has_events > a:hover {
+.portlet.portletCalendar table .cal_next_month.cal_has_events > a:hover,
+.portlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover {
   color: #004665;
 }
-.portlet .portletContent table .cal_next_month.cal_has_events > a:hover:after,
-.portlet .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
+.portlet.portletCalendar table .cal_next_month.cal_has_events > a:hover:after,
+.portlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover:after {
   color: #64bee8;
 }
-.portlet .portletContent table .today > * {
+.portlet.portletCalendar table .today > * {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
   color: #000;
 }
-.portlet .portletContent table tbody tr:first-child td > * {
+.portlet.portletCalendar table tbody tr:first-child td > * {
   margin-top: 10px;
 }
-.portlet .portletContent table tbody tr:last-child td > * {
+.portlet.portletCalendar table tbody tr:last-child td > * {
   margin-bottom: 10px;
 }
 .portlet .formControls {
@@ -2999,42 +2999,42 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet .portletContent > ul li:hover a:before {
   color: #64bee8;
 }
-.managedPortlet .portletContent table {
+.managedPortlet.portletCalendar table {
   width: 100%;
   text-align: center;
   vertical-align: middle;
   border-collapse: collapse;
   border-spacing: 0;
 }
-.managedPortlet .portletContent table tr {
+.managedPortlet.portletCalendar table tr {
   line-height: 30px;
 }
-.managedPortlet .portletContent table thead {
+.managedPortlet.portletCalendar table thead {
   background: #fcfcfd;
   border-bottom: 1px solid #e5e5e5;
 }
-.managedPortlet .portletContent table thead th {
+.managedPortlet.portletCalendar table thead th {
   color: #696969;
   font-weight: 300;
   height: 40px;
   text-align: center;
 }
-.managedPortlet .portletContent table td > * {
+.managedPortlet.portletCalendar table td > * {
   border-radius: 50%;
   display: inline-block;
   width: 20px;
   height: 20px;
   line-height: 20px;
 }
-.managedPortlet .portletContent table .cal_has_events {
+.managedPortlet.portletCalendar table .cal_has_events {
   position: relative;
 }
-.managedPortlet .portletContent table .cal_has_events a:hover {
+.managedPortlet.portletCalendar table .cal_has_events a:hover {
   background: #dbecfe;
   text-decoration: none;
   box-shadow: 0 0 0 5px #dbecfe;
 }
-.managedPortlet .portletContent table .cal_has_events a:after {
+.managedPortlet.portletCalendar table .cal_has_events a:after {
   content: "•";
   position: absolute;
   margin-left: 50%;
@@ -3043,39 +3043,39 @@ fieldset[disabled] .link-parent.active {
   color: #a7daf2;
   margin-top: 9px;
 }
-.managedPortlet .portletContent table .cal_has_events a:hover:after {
+.managedPortlet.portletCalendar table .cal_has_events a:hover:after {
   color: #64bee8;
 }
-.managedPortlet .portletContent table .cal_next_month,
-.managedPortlet .portletContent table .cal_prev_month {
+.managedPortlet.portletCalendar table .cal_next_month,
+.managedPortlet.portletCalendar table .cal_prev_month {
   color: #000;
 }
-.managedPortlet .portletContent table .cal_next_month.cal_has_events > a,
-.managedPortlet .portletContent table .cal_prev_month.cal_has_events > a {
+.managedPortlet.portletCalendar table .cal_next_month.cal_has_events > a,
+.managedPortlet.portletCalendar table .cal_prev_month.cal_has_events > a {
   color: #a7daf2;
 }
-.managedPortlet .portletContent table .cal_next_month.cal_has_events > a:after,
-.managedPortlet .portletContent table .cal_prev_month.cal_has_events > a:after {
+.managedPortlet.portletCalendar table .cal_next_month.cal_has_events > a:after,
+.managedPortlet.portletCalendar table .cal_prev_month.cal_has_events > a:after {
   color: #d3edf8;
 }
-.managedPortlet .portletContent table .cal_next_month.cal_has_events > a:hover,
-.managedPortlet .portletContent table .cal_prev_month.cal_has_events > a:hover {
+.managedPortlet.portletCalendar table .cal_next_month.cal_has_events > a:hover,
+.managedPortlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover {
   color: #004665;
 }
-.managedPortlet .portletContent table .cal_next_month.cal_has_events > a:hover:after,
-.managedPortlet .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
+.managedPortlet.portletCalendar table .cal_next_month.cal_has_events > a:hover:after,
+.managedPortlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover:after {
   color: #64bee8;
 }
-.managedPortlet .portletContent table .today > * {
+.managedPortlet.portletCalendar table .today > * {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
   color: #000;
 }
-.managedPortlet .portletContent table tbody tr:first-child td > * {
+.managedPortlet.portletCalendar table tbody tr:first-child td > * {
   margin-top: 10px;
 }
-.managedPortlet .portletContent table tbody tr:last-child td > * {
+.managedPortlet.portletCalendar table tbody tr:last-child td > * {
   margin-bottom: 10px;
 }
 .managedPortlet .formControls {
@@ -4291,50 +4291,50 @@ body.template-login_form #content-core .portletContent > ul li:hover a:before,
 body.template-logged_out #content-core .portletContent > ul li:hover a:before {
   color: #64bee8;
 }
-body.template-login_form #content-core .portletContent table,
-body.template-logged_out #content-core .portletContent table {
+body.template-login_form #content-core.portletCalendar table,
+body.template-logged_out #content-core.portletCalendar table {
   width: 100%;
   text-align: center;
   vertical-align: middle;
   border-collapse: collapse;
   border-spacing: 0;
 }
-body.template-login_form #content-core .portletContent table tr,
-body.template-logged_out #content-core .portletContent table tr {
+body.template-login_form #content-core.portletCalendar table tr,
+body.template-logged_out #content-core.portletCalendar table tr {
   line-height: 30px;
 }
-body.template-login_form #content-core .portletContent table thead,
-body.template-logged_out #content-core .portletContent table thead {
+body.template-login_form #content-core.portletCalendar table thead,
+body.template-logged_out #content-core.portletCalendar table thead {
   background: #fcfcfd;
   border-bottom: 1px solid #e5e5e5;
 }
-body.template-login_form #content-core .portletContent table thead th,
-body.template-logged_out #content-core .portletContent table thead th {
+body.template-login_form #content-core.portletCalendar table thead th,
+body.template-logged_out #content-core.portletCalendar table thead th {
   color: #696969;
   font-weight: 300;
   height: 40px;
   text-align: center;
 }
-body.template-login_form #content-core .portletContent table td > *,
-body.template-logged_out #content-core .portletContent table td > * {
+body.template-login_form #content-core.portletCalendar table td > *,
+body.template-logged_out #content-core.portletCalendar table td > * {
   border-radius: 50%;
   display: inline-block;
   width: 20px;
   height: 20px;
   line-height: 20px;
 }
-body.template-login_form #content-core .portletContent table .cal_has_events,
-body.template-logged_out #content-core .portletContent table .cal_has_events {
+body.template-login_form #content-core.portletCalendar table .cal_has_events,
+body.template-logged_out #content-core.portletCalendar table .cal_has_events {
   position: relative;
 }
-body.template-login_form #content-core .portletContent table .cal_has_events a:hover,
-body.template-logged_out #content-core .portletContent table .cal_has_events a:hover {
+body.template-login_form #content-core.portletCalendar table .cal_has_events a:hover,
+body.template-logged_out #content-core.portletCalendar table .cal_has_events a:hover {
   background: #dbecfe;
   text-decoration: none;
   box-shadow: 0 0 0 5px #dbecfe;
 }
-body.template-login_form #content-core .portletContent table .cal_has_events a:after,
-body.template-logged_out #content-core .portletContent table .cal_has_events a:after {
+body.template-login_form #content-core.portletCalendar table .cal_has_events a:after,
+body.template-logged_out #content-core.portletCalendar table .cal_has_events a:after {
   content: "•";
   position: absolute;
   margin-left: 50%;
@@ -4343,53 +4343,53 @@ body.template-logged_out #content-core .portletContent table .cal_has_events a:a
   color: #a7daf2;
   margin-top: 9px;
 }
-body.template-login_form #content-core .portletContent table .cal_has_events a:hover:after,
-body.template-logged_out #content-core .portletContent table .cal_has_events a:hover:after {
+body.template-login_form #content-core.portletCalendar table .cal_has_events a:hover:after,
+body.template-logged_out #content-core.portletCalendar table .cal_has_events a:hover:after {
   color: #64bee8;
 }
-body.template-login_form #content-core .portletContent table .cal_next_month,
-body.template-logged_out #content-core .portletContent table .cal_next_month,
-body.template-login_form #content-core .portletContent table .cal_prev_month,
-body.template-logged_out #content-core .portletContent table .cal_prev_month {
+body.template-login_form #content-core.portletCalendar table .cal_next_month,
+body.template-logged_out #content-core.portletCalendar table .cal_next_month,
+body.template-login_form #content-core.portletCalendar table .cal_prev_month,
+body.template-logged_out #content-core.portletCalendar table .cal_prev_month {
   color: #000;
 }
-body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a,
-body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a,
-body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a,
-body.template-logged_out #content-core .portletContent table .cal_prev_month.cal_has_events > a {
+body.template-login_form #content-core.portletCalendar table .cal_next_month.cal_has_events > a,
+body.template-logged_out #content-core.portletCalendar table .cal_next_month.cal_has_events > a,
+body.template-login_form #content-core.portletCalendar table .cal_prev_month.cal_has_events > a,
+body.template-logged_out #content-core.portletCalendar table .cal_prev_month.cal_has_events > a {
   color: #a7daf2;
 }
-body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a:after,
-body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a:after,
-body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a:after,
-body.template-logged_out #content-core .portletContent table .cal_prev_month.cal_has_events > a:after {
+body.template-login_form #content-core.portletCalendar table .cal_next_month.cal_has_events > a:after,
+body.template-logged_out #content-core.portletCalendar table .cal_next_month.cal_has_events > a:after,
+body.template-login_form #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:after,
+body.template-logged_out #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:after {
   color: #d3edf8;
 }
-body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a:hover,
-body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a:hover,
-body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover,
-body.template-logged_out #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover {
+body.template-login_form #content-core.portletCalendar table .cal_next_month.cal_has_events > a:hover,
+body.template-logged_out #content-core.portletCalendar table .cal_next_month.cal_has_events > a:hover,
+body.template-login_form #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:hover,
+body.template-logged_out #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:hover {
   color: #004665;
 }
-body.template-login_form #content-core .portletContent table .cal_next_month.cal_has_events > a:hover:after,
-body.template-logged_out #content-core .portletContent table .cal_next_month.cal_has_events > a:hover:after,
-body.template-login_form #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover:after,
-body.template-logged_out #content-core .portletContent table .cal_prev_month.cal_has_events > a:hover:after {
+body.template-login_form #content-core.portletCalendar table .cal_next_month.cal_has_events > a:hover:after,
+body.template-logged_out #content-core.portletCalendar table .cal_next_month.cal_has_events > a:hover:after,
+body.template-login_form #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:hover:after,
+body.template-logged_out #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:hover:after {
   color: #64bee8;
 }
-body.template-login_form #content-core .portletContent table .today > *,
-body.template-logged_out #content-core .portletContent table .today > * {
+body.template-login_form #content-core.portletCalendar table .today > *,
+body.template-logged_out #content-core.portletCalendar table .today > * {
   background: #e5e5e5;
   font-weight: 500;
   box-shadow: 0 0 0 5px #e5e5e5;
   color: #000;
 }
-body.template-login_form #content-core .portletContent table tbody tr:first-child td > *,
-body.template-logged_out #content-core .portletContent table tbody tr:first-child td > * {
+body.template-login_form #content-core.portletCalendar table tbody tr:first-child td > *,
+body.template-logged_out #content-core.portletCalendar table tbody tr:first-child td > * {
   margin-top: 10px;
 }
-body.template-login_form #content-core .portletContent table tbody tr:last-child td > *,
-body.template-logged_out #content-core .portletContent table tbody tr:last-child td > * {
+body.template-login_form #content-core.portletCalendar table tbody tr:last-child td > *,
+body.template-logged_out #content-core.portletCalendar table tbody tr:last-child td > * {
   margin-bottom: 10px;
 }
 body.template-login_form #content-core .formControls,

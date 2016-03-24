@@ -10,6 +10,9 @@ Incompatibilities:
 
 New:
 
+- isolate calendar portlet styles
+  [agitator]
+
 - added invisible-grid table styles
   [agitator]
 
