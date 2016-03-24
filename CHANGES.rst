@@ -10,8 +10,10 @@ Incompatibilities:
 
 New:
 
-- isolate calendar portlet styles
 - extended form styles for input type="email"
+  [agitator]
+
+- isolate calendar portlet styles
   [agitator]
 
 - added invisible-grid table styles
