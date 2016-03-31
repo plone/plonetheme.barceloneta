@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<registry>
+
+  <!-- introduce own less variable -->
+  <records prefix="plone"
+          interface="Products.ResourceRegistries.interfaces.settings.IResourceRegistriesSettings">
+    <value key="lessvariables" purge="False">
+      <element key="barcelonetaPath">\"{site_url}/++theme++barceloneta/\"</element>
+    </value>
+  </records>
+
+</registry>
