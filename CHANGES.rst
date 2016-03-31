@@ -1,12 +1,8 @@
 Changelog
 =========
 
-1.6.18 (unreleased)
+1.6.18 (2016-03-31)
 -------------------
-
-Incompatibilities:
-
-- *add item here*
 
 New:
 
