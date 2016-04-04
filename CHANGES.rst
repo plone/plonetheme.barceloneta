@@ -1,20 +1,13 @@
 Changelog
 =========
 
-1.6.19 (unreleased)
+1.6.19 (2016-04-04)
 -------------------
-
-Incompatibilities:
-
-- *add item here*
-
-New:
-
-- *add item here*
 
 Fixes:
 
-- *add item here*
+- Fixed the search button problem that occurred during translations to different languages 
+  [kkhan]
 
 
 1.6.18 (2016-03-31)

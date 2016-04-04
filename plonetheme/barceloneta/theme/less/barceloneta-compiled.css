@@ -3816,9 +3816,10 @@ ul.picker__list {
     border-top-right-radius: 0;
     float: left;
     width: 180px;
+    display:inline-block;
   }
   #portal-searchbox [type="submit"] {
-    display: inline-block;
+    display:none;
     margin-left: -1px;
     vertical-align: top;
     width: 70px;
