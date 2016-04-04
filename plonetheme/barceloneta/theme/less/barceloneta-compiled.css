@@ -3806,7 +3806,7 @@ ul.picker__list {
     max-width: 50%;
     padding-top: 0;
     position: relative;
-    width: 260px;
+    width: 250px;
   }
   #portal-searchbox .searchSection {
     display: inherit;
@@ -3815,14 +3815,14 @@ ul.picker__list {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     float: left;
-    width: 170px;
+    width: 180px;
     display:inline-block;
   }
   #portal-searchbox [type="submit"] {
-    display: inline-block;
+    display:none;
     margin-left: -1px;
     vertical-align: top;
-    width: 90px;
+    width: 70px;
   }
 }
 .plone-nav {
