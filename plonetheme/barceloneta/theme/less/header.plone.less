@@ -32,7 +32,6 @@
     padding-top: 20px;
     position: absolute;
     white-space: nowrap;
-    width: 67%;
     z-index: 2;
     .searchSection {display: none;} //non on mobile
     [type="submit"] {display: none;} //submit hidden on mobile
@@ -59,20 +58,19 @@
         max-width: 50%;
         padding-top: 0;
         position: relative;
-        width: 260px;
         .searchSection {display: inherit;} //yes for non mobile
         [type="text"] {
             border-bottom-right-radius: 0;
             border-top-right-radius: 0;
             float: left;
-            width: 170px; //searchboxwidth (250px) - submit (70px)
+            width: 20rem;
         }
         [type="submit"] {
             display: inline-block;
             margin-left: -1px;
             vertical-align: top;
-            width: 90px;
-            display:inline-block;
+            width: auto;
+            display: inline-block;
         }
     }
 }

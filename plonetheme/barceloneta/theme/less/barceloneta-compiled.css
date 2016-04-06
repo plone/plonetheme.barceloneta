@@ -3775,7 +3775,6 @@ ul.picker__list {
   padding-top: 20px;
   position: absolute;
   white-space: nowrap;
-  width: 67%;
   z-index: 2;
 }
 #portal-searchbox .searchSection {
@@ -3806,7 +3805,6 @@ ul.picker__list {
     max-width: 50%;
     padding-top: 0;
     position: relative;
-    width: 250px;
   }
   #portal-searchbox .searchSection {
     display: inherit;
@@ -3815,14 +3813,13 @@ ul.picker__list {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     float: left;
-    width: 180px;
-    display:inline-block;
+    width: 20em;
   }
   #portal-searchbox [type="submit"] {
-    display:none;
     margin-left: -1px;
     vertical-align: top;
-    width: 70px;
+    width: auto;
+    display: inline-block;
   }
 }
 .plone-nav {
