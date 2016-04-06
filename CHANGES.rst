@@ -1,13 +1,14 @@
 Changelog
 =========
 
-1.6.19 (2016-04-04)
+1.6.19 (unreleased)
 -------------------
 
 Fixes:
 
-- Fixed the search button problem that occurred during translations to different languages 
-  [kkhan]
+- Make search button grow with the search buttons text.
+  Fixes an issue where translated button texts were not fitting into the button.
+  [kkhan, thet]
 
 
 1.6.18 (2016-03-31)
