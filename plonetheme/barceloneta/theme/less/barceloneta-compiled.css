@@ -3813,7 +3813,7 @@ ul.picker__list {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     float: left;
-    width: 20em;
+    width: 20rem;
   }
   #portal-searchbox [type="submit"] {
     margin-left: -1px;
