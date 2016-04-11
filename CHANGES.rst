@@ -6,6 +6,10 @@ Changelog
 
 Fixes:
 
+- Use ``.alert.status`` selector as an alternative to ``.portalMessage``.
+  This class is used by the structure pattern.
+  [thet]
+
 - Make search button grow with the search buttons text.
   Fixes an issue where translated button texts were not fitting into the button.
   [kkhan, thet]
