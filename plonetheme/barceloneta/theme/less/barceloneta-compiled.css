@@ -2517,6 +2517,7 @@ fieldset[disabled] .link-parent.active {
   max-width: 200px;
   max-height: 200px;
 }
+.alert.status,
 .portalMessage {
   padding: 15px;
   padding-left: 45px;
@@ -2528,17 +2529,22 @@ fieldset[disabled] .link-parent.active {
   font-weight: 400;
   text-shadow: 0 1px rgba(255, 255, 255, 0.1);
 }
+.alert.status > strong,
 .portalMessage > strong,
+.alert.status > dt,
 .portalMessage > dt {
   font-weight: 700;
   padding-right: 5px;
   color: rgba(0, 0, 0, 0.5);
 }
+.alert.status a,
 .portalMessage a {
   font-weight: 400;
   color: #005074;
 }
+.alert.status > strong:before,
 .portalMessage > strong:before,
+.alert.status > dt:before,
 .portalMessage > dt:before {
   font-size: 14px;
   font-weight: 400;
@@ -2555,61 +2561,114 @@ fieldset[disabled] .link-parent.active {
   top: -1px;
   position: relative;
 }
+.alert.status > dt,
 .portalMessage > dt,
+.alert.status > dd,
 .portalMessage > dd {
   display: inline;
 }
+.alert.status > dd,
 .portalMessage > dd {
   margin: 0;
+}
+.alert.status.alert-none,
+.portalMessage.alert-none {
+  box-shadow: none;
+}
+.alert.status.alert-success,
+.portalMessage.alert-success,
+.alert.status.info,
+.portalMessage.info {
+  background-color: #aad6ea;
+  border: 1px solid #9acee6;
+  color: rgba(0, 0, 0, 0.5);
+}
+.alert.status.alert-success > strong,
+.portalMessage.alert-success > strong,
+.alert.status.info > strong,
+.portalMessage.info > strong,
+.alert.status.alert-success > dt,
+.portalMessage.alert-success > dt,
+.alert.status.info > dt,
+.portalMessage.info > dt {
+  color: rgba(0, 0, 0, 0.67);
+}
+.alert.status.alert-success > strong:before,
+.portalMessage.alert-success > strong:before,
+.alert.status.info > strong:before,
+.portalMessage.info > strong:before,
+.alert.status.alert-success > dt:before,
+.portalMessage.alert-success > dt:before,
+.alert.status.info > dt:before,
+.portalMessage.info > dt:before {
+  background-color: #3e7b91;
+  content: "i";
+}
+.alert.status.alert-warning,
+.portalMessage.alert-warning,
+.alert.status.warning,
+.portalMessage.warning {
+  background-color: #ebd380;
+  border: 1px solid #e7ca66;
+  color: rgba(0, 0, 0, 0.5);
+}
+.alert.status.alert-warning > strong,
+.portalMessage.alert-warning > strong,
+.alert.status.warning > strong,
+.portalMessage.warning > strong,
+.alert.status.alert-warning > dt,
+.portalMessage.alert-warning > dt,
+.alert.status.warning > dt,
+.portalMessage.warning > dt {
+  color: rgba(0, 0, 0, 0.67);
+}
+.alert.status.alert-warning > strong:before,
+.portalMessage.alert-warning > strong:before,
+.alert.status.warning > strong:before,
+.portalMessage.warning > strong:before,
+.alert.status.alert-warning > dt:before,
+.portalMessage.alert-warning > dt:before,
+.alert.status.warning > dt:before,
+.portalMessage.warning > dt:before {
+  background-color: #bc8d0d;
+  content: "!";
+}
+.alert.status.alert-error,
+.portalMessage.alert-error,
+.alert.status.error,
+.portalMessage.error {
+  background-color: #EC9C8D;
+  border: 1px solid #eb9484;
+  color: rgba(0, 0, 0, 0.5);
+}
+.alert.status.alert-error > strong,
+.portalMessage.alert-error > strong,
+.alert.status.error > strong,
+.portalMessage.error > strong,
+.alert.status.alert-error > dt,
+.portalMessage.alert-error > dt,
+.alert.status.error > dt,
+.portalMessage.error > dt {
+  color: rgba(0, 0, 0, 0.67);
+}
+.alert.status.alert-error > strong:before,
+.portalMessage.alert-error > strong:before,
+.alert.status.error > strong:before,
+.portalMessage.error > strong:before,
+.alert.status.alert-error > dt:before,
+.portalMessage.alert-error > dt:before,
+.alert.status.error > dt:before,
+.portalMessage.error > dt:before {
+  background-color: #ac493f;
+  content: "×";
 }
 .portlet .portletContent > .portalMessage {
   padding: 15px;
   padding-left: 45px;
   margin: 15px;
 }
-.portalMessage.info {
-  background-color: #aad6ea;
-  border: 1px solid #9acee6;
-  color: rgba(0, 0, 0, 0.5);
-}
-.portalMessage.info > strong,
-.portalMessage.info > dt {
-  color: rgba(0, 0, 0, 0.67);
-}
-.portalMessage.info > strong:before,
-.portalMessage.info > dt:before {
-  background-color: #3e7b91;
-  content: "i";
-}
-.portalMessage.warning {
-  background-color: #ebd380;
-  border: 1px solid #e7ca66;
-  color: rgba(0, 0, 0, 0.5);
-}
-.portalMessage.warning > strong,
-.portalMessage.warning > dt {
-  color: rgba(0, 0, 0, 0.67);
-}
-.portalMessage.warning > strong:before,
-.portalMessage.warning > dt:before {
-  background-color: #bc8d0d;
-  content: "!";
-}
-.portalMessage.error {
-  background-color: #EC9C8D;
-  border: 1px solid #eb9484;
-  color: rgba(0, 0, 0, 0.5);
-}
-.portalMessage.error > strong,
-.portalMessage.error > dt {
-  color: rgba(0, 0, 0, 0.67);
-}
-.portalMessage.error > strong:before,
-.portalMessage.error > dt:before {
-  background-color: #ac493f;
-  content: "×";
-}
 /* special octogonal shape for error
+.alert.status.alert-error,
 .portalMessage.error {
 	& > strong:before, & > dt:before {
 		border-radius: 8px; //soften border
