@@ -2969,12 +2969,9 @@ fieldset[disabled] .link-parent.active {
 #broken-products .configlets .pull-right {
   margin: 0 0 12px 12px;
 }
-.managedPortletActions {
-  float: right;
-  margin-top: -6px;
-}
-.managedPortletActions form {
-  display: inline-block;
+.switch-portlet-manager {
+  margin-top: 0.5em;
+  width: auto;
 }
 .managedPortlet {
   border: 1px solid #e5e5e5;
@@ -3176,17 +3173,24 @@ fieldset[disabled] .link-parent.active {
   font-weight: 400;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
+.managedPortlet .portletHeader {
+  font-weight: 300;
+}
 .managedPortlet.inheritedPortlet {
   margin: 5px 15px;
 }
 .managedPortlet.inheritedPortlet .portletHeader {
   padding: 3px 15px;
 }
-.managedPortlet .portletHeader {
-  font-weight: 300;
-}
 .managedPortlet.blockedPortlet {
   opacity: 0.7;
+}
+.managedPortletActions {
+  float: right;
+  margin-top: -6px;
+}
+.managedPortletActions form {
+  display: inline-block;
 }
 .portlet.portletSiteSetup .portletContent > ul > li a:before {
   content: "";

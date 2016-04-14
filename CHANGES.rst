@@ -1,8 +1,14 @@
 Changelog
 =========
 
+
 1.6.19 (unreleased)
 -------------------
+
+New:
+
+- Add styles for manage portlets jumplist
+  [davilima6]
 
 Fixes:
 
@@ -81,6 +87,7 @@ Fixes:
 - Fix filenames for roboto-lightitalic.ttf, -mediumitalic.ttd
   and -bolditalic.ttf to match those in less files
   [datakurre]
+
 
 1.6.16 (2016-01-08)
 -------------------
