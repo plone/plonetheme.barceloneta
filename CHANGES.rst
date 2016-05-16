@@ -1,12 +1,44 @@
 Changelog
 =========
 
-1.6.18 (unreleased)
+
+1.6.20 (unreleased)
 -------------------
 
-Incompatibilities:
+Breaking changes:
 
 - *add item here*
+
+New features:
+
+- *add item here*
+
+Bug fixes:
+
+- *add item here*
+
+
+1.6.19 (2016-05-15)
+-------------------
+
+New:
+
+- Add styles for manage portlets jumplist
+  [davilima6]
+
+Fixes:
+
+- Use ``.alert.status`` selector as an alternative to ``.portalMessage``.
+  This class is used by the structure pattern.
+  [thet]
+
+- Make search button grow with the search buttons text.
+  Fixes an issue where translated button texts were not fitting into the button.
+  [kkhan, thet]
+
+
+1.6.18 (2016-03-31)
+-------------------
 
 New:
 
@@ -71,6 +103,7 @@ Fixes:
 - Fix filenames for roboto-lightitalic.ttf, -mediumitalic.ttd
   and -bolditalic.ttf to match those in less files
   [datakurre]
+
 
 1.6.16 (2016-01-08)
 -------------------

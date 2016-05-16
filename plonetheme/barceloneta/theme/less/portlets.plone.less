@@ -89,7 +89,6 @@
 		thead {background: @plone-portlet-footer-bg; border-bottom: @plone-portlet-border;
 			th {color: @plone-gray; font-weight: @plone-font-weight-light; height: 40px; text-align: center;}
 		}
-		td {}
 		td > * {border-radius: 50%; display: inline-block; width: 20px; height: 20px; line-height: 20px;}
 		.cal_has_events {
 			position: relative;
@@ -135,15 +134,15 @@
 .portletNavigationTree {
 	.portletContent {
 		border-top: 0;
-		> ul > li > a {display: block; background: darken(@plone-portlet-header-bg,2%);
+		> ul > li > a {display: block; background: darken(@plone-portlet-header-bg, 2%);
 			&:before {content: ""; }
 			&:hover {background: @plone-portlet-footer-bg;}
-			&:hover:after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top:-3px; color: @plone-gray-light;}
+			&:hover:after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top: -3px; color: @plone-gray-light;}
 		}
 		> ul > li > ul a {padding-left:40px;}
 		> ul ul {padding-left: 0;}
 		.navTreeCurrentNode > a {background: @plone-portlet-footer-bg; color: @plone-gray;
-			&:after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top:-3px; color: @plone-gray-light;}
+			&:after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top: -3px; color: @plone-gray-light;}
 		}
 	}
 }
@@ -165,14 +164,19 @@
 
 
 //*// Manage portlets
-.managedPortletActions {
-	float:right;
-	margin-top: -@plone-padding-base-vertical;
-	form {display: inline-block;}
+// Jumplist for quick navigation across portlet managers
+.switch-portlet-manager {
+	margin-top: 0.5em;
+	width: auto;
 }
+// Assigned portlet
 .managedPortlet {
 	.portlet;
 
+	.portletHeader{
+		font-weight: 300;
+	}
+	// Parents, groups and content types portlet assignments
 	&.inheritedPortlet{
 		margin: 5px 15px;
 
@@ -180,10 +184,14 @@
 			padding: 3px 15px;
 		}
 	}
-	.portletHeader{
-		font-weight: 300;
-	}
+	// Blocked inherited portlet assignments
 	&.blockedPortlet{
 		opacity: 0.7;
 	}
+}
+// Buttons for hide/show and remove assigned portlet
+.managedPortletActions {
+	float: right;
+	margin-top: -@plone-padding-base-vertical;
+	form {display: inline-block;}
 }
