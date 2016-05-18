@@ -2,7 +2,7 @@
 
 body.template-login_form #content-core,
 body.template-logged_out #content-core {
-	@include portlet;
+	@extend .portlet;
 	background: $plone-portlet-footer-bg;
 	max-width:300px;
 	margin: 0 auto $plone-padding-base-vertical;

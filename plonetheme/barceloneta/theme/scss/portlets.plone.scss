@@ -171,7 +171,7 @@
 }
 // Assigned portlet
 .managedPortlet {
-	@include portlet;
+	@extend .portlet; //recheck some day
 
 	.portletHeader{
 		font-weight: 300;
