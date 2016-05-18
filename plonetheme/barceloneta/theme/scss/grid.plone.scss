@@ -1,0 +1,165 @@
+//*// BOOTSTRAP GRID //*//
+
+//*// This is exactly BOOTSTRAP GRID, replace it for your system
+
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  @include container-fixed;
+
+  @media (min-width: $plone-screen-sm-min) {
+    width: $plone-container-sm;
+  }
+  @media (min-width: $plone-screen-md-min) {
+    width: $plone-container-md;
+  }
+  @media (min-width: $plone-screen-lg-min) {
+    width: $plone-container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  @include container-fixed;
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  @include make-row;
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@include make-grid-columns;
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $plone-screen-sm-min) {
+  @include make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $plone-screen-md-min) {
+  @include make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $plone-screen-lg-min) {
+  @include make-grid(lg);
+}
+
+
+
+
+/*
+// Container widths
+.container {
+  @mixin container-fixed();
+
+  @media (min-width: $plone-screen-sm-min) {
+    width: $plone-container-sm;
+  }
+  @media (min-width: $plone-screen-md-min) {
+    width: $plone-container-md;
+  }
+  @media (min-width: $plone-screen-lg-min) {
+    width: $plone-container-lg;
+  }
+}
+
+
+// Fluid container
+.container-fluid {
+  @include container-fixed();
+}
+
+
+// Row
+.row {
+  @include clearfix();
+  @include make-row();
+}
+
+
+// Columns
+@include make-grid-columns();
+
+
+// Extra small grid
+@include make-grid(xs);
+
+
+// Small grid
+@media (min-width: $plone-screen-sm-min) {
+  @include make-grid(sm);
+}
+
+
+// Medium grid
+@media (min-width: $plone-screen-md-min) {
+  @include make-grid(md);
+}
+
+
+// Large grid
+@media (min-width: $plone-screen-lg-min) {
+  @include make-grid(lg);
+}
+*/
+
+// toolbar needs to match grid
+#edit-zone.plone-toolbar-top .plone-toolbar-container {
+  @mixin container-fixed();
+  @media (min-width: $plone-screen-sm-min) {
+    width: $plone-container-sm;
+  }
+  @media (min-width: $plone-screen-md-min) {
+    width: $plone-container-md;
+  }
+  @media (min-width: $plone-screen-lg-min) {
+    width: $plone-container-lg;
+  }
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 50px;
+}
+#edit-zone.plone-toolbar-top.compressed .plone-toolbar-container {width: auto;}

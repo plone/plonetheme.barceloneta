@@ -1,0 +1,37 @@
+//*// FONTS //*//
+@mixin font-face($site-font-family-name, $site-font-file, $site-font-family, $site-font-weight, $site-font-style, $site-font-category:"") {
+    $site-font-filepath: $site-font-family + "/" + $site-font-file;
+    @font-face {
+        font-family: "#{$site-font-family-name}";
+        font-weight: $site-font-weight;
+        font-style: $site-font-style;
+        src: url($site-font-filepath + ".eot");
+        src: url($site-font-filepath + ".eot?#iefix") format('embedded-opentype'), url($site-font-filepath + ".woff") format('woff'), url($site-font-filepath + ".ttf")  format('truetype'), url($site-font-filepath + ".svg#" + $site-font-family-name + "") format('svg');
+    }
+    %#{$site-font-family-name} {
+        font: {
+            @if $site-font-category != "" {
+                family: "#{$site-font-family-name}", #{$site-font-category};
+            }
+            @else {
+                family: "#{$site-font-family-name}";
+                weight: 400;
+            }
+        }
+    }
+}
+
+
+// Main font                    //@include font-face(familiy-name, file, family, wight, style, category);
+/* 300 Light */                   @include font-face('Roboto', 'roboto-light', 'Roboto', 300, normal, 'sans-serif');
+/* 300 Light italic */            @include font-face('Roboto', 'roboto-lightitalic', 'Roboto', 300, italic, 'sans-serif');
+/* 400 Regular */                 @include font-face('Roboto', 'roboto-regular', 'Roboto', 400, normal, 'sans-serif');
+/* 400 Regular italic */          @include font-face('Roboto', 'roboto-italic', 'Roboto', 400, italic, 'sans-serif');
+/* 500 Medium */                  @include font-face('Roboto', 'roboto-medium', 'Roboto', 500, normal, 'sans-serif');
+/* 500 Medium italic */           @include font-face('Roboto', 'roboto-mediumitalic', 500, italic, 'sans-serif');
+/* 700 Bold */                    @include font-face('Roboto', 'roboto-bold', 'Roboto', 700, normal, 'sans-serif');
+/* 700 Bold italic */             @include font-face('Roboto', 'roboto-bolditalic', 'Roboto', 700, italic, 'sans-serif');
+
+// Toolbar font
+/* 300 Light condensed*/          @include font-face('Roboto Condensed', 'robotocondensed-light', 'Roboto Condensed', 300, normal, 'sans-serif');
+/* 300 Light condensed italic*/   @include font-face('Roboto Condensed', 'robotocondensed-lightitalic', 'Roboto Condensed', 300, italic, 'sans-serif');

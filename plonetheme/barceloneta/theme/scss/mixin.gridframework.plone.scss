@@ -1,0 +1,177 @@
+//*// BOOTSTRAP GRID MIXIN FRAMEWORK //*//
+
+//*// This is exactly BOOTSTRAP GRID, replace it for your system
+
+// [converter] This is defined recursively in LESS, but Sass supports real loops
+@mixin make-grid-columns($i: 1, $list: ".col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}") {
+  @for $i from (1 + 1) through $plone-grid-columns {
+    $list: "#{$list}, .col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}";
+  }
+  #{$list} {
+    position: relative;
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-left:  ceil(($plone-grid-gutter-width / 2));
+    padding-right: floor(($plone-grid-gutter-width / 2));
+  }
+}
+
+
+// [converter] This is defined recursively in LESS, but Sass supports real loops
+@mixin float-grid-columns($class, $i: 1, $list: ".col-#{$class}-#{$i}") {
+  @for $i from (1 + 1) through $plone-grid-columns {
+    $list: "#{$list}, .col-#{$class}-#{$i}";
+  }
+  #{$list} {
+    float: left;
+  }
+}
+
+
+@mixin calc-grid-column($index, $class, $type) {
+  @if ($type == width) and ($index > 0) {
+    .col-#{$class}-#{$index} {
+      width: percentage(($index / $plone-grid-columns));
+    }
+  }
+  @if ($type == push) and ($index > 0) {
+    .col-#{$class}-push-#{$index} {
+      left: percentage(($index / $plone-grid-columns));
+    }
+  }
+  @if ($type == push) and ($index == 0) {
+    .col-#{$class}-push-0 {
+      left: auto;
+    }
+  }
+  @if ($type == pull) and ($index > 0) {
+    .col-#{$class}-pull-#{$index} {
+      right: percentage(($index / $plone-grid-columns));
+    }
+  }
+  @if ($type == pull) and ($index == 0) {
+    .col-#{$class}-pull-0 {
+      right: auto;
+    }
+  }
+  @if ($type == offset) {
+    .col-#{$class}-offset-#{$index} {
+      margin-left: percentage(($index / $plone-grid-columns));
+    }
+  }
+}
+
+// [converter] This is defined recursively in LESS, but Sass supports real loops
+@mixin loop-grid-columns($columns, $class, $type) {
+  @for $i from 0 through $columns {
+    @include calc-grid-column($i, $class, $type);
+  }
+}
+
+
+// Create grid for specific class
+@mixin make-grid($class) {
+  @include float-grid-columns($class);
+  @include loop-grid-columns($plone-grid-columns, $class, width);
+  @include loop-grid-columns($plone-grid-columns, $class, pull);
+  @include loop-grid-columns($plone-grid-columns, $class, push);
+  @include loop-grid-columns($plone-grid-columns, $class, offset);
+}
+
+
+
+/*
+
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `$grid-columns`.
+
+@mixin make-grid-columns() {
+  // Common styles for all sizes of grid columns, widths 1-12
+  .col($index) when ($index = 1) { // initial
+    $item: ".col-xs-#{$index}, .col-sm-#{$index}, .col-md-#{$index}, .col-lg-#{$index}";
+    @include col(($index + 1), $item);
+  }
+  .col($index, $list) when ($index =< $plone-grid-columns) { // general; "=<" isn't a typo
+    $item: ".col-xs-#{$index}, .col-sm-#{$index}, .col-md-#{$index}, .col-lg-#{$index}";
+    .col(($index + 1), "#{$list}, #{$item}");
+  }
+  .col($index, $list) when ($index > $plone-grid-columns) { // terminal
+    #{$list} {
+      position: relative;
+      // Prevent columns from collapsing when empty
+      min-height: 1px;
+      // Inner gutter via padding
+      padding-left:  ($plone-grid-gutter-width / 2);
+      padding-right: ($plone-grid-gutter-width / 2);
+    }
+  }
+  .col(1); // kickstart it
+}
+
+@mixin float-grid-columns($class) {
+  .col($index) when ($index = 1) { // initial
+    $item: ".col-#{$class}-#{$index}";
+    @include col(($index + 1), $item);
+  }
+  .col($index, $list) when ($index =< $plone-grid-columns) { // general
+    $item: ".col-#{$class}-#{$index}";
+    .col(($index + 1), "#{$list}, #{$item}");
+  }
+  .col($index, $list) when ($index > $plone-grid-columns) { // terminal
+    #{$list} {
+      float: left;
+    }
+  }
+  .col(1); // kickstart it
+}
+
+.calc-grid-column($index, $class, $type) when ($type = width) and ($index > 0) {
+  .col-#{$class}-#{$index} {
+    width: percentage(($index / $plone-grid-columns));
+  }
+}
+.calc-grid-column($index, $class, $type) when ($type = push) and ($index > 0) {
+  .col-#{$class}-push-#{$index} {
+    left: percentage(($index / $plone-grid-columns));
+  }
+}
+.calc-grid-column($index, $class, $type) when ($type = push) and ($index = 0) {
+  .col-#{$class}-push-0 {
+    left: auto;
+  }
+}
+.calc-grid-column($index, $class, $type) when ($type = pull) and ($index > 0) {
+  .col-#{$class}-pull-#{$index} {
+    right: percentage(($index / $plone-grid-columns));
+  }
+}
+.calc-grid-column($index, $class, $type) when ($type = pull) and ($index = 0) {
+  .col-#{$class}-pull-0 {
+    right: auto;
+  }
+}
+.calc-grid-column($index, $class, $type) when ($type = offset) {
+  .col-#{$class}-offset-#{$index} {
+    margin-left: percentage(($index / $plone-grid-columns));
+  }
+}
+
+// Basic looping in LESS
+.loop-grid-columns($index, $class, $type) when ($index >= 0) {
+  @include calc-grid-column($index, $class, $type);
+  // next iteration
+  @include loop-grid-columns(($index - 1), $class, $type);
+}
+
+// Create grid for specific class
+@mixin make-grid($class) {
+  @include float-grid-columns($class);
+  @include loop-grid-columns($plone-grid-columns, $class, width);
+  @include loop-grid-columns($plone-grid-columns, $class, pull);
+  @include loop-grid-columns($plone-grid-columns, $class, push);
+  @include loop-grid-columns($plone-grid-columns, $class, offset);
+}
+*/
