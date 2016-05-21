@@ -15,8 +15,9 @@ New features:
 
 Bug fixes:
 
-- *add item here*
-
+- Set news lead image background for transparent images
+  https://github.com/plone/plonetheme.barceloneta/issues/107
+  [staeff]
 
 1.6.19 (2016-05-15)
 -------------------

@@ -4703,6 +4703,7 @@ body.template-logged_out #content-core .portletFooter {
 }
 .newsImageContainer a {
   display: table;
+  background-color: #fafafa;
 }
 .newsImageContainer a img {
   display: block;
