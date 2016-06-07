@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Remove references to discarded offcanvas feature
+  [davilima6]
 
 
 1.6.20 (2016-05-25)
@@ -26,6 +27,7 @@ Bug fixes:
 - Set news lead image background for transparent images
   https://github.com/plone/plonetheme.barceloneta/issues/107
   [staeff]
+
 
 1.6.19 (2016-05-15)
 -------------------
@@ -53,7 +55,7 @@ New:
 
 - Add missing caret styles.
   [thet]
-  
+
 - Extended form styles for input type="email".
   [agitator]
 
