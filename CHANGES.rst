@@ -5,14 +5,6 @@ Changelog
 1.6.21 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - Remove references to discarded offcanvas feature
