@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Add missing barceloneta less variable needed by plone.app.theming.
+  [jensens]
 
 
 1.6.21 (2016-06-07)
