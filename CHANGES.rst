@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Fix buttons alignment in ordered selection widget
+  [ale-rt]
 
 
 1.6.21 (2016-06-07)
