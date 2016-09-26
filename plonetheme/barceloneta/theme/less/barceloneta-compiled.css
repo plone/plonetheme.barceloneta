@@ -1732,8 +1732,8 @@ label .required:after {
   text-align: center;
 }
 .ordered-selection-field td button {
-  float: left;
-  margin-left: 2rem;
+  display: block;
+  margin: auto;
 }
 .folder-factories {
   list-style: none;
