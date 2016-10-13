@@ -2439,12 +2439,12 @@ fieldset[disabled] .link-parent.active {
     box-shadow: inset 0 -1px #e5e5e5;
   }
 }
-.autotabs ul {
+.autotabs ul.autotoc-nav {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
 }
-.autotabs ul li {
+.autotabs ul.autotoc-nav li {
   list-style: none;
   display: inline-block;
 }
