@@ -3402,6 +3402,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone [class*="contenttype-"]:after {
   text-align: center;
   margin-right: 6px;
   position: absolute;
+  content: '\e834';
 }
 body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-folder:after {
   content: '\e801';

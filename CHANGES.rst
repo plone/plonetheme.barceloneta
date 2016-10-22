@@ -11,7 +11,8 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Add default content type icon to add menu only. Add missing npm dependency.
+  [alecm]
 
 Bug fixes:
 
