@@ -16,6 +16,9 @@ New features:
 
 Bug fixes:
 
+- Unset select width and display
+  [agitator]
+
 - Isolate the autotabs class for ``ul`` elements to ``.autotabs ul.autotoc-nav``.
   Fixes an issue, where list elements in an inline TinyMCE content area were displayed wrong.
   [thet]
