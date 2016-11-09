@@ -5,10 +5,6 @@ Changelog
 1.6.22 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
 New features:
 
 - Add default content type icon to add menu only. Add missing npm dependency.
