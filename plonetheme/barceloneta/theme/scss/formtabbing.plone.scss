@@ -10,7 +10,7 @@
 	.autotoc-nav {
 		background: $plone-portlet-header-bg;
 		border-bottom: $plone-portlet-border;
-		margin: -$plone-padding-base-vertical -$plone-padding-base-horizontal $plone-padding-base-vertical;
+		margin: (-$plone-padding-base-vertical) (-$plone-padding-base-horizontal) $plone-padding-base-vertical;
 		a {
 			display: inline-block;
 			padding: $plone-padding-base-horizontal;
@@ -38,7 +38,7 @@
 		}
 	}
 	.formControls {
-		margin: 0 -$plone-padding-base-horizontal -$plone-padding-base-vertical ;
+		margin: 0 (-$plone-padding-base-horizontal) (-$plone-padding-base-vertical);
 		border-radius: 0 0 $plone-border-radius-base $plone-border-radius-base;
 	}
 }

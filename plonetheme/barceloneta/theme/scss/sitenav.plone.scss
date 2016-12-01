@@ -147,7 +147,7 @@
 }
 
 .plone-navbar-nav {
-  margin: -1px -$plone-sitenav-padding-horizontal -1px;
+  margin: -1px (-$plone-sitenav-padding-horizontal) -1px;
 
   > li > a {
     padding-top:    10px;
