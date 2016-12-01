@@ -28,6 +28,7 @@ body#visual-portal-wrapper.pat-plone #edit-zone {
 		padding: 0; margin:0; position: relative; left:  25px; display: inline-block; color: inherit;
 		width: 20px; height: 20px; text-align: center; margin-right: $plone-padding-base-vertical;
 		position:absolute;
+		content: '\e834';
 	}
 	.contenttype-folder:after {		content: '\e801';}
 	.contenttype-document:after {	content: '\e80e';}
