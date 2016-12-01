@@ -11,7 +11,8 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Include alternative SASS (SCSS) source files in package
+  [albertcasado, datakurre]
 
 Bug fixes:
 
