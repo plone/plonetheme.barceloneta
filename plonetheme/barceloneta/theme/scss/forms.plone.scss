@@ -133,6 +133,11 @@ textarea {
     font-family: $plone-font-family-monospace;  // when typing without richtext editor
   }
 }
+// Reset width for `select` elements
+select {
+  width: unset;
+  display: inline-block;
+}
 
 // Search inputs in iOS
 //
