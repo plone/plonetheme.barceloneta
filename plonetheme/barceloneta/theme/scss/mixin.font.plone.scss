@@ -1,7 +1,7 @@
 //*// MIXIN FONT FACE //*//
 
 @mixin font-face($site-font-family-name, $site-font-file, $site-font-family, $site-font-weight, $site-font-style, $site-font-category:"") {
-    $site-font-filepath: $site-font-family + "/" + $site-font-file;
+    $site-font-filepath: $plone-font-path + $site-font-family + "/" + $site-font-file;
     @font-face {
         font-family: "#{$site-font-family-name}";
         font-weight: $site-font-weight;

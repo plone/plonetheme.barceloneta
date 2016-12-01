@@ -31,6 +31,7 @@ $plone-link-hover-color:     				 darken($plone-link-color, 15%) !default;
 
 
 //*// TYPOGRAPHY
+$plone-font-path:               "./" !default;
 $plone-font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default; // Roboto seems Plone's DIN
 $plone-font-family-condensed:   "Roboto Condensed", "Arial Narrow", sans-serif !default; //just on toolbar
 $plone-font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
