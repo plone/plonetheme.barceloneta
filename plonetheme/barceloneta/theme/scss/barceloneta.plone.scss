@@ -12,8 +12,8 @@
 	@import "mixin.borderradius.plone.scss";
 	@import "mixin.buttons.plone.scss";
 	@import "mixin.clearfix.plone.scss";
-	//@import "mixin.gridframework.plone.scss"; //grid Bootstrap
-	//@import "mixin.grid.plone.scss"; //grid Bootstrap
+	@import "mixin.gridframework.plone.scss"; //grid Bootstrap
+	@import "mixin.grid.plone.scss"; //grid Bootstrap
 	@import "mixin.font.plone.scss";
 
 
@@ -26,7 +26,7 @@
 @import "type.plone.scss";
 @import "code.plone.scss";
 //@import "deco.plone.scss"; //uncomment for deco variant
-//@import "grid.plone.scss"; //grid Bootstrap
+@import "grid.plone.scss"; //grid Bootstrap
 @import "tables.plone.scss";
 @import "forms.plone.scss";
 @import "buttons.plone.scss";
