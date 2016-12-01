@@ -1,8 +1,5 @@
 //*// PLONE 5 BARCELONETA LESS //*//
 
-//*// Font families
-@import "fonts.plone.scss";
-
 //*// Core variables and mixins
 @import "variables.plone.scss";
 	@import "mixin.prefixes.plone.scss";
@@ -16,6 +13,8 @@
 	@import "mixin.grid.plone.scss"; //grid Bootstrap
 	@import "mixin.font.plone.scss";
 
+//*// Font families
+@import "fonts.plone.scss";
 
 //*// Reset and dependencies
 @import "normalize.plone.scss";
