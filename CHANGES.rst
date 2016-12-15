@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- fix weird nav scrollbars on mobile
+  [agitator]
 
 
 1.6.22 (2016-11-09)

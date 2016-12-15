@@ -3917,7 +3917,6 @@ ul.picker__list {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
 }
 .plone-navbar:before,
@@ -4026,7 +4025,7 @@ ul.picker__list {
   }
 }
 .plone-navbar-nav {
-  margin: -1px -15px -1px;
+  margin: 0 -15px 0;
 }
 .plone-navbar-nav > li > a {
   padding-top: 10px;
