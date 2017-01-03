@@ -5,17 +5,9 @@ Changelog
 1.6.23 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
-- fix weird nav scrollbars on mobile
+- Fix weird nav scrollbars on mobile
   [agitator]
 
 
