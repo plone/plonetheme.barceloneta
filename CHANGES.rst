@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.6.24 (unreleased)
--------------------
+1.7 (unreleased)
+----------------
 
 Breaking changes:
 
@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Remove redundant PickADate rules.
+  [thet]
 
 
 1.6.23 (2017-01-02)
@@ -23,7 +24,7 @@ Bug fixes:
 
 Bug fixes:
 
-- Fix weird nav scrollbars on mobile
+- fix weird nav scrollbars on mobile
   [agitator]
 
 

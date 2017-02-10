@@ -3639,15 +3639,6 @@ body#visual-portal-wrapper.pat-plone #edit-zone .contenttype-news-item:after {
   -ms-filter: blur(1px);
   filter: blur(1px);
 }
-.pattern-pickadate-wrapper .pattern-pickadate-time-wrapper {
-  float: left;
-}
-.pattern-pickadate-wrapper .pattern-pickadate-time-wrapper .picker__input {
-  width: 180px;
-}
-.pattern-pickadate-wrapper .pattern-pickadate-date-wrapper .picker__holder {
-  width: 300px;
-}
 .picker--time {
   min-width: 256px;
   max-width: 320px;
@@ -3688,13 +3679,6 @@ ul.picker__list {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-.picker--time .picker__button--clear {
-  width: 100%;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 0;
-  border-radius: 0;
 }
 .picker__table {
   width: 100%;
