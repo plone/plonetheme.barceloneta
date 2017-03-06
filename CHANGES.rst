@@ -15,24 +15,7 @@ New features:
 
 Bug fixes:
 
-- *add item here*
-
-
-1.7 (2017-02-20)
-----------------
-
-Bug fixes:
-
-- Remove redundant PickADate rules.
-  [thet]
-
-
-1.6.23 (2017-01-02)
--------------------
-
-Bug fixes:
-
-- added styles for input type number
+- Added styles for input type number.
   [agitator]
 
 
