@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Added styles for input type number.
+  [agitator]
 
 
 1.7 (2017-02-20)
