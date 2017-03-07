@@ -18,6 +18,9 @@ Bug fixes:
 - Added styles for input type number.
   [agitator]
 
+- Fix formtabbing spacing to match the non-tabbed form in order to ease custom styling.
+  [jensens]
+
 
 1.7 (2017-02-20)
 ----------------
