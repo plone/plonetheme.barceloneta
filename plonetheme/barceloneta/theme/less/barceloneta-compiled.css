@@ -2386,7 +2386,6 @@ fieldset[disabled] .link-parent.active {
 .pat-autotoc.autotabs,
 .autotabs {
   background: #fff;
-  padding: 6px 12px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
   border-radius: 4px;
@@ -2396,7 +2395,6 @@ fieldset[disabled] .link-parent.active {
 .autotabs .autotoc-nav {
   background: #f2f1f1;
   border-bottom: 1px solid #e5e5e5;
-  margin: -6px -12px 6px;
 }
 .pat-autotoc.autotabs .autotoc-nav a,
 .autotabs .autotoc-nav a {
