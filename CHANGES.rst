@@ -5,14 +5,6 @@ Changelog
 1.7.1 (unreleased)
 ------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - Added styles for input type number.
