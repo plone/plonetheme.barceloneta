@@ -3361,6 +3361,7 @@ body#visual-portal-wrapper.pat-plone .outer-wrapper [class*="contenttype-"]:befo
   height: 20px;
   text-align: center;
   margin-right: 6px;
+  content: '\e834';
 }
 body#visual-portal-wrapper.pat-plone .outer-wrapper .contenttype-folder:before,
 .plone-modal-body .contenttype-folder:before {
