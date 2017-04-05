@@ -11,7 +11,12 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- remove paperclip fontello icon for file types (is being replaced by mimetype icons)
+  remove superfluous bullets in portlets ...
+  fix icons in select default page pop up
+  https://github.com/plone/Products.CMFPlone/issues/1734
+  [fgrcon]
+
 
 Bug fixes:
 
@@ -25,11 +30,6 @@ Bug fixes:
 
 - Added styles for input type number.
   [agitator]
-- remove paperclip fontello icon for file types (is being replaced by mimetype icons)
-  remove superfluous bullets in portlets ...
-  fix icons in select default page pop up
-  https://github.com/plone/Products.CMFPlone/issues/1734 [fgrcon]
-
 
 1.7 (2017-02-20)
 ----------------
