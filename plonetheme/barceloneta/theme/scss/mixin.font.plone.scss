@@ -1,0 +1,23 @@
+//*// MIXIN FONT FACE //*//
+
+@mixin font-face($site-font-family-name, $site-font-file, $site-font-family, $site-font-weight, $site-font-style, $site-font-category:"") {
+    $site-font-filepath: $plone-font-path + $site-font-family + "/" + $site-font-file;
+    @font-face {
+        font-family: "#{$site-font-family-name}";
+        font-weight: $site-font-weight;
+        font-style: $site-font-style;
+        src: url($site-font-filepath + ".eot");
+        src: url($site-font-filepath + ".eot?#iefix") format('embedded-opentype'), url($site-font-filepath + ".woff") format('woff'), url($site-font-filepath + ".ttf")  format('truetype'), url($site-font-filepath + ".svg#" + $site-font-family-name + "") format('svg');
+    }
+    %#{$site-font-family-name} {
+        font: {
+            @if $site-font-category != "" {
+                family: "#{$site-font-family-name}", #{$site-font-category};
+            }
+            @else {
+                family: "#{$site-font-family-name}";
+                weight: 400;
+            }
+        }
+    }
+}
