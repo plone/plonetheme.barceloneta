@@ -11,7 +11,12 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- remove paperclip fontello icon for file types (is being replaced by mimetype icons)
+  remove superfluous bullets in portlets ...
+  fix icons in select default page pop up
+  https://github.com/plone/Products.CMFPlone/issues/1734
+  [fgrcon]
+
 
 Bug fixes:
 
@@ -25,7 +30,6 @@ Bug fixes:
 
 - Added styles for input type number.
   [agitator]
-
 
 1.7 (2017-02-20)
 ----------------
@@ -62,6 +66,8 @@ Bug fixes:
   Fixes an issue, where list elements in an inline TinyMCE content area were displayed wrong.
   [thet]
 
+
+  
 - Fix buttons alignment in ordered selection widget
   [ale-rt]
 

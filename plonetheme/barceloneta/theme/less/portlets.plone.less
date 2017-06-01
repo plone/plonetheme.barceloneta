@@ -59,11 +59,7 @@
 				color: @plone-link-color-on-grey;
 				}
 				> a {border-top: @plone-portlet-border;}
-				&:first-child > a {border-top: 0;}
-				& a:before {
-					content:"•"; position: absolute; font-size: @plone-font-size-h3+1; margin-top: -9px; left: 15px;
-					color: lighten(@plone-portlet-list-bullet, 15%);
-				}
+				&:first-child > a {border-top: 0;}				
 			}
 			ul {
 				padding-left:15px;
@@ -157,7 +153,14 @@
 	.portletContent:last-child {margin-bottom: 0;}
 	.pull-right {margin: 0 0 @plone-padding-base-horizontal @plone-padding-base-horizontal;}
 }
-
+//* collection portlet
+.portletCollection ul {
+  list-style-type:none;
+  padding-left:0;
+}
+.portletCollection > ul > li > a {
+      padding: 10px 15px 26px 10px;
+}
 
 //*// Search
 // See forms: input + submit (manual)
