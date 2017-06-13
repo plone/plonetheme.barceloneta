@@ -1450,7 +1450,8 @@ legend {
 }
 label {
   display: inline-block;
-  max-width: 100%;
+  max-width: 95%;
+  vertical-align: top;
   margin-bottom: 6px;
   font-weight: bold;
 }

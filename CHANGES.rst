@@ -20,7 +20,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Fix position of checkboxes with long fieldhelp
+  [agitator]
 
 
 1.7.1 (2017-03-28)
@@ -67,7 +68,7 @@ Bug fixes:
   [thet]
 
 
-  
+
 - Fix buttons alignment in ordered selection widget
   [ale-rt]
 
