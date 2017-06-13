@@ -27,7 +27,10 @@ legend {
 
 label {
   display: inline-block;
-  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  // and 95% to fit labels with fieldhelp in the same line as leading checkbox.
+  max-width: 95%;
+  vertical-align: top;
   margin-bottom: @plone-padding-base-vertical;
   font-weight: bold;
 }
