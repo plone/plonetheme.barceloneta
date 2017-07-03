@@ -11,7 +11,8 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Added Bootstrap-Dropdown default styles.
+  [agitator]
 
 Bug fixes:
 
