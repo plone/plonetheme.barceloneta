@@ -5,10 +5,6 @@ Changelog
 1.7.2 (unreleased)
 ------------------
 
-Breaking changes:
-
-- *add item here*
-
 New features:
 
 - remove paperclip fontello icon for file types (is being replaced by mimetype icons)
