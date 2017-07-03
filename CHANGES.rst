@@ -2,6 +2,22 @@ Changelog
 =========
 
 
+ (unreleased)
+--------------
+
+Breaking changes:
+
+- *add item here*
+
+New features:
+
+- *add item here*
+
+Bug fixes:
+
+- *add item here*
+
+
 1.7.2 (2017-07-03)
 ------------------
 
