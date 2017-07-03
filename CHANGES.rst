@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.7.2 (unreleased)
+1.7.2 (2017-07-03)
 ------------------
 
 New features:
