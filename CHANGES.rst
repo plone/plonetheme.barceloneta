@@ -5,18 +5,10 @@ Changelog
  (unreleased)
 --------------
 
-Breaking changes:
-
-- *add item here*
-
 New features:
 
 - Added Bootstrap-Dropdown default styles.
   [agitator]
-
-Bug fixes:
-
-- *add item here*
 
 
 1.7.2 (2017-07-03)
