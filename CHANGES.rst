@@ -1,6 +1,22 @@
 Changelog
 =========
 
+1.6.24 (unreleased)
+-------------------
+
+Breaking changes:
+
+- *add item here*
+
+New features:
+
+- *add item here*
+
+Bug fixes:
+
+- Fixed no highlighting for private content for "Recent Changes" and "Navigation" portlets #133.
+  [enkidulan]
+
 
 1.6.23 (2017-01-02)
 -------------------
