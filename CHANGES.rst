@@ -11,7 +11,8 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- fixed Plone Toolbar workflow menu item markup inconsistency #110.
+  [enkidulan]
 
 Bug fixes:
 
