@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- fixed vertical align of nav items thumbs in navigation portlet #137
+  [enkidulan]
 
 
 1.6.23 (2017-01-02)
