@@ -15,8 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
-
+- limited printed data to page content only #139
+  [enkidulan]
 
 1.6.23 (2017-01-02)
 -------------------

@@ -248,6 +248,15 @@ th {
   padding: 0;
 }
 @media print {
+  .sidebar-offcanvas,
+  #portal-footer-wrapper,
+  #mainnavigation-wrapper,
+  #content-header,
+  .link-https,
+  #edit-zone {
+    display: none;
+    visibility: hidden;
+  }
   * {
     text-shadow: none !important;
     color: #000 !important;
