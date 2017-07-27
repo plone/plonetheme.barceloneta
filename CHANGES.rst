@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Fixed missing highlighting for private content for "Recent Changes" and "Navigation" portlets #133.
+  [enkidulan]
 
 
 1.6.23 (2017-01-02)

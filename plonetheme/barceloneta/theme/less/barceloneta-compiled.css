@@ -2760,6 +2760,9 @@ fieldset[disabled] .link-parent.active {
   z-index: 1;
   color: #086ca3;
 }
+.portlet .portletContent > ul > li a.state-private {
+  color: #c4183c;
+}
 .portlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
 }
@@ -3049,6 +3052,9 @@ fieldset[disabled] .link-parent.active {
   position: relative;
   z-index: 1;
   color: #086ca3;
+}
+.managedPortlet .portletContent > ul > li a.state-private {
+  color: #c4183c;
 }
 .managedPortlet .portletContent > ul > li > a {
   border-top: 1px solid #e5e5e5;
@@ -4339,6 +4345,10 @@ body.template-logged_out #content-core .portletContent > ul > li a {
   position: relative;
   z-index: 1;
   color: #086ca3;
+}
+body.template-login_form #content-core .portletContent > ul > li a.state-private,
+body.template-logged_out #content-core .portletContent > ul > li a.state-private {
+  color: #c4183c;
 }
 body.template-login_form #content-core .portletContent > ul > li > a,
 body.template-logged_out #content-core .portletContent > ul > li > a {
