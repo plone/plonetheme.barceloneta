@@ -2932,6 +2932,9 @@ fieldset[disabled] .link-parent.active {
 .portletNavigationTree .portletContent > ul > li > ul a {
   padding-left: 40px;
 }
+.portletNavigationTree .portletContent > ul > li > a > img.image-icon {
+  max-height: 20px;
+}
 .portletNavigationTree .portletContent > ul ul {
   padding-left: 0;
 }
