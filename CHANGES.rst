@@ -11,7 +11,10 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Do not use nested selectors for contenttype-icons, so that they can be shown anywhere, also outside the Plone main wrappers.
+  Still use specific styles for the toolbar.
+  This solves a problem, where contenttype-icons couldn't be shown in DOM nodes injected by JavaScript outside the main Plone wrapper.
+  [thet]
 
 Bug fixes:
 
