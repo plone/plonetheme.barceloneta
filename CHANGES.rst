@@ -21,6 +21,12 @@ New features:
 
 Bug fixes:
 
+- Limited printed data to page content only #139.
+  [enkidulan]
+
+- Fixed vertical align of nav items thumbs in navigation portlet #137.
+  [enkidulan]
+
 - Change ``:before`` and ``:after`` to ``::before`` and ``::after`` to follow CSS3 specs.
   [thet]
 
