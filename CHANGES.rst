@@ -7,7 +7,10 @@ Changelog
 
 Breaking changes:
 
-- *add item here*
+- Simplify ``contents.plone.less``.
+  Contenttype icons now use the ``::before`` instead of ``::after`` pseudo element selector.
+  [thet]
+
 
 New features:
 

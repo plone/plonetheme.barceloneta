@@ -1,67 +1,7 @@
-//*// CONTENTS //*//
+//*// CONTENTTYPE ICONS //*//
 
-:not(#edit-zone) {
-    // Any, but toolbar
-
-    [class*="contenttype-"]:before {
-        font-family:"Fontello";
-        font-size: 100%;
-        padding: 0;
-        margin:0;
-        position: relative;
-        left: inherit;
-        display: inline-block;
-        color: inherit;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        margin-right: @plone-padding-base-vertical;
-        content: '\e834';
-    }
-    .contenttype-folder:before      { content: '\e801'; }
-    .contenttype-document:before    { content: '\e80e'; }
-    .contenttype-file:before        { content: none;    }
-    .contenttype-link:before        { content: '\e806'; }
-    .contenttype-image:before       { content: '\e810'; }
-    .contenttype-collection:before  { content: '\e808'; }
-    .contenttype-event:before       { content: '\e809'; }
-    .contenttype-news-item:before   { content: '\e80f'; }
-}
-
-#edit-zone {
-    // Toolbar only
-
-    [class*="contenttype-"] { padding: 5px 15px 5px 50px; }
-
-    a { color: @plone-btn-context-color; }
-    [class*="contenttype-"]:after {
-        font-family:"Fontello";
-        font-size: 100%;
-        padding: 0;
-        margin:0;
-        position: relative;
-        left: 25px;
-        display: inline-block;
-        color: inherit;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        margin-right: @plone-padding-base-vertical;
-        position:absolute;
-        content: '\e834';
-    }
-    .contenttype-folder:after     { content: '\e801'; }
-    .contenttype-document:after   { content: '\e80e'; }
-    .contenttype-file:after       { content: '\e811'; }
-    .contenttype-link:after       { content: '\e806'; }
-    .contenttype-image:after      { content: '\e810'; }
-    .contenttype-collection:after { content: '\e808'; }
-    .contenttype-event:after      { content: '\e809'; }
-    .contenttype-news-item:after  { content: '\e80f'; }
-}
-
-.contenttype-file #crud-edit-File-widgets-view_title:before {
-    content: '\e811';
+[class*="contenttype-"]::before,
+.contenttype-file #crud-edit-File-widgets-view_title::before {
     font-family:"Fontello";
     font-size: 100%;
     padding: 0;
@@ -74,6 +14,24 @@
     height: 20px;
     text-align: center;
     margin-right: @plone-padding-base-vertical;
+    content: '\e834';
+}
+
+.contenttype-folder::before     { content: '\e801'; }
+.contenttype-document::before   { content: '\e80e'; }
+.contenttype-file::before       { content: '\e811'; }
+.contenttype-link::before       { content: '\e806'; }
+.contenttype-image::before      { content: '\e810'; }
+.contenttype-collection::before { content: '\e808'; }
+.contenttype-event::before      { content: '\e809'; }
+.contenttype-news-item::before  { content: '\e80f'; }
+
+.outer-wrapper {
+    .contenttype-file::before   { content: none;    }
+}
+
+.contenttype-file #crud-edit-File-widgets-view_title::before {
+    content: '\e811';
 }
 
 .mime-icon { margin-right:8px; }
