@@ -7,7 +7,10 @@ Changelog
 
 Breaking changes:
 
-- *add item here*
+- Simplify ``contents.plone.less``.
+  Contenttype icons now use the ``::before`` instead of ``::after`` pseudo element selector.
+  [thet]
+
 
 New features:
 
@@ -18,7 +21,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Change ``:before`` and ``:after`` to ``::before`` and ``::after`` to follow CSS3 specs.
+  [thet]
 
 
 1.7.3 (2017-07-04)
