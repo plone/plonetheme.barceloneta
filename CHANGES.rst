@@ -21,6 +21,10 @@ New features:
 
 Bug fixes:
 
+- Force state colors everywhere.
+  Fixes #133.
+  [thet]
+
 - Limited printed data to page content only #139.
   [enkidulan]
 

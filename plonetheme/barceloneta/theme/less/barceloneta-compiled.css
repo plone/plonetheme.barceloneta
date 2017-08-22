@@ -2228,44 +2228,44 @@ fieldset[disabled] .link-parent.active {
   border-bottom-width: 0;
 }
 .state-draft {
-  color: #d39105;
+  color: #d39105 !important;
 }
 .state-draft:hover,
 .state-draft:active,
 .state-draft:focus {
-  color: #885e03;
+  color: #885e03 !important;
 }
 .state-pending {
-  color: #a5a912;
+  color: #a5a912 !important;
 }
 .state-pending:hover,
 .state-pending:active,
 .state-pending:focus {
-  color: #62640b;
+  color: #62640b !important;
 }
 .state-private {
-  color: #c4183c;
+  color: #c4183c !important;
 }
 .state-private:hover,
 .state-private:active,
 .state-private:focus {
-  color: #801027;
+  color: #801027 !important;
 }
 .state-internal {
-  color: #d39105;
+  color: #d39105 !important;
 }
 .state-internal:hover,
 .state-internal:active,
 .state-internal:focus {
-  color: #885e03;
+  color: #885e03 !important;
 }
 .state-internally_published {
-  color: #7924f9;
+  color: #7924f9 !important;
 }
 .state-internally_published:hover,
 .state-internally_published:active,
 .state-internally_published:focus {
-  color: #5405cc;
+  color: #5405cc !important;
 }
 .plone-breadcrumb {
   clear: left;
