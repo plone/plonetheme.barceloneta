@@ -1505,14 +1505,24 @@ output {
   color: #696969;
 }
 /*.form-control,*/
-input[type="text"],
-input[type="number"],
+input[type="color"],
+input[type="date"],
+input[type="datetime-local"],
 input[type="email"],
+input[type="month"],
+input[type="number"],
 input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
 textarea,
 select {
-  display: block;
   width: 100%;
+  display: block;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -1528,10 +1538,20 @@ select {
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-input[type="text"]:focus,
-input[type="number"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
 input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
 input[type="password"]:focus,
+input[type="range"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="week"]:focus,
 textarea:focus,
 select:focus {
   border-color: #64bee8;
@@ -1539,52 +1559,77 @@ select:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(100, 190, 232, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(100, 190, 232, 0.6);
 }
-input[type="text"]::-moz-placeholder,
-input[type="number"]::-moz-placeholder,
+input[type="color"]::-moz-placeholder,
+input[type="date"]::-moz-placeholder,
+input[type="datetime-local"]::-moz-placeholder,
 input[type="email"]::-moz-placeholder,
+input[type="month"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder,
 input[type="password"]::-moz-placeholder,
+input[type="range"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="time"]::-moz-placeholder,
+input[type="url"]::-moz-placeholder,
+input[type="week"]::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder {
   color: #777777;
   opacity: 1;
 }
-input[type="text"]:-ms-input-placeholder,
-input[type="number"]:-ms-input-placeholder,
+input[type="color"]:-ms-input-placeholder,
+input[type="date"]:-ms-input-placeholder,
+input[type="datetime-local"]:-ms-input-placeholder,
 input[type="email"]:-ms-input-placeholder,
+input[type="month"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder,
+input[type="range"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="time"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
+input[type="week"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 select:-ms-input-placeholder {
   color: #777777;
 }
-input[type="text"]::-webkit-input-placeholder,
-input[type="number"]::-webkit-input-placeholder,
+input[type="color"]::-webkit-input-placeholder,
+input[type="date"]::-webkit-input-placeholder,
+input[type="datetime-local"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
+input[type="month"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
+input[type="range"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="time"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+input[type="week"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 select::-webkit-input-placeholder {
   color: #777777;
 }
-input[type="text"][disabled],
-input[type="number"][disabled],
-input[type="email"][disabled],
-input[type="password"][disabled],
+input[disabled],
+input[readonly],
 textarea[disabled],
-select[disabled],
-input[type="text"][readonly],
-input[type="number"][readonly],
-input[type="email"][readonly],
-input[type="password"][readonly],
 textarea[readonly],
+select[disabled],
 select[readonly],
-fieldset[disabled] input[type="text"],
-fieldset[disabled] input[type="number"],
-fieldset[disabled] input[type="email"],
-fieldset[disabled] input[type="password"],
-fieldset[disabled] textarea,
-fieldset[disabled] select {
+fieldset[disabled]  {
   cursor: not-allowed;
   background-color: #e5e5e5;
   opacity: 1;
+}
+input[disabled],
+textarea[disabled],
+select[disabled],
+fieldset[disabled]  {
+  cursor: not-allowed;
 }
 textarea {
   min-height: 9em;

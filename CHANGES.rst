@@ -11,7 +11,14 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Add more HTML text based input types.
+  [thet]
+
+- Fix disabled styles for readonly and disabled inputs, selects, textareas and fieldsets.
+  [thet]
+
+- Define variable ``cursor-disabled`` in variables.less for better reuse.
+  [thet]
 
 Bug fixes:
 
