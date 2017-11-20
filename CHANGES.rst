@@ -20,6 +20,9 @@ New features:
 - Define variable ``cursor-disabled`` in variables.less for better reuse.
   [thet]
 
+- Add theme classifier.
+  [tmassman]
+
 Bug fixes:
 
 - *add item here*
