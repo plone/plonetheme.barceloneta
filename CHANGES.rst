@@ -5,10 +5,6 @@ Changelog
 1.7.5 (unreleased)
 ------------------
 
-Breaking changes:
-
-- *add item here*
-
 New features:
 
 - Add more HTML text based input types.
@@ -22,10 +18,6 @@ New features:
 
 - Add theme classifier.
   [tmassman]
-
-Bug fixes:
-
-- *add item here*
 
 
 1.7.4 (2017-09-03)
