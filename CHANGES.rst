@@ -15,8 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
-
+- fix overlapping of images when portlets exist
+  https://github.com/plone/Products.CMFPlone/issues/2179 [fgrcon]
 
 1.7.5 (2017-11-25)
 ------------------
