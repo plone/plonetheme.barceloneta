@@ -2396,6 +2396,7 @@ fieldset[disabled] .link-parent.active {
   position: relative;
   padding: 0;
   font-weight: 300;
+  /* wanna hide the label "next ... items"? */
 }
 .pagination li > a,
 .pagination li > span {
@@ -2407,14 +2408,23 @@ fieldset[disabled] .link-parent.active {
   border: 1px solid #e5e5e5 !important;
   margin-left: -1px;
 }
-.pagination li:first-child > a {
+.pagination li.previous > a {
   margin-left: 0;
   border-bottom-left-radius: 4px;
   border-top-left-radius: 4px;
 }
-.pagination li:last-child > a {
+.pagination li.previous .arrow:before {
+  content: '\3c';
+}
+.pagination li.next > a {
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
+}
+.pagination li.next .arrow:after {
+  content: '\3e';
+}
+.pagination li .label {
+  display: none;
 }
 .pagination li > a:hover,
 .pagination li > a:focus {
