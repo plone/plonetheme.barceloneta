@@ -68,6 +68,9 @@
   font-weight: 300;
   font-style: italic;
 }
+@plone-container-mobile @plone-container-xs;
+@plone-container-tablet @plone-container-sm;
+@plone-container-desktop @plone-container-md;
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -597,6 +600,7 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   .container {
@@ -605,12 +609,17 @@ pre code {
 }
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 990px;
   }
 }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 1570px;
   }
 }
 .container-fluid {
@@ -1283,7 +1292,7 @@ pre code {
 }
 @media (min-width: 992px) {
   #edit-zone.plone-toolbar-top .plone-toolbar-container {
-    width: 970px;
+    width: 990px;
   }
 }
 @media (min-width: 1200px) {
@@ -3576,10 +3585,11 @@ a.link-category:focus {
   outline: none;
   background-clip: padding-box;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
   padding-left: 0;
   padding-right: 0;
 }
@@ -3590,12 +3600,17 @@ a.link-category:focus {
 }
 @media (min-width: 992px) {
   .plone-modal .plone-modal-content {
-    width: 970px;
+    width: 990px;
   }
 }
 @media (min-width: 1200px) {
   .plone-modal .plone-modal-content {
     width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  .plone-modal .plone-modal-content {
+    width: 1570px;
   }
 }
 .plone-modal.fade {
@@ -4247,71 +4262,44 @@ ul.picker__list {
 a.plone-toolbar-logo {
   color: #fff;
 }
-.container,
-.container-fluid {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-@media (min-width: 768px) {
-  .plone-toolbar-top-default .container {
-    width: 750px;
-  }
-}
 @media (min-width: 828px) {
   .plone-toolbar-left-default .container {
-    width: 750px;
+    width: 690px;
   }
 }
 @media (min-width: 888px) {
   .plone-toolbar-left-expanded .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .plone-toolbar-top-default .container {
-    width: 970px;
+    width: 630px;
   }
 }
 @media (min-width: 1052px) {
   .plone-toolbar-left-default .container {
-    width: 970px;
+    width: 930px;
   }
 }
 @media (min-width: 1112px) {
   .plone-toolbar-left-expanded .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .plone-toolbar-top-default .container {
-    width: 1170px;
+    width: 870px;
   }
 }
 @media (min-width: 1260px) {
   .plone-toolbar-left-default .container {
-    width: 1170px;
+    width: 1110px;
   }
 }
 @media (min-width: 1320px) {
   .plone-toolbar-left-expanded .container {
-    width: 1170px;
+    width: 1050px;
+  }
+}
+@media (min-width: 1660px) {
+  .plone-toolbar-left-default .container {
+    width: 1510px;
+  }
+}
+@media (min-width: 1720px) {
+  .plone-toolbar-left-expanded .container {
+    width: 1450px;
   }
 }
 #portal-footer-wrapper {
