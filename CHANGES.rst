@@ -15,7 +15,14 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Fix horizontal scrollbar issue on some screen sizes.
+  [agitator, davilima6]
+
+- Remove duplicate definition of container size variables
+  [agitator, davilima6]
+
+- Added extra large & extra small break points
+  [agitator, davilima6]
 
 
 1.7.5 (2017-11-25)
