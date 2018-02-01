@@ -11,12 +11,23 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Pagination: made label and arrows easier to customise.
+  [iham]
 
 Bug fixes:
 
 - fix overlapping of images when portlets exist
   https://github.com/plone/Products.CMFPlone/issues/2179 [fgrcon]
+
+- Fix horizontal scrollbar issue on some screen sizes.
+  [agitator, davilima6]
+
+- Remove duplicate definition of container size variables
+  [agitator, davilima6]
+
+- Added extra large & extra small break points
+  [agitator, davilima6]
+
 
 1.7.5 (2017-11-25)
 ------------------
