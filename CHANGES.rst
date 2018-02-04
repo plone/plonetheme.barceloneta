@@ -5,10 +5,6 @@ Changelog
 1.7.6 (unreleased)
 ------------------
 
-Breaking changes:
-
-- *add item here*
-
 New features:
 
 - Pagination: made label and arrows easier to customise.
