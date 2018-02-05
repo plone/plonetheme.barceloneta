@@ -5,14 +5,6 @@ Changelog
 1.6.24 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - limited printed data to page content only #139
