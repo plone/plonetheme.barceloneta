@@ -17,6 +17,7 @@ Bug fixes:
 
 - limited printed data to page content only #139
   [enkidulan]
+
 - fixed vertical align of nav items thumbs in navigation portlet #137
   [enkidulan]
 
