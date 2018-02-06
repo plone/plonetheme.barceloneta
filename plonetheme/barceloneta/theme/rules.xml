@@ -101,4 +101,13 @@
   <drop css:theme="#portal-toolbar" css:if-content=".userrole-anonymous" />
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
 
+  <!-- Fix for #110 -->
+  <replace css:content="#plone-contentmenu-workflow" if-not-content="a">
+    <li id="plone-contentmenu-workflow">
+      <a href="javascript:void(0)" style="cursor: default; pointer-events: none;">
+        <xsl:apply-templates select="//*[@id='plone-contentmenu-workflow']/*" mode="raw"/>
+      </a>
+    </li>
+  </replace>
+
 </rules>
