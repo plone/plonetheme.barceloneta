@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Fix missing colons in less variables
+  [pnicolli]
 
 
 1.8 (2018-02-05)
