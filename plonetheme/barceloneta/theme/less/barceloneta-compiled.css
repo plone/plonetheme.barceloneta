@@ -68,9 +68,6 @@
   font-weight: 300;
   font-style: italic;
 }
-@plone-container-mobile @plone-container-xs;
-@plone-container-tablet @plone-container-sm;
-@plone-container-desktop @plone-container-md;
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -2397,6 +2394,9 @@ fieldset[disabled] .link-parent.active {
   padding: 0;
   font-weight: 300;
   /* wanna hide the label "next ... items"? */
+  /* .label {
+      display: none;
+    } */
 }
 .pagination li > a,
 .pagination li > span {
@@ -2422,9 +2422,6 @@ fieldset[disabled] .link-parent.active {
 }
 .pagination li.next .arrow:after {
   content: '\3e';
-}
-.pagination li .label {
-  display: none;
 }
 .pagination li > a:hover,
 .pagination li > a:focus {
