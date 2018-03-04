@@ -29,6 +29,9 @@ New features:
 
 Bug fixes:
 
+- fix overlapping of images when portlets exist
+  https://github.com/plone/Products.CMFPlone/issues/2179 [fgrcon]
+
 - Fix horizontal scrollbar issue on some screen sizes.
   [agitator, davilima6]
 
