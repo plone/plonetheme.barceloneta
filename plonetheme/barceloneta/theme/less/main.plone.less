@@ -19,8 +19,10 @@
 
 //*// Adjustments
 #content {margin-bottom: @plone-padding-base-horizontal * 4;}
-#content-core {
-  overflow: hidden;
+// resize image in image.pt when portlets exist ....:
+#content-core img {
+    max-width: 100%;
+    height: auto;
 }
 #content-core a {
   border-bottom: 1px solid @plone-gray-lighter;
