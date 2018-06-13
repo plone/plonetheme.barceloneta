@@ -2925,7 +2925,7 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet .portletContent > ul > li a {
   display: block;
-  padding: 10px 15px 26px 30px;
+  padding: 10px 15px 26px 15px;
   position: relative;
   z-index: 1;
   color: #086ca3;
@@ -2943,7 +2943,7 @@ fieldset[disabled] .link-parent.active {
 .portlet .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
-  padding: 0 15px 10px 30px;
+  padding: 0 15px 10px 15px;
   font-weight: 400;
   position: relative;
   margin-top: -26px;
@@ -2970,8 +2970,24 @@ fieldset[disabled] .link-parent.active {
 .portlet.portletCalendar table thead th {
   color: #696969;
   font-weight: 300;
-  height: 40px;
+  height: 34px;
   text-align: center;
+  vertical-align: middle;
+}
+.portlet.portletCalendar table td {
+  color: #666;
+  background: #eeeeee;
+}
+.portlet.portletCalendar table td:hover {
+  background: #fafafa;
+}
+.portlet.portletCalendar table td.today:hover,
+.portlet.portletCalendar table td.cal_has_events:hover {
+  background: #eee;
+}
+.portlet.portletCalendar table td.cal_prev_month {
+  color: #999;
+  background: #f9f9f9;
 }
 .portlet.portletCalendar table td > * {
   border-radius: 50%;
@@ -2992,13 +3008,25 @@ fieldset[disabled] .link-parent.active {
   content: "•";
   position: absolute;
   margin-left: 50%;
-  left: -3px;
+  left: -6px;
   font-size: 20px;
   color: #a7daf2;
   margin-top: 9px;
 }
 .portlet.portletCalendar table .cal_has_events a:hover::after {
   color: #64bee8;
+}
+.portlet.portletCalendar table .today > * {
+  background: #e5e5e5;
+  font-weight: 500;
+  box-shadow: 0 0 0 5px #e5e5e5;
+  color: #000;
+}
+.portlet.portletCalendar table tbody tr:first-child td > * {
+  margin-top: 6px;
+}
+.portlet.portletCalendar table tbody tr:last-child td > * {
+  margin-bottom: 6px;
 }
 .portlet.portletCalendar table .cal_next_month,
 .portlet.portletCalendar table .cal_prev_month {
@@ -3019,18 +3047,6 @@ fieldset[disabled] .link-parent.active {
 .portlet.portletCalendar table .cal_next_month.cal_has_events > a:hover::after,
 .portlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover::after {
   color: #64bee8;
-}
-.portlet.portletCalendar table .today > * {
-  background: #e5e5e5;
-  font-weight: 500;
-  box-shadow: 0 0 0 5px #e5e5e5;
-  color: #000;
-}
-.portlet.portletCalendar table tbody tr:first-child td > * {
-  margin-top: 10px;
-}
-.portlet.portletCalendar table tbody tr:last-child td > * {
-  margin-bottom: 10px;
 }
 .portlet .formControls {
   border: 0;
@@ -3227,7 +3243,7 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletContent > ul > li a {
   display: block;
-  padding: 10px 15px 26px 30px;
+  padding: 10px 15px 26px 15px;
   position: relative;
   z-index: 1;
   color: #086ca3;
@@ -3245,7 +3261,7 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
-  padding: 0 15px 10px 30px;
+  padding: 0 15px 10px 15px;
   font-weight: 400;
   position: relative;
   margin-top: -26px;
@@ -3272,8 +3288,24 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet.portletCalendar table thead th {
   color: #696969;
   font-weight: 300;
-  height: 40px;
+  height: 34px;
   text-align: center;
+  vertical-align: middle;
+}
+.managedPortlet.portletCalendar table td {
+  color: #666;
+  background: #eeeeee;
+}
+.managedPortlet.portletCalendar table td:hover {
+  background: #fafafa;
+}
+.managedPortlet.portletCalendar table td.today:hover,
+.managedPortlet.portletCalendar table td.cal_has_events:hover {
+  background: #eee;
+}
+.managedPortlet.portletCalendar table td.cal_prev_month {
+  color: #999;
+  background: #f9f9f9;
 }
 .managedPortlet.portletCalendar table td > * {
   border-radius: 50%;
@@ -3294,13 +3326,25 @@ fieldset[disabled] .link-parent.active {
   content: "•";
   position: absolute;
   margin-left: 50%;
-  left: -3px;
+  left: -6px;
   font-size: 20px;
   color: #a7daf2;
   margin-top: 9px;
 }
 .managedPortlet.portletCalendar table .cal_has_events a:hover::after {
   color: #64bee8;
+}
+.managedPortlet.portletCalendar table .today > * {
+  background: #e5e5e5;
+  font-weight: 500;
+  box-shadow: 0 0 0 5px #e5e5e5;
+  color: #000;
+}
+.managedPortlet.portletCalendar table tbody tr:first-child td > * {
+  margin-top: 6px;
+}
+.managedPortlet.portletCalendar table tbody tr:last-child td > * {
+  margin-bottom: 6px;
 }
 .managedPortlet.portletCalendar table .cal_next_month,
 .managedPortlet.portletCalendar table .cal_prev_month {
@@ -3321,18 +3365,6 @@ fieldset[disabled] .link-parent.active {
 .managedPortlet.portletCalendar table .cal_next_month.cal_has_events > a:hover::after,
 .managedPortlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover::after {
   color: #64bee8;
-}
-.managedPortlet.portletCalendar table .today > * {
-  background: #e5e5e5;
-  font-weight: 500;
-  box-shadow: 0 0 0 5px #e5e5e5;
-  color: #000;
-}
-.managedPortlet.portletCalendar table tbody tr:first-child td > * {
-  margin-top: 10px;
-}
-.managedPortlet.portletCalendar table tbody tr:last-child td > * {
-  margin-bottom: 10px;
 }
 .managedPortlet .formControls {
   border: 0;
@@ -4359,6 +4391,14 @@ ul.picker__list {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+#content-core h1 a,
+#content-core h2 a,
+#content-core h3 a,
+#content-core h4 a,
+#content-core h5 a,
+#content-core h6 a {
+  border-bottom: 0;
+}
 #content-core .pat-structure a,
 #content-core .pat-resourceregistry a {
   border-bottom: none;
@@ -4581,7 +4621,7 @@ body.template-logged_out #content-core .portletContent > ul {
 body.template-login_form #content-core .portletContent > ul > li a,
 body.template-logged_out #content-core .portletContent > ul > li a {
   display: block;
-  padding: 10px 15px 26px 30px;
+  padding: 10px 15px 26px 15px;
   position: relative;
   z-index: 1;
   color: #086ca3;
@@ -4603,7 +4643,7 @@ body.template-login_form #content-core .portletContent > ul .portletItemDetails,
 body.template-logged_out #content-core .portletContent > ul .portletItemDetails {
   display: block;
   z-index: 0;
-  padding: 0 15px 10px 30px;
+  padding: 0 15px 10px 15px;
   font-weight: 400;
   position: relative;
   margin-top: -26px;
@@ -4635,8 +4675,29 @@ body.template-login_form #content-core.portletCalendar table thead th,
 body.template-logged_out #content-core.portletCalendar table thead th {
   color: #696969;
   font-weight: 300;
-  height: 40px;
+  height: 34px;
   text-align: center;
+  vertical-align: middle;
+}
+body.template-login_form #content-core.portletCalendar table td,
+body.template-logged_out #content-core.portletCalendar table td {
+  color: #666;
+  background: #eeeeee;
+}
+body.template-login_form #content-core.portletCalendar table td:hover,
+body.template-logged_out #content-core.portletCalendar table td:hover {
+  background: #fafafa;
+}
+body.template-login_form #content-core.portletCalendar table td.today:hover,
+body.template-logged_out #content-core.portletCalendar table td.today:hover,
+body.template-login_form #content-core.portletCalendar table td.cal_has_events:hover,
+body.template-logged_out #content-core.portletCalendar table td.cal_has_events:hover {
+  background: #eee;
+}
+body.template-login_form #content-core.portletCalendar table td.cal_prev_month,
+body.template-logged_out #content-core.portletCalendar table td.cal_prev_month {
+  color: #999;
+  background: #f9f9f9;
 }
 body.template-login_form #content-core.portletCalendar table td > *,
 body.template-logged_out #content-core.portletCalendar table td > * {
@@ -4661,7 +4722,7 @@ body.template-logged_out #content-core.portletCalendar table .cal_has_events a::
   content: "•";
   position: absolute;
   margin-left: 50%;
-  left: -3px;
+  left: -6px;
   font-size: 20px;
   color: #a7daf2;
   margin-top: 9px;
@@ -4669,6 +4730,21 @@ body.template-logged_out #content-core.portletCalendar table .cal_has_events a::
 body.template-login_form #content-core.portletCalendar table .cal_has_events a:hover::after,
 body.template-logged_out #content-core.portletCalendar table .cal_has_events a:hover::after {
   color: #64bee8;
+}
+body.template-login_form #content-core.portletCalendar table .today > *,
+body.template-logged_out #content-core.portletCalendar table .today > * {
+  background: #e5e5e5;
+  font-weight: 500;
+  box-shadow: 0 0 0 5px #e5e5e5;
+  color: #000;
+}
+body.template-login_form #content-core.portletCalendar table tbody tr:first-child td > *,
+body.template-logged_out #content-core.portletCalendar table tbody tr:first-child td > * {
+  margin-top: 6px;
+}
+body.template-login_form #content-core.portletCalendar table tbody tr:last-child td > *,
+body.template-logged_out #content-core.portletCalendar table tbody tr:last-child td > * {
+  margin-bottom: 6px;
 }
 body.template-login_form #content-core.portletCalendar table .cal_next_month,
 body.template-logged_out #content-core.portletCalendar table .cal_next_month,
@@ -4699,21 +4775,6 @@ body.template-logged_out #content-core.portletCalendar table .cal_next_month.cal
 body.template-login_form #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:hover::after,
 body.template-logged_out #content-core.portletCalendar table .cal_prev_month.cal_has_events > a:hover::after {
   color: #64bee8;
-}
-body.template-login_form #content-core.portletCalendar table .today > *,
-body.template-logged_out #content-core.portletCalendar table .today > * {
-  background: #e5e5e5;
-  font-weight: 500;
-  box-shadow: 0 0 0 5px #e5e5e5;
-  color: #000;
-}
-body.template-login_form #content-core.portletCalendar table tbody tr:first-child td > *,
-body.template-logged_out #content-core.portletCalendar table tbody tr:first-child td > * {
-  margin-top: 10px;
-}
-body.template-login_form #content-core.portletCalendar table tbody tr:last-child td > *,
-body.template-logged_out #content-core.portletCalendar table tbody tr:last-child td > * {
-  margin-bottom: 10px;
 }
 body.template-login_form #content-core .formControls,
 body.template-logged_out #content-core .formControls {
@@ -4764,9 +4825,6 @@ body.template-logged_out #content-core .portletFooter {
   top: 5px;
   position: relative;
 }
-.vevent span.cal_month {
-  font-size: 1.1em;
-}
 .event.summary {
   font-weight: 400;
   max-width: 300px;
@@ -4779,6 +4837,57 @@ body.template-logged_out #content-core .portletFooter {
 .event.summary strong,
 .event.summary li > span {
   display: block;
+}
+.event.summary .icalIcon {
+  margin-top: -4px;
+}
+.template-event_listing .documentFirstHeading {
+  position: relative;
+}
+.template-event_listing .documentFirstHeading nav {
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  bottom: 13px;
+}
+.template-event_listing .documentFirstHeading nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+.template-event_listing .documentFirstHeading nav ul li {
+  display: inline;
+}
+.template-event_listing .documentFirstHeading nav ul li a {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+.template-event_listing .documentFirstHeading nav ul li a:hover,
+.template-event_listing .documentFirstHeading nav ul li a:focus {
+  text-decoration: none;
+  border-bottom: 0;
+}
+.template-event_listing .documentDescription {
+  margin-bottom: 1.5em;
+}
+.template-event_listing article {
+  margin-bottom: 2em;
+}
+.template-event_listing article .tileHeadline {
+  margin-top: 0;
+}
+.template-event_listing article .tileHeadline > a {
+  border-bottom: 0;
+}
+.template-event_listing article::before,
+.template-event_listing article::after {
+  content: " ";
+  display: table;
+}
+.template-event_listing article::after {
+  clear: both;
+}
+.template-event_listing article .cal_info {
+  margin-left: 9em;
 }
 .event_listing article {
   border-top: 1px solid #e5e5e5;
@@ -4793,117 +4902,37 @@ body.template-logged_out #content-core .portletFooter {
   margin-top: -6px;
 }
 .cal_date {
-  float: right;
+  float: left;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
   text-align: center;
   width: 100px;
-  margin: 12px 0 12px 12px;
+  margin: 0 24px 12px 0;
   border-radius: 4px;
   overflow: hidden;
 }
 .cal_month {
-  background: #00b0fe;
+  background: #007bb1;
   font-weight: 400;
   display: block;
   color: #fff;
   padding: 6px 12px;
+  font-size: 1.2em;
 }
 .cal_day {
   font-size: 36px;
   font-weight: 700;
   display: block;
+  margin-bottom: -0.1em;
+  margin-top: 0.1em;
 }
 .cal_wkday {
-  font-size: 12px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
   display: block;
   padding: 0 12px 6px;
 }
 .event_listing .sub_nav {
   float: right;
-}
-.template-event_listing .caltrigger {
-  display: none;
-}
-.autotabs .autotoc-nav .events-month-prev,
-.autotabs .autotoc-nav .events-week-prev,
-.autotabs .autotoc-nav .events-day-prev {
-  position: relative;
-  border-top-left-radius: 0;
-  padding-left: 6px;
-}
-.autotabs .autotoc-nav .events-month-prev::before,
-.autotabs .autotoc-nav .events-week-prev::before,
-.autotabs .autotoc-nav .events-day-prev::before {
-  content: "";
-  position: absolute;
-  padding: 0 5px;
-  color: #e5e5e5;
-  border-right: 5px solid;
-  border-top: 23px solid transparent;
-  border-bottom: 23px solid transparent;
-  left: -6px;
-  top: -1px;
-  padding: 0 !important;
-}
-.autotabs .autotoc-nav .events-month-prev::after,
-.autotabs .autotoc-nav .events-week-prev::after,
-.autotabs .autotoc-nav .events-day-prev::after {
-  content: "";
-  position: absolute;
-  padding: 0 5px;
-  color: #fcfcfd;
-  border-right: 5px solid;
-  border-top: 23px solid transparent;
-  border-bottom: 23px solid transparent;
-  left: -5px;
-  top: -1px;
-  padding: 0 !important;
-}
-.autotabs .autotoc-nav .events-month-prev:hover::after,
-.autotabs .autotoc-nav .events-week-prev:hover::after,
-.autotabs .autotoc-nav .events-day-prev:hover::after {
-  color: #fff;
-}
-.autotabs .autotoc-nav .events-month-next,
-.autotabs .autotoc-nav .events-week-next,
-.autotabs .autotoc-nav .events-day-next {
-  position: relative;
-  border-top-right-radius: 0;
-  padding-right: 6px;
-}
-.autotabs .autotoc-nav .events-month-next::before,
-.autotabs .autotoc-nav .events-week-next::before,
-.autotabs .autotoc-nav .events-day-next::before {
-  content: "";
-  position: absolute;
-  padding: 0 5px;
-  color: #e5e5e5;
-  border-left: 5px solid;
-  border-top: 23px solid transparent;
-  border-bottom: 23px solid transparent;
-  right: -6px;
-  top: -1px;
-  padding: 0 !important;
-}
-.autotabs .autotoc-nav .events-month-next::after,
-.autotabs .autotoc-nav .events-week-next::after,
-.autotabs .autotoc-nav .events-day-next::after {
-  content: "";
-  position: absolute;
-  padding: 0 5px;
-  color: #fcfcfd;
-  border-left: 5px solid;
-  border-top: 23px solid transparent;
-  border-bottom: 23px solid transparent;
-  right: -5px;
-  top: -1px;
-  padding: 0 !important;
-}
-.autotabs .autotoc-nav .events-month-next:hover::after,
-.autotabs .autotoc-nav .events-week-next:hover::after,
-.autotabs .autotoc-nav .events-day-next:hover::after {
-  color: #fff;
 }
 .image-product {
   margin: 0;
