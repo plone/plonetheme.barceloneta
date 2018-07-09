@@ -15,7 +15,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Fix nested navigation tree and icon visibility
+  [petschki]
 
 
 1.8.1 (2018-04-08)
