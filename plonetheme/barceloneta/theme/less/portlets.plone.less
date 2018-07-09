@@ -59,7 +59,7 @@
 				color: @plone-link-color-on-grey;
 				}
 				> a {border-top: @plone-portlet-border;}
-				&:first-child > a {border-top: 0;}				
+				&:first-child > a {border-top: 0;}
 			}
 			ul {
 				padding-left:15px;
@@ -130,15 +130,19 @@
 .portletNavigationTree {
 	.portletContent {
 		border-top: 0;
-		> ul > li > a {display: block; background: darken(@plone-portlet-header-bg, 2%);
-			&::before {content: ""; }
+		> ul > li > a {
+			display: block;
 			&:hover {background: @plone-portlet-footer-bg;}
 			&:hover::after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top: -3px; color: @plone-gray-light;}
 		}
-		> ul > li > ul a {padding-left:40px;}
 		> ul > li > a > img.image-icon {max-height: @plone-line-height-computed;};
-		> ul ul {padding-left: 0;}
-		.navTreeCurrentNode > a {background: @plone-portlet-footer-bg; color: @plone-gray;
+		> ul ul {
+			padding-left: 0;
+			li {
+				padding-left:20px;
+			}
+		}
+		.navTreeCurrentNode > a {background: darken(@plone-portlet-footer-bg, 2%); color: @plone-gray;
 			&::after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top: -3px; color: @plone-gray-light;}
 		}
 	}
