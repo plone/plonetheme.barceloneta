@@ -3065,7 +3065,9 @@ fieldset[disabled] .link-parent.active {
   display: block;
 }
 .portletNavigationTree .portletContent > ul > li a:hover {
-  background: #fcfcfd;
+  text-decoration: none;
+  background: #f6f6f9;
+  color: #64bee8;
 }
 .portletNavigationTree .portletContent > ul > li a:hover::before {
   color: #64bee8;

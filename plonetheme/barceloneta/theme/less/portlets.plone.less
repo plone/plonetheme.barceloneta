@@ -130,7 +130,10 @@
 		border-top: 0;
 		> ul > li a {
 			display: block;
-			&:hover {background: @plone-portlet-footer-bg;
+			&:hover {
+				text-decoration:none;
+				background: darken(@plone-portlet-footer-bg, 2%);
+				color:@plone-portlet-list-bullet;
 			}
 			&:hover::before {color: @plone-portlet-list-bullet;}
 			&:hover::after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top: -3px; color: @plone-gray-light;}
