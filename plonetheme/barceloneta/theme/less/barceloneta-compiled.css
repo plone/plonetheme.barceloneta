@@ -2953,9 +2953,6 @@ fieldset[disabled] .link-parent.active {
 .portlet .portletContent > ul li:hover {
   background: #fcfcfd;
 }
-.portlet .portletContent > ul li:hover a::before {
-  color: #64bee8;
-}
 .portlet.portletCalendar table {
   width: 100%;
   text-align: center;
@@ -3069,6 +3066,9 @@ fieldset[disabled] .link-parent.active {
 }
 .portletNavigationTree .portletContent > ul > li a:hover {
   background: #fcfcfd;
+}
+.portletNavigationTree .portletContent > ul > li a:hover::before {
+  color: #64bee8;
 }
 .portletNavigationTree .portletContent > ul > li a:hover::after {
   content: "⟩";
@@ -3252,9 +3252,6 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletContent > ul li:hover {
   background: #fcfcfd;
-}
-.managedPortlet .portletContent > ul li:hover a::before {
-  color: #64bee8;
 }
 .managedPortlet.portletCalendar table {
   width: 100%;
@@ -4614,10 +4611,6 @@ body.template-logged_out #content-core .portletContent > ul .portletItemDetails 
 body.template-login_form #content-core .portletContent > ul li:hover,
 body.template-logged_out #content-core .portletContent > ul li:hover {
   background: #fcfcfd;
-}
-body.template-login_form #content-core .portletContent > ul li:hover a::before,
-body.template-logged_out #content-core .portletContent > ul li:hover a::before {
-  color: #64bee8;
 }
 body.template-login_form #content-core.portletCalendar table,
 body.template-logged_out #content-core.portletCalendar table {
