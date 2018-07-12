@@ -130,21 +130,17 @@
 .portletNavigationTree {
 	.portletContent {
 		border-top: 0;
-		> ul > li > a {
+		> ul > li a {
 			display: block;
 			&:hover {background: @plone-portlet-footer-bg;}
 			&:hover::after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top: -3px; color: @plone-gray-light;}
 		}
-		> ul > li > a > img.image-icon {max-height: @plone-line-height-computed;};
-		> ul ul {
-			padding-left: 0;
-			li {
-				padding-left:20px;
-			}
-		}
+		> ul > li a > img.image-icon {max-height: @plone-line-height-computed;};
+		> ul ul {padding-left: 0;}
 		.navTreeCurrentNode > a {background: darken(@plone-portlet-footer-bg, 2%); color: @plone-gray;
 			&::after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top: -3px; color: @plone-gray-light;}
 		}
+		.navtree-level-loop(@plone-portlet-navtree-maxlevel);
 	}
 }
 

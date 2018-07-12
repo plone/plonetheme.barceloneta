@@ -3064,13 +3064,13 @@ fieldset[disabled] .link-parent.active {
 .portletNavigationTree .portletContent {
   border-top: 0;
 }
-.portletNavigationTree .portletContent > ul > li > a {
+.portletNavigationTree .portletContent > ul > li a {
   display: block;
 }
-.portletNavigationTree .portletContent > ul > li > a:hover {
+.portletNavigationTree .portletContent > ul > li a:hover {
   background: #fcfcfd;
 }
-.portletNavigationTree .portletContent > ul > li > a:hover::after {
+.portletNavigationTree .portletContent > ul > li a:hover::after {
   content: "⟩";
   position: absolute;
   right: 10px;
@@ -3078,14 +3078,11 @@ fieldset[disabled] .link-parent.active {
   margin-top: -3px;
   color: #777777;
 }
-.portletNavigationTree .portletContent > ul > li > a > img.image-icon {
+.portletNavigationTree .portletContent > ul > li a > img.image-icon {
   max-height: 20px;
 }
 .portletNavigationTree .portletContent > ul ul {
   padding-left: 0;
-}
-.portletNavigationTree .portletContent > ul ul li {
-  padding-left: 20px;
 }
 .portletNavigationTree .portletContent .navTreeCurrentNode > a {
   background: #f6f6f9;
@@ -3098,6 +3095,21 @@ fieldset[disabled] .link-parent.active {
   font-size: 18px;
   margin-top: -3px;
   color: #777777;
+}
+.portletNavigationTree .portletContent ul.navTreeLevel1 > li a {
+  padding-left: 30px;
+}
+.portletNavigationTree .portletContent ul.navTreeLevel2 > li a {
+  padding-left: 45px;
+}
+.portletNavigationTree .portletContent ul.navTreeLevel3 > li a {
+  padding-left: 60px;
+}
+.portletNavigationTree .portletContent ul.navTreeLevel4 > li a {
+  padding-left: 75px;
+}
+.portletNavigationTree .portletContent ul.navTreeLevel5 > li a {
+  padding-left: 90px;
 }
 #upgrade-products .configlets li,
 #install-products .configlets li,
