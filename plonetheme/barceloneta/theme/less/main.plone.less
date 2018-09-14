@@ -24,18 +24,26 @@
     max-width: 100%;
     height: auto;
 }
-#content-core a {
-  border-bottom: 1px solid @plone-gray-lighter;
+#content-core {
+  a {
+    border-bottom: 1px solid @plone-gray-lighter;
 
-  &:hover,
-  &:focus {
-    border-bottom: none;
+    &:hover,
+    &:focus {
+      border-bottom: none;
+    }
+
+    &:focus {
+      .tab-focus(); //--> NOT DONE
+    }
   }
-
-  &:focus {
-    .tab-focus(); //--> NOT DONE
+  h1, h2, h3, h4, h5, h6 {
+    a {
+      border-bottom: 0;
+    }
   }
 }
+
 #content-core .pat-structure a, #content-core .pat-resourceregistry a {
   border-bottom: none;
 }
