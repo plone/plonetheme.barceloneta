@@ -2,22 +2,13 @@ Changelog
 =========
 
 
-1.8.3 (unreleased)
 1.9.0 (unreleased)
 ------------------
-
-Breaking changes:
-
-- *add item here*
 
 New features:
 
 - Integrated plone.app.event styles and further cleanup.
   [agitator]
-
-Bug fixes:
-
-- *add item here*
 
 
 1.8.2 (2018-07-26)
