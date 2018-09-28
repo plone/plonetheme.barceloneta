@@ -15,7 +15,12 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Commented out rule in backend.xml that caused the scripts being pulled twice,
+  in case that you are using it to style backend views. You should only use
+  this rule once in your ruleset. Using it twice cause leads to JS errors and
+  patterns initialition failures.
+  This fixes: https://github.com/plone/plonetheme.barceloneta/issues/158
+  [sneridagh]
 
 
 1.9.0 (2018-09-26)
