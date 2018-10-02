@@ -11,7 +11,10 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Add new 'custom' theme which can be used for TTW customizations.
+  Main theme doesn't need to be touched anymore and can be upgraded without
+  loosing customizations.
+  [tmassman]
 
 Bug fixes:
 
