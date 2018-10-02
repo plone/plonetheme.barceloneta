@@ -11,7 +11,8 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Additional footer portlets show in a doormat footer.
+  [tmassman]
 
 Bug fixes:
 
