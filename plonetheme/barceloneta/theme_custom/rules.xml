@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css">
+
+  <xsl:param name="portal_url"></xsl:param>
+
+  <!-- Inject custom.css -->
+  <after
+      theme-children="/html/head"
+      method="raw"
+      content="/html/head/link[@data-bundle='diazo']"
+      />
+
+  <!-- Inject custom.js -->
+  <after
+      theme-children="/html/body"
+      method="raw"
+      content="/html/head/script[@data-bundle='diazo']"
+      />
+
+  <after css:theme-children="html head">
+    <!-- Use the link of the Logo pointing to the Plone root (always present in the content) as base URL. -->
+    <xsl:variable name="base_url" select="//a[@id='portal-logo']/@href"></xsl:variable>
+    <link href="{$base_url}/++theme++barceloneta-custom/custom.css" type="text/css" rel="stylesheet" />
+  </after>
+
+</rules>

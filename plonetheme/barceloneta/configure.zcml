@@ -26,6 +26,7 @@
       />
 
   <!-- Diazo themes -->
-  <plone:static directory="theme" name="barceloneta" type="theme"/>
+  <plone:static directory="theme" name="barceloneta" type="theme" />
+  <plone:static directory="theme_custom" name="barceloneta-custom" type="theme" />
 
 </configure>
