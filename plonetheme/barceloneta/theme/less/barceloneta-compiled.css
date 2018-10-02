@@ -4360,6 +4360,108 @@ ul.picker__list {
     margin-right: -15px;
   }
 }
+/*General Menu Styling*/
+.plone-navbar-header button {
+  margin-top: 0.5em;
+}
+.plone-navbar-collapse.in {
+  overflow-y: unset!important;
+  border: 0;
+  box-shadow: none;
+  display: block;
+}
+.plone-nav {
+  margin: 0 auto;
+}
+.plone-nav li {
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.plone-nav li a {
+  color: white;
+  background: #007bb1;
+  text-decoration: none;
+  padding: 10px 25px 10px 15px;
+  display: block;
+}
+.plone-nav li a:hover {
+  background: #7099bf;
+  text-decoration: none;
+}
+.plone-nav li ul {
+  padding-left: 0.5em;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+.plone-nav li .opener {
+  display: none;
+}
+.plone-nav li .opener:checked + ul {
+  background: green;
+}
+.plone-nav li .opener:checked + label:after {
+  transform: rotate(180deg);
+}
+.plone-nav li .opener:checked ~ ul {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+.plone-nav li label {
+  position: absolute;
+  right: 0.5em;
+  margin-bottom: 0;
+  top: 0.75em;
+}
+.plone-nav li label:after {
+  content: "▼";
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  width: 1em;
+  height: 1em;
+  font-size: 1.5em;
+}
+@media (min-width: 768px) {
+  .plone-nav > li > a {
+    padding-right: 1.5em !important;
+  }
+  .plone-nav > li > label {
+    top: 1em;
+  }
+  .plone-nav li label:after {
+    font-size: 1em;
+  }
+  .plone-nav li ul {
+    position: absolute;
+    z-index: 10;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-out 0.75s;
+    -moz-transition: ease-out 0.75s;
+    -webkit-transition: ease-out 0.75s;
+  }
+  .plone-nav li ul li a {
+    min-width: 14em;
+    display: inline-block;
+  }
+  .plone-nav .has_subtree:hover > ul,
+  .plone-nav .has_subtree .has_subtree:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    transition: ease-in 0.35s;
+    -moz-transition: ease-in 0.35s;
+    -webkit-transition: ease-in 0.35s;
+  }
+  .plone-nav .has_subtree .has_subtree ul {
+    position: absolute;
+    left: 14em;
+    top: 0px;
+  }
+}
 .principal {
   background: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 14%, transparent 14%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 64%, transparent 64%, transparent);
   background-color: #d9d7d7;

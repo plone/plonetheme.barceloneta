@@ -180,3 +180,130 @@
     }
   }
 }
+
+
+// New navigation
+/*General Menu Styling*/
+.plone-navbar-header {
+  button {
+    margin-top: 0.5em;
+  }
+}
+.plone-navbar-collapse.in {
+    overflow-y: unset!important;
+    border: 0;
+    box-shadow: none;
+    display: block;
+}
+
+.plone-nav {
+  margin: 0 auto;
+
+  li {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    a {
+      color: white;
+      background: @plone-link-color;
+      text-decoration: none;
+      padding: 10px 25px 10px 15px;
+      display: block;
+      &:hover {
+        background: @plone-sitenav-link-hover-bg;
+        text-decoration: none;
+      }
+    }
+    ul {
+      padding-left: 0.5em;
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+    }
+    .opener {
+      display: none;
+      &:checked + ul {
+        background: green;
+      }
+      &:checked + label:after {
+        transform: rotate(180deg);
+      }
+      &:checked ~ ul {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+      }
+    }
+    label {
+      position: absolute;
+      right: 0.5em;
+      margin-bottom: 0;
+      top: 0.75em;
+      &:after {
+        content: "▼";
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1;
+        width: 1em;
+        height: 1em;
+        font-size: 1.5em;
+      }
+    }
+
+  }
+
+  @media (min-width: @plone-grid-float-breakpoint) {
+
+    // first level aka section styling
+    > li {
+      > a {
+        padding-right: 1.5em!important;
+      }
+      >label {
+        top: 1em;
+      }
+    }
+
+    //
+    li {
+      label {
+        &:after {
+          font-size: 1.0em;
+        }
+      }
+      ul {
+        position: absolute;
+        z-index: 10;
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease-out 0.75s;
+        -moz-transition: ease-out 0.75s;
+        -webkit-transition: ease-out 0.75s;
+        li {
+          a {
+            min-width: 14em;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .has_subtree:hover > ul,
+    .has_subtree .has_subtree:hover > ul {
+      opacity: 1;
+      visibility: visible;
+      transition: ease-in .35s;
+      -moz-transition: ease-in .35s;
+      -webkit-transition: ease-in .35s;
+    }
+
+    .has_subtree .has_subtree ul {
+      position: absolute;
+      left: 14em;
+      top: 0px;
+    }
+
+  }
+
+}
