@@ -7,7 +7,8 @@ Changelog
 
 Breaking changes:
 
-- *add item here*
+- Re-ordering of content columns: Have content container before column1 before column2.
+  [tmassman]
 
 New features:
 
