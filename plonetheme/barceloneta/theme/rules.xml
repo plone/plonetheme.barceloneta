@@ -164,6 +164,12 @@
     </xsl:for-each>
   </replace>
 
+  <!-- Add additional footer content, like script tags (from site settings). -->
+  <after
+      css:theme-children="html body"
+      content="//footer[@id='portal-footer-wrapper']/*[not(@class='row')]"
+      />
+
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
   <drop css:theme="#portal-toolbar" css:if-content=".userrole-anonymous" />
