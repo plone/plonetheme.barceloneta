@@ -15,7 +15,9 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Do not strip the #edit-bar section from the toolbar.
+  Refs: https://github.com/plone/Products.CMFPlone/issues/2322
+  [thet]
 
 
 1.9.0 (2018-09-26)
