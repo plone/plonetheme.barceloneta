@@ -5,14 +5,6 @@ Changelog
 1.9.1 (unreleased)
 ------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - Do not strip the #edit-bar section from the toolbar.
