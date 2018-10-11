@@ -3096,7 +3096,7 @@ fieldset[disabled] .link-parent.active {
   margin-top: -3px;
   color: #777777;
 }
-.portletNavigationTree .portletContent > ul > li a > img.image-icon {
+.portletNavigationTree .portletContent > ul > li > a > img.image-icon {
   max-height: 20px;
 }
 .portletNavigationTree .portletContent > ul ul {
@@ -4452,15 +4452,18 @@ a.plone-toolbar-logo {
   }
 }
 #portal-footer-wrapper {
-  padding: 30px 15px;
+  padding: 30px 0 30px 0;
   background-color: #2e3133;
   color: #cccccc;
-  text-align: center;
   clear: both;
 }
 #portal-footer-wrapper p {
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 28px;
+  border: none;
+  margin-bottom: 14px;
+  padding-bottom: 0;
+}
+#portal-footer-wrapper p:last-child {
+  margin-bottom: 0;
 }
 #portal-footer-wrapper abbr,
 #portal-footer-wrapper ul {
@@ -4520,6 +4523,39 @@ a.plone-toolbar-logo {
   font-weight: 700;
   margin-right: 15px;
 }
+#portal-footer {
+  font-weight: 400;
+}
+#portal-footer > .row {
+  margin-top: 14px;
+  padding-top: 14px;
+}
+#portal-footer > .row:first-child {
+  padding-top: 0;
+  margin-top: 0;
+}
+#portal-footer .colophon,
+#portal-footer .copyright,
+#portal-footer .site-actions {
+  text-align: center;
+}
+#portal-footer .row + .site-actions {
+  border-top: 1px solid #4d4d4d;
+}
+#portal-footer .site-actions {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#portal-footer .site-actions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#portal-footer .site-actions ul li {
+  display: inline-block;
+  padding: 10px 30px;
+}
 #portal-siteactions {
   display: inline-block;
   text-transform: uppercase;
@@ -4532,6 +4568,12 @@ a.plone-toolbar-logo {
 }
 #portal-siteactions li:first-child {
   margin-left: 0;
+}
+.doormat h2 {
+  margin-top: 10px;
+}
+.doormat > div {
+  margin-bottom: 10px;
 }
 body.template-login_form #content-core,
 body.template-logged_out #content-core {
