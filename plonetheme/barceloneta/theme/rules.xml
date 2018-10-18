@@ -111,12 +111,14 @@
       css:theme-children="#portal-footer .copyright > div"
       css:content-children="#portal-footer-wrapper #portal-footer-signature .portletContent"
       />
+  <drop css:theme="#portal-footer .copyright" css:if-not-content="#portal-footer-wrapper #portal-footer-signature" />
 
   <!-- Replace colophon information with Plone version. -->
   <replace
       css:theme-children="#portal-footer .colophon > div"
       css:content-children="#portal-footer-wrapper #portal-colophon .portletContent"
       />
+  <drop css:theme="#portal-footer .colophon" css:if-not-content="#portal-footer-wrapper #portal-colophon" />
 
   <!-- Replace site-actions with Plone version. -->
   <replace

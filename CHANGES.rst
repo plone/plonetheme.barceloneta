@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.9.2 (unreleased)
-------------------
+1.10.0 (unreleased)
+-------------------
 
 Breaking changes:
 
