@@ -5,11 +5,16 @@
   padding-left: 0; // Override default ul/ol
   list-style: none;
   &:extend(.clearfix all);
-  > li {
+  li {
     position: relative;
     display: block;
-
-    > a {
+    &.has_subtree a {
+      padding-right: 2.5em;
+    }
+    label {
+      margin: 0;
+    }
+    a {
       position: relative;
       display: block;
       padding: @plone-sitenav-link-padding;
@@ -21,7 +26,115 @@
         background-color: @plone-sitenav-link-hover-bg;
       }
     }
+
+    // Navigation sublevels
+    ul {
+      padding-left: 0.5em;
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      li {
+        a {
+          font-size: ceil((@plone-font-size-base * 1.1));;
+          background-color: @plone-sitenav-bg;
+        }
+      }
+    }
+    .opener {
+      display: none;
+      & + label:after {
+        transform: rotate(0deg);
+        transition: ease-in 0.35s;
+      }
+      &:checked + label:after {
+        transform: rotate(-180deg);
+        transition: ease-in 0.35s;
+      }
+      & ~ ul {
+        transition: ease-out 0.35s;
+      }
+      &:checked ~ ul {
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        transition: ease-in 0.35s;
+      }
+    }
+    label {
+      position: absolute;
+      right: 0.5em;
+      top: 0.5em;
+      background: darken(@plone-link-color, 7%);
+      border-radius: @plone-input-border-radius;
+      &:after {
+        content: "▼";
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1;
+        width: 1.5em;
+        height: 1.5em;
+        font-size: 1.25em;
+        padding: 0.25em;
+      }
+    }
+
+
   }
+
+  @media (min-width: @plone-grid-float-breakpoint) {
+
+    li {
+      label {
+        top: 0.85em;
+      }
+      &.has_subtree {
+        .has_subtree li {
+          label {
+            top: 0.6em;
+          }
+
+        }
+      }
+      label {
+        &:after {
+        }
+      }
+      ul {
+        position: absolute;
+        z-index: 10;
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: ease-out 0.75s;
+        -moz-transition: ease-out 0.75s;
+        -webkit-transition: ease-out 0.75s;
+        li {
+          a {
+            min-width: 14em;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .has_subtree:hover > ul,
+    .has_subtree .has_subtree:hover > ul {
+      opacity: 1;
+      visibility: visible;
+      transition: ease-in .35s;
+      -moz-transition: ease-in .35s;
+      -webkit-transition: ease-in .35s;
+    }
+
+    .has_subtree .has_subtree ul {
+      position: absolute;
+      left: 16em;
+      top: 0px;
+    }
+
+
+  }
+
 }
 
 .plone-navbar {
@@ -58,7 +171,6 @@
 
   display: none;
   &.in {
-    overflow-y: auto;
     display: block;
   }
 
@@ -93,8 +205,8 @@
   z-index: 1; //just in case
   position: relative;
   float: right;
-  margin-top:  6px;
-  margin-bottom: 3px;
+  margin-top:  8px;
+  margin-bottom: 6px;
   padding: 6px 10px;
 
   background-color: transparent;
@@ -153,7 +265,8 @@
     padding-bottom: 10px;
     line-height: @plone-line-height-computed;
   }
-  > .selected > a {
+  > .selected > a,
+  > .current > a {
     &,
     &:hover,
     &:focus {
@@ -179,131 +292,4 @@
       margin-right: -@plone-sitenav-padding-horizontal;
     }
   }
-}
-
-
-// New navigation
-/*General Menu Styling*/
-.plone-navbar-header {
-  button {
-    margin-top: 0.5em;
-  }
-}
-.plone-navbar-collapse.in {
-    overflow-y: unset!important;
-    border: 0;
-    box-shadow: none;
-    display: block;
-}
-
-.plone-nav {
-  margin: 0 auto;
-
-  li {
-    position: relative;
-    list-style: none;
-    padding: 0;
-    a {
-      color: white;
-      background: @plone-link-color;
-      text-decoration: none;
-      padding: 10px 25px 10px 15px;
-      display: block;
-      &:hover {
-        background: @plone-sitenav-link-hover-bg;
-        text-decoration: none;
-      }
-    }
-    ul {
-      padding-left: 0.5em;
-      visibility: hidden;
-      opacity: 0;
-      height: 0;
-    }
-    .opener {
-      display: none;
-      &:checked + ul {
-        background: green;
-      }
-      &:checked + label:after {
-        transform: rotate(180deg);
-      }
-      &:checked ~ ul {
-        visibility: visible;
-        opacity: 1;
-        height: auto;
-      }
-    }
-    label {
-      position: absolute;
-      right: 0.5em;
-      margin-bottom: 0;
-      top: 0.75em;
-      &:after {
-        content: "▼";
-        cursor: pointer;
-        display: inline-block;
-        line-height: 1;
-        width: 1em;
-        height: 1em;
-        font-size: 1.5em;
-      }
-    }
-
-  }
-
-  @media (min-width: @plone-grid-float-breakpoint) {
-
-    // first level aka section styling
-    > li {
-      > a {
-        padding-right: 1.5em!important;
-      }
-      >label {
-        top: 1em;
-      }
-    }
-
-    //
-    li {
-      label {
-        &:after {
-          font-size: 1.0em;
-        }
-      }
-      ul {
-        position: absolute;
-        z-index: 10;
-        padding: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: ease-out 0.75s;
-        -moz-transition: ease-out 0.75s;
-        -webkit-transition: ease-out 0.75s;
-        li {
-          a {
-            min-width: 14em;
-            display: inline-block;
-          }
-        }
-      }
-    }
-
-    .has_subtree:hover > ul,
-    .has_subtree .has_subtree:hover > ul {
-      opacity: 1;
-      visibility: visible;
-      transition: ease-in .35s;
-      -moz-transition: ease-in .35s;
-      -webkit-transition: ease-in .35s;
-    }
-
-    .has_subtree .has_subtree ul {
-      position: absolute;
-      left: 14em;
-      top: 0px;
-    }
-
-  }
-
 }
