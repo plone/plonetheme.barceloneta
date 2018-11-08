@@ -265,8 +265,14 @@
     padding-bottom: 10px;
     line-height: @plone-line-height-computed;
   }
-  > .selected > a,
-  > .current > a {
+  // use selected for the last item in the structure
+
+  @media (min-width: @plone-grid-float-breakpoint) {
+  }
+
+
+  .current > a,
+  .selected > a {
     &,
     &:hover,
     &:focus {
@@ -275,21 +281,79 @@
     }
   }
 
-
   // Uncollapse the nav
   @media (min-width: @plone-grid-float-breakpoint) {
     float: left;
 
     > li {
       float: left;
+      &.has_subtree a {
+        padding-right: 2em;
+      }
       > a {
         padding-top:    @plone-sitenav-padding-vertical;
         padding-bottom: @plone-sitenav-padding-vertical;
       }
+      label {
+        font-size: 1em;
+        top: 1em;
+        background: transparent;
+        border-radius: @plone-input-border-radius;
+        // outline: 1px solid white;
+        &:after {
+          content: "▼";
+          cursor: pointer;
+          display: inline-block;
+          line-height: 1;
+          width: 1.5em;
+          height: 1.5em;
+          font-size: 1em;
+          padding: 0.25em;
+        }
+      }
     }
+
+
+    // li.has_subtree li:hover {
+    //   background: green;
+    //   .opener + label {
+    //       background: red;
+    //       transform: rotate(-90deg);
+    //       transition: ease-in 0.35s;
+    //     }
+    //     &:checked + label:after {
+    //       transform: rotate(0);
+    //       transition: ease-in 0.35s;
+    //     }
+
+    //     label {
+    //       background: transparent;
+    //       border-radius: @plone-input-border-radius;
+    //       &:after {
+    //         content: "▼";
+    //         cursor: pointer;
+    //         display: inline-block;
+    //         line-height: 1;
+    //         width: 1.5em;
+    //         height: 1.5em;
+    //         font-size: 1.25em;
+    //         padding: 0.25em;
+    //       }
+    //     }
+    // }
 
     &.navbar-right:last-child {
       margin-right: -@plone-sitenav-padding-horizontal;
     }
+
+    .inPath > a {
+      &,
+      &:hover,
+      &:focus {
+        color: white;
+        background-color: @plone-sitenav-link-hover-bg;
+      }
+    }
+
   }
 }
