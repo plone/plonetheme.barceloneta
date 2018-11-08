@@ -298,18 +298,13 @@
         font-size: 1em;
         top: 1em;
         background: transparent;
-        border-radius: @plone-input-border-radius;
-        // outline: 1px solid white;
         &:after {
-          content: "▼";
-          cursor: pointer;
-          display: inline-block;
-          line-height: 1;
-          width: 1.5em;
-          height: 1.5em;
-          font-size: 1em;
-          padding: 0.25em;
         }
+      }
+      li.has_subtree label:after {
+        background: red;
+        transform: rotate(-90deg);
+
       }
     }
 
@@ -318,7 +313,6 @@
     //   background: green;
     //   .opener + label {
     //       background: red;
-    //       transform: rotate(-90deg);
     //       transition: ease-in 0.35s;
     //     }
     //     &:checked + label:after {
