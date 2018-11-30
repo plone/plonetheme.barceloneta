@@ -22,6 +22,10 @@ New features:
 - Additional footer portlets show in a doormat footer.
   [tmassman]
 
+Bug fixes:
+
+- Add missing import in portlets.plone.less
+  [kcleong]
 
 1.9.1 (2018-10-08)
 ------------------
