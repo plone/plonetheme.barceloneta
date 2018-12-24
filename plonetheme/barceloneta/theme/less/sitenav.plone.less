@@ -26,7 +26,6 @@
         background-color: @plone-sitenav-link-hover-bg;
       }
     }
-
     // Navigation sublevels
     ul {
       padding-left: 0.5em;
@@ -77,12 +76,9 @@
         padding: 0.25em;
       }
     }
-
-
   }
 
   @media (min-width: @plone-grid-float-breakpoint) {
-
     li {
       label {
         top: 0.85em;
@@ -116,7 +112,6 @@
         }
       }
     }
-
     .has_subtree:hover > ul,
     .has_subtree .has_subtree:hover > ul {
       opacity: 1;
@@ -125,16 +120,12 @@
       -moz-transition: ease-in .35s;
       -webkit-transition: ease-in .35s;
     }
-
     .has_subtree .has_subtree ul {
       position: absolute;
       left: 16em;
       top: 0px;
     }
-
-
   }
-
 }
 
 .plone-navbar {
@@ -148,13 +139,10 @@
 
   // Prevent floats from breaking the navbar
   &:extend(.clearfix all);
-
-
 }
 
 .plone-navbar-header {
   .clearfix(); //without extend
-
   @media (min-width: @plone-grid-float-breakpoint) {
     float: left;
   }
@@ -178,18 +166,15 @@
     width: auto;
     border-top: 0;
     box-shadow: none;
-
     &.plone-collapse {
       display: block !important;
       height: auto !important;
       padding-bottom: 0; // Override default setting
       overflow: visible !important;
     }
-
     &.in {
       overflow-y: visible;
     }
-
     // Undo the collapse side padding for navbars with containers to ensure
     // alignment of right-aligned contents.
     .navbar-fixed-top &,
@@ -267,10 +252,6 @@
   }
   // use selected for the last item in the structure
 
-  @media (min-width: @plone-grid-float-breakpoint) {
-  }
-
-
   .current > a,
   .selected > a {
     &,
@@ -284,7 +265,6 @@
   // Uncollapse the nav
   @media (min-width: @plone-grid-float-breakpoint) {
     float: left;
-
     > li {
       float: left;
       &.has_subtree a {
@@ -302,39 +282,10 @@
         }
       }
       li.has_subtree label:after {
-        background: red;
         transform: rotate(-90deg);
 
       }
     }
-
-
-    // li.has_subtree li:hover {
-    //   background: green;
-    //   .opener + label {
-    //       background: red;
-    //       transition: ease-in 0.35s;
-    //     }
-    //     &:checked + label:after {
-    //       transform: rotate(0);
-    //       transition: ease-in 0.35s;
-    //     }
-
-    //     label {
-    //       background: transparent;
-    //       border-radius: @plone-input-border-radius;
-    //       &:after {
-    //         content: "▼";
-    //         cursor: pointer;
-    //         display: inline-block;
-    //         line-height: 1;
-    //         width: 1.5em;
-    //         height: 1.5em;
-    //         font-size: 1.25em;
-    //         padding: 0.25em;
-    //       }
-    //     }
-    // }
 
     &.navbar-right:last-child {
       margin-right: -@plone-sitenav-padding-horizontal;

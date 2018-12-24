@@ -4455,7 +4455,6 @@ ul.picker__list {
     background: transparent;
   }
   .plone-navbar-nav > li li.has_subtree label:after {
-    background: red;
     transform: rotate(-90deg);
   }
   .plone-navbar-nav.navbar-right:last-child {
