@@ -9,6 +9,16 @@ Changelog
 
 .. towncrier release notes start
 
+2.0.0 (2019-01-15)
+------------------
+
+Bug fixes:
+
+
+- Make final release. [maurits] (#170)
+- Initialize towncrier. [gforcada] (#2548)
+
+
 2.0.0a1 (2018-11-05)
 --------------------
 
