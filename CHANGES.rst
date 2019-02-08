@@ -32,11 +32,6 @@ New features:
 - Additional footer portlets show in a doormat footer.
   [tmassman]
 
-- Added styles for multilevel dropdown navigation
-  [agitator]
-
-
-
 1.9.1 (2018-10-08)
 ------------------
 
