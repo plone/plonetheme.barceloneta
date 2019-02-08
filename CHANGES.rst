@@ -9,6 +9,22 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.0 (2019-02-08)
+------------------
+
+New features:
+
+
+- Added styles for multilevel dropdown navigation [agitator] (#2516)
+
+
+Bug fixes:
+
+
+- Fix the different width of Hide and Show button in action control panel
+  (#2480)
+
+
 2.0.0 (2019-01-15)
 ------------------
 
