@@ -53,10 +53,14 @@
         transition: ease-out 0.35s;
       }
       &:checked ~ ul {
-        visibility: visible;
-        opacity: 1;
         height: auto;
         transition: ease-in 0.35s;
+      }
+      @media (max-width: @plone-grid-float-breakpoint) {
+        &:checked ~ ul {
+          visibility: visible;
+          opacity: 1;
+        }
       }
     }
     label {
