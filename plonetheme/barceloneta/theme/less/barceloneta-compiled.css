@@ -4463,9 +4463,9 @@ ul.picker__list {
   .plone-navbar-nav.navbar-right:last-child {
     margin-right: -15px;
   }
-  .plone-navbar-nav .inPath > a,
-  .plone-navbar-nav .inPath > a:hover,
-  .plone-navbar-nav .inPath > a:focus {
+  .plone-navbar-nav .has_subtree.inPath > a,
+  .plone-navbar-nav .has_subtree.inPath > a:hover,
+  .plone-navbar-nav .has_subtree.inPath > a:focus {
     color: white;
     background-color: #7099bf;
   }
