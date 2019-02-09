@@ -53,10 +53,14 @@
         transition: ease-out 0.35s;
       }
       &:checked ~ ul {
-        visibility: visible;
-        opacity: 1;
         height: auto;
         transition: ease-in 0.35s;
+      }
+      @media (max-width: @plone-grid-float-breakpoint) {
+        &:checked ~ ul {
+          visibility: visible;
+          opacity: 1;
+        }
       }
     }
     label {
@@ -102,8 +106,6 @@
         opacity: 0;
         visibility: hidden;
         transition: ease-out 0.75s;
-        -moz-transition: ease-out 0.75s;
-        -webkit-transition: ease-out 0.75s;
         li {
           a {
             min-width: 14em;
@@ -117,8 +119,6 @@
       opacity: 1;
       visibility: visible;
       transition: ease-in .35s;
-      -moz-transition: ease-in .35s;
-      -webkit-transition: ease-in .35s;
     }
     .has_subtree .has_subtree ul {
       position: absolute;
@@ -291,7 +291,7 @@
       margin-right: -@plone-sitenav-padding-horizontal;
     }
 
-    .inPath > a {
+    .has_subtree.inPath > a {
       &,
       &:hover,
       &:focus {
