@@ -1905,6 +1905,9 @@ label .required::after {
 .widget input + label {
   display: inline;
 }
+.row .form {
+  margin-top: 20px;
+}
 .pull-right .standalone {
   width: 65px;
 }
