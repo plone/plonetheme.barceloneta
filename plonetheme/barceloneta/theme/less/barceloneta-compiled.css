@@ -4252,10 +4252,14 @@ ul.picker__list {
   transition: ease-out 0.35s;
 }
 .plone-nav li .opener:checked ~ ul {
-  visibility: visible;
-  opacity: 1;
   height: auto;
   transition: ease-in 0.35s;
+}
+@media (max-width: 768px) {
+  .plone-nav li .opener:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .plone-nav li label {
   position: absolute;
@@ -4288,8 +4292,6 @@ ul.picker__list {
     opacity: 0;
     visibility: hidden;
     transition: ease-out 0.75s;
-    -moz-transition: ease-out 0.75s;
-    -webkit-transition: ease-out 0.75s;
   }
   .plone-nav li ul li a {
     min-width: 14em;
@@ -4300,8 +4302,6 @@ ul.picker__list {
     opacity: 1;
     visibility: visible;
     transition: ease-in 0.35s;
-    -moz-transition: ease-in 0.35s;
-    -webkit-transition: ease-in 0.35s;
   }
   .plone-nav .has_subtree .has_subtree ul {
     position: absolute;
@@ -4507,6 +4507,7 @@ ul.picker__list {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+#content-core #portal-sitemap a,
 #content-core h1 a,
 #content-core h2 a,
 #content-core h3 a,
