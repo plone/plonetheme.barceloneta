@@ -9,6 +9,18 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.1 (2019-02-13)
+------------------
+
+Bug fixes:
+
+
+- Fix sitemap links (#173)
+- Sitenav style improvements (#176)
+- Fix overlapping css issue of Remove and Save button in pattern option of
+  Resource Registries (#1111)
+
+
 2.1.0 (2019-02-08)
 ------------------
 
