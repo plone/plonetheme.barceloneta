@@ -20,6 +20,7 @@
       padding: @plone-sitenav-link-padding;
       color: white;
       font-size: ceil((@plone-font-size-base * 1.15));;
+      hyphens: auto;
       &:hover,
       &:focus {
         text-decoration: none;
@@ -90,6 +91,7 @@
       &.has_subtree {
         .has_subtree li {
           label {
+            right: 0.25em;
             top: 0.6em;
           }
 
@@ -97,11 +99,15 @@
       }
       label {
         &:after {
+            width: 2.0em;
+            height: 2.25em;
+            font-size: 0.75em;
+            padding: 0.5em;
         }
       }
       ul {
         position: absolute;
-        z-index: 10;
+        z-index: 100;
         padding: 0;
         opacity: 0;
         visibility: hidden;

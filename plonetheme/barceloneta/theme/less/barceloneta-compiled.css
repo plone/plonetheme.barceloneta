@@ -4221,6 +4221,7 @@ ul.picker__list {
   padding: 10px 15px;
   color: white;
   font-size: 17px;
+  hyphens: auto;
 }
 .plone-nav li a:hover,
 .plone-nav li a:focus {
@@ -4283,11 +4284,18 @@ ul.picker__list {
     top: 0.85em;
   }
   .plone-nav li.has_subtree .has_subtree li label {
+    right: 0.25em;
     top: 0.6em;
+  }
+  .plone-nav li label:after {
+    width: 2em;
+    height: 2.25em;
+    font-size: 0.75em;
+    padding: 0.5em;
   }
   .plone-nav li ul {
     position: absolute;
-    z-index: 10;
+    z-index: 100;
     padding: 0;
     opacity: 0;
     visibility: hidden;
