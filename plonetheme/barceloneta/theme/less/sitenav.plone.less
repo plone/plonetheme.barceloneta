@@ -46,9 +46,11 @@
         transform: rotate(0deg);
         transition: ease-in 0.35s;
       }
-      &:checked + label:after {
-        transform: rotate(-180deg);
-        transition: ease-in 0.35s;
+      @media (max-width: @plone-grid-float-breakpoint) {
+        &:checked + label:after {
+          transform: rotate(-180deg);
+          transition: ease-in 0.35s;
+        }
       }
       & ~ ul {
         transition: ease-out 0.35s;
@@ -128,8 +130,14 @@
     }
     .has_subtree .has_subtree ul {
       position: absolute;
-      left: 16em;
+      z-index: -1;
+      left: 0em;
       top: 0px;
+    }
+    .has_subtree .has_subtree:hover > ul {
+      // we only shift the submenus to the right if visible
+      // to prevent horizontal scrollers if not needed
+      left: 16em;
     }
   }
 }

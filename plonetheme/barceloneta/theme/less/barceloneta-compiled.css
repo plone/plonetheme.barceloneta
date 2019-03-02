@@ -4245,9 +4245,11 @@ ul.picker__list {
   transform: rotate(0deg);
   transition: ease-in 0.35s;
 }
-.plone-nav li .opener:checked + label:after {
-  transform: rotate(-180deg);
-  transition: ease-in 0.35s;
+@media (max-width: 768px) {
+  .plone-nav li .opener:checked + label:after {
+    transform: rotate(-180deg);
+    transition: ease-in 0.35s;
+  }
 }
 .plone-nav li .opener ~ ul {
   transition: ease-out 0.35s;
@@ -4313,8 +4315,12 @@ ul.picker__list {
   }
   .plone-nav .has_subtree .has_subtree ul {
     position: absolute;
-    left: 16em;
+    z-index: -1;
+    left: 0em;
     top: 0px;
+  }
+  .plone-nav .has_subtree .has_subtree:hover > ul {
+    left: 16em;
   }
 }
 .plone-navbar {
