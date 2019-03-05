@@ -20,6 +20,7 @@
       padding: @plone-sitenav-link-padding;
       color: white;
       font-size: ceil((@plone-font-size-base * 1.15));;
+      hyphens: auto;
       &:hover,
       &:focus {
         text-decoration: none;
@@ -45,9 +46,11 @@
         transform: rotate(0deg);
         transition: ease-in 0.35s;
       }
-      &:checked + label:after {
-        transform: rotate(-180deg);
-        transition: ease-in 0.35s;
+      @media (max-width: @plone-grid-float-breakpoint) {
+        &:checked + label:after {
+          transform: rotate(-180deg);
+          transition: ease-in 0.35s;
+        }
       }
       & ~ ul {
         transition: ease-out 0.35s;
@@ -90,6 +93,7 @@
       &.has_subtree {
         .has_subtree li {
           label {
+            right: 0.25em;
             top: 0.6em;
           }
 
@@ -97,11 +101,15 @@
       }
       label {
         &:after {
+            width: 2.0em;
+            height: 2.25em;
+            font-size: 0.75em;
+            padding: 0.5em;
         }
       }
       ul {
         position: absolute;
-        z-index: 10;
+        z-index: 100;
         padding: 0;
         opacity: 0;
         visibility: hidden;
@@ -122,8 +130,14 @@
     }
     .has_subtree .has_subtree ul {
       position: absolute;
-      left: 16em;
+      z-index: -1;
+      left: 0em;
       top: 0px;
+    }
+    .has_subtree .has_subtree:hover > ul {
+      // we only shift the submenus to the right if visible
+      // to prevent horizontal scrollers if not needed
+      left: 16em;
     }
   }
 }
