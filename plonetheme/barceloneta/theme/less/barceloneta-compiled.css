@@ -4266,12 +4266,15 @@ ul.picker__list {
 }
 .plone-nav li label {
   position: absolute;
-  right: 0.5em;
-  top: 0.5em;
-  background: #00628d;
-  border-radius: 4px;
+  right: 0em;
+  top: 0em;
+  height: 100%;
+  width: 4em;
+  text-align: center;
 }
 .plone-nav li label:after {
+  background: #00628d;
+  border-radius: 4px;
   content: "▼";
   cursor: pointer;
   display: inline-block;
@@ -4280,20 +4283,30 @@ ul.picker__list {
   height: 1.5em;
   font-size: 1.25em;
   padding: 0.25em;
+  right: 0.5em;
+  top: 0.45em;
+  position: absolute;
 }
 @media (min-width: 768px) {
   .plone-nav li label {
-    top: 0.85em;
+    top: 0em;
+    width: 2em;
+  }
+  .plone-nav li label:after {
+    top: 1.25em;
   }
   .plone-nav li.has_subtree .has_subtree li label {
     right: 0.25em;
-    top: 0.6em;
+  }
+  .plone-nav li.has_subtree .has_subtree li label:after {
+    top: 0.5em;
   }
   .plone-nav li label:after {
     width: 2em;
-    height: 2.25em;
+    height: 2em;
     font-size: 0.75em;
-    padding: 0.5em;
+    padding: 0.5em 1em 0.5em 0;
+    background: transparent;
   }
   .plone-nav li ul {
     position: absolute;
@@ -4468,7 +4481,6 @@ ul.picker__list {
   }
   .plone-navbar-nav > li label {
     font-size: 1em;
-    top: 1em;
     background: transparent;
   }
   .plone-navbar-nav > li li.has_subtree label:after {
