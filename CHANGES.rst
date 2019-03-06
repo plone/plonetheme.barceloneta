@@ -9,6 +9,17 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.2 (2019-03-06)
+------------------
+
+Bug fixes:
+
+
+- Navigation style and overflow improvements [agitator] (#180)
+- Further navigation style improvements - increase button touch area [agitator]
+  (#181)
+
+
 2.1.1 (2019-02-13)
 ------------------
 
