@@ -4222,6 +4222,7 @@ ul.picker__list {
   color: white;
   font-size: 17px;
   hyphens: auto;
+  word-break: break-word;
 }
 .plone-nav li a:hover,
 .plone-nav li a:focus {
@@ -4310,6 +4311,7 @@ ul.picker__list {
   }
   .plone-nav li ul {
     position: absolute;
+    max-width: 16em;
     z-index: 100;
     padding: 0;
     opacity: 0;
