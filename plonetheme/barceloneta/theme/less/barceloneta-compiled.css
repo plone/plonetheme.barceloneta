@@ -2696,6 +2696,10 @@ fieldset[disabled] .link-parent.active {
   width: 220px;
   height: 240px;
 }
+.photoAlbumEntry a .photoAlbumEntryTitle {
+  hyphens: auto;
+  word-break: break-word;
+}
 .photoAlbumEntry img {
   max-width: 200px;
   max-height: 200px;
