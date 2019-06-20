@@ -9,6 +9,16 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.3 (2019-06-19)
+------------------
+
+Bug fixes:
+
+
+- - Fix submenu width for long entries
+    [agitator] (#182)
+
+
 2.1.2 (2019-03-06)
 ------------------
 
