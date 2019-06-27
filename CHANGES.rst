@@ -9,6 +9,16 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.4 (2019-06-27)
+------------------
+
+Bug fixes:
+
+
+- Allow long photoAlbumEntryTitle entries to break to fit width.
+  [agitator] (#183)
+
+
 2.1.3 (2019-06-19)
 ------------------
 
