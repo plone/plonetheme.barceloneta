@@ -9,15 +9,6 @@ Changelog
 
 .. towncrier release notes start
 
-2.1.5 (2019-06-27)
-------------------
-
-Modal and News Image Container Improvements and Fixes:
-
-
-- Now the close button is display with high priority in z-index. Previously, the global menu was overlapping the same
-- Improvements and corrections regarding the news image. Previously the box shadow was disrupting the description reading.
-
 
 2.1.4 (2019-06-27)
 ------------------
