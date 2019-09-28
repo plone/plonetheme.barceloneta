@@ -17,6 +17,7 @@ setup(name='plonetheme.barceloneta',
       description="The default theme for Plone 5.",
       long_description=long_description,
       classifiers=[
+          "Development Status :: 5 - Production/Stable",
           "Environment :: Web Environment",
           "Framework :: Plone",
           "Framework :: Plone :: 5.0",
