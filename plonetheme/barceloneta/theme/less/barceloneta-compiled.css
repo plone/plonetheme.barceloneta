@@ -1908,12 +1908,6 @@ label .required::after {
 .row .form {
   margin-top: 20px;
 }
-.pull-right .standalone {
-  width: 65px;
-}
-.pull-right .destructive {
-  width: 65px;
-}
 .standalone,
 .context,
 .destructive,
@@ -5151,12 +5145,6 @@ body.template-logged_out #content-core .portletFooter {
   background: #fcfcfd;
   margin: 6px 12px;
 }
-.portraitPhoto .standalone {
-  width: 65px;
-}
-.portraitPhoto .destructive {
-  width: 65px;
-}
 .image-product img {
   max-width: 100%;
   height: auto;
@@ -5222,12 +5210,6 @@ body.template-logged_out #content-core .portletFooter {
   display: inline;
   font-size: 12px;
   color: #76797C;
-}
-.discussion .commentDate .standalone {
-  width: 65px;
-}
-.discussion .commentDate .destructive {
-  width: 65px;
 }
 .discussion .commentBody {
   margin: 1em 0;
