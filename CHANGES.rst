@@ -9,6 +9,15 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.6 (2019-10-21)
+------------------
+
+Bug fixes:
+
+
+- Revert "Fix the different width of Hide and Show button in action control panel" [vincentfretin] (#187)
+
+
 2.1.5 (2019-10-12)
 ------------------
 
