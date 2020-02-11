@@ -4,7 +4,7 @@
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
-  @include clearfix();
+  @include clearfix;
   li {
     position: relative;
     display: block;
@@ -23,7 +23,6 @@
       padding: $plone-sitenav-link-padding;
       color: white;
       font-size: ceil(($plone-font-size-base * 1.15));
-      ;
       hyphens: auto;
       word-break: break-word;
 
@@ -183,7 +182,7 @@
 }
 
 .plone-navbar {
-  @include clearfix();
+  @include clearfix;
   background-color: $plone-sitenav-bg;
   color: white;
   position: relative;
@@ -192,11 +191,11 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, .17);
 
   // Prevent floats from breaking the navbar
-  @include clearfix();
+  @include clearfix;
 }
 
 .plone-navbar-header {
-  @include clearfix(); //without extend
+  @include clearfix; //without extend
 
   @media (min-width: $plone-grid-float-breakpoint) {
     float: left;
@@ -209,7 +208,7 @@
   padding-left: $plone-sitenav-padding-horizontal;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-  @include clearfix();
+  @include clearfix;
   -webkit-overflow-scrolling: touch;
 
   display: none;
@@ -307,7 +306,7 @@
 }
 
 .plone-navbar-nav {
-  margin: 0 -$plone-sitenav-padding-horizontal 0;
+  // margin: 0 -$plone-sitenav-padding-horizontal 0;
 
   >li>a {
     padding-top: 10px;
