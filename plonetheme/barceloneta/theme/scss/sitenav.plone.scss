@@ -4,8 +4,7 @@
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
-  &:extend(.clearfix all);
-
+  @include clearfix();
   li {
     position: relative;
     display: block;
@@ -193,11 +192,11 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, .17);
 
   // Prevent floats from breaking the navbar
-  &:extend(.clearfix all);
+  @include clearfix();
 }
 
 .plone-navbar-header {
-  @mixin clearfix(), //without extend
+  @include clearfix(); //without extend
 
   @media (min-width: $plone-grid-float-breakpoint) {
     float: left;
@@ -210,7 +209,7 @@
   padding-left: $plone-sitenav-padding-horizontal;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-  &:extend(.clearfix all);
+  @include clearfix();
   -webkit-overflow-scrolling: touch;
 
   display: none;

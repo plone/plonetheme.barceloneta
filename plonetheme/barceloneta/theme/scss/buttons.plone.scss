@@ -11,7 +11,7 @@
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  .button-size($plone-padding-base-vertical; $plone-padding-base-horizontal; $plone-font-size-base; $plone-line-height-base; $plone-border-radius-small);
+  @include button-size($plone-padding-base-vertical, $plone-padding-base-horizontal, $plone-font-size-base, $plone-line-height-base, $plone-border-radius-small);
   @include user-select(none);
 
   &,
@@ -47,20 +47,21 @@
 }
 
 .standalone, [type="submit"], button { //gray
-  .button-variant($plone-btn-standalone-color; $plone-btn-standalone-bg; $plone-btn-standalone-border);
+  @include button-variant($plone-btn-standalone-color, $plone-btn-standalone-bg, $plone-btn-standalone-border);
 }
 
 .context { //blue
-  .button-variant($plone-btn-context-color; $plone-btn-context-bg; $plone-btn-context-border);
+  @include button-variant($plone-btn-context-color, $plone-btn-context-bg, $plone-btn-context-border);
 }
 
 .destructive { //red
-  .button-variant($plone-btn-destructive-color; $plone-btn-destructive-bg; $plone-btn-destructive-border);
+  @include button-variant($plone-btn-destructive-color, $plone-btn-destructive-bg, $plone-btn-destructive-border);
 }
 
 .link-parent {
-  .standalone; margin-bottom: $plone-padding-base-horizontal;
-  &::before {content: "↩ ";top: 3px;position: relative;}
+  @extend .standalone; 
+  margin-bottom: $plone-padding-base-horizontal;
+  &:before {content: "↩ ";top: 3px;position: relative;}
 }
 
 

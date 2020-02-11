@@ -17,7 +17,7 @@
   }
 
   .commentImage {
-    @include pull-left();
+    @extend .pull-left;
     border-radius: 50px;
     overflow: hidden;
     position: absolute;
@@ -30,7 +30,7 @@
   }
 
   .commentDate {
-    @include pull-right();
+    @extend .pull-right;
     display: inline;
     font-size: $plone-font-size-small;
     color: #76797C;
@@ -95,4 +95,4 @@
 }
 
 //*// Discussion Control Panel
-.template-discussion-controlpanel .unclickable {  .opacity(0.6);}
+.template-discussion-controlpanel .unclickable { @include opacity(0.6);}
