@@ -55,17 +55,15 @@ $plone-line-height-base:        1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $plone-line-height-computed:    floor(($plone-font-size-base * $plone-line-height-base)); // ~20px
 
-$plone-headings-font-family:    inherit;
-	$plone-headings-font-weight:    $plone-font-weight-regular;
-	$plone-headings-line-height:    1.1;
-	$plone-headings-color:          inherit;
-
 $plone-font-weight-light:		300;
 $plone-font-weight-regular:		400;
 $plone-font-weight-medium:		500;
 $plone-font-weight-bold:		700;
 
-
+$plone-headings-font-family:    inherit;
+	$plone-headings-font-weight:    $plone-font-weight-regular;
+	$plone-headings-line-height:    1.1;
+	$plone-headings-color:          inherit;
 
 //*// COMPONENTS
 $plone-padding-base-vertical:     6px;
@@ -167,6 +165,20 @@ $plone-btn-destructive-color:              #fff;
 	$plone-btn-destructive-bg:                 #bb4f45;
 	$plone-btn-destructive-border:             darken($plone-btn-destructive-bg, 10%);
 
+//*// PORTLETS
+$plone-border-base:							1px solid;
+$plone-portlet-header-bg:					#f2f1f1;
+$plone-portlet-header-color:				$plone-gray;
+$plone-portlet-content-bg:					#fff;
+$plone-portlet-footer-bg:					#fcfcfd;
+$plone-portlet-border:						$plone-border-base #e5e5e5;
+$plone-portlet-contrast-bg:					#e5e5e5;
+$plone-portlet-event-bullet:				#dbecfe;
+$plone-portlet-list-bullet:					#64bee8;
+$plone-portlet-list-hover-bg:				#fcfcfd;
+$plone-portlet-list-small-text:				$plone-gray;
+$plone-portlet-navtree-maxlevel:			5;
+
 //*// FORMS
 //** `<input>` background color
 $plone-input-bg:                       #fff;
@@ -215,23 +227,6 @@ $plone-alert-error-bg:						$plone-state-error-bg;
 	$plone-alert-error-text:					$plone-state-error-text;
 	$plone-alert-error-border:					$plone-state-error-border;
 	$plone-alert-error-bullet:					$plone-state-error-bullet;
-
-
-
-//*// PORTLETS
-$plone-border-base:							1px solid;
-$plone-portlet-header-bg:					#f2f1f1;
-$plone-portlet-header-color:				$plone-gray;
-$plone-portlet-content-bg:					#fff;
-$plone-portlet-footer-bg:					#fcfcfd;
-$plone-portlet-border:						$plone-border-base #e5e5e5;
-$plone-portlet-contrast-bg:					#e5e5e5;
-$plone-portlet-event-bullet:				#dbecfe;
-$plone-portlet-list-bullet:					#64bee8;
-$plone-portlet-list-hover-bg:				#fcfcfd;
-$plone-portlet-list-small-text:				$plone-gray;
-$plone-portlet-navtree-maxlevel:			5;
-
 
 //*// THUMBS
 //** Padding around the thumbnail image

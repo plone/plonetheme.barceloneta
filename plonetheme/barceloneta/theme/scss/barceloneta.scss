@@ -1,0 +1,74 @@
+//*// PLONE 5 BARCELONETA LESS //*//
+@import "mixin.font.plone.scss";
+//*// Font families
+@import "fonts.plone.scss";
+
+// //*// Core variables and mixins
+@import "variables.cmfplone.scss";
+@import "variables.plone.scss";
+// 	@import "mixin.prefixes.plone.scss";
+// 	@import "mixin.tabfocus.plone.scss";
+// 	@import "mixin.images.plone.scss";
+// 	@import "mixin.forms.plone.scss";
+// 	@import "mixin.borderradius.plone.scss";
+// 	@import "mixin.buttons.plone.scss";
+// 	@import "mixin.clearfix.plone.scss";
+// 	@import "mixin.gridframework.plone.scss"; //grid Bootstrap
+// 	@import "mixin.grid.plone.scss"; //grid Bootstrap
+	// @import "mixin.font.plone.scss";
+// 	@import "mixin.portlets.plone.scss";
+
+
+// //*// Reset and dependencies
+// @import "normalize.plone.scss";
+// @import "print.plone.scss";
+
+// //*// Core CSS
+// @import "scaffolding.plone.scss";
+// @import "type.plone.scss";
+// @import "code.plone.scss";
+// //@import "deco.plone.scss"; //uncomment for deco variant
+// @import "grid.plone.scss"; //grid Bootstrap
+// @import "tables.plone.scss";
+// @import "forms.plone.scss";
+// @import "buttons.plone.scss";
+// @import "states.plone.scss";
+
+// //*// Components
+// @import "breadcrumbs.plone.scss";
+// @import "pagination.plone.scss";
+// @import "formtabbing.plone.scss"; //pattern
+// @import "views.plone.scss";
+// @import "thumbs.plone.scss";
+// @import "alerts.plone.scss";
+// @import "portlets.plone.scss";
+// @import "controlpanels.plone.scss";
+// @import "tags.plone.scss";
+// @import "contents.plone.scss";
+
+// //*// Patterns
+// @import "accessibility.plone.scss";
+// @import "toc.plone.scss";
+// @import "dropzone.plone.scss";
+// @import "modal.plone.scss";
+// @import "pickadate.plone.scss";
+// @import "sortable.plone.scss";
+// @import "tablesorter.plone.scss";
+// @import "tooltip.plone.scss";
+// @import "tree.plone.scss";
+// @import "dropdowns.plone.scss";
+
+// //*// Structure
+// @import "header.plone.scss";
+// @import "sitenav.plone.scss";
+// @import "main.plone.scss";
+// @import "footer.plone.scss";
+// @import "loginform.plone.scss";
+// @import "sitemap.plone.scss";
+
+// //*// Products
+// @import "event.plone.scss";
+// @import "image.plone.scss";
+// @import "behaviors.plone.scss";
+// @import "discussion.plone.scss";
+// @import "search.plone.scss";
