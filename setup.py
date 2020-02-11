@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-version = '2.1.7.dev0'
+version = '3.0.0.dev0'
 
 long_description = (
     read('README.rst') + '\n' +
@@ -20,15 +20,12 @@ setup(name='plonetheme.barceloneta',
           "Development Status :: 5 - Production/Stable",
           "Environment :: Web Environment",
           "Framework :: Plone",
-          "Framework :: Plone :: 5.1",
           "Framework :: Plone :: 5.2",
           "Framework :: Plone :: Theme",
-          "Framework :: Zope2",
           "Framework :: Zope :: 4",
           "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
           "Operating System :: OS Independent",
           "Programming Language :: Python",
-          "Programming Language :: Python :: 2.7",
           "Programming Language :: Python :: 3.6",
           "Programming Language :: Python :: 3.7",
           ],
