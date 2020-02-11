@@ -2908,7 +2908,7 @@ fieldset[disabled] .destructive.active {
   content: "×";
 }
 
-.portlet .portletContent > .portalMessage, body.template-login_form #content-core .portletContent > .portalMessage, body.template-logged_out #content-core .portletContent > .portalMessage {
+.portlet .portletContent > .portalMessage, .managedPortlet .portletContent > .portalMessage, body.template-login_form #content-core .portletContent > .portalMessage, body.template-logged_out #content-core .portletContent > .portalMessage {
   padding: 15px;
   padding-left: 45px;
   margin: 15px;
@@ -2930,11 +2930,423 @@ fieldset[disabled] .destructive.active {
 	}
 }
 */
-.portlet.portletSiteSetup .portletContent > ul > li a::before, body.template-login_form .portletSiteSetup#content-core .portletContent > ul > li a::before, body.template-logged_out .portletSiteSetup#content-core .portletContent > ul > li a::before {
+.portlet, .managedPortlet, body.template-login_form #content-core,
+body.template-logged_out #content-core {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.portlet > :first-child, .managedPortlet > :first-child, body.template-login_form #content-core > :first-child, body.template-logged_out #content-core > :first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.portlet > :last-child, .managedPortlet > :last-child, body.template-login_form #content-core > :last-child, body.template-logged_out #content-core > :last-child {
+  border-radius: 0 0 4px 4px;
+}
+
+.portlet .portletHeader, .managedPortlet .portletHeader, body.template-login_form #content-core .portletHeader, body.template-logged_out #content-core .portletHeader {
+  background: #f2f1f1;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 13px 15px;
+  color: dimgray;
+}
+
+.portlet .portletHeader > a, .managedPortlet .portletHeader > a, body.template-login_form #content-core .portletHeader > a, body.template-logged_out #content-core .portletHeader > a {
+  color: #086ca3;
+}
+
+.portlet.portletCalendar .portletHeader, .portletCalendar.managedPortlet .portletHeader, body.template-login_form .portletCalendar#content-core .portletHeader, body.template-logged_out .portletCalendar#content-core .portletHeader {
+  text-align: center;
+  position: relative;
+}
+
+.portlet.portletCalendar .portletHeader .calendarPrevious, .portletCalendar.managedPortlet .portletHeader .calendarPrevious, body.template-login_form .portletCalendar#content-core .portletHeader .calendarPrevious, body.template-logged_out .portletCalendar#content-core .portletHeader .calendarPrevious, .portlet.portletCalendar .portletHeader .calendarNext, .portletCalendar.managedPortlet .portletHeader .calendarNext, body.template-login_form .portletCalendar#content-core .portletHeader .calendarNext, body.template-logged_out .portletCalendar#content-core .portletHeader .calendarNext {
+  width: 30px;
+  height: 30px;
+  padding: 0 1px 2px;
+  border-radius: 50%;
+  position: absolute;
+  display: inline-block;
+  left: 5px;
+  font-size: 24px;
+  margin-top: -3px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.portlet.portletCalendar .portletHeader .calendarPrevious:hover, .portletCalendar.managedPortlet .portletHeader .calendarPrevious:hover, body.template-login_form .portletCalendar#content-core .portletHeader .calendarPrevious:hover, body.template-logged_out .portletCalendar#content-core .portletHeader .calendarPrevious:hover, .portlet.portletCalendar .portletHeader .calendarNext:hover, .portletCalendar.managedPortlet .portletHeader .calendarNext:hover, body.template-login_form .portletCalendar#content-core .portletHeader .calendarNext:hover, body.template-logged_out .portletCalendar#content-core .portletHeader .calendarNext:hover {
+  background: #fff;
+  text-decoration: none;
+}
+
+.portlet.portletCalendar .portletHeader .calendarNext, .portletCalendar.managedPortlet .portletHeader .calendarNext, body.template-login_form .portletCalendar#content-core .portletHeader .calendarNext, body.template-logged_out .portletCalendar#content-core .portletHeader .calendarNext {
+  right: 5px;
+  left: inherit;
+}
+
+.portlet .portletContent, .managedPortlet .portletContent, body.template-login_form #content-core .portletContent, body.template-logged_out #content-core .portletContent {
+  font-size: 14px;
+  border-top: 1px solid #e5e5e5;
+  background: #fff;
+  font-weight: 400;
+}
+
+.portlet .portletContent > *, .managedPortlet .portletContent > *, body.template-login_form #content-core .portletContent > *, body.template-logged_out #content-core .portletContent > *, .portlet .portletContent > div:not(.portalMessage), .managedPortlet .portletContent > div:not(.portalMessage), body.template-login_form #content-core .portletContent > div:not(.portalMessage), body.template-logged_out #content-core .portletContent > div:not(.portalMessage) {
+  padding: 10px 15px;
+  margin: 0;
+  color: dimgray;
+}
+
+.portlet .portletContent > ul, .managedPortlet .portletContent > ul, body.template-login_form #content-core .portletContent > ul, body.template-logged_out #content-core .portletContent > ul {
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.portlet .portletContent > ul > li a, .managedPortlet .portletContent > ul > li a, body.template-login_form #content-core .portletContent > ul > li a, body.template-logged_out #content-core .portletContent > ul > li a {
+  display: block;
+  padding: 10px 15px 26px 15px;
+  position: relative;
+  z-index: 1;
+  color: #086ca3;
+}
+
+.portlet .portletContent > ul > li > a, .managedPortlet .portletContent > ul > li > a, body.template-login_form #content-core .portletContent > ul > li > a, body.template-logged_out #content-core .portletContent > ul > li > a {
+  border-top: 1px solid #e5e5e5;
+}
+
+.portlet .portletContent > ul > li:first-child > a, .managedPortlet .portletContent > ul > li:first-child > a, body.template-login_form #content-core .portletContent > ul > li:first-child > a, body.template-logged_out #content-core .portletContent > ul > li:first-child > a {
+  border-top: 0;
+}
+
+.portlet .portletContent > ul ul, .managedPortlet .portletContent > ul ul, body.template-login_form #content-core .portletContent > ul ul, body.template-logged_out #content-core .portletContent > ul ul {
+  padding-left: 15px;
+  list-style: none;
+}
+
+.portlet .portletContent > ul .portletItemDetails, .managedPortlet .portletContent > ul .portletItemDetails, body.template-login_form #content-core .portletContent > ul .portletItemDetails, body.template-logged_out #content-core .portletContent > ul .portletItemDetails {
+  display: block;
+  z-index: 0;
+  padding: 0 15px 10px 15px;
+  font-weight: 400;
+  position: relative;
+  margin-top: -26px;
+  font-size: 12px;
+  color: dimgray;
+}
+
+.portlet .portletContent > ul li:hover, .managedPortlet .portletContent > ul li:hover, body.template-login_form #content-core .portletContent > ul li:hover, body.template-logged_out #content-core .portletContent > ul li:hover {
+  background: #fcfcfd;
+}
+
+.portlet.portletCalendar table, .portletCalendar.managedPortlet table, body.template-login_form .portletCalendar#content-core table, body.template-logged_out .portletCalendar#content-core table {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.portlet.portletCalendar table tr, .portletCalendar.managedPortlet table tr, body.template-login_form .portletCalendar#content-core table tr, body.template-logged_out .portletCalendar#content-core table tr {
+  line-height: 30px;
+}
+
+.portlet.portletCalendar table thead, .portletCalendar.managedPortlet table thead, body.template-login_form .portletCalendar#content-core table thead, body.template-logged_out .portletCalendar#content-core table thead {
+  background: #fcfcfd;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.portlet.portletCalendar table thead th, .portletCalendar.managedPortlet table thead th, body.template-login_form .portletCalendar#content-core table thead th, body.template-logged_out .portletCalendar#content-core table thead th {
+  color: dimgray;
+  font-weight: 300;
+  height: 34px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.portlet.portletCalendar table td, .portletCalendar.managedPortlet table td, body.template-login_form .portletCalendar#content-core table td, body.template-logged_out .portletCalendar#content-core table td {
+  color: #666;
+  background: #eeeeee;
+}
+
+.portlet.portletCalendar table td:hover, .portletCalendar.managedPortlet table td:hover, body.template-login_form .portletCalendar#content-core table td:hover, body.template-logged_out .portletCalendar#content-core table td:hover {
+  background: #fafafa;
+}
+
+.portlet.portletCalendar table td.today:hover, .portletCalendar.managedPortlet table td.today:hover, body.template-login_form .portletCalendar#content-core table td.today:hover, body.template-logged_out .portletCalendar#content-core table td.today:hover, .portlet.portletCalendar table td.cal_has_events:hover, .portletCalendar.managedPortlet table td.cal_has_events:hover, body.template-login_form .portletCalendar#content-core table td.cal_has_events:hover, body.template-logged_out .portletCalendar#content-core table td.cal_has_events:hover {
+  background: #eee;
+}
+
+.portlet.portletCalendar table td.cal_prev_month, .portletCalendar.managedPortlet table td.cal_prev_month, body.template-login_form .portletCalendar#content-core table td.cal_prev_month, body.template-logged_out .portletCalendar#content-core table td.cal_prev_month {
+  color: #999;
+  background: #f9f9f9;
+}
+
+.portlet.portletCalendar table td > *, .portletCalendar.managedPortlet table td > *, body.template-login_form .portletCalendar#content-core table td > *, body.template-logged_out .portletCalendar#content-core table td > * {
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.portlet.portletCalendar table .cal_has_events, .portletCalendar.managedPortlet table .cal_has_events, body.template-login_form .portletCalendar#content-core table .cal_has_events, body.template-logged_out .portletCalendar#content-core table .cal_has_events {
+  position: relative;
+}
+
+.portlet.portletCalendar table .cal_has_events a:hover, .portletCalendar.managedPortlet table .cal_has_events a:hover, body.template-login_form .portletCalendar#content-core table .cal_has_events a:hover, body.template-logged_out .portletCalendar#content-core table .cal_has_events a:hover {
+  background: #dbecfe;
+  text-decoration: none;
+  box-shadow: 0 0 0 5px #dbecfe;
+}
+
+.portlet.portletCalendar table .cal_has_events a::after, .portletCalendar.managedPortlet table .cal_has_events a::after, body.template-login_form .portletCalendar#content-core table .cal_has_events a::after, body.template-logged_out .portletCalendar#content-core table .cal_has_events a::after {
+  content: "•";
+  position: absolute;
+  margin-left: 50%;
+  left: -6px;
+  font-size: 20px;
+  color: #a7daf2;
+  margin-top: 9px;
+}
+
+.portlet.portletCalendar table .cal_has_events a:hover::after, .portletCalendar.managedPortlet table .cal_has_events a:hover::after, body.template-login_form .portletCalendar#content-core table .cal_has_events a:hover::after, body.template-logged_out .portletCalendar#content-core table .cal_has_events a:hover::after {
+  color: #64bee8;
+}
+
+.portlet.portletCalendar table .today > *, .portletCalendar.managedPortlet table .today > *, body.template-login_form .portletCalendar#content-core table .today > *, body.template-logged_out .portletCalendar#content-core table .today > * {
+  background: #e5e5e5;
+  font-weight: 500;
+  box-shadow: 0 0 0 5px #e5e5e5;
+  color: #000;
+}
+
+.portlet.portletCalendar table tbody tr:first-child td > *, .portletCalendar.managedPortlet table tbody tr:first-child td > *, body.template-login_form .portletCalendar#content-core table tbody tr:first-child td > *, body.template-logged_out .portletCalendar#content-core table tbody tr:first-child td > * {
+  margin-top: 6px;
+}
+
+.portlet.portletCalendar table tbody tr:last-child td > *, .portletCalendar.managedPortlet table tbody tr:last-child td > *, body.template-login_form .portletCalendar#content-core table tbody tr:last-child td > *, body.template-logged_out .portletCalendar#content-core table tbody tr:last-child td > * {
+  margin-bottom: 6px;
+}
+
+.portlet.portletCalendar table .cal_next_month, .portletCalendar.managedPortlet table .cal_next_month, body.template-login_form .portletCalendar#content-core table .cal_next_month, body.template-logged_out .portletCalendar#content-core table .cal_next_month, .portlet.portletCalendar table .cal_prev_month, .portletCalendar.managedPortlet table .cal_prev_month, body.template-login_form .portletCalendar#content-core table .cal_prev_month, body.template-logged_out .portletCalendar#content-core table .cal_prev_month {
+  color: #000;
+}
+
+.portlet.portletCalendar table .cal_next_month.cal_has_events > a, .portletCalendar.managedPortlet table .cal_next_month.cal_has_events > a, body.template-login_form .portletCalendar#content-core table .cal_next_month.cal_has_events > a, body.template-logged_out .portletCalendar#content-core table .cal_next_month.cal_has_events > a, .portlet.portletCalendar table .cal_prev_month.cal_has_events > a, .portletCalendar.managedPortlet table .cal_prev_month.cal_has_events > a, body.template-login_form .portletCalendar#content-core table .cal_prev_month.cal_has_events > a, body.template-logged_out .portletCalendar#content-core table .cal_prev_month.cal_has_events > a {
+  color: #a7daf2;
+}
+
+.portlet.portletCalendar table .cal_next_month.cal_has_events > a::after, .portletCalendar.managedPortlet table .cal_next_month.cal_has_events > a::after, body.template-login_form .portletCalendar#content-core table .cal_next_month.cal_has_events > a::after, body.template-logged_out .portletCalendar#content-core table .cal_next_month.cal_has_events > a::after, .portlet.portletCalendar table .cal_prev_month.cal_has_events > a::after, .portletCalendar.managedPortlet table .cal_prev_month.cal_has_events > a::after, body.template-login_form .portletCalendar#content-core table .cal_prev_month.cal_has_events > a::after, body.template-logged_out .portletCalendar#content-core table .cal_prev_month.cal_has_events > a::after {
+  color: #d3edf8;
+}
+
+.portlet.portletCalendar table .cal_next_month.cal_has_events > a:hover, .portletCalendar.managedPortlet table .cal_next_month.cal_has_events > a:hover, body.template-login_form .portletCalendar#content-core table .cal_next_month.cal_has_events > a:hover, body.template-logged_out .portletCalendar#content-core table .cal_next_month.cal_has_events > a:hover, .portlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover, .portletCalendar.managedPortlet table .cal_prev_month.cal_has_events > a:hover, body.template-login_form .portletCalendar#content-core table .cal_prev_month.cal_has_events > a:hover, body.template-logged_out .portletCalendar#content-core table .cal_prev_month.cal_has_events > a:hover {
+  color: #004665;
+}
+
+.portlet.portletCalendar table .cal_next_month.cal_has_events > a:hover::after, .portletCalendar.managedPortlet table .cal_next_month.cal_has_events > a:hover::after, body.template-login_form .portletCalendar#content-core table .cal_next_month.cal_has_events > a:hover::after, body.template-logged_out .portletCalendar#content-core table .cal_next_month.cal_has_events > a:hover::after, .portlet.portletCalendar table .cal_prev_month.cal_has_events > a:hover::after, .portletCalendar.managedPortlet table .cal_prev_month.cal_has_events > a:hover::after, body.template-login_form .portletCalendar#content-core table .cal_prev_month.cal_has_events > a:hover::after, body.template-logged_out .portletCalendar#content-core table .cal_prev_month.cal_has_events > a:hover::after {
+  color: #64bee8;
+}
+
+.portlet .formControls, .managedPortlet .formControls, body.template-login_form #content-core .formControls, body.template-logged_out #content-core .formControls, .portlet .plone-modal .plone-modal-dialog .plone-modal-footer, .plone-modal .plone-modal-dialog .portlet .plone-modal-footer, .managedPortlet .plone-modal .plone-modal-dialog .plone-modal-footer, .plone-modal .plone-modal-dialog .managedPortlet .plone-modal-footer, body.template-login_form #content-core .plone-modal .plone-modal-dialog .plone-modal-footer, .plone-modal .plone-modal-dialog body.template-login_form #content-core .plone-modal-footer, body.template-logged_out #content-core .plone-modal .plone-modal-dialog .plone-modal-footer, .plone-modal .plone-modal-dialog body.template-logged_out #content-core .plone-modal-footer {
+  border: 0;
+  background: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.portlet .portletFooter, .managedPortlet .portletFooter, body.template-login_form #content-core .portletFooter, body.template-logged_out #content-core .portletFooter {
+  border-top: 1px solid #e5e5e5;
+  background: #fcfcfd;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: 400;
+  box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.portletNavigationTree nav.portletContent > ul > li a {
+  padding: 10px 15px 10px 15px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.portletNavigationTree nav.portletContent > ul > li strong {
+  padding: 10px 15px 10px 15px;
+  border-top: 1px solid #e5e5e5;
+  background: #fcfcfd;
+  color: dimgray;
+  display: block;
+  font-weight: 400;
+}
+
+.portletNavigationTree .portletContent {
+  border-top: 0;
+}
+
+.portletNavigationTree .portletContent > ul > li a {
+  display: block;
+}
+
+.portletNavigationTree .portletContent > ul > li a:hover {
+  text-decoration: none;
+  background: #f6f6f9;
+  color: #64bee8;
+}
+
+.portletNavigationTree .portletContent > ul > li a:hover::before {
+  color: #64bee8;
+}
+
+.portletNavigationTree .portletContent > ul > li a:hover::after {
+  content: "⟩";
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  margin-top: -3px;
+  color: #777777;
+}
+
+.portletNavigationTree .portletContent > ul > li > a > img.image-icon {
+  max-height: 20px;
+}
+
+.portletNavigationTree .portletContent > ul ul {
+  padding-left: 0;
+}
+
+.portletNavigationTree .portletContent .navTreeCurrentNode > a {
+  background: #f6f6f9;
+  color: dimgray;
+}
+
+.portletNavigationTree .portletContent .navTreeCurrentNode > a::after {
+  content: "⟩";
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  margin-top: -3px;
+  color: #777777;
+}
+
+.portletNavigationTree .portletContent ul.navTreeLevel0 > li a {
+  padding-left: 15px;
+}
+
+.portletNavigationTree .portletContent ul.navTreeLevel1 > li a {
+  padding-left: 30px;
+}
+
+.portletNavigationTree .portletContent ul.navTreeLevel2 > li a {
+  padding-left: 45px;
+}
+
+.portletNavigationTree .portletContent ul.navTreeLevel3 > li a {
+  padding-left: 60px;
+}
+
+.portletNavigationTree .portletContent ul.navTreeLevel4 > li a {
+  padding-left: 75px;
+}
+
+.portletNavigationTree .portletContent ul.navTreeLevel5 > li a {
+  padding-left: 90px;
+}
+
+#upgrade-products .configlets li,
+#install-products .configlets li,
+#activated-products .configlets li,
+#broken-products .configlets li {
+  padding: 12px;
+  border-top: 1px dotted #e5e5e5;
+}
+
+#upgrade-products .configlets li:first-child,
+#install-products .configlets li:first-child,
+#activated-products .configlets li:first-child,
+#broken-products .configlets li:first-child {
+  border-top: 0;
+}
+
+#upgrade-products .configlets h3, #upgrade-products .configlets p,
+#install-products .configlets h3,
+#install-products .configlets p,
+#activated-products .configlets h3,
+#activated-products .configlets p,
+#broken-products .configlets h3,
+#broken-products .configlets p {
+  margin: 0;
+}
+
+#upgrade-products .configlets .portletContent:last-child,
+#install-products .configlets .portletContent:last-child,
+#activated-products .configlets .portletContent:last-child,
+#broken-products .configlets .portletContent:last-child {
+  margin-bottom: 0;
+}
+
+#upgrade-products .configlets .pull-right, #upgrade-products .configlets .portraitPhoto, #upgrade-products .configlets .discussion .commentDate, .discussion #upgrade-products .configlets .commentDate,
+#install-products .configlets .pull-right,
+#install-products .configlets .portraitPhoto,
+#install-products .configlets .discussion .commentDate,
+.discussion #install-products .configlets .commentDate,
+#activated-products .configlets .pull-right,
+#activated-products .configlets .portraitPhoto,
+#activated-products .configlets .discussion .commentDate,
+.discussion #activated-products .configlets .commentDate,
+#broken-products .configlets .pull-right,
+#broken-products .configlets .portraitPhoto,
+#broken-products .configlets .discussion .commentDate,
+.discussion #broken-products .configlets .commentDate {
+  margin: 0 0 12px 12px;
+}
+
+.portletCollection ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.portletCollection > ul > li > a {
+  padding: 10px 15px 26px 10px;
+}
+
+.switch-portlet-manager {
+  margin-top: 0.5em;
+  width: auto;
+}
+
+.managedPortlet .portletHeader {
+  font-weight: 300;
+}
+
+.managedPortlet.inheritedPortlet {
+  margin: 5px 15px;
+}
+
+.managedPortlet.inheritedPortlet .portletHeader {
+  padding: 3px 15px;
+}
+
+.managedPortlet.blockedPortlet {
+  opacity: 0.7;
+}
+
+.managedPortletActions {
+  float: right;
+  margin-top: -6px;
+}
+
+.managedPortletActions form {
+  display: inline-block;
+}
+
+.portlet.portletSiteSetup .portletContent > ul > li a::before, .portletSiteSetup.managedPortlet .portletContent > ul > li a::before, body.template-login_form .portletSiteSetup#content-core .portletContent > ul > li a::before, body.template-logged_out .portletSiteSetup#content-core .portletContent > ul > li a::before {
   content: "";
 }
 
-.portlet.portletSiteSetup .portletContent > ul li:hover, body.template-login_form .portletSiteSetup#content-core .portletContent > ul li:hover, body.template-logged_out .portletSiteSetup#content-core .portletContent > ul li:hover {
+.portlet.portletSiteSetup .portletContent > ul li:hover, .portletSiteSetup.managedPortlet .portletContent > ul li:hover, body.template-login_form .portletSiteSetup#content-core .portletContent > ul li:hover, body.template-logged_out .portletSiteSetup#content-core .portletContent > ul li:hover {
   background: #edecec;
 }
 
@@ -2990,7 +3402,7 @@ fieldset[disabled] .destructive.active {
   color: #333;
 }
 
-.template-overview-controlpanel .portlet.portletSiteSetup .portletContent > ul > li, .template-overview-controlpanel body.template-login_form .portletSiteSetup#content-core .portletContent > ul > li, body.template-login_form .template-overview-controlpanel .portletSiteSetup#content-core .portletContent > ul > li, .template-overview-controlpanel body.template-logged_out .portletSiteSetup#content-core .portletContent > ul > li, body.template-logged_out .template-overview-controlpanel .portletSiteSetup#content-core .portletContent > ul > li {
+.template-overview-controlpanel .portlet.portletSiteSetup .portletContent > ul > li, .template-overview-controlpanel .portletSiteSetup.managedPortlet .portletContent > ul > li, .template-overview-controlpanel body.template-login_form .portletSiteSetup#content-core .portletContent > ul > li, body.template-login_form .template-overview-controlpanel .portletSiteSetup#content-core .portletContent > ul > li, .template-overview-controlpanel body.template-logged_out .portletSiteSetup#content-core .portletContent > ul > li, body.template-logged_out .template-overview-controlpanel .portletSiteSetup#content-core .portletContent > ul > li {
   height: 120px;
 }
 
@@ -3069,7 +3481,7 @@ fieldset[disabled] .destructive.active {
   height: 2em;
 }
 
-.template-actions-controlpanel #content-core section.portlet, .template-actions-controlpanel #content-core body.template-login_form section#content-core, body.template-login_form .template-actions-controlpanel #content-core section#content-core,
+.template-actions-controlpanel #content-core section.portlet, .template-actions-controlpanel #content-core section.managedPortlet, .template-actions-controlpanel #content-core body.template-login_form section#content-core, body.template-login_form .template-actions-controlpanel #content-core section#content-core,
 .template-actions-controlpanel #content-core body.template-logged_out section#content-core, body.template-logged_out .template-actions-controlpanel #content-core section#content-core {
   clear: both;
 }
@@ -3552,6 +3964,162 @@ ul.picker__list {
   background: #cccccc;
 }
 
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid "	";
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.dropup,
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: unset;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+
+.dropdown-menu.pull-right, .dropdown-menu.portraitPhoto, .discussion .dropdown-menu.commentDate {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 500;
+  line-height: 1.428571;
+  color: #4d4d4d;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #404040;
+  background-color: #f5f5f5;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #004665;
+  text-decoration: none;
+  outline: 0;
+  background-color: #007bb1;
+}
+
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+  color: #777777;
+}
+
+.dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)";
+  cursor: not-allowed;
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.open > a {
+  outline: 0;
+}
+
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+
+.dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
+
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.428571;
+  color: #777777;
+  white-space: nowrap;
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 990;
+}
+
+.pull-right > .dropdown-menu, .portraitPhoto > .dropdown-menu, .discussion .commentDate > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid "	";
+  content: "";
+}
+
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+  .navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+  .navbar-right .dropdown-menu-left {
+    left: 0;
+    right: auto;
+  }
+}
+
 #portal-header {
   margin: 15px auto 20px;
 }
@@ -3965,10 +4533,6 @@ ul.picker__list {
   }
 }
 
-.plone-navbar-nav {
-  margin: -15px 0;
-}
-
 .plone-navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -4162,7 +4726,7 @@ a.plone-toolbar-logo {
   margin-bottom: .5em;
 }
 
-#portal-footer-wrapper .portlet, #portal-footer-wrapper body.template-login_form #content-core, body.template-login_form #portal-footer-wrapper #content-core,
+#portal-footer-wrapper .portlet, #portal-footer-wrapper .managedPortlet, #portal-footer-wrapper body.template-login_form #content-core, body.template-login_form #portal-footer-wrapper #content-core,
 #portal-footer-wrapper body.template-logged_out #content-core, body.template-logged_out #portal-footer-wrapper #content-core {
   background: transparent;
   border: 0;
@@ -4171,17 +4735,17 @@ a.plone-toolbar-logo {
   margin-bottom: 0;
 }
 
-#portal-footer-wrapper .portlet .portletContent, #portal-footer-wrapper body.template-login_form #content-core .portletContent, body.template-login_form #portal-footer-wrapper #content-core .portletContent, #portal-footer-wrapper body.template-logged_out #content-core .portletContent, body.template-logged_out #portal-footer-wrapper #content-core .portletContent {
+#portal-footer-wrapper .portlet .portletContent, #portal-footer-wrapper .managedPortlet .portletContent, #portal-footer-wrapper body.template-login_form #content-core .portletContent, body.template-login_form #portal-footer-wrapper #content-core .portletContent, #portal-footer-wrapper body.template-logged_out #content-core .portletContent, body.template-logged_out #portal-footer-wrapper #content-core .portletContent {
   padding: 0;
   background: transparent;
   border: 0;
 }
 
-#portal-footer-wrapper .portlet .portletContent > *, #portal-footer-wrapper body.template-login_form #content-core .portletContent > *, body.template-login_form #portal-footer-wrapper #content-core .portletContent > *, #portal-footer-wrapper body.template-logged_out #content-core .portletContent > *, body.template-logged_out #portal-footer-wrapper #content-core .portletContent > * {
+#portal-footer-wrapper .portlet .portletContent > *, #portal-footer-wrapper .managedPortlet .portletContent > *, #portal-footer-wrapper body.template-login_form #content-core .portletContent > *, body.template-login_form #portal-footer-wrapper #content-core .portletContent > *, #portal-footer-wrapper body.template-logged_out #content-core .portletContent > *, body.template-logged_out #portal-footer-wrapper #content-core .portletContent > * {
   padding: inherit;
 }
 
-#portal-footer-wrapper .portlet .portletContent li, #portal-footer-wrapper body.template-login_form #content-core .portletContent li, body.template-login_form #portal-footer-wrapper #content-core .portletContent li, #portal-footer-wrapper body.template-logged_out #content-core .portletContent li, body.template-logged_out #portal-footer-wrapper #content-core .portletContent li {
+#portal-footer-wrapper .portlet .portletContent li, #portal-footer-wrapper .managedPortlet .portletContent li, #portal-footer-wrapper body.template-login_form #content-core .portletContent li, body.template-login_form #portal-footer-wrapper #content-core .portletContent li, #portal-footer-wrapper body.template-logged_out #content-core .portletContent li, body.template-logged_out #portal-footer-wrapper #content-core .portletContent li {
   background: transparent;
   display: inline-block;
   border: 0;
@@ -4189,20 +4753,20 @@ a.plone-toolbar-logo {
   padding: 10px 30px;
 }
 
-#portal-footer-wrapper .portlet#portal-colophon .portletContent a {
+#portal-footer-wrapper .portlet#portal-colophon .portletContent a, #portal-footer-wrapper #portal-colophon.managedPortlet .portletContent a {
   padding: 10px 30px;
 }
 
-#portal-footer-wrapper .portlet .portletItem::before, #portal-footer-wrapper body.template-login_form #content-core .portletItem::before, body.template-login_form #portal-footer-wrapper #content-core .portletItem::before, #portal-footer-wrapper body.template-logged_out #content-core .portletItem::before, body.template-logged_out #portal-footer-wrapper #content-core .portletItem::before, #portal-footer-wrapper .portlet .portletItem a::before, #portal-footer-wrapper body.template-login_form #content-core .portletItem a::before, body.template-login_form #portal-footer-wrapper #content-core .portletItem a::before, #portal-footer-wrapper body.template-logged_out #content-core .portletItem a::before, body.template-logged_out #portal-footer-wrapper #content-core .portletItem a::before {
+#portal-footer-wrapper .portlet .portletItem::before, #portal-footer-wrapper .managedPortlet .portletItem::before, #portal-footer-wrapper body.template-login_form #content-core .portletItem::before, body.template-login_form #portal-footer-wrapper #content-core .portletItem::before, #portal-footer-wrapper body.template-logged_out #content-core .portletItem::before, body.template-logged_out #portal-footer-wrapper #content-core .portletItem::before, #portal-footer-wrapper .portlet .portletItem a::before, #portal-footer-wrapper .managedPortlet .portletItem a::before, #portal-footer-wrapper body.template-login_form #content-core .portletItem a::before, body.template-login_form #portal-footer-wrapper #content-core .portletItem a::before, #portal-footer-wrapper body.template-logged_out #content-core .portletItem a::before, body.template-logged_out #portal-footer-wrapper #content-core .portletItem a::before {
   content: "";
 }
 
-#portal-footer-wrapper .portlet .portletItem a, #portal-footer-wrapper body.template-login_form #content-core .portletItem a, body.template-login_form #portal-footer-wrapper #content-core .portletItem a, #portal-footer-wrapper body.template-logged_out #content-core .portletItem a, body.template-logged_out #portal-footer-wrapper #content-core .portletItem a {
+#portal-footer-wrapper .portlet .portletItem a, #portal-footer-wrapper .managedPortlet .portletItem a, #portal-footer-wrapper body.template-login_form #content-core .portletItem a, body.template-login_form #portal-footer-wrapper #content-core .portletItem a, #portal-footer-wrapper body.template-logged_out #content-core .portletItem a, body.template-logged_out #portal-footer-wrapper #content-core .portletItem a {
   padding: 0;
   border: 0;
 }
 
-#portal-footer-wrapper .portlet .portletActions, #portal-footer-wrapper body.template-login_form #content-core .portletActions, body.template-login_form #portal-footer-wrapper #content-core .portletActions, #portal-footer-wrapper body.template-logged_out #content-core .portletActions, body.template-logged_out #portal-footer-wrapper #content-core .portletActions {
+#portal-footer-wrapper .portlet .portletActions, #portal-footer-wrapper .managedPortlet .portletActions, #portal-footer-wrapper body.template-login_form #content-core .portletActions, body.template-login_form #portal-footer-wrapper #content-core .portletActions, #portal-footer-wrapper body.template-logged_out #content-core .portletActions, body.template-logged_out #portal-footer-wrapper #content-core .portletActions {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
