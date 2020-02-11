@@ -4,15 +4,13 @@
 // Source: https://github.com/h5bp/html5-boilerplate/blob/master/css/main.css
 
 @media print {
-
-
   .sidebar-offcanvas,
   #portal-footer-wrapper,
   #mainnavigation-wrapper,
   #content-header,
   .link-https,
   #edit-zone {
-    display:none;
+    display: none;
     visibility: hidden;
   }
 
@@ -120,5 +118,4 @@
   #portal-breadcrumbs {
     display: None;
   }
-
 }
