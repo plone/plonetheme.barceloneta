@@ -1,24 +1,22 @@
 @import "bootstrap.scss";
 
 //*// PLONE 5 BARCELONETA LESS //*//
-@import "mixin.font.plone.scss";
-//*// Font families
-@import "fonts.plone.scss";
 
 // //*// Core variables and mixins
-@import "variables.plone.scss";
-@import "mixin.prefixes.plone.scss";
-@import "mixin.tabfocus.plone.scss";
-@import "mixin.images.plone.scss";
-@import "mixin.forms.plone.scss";
-@import "mixin.borderradius.plone.scss";
-@import "mixin.buttons.plone.scss";
-@import "mixin.clearfix.plone.scss";
-@import "mixin.gridframework.plone.scss"; //grid Bootstrap
-@import "mixin.grid.plone.scss"; //grid Bootstrap
-@import "mixin.font.plone.scss";
-@import "mixin.portlets.plone.scss";
+// @import "variables.plone.scss";
+@import "mixins/mixin.prefixes.plone.scss";
+@import "mixins/mixin.tabfocus.plone.scss";
+@import "mixins/mixin.images.plone.scss";
+@import "mixins/mixin.forms.plone.scss";
+@import "mixins/mixin.buttons.plone.scss";
+@import "mixins/mixin.clearfix.plone.scss";
+@import "mixins/mixin.gridframework.plone.scss"; //grid Bootstrap
+@import "mixins/mixin.grid.plone.scss"; //grid Bootstrap
+@import "mixins/mixin.font.plone.scss"; // OK
+@import "mixins/mixin.portlets.plone.scss";
 
+//*// Font families
+@import "fonts.plone.scss";
 
 // //*// Reset and dependencies
 @import "normalize.plone.scss";
