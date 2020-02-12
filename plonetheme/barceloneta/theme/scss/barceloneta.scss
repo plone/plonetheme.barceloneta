@@ -4,34 +4,34 @@
 
 // //*// Core variables and mixins
 // @import "variables.plone.scss";
-@import "mixins/mixin.prefixes.plone.scss"; // OK
-@import "mixins/mixin.tabfocus.plone.scss"; // OK
-@import "mixins/mixin.forms.plone.scss"; // OK
-@import "mixins/mixin.buttons.plone.scss"; // OK
-@import "mixins/mixin.font.plone.scss"; // OK
-@import "mixins/mixin.portlets.plone.scss"; // OK
+@import "mixins/mixin.prefixes.plone.scss";
+@import "mixins/mixin.tabfocus.plone.scss";
+@import "mixins/mixin.forms.plone.scss";
+@import "mixins/mixin.buttons.plone.scss";
+@import "mixins/mixin.font.plone.scss";
+@import "mixins/mixin.portlets.plone.scss";
 
 //*// Font families
 @import "fonts.plone.scss";
 @import "variables.plone.scss";
 
 // //*// Reset and dependencies
-@import "print.plone.scss"; // OK
+@import "print.plone.scss";
 
 // //*// Core CSS
-@import "scaffolding.plone.scss"; // OK
-@import "type.plone.scss"; // OK
-@import "code.plone.scss"; // OK
+@import "scaffolding.plone.scss";
+@import "type.plone.scss";
+@import "code.plone.scss";
 // @import "deco.plone.scss"; //uncomment for deco variant
-@import "tables.plone.scss"; // OK
-@import "forms.plone.scss"; // OK
-@import "buttons.plone.scss"; // OK
-@import "states.plone.scss"; // OK
+@import "tables.plone.scss";
+@import "forms.plone.scss";
+@import "buttons.plone.scss";
+@import "states.plone.scss";
 
 // //*// Components
 @import "breadcrumbs.plone.scss";
 @import "pagination.plone.scss";
-@import "formtabbing.plone.scss"; //pattern
+@import "formtabbing.plone.scss";
 @import "views.plone.scss";
 @import "thumbs.plone.scss";
 @import "alerts.plone.scss";
