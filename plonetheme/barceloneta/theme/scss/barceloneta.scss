@@ -17,11 +17,11 @@
 @import "fonts.plone.scss";
 
 // //*// Reset and dependencies
-@import "print.plone.scss";
+@import "print.plone.scss"; // OK
 
 // //*// Core CSS
 @import "scaffolding.plone.scss";
-@import "type.plone.scss";
+@import "type.plone.scss"; // OK
 @import "code.plone.scss";
 // @import "deco.plone.scss"; //uncomment for deco variant
 @import "grid.plone.scss"; //grid Bootstrap
