@@ -23,11 +23,11 @@ $plone-default-internally-published-color: darken($plone-toolbar-internally-publ
 $plone-toolbar-published-color: $plone-link-color; // published and external same color
 
 //grays
-$plone-gray-darker: lighten(#000, 20%); // #333
-$plone-gray-dark: lighten(#000, 30%); // #4c4c4c
-$plone-gray: lighten(#000, 41%); // #696969
-$plone-gray-light: lighten(#000, 46.5%); // #767676 //discreet
-$plone-gray-lighter: lighten(#000, 80%); // #ccc //disableds like
+$plone-gray-darker: $gray-800; // #333
+$plone-gray-dark: $gray-700; // #4c4c4c
+$plone-gray: $gray-600; // #696969
+$plone-gray-light: $gray-500; // #767676 //discreet
+$plone-gray-lighter: $gray-400; // #ccc //disableds like
 
 //** Disabled cursor for form controls and buttons.
 $cursor-disabled: not-allowed;

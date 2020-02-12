@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/*!
- * Bootstrap v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10109,7 +10103,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.428571;
-  color: #4d4d4d;
+  color: #495057;
   background-color: #fafafa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10152,7 +10146,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ced4da;
 }
 
 .sr-only, .hiddenStructure,
@@ -10240,7 +10234,7 @@ p {
 .documentDescription {
   font-size: 18px;
   font-weight: 700;
-  color: dimgray;
+  color: #6c757d;
   margin-bottom: 10px;
 }
 
@@ -10258,12 +10252,12 @@ mark {
 }
 
 .discreet {
-  color: dimgray;
+  color: #6c757d;
   font-weight: 400;
 }
 
 .documentByLine {
-  color: dimgray;
+  color: #6c757d;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -10271,7 +10265,7 @@ mark {
 .documentFirstHeading {
   padding-bottom: 9px;
   margin: 0 0 10px;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ced4da;
 }
 
 ul,
@@ -10307,7 +10301,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #777777;
+  border-bottom: 1px dotted #adb5bd;
 }
 
 address {
@@ -10356,7 +10350,7 @@ pre {
   line-height: 1.428571;
   word-break: break-all;
   word-wrap: break-word;
-  color: #4d4d4d;
+  color: #495057;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -11188,12 +11182,12 @@ table {
   background-color: #fff;
   border-radius: 4px;
   font-weight: 400;
-  color: dimgray;
+  color: #6c757d;
 }
 
 th {
   text-align: left;
-  color: #4d4d4d;
+  color: #495057;
 }
 
 .listing {
@@ -11272,7 +11266,7 @@ th {
   .plone-has-table::after {
     content: "⟷";
     position: fixed;
-    color: #cccccc;
+    color: #ced4da;
     margin-top: -3px;
   }
   .plone-has-table > .listing {
@@ -11363,7 +11357,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #4d4d4d;
+  color: #495057;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
   font-weight: 300;
@@ -11420,7 +11414,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.428571;
-  color: dimgray;
+  color: #6c757d;
 }
 
 /*.form-control,*/
@@ -11446,7 +11440,7 @@ select {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571;
-  color: dimgray;
+  color: #6c757d;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -11492,7 +11486,7 @@ input[type="url"]::-moz-placeholder,
 input[type="week"]::-moz-placeholder,
 textarea::-moz-placeholder,
 select::-moz-placeholder {
-  color: #777777;
+  color: #adb5bd;
   opacity: 1;
 }
 
@@ -11512,7 +11506,7 @@ input[type="url"]:-ms-input-placeholder,
 input[type="week"]:-ms-input-placeholder,
 textarea:-ms-input-placeholder,
 select:-ms-input-placeholder {
-  color: #777777;
+  color: #adb5bd;
 }
 
 input[type="color"]::-webkit-input-placeholder,
@@ -11531,7 +11525,7 @@ input[type="url"]::-webkit-input-placeholder,
 input[type="week"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 select::-webkit-input-placeholder {
-  color: #777777;
+  color: #adb5bd;
 }
 
 input[type="color"][disabled], input[type="color"][readonly],
@@ -11718,13 +11712,13 @@ input[type="checkbox"] {
 .formHelp {
   margin-top: 0;
   margin-bottom: 0;
-  color: #666666;
+  color: #606a73;
   font-weight: 400;
   font-style: italic;
 }
 
 .formControls, .plone-modal .plone-modal-dialog .plone-modal-footer {
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ced4da;
   background: #fcfcfd;
   padding: 12px;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
@@ -11782,7 +11776,7 @@ label .required::after {
 
 .optionsToggle label {
   font-weight: 300;
-  color: dimgray;
+  color: #6c757d;
 }
 
 .ordered-selection-field td {
@@ -11835,7 +11829,7 @@ label .required::after {
 }
 
 .standalone:hover, .link-parent:hover, .standalone:focus, .link-parent:focus, .context:hover, .context:focus, .destructive:hover, .destructive:focus, [type="submit"]:hover, [type="submit"]:focus, button:hover, button:focus {
-  color: #4d4d4d;
+  color: #495057;
   text-decoration: none;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
@@ -11861,7 +11855,7 @@ fieldset[disabled] button {
 }
 
 .standalone, .link-parent, [type="submit"], button {
-  color: #4d4d4d;
+  color: #495057;
   background-color: #e5e5e5;
   border-color: #b2b2b2;
 }
@@ -11871,7 +11865,7 @@ fieldset[disabled] button {
 .open > .dropdown-toggle .link-parent, [type="submit"]:hover, [type="submit"]:focus, [type="submit"]:active, [type="submit"].active,
 .open > .dropdown-toggle [type="submit"], button:hover, button:focus, button:active, button.active,
 .open > .dropdown-toggle button {
-  color: #4d4d4d;
+  color: #495057;
   background-color: #cccccc;
   border-color: #939393;
 }
@@ -11911,7 +11905,7 @@ fieldset[disabled] button.active {
 
 .standalone .badge, .link-parent .badge, [type="submit"] .badge, button .badge {
   color: #e5e5e5;
-  background-color: #4d4d4d;
+  background-color: #495057;
 }
 
 .context {
@@ -12159,7 +12153,7 @@ fieldset[disabled] .destructive.active {
 
 .plone-breadcrumb > * > span {
   display: inline-block;
-  color: #777777;
+  color: #adb5bd;
   padding: 8px 0;
   font-weight: 400;
 }
@@ -12202,7 +12196,7 @@ fieldset[disabled] .destructive.active {
   content: "";
   position: absolute;
   padding: 0 5px;
-  color: #cccccc;
+  color: #ced4da;
   border-left: 5px solid;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
@@ -12216,7 +12210,7 @@ fieldset[disabled] .destructive.active {
 }
 
 .plone-breadcrumb ol > #breadcrumbs-current {
-  color: #777777;
+  color: #adb5bd;
 }
 
 .pagination {
@@ -12284,7 +12278,7 @@ fieldset[disabled] .destructive.active {
 }
 
 .pagination li.disabled > span {
-  color: #cccccc;
+  color: #ced4da;
   background-color: #fcfcfd;
   border: 1px solid #e5e5e5 !important;
   cursor: default;
@@ -12342,7 +12336,7 @@ fieldset[disabled] .destructive.active {
 .pat-autotoc.autotabs .autotoc-nav a.active, .pat-autotoc.autotabs .autotoc-nav a.active:hover,
 .autotabs .autotoc-nav a.active,
 .autotabs .autotoc-nav a.active:hover {
-  color: dimgray;
+  color: #6c757d;
   cursor: default;
   background: #fff;
   border-bottom-color: #fff;
@@ -12410,7 +12404,7 @@ fieldset[disabled] .destructive.active {
 
 .folder-listing .documentByLine {
   font-weight: 400;
-  color: #777777;
+  color: #adb5bd;
 }
 
 .tileImage {
@@ -12657,7 +12651,7 @@ body.template-logged_out #content-core {
   font-weight: 500;
   font-size: 18px;
   padding: 13px 15px;
-  color: dimgray;
+  color: #6c757d;
 }
 
 .portlet .portletHeader > a, .managedPortlet .portletHeader > a, body.template-login_form #content-core .portletHeader > a, body.template-logged_out #content-core .portletHeader > a {
@@ -12703,7 +12697,7 @@ body.template-logged_out #content-core {
 .portlet .portletContent > *, .managedPortlet .portletContent > *, body.template-login_form #content-core .portletContent > *, body.template-logged_out #content-core .portletContent > *, .portlet .portletContent > div:not(.portalMessage), .managedPortlet .portletContent > div:not(.portalMessage), body.template-login_form #content-core .portletContent > div:not(.portalMessage), body.template-logged_out #content-core .portletContent > div:not(.portalMessage) {
   padding: 10px 15px;
   margin: 0;
-  color: dimgray;
+  color: #6c757d;
 }
 
 .portlet .portletContent > ul, .managedPortlet .portletContent > ul, body.template-login_form #content-core .portletContent > ul, body.template-logged_out #content-core .portletContent > ul {
@@ -12741,7 +12735,7 @@ body.template-logged_out #content-core {
   position: relative;
   margin-top: -26px;
   font-size: 12px;
-  color: dimgray;
+  color: #6c757d;
 }
 
 .portlet .portletContent > ul li:hover, .managedPortlet .portletContent > ul li:hover, body.template-login_form #content-core .portletContent > ul li:hover, body.template-logged_out #content-core .portletContent > ul li:hover {
@@ -12766,7 +12760,7 @@ body.template-logged_out #content-core {
 }
 
 .portlet.portletCalendar table thead th, .portletCalendar.managedPortlet table thead th, body.template-login_form .portletCalendar#content-core table thead th, body.template-logged_out .portletCalendar#content-core table thead th {
-  color: dimgray;
+  color: #6c757d;
   font-weight: 300;
   height: 34px;
   text-align: center;
@@ -12883,7 +12877,7 @@ body.template-logged_out #content-core {
   padding: 10px 15px 10px 15px;
   border-top: 1px solid #e5e5e5;
   background: #fcfcfd;
-  color: dimgray;
+  color: #6c757d;
   display: block;
   font-weight: 400;
 }
@@ -12912,7 +12906,7 @@ body.template-logged_out #content-core {
   right: 10px;
   font-size: 18px;
   margin-top: -3px;
-  color: #777777;
+  color: #adb5bd;
 }
 
 .portletNavigationTree .portletContent > ul > li > a > img.image-icon {
@@ -12925,7 +12919,7 @@ body.template-logged_out #content-core {
 
 .portletNavigationTree .portletContent .navTreeCurrentNode > a {
   background: #f6f6f9;
-  color: dimgray;
+  color: #6c757d;
 }
 
 .portletNavigationTree .portletContent .navTreeCurrentNode > a::after {
@@ -12934,7 +12928,7 @@ body.template-logged_out #content-core {
   right: 10px;
   font-size: 18px;
   margin-top: -3px;
-  color: #777777;
+  color: #adb5bd;
 }
 
 .portletNavigationTree .portletContent ul.navTreeLevel0 > li a {
@@ -13202,7 +13196,7 @@ body.template-logged_out #content-core {
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
-  color: #4d4d4d;
+  color: #495057;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -13325,7 +13319,7 @@ a .link-category:hover, a .link-category:focus {
 }
 
 .pat-autotoc:not(.autotabs) .autotoc-nav .active, .pat-autotoc:not(.autotabs) .autotoc-nav .active:hover {
-  color: dimgray;
+  color: #6c757d;
   cursor: default;
   text-decoration: none;
 }
@@ -13359,10 +13353,10 @@ a .link-category:hover, a .link-category:focus {
 .pat-dropzone .dz-default {
   border-radius: 6px;
   background-color: #f2f1f1;
-  border: 3px dotted #cccccc;
+  border: 3px dotted #ced4da;
   margin-bottom: 20px;
   padding: 12px;
-  color: dimgray;
+  color: #6c757d;
 }
 
 .plone-modal {
@@ -13524,7 +13518,7 @@ a .link-category:hover, a .link-category:focus {
 
 .picker__list-item:hover {
   background: #f0f0f0;
-  color: #4d4d4d;
+  color: #495057;
 }
 
 .picker__list-item--highlighted:hover, .picker--focused .picker__list-item--highlighted {
@@ -13535,7 +13529,7 @@ a .link-category:hover, a .link-category:focus {
 li.picker__list-item {
   padding: 6px 12px;
   cursor: pointer;
-  color: dimgray;
+  color: #6c757d;
 }
 
 ul.picker__list {
@@ -13587,7 +13581,7 @@ ul.picker__list {
 }
 
 .picker__day--outfocus {
-  color: #cccccc;
+  color: #ced4da;
 }
 
 .pat-sortable > *:hover {
@@ -13626,7 +13620,7 @@ ul.picker__list {
   opacity: 0;
   transition: opacity .2s ease .5s;
   position: absolute;
-  background: #333333;
+  background: #343a40;
   background: rgba(0, 0, 0, 0.9);
   color: #fafafa;
   font-size: 12px;
@@ -13667,7 +13661,7 @@ ul.picker__list {
 }
 
 .jqtree-tree .jqtree-selected > .jqtree-element {
-  background: #cccccc;
+  background: #ced4da;
 }
 
 .caret {
@@ -13705,7 +13699,7 @@ ul.picker__list {
   font-size: 14px;
   text-align: left;
   background-color: #fff;
-  border: 1px solid #cccccc;
+  border: 1px solid #ced4da;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -13730,13 +13724,13 @@ ul.picker__list {
   clear: both;
   font-weight: 500;
   line-height: 1.428571;
-  color: #4d4d4d;
+  color: #495057;
   white-space: nowrap;
 }
 
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #404040;
+  color: #3d4349;
   background-color: #f5f5f5;
 }
 
@@ -13748,7 +13742,7 @@ ul.picker__list {
 }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
-  color: #777777;
+  color: #adb5bd;
 }
 
 .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
@@ -13782,7 +13776,7 @@ ul.picker__list {
   padding: 3px 20px;
   font-size: 12px;
   line-height: 1.428571;
-  color: #777777;
+  color: #adb5bd;
   white-space: nowrap;
 }
 
@@ -14315,7 +14309,7 @@ ul.picker__list {
 }
 
 #content-core a {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ced4da;
 }
 
 #content-core a:hover, #content-core a:focus {
@@ -14337,7 +14331,7 @@ ul.picker__list {
 }
 
 #content-core .pat-structure a.btn, #content-core .pat-resourceregistry a.btn, #content-core .pat-structure .pagination a {
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #ced4da;
 }
 
 a.plone-toolbar-logo {
@@ -14395,7 +14389,7 @@ a.plone-toolbar-logo {
 #portal-footer-wrapper {
   padding: 30px 0 30px 0;
   background-color: #2e3133;
-  color: #cccccc;
+  color: #ced4da;
   clear: both;
 }
 
@@ -14410,7 +14404,7 @@ a.plone-toolbar-logo {
 }
 
 #portal-footer-wrapper abbr, #portal-footer-wrapper ul {
-  color: #cccccc;
+  color: #ced4da;
 }
 
 #portal-footer-wrapper a {
@@ -14427,7 +14421,7 @@ a.plone-toolbar-logo {
 
 #portal-footer-wrapper .portletWrapper:first-child {
   display: block;
-  border-bottom: 1px solid #4d4d4d;
+  border-bottom: 1px solid #495057;
   padding-bottom: 1em;
   margin-bottom: .5em;
 }
