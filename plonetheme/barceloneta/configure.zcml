@@ -10,6 +10,17 @@
 
   <include package="plone.resource" />
   <include package="plone.app.theming" />
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml"
+      zcml:condition="not-have plone-6"
+      />
+  <browser:jbot
+      directory="overrides"
+      layer="plonetheme.barceloneta.interfaces.IBarcelonetaLayer"
+      zcml:condition="not-have plone-6"
+      />
+
   <genericsetup:registerProfile
       name="default"
       title="Barceloneta Theme"
