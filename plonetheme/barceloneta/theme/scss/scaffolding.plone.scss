@@ -105,3 +105,12 @@ hr {
     clip: auto;
   }
 }
+
+#global_statusmessage {
+  flex: 0 0 100%;
+  max-width: 100%; 
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}

@@ -8126,7 +8126,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 html {
-  font-size: 62.5%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -8207,6 +8206,15 @@ hr {
   margin: 0;
   overflow: visible;
   clip: auto;
+}
+
+#global_statusmessage {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 body {
@@ -9537,7 +9545,6 @@ fieldset[disabled] .destructive.active {
 .autotabs .autotoc-nav {
   background: #f2f1f1;
   border-bottom: 1px solid #e5e5e5;
-  margin: -18px 6px;
 }
 
 .pat-autotoc.autotabs .autotoc-nav a,
@@ -9582,7 +9589,6 @@ fieldset[disabled] .destructive.active {
 .autotabs .formControls,
 .autotabs .plone-modal .plone-modal-dialog .plone-modal-footer,
 .plone-modal .plone-modal-dialog .autotabs .plone-modal-footer {
-  margin: -18px;
   border-radius: 0 0 4px 4px;
 }
 
