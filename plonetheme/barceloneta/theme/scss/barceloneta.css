@@ -8217,6 +8217,19 @@ hr {
   padding-left: 15px;
 }
 
+.pat-structure .navbar.ui-offset-parent {
+  display: block;
+  padding: 0;
+}
+
+.dataTables_wrapper.form-inline {
+  display: block;
+}
+
+table.dataTable {
+  border-collapse: collapse !important;
+}
+
 body {
   word-wrap: break-word;
 }
