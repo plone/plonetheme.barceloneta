@@ -6,20 +6,16 @@
 // @import "variables.plone.scss";
 @import "mixins/mixin.prefixes.plone.scss";
 @import "mixins/mixin.tabfocus.plone.scss";
-@import "mixins/mixin.images.plone.scss";
 @import "mixins/mixin.forms.plone.scss";
 @import "mixins/mixin.buttons.plone.scss";
-@import "mixins/mixin.clearfix.plone.scss";
-@import "mixins/mixin.gridframework.plone.scss"; //grid Bootstrap
-@import "mixins/mixin.grid.plone.scss"; //grid Bootstrap
-@import "mixins/mixin.font.plone.scss"; // OK
+@import "mixins/mixin.font.plone.scss";
 @import "mixins/mixin.portlets.plone.scss";
 
 //*// Font families
 @import "fonts.plone.scss";
+@import "variables.plone.scss";
 
 // //*// Reset and dependencies
-@import "normalize.plone.scss";
 @import "print.plone.scss";
 
 // //*// Core CSS
@@ -27,7 +23,6 @@
 @import "type.plone.scss";
 @import "code.plone.scss";
 // @import "deco.plone.scss"; //uncomment for deco variant
-@import "grid.plone.scss"; //grid Bootstrap
 @import "tables.plone.scss";
 @import "forms.plone.scss";
 @import "buttons.plone.scss";
@@ -36,7 +31,7 @@
 // //*// Components
 @import "breadcrumbs.plone.scss";
 @import "pagination.plone.scss";
-@import "formtabbing.plone.scss"; //pattern
+@import "formtabbing.plone.scss";
 @import "views.plone.scss";
 @import "thumbs.plone.scss";
 @import "alerts.plone.scss";
