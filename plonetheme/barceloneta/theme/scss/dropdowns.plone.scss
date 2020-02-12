@@ -41,7 +41,7 @@ $dropdown-header-color:          $plone-gray-light;
 // the IE filter for IE9 and below.
 
 @mixin reset-filter() {
-  filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+  filter: "progid:DXImageTransform.Microsoft.gradient(enabled = false)";
 }
 
 // Horizontal dividers
@@ -259,12 +259,14 @@ $dropdown-header-color:          $plone-gray-light;
 @media (min-width: $plone-grid-float-breakpoint) {
   .navbar-right {
     .dropdown-menu {
-      @include dropdown-menu-right();
+      left: auto; // Reset the default from `.dropdown-menu`
+      right: 0;
     }
     // Necessary for overrides of the default right aligned menu.
     // Will remove come v4 in all likelihood.
     .dropdown-menu-left {
-      @include dropdown-menu-left();
+      left: 0;
+      right: auto;
     }
   }
 }

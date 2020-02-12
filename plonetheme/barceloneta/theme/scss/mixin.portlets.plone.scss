@@ -1,8 +1,8 @@
 // Loop for .navTreeLevel
-@mixin navtree-level-loop($maxlevel) when ($maxlevel > 0) {
-    @include navtree-level-loop($maxlevel - 1);
-
-    ul.navTreeLevel#{$maxlevel} > li a {
-        padding-left: 15px * ($maxlevel + 1);
+@mixin navtree-level-loop($maxlevel) {
+    @for $i from 0 through $maxlevel {
+        ul.navTreeLevel#{$i} > li a {
+            padding-left: 15px * ($i + 1);
+        }
     }
 }

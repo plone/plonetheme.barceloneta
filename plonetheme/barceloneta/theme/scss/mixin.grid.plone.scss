@@ -2,30 +2,25 @@
 
 //*// This is exactly BOOTSTRAP GRID, replace it for your system
 
-
-
-
-
-
-
 // Grid system
 //
 // Generate semantic grid columns with these mixins.
+
 
 // Centered container element
 @mixin container-fixed($gutter: $plone-grid-gutter-width) {
   margin-right: auto;
   margin-left: auto;
-  padding-left:  ($gutter / 2);
-  padding-right: ($gutter / 2);
-  &:extend(.clearfix all);
+  padding-left: floor(($gutter / 2));
+  padding-right: ceil(($gutter / 2));
+  @include clearfix;
 }
 
 // Creates a wrapper for a series of columns
 @mixin make-row($gutter: $plone-grid-gutter-width) {
-  margin-left:  ($gutter / -2);
-  margin-right: ($gutter / -2);
-  &:extend(.clearfix all);
+  margin-left: ceil(($gutter / -2));
+  margin-right: floor(($gutter / -2));
+  @include clearfix;
 }
 
 // Generate the extra small columns
@@ -34,15 +29,18 @@
   float: left;
   width: percentage(($columns / $plone-grid-columns));
   min-height: 1px;
-  padding-left:  ($gutter / 2);
+  padding-left: ($gutter / 2);
   padding-right: ($gutter / 2);
 }
+
 @mixin make-xs-column-offset($columns) {
   margin-left: percentage(($columns / $plone-grid-columns));
 }
+
 @mixin make-xs-column-push($columns) {
   left: percentage(($columns / $plone-grid-columns));
 }
+
 @mixin make-xs-column-pull($columns) {
   right: percentage(($columns / $plone-grid-columns));
 }
@@ -51,7 +49,7 @@
 @mixin make-sm-column($columns, $gutter: $plone-grid-gutter-width) {
   position: relative;
   min-height: 1px;
-  padding-left:  ($gutter / 2);
+  padding-left: ($gutter / 2);
   padding-right: ($gutter / 2);
 
   @media (min-width: $plone-screen-sm-min) {
@@ -59,16 +57,19 @@
     width: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-sm-column-offset($columns) {
   @media (min-width: $plone-screen-sm-min) {
     margin-left: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-sm-column-push($columns) {
   @media (min-width: $plone-screen-sm-min) {
     left: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-sm-column-pull($columns) {
   @media (min-width: $plone-screen-sm-min) {
     right: percentage(($columns / $plone-grid-columns));
@@ -79,7 +80,7 @@
 @mixin make-md-column($columns, $gutter: $plone-grid-gutter-width) {
   position: relative;
   min-height: 1px;
-  padding-left:  ($gutter / 2);
+  padding-left: ($gutter / 2);
   padding-right: ($gutter / 2);
 
   @media (min-width: $plone-screen-md-min) {
@@ -87,16 +88,19 @@
     width: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-md-column-offset($columns) {
   @media (min-width: $plone-screen-md-min) {
     margin-left: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-md-column-push($columns) {
   @media (min-width: $plone-screen-md-min) {
     left: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-md-column-pull($columns) {
   @media (min-width: $plone-screen-md-min) {
     right: percentage(($columns / $plone-grid-columns));
@@ -107,7 +111,7 @@
 @mixin make-lg-column($columns, $gutter: $plone-grid-gutter-width) {
   position: relative;
   min-height: 1px;
-  padding-left:  ($gutter / 2);
+  padding-left: ($gutter / 2);
   padding-right: ($gutter / 2);
 
   @media (min-width: $plone-screen-lg-min) {
@@ -115,16 +119,19 @@
     width: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-lg-column-offset($columns) {
   @media (min-width: $plone-screen-lg-min) {
     margin-left: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-lg-column-push($columns) {
   @media (min-width: $plone-screen-lg-min) {
     left: percentage(($columns / $plone-grid-columns));
   }
 }
+
 @mixin make-lg-column-pull($columns) {
   @media (min-width: $plone-screen-lg-min) {
     right: percentage(($columns / $plone-grid-columns));

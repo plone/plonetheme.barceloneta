@@ -16,8 +16,8 @@
 
 // User photo inherit some classes
 .portraitPhoto {
-	@include image-product();
-	@include pull-right();
+	@extend .image-product;
+	@extend .pull-right;
 	border-radius: 50px;
 }
 

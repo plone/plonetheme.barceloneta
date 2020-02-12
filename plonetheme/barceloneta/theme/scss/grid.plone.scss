@@ -7,8 +7,8 @@
 // Container widths for anon users
 // For logged-in, toolbar adjustments are in main.plone.scss
 .container {
-  @mixin container-fixed(),
-  max-width: 100%,
+  @include container-fixed;
+
   @media (min-width: $plone-screen-sm-min) {
     width: $plone-container-sm;
   }
@@ -26,46 +26,47 @@
 
 // Fluid container
 .container-fluid {
-  @mixin container-fixed(),
+  @include container-fixed;
 }
 
 
 // Row
 .row {
-  .clearfix(),
-  .make-row(),
+  @include clearfix;
+  @include make-row;
 }
 
 
 // Columns
-.make-grid-columns(),
+@include make-grid-columns;
 
 
 // Extra small grid
-.make-grid(xs),
+@include make-grid(xs);
 
 
 // Small grid
 @media (min-width: $plone-screen-sm-min) {
-  @mixin make-grid(sm),
+  @include make-grid(sm);
 }
 
 
 // Medium grid
 @media (min-width: $plone-screen-md-min) {
-  @mixin make-grid(md),
+  @include make-grid(md);
 }
 
 
 // Large grid
 @media (min-width: $plone-screen-lg-min) {
-  @mixin make-grid(lg),
+  @include make-grid(lg);
 }
 
 
 // toolbar needs to match grid
 #edit-zone.plone-toolbar-top .plone-toolbar-container {
-  .container-fixed(),
+  @include container-fixed;
+  
   @media (min-width: $plone-screen-sm-min) {
     width: $plone-container-sm;
   }

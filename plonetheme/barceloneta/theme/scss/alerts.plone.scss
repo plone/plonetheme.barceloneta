@@ -51,17 +51,17 @@
     }
     &.alert-success,
     &.info {
-	    .portalMessage-variant($plone-alert-info-bg; $plone-alert-info-border; $plone-alert-info-text);
+	    @include portalMessage-variant($plone-alert-info-bg, $plone-alert-info-border, $plone-alert-info-text);
         & > strong::before, & > dt::before {background-color: $plone-alert-info-bullet; content:"i";}
     }
     &.alert-warning,
     &.warning {
-	    .portalMessage-variant($plone-alert-warning-bg; $plone-alert-warning-border; $plone-alert-warning-text);
+	    @include portalMessage-variant($plone-alert-warning-bg, $plone-alert-warning-border, $plone-alert-warning-text);
         & > strong::before, & > dt::before {background-color: $plone-alert-warning-bullet; content:"!";}
     }
     &.alert-error,
     &.error {
-	    .portalMessage-variant($plone-alert-error-bg; $plone-alert-error-border; $plone-alert-error-text);
+	    @include portalMessage-variant($plone-alert-error-bg, $plone-alert-error-border, $plone-alert-error-text);
         & > strong::before, & > dt::before {background-color: $plone-alert-error-bullet; content:"×";}
     }
 }

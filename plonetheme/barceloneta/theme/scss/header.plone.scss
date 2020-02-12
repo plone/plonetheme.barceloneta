@@ -1,48 +1,48 @@
 //*// HEADER //*//
 #portal-header {
     margin: 15px auto 20px;
-    @mixin clearfix(), //clear floats
+    @include clearfix(); //clear floats
 }
 #portal-logo {
-    float: left,
+    float: left;
 }
 #portal-languageselector {
-    clear: both,
-    display: inline-block,
-    float: left,
-    margin-right: 29px,
-    padding-top: 5px,
+    clear: both;
+    display: inline-block;
+    float: left;
+    margin-right: 29px;
+    padding-top: 5px;
     li {
-        display: inline-block,
-        margin-right: 10px,
+        display: inline-block;
+        margin-right: 10px;
     }
 }
 #portal-anontools {
-    float: right,
+    float: right;
     ul {
-        padding-right: 0,
+        padding-right: 0;
     }
 }
 #portal-membertools-wrapper {
-	float: right,
-    padding: $plone-padding-base-horizontal 0,
+	float: right;
+    padding: $plone-padding-base-horizontal 0;
 	ul {
-        margin: 0 0 $plone-padding-base-horizontal $plone-padding-base-horizontal,
-		padding-right: 0,
+        margin: 0 0 $plone-padding-base-horizontal $plone-padding-base-horizontal;
+		padding-right: 0;
 	}
 }
 
 //mobile search
 #portal-searchbox {
-    clear: left,
-    margin-left: 3px,
-    margin-top: 60px,
-    padding-top: 20px,
-    position: relative,
-    white-space: nowrap,
-    z-index: 2,
-    .searchSection {display: none,} //non on mobile
-    [type="submit"] {display: none,} //submit hidden on mobile
+    clear: left;
+    margin-left: 3px;
+    margin-top: 60px;
+    padding-top: 20px;
+    position: relative;
+    white-space: nowrap;
+    z-index: 2;
+    .searchSection {display: none;} //non on mobile
+    [type="submit"] {display: none;} //submit hidden on mobile
     label {font-size: 86.667%}
 }
 

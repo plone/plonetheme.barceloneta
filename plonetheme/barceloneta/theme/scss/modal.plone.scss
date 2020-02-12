@@ -43,7 +43,7 @@
       }
     }
     .plone-modal-footer {
-      @include formControls;
+      @extend .formControls;
       padding: $plone-padding-base-horizontal;
       text-align: right;
       .pattern-modal-buttons input + input {margin-left: $plone-padding-base-horizontal;}
@@ -57,7 +57,7 @@
     outline: none;
     background-clip: padding-box;
     box-shadow: 0 0 25px rgba(0,0,0,.15);
-    @include container();
+    @extend .container;
     padding-left: 0;
     padding-right: 0;
   }

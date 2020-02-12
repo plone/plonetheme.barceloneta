@@ -51,7 +51,7 @@ a {
   }
 
   &:focus {
-    .tab-focus(); //--> NOT DONE
+    @include tab-focus(); //--> NOT DONE
   }
 }
 
