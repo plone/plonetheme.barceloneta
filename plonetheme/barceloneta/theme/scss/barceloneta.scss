@@ -8,25 +8,23 @@
 @import "mixins/mixin.tabfocus.plone.scss"; // OK
 @import "mixins/mixin.forms.plone.scss"; // OK
 @import "mixins/mixin.buttons.plone.scss"; // OK
-@import "mixins/mixin.gridframework.plone.scss"; // revistit after grid.plone.scss
-@import "mixins/mixin.grid.plone.scss"; // revistit after grid.plone.scss
 @import "mixins/mixin.font.plone.scss"; // OK
 @import "mixins/mixin.portlets.plone.scss"; // OK
 
 //*// Font families
 @import "fonts.plone.scss";
+@import "variables.plone.scss";
 
 // //*// Reset and dependencies
 @import "print.plone.scss"; // OK
 
 // //*// Core CSS
-@import "scaffolding.plone.scss";
+@import "scaffolding.plone.scss"; // OK
 @import "type.plone.scss"; // OK
-@import "code.plone.scss";
+@import "code.plone.scss"; // OK
 // @import "deco.plone.scss"; //uncomment for deco variant
-@import "grid.plone.scss"; //grid Bootstrap
 @import "tables.plone.scss";
-@import "forms.plone.scss";
+@import "forms.plone.scss"; // OK
 @import "buttons.plone.scss";
 @import "states.plone.scss";
 
