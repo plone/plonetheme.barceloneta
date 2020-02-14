@@ -44,7 +44,7 @@
   <replace css:theme="#portal-top" css:content-children="#portal-top" />
 
   <!-- full-width breadcrumb -->
-  <replace css:content="#viewlet-above-content" css:theme="#above-content" />
+  <replace css:theme="#above-content" css:content="#viewlet-above-content" />
 
   <!-- Central column -->
   <replace css:theme-children="#portal-column-content" css:content-children="#portal-column-content"></replace>
@@ -54,9 +54,11 @@
 
   <!-- Left column -->
   <after css:theme-children="#portal-column-one" css:content-children="#portal-column-one"></after>
+  <drop css:theme="#portal-column-one" css:if-not-content="#portal-column-one" />
 
   <!-- Right column -->
   <after css:theme-children="#portal-column-two" css:content-children="#portal-column-two"></after>
+  <drop css:theme="#portal-column-two" css:if-not-content="#portal-column-two" />
 
 
   <!-- Footer -->

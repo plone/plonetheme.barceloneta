@@ -1,0 +1,15 @@
+
+<nav id="plone-breadcrumb" aria-label="breadcrumb" i18n:domain="plone" tal:define="breadcrumbs view/breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a i18n:translate="tabs_home" tal:attributes="href view/navigation_root_url">Home</a>
+      </li><tal:repeat tal:repeat="crumb breadcrumbs">
+      <li class="breadcrumb-item" tal:condition="not: repeat/crumb/end">
+        <a href="" tal:attributes="href crumb/absolute_url" tal:content="crumb/Title">crumb</a>
+      </li><li class="breadcrumb-item active" aria-current="page" tal:condition="repeat/crumb/end">
+        <span tal:content="crumb/Title">crumb</span>
+      </li></tal:repeat>
+    </ol>
+  </div>
+</nav>

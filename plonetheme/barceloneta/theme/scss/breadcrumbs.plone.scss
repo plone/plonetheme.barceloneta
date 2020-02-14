@@ -1,7 +1,6 @@
 //*// BREADCRUMBS //*//
 
-.plone-breadcrumb {
-  clear: left;
+#plone-breadcrumb {
   background-color: $plone-breadcrumb-bg;
   margin-bottom: $plone-line-height-computed;
   margin-top: -$plone-line-height-computed;
@@ -56,6 +55,9 @@
     > #breadcrumbs-current {
       color: $plone-breadcrumb-active-color;
     }
+  }
+  .breadcrumb {
+    background-color: transparent;
   }
   /* uncomment to hide breadcrumbs on home
   body.section-front-page & {display: none;} //not breadcrumbs on homepage
