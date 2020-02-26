@@ -4,5 +4,6 @@ bower_components
 node_modules
 .cache
 .DS_Store
+.idea
 plonetheme/barceloneta/static/vendor/
 plonetheme/barceloneta/static/barceloneta.css.map
