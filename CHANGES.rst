@@ -15,7 +15,7 @@ New features:
 
 Bug fixes:
 
-- Commented out rule in backend.xml that caused the scripts being pulled twice,
+- Commented out ``<after css:theme-children="head" css:content="head script" />`` in backend.xml that caused the scripts being pulled twice,
   in case that you are using it to style backend views. You should only use
   this rule once in your ruleset. Using it twice cause leads to JS errors and
   patterns initialition failures.
