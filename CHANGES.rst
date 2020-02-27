@@ -2,25 +2,122 @@ Changelog
 =========
 
 
-1.9.1 (unreleased)
+.. You should *NOT* be adding new change log entries to this file.
+   You should create a file in the news directory instead.
+   For helpful instructions, please see:
+   https://github.com/plone/plone.releaser/blob/master/ADD-A-NEWS-ITEM.rst
+
+.. towncrier release notes start
+
+2.1.6 (2019-10-21)
 ------------------
-
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
 
 Bug fixes:
 
-- Commented out ``<after css:theme-children="head" css:content="head script" />`` in backend.xml that caused the scripts being pulled twice,
-  in case that you are using it to style backend views. You should only use
-  this rule once in your ruleset. Using it twice cause leads to JS errors and
-  patterns initialition failures.
-  This fixes: https://github.com/plone/plonetheme.barceloneta/issues/158
-  [sneridagh]
+
+- Revert "Fix the different width of Hide and Show button in action control panel" [vincentfretin] (#187)
+
+
+2.1.5 (2019-10-12)
+------------------
+
+Bug fixes:
+
+
+- Load zcml of ``plone.resource`` for our use of the ``plone:static`` directive.
+  [maurits] (#2952)
+
+
+2.1.4 (2019-06-27)
+------------------
+
+Bug fixes:
+
+
+- Allow long photoAlbumEntryTitle entries to break to fit width.
+  [agitator] (#183)
+
+
+2.1.3 (2019-06-19)
+------------------
+
+Bug fixes:
+
+
+- - Fix submenu width for long entries
+    [agitator] (#182)
+
+
+2.1.2 (2019-03-06)
+------------------
+
+Bug fixes:
+
+
+- Navigation style and overflow improvements [agitator] (#180)
+- Further navigation style improvements - increase button touch area [agitator]
+  (#181)
+
+
+2.1.1 (2019-02-13)
+------------------
+
+Bug fixes:
+
+
+- Fix sitemap links (#173)
+- Sitenav style improvements (#176)
+- Fix overlapping css issue of Remove and Save button in pattern option of
+  Resource Registries (#1111)
+
+
+2.1.0 (2019-02-08)
+------------------
+
+New features:
+
+
+- Added styles for multilevel dropdown navigation [agitator] (#2516)
+
+
+Bug fixes:
+
+
+- Fix the different width of Hide and Show button in action control panel
+  (#2480)
+
+
+2.0.0 (2019-01-15)
+------------------
+
+Bug fixes:
+
+
+- Make final release. [maurits] (#170)
+- Initialize towncrier. [gforcada] (#2548)
+
+
+2.0.0a1 (2018-11-05)
+--------------------
+
+Breaking changes:
+
+- Re-ordering of content columns: Have content container before column1 before column2.
+  [tmassman]
+
+New features:
+
+- Additional footer portlets show in a doormat footer.
+  [tmassman]
+
+1.9.1 (2018-10-08)
+------------------
+
+Bug fixes:
+
+- Do not strip the #edit-bar section from the toolbar.
+  Refs: https://github.com/plone/Products.CMFPlone/issues/2322
+  [thet]
 
 
 1.9.0 (2018-09-26)

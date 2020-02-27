@@ -2,3 +2,6 @@ recursive-include plonetheme *
 include *.rst *.js *.json *.html
 global-exclude *.pyc
 prune design
+include pyproject.toml
+recursive-exclude news *
+exclude news
