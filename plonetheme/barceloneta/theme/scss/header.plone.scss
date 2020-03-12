@@ -1,16 +1,18 @@
 //*// HEADER //*//
 #portal-header {
+    display: flex;
     margin: 15px auto 20px;
-    @include clearfix(); //clear floats
+    // @include clearfix(); //clear floats
 }
 #portal-logo {
-    float: left;
+    // float: left;
+    flex-grow: 1;
 }
 #portal-languageselector {
-    clear: both;
+    // clear: both;
     display: inline-block;
-    float: left;
-    margin-right: 29px;
+    // float: left;
+    // margin-right: $plone-padding-base-horizontal;
     padding-top: 5px;
     li {
         display: inline-block;
@@ -18,14 +20,22 @@
     }
 }
 #portal-anontools {
-    float: right;
+    // float: right;
+    padding-top: 5px;
     ul {
+        padding-left: $plone-padding-base-horizontal;
         padding-right: 0;
+        li {
+            margin-right: 10px;
+        }
     }
 }
 #portal-membertools-wrapper {
-	float: right;
-    padding: $plone-padding-base-horizontal 0;
+	// float: right;
+    // padding: $plone-padding-base-horizontal 0;
+    margin-top: 5px;
+    margin-left: $plone-padding-base-horizontal * 1.5;
+    margin-right: $plone-padding-base-horizontal * 0.5;
 	ul {
         margin: 0 0 $plone-padding-base-horizontal $plone-padding-base-horizontal;
 		padding-right: 0;
@@ -34,7 +44,7 @@
 
 //mobile search
 #portal-searchbox {
-    clear: left;
+    // clear: left;
     margin-left: 3px;
     margin-top: 60px;
     padding-top: 20px;
@@ -52,12 +62,12 @@
         margin-bottom: 15px;
     }
 	#portal-languageselector {
-        clear: none;
-        float: right;
+        // clear: none;
+        // float: right;
 	}
     #portal-searchbox {
-        clear: none;
-        float: right;
+        // clear: none;
+        // float: right;
         margin-left: 1em;
         margin-top: 5px; //visual balance
         max-width: 50%;
@@ -67,7 +77,7 @@
         [type="text"] {
             border-bottom-right-radius: 0;
             border-top-right-radius: 0;
-            float: left;
+            // float: left;
             width: 20rem;
         }
         [type="submit"] {
