@@ -1,13 +1,13 @@
 //*// EVENT //*//
 
 .event.summary {
-	font-weight: $plone-font-weight-regular;
 	max-width: 300px;
-	float: right;
 	background: $plone-body-bg;
-	box-shadow: 0 1px 3px rgba(0,0,0,.17);
-	padding: $plone-padding-base-horizontal $plone-padding-base-horizontal $plone-padding-base-horizontal ($plone-padding-base-horizontal*3);
+	@include box-shadow($box-shadow);
 	margin-left: 5px;
+    ul {
+        padding-left: 1em;
+    }
 	strong, li > span {
 		display: block;
 	}
