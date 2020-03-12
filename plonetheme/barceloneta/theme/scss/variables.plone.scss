@@ -2,17 +2,17 @@
 
 //*// COLORS
 
-//colors
-$plone-toolbar-draft-color: #fab82a; // lime-yellow //draft is visible
-$plone-toolbar-pending-color: #e2e721; // orange
-$plone-toolbar-private-color: #c4183c; // red
-$plone-toolbar-internal-color: #fab82a; // is draft
-$plone-toolbar-internally-published-color: #883dfa; // is intranet
+// //colors
+// $plone-toolbar-draft-color: #fab82a; // lime-yellow //draft is visible
+// $plone-toolbar-pending-color: #e2e721; // orange
+// $plone-toolbar-private-color: #c4183c; // red
+// $plone-toolbar-internal-color: #fab82a; // is draft
+// $plone-toolbar-internally-published-color: #883dfa; // is intranet
 
-$plone-link-color: #007bb1; //plone blue made slightly darker for wcag 2.0
-$plone-link-color-on-dark: #16a1e3; //plone blue
-//if you need different contrast
-$plone-link-color-on-grey: #086ca3; //valid wcag 2.0
+// $plone-link-color: #007bb1; //plone blue made slightly darker for wcag 2.0
+// $plone-link-color-on-dark: #16a1e3; //plone blue
+// //if you need different contrast
+// $plone-link-color-on-grey: #086ca3; //valid wcag 2.0
 $plone-default-published-color: $plone-link-color; //published and external same color
 $plone-default-draft-color: darken($plone-toolbar-draft-color, 15%); // lime-yellow //draft is visible
 $plone-default-pending-color: darken($plone-toolbar-pending-color, 15%); // orange
