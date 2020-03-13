@@ -1,3 +1,5 @@
+@import "variables.colors.scss";
+
 @import "bootstrap.scss";
 
 //*// PLONE 5 BARCELONETA LESS //*//
@@ -30,7 +32,7 @@
 
 // //*// Components
 @import "breadcrumbs.plone.scss";
-@import "pagination.plone.scss";
+//@import "pagination.plone.scss";
 @import "formtabbing.plone.scss";
 @import "views.plone.scss";
 @import "thumbs.plone.scss";
