@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+
+<aside tal:condition="view/data/omit_border"
+     tal:attributes="class string:portlet portletStaticText bg-transparent ${view/css_class}"
+     tal:content="structure view/transformed" />
+
+<aside tal:condition="not:view/data/omit_border"
+    tal:attributes="class string:card portlet portletStaticText ${view/css_class}"
+    i18n:domain="plone">
+
+    <header class="card-header"
+        tal:define="header view/data/header"
+        tal:attributes="class python:header and 'card-header' or 'card-header titleless'">
+           <a class="tile"
+              tal:condition="header"
+              tal:omit-tag="not:view/has_link"
+              tal:attributes="href view/data/more_url"
+              tal:content="header"
+              />
+    </header>
+
+    <section class="card-body">
+        <div tal:replace="structure view/transformed" />
+    </section>
+    
+    <footer class="card-footer" tal:condition="view/has_footer">
+           <a class="tile"
+              tal:omit-tag="not:view/has_link"
+              tal:attributes="href view/data/more_url"
+              tal:content="view/data/footer"
+              />
+    </footer>
+
+</aside>
+</html>

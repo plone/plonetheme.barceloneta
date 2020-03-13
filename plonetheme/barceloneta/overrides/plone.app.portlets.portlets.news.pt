@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<aside class="card portlet portletNews"
+    i18n:domain="plone">
+
+  <header class="card-header portletHeader">
+        <a href="#"
+           class="tile"
+           tal:define="all_news_link view/all_news_link"
+           tal:omit-tag="not:all_news_link"
+           tal:attributes="href all_news_link"
+           i18n:translate="box_news">News</a>
+  </header>
+  <div 
+      tal:define="thumb_scale view/thumb_scale;
+                  supress_thumb view/data/no_thumbs;"
+       class="card-body portletContent">
+    <ul>
+      <tal:newsitems  tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                                  plone_layout context/@@plone_layout;
+                                  portal context/@@plone_portal_state/portal;
+                                  image_scale portal/@@image_scale;
+                                  thumb_scale view/thumb_scale"
+                      tal:repeat="obj view/published_news_items">
+      <li tal:define="oddrow repeat/obj/odd;"
+          tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+
+        <a  href=""
+            class="tile"
+            tal:attributes="href obj/getURL;
+                            title obj/Description">
+           <img tal:condition="python:obj.getIcon and thumb_scale"
+                tal:replace="structure python:image_scale.tag(obj, 'image', scale=thumb_scale, css_class='pull-right thumb-'+thumb_scale)" />
+
+           <span tal:replace="obj/pretty_title_or_id">
+             Plone 5.1 announced!
+           </span>
+        </a>
+           <time class="portletItemDetails"
+                    tal:content="python:toLocalizedTime(obj.Date)">May 5</time>
+
+      </li>
+      </tal:newsitems>
+    </ul>
+  </div>
+  <footer class="card-footer portletFooter"
+         tal:condition="view/all_news_link">
+        <a href=""
+           tal:attributes="href view/all_news_link"
+           i18n:translate="box_more_news_link">
+          More news&hellip;
+        </a>
+  </footer>
+  <footer class="card-footer portletFooter" tal:condition="not:view/all_news_link">
+  </footer>
+</aside>
+</html>

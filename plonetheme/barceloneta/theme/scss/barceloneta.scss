@@ -2,20 +2,20 @@
 @import "variables.properties.scss";
 @import "variables.barceloneta.scss";
 
-
-@import "mixins/mixin.font.plone.scss";
-
-@import "fonts.plone.scss";
-
-
-// Bootstrap
-
-// Required
+// Bootstrap Required
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "../../../../node_modules/bootstrap/scss/variables";
 @import "../../../../node_modules/bootstrap/scss/mixins";
 
-// Optional
+// Plone specific styles
+@import "mixins/mixin.font.plone.scss";
+
+@import "fonts.plone.scss";
+@import "portlets.plone.scss";
+
+
+
+// Bootstrap Optional
 @import "../../../../node_modules/bootstrap/scss/root";
 @import "../../../../node_modules/bootstrap/scss/reboot";
   @import "../../../../node_modules/bootstrap/scss/type";
