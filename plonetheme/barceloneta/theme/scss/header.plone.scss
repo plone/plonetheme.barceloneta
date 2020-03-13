@@ -23,7 +23,7 @@
     // float: right;
     padding-top: 5px;
     ul {
-        padding-left: $plone-padding-base-horizontal;
+        padding-left: $spacer;
         padding-right: 0;
         li {
             margin-right: 10px;
@@ -34,10 +34,10 @@
 	// float: right;
     // padding: $plone-padding-base-horizontal 0;
     margin-top: 5px;
-    margin-left: $plone-padding-base-horizontal * 1.5;
-    margin-right: $plone-padding-base-horizontal * 0.5;
+    margin-left: $spacer * 1.5;
+    margin-right: $spacer * 0.5;
 	ul {
-        margin: 0 0 $plone-padding-base-horizontal $plone-padding-base-horizontal;
+        margin: 0 0 $spacer $spacer;
 		padding-right: 0;
 	}
 }
@@ -57,7 +57,7 @@
 }
 
 //non mobile search
-@media (min-width: $plone-grid-float-breakpoint) {
+@media (min-width: $grid-float-breakpoint) {
     #portal-header {
         margin-bottom: 15px;
     }

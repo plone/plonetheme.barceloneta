@@ -1,16 +1,20 @@
+// Plone colors
 @import "variables.colors.scss";
-@import "variables.properties.scss";
-@import "variables.barceloneta.scss";
 
 // Bootstrap Required
 @import "../../../../node_modules/bootstrap/scss/functions";
 @import "../../../../node_modules/bootstrap/scss/variables";
 @import "../../../../node_modules/bootstrap/scss/mixins";
 
+// Plone specific variables & properties
+@import "variables.properties.scss";
+@import "variables.barceloneta.scss";
+
 // Plone specific styles
 @import "mixins/mixin.font.plone.scss";
 
 @import "fonts.plone.scss";
+@import "header.plone.scss";
 @import "portlets.plone.scss";
 
 
