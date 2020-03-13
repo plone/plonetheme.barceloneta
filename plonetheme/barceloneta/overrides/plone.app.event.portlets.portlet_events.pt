@@ -2,7 +2,7 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       tal:omit-tag="">
-<section class="card portlet portletEvents"
+<aside class="card portlet portletEvents"
     i18n:domain="plone">
 
   <header class="card-header portletHeader">
@@ -14,6 +14,7 @@
         Upcoming Events
     </a>
   </header>
+  
   <section class="card-body portletContent">
     <ul tal:define="thumb_scale view/thumb_scale">
       <tal:events repeat="item view/events">
@@ -51,20 +52,22 @@
       </tal:events>
     </ul>
   </section>
-  <footer class="card-footer portletFooter">
-    <a class="tile previous-events"
+  
+  <footer class="card-footer portletFooter d-flex justify-content-around">
+    <a class="p-6 tile previous-events"
         tal:define="prev_link view/prev_url"
         tal:condition="prev_link"
         tal:attributes="href prev_link"
         i18n:translate="box_previous_events">
       Previous events&hellip;
     </a>
-    <a class="tile upcoming-events"
+    <a class="p-6 tile upcoming-events"
         tal:define="next_link view/next_url"
         tal:attributes="href next_link"
         i18n:translate="box_upcoming_events">
       Upcoming events&hellip;
     </a>
   </footer>
-</section>
+
+</aside>
 </html>

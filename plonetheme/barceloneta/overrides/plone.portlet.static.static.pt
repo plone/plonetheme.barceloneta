@@ -1,8 +1,13 @@
-<div tal:condition="view/data/omit_border"
-     tal:attributes="class string:portletStaticText ${view/css_class}"
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+
+<aside tal:condition="view/data/omit_border"
+     tal:attributes="class string:portlet portletStaticText bg-transparent ${view/css_class}"
      tal:content="structure view/transformed" />
 
-<section tal:condition="not:view/data/omit_border"
+<aside tal:condition="not:view/data/omit_border"
     tal:attributes="class string:card portlet portletStaticText ${view/css_class}"
     i18n:domain="plone">
 
@@ -29,4 +34,5 @@
               />
     </footer>
 
-</section>
+</aside>
+</html>

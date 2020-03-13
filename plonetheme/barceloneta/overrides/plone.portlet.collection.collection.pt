@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+
+<aside class="card portlet portletCollection"
+    i18n:domain="plone"
+    tal:define="collection_url view/collection_url;
+                plone_view context/@@plone;
+                toLocalizedTime nocall:plone_view/toLocalizedTime;
+                viewActions python:context.portal_registry.get('plone.types_use_view_action_in_listings', []);"
+    tal:attributes="class string:card portlet portletCollection ${view/css_class}">
+    
+    <header class="card-header portletHeader">
+        <a tal:attributes="href collection_url" tal:omit-tag="not:view/data/show_more">
+            <span tal:content="view/data/header" />
+        </a>
+    </header>
+
+    <section class="card-body portletContent">
+
+        <ul>
+        <tal:events tal:repeat="obj view/results">
+            <li class="portletItem"
+                tal:define="plone_layout context/@@plone_layout;
+                            portal context/@@plone_portal_state/portal;
+                            image_scale portal/@@image_scale;
+                            plone_view context/@@plone;
+                            oddrow repeat/obj/odd;
+                            useView python:obj.portal_type in viewActions;
+                            itemUrl python:useView and obj.getURL() + '/view' or obj.getURL();
+                            item_wf_state obj/review_state;
+                            item_wf_state_class python:'state-' + plone_view.normalizeString(item_wf_state);
+                            item_type obj/portal_type;
+                            supress_icon    view/data/no_icons;
+                            supress_thumb   view/data/no_thumbs;
+                            thumb_scale view/thumb_scale;
+                            item_type_class python:('contenttype-' + plone_view.normalizeString(item_type)) if not supress_icon else ''"
+                tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+                <a href="#"
+                tal:attributes="href itemUrl;
+                                class  string:tile $item_type_class $item_wf_state_class;
+                                title obj/Description">
+                    <img class="mime-icon" tal:condition="python:item_type =='File' and not supress_icon"
+                        tal:attributes="href obj/getURL;
+                                        src python:view.getMimeTypeIcon(obj);"> 
+
+                    <img tal:condition="python: obj.getIcon and thumb_scale and not supress_thumb"
+                        tal:replace="structure python:image_scale.tag(obj, 'image', scale=thumb_scale, css_class='pull-right thumb-'+thumb_scale)" />
+
+                    <span tal:replace="obj/Title">
+                    Title </span>
+                </a>
+                <time
+                    class="portletItemDetails"
+                    tal:condition="view/data/show_dates"
+                    tal:define="obj_date obj/Date"
+                    tal:content="python:toLocalizedTime(obj_date)">May 5</time>
+            </li>
+        </tal:events>
+        </ul>
+    </section>
+
+    <footer class="card-footer portletFooter"
+            tal:condition="python:showMore or view.include_empty_footer()"
+            tal:define="showMore view/data/show_more">
+        
+        <a tal:condition="showMore" tal:attributes="href collection_url">
+           <span class="hiddenStructure"><span tal:replace="view/data/header" /> - </span>
+           <span i18n:translate="more_url">More&hellip;</span>
+        </a>
+        
+  </footer>
+
+</aside>
+</html>

@@ -2,10 +2,10 @@
       xmlns:tal="http://xml.zope.org/namespaces/tal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       tal:omit-tag="">
-<aside class="portlet portletNews"
+<aside class="card portlet portletNews"
     i18n:domain="plone">
 
-  <header class="portletHeader">
+  <header class="card-header portletHeader">
         <a href="#"
            class="tile"
            tal:define="all_news_link view/all_news_link"
@@ -16,7 +16,7 @@
   <div 
       tal:define="thumb_scale view/thumb_scale;
                   supress_thumb view/data/no_thumbs;"
-       class="portletContent">
+       class="card-body portletContent">
     <ul>
       <tal:newsitems  tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                                   plone_layout context/@@plone_layout;
@@ -45,7 +45,7 @@
       </tal:newsitems>
     </ul>
   </div>
-  <footer class="portletFooter"
+  <footer class="card-footer portletFooter"
          tal:condition="view/all_news_link">
         <a href=""
            tal:attributes="href view/all_news_link"
@@ -53,7 +53,7 @@
           More news&hellip;
         </a>
   </footer>
-  <footer class="portletFooter" tal:condition="not:view/all_news_link">
+  <footer class="card-footer portletFooter" tal:condition="not:view/all_news_link">
   </footer>
 </aside>
 </html>
