@@ -5,9 +5,21 @@ $plone-toolbar-private-color: #c4183c; // red
 $plone-toolbar-internal-color: #fab82a; // is draft
 $plone-toolbar-internally-published-color: #883dfa; // is intranet
 
+//grays
+$plone-gray-darker: lighten(#000, 20%); // #333
+$plone-gray-dark: lighten(#000, 30%); // #4c4c4c
+$plone-gray: lighten(#000, 41%); // #696969
+$plone-gray-light: lighten(#000, 46.5%); // #767676 //discreet
+$plone-gray-lighter: lighten(#000, 80%); // #ccc //disableds like
+
+// Plone
 $plone-link-color: #007bb1; //plone blue made slightly darker for wcag 2.0
 $plone-link-color-on-dark: #16a1e3; //plone blue
 //if you need different contrast
 $plone-link-color-on-grey: #086ca3; //valid wcag 2.0
+
+//*// SCAFFOLDING
+$plone-body-bg: #fafafa; //almost-white
+$plone-footer-bg: #2e3133; //blued-darkgray
 
 $theme-colors: (primary: $plone-link-color);
