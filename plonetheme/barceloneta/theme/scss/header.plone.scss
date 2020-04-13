@@ -1,91 +1,140 @@
 //*// HEADER //*//
 #portal-header {
+  margin: $spacer auto $spacer * 1.25;
+  @include clearfix(); //clear floats
+
+  @include media-breakpoint-up($grid-main-breakpoint) {
+    position: relative;
     display: flex;
-    margin: 15px auto 20px;
-    // @include clearfix(); //clear floats
+    flex-direction: row;
+  }
+
 }
+
 #portal-logo {
-    // float: left;
-    flex-grow: 1;
+  flex-grow: 1;
+  order: -1;
 }
+
 #portal-languageselector {
-    // clear: both;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 5px 0 0 0;
+  list-style: none;
+  margin-left: $spacer;
+
+  li {
     display: inline-block;
-    // float: left;
-    // margin-right: $plone-padding-base-horizontal;
-    padding-top: 5px;
-    li {
-        display: inline-block;
-        margin-right: 10px;
-    }
+    margin-left: 10px;
+  }
 }
+
 #portal-anontools {
-    // float: right;
-    padding-top: 5px;
-    ul {
-        padding-left: $spacer;
-        padding-right: 0;
-        li {
-            margin-right: 10px;
-        }
+  @include media-breakpoint-down($grid-main-breakpoint) {
+    position: absolute;
+    top: 0;
+    right: $spacer * 0.5;
+  }
+
+  padding-top: 5px;
+  margin-left: $spacer;
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-right: 10px;
     }
+  }
 }
+
 #portal-membertools-wrapper {
-	// float: right;
-    // padding: $plone-padding-base-horizontal 0;
-    margin-top: 5px;
-    margin-left: $spacer * 1.5;
-    margin-right: $spacer * 0.5;
-	ul {
-        margin: 0 0 $spacer $spacer;
-		padding-right: 0;
-	}
+  @include media-breakpoint-down($grid-main-breakpoint) {
+    position: absolute;
+    top: 0;
+    right: $spacer * 0.5;
+  }
+
+  margin-top: 5px;
+  margin-left: $spacer * 1.5;
+  margin-right: $spacer * 0.5;
+
+  ul {
+    margin: 0 0 $spacer $spacer;
+    padding-right: 0;
+  }
 }
 
 //mobile search
 #portal-searchbox {
-    // clear: left;
-    margin-left: 3px;
-    margin-top: 60px;
-    padding-top: 20px;
-    position: relative;
-    white-space: nowrap;
-    z-index: 2;
-    .searchSection {display: none;} //non on mobile
-    [type="submit"] {display: none;} //submit hidden on mobile
-    label {font-size: 86.667%}
+  margin-left: 3px;
+  position: relative;
+  white-space: nowrap;
+  z-index: 2;
+  order: 50;
+
+  @include media-breakpoint-down($grid-main-breakpoint) {
+    .form-inline {
+      display: block;
+    }
+
+    margin: $spacer 0;
+
+    .searchField {
+      width: 100%;
+    }
+
+    .searchSection {
+      display: none;
+    }
+
+    //non on mobile
+    [type="submit"] {
+      display: none;
+    }
+
+    //submit hidden on mobile
+    label {
+      font-size: 86.667%
+    }
+  }
+
 }
 
 //non mobile search
-@media (min-width: $grid-float-breakpoint) {
-    #portal-header {
-        margin-bottom: 15px;
+@include media-breakpoint-up($grid-main-breakpoint) {
+  #portal-searchbox {
+    margin-left: $spacer * 2;
+    margin-top: 5px; //visual balance
+    max-width: 50%;
+    padding-top: 0;
+    position: relative;
+
+    .searchSection {
+      display: flex;
     }
-	#portal-languageselector {
-        // clear: none;
-        // float: right;
-	}
-    #portal-searchbox {
-        // clear: none;
-        // float: right;
-        margin-left: 1em;
-        margin-top: 5px; //visual balance
-        max-width: 50%;
-        padding-top: 0;
-        position: relative;
-        .searchSection {display: inherit;} //yes for non mobile
-        [type="text"] {
-            border-bottom-right-radius: 0;
-            border-top-right-radius: 0;
-            // float: left;
-            width: 20rem;
-        }
-        [type="submit"] {
-            display: inline-block;
-            margin-left: -1px;
-            vertical-align: top;
-            width: auto;
-            display: inline-block;
-        }
+
+    [type="text"] {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      // float: left;
+      width: 20rem;
     }
+
+    [type="submit"] {
+      display: inline-block;
+      margin-left: -1px;
+      vertical-align: top;
+      width: auto;
+      display: inline-block;
+    }
+  }
+}
+
+@include media-breakpoint-down($grid-main-breakpoint) {
+  #portal-languageselector {
+    // clear: none;
+    float: right;
+  }
 }

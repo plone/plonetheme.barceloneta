@@ -15,6 +15,8 @@ $grid-columns: 12;
 $grid-gutter-width: 30px;
 $grid-row-columns: 6;
 
+$grid-main-breakpoint: sm;
+
 //*// TYPOGRAPHY
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; // Roboto seems Plone's DIN
 $font-family-condensed: "Roboto Condensed", "Arial Narrow", sans-serif; //just on toolbar
@@ -28,7 +30,7 @@ $font-size-sm: $font-size-base * .875;
 
 $font-weight-lighter: lighter;
 $font-weight-light: 300;
-$font-weight-normal: 500;
+$font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-bolder: bolder;
 
