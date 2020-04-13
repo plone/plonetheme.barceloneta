@@ -49,3 +49,22 @@ $headings-font-family: null;
 $headings-font-weight: 400;
 $headings-line-height: 1.2;
 $headings-color: null;
+
+// TODO use font-base-size variables
+// Buttons + Forms
+// $input-btn-font-size: 0.875rem;
+
+
+// TODO CLEANUP
+//*// SITE NAV
+$sitenav-height: 50px;
+$sitenav-margin-bottom: $line-height-base;
+$sitenav-border-radius: $border-radius;
+$sitenav-padding-horizontal: floor(($grid-gutter-width / 2));
+$sitenav-padding-vertical: ($sitenav-height);
+$sitenav-collapse-max-height: 340px;
+$sitenav-link-hover-bg: #7099bf;
+$sitenav-bg: $link-color;
+$sitenav-hover-bg: $link-color;
+
+$sitenav-link-padding: $spacer * 0.75 $spacer;
