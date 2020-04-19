@@ -10,17 +10,6 @@
 @import "variables.properties.scss";
 @import "variables.barceloneta.scss";
 
-// Plone specific styles
-@import "mixins/mixin.font.plone.scss";
-
-@import "fonts.plone.scss";
-@import "scaffolding.plone.scss";
-@import "header.plone.scss";
-@import "sitenav.plone.scss";
-@import "portlets.plone.scss";
-
-
-
 // Bootstrap Optional
 @import "../../../../node_modules/bootstrap/scss/root";
 @import "../../../../node_modules/bootstrap/scss/reboot";
@@ -56,3 +45,14 @@
   @import "../../../../node_modules/bootstrap/scss/spinners";
 @import "../../../../node_modules/bootstrap/scss/utilities";
 @import "../../../../node_modules/bootstrap/scss/print";
+
+// Plone specific styles
+@import "mixins/mixin.font.plone.scss";
+
+@import "fonts.plone.scss";
+@import "scaffolding.plone.scss";
+@import "header.plone.scss";
+@import "sitenav.plone.scss";
+@import "portlets.plone.scss";
+
+

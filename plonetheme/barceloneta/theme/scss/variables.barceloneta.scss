@@ -15,7 +15,8 @@ $grid-columns: 12;
 $grid-gutter-width: 30px;
 $grid-row-columns: 6;
 
-$grid-main-breakpoint: sm;
+$grid-main-breakpoint: md;
+$nav-main-breakpoint: $grid-main-breakpoint;
 
 //*// TYPOGRAPHY
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; // Roboto seems Plone's DIN
@@ -68,3 +69,6 @@ $sitenav-bg: $link-color;
 $sitenav-hover-bg: $link-color;
 
 $sitenav-link-padding: $spacer * 0.75 $spacer;
+
+$navbar-padding-y: 0;
+$navbar-padding-x: 0;

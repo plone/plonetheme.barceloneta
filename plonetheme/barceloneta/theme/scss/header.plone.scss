@@ -1,9 +1,51 @@
+// // DEBUG MEDIA QUERIES
+// @include media-breakpoint-up($nav-main-breakpoint) {
+//   #content-header::before {
+//     content: "main";
+//     position: sticky;
+//     top: 1em;
+//     left: 0;
+//   }
+// }
+// @include media-breakpoint-up(xs) {
+//   body::before {
+//     content: "xs";
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+// @include media-breakpoint-up(sm) {
+//   body::before {
+//     content: "sm";
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+// @include media-breakpoint-up(md) {
+//   body::before {
+//     content: "md";
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+// @include media-breakpoint-up(lg) {
+//   body::before {
+//     content: "lg";
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+
 //*// HEADER //*//
 #portal-header {
   margin: $spacer auto $spacer * 1.25;
   @include clearfix(); //clear floats
 
-  @include media-breakpoint-up($grid-main-breakpoint) {
+  @include media-breakpoint-up($nav-main-breakpoint) {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -30,7 +72,7 @@
 }
 
 #portal-anontools {
-  @include media-breakpoint-down($grid-main-breakpoint) {
+  @include media-breakpoint-down($nav-main-breakpoint) {
     position: absolute;
     top: 0;
     right: $spacer * 0.5;
@@ -50,7 +92,7 @@
 }
 
 #portal-membertools-wrapper {
-  @include media-breakpoint-down($grid-main-breakpoint) {
+  @include media-breakpoint-down($nav-main-breakpoint) {
     position: absolute;
     top: 0;
     right: $spacer * 0.5;
@@ -74,7 +116,7 @@
   z-index: 2;
   order: 50;
 
-  @include media-breakpoint-down($grid-main-breakpoint) {
+  @include media-breakpoint-down($nav-main-breakpoint) {
     .form-inline {
       display: block;
     }
@@ -103,7 +145,7 @@
 }
 
 //non mobile search
-@include media-breakpoint-up($grid-main-breakpoint) {
+@include media-breakpoint-up($nav-main-breakpoint) {
   #portal-searchbox {
     margin-left: $spacer * 2;
     margin-top: 5px; //visual balance
@@ -132,7 +174,7 @@
   }
 }
 
-@include media-breakpoint-down($grid-main-breakpoint) {
+@include media-breakpoint-down($nav-main-breakpoint) {
   #portal-languageselector {
     // clear: none;
     float: right;

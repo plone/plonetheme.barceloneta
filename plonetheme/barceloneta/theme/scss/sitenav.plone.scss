@@ -15,7 +15,19 @@
       position: relative;
       display: block;
 
-      @include media-breakpoint-up($grid-main-breakpoint) {
+      &.inPath>a,
+      &.current>a,
+      &.selected>a {
+
+        &,
+        &:hover,
+        &:focus {
+          color: white;
+          background-color: $sitenav-link-hover-bg;
+        }
+      }
+
+      @include media-breakpoint-up($nav-main-breakpoint) {
 
         &.has_subtree:hover>ul,
         &.has_subtree .has_subtree:hover>ul {
@@ -37,9 +49,7 @@
           left: 16em;
         }
 
-
       }
-
 
       &.has_subtree a {
         padding-right: 2.5em;
@@ -64,11 +74,12 @@
           text-decoration: none;
           background-color: $sitenav-link-hover-bg;
         }
+
       }
 
       // Navigation sublevels
       ul {
-        @include media-breakpoint-up($grid-main-breakpoint) {
+        @include media-breakpoint-up($nav-main-breakpoint) {
           padding-left: 0em;
         }
 
@@ -77,7 +88,7 @@
         opacity: 0;
         height: 0;
 
-        @include media-breakpoint-up($grid-main-breakpoint) {
+        @include media-breakpoint-up($nav-main-breakpoint) {
           position: absolute;
           z-index: $zindex-dropdown;
           transition: ease-out 0.75s;
@@ -89,13 +100,11 @@
             font-size: ceil(($font-size-base * 0.8));
             // background-color: $sitenav-bg;
 
-            @include media-breakpoint-up($grid-main-breakpoint) {
+            @include media-breakpoint-up($nav-main-breakpoint) {
               min-width: 14em;
 
             }
           }
-
-
 
         }
       }
@@ -105,12 +114,16 @@
 
         &+label:after {
           transform: rotate(0deg);
-          transition: ease-in 0.35s;
+          transition: ease-in 0.15s;
         }
 
         &:checked+label:after {
           transform: rotate(-180deg);
-          transition: ease-in 0.35s;
+          transition: ease-in 0.15s;
+
+          @include media-breakpoint-up($nav-main-breakpoint) {
+            transform: rotate(0);
+          }
         }
 
         &~ul {
@@ -123,8 +136,10 @@
         }
 
         &:checked~ul {
-          visibility: visible;
-          opacity: 1;
+          @include media-breakpoint-down($nav-main-breakpoint) {
+            visibility: visible;
+            opacity: 1;
+          }
         }
       }
 
@@ -152,7 +167,7 @@
           top: 0.45em;
           position: absolute;
 
-          @include media-breakpoint-up($grid-main-breakpoint) {
+          @include media-breakpoint-up($nav-main-breakpoint) {
             width: 2.0em;
             height: 2.0em;
             font-size: 0.75em;
@@ -161,8 +176,6 @@
           }
         }
       }
-
-
 
     }
   }
