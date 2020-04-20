@@ -4675,6 +4675,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
+  font-size: 0.765625rem;
   list-style: none;
   background-color: #e9ecef;
   border-radius: 0.25rem;
@@ -10081,6 +10082,18 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 0.5em 1em 0.5em 0;
     background: transparent;
   }
+}
+
+#plone-breadcrumb {
+  background-color: #e9ecef;
+  margin-bottom: 0.765625rem;
+  /* uncomment to hide breadcrumbs on home
+  body.section-front-page & {display: none;} //not breadcrumbs on homepage
+  */
+}
+
+#plone-breadcrumb .breadcrumb {
+  background-color: transparent;
 }
 
 .card {
