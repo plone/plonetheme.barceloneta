@@ -29,4 +29,19 @@
       template="overrides/z3cform/select_input.pt"
       />
 
+  <!-- plone.formwidget.namedfile -->
+  <z3c:widgetTemplate
+      mode="input"
+      widget="plone.formwidget.namedfile.interfaces.INamedFileWidget"
+      layer="plone.app.z3cform.interfaces.IPloneFormLayer"
+      template="overrides/z3cform/file_input.pt"
+      />
+
+  <z3c:widgetTemplate
+      mode="input"
+      widget="plone.formwidget.namedfile.interfaces.INamedImageWidget"
+      layer="plone.app.z3cform.interfaces.IPloneFormLayer"
+      template="overrides/z3cform/image_input.pt"
+      />
+
 </configure>
