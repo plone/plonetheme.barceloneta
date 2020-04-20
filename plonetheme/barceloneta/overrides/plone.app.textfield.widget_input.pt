@@ -1,0 +1,75 @@
+<div lang="en"
+     xml:lang="en"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:metal="http://xml.zope.org/namespaces/metal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="plone"
+     tal:attributes="class view/klass;
+                     style view/style;
+                     title view/title;
+                     lang view/lang;
+                     onclick view/onclick;
+                     ondblclick view/ondblclick;
+                     onmousedown view/onmousedown;
+                     onmouseup view/onmouseup;
+                     onmouseover view/onmouseover;
+                     onmousemove view/onmousemove;
+                     onmouseout view/onmouseout;
+                     onkeypress view/onkeypress;
+                     onkeydown view/onkeydown;
+                     onkeyup view/onkeyup">
+
+    <tal:define define="fieldName view/name;
+                        mimeType view/value/mimeType | view/field/default_mime_type;
+                        allowedMimeTypes view/allowedMimeTypes">
+
+        <div class="fieldTextFormat" tal:condition="python: len(allowedMimeTypes) > 1">
+            <label i18n:translate="label_text_format">Text Format</label>
+
+            <select class="form-control"
+                    tal:attributes="id   string:${fieldName}_text_format;
+                                    name string:${fieldName}.mimeType;">
+                <option selected=""
+                    tal:repeat="item allowedMimeTypes"
+                    tal:attributes="selected python:item == mimeType and 'selected' or None;
+                                    value item;"
+                    tal:content="item" />
+            </select>
+        </div>
+
+        <tal:hidden condition="python: len(allowedMimeTypes) == 1">
+            <input type="hidden" tal:attributes="id string:${fieldName}_text_format;
+                                                 name string:${fieldName}.mimeType;
+                                                 value python:allowedMimeTypes[0]"/>
+        </tal:hidden>
+    </tal:define>
+
+    <tal:editor define="context            view/wrapped_context;
+                        object             python:(not view.ignoreContext) and context or None;
+                        here               nocall:context;
+                        portal_url         nocall:context/portal_url;
+                        portal             portal_url/getPortalObject;
+                        text_format        view/value/mimeType | view/field/default_mime_type;
+                        force_wysiwyg      python:True;
+                        inputname          view/name;
+                        inputvalue         view/value/raw | nothing;
+                        here_url           request/getURL;
+                        member context/portal_membership/getAuthenticatedMember;
+                        isAnon context/@@plone_portal_state/anonymous;
+                        member_editor python: not isAnon and member.getProperty('wysiwyg_editor').lower() or '';
+                        default_editor python: context.portal_properties.site_properties.getProperty('default_editor', '').lower();
+                        editor python: member_editor=='' and default_editor or member_editor;
+                        support_path string:nocall:here/@@${editor}_wysiwyg_support|here/${editor}_wysiwyg_support|here/${editor}/wysiwyg_support|here/portal_skins/plone_wysiwyg/wysiwyg_support;
+                        support python: path(support_path);
+                        tabindex           nothing;
+                        rows               python:view.rows or 25;
+                        cols               python:view.cols or 80;
+                        maxlength          python:view.field.max_length or None;
+                        field              view/field;">
+        <div metal:use-macro="support/macros/wysiwygEditorBox">
+            The WYSIWYG code
+        </div>
+    </tal:editor>
+
+</div>

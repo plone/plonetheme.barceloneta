@@ -10275,4 +10275,10 @@ a.text-dark:hover, a.text-dark:focus {
 .managedPortletActions form {
   display: inline-block;
 }
+
+.required:after {
+  color: #dc3545;
+  margin: -.2em 0 0 .2em;
+  content: '*';
+}
 /*# sourceMappingURL=barceloneta.css.map */

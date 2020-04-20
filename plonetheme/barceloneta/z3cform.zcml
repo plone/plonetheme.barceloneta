@@ -1,0 +1,32 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="plone">
+
+  <!-- z3c.form overrides which aren't covered in
+       plone.app.z3cform or elsewhere
+  -->
+  <include package="plone.app.z3cform" />
+
+  <z3c:widgetTemplate
+      mode="input"
+      widget="z3c.form.interfaces.ITextWidget"
+      layer="plone.app.z3cform.interfaces.IPloneFormLayer"
+      template="overrides/z3cform/text_input.pt"
+      />
+
+  <z3c:widgetTemplate
+      mode="input"
+      widget="z3c.form.interfaces.ITextAreaWidget"
+      layer="plone.app.z3cform.interfaces.IPloneFormLayer"
+      template="overrides/z3cform/textarea_input.pt"
+      />
+
+  <z3c:widgetTemplate
+      mode="input"
+      widget="z3c.form.interfaces.ISelectWidget"
+      layer="plone.app.z3cform.interfaces.IPloneFormLayer"
+      template="overrides/z3cform/select_input.pt"
+      />
+
+</configure>

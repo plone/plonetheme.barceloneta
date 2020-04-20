@@ -1,0 +1,5 @@
+.required:after {
+    color: $danger;
+    margin: -.2em 0 0 .2em;
+    content: '*';
+}
