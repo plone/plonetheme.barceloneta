@@ -4,7 +4,7 @@
           tal:define="portlets view/addable_portlets"
           tal:condition="portlets"
           tal:attributes="action view/context_url">
-        
+
         <input type="hidden" name="referer" tal:attributes="value view/referer" />
 
         <label class="hiddenStructure"
@@ -47,16 +47,16 @@
     <div>
         <tal:block repeat="portlet portlets">
             <div tal:define="hiddenPortletClass python:not portlet['visible'] and 'blockedPortlet' or ''"
-                tal:attributes="class string:managedPortlet portlet ${hiddenPortletClass};
+                tal:attributes="class string:managedPortlet card mb-3 ${hiddenPortletClass};
                                 data-portlethash portlet/hash;
                                 data-viewname view/view_name;">
 
-                <div class="portletHeader d-flex justify-content-between alert alert-dark" tal:define="authenticator context/@@authenticator/authenticator">
+                <div class="card-header d-flex justify-content-between" tal:define="authenticator context/@@authenticator/authenticator">
 
                     <a tal:omit-tag="not:portlet/editview"
                        tal:attributes="href string:${portlet/editview}?referer=${view/url_quote_referer}"
                        tal:content="portlet/title" />
-                    
+
                     <span class="managedPortletActions">
                       <form class="portlet-action up" method="POST" tal:attributes="action portlet/up_url"
                           tal:condition="not:repeat/portlet/start">
