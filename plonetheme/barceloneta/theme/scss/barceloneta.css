@@ -10278,7 +10278,26 @@ a.text-dark:hover, a.text-dark:focus {
 
 .required:after {
   color: #dc3545;
-  margin: -.2em 0 0 .2em;
-  content: '*';
+  content: '•';
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.form-group .select2-container {
+  display: block;
+}
+
+/* relateditems widget */
+.pattern-relateditems-result .pattern-relateditems-result-browse-wrapper .pattern-relateditems-result-browse {
+  font-size: 0.875rem;
+}
+
+.select2-results .select2-highlighted {
+  color: #004665;
+}
+
+.pattern-relateditems-item-title,
+.pattern-relateditems-result-title {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=barceloneta.css.map */

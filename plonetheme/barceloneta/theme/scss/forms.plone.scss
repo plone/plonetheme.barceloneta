@@ -1,5 +1,30 @@
 .required:after {
     color: $danger;
-    margin: -.2em 0 0 .2em;
-    content: '*';
+    content: '•';
+    font-size:$font-size-lg;
+    line-height: 1;
+}
+
+.form-group {
+    .select2-container {
+        display:block;
+    }
+}
+
+/* relateditems widget */
+.pattern-relateditems-result {
+    .pattern-relateditems-result-browse-wrapper {
+        .pattern-relateditems-result-browse {
+            font-size: $font-size-base;
+        }
+    }
+}
+
+.select2-results .select2-highlighted {
+    color:$link-hover-color;
+}
+
+.pattern-relateditems-item-title,
+.pattern-relateditems-result-title {
+    font-size: $font-size-lg;
 }

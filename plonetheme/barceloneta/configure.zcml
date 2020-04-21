@@ -40,7 +40,4 @@
   <!-- Diazo themes -->
   <plone:static directory="theme" name="barceloneta" type="theme"/>
 
-  <!-- z3c.form overrides -->
-  <include file="z3cform.zcml" />
-
 </configure>
