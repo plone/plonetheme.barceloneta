@@ -5,7 +5,7 @@
 <aside class="card portlet portletNews"
     i18n:domain="plone">
 
-  <header class="card-header portletHeader">
+  <header class="card-header">
         <a href="#"
            class="tile"
            tal:define="all_news_link view/all_news_link"
@@ -13,10 +13,10 @@
            tal:attributes="href all_news_link"
            i18n:translate="box_news">News</a>
   </header>
-  <div 
+  <div
       tal:define="thumb_scale view/thumb_scale;
                   supress_thumb view/data/no_thumbs;"
-       class="card-body portletContent">
+       class="card-body">
     <ul>
       <tal:newsitems  tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
                                   plone_layout context/@@plone_layout;
@@ -53,7 +53,7 @@
           More news&hellip;
         </a>
   </footer>
-  <footer class="card-footer portletFooter" tal:condition="not:view/all_news_link">
+  <footer class="card-footer" tal:condition="not:view/all_news_link">
   </footer>
 </aside>
 </html>

@@ -15,14 +15,15 @@
     font-size: $font-size-sm;
   }
 
-  .formControls {
-    border: 0;
-    background: none;
-    padding: 0;
-    box-shadow: none;
-  }
+  // .formControls {
+  //   border: 0;
+  //   background: none;
+  //   padding: 0;
+  //   box-shadow: none;
+  // }
 }
 
+.portletRecent,
 .portletNavigationTree,
 .portletEvents,
 .portletNews,
@@ -104,11 +105,9 @@
         }
 
       }
-
       li {
         border-top: $list-group-border-width solid $list-group-border-color;
       }
-
     }
 
     >ul>li>a>img.image-icon {

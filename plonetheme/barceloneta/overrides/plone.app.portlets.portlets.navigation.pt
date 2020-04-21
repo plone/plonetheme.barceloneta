@@ -2,8 +2,8 @@
 <aside class="card portlet portletNavigationTree"
     tal:define="root view/navigation_root">
 
-    <header class="card-header portletHeader"
-        tal:attributes="class python:view.hasName() and 'card-header portletHeader' or 'card-header portletHeader hiddenStructure'">
+    <header class="card-header"
+        tal:attributes="class python:view.hasName() and 'card-header' or 'card-header hiddenStructure'">
         <a href="#"
            class="tile"
            tal:attributes="href string:${view/heading_link_target}"
@@ -11,7 +11,7 @@
            i18n:translate="">Navigation</a>
     </header>
 
-    <nav class="card-body portletContent lastItem">
+    <nav class="card-body">
         <ul class="navTree navTreeLevel0">
             <li tal:define="selectedClass view/root_item_class;
                             li_class python:selectedClass and ' navTreeCurrentNode' or '';
