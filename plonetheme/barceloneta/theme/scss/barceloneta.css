@@ -10340,32 +10340,40 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel0 > li a {
-  padding-left: 1rem;
+  padding-left: 15px;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel1 > li a {
-  padding-left: 2rem;
+  padding-left: 30px;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel2 > li a {
-  padding-left: 3rem;
+  padding-left: 45px;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel3 > li a {
-  padding-left: 4rem;
+  padding-left: 60px;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel4 > li a {
-  padding-left: 5rem;
+  padding-left: 75px;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel5 > li a {
-  padding-left: 6rem;
+  padding-left: 90px;
 }
 
 .switch-portlet-manager {
   margin-top: 0.5em;
   width: auto;
+}
+
+.managedPortlet.inheritedPortlet {
+  margin: 5px 15px;
+}
+
+.managedPortlet.inheritedPortlet .portletHeader {
+  padding: 3px 15px;
 }
 
 .managedPortlet.blockedPortlet {
@@ -10374,6 +10382,31 @@ a.text-dark:hover, a.text-dark:focus {
 
 .managedPortletActions form {
   display: inline-block;
+}
+
+.required:after {
+  color: #dc3545;
+  content: '•';
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.form-group .select2-container {
+  display: block;
+}
+
+/* relateditems widget */
+.pattern-relateditems-result .pattern-relateditems-result-browse-wrapper .pattern-relateditems-result-browse {
+  font-size: 0.875rem;
+}
+
+.select2-results .select2-highlighted {
+  color: #004665;
+}
+
+.pattern-relateditems-item-title,
+.pattern-relateditems-result-title {
+  font-size: 1rem;
 }
 
 [class*="contenttype-"]::before,
