@@ -10197,75 +10197,175 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: transparent;
 }
 
-.card {
+.portlet {
+  margin-bottom: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-.card.portlet {
-  margin-bottom: 1rem;
-}
-
-.card.portletEvents > .card-body, .card.portletNews > .card-body, .card.portletCollection > .card-body, .card.portletRss > .card-body {
-  padding: 0;
-}
-
-.card.portletEvents > .card-body img.pull-right, .card.portletNews > .card-body img.pull-right, .card.portletCollection > .card-body img.pull-right, .card.portletRss > .card-body img.pull-right {
-  float: right !important;
-}
-
-.card.portletEvents > .card-body > ul, .card.portletNews > .card-body > ul, .card.portletCollection > .card-body > ul, .card.portletRss > .card-body > ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.card.portletEvents > .card-body > ul > li, .card.portletNews > .card-body > ul > li, .card.portletCollection > .card-body > ul > li, .card.portletRss > .card-body > ul > li {
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  padding: 0.75rem 1.25rem;
-}
-
-.card.portletEvents > .card-body > ul > li a, .card.portletNews > .card-body > ul > li a, .card.portletCollection > .card-body > ul > li a, .card.portletRss > .card-body > ul > li a {
-  display: block;
-  color: #086ca3;
-}
-
-.card.portletEvents > .card-body > ul > li:first-child, .card.portletNews > .card-body > ul > li:first-child, .card.portletCollection > .card-body > ul > li:first-child, .card.portletRss > .card-body > ul > li:first-child {
-  border-top: 0;
-}
-
-.card.portletEvents > .card-body > ul ul, .card.portletNews > .card-body > ul ul, .card.portletCollection > .card-body > ul ul, .card.portletRss > .card-body > ul ul {
-  padding-left: 15px;
-  list-style: none;
-}
-
-.card.portletEvents > .card-body > ul li:hover, .card.portletNews > .card-body > ul li:hover, .card.portletCollection > .card-body > ul li:hover, .card.portletRss > .card-body > ul li:hover {
-  background: #fcfcfd;
-}
-
-.card > .card-footer {
+.portlet .card-footer {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0%, #fcfcfd 50%);
   background-repeat: repeat-x;
   font-size: 0.765625rem;
 }
 
-.card .formControls {
-  border: 0;
-  background: none;
+.portletRecent .card-body,
+.portletNavigationTree .card-body,
+.portletEvents .card-body,
+.portletNews .card-body,
+.portletCollection .card-body,
+.portletRss .card-body {
   padding: 0;
-  box-shadow: none;
+}
+
+.portletRecent .card-body img.pull-right,
+.portletNavigationTree .card-body img.pull-right,
+.portletEvents .card-body img.pull-right,
+.portletNews .card-body img.pull-right,
+.portletCollection .card-body img.pull-right,
+.portletRss .card-body img.pull-right {
+  float: right !important;
+}
+
+.portletRecent .card-body > ul,
+.portletNavigationTree .card-body > ul,
+.portletEvents .card-body > ul,
+.portletNews .card-body > ul,
+.portletCollection .card-body > ul,
+.portletRss .card-body > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.portletRecent .card-body > ul > li,
+.portletNavigationTree .card-body > ul > li,
+.portletEvents .card-body > ul > li,
+.portletNews .card-body > ul > li,
+.portletCollection .card-body > ul > li,
+.portletRss .card-body > ul > li {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.75rem 1.25rem;
+}
+
+.portletRecent .card-body > ul > li a,
+.portletNavigationTree .card-body > ul > li a,
+.portletEvents .card-body > ul > li a,
+.portletNews .card-body > ul > li a,
+.portletCollection .card-body > ul > li a,
+.portletRss .card-body > ul > li a {
+  display: block;
+  color: #086ca3;
+}
+
+.portletRecent .card-body > ul > li:first-child,
+.portletNavigationTree .card-body > ul > li:first-child,
+.portletEvents .card-body > ul > li:first-child,
+.portletNews .card-body > ul > li:first-child,
+.portletCollection .card-body > ul > li:first-child,
+.portletRss .card-body > ul > li:first-child {
+  border-top: 0;
+}
+
+.portletRecent .card-body > ul ul,
+.portletNavigationTree .card-body > ul ul,
+.portletEvents .card-body > ul ul,
+.portletNews .card-body > ul ul,
+.portletCollection .card-body > ul ul,
+.portletRss .card-body > ul ul {
+  padding-left: 15px;
+  list-style: none;
+}
+
+.portletRecent .card-body > ul li:hover,
+.portletNavigationTree .card-body > ul li:hover,
+.portletEvents .card-body > ul li:hover,
+.portletNews .card-body > ul li:hover,
+.portletCollection .card-body > ul li:hover,
+.portletRss .card-body > ul li:hover {
+  background: #fcfcfd;
+}
+
+.portletNavigationTree .card-body ul ul {
+  padding-left: 0;
+}
+
+.portletNavigationTree .card-body ul li {
+  padding: 0;
+}
+
+.portletNavigationTree .card-body ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
+}
+
+.portletNavigationTree .card-body ul li a:hover {
+  text-decoration: none;
+  background: #f6f6f9;
+  color: #64bee8;
+}
+
+.portletNavigationTree .card-body ul li a:hover::before {
+  color: #64bee8;
+}
+
+.portletNavigationTree .card-body ul li a:hover::after {
+  content: "⟩";
+  position: absolute;
+  right: 10px;
+  font-size: 1rem;
+  margin-top: -3px;
+  color: #777777;
+}
+
+.portletNavigationTree .card-body ul li {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.portletNavigationTree .card-body > ul > li > a > img.image-icon {
+  max-height: 1.428;
+}
+
+.portletNavigationTree .card-body .navTreeCurrentNode > a {
+  background: #f6f6f9;
+  color: dimgray;
+}
+
+.portletNavigationTree .card-body .navTreeCurrentNode > a::after {
+  content: "⟩";
+  position: absolute;
+  right: 10px;
+  font-size: 1rem;
+  margin-top: -3px;
+  color: #777777;
+}
+
+.portletNavigationTree .card-body ul.navTreeLevel0 > li a {
+  padding-left: 1rem;
+}
+
+.portletNavigationTree .card-body ul.navTreeLevel1 > li a {
+  padding-left: 2rem;
+}
+
+.portletNavigationTree .card-body ul.navTreeLevel2 > li a {
+  padding-left: 3rem;
+}
+
+.portletNavigationTree .card-body ul.navTreeLevel3 > li a {
+  padding-left: 4rem;
+}
+
+.portletNavigationTree .card-body ul.navTreeLevel4 > li a {
+  padding-left: 5rem;
+}
+
+.portletNavigationTree .card-body ul.navTreeLevel5 > li a {
+  padding-left: 6rem;
 }
 
 .switch-portlet-manager {
   margin-top: 0.5em;
   width: auto;
-}
-
-.managedPortlet.inheritedPortlet {
-  margin: 5px 15px;
-}
-
-.managedPortlet.inheritedPortlet .portletHeader {
-  padding: 3px 15px;
 }
 
 .managedPortlet.blockedPortlet {
@@ -10276,28 +10376,63 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
 }
 
-.required:after {
-  color: #dc3545;
-  content: '•';
-  font-size: 1rem;
-  line-height: 1;
+[class*="contenttype-"]::before,
+.contenttype-file #crud-edit-File-widgets-view_title::before {
+  font-family: "Fontello";
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: inherit;
+  display: inline-block;
+  color: inherit;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  content: '\e834';
 }
 
-.form-group .select2-container {
-  display: block;
+.contenttype-folder::before {
+  content: '\e801';
 }
 
-/* relateditems widget */
-.pattern-relateditems-result .pattern-relateditems-result-browse-wrapper .pattern-relateditems-result-browse {
-  font-size: 0.875rem;
+.contenttype-document::before {
+  content: '\e80e';
 }
 
-.select2-results .select2-highlighted {
-  color: #004665;
+.contenttype-file::before {
+  content: '\e811';
 }
 
-.pattern-relateditems-item-title,
-.pattern-relateditems-result-title {
-  font-size: 1rem;
+.contenttype-link::before {
+  content: '\e806';
+}
+
+.contenttype-image::before {
+  content: '\e810';
+}
+
+.contenttype-collection::before {
+  content: '\e808';
+}
+
+.contenttype-event::before {
+  content: '\e809';
+}
+
+.contenttype-news-item::before {
+  content: '\e80f';
+}
+
+.outer-wrapper .contenttype-file::before {
+  content: none;
+}
+
+.contenttype-file #crud-edit-File-widgets-view_title::before {
+  content: '\e811';
+}
+
+.mime-icon {
+  margin-right: 8px;
 }
 /*# sourceMappingURL=barceloneta.css.map */

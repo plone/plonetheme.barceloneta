@@ -7,7 +7,7 @@
     i18n:domain="plone"
     tal:condition="view/enabled">
 
-  <header class="card-header portletHeader">
+  <header class="card-header">
     <a href=""
            tal:attributes="href view/siteurl"
            tal:omit-tag="not:view/siteurl"
@@ -16,7 +16,7 @@
       Tags
     </a>
   </header>
-  <div class="card-body portletContent" >
+  <div class="card-body" >
     <ul tal:condition="view/feedAvailable">
       <tal:rss
                   tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime"
@@ -40,7 +40,7 @@
       </tal:rss>
     </ul>
   </div>
-  <footer class="card-footer portletFooter" tal:condition="view/feedAvailable">
+  <footer class="card-footer" tal:condition="view/feedAvailable">
         <a href=""
            tal:condition="view/siteurl"
            tal:attributes="href view/siteurl">

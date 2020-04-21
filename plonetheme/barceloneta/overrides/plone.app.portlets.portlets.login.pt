@@ -9,13 +9,13 @@
 <aside class="card portlet portletLogin"
     tal:condition="view/available">
 
-  <header class="card-header portletHeader">
+  <header class="card-header">
         <a href="#"
            class="tile"
            tal:attributes="href view/login_form"
            i18n:translate="box_sign_in">Log in</a>
   </header>
-  <div class="card-body portletContent">
+  <div class="card-body">
     <div
         tal:define="ac_name view/login_name;
                     ac_password view/login_password">
@@ -92,7 +92,7 @@
         </form>
       </div>
   </div>
-  <footer class="card-footer portletFooter">
+  <footer class="card-footer">
     <div tal:condition="view/can_request_password">
         <a href="mail_password_form"
            class="tile"

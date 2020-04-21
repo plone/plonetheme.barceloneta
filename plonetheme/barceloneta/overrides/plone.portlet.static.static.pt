@@ -4,7 +4,7 @@
       tal:omit-tag="">
 
 <aside tal:condition="view/data/omit_border"
-     tal:attributes="class string:portlet portletStaticText bg-transparent ${view/css_class}"
+     tal:attributes="class string:portletStaticText ${view/css_class}"
      tal:content="structure view/transformed" />
 
 <aside tal:condition="not:view/data/omit_border"
@@ -23,9 +23,9 @@
     </header>
 
     <section class="card-body">
-        <div tal:replace="structure view/transformed" />
+        <div tal:content="structure view/transformed" />
     </section>
-    
+
     <footer class="card-footer" tal:condition="view/has_footer">
            <a class="tile"
               tal:omit-tag="not:view/has_link"

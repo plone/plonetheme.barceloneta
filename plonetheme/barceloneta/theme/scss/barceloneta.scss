@@ -50,6 +50,7 @@
 
 // Plone specific styles
 @import "mixins/mixin.font.plone.scss";
+@import "mixins/mixin.portlets.plone.scss";
 
 @import "fonts.plone.scss";
 @import "scaffolding.plone.scss";
@@ -58,5 +59,7 @@
 @import "breadcrumbs.plone.scss";
 @import "portlets.plone.scss";
 @import "forms.plone.scss";
+
+@import "contents.plone.scss";
 
 
