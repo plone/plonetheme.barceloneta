@@ -10208,13 +10208,7 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 0.765625rem;
 }
 
-.portlet .formControls {
-  border: 0;
-  background: none;
-  padding: 0;
-  box-shadow: none;
-}
-
+.portletRecent .card-body,
 .portletNavigationTree .card-body,
 .portletEvents .card-body,
 .portletNews .card-body,
@@ -10223,6 +10217,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0;
 }
 
+.portletRecent .card-body img.pull-right,
 .portletNavigationTree .card-body img.pull-right,
 .portletEvents .card-body img.pull-right,
 .portletNews .card-body img.pull-right,
@@ -10231,6 +10226,7 @@ a.text-dark:hover, a.text-dark:focus {
   float: right !important;
 }
 
+.portletRecent .card-body > ul,
 .portletNavigationTree .card-body > ul,
 .portletEvents .card-body > ul,
 .portletNews .card-body > ul,
@@ -10241,6 +10237,7 @@ a.text-dark:hover, a.text-dark:focus {
   list-style: none;
 }
 
+.portletRecent .card-body > ul > li,
 .portletNavigationTree .card-body > ul > li,
 .portletEvents .card-body > ul > li,
 .portletNews .card-body > ul > li,
@@ -10250,6 +10247,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 0.75rem 1.25rem;
 }
 
+.portletRecent .card-body > ul > li a,
 .portletNavigationTree .card-body > ul > li a,
 .portletEvents .card-body > ul > li a,
 .portletNews .card-body > ul > li a,
@@ -10259,6 +10257,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #086ca3;
 }
 
+.portletRecent .card-body > ul > li:first-child,
 .portletNavigationTree .card-body > ul > li:first-child,
 .portletEvents .card-body > ul > li:first-child,
 .portletNews .card-body > ul > li:first-child,
@@ -10267,6 +10266,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-top: 0;
 }
 
+.portletRecent .card-body > ul ul,
 .portletNavigationTree .card-body > ul ul,
 .portletEvents .card-body > ul ul,
 .portletNews .card-body > ul ul,
@@ -10276,6 +10276,7 @@ a.text-dark:hover, a.text-dark:focus {
   list-style: none;
 }
 
+.portletRecent .card-body > ul li:hover,
 .portletNavigationTree .card-body > ul li:hover,
 .portletEvents .card-body > ul li:hover,
 .portletNews .card-body > ul li:hover,
