@@ -1,269 +1,168 @@
 //*// PORTLETS //*//
-.card {
+.portlet {
+  margin-bottom: $spacer;
 
-	@if $enable-shadows == true {
-		@include box-shadow($box-shadow);
-	} @else {
-		box-shadow:None;
-	}
+  @if $enable-shadows==true {
+    @include box-shadow($box-shadow);
+  }
 
-	&.portlet{
-		margin-bottom:$paragraph-margin-bottom;
-	}
+  @else {
+    box-shadow: None;
+  }
 
-	&.portletEvents,
-	&.portletNews,
-	&.portletCollection,
-	&.portletRss {
-		> .card-body {
+	.card-footer {
+    @include gradient-y(rgba(0, 0, 0, .02), $plone-portlet-footer-bg, 0%, 50%);
+    font-size: $font-size-sm;
+  }
 
-			padding:0;
-
-			img{
-				&.pull-right{
-					@include float-right;
-				}
-			}
-
-			> ul {
-				padding: 0;
-				margin: 0;
-				list-style: none;
-
-				> li {
-					border-top: $list-group-border-width solid $list-group-border-color;
-					padding: $card-spacer-y $card-spacer-x;
-
-					a {
-						display: block;
-						color: $plone-link-color-on-grey;
-					}
-
-					&:first-child{
-						border-top:0;
-					}
-				}
-
-				ul {
-					padding-left:15px;
-					list-style: none;
-				}
-
-				li:hover {
-					background: $plone-portlet-list-hover-bg;
-				}
-			}
-		}
-	}
-
-	> .card-footer{
-		@include gradient-y(rgba(0,0,0, .02), $plone-portlet-footer-bg, 0%, 50%);
-		font-size: $font-size-sm;
-	}
-
-	// &.portletCalendar table {
-	// 	width: 100%;
-	// 	text-align: center;
-	// 	vertical-align: middle;
-	// 	border-collapse: collapse;
-	// 	border-spacing: 0;
-	// 	tr {
-	// 		line-height: 30px;
-	// 	}
-	// 	thead {
-	// 		background: $plone-portlet-footer-bg;
-	// 		border-bottom: $plone-portlet-border;
-	// 		th {
-	// 			color: $plone-gray;
-	// 			font-weight: $plone-font-weight-light;
-	// 			height: 34px;
-	// 			text-align: center;
-	// 			vertical-align: middle;
-	// 		}
-	// 	}
-	// 	td {
-	// 		color: #666;
-	// 		background: #eeeeee;
-	// 		&:hover {
-	// 			background: $plone-body-bg;
-	// 		}
-	// 		&.today:hover,
-	// 		&.cal_has_events:hover {
-	// 			background: #eee;
-	// 		}
-	// 		&.cal_prev_month {
-	// 			color: #999;
-	// 			background: #f9f9f9;
-	// 		}
-	// 	}
-	// 	td > * {
-	// 		border-radius: 50%;
-	// 		display: inline-block;
-	// 		width: 20px;
-	// 		height: 20px;
-	// 		line-height: 20px;
-	// 	}
-	// 	.cal_has_events {
-	// 		position: relative;
-	// 		a:hover {
-	// 			background: $plone-portlet-event-bullet;
-	// 			text-decoration: none;
-	// 			box-shadow: 0 0 0 5px $plone-portlet-event-bullet;
-	// 		}
-	// 		a::after {
-	// 			content: "•";
-	// 			position: absolute;
-	// 			margin-left: 50%;
-	// 			left: -6px;
-	// 			font-size: $plone-font-size-large+2;
-	// 			color: lighten($plone-portlet-list-bullet, 15%);
-	// 			margin-top: 9px;
-	// 		}
-	// 		a:hover::after {
-	// 			color: $plone-portlet-list-bullet;
-	// 		}
-	// 	}
-	// 	.today > * {
-	// 		background: $plone-portlet-contrast-bg;
-	// 		font-weight: 500;
-	// 		//using shadow to expand background is because then table is only 20px per cell and not 30px
-	// 		box-shadow: 0 0 0 5px $plone-portlet-contrast-bg; color: #000;
-	// 	}
-	// 	tbody tr:first-child td > * {
-	// 		margin-top: 6px;
-	// 	}
-	// 	tbody tr:last-child td > * {
-	// 		margin-bottom: 6px;
-	// 	}
-	// 	.cal_next_month, .cal_prev_month {
-	// 		color: #000;
-	// 		&.cal_has_events > a {
-	// 			color: lighten($plone-portlet-list-bullet, 15%);
-	// 		}
-	// 		&.cal_has_events > a::after {
-	// 			color: lighten($plone-portlet-list-bullet, 25%);
-	// 		}
-	// 		&.cal_has_events > a:hover {
-	// 			color: darken($plone-link-color,15%);
-	// 		}
-	// 		&.cal_has_events > a:hover::after {
-	// 			color: $plone-portlet-list-bullet;
-	// 		}
-	// 	}
-	// }
-
-	.formControls {
-		border:0; background: none; padding: 0; box-shadow: none;
-	}
+  .formControls {
+    border: 0;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+  }
 }
 
+.portletNavigationTree,
+.portletEvents,
+.portletNews,
+.portletCollection,
+.portletRss {
+  .card-body {
 
-// //*// Navigation
-// .portletNavigationTree nav.portletContent > ul > li a {
-// 	padding: 10px 15px 10px 15px;
-// 	border-top: $plone-portlet-border;
-// }
-// .portletNavigationTree nav.portletContent > ul > li strong {
-// 	padding: 10px 15px 10px 15px;
-// 	border-top: $plone-portlet-border;
-// 	background: $plone-portlet-footer-bg;
-// 	color: $plone-gray;
-// 	display: block;
-// 	font-weight: $plone-font-weight-regular;
-// }
-// .portletNavigationTree {
-// 	.portletContent {
-// 		border-top: 0;
-// 		> ul > li a {
-// 			display: block;
-// 			&:hover {
-// 				text-decoration: none;
-// 				background: darken($plone-portlet-footer-bg, 2%);
-// 				color: $plone-portlet-list-bullet;
-// 			}
-// 			&:hover::before {
-//                 color: $plone-portlet-list-bullet;
-//             }
-//             &:hover::after {
-// 				content: "⟩";
-// 				position: absolute;
-// 				right: 10px;
-// 				font-size: $plone-font-size-large;
-// 				margin-top: -3px;
-// 				color: $plone-gray-light;
-// 			}
-//         }
-//         > ul > li > a > img.image-icon {
-// 			max-height: $plone-line-height-computed;
-// 		}
-// 		> ul ul {
-// 			padding-left: 0;
-// 		}
-// 		.navTreeCurrentNode > a {
-//             background: darken($plone-portlet-footer-bg, 2%);
-// 			color: $plone-gray;
-// 			&::after {
-// 				content:"⟩";
-// 				position: absolute;
-// 				right: 10px;
-// 				font-size: $plone-font-size-large;
-// 				margin-top: -3px;
-// 				color: $plone-gray-light;
-// 			}
-// 		}
-// 		@include navtree-level-loop($plone-portlet-navtree-maxlevel);
-// 	}
-// }
+    padding: 0;
 
-// #upgrade-products .configlets,
-// #install-products .configlets,
-// #activated-products .configlets,
-// #broken-products .configlets {
-// 	li {
-// 		padding: $plone-padding-base-horizontal;
-// 		border-top: 1px dotted $plone-table-border-color;
-// 	}
-// 	li:first-child {
-// 		border-top: 0;
-// 	}
-// 	h3, p {
-// 		margin: 0;
-// 	}
-// 	.portletContent:last-child {
-// 		margin-bottom: 0;
-// 	}
-// 	.pull-right {
-// 		margin: 0 0 $plone-padding-base-horizontal $plone-padding-base-horizontal;
-// 	}
-// }
+    img {
+      &.pull-right {
+        @include float-right;
+      }
+    }
+
+    >ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      >li {
+        border-top: $list-group-border-width solid $list-group-border-color;
+        padding: $card-spacer-y $card-spacer-x;
+
+        a {
+          display: block;
+          color: $plone-link-color-on-grey;
+        }
+
+        &:first-child {
+          border-top: 0;
+        }
+      }
+
+      ul {
+        padding-left: 15px;
+        list-style: none;
+      }
+
+      li:hover {
+        background: $plone-portlet-list-hover-bg;
+      }
+    }
+  }
+}
+
+//*// Navigation
+.portletNavigationTree {
+  .card-body {
+    ul {
+			ul {
+			  padding-left: 0;
+			}
+      li {
+        padding: 0;
+
+        a {
+          display: block;
+          padding: $spacer * .75 $spacer;
+
+          &:hover {
+            text-decoration: none;
+            background: darken($plone-portlet-footer-bg, 2%);
+            color: $plone-portlet-list-bullet;
+          }
+
+          &:hover::before {
+            color: $plone-portlet-list-bullet;
+          }
+
+          &:hover::after {
+            content: "⟩";
+            position: absolute;
+            right: 10px;
+            font-size: $font-size-lg;
+            margin-top: -3px;
+            color: $plone-gray-light;
+          }
+        }
+
+      }
+
+      li {
+        border-top: $list-group-border-width solid $list-group-border-color;
+      }
+
+    }
+
+    >ul>li>a>img.image-icon {
+      max-height: $line-height-base;
+    }
+
+    .navTreeCurrentNode>a {
+      background: darken($plone-portlet-footer-bg, 2%);
+      color: $plone-gray;
+
+      &::after {
+        content: "⟩";
+        position: absolute;
+        right: 10px;
+        font-size: $font-size-lg;
+        margin-top: -3px;
+        color: $plone-gray-light;
+      }
+    }
+
+    @include navtree-level-loop($plone-portlet-navtree-maxlevel);
+  }
+}
 
 //*// Manage portlets
 // Jumplist for quick navigation across portlet managers
 .switch-portlet-manager {
-	margin-top: 0.5em;
-	width: auto;
+  margin-top: 0.5em;
+  width: auto;
 }
+
 // Assigned portlet
 .managedPortlet {
 
-	// Parents, groups and content types portlet assignments
-	&.inheritedPortlet{
-		margin: 5px 15px;
+  // Parents, groups and content types portlet assignments
+  &.inheritedPortlet {
+    margin: 5px 15px;
 
-		.portletHeader{
-			padding: 3px 15px;
-		}
-	}
+    .portletHeader {
+      padding: 3px 15px;
+    }
+  }
 
-	// Blocked inherited portlet assignments
-	&.blockedPortlet{
-		opacity: 0.7;
-	}
+  // Blocked inherited portlet assignments
+  &.blockedPortlet {
+    opacity: 0.7;
+  }
 }
+
 // Buttons for hide/show and remove assigned portlet
 .managedPortletActions {
-	// margin-top: -$plone-padding-base-vertical;
-	form {
-		display: inline-block;
-	}
+
+  // margin-top: -$plone-padding-base-vertical;
+  form {
+    display: inline-block;
+  }
 }
