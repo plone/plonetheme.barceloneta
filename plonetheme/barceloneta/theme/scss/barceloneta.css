@@ -10368,14 +10368,6 @@ a.text-dark:hover, a.text-dark:focus {
   width: auto;
 }
 
-.managedPortlet.inheritedPortlet {
-  margin: 5px 15px;
-}
-
-.managedPortlet.inheritedPortlet .portletHeader {
-  padding: 3px 15px;
-}
-
 .managedPortlet.blockedPortlet {
   opacity: 0.7;
 }
