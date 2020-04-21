@@ -5,7 +5,7 @@
       i18n:domain="plone">
 
 
-  <div class="card portlet portlet-search">
+  <div class="card portlet portletSearch">
     <div class="card-header">
       <a class="tile" tal:attributes="href view/search_action">
         <tal:header condition="not:view/data/title|nothing" i18n:translate="box_search">Search</tal:header>

@@ -4,11 +4,11 @@
       tal:omit-tag=""
       i18n:domain="plone">
 
-  <div class="card portlet portlet-recent">
+  <aside class="card portlet portletRecent">
 
-    <div class="card-header">
+    <header class="card-header">
       <a href="#" tal:attributes="href view/recently_modified_link" i18n:translate="" tal:content="view/title" />
-    </div>
+    </header>
 
     <div class="card-body" tal:condition="view/recent_items" tal:define="plone_layout context/@@plone_layout;
       portal context/@@plone_portal_state/portal;
@@ -17,13 +17,13 @@
       supress_thumb view/data/no_thumbs;
       thumb_scale view/thumb_scale">
 
-      <ul class="list-unstyled mb-0">
+      <ul>
         <tal:items tal:define="plone_view context/@@plone;
                            normalizeString nocall:plone_view/normalizeString;
                            toLocalizedTime nocall:plone_view/toLocalizedTime;"
                tal:repeat="obj view/recent_items">
 
-          <li class="mb-2" tal:define="oddrow repeat/obj/odd;
+          <li tal:define="oddrow repeat/obj/odd;
             item_type obj/portal_type;
             item_wf_state obj/review_state;
             item_wf_state_class python:'state-' + normalizeString(item_wf_state);
@@ -47,9 +47,9 @@
       <p i18n:translate="box_recent_no_items">No items changed yet.</p>
     </div>
 
-    <div class="card-footer">
+    <footer class="card-footer">
       <a href="#" class="tile" tal:attributes="href view/recently_modified_link" i18n:translate="box_more_recently_changed">All recent changes&hellip;</a>
-    </div>
-  </div>
+    </footer>
+  </aside>
 
 </html>
