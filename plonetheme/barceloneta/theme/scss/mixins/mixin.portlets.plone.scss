@@ -2,7 +2,7 @@
 @mixin navtree-level-loop($maxlevel) {
     @for $i from 0 through $maxlevel {
         ul.navTreeLevel#{$i} > li a {
-            padding-left: 15px * ($i + 1);
+            padding-left: $spacer * ($i + 1);
         }
     }
 }
