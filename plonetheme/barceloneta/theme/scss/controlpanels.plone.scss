@@ -1,0 +1,23 @@
+//*// Site Setup
+.controlPanel {
+
+    nav {
+        ul {
+            padding: $spacer;
+            margin: 0;
+            list-style: none;
+        }
+    }
+
+.inner-configlet {
+    //   flex: 1 0 calc(25% - 10px);
+    //   margin: 5px;
+    //   background: #E9D2FF;
+    a span {
+      font-size: 50px;
+      text-align: center;
+      color: #4d4d4d;
+    }
+}
+
+}
