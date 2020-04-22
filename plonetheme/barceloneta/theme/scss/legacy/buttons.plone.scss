@@ -59,7 +59,7 @@
 }
 
 .link-parent {
-  @extend .standalone; 
+  @extend .standalone;
   margin-bottom: $plone-padding-base-horizontal;
   &:before {content: "↩ ";top: 3px;position: relative;}
 }
