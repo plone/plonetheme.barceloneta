@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<aside class="card portlet portletEvents"
+    i18n:domain="plone">
+
+  <header class="card-header portletHeader">
+    <a href="" class="tile"
+        tal:define="next_link view/next_url"
+        tal:omit-tag="not:next_link"
+        tal:attributes="href next_link"
+        i18n:translate="box_events">
+        Upcoming Events
+    </a>
+  </header>
+  
+  <section class="card-body portletContent">
+    <ul tal:define="thumb_scale view/thumb_scale">
+      <tal:events repeat="item view/events">
+      <li class="portletItem"
+          tal:define="oddrow repeat/item/odd;
+                      item_url      item/url;
+                      item_descr    item/description;
+                      item_title    item/title;
+                      item_location item/location;
+                      item_hasimage item/context/image|nothing"
+          tal:attributes="class python:'portletItem odd' if oddrow else 'portletItem even'">
+        <a href="#" class="tile"
+            tal:attributes="href item_url;
+                            title item_descr"
+            tal:define="scale item/context/@@images|nothing;">
+          <span tal:condition="item_hasimage">
+              <img tal:define="img_tag python:scale.scale('image', scale=thumb_scale).tag(css_class='pull-right thumb-'+thumb_scale)"
+                   tal:replace="structure img_tag" />
+          </span>
+          <span tal:replace="item_title">Some Event</span>
+        </a>
+        <span class="portletItemDetails">
+          <tal:date replace="structure python:view.formatted_date(item)" />
+          <span class="timezone"
+              tal:define="tz item/timezone"
+              tal:condition="tz">
+            (<tal:tzname replace="tz">TZ</tal:tzname>)
+          </span>
+          <span class="location"
+              tal:condition="item_location"> &mdash;
+            <tal:location content="item_location">Location</tal:location>
+          </span>
+        </span>
+      </li>
+      </tal:events>
+    </ul>
+  </section>
+  
+  <footer class="card-footer portletFooter d-flex justify-content-around">
+    <a class="p-6 tile previous-events"
+        tal:define="prev_link view/prev_url"
+        tal:condition="prev_link"
+        tal:attributes="href prev_link"
+        i18n:translate="box_previous_events">
+      Previous events&hellip;
+    </a>
+    <a class="p-6 tile upcoming-events"
+        tal:define="next_link view/next_url"
+        tal:attributes="href next_link"
+        i18n:translate="box_upcoming_events">
+      Upcoming events&hellip;
+    </a>
+  </footer>
+
+</aside>
+</html>

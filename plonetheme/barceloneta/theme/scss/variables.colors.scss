@@ -1,0 +1,40 @@
+//colors
+$plone-toolbar-draft-color: #fab82a; // lime-yellow //draft is visible
+$plone-toolbar-pending-color: #e2e721; // orange
+$plone-toolbar-private-color: #c4183c; // red
+$plone-toolbar-internal-color: #fab82a; // is draft
+$plone-toolbar-internally-published-color: #883dfa; // is intranet
+
+//grays
+$plone-gray-darker: lighten(#000, 20%); // #333
+$plone-gray-dark: lighten(#000, 30%); // #4c4c4c
+$plone-gray: lighten(#000, 41%); // #696969
+$plone-gray-light: lighten(#000, 46.5%); // #767676 //discreet
+$plone-gray-lighter: lighten(#000, 80%); // #ccc //disableds like
+
+// Plone
+$plone-link-color: #007bb1; //plone blue made slightly darker for wcag 2.0
+$plone-link-color-on-dark: #16a1e3; //plone blue
+//if you need different contrast
+$plone-link-color-on-grey: #086ca3; //valid wcag 2.0
+$plone-link-hover-color: darken($plone-link-color, 15%);
+
+//*// SCAFFOLDING
+$plone-body-bg: #fafafa; //almost-white
+$plone-footer-bg: #2e3133; //blued-darkgray
+
+$theme-colors: (primary: $plone-link-color);
+
+
+//*// PORTLETS
+$plone-portlet-list-hover-bg: #fcfcfd;
+$plone-portlet-footer-bg: #fcfcfd;
+// @plone-portlet-header-bg: #f2f1f1;
+// @plone-portlet-header-color: @plone-gray;
+// @plone-portlet-content-bg: #fff;
+// @plone-portlet-border: @plone-border-base #e5e5e5;
+// @plone-portlet-contrast-bg: #e5e5e5;
+// @plone-portlet-event-bullet: #dbecfe;
+$plone-portlet-list-bullet: #64bee8;
+// @plone-portlet-list-small-text: @plone-gray;
+$plone-portlet-navtree-maxlevel: 5;

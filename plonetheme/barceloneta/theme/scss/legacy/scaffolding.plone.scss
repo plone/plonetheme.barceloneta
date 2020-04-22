@@ -1,0 +1,92 @@
+//*// SCAFFOLDING //*//
+
+//*// Body reset
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+  font-family: $plone-font-family-base;
+  font-size: $plone-font-size-base;
+  font-weight: $plone-font-weight-medium;
+  line-height: $plone-line-height-base;
+  color: $plone-text-color;
+  background-color: $plone-body-bg;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//*// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+//*// Links
+
+a {
+  color: $plone-link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $plone-link-hover-color;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    @include tab-focus(); //--> NOT DONE
+  }
+}
+
+
+//*// Figures
+figure {
+  margin: 0;
+}
+
+
+//*// Images
+
+img {
+  vertical-align: middle;
+}
+
+
+// Horizontal rules
+
+hr {
+  margin-top:    $plone-line-height-computed;
+  margin-bottom: $plone-line-height-computed;
+  border: 0;
+  border-top: 1px solid $plone-hr-border;
+}
+
+
+
+#global_statusmessage {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.pat-structure .navbar.ui-offset-parent {
+  display: block;
+  padding: 0;
+}
+
+.dataTables_wrapper.form-inline {
+  display: block;
+}
+
+table.dataTable {
+  border-collapse: collapse !important;
+}

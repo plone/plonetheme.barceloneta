@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rules xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <!-- ## Configure bootstrap grid for content column, depnding on existing columns left and right: ## -->
+  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
+  <before theme-children="//*[@id='portal-column-content']"
+    method="raw"><xsl:attribute name="class">
+    <xsl:value-of select="//*[@id='portal-column-content']/@class" />
+    <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-12 col-md-6 col-md-push-3</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-12 col-md-9 </xsl:if>
+    <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-9 col-md-push-3</xsl:if>
+    <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-12</xsl:if>
+  </xsl:attribute></before>
+
+  <!-- ## Configure bootstrap grid for the left column (column-one), depnding on existing column's left and right: ## -->
+  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
+  <before theme-children="//*[@id='portal-column-one']"
+    method="raw"><xsl:attribute name="class">
+    <xsl:value-of select="//*[@id='portal-column-one']/@class" />
+    <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3 col-md-pull-6</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 col-md-pull-9</xsl:if>
+  </xsl:attribute></before>
+
+  <!-- ## Configure bootstrap grid for the right column (column-two), depnding on existing column's left and right: ## -->
+  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
+  <before theme-children="//*[@id='portal-column-two']"
+    method="raw"><xsl:attribute name="class">
+    <xsl:value-of select="//*[@id='portal-column-two']/@class" />
+    <xsl:if test="//aside[@id='portal-column-one']">col-xs-12 col-sm-6 col-md-3</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-12 col-md-3</xsl:if>
+  </xsl:attribute></before>
+</rules>

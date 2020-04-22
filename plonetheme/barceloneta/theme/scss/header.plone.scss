@@ -1,0 +1,182 @@
+// // DEBUG MEDIA QUERIES
+// @include media-breakpoint-up($nav-main-breakpoint) {
+//   #content-header::before {
+//     content: "main";
+//     position: sticky;
+//     top: 1em;
+//     left: 0;
+//   }
+// }
+// @include media-breakpoint-up(xs) {
+//   body::before {
+//     content: "xs";
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+// @include media-breakpoint-up(sm) {
+//   body::before {
+//     content: "sm";
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+// @include media-breakpoint-up(md) {
+//   body::before {
+//     content: "md";
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+// @include media-breakpoint-up(lg) {
+//   body::before {
+//     content: "lg";
+//     position: sticky;
+//     top: 0;
+//     left: 0;
+//   }
+// }
+
+//*// HEADER //*//
+#portal-header {
+  margin: $spacer auto $spacer * 1.25;
+  @include clearfix(); //clear floats
+
+  @include media-breakpoint-up($nav-main-breakpoint) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+#portal-logo {
+  flex-grow: 1;
+  order: -1;
+}
+
+#portal-languageselector {
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 5px 0 0 0;
+  list-style: none;
+  margin-left: $spacer;
+
+  li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+}
+
+#portal-anontools {
+  @include media-breakpoint-down($nav-main-breakpoint) {
+    position: absolute;
+    top: 0;
+    right: $spacer * 0.5;
+  }
+
+  padding-top: 5px;
+  margin-left: $spacer;
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-right: 10px;
+    }
+  }
+}
+
+#portal-membertools-wrapper {
+  @include media-breakpoint-down($nav-main-breakpoint) {
+    position: absolute;
+    top: 0;
+    right: $spacer * 0.5;
+  }
+
+  margin-top: 5px;
+  margin-left: $spacer * 1.5;
+  margin-right: $spacer * 0.5;
+
+  ul {
+    margin: 0 0 $spacer $spacer;
+    padding-right: 0;
+  }
+}
+
+//mobile search
+#portal-searchbox {
+  margin-left: 3px;
+  position: relative;
+  white-space: nowrap;
+  z-index: 2;
+  order: 50;
+
+  @include media-breakpoint-down($nav-main-breakpoint) {
+    .form-inline {
+      display: block;
+    }
+
+    margin: $spacer 0;
+
+    .searchField {
+      width: 100%;
+    }
+
+    .searchSection {
+      display: none;
+    }
+
+    //non on mobile
+    [type="submit"] {
+      display: none;
+    }
+
+    //submit hidden on mobile
+    label {
+      font-size: 86.667%
+    }
+  }
+
+}
+
+//non mobile search
+@include media-breakpoint-up($nav-main-breakpoint) {
+  #portal-searchbox {
+    margin-left: $spacer * 2;
+    margin-top: 5px; //visual balance
+    max-width: 50%;
+    padding-top: 0;
+    position: relative;
+
+    .searchSection {
+      display: flex;
+    }
+
+    [type="text"] {
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      // float: left;
+      width: 20rem;
+    }
+
+    [type="submit"] {
+      display: inline-block;
+      margin-left: -1px;
+      vertical-align: top;
+      width: auto;
+      display: inline-block;
+    }
+  }
+}
+
+@include media-breakpoint-down($nav-main-breakpoint) {
+  #portal-languageselector {
+    // clear: none;
+    float: right;
+  }
+}
