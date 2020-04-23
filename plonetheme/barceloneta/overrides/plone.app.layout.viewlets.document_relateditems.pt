@@ -4,12 +4,15 @@
 
   <tal:related tal:define="plone_view nocall:context/@@plone; plone_layout nocall:context/@@plone_layout; normalizeString nocall:plone_view/normalizeString; context_state nocall:context/@@plone_context_state; use_view_action python:context.portal_registry.get('types_use_view_action_in_listings', []);">
 
-    <div class="my-3 ml-3" tal:repeat="item related">
+    <div class="media my-3" tal:repeat="item related">
 
       <tal:media tal:define="desc item/Description;
         item_type item/portal_type;
         item_url item/getURL|item/absolute_url;
         item_url python:(item_type in use_view_action) and item_url+'/view' or item_url">
+
+      <!-- tbd content type icon as svg if available -->
+      <img src="document_icon.png" class="mr-3" alt="Document" width="32">
 
       <div class="media-body">
         <h5 class="mt-0">${item/pretty_title_or_id}</h5>
