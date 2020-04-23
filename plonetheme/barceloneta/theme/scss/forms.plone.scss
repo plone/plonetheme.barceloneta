@@ -5,6 +5,11 @@
     line-height: 1;
 }
 
+/* invalid-feedback */
+.field.error .invalid-feedback {
+    display:block;
+}
+
 .form-group {
     .select2-container {
         display:block;
@@ -26,5 +31,7 @@
 
 .pattern-relateditems-item-title,
 .pattern-relateditems-result-title {
-    font-size: $font-size-lg;
+    &, &[class*="contenttype-"]:before {
+        font-size: $font-size-lg;
+    }
 }
