@@ -50,7 +50,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.428;
   color: #4d4d4d;
@@ -358,31 +358,31 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.499875rem;
+  font-size: 2.5rem;
 }
 
 h2, .h2 {
-  font-size: 1.875125rem;
+  font-size: 2rem;
 }
 
 h3, .h3 {
-  font-size: 1.499575rem;
+  font-size: 1.75rem;
 }
 
 h4, .h4 {
-  font-size: 1.12525rem;
+  font-size: 1.5rem;
 }
 
 h5, .h5 {
-  font-size: 0.875rem;
+  font-size: 1.25rem;
 }
 
 h6, .h6 {
-  font-size: 0.74375rem;
+  font-size: 1rem;
 }
 
 .lead {
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -454,7 +454,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.09375rem;
+  font-size: 1.25rem;
 }
 
 .blockquote-footer {
@@ -1851,7 +1851,7 @@ pre code {
   width: 100%;
   height: calc(1.428em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.428;
   color: #495057;
@@ -1939,14 +1939,14 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -1955,7 +1955,7 @@ select.form-control:focus::-ms-value {
   width: 100%;
   padding: 0.375rem 0;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.428;
   color: #4d4d4d;
   background-color: transparent;
@@ -1971,7 +1971,7 @@ select.form-control:focus::-ms-value {
 .form-control-sm {
   height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -1979,7 +1979,7 @@ select.form-control:focus::-ms-value {
 .form-control-lg {
   height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -2065,7 +2065,7 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: .1rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.428;
   color: #fff;
   background-color: rgba(40, 167, 69, 0.9);
@@ -2165,7 +2165,7 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: .1rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.428;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
@@ -2322,7 +2322,7 @@ textarea.form-control {
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.428;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -2945,14 +2945,14 @@ fieldset:disabled a.btn {
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3039,7 +3039,7 @@ input[type="button"].btn-block {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #4d4d4d;
   text-align: left;
   list-style: none;
@@ -3241,7 +3241,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -3490,7 +3490,7 @@ input[type="button"].btn-block {
   align-items: center;
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.428;
   color: #495057;
@@ -3518,7 +3518,7 @@ input[type="button"].btn-block {
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -3535,7 +3535,7 @@ input[type="button"].btn-block {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3568,7 +3568,7 @@ input[type="button"].btn-block {
 .custom-control {
   position: relative;
   display: block;
-  min-height: 1.2495rem;
+  min-height: 1.428rem;
   padding-left: 1.5rem;
 }
 
@@ -3582,7 +3582,7 @@ input[type="button"].btn-block {
   left: 0;
   z-index: -1;
   width: 1rem;
-  height: 1.12475rem;
+  height: 1.214rem;
   opacity: 0;
 }
 
@@ -3624,7 +3624,7 @@ input[type="button"].btn-block {
 
 .custom-control-label::before {
   position: absolute;
-  top: 0.12475rem;
+  top: 0.214rem;
   left: -1.5rem;
   display: block;
   width: 1rem;
@@ -3638,7 +3638,7 @@ input[type="button"].btn-block {
 
 .custom-control-label::after {
   position: absolute;
-  top: 0.12475rem;
+  top: 0.214rem;
   left: -1.5rem;
   display: block;
   width: 1rem;
@@ -3697,7 +3697,7 @@ input[type="button"].btn-block {
 }
 
 .custom-switch .custom-control-label::after {
-  top: calc(0.12475rem + 2px);
+  top: calc(0.214rem + 2px);
   left: calc(-2.25rem + 2px);
   width: calc(1rem - 4px);
   height: calc(1rem - 4px);
@@ -3726,7 +3726,7 @@ input[type="button"].btn-block {
   width: 100%;
   height: calc(1.428em + 0.75rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.428;
   color: #495057;
@@ -3776,7 +3776,7 @@ input[type="button"].btn-block {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
 }
 
 .custom-select-lg {
@@ -3784,7 +3784,7 @@ input[type="button"].btn-block {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .custom-file {
@@ -4147,10 +4147,10 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.41075rem;
-  padding-bottom: 0.41075rem;
+  padding-top: 0.3215rem;
+  padding-bottom: 0.3215rem;
   margin-right: 0;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4191,7 +4191,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -4717,7 +4717,7 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   list-style: none;
   background-color: #e9ecef;
   border-radius: 0.25rem;
@@ -4806,7 +4806,7 @@ input[type="button"].btn-block {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
@@ -4822,7 +4822,7 @@ input[type="button"].btn-block {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -5030,7 +5030,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-dismissible {
-  padding-right: 3.8125rem;
+  padding-right: 4rem;
 }
 
 .alert-dismissible .close {
@@ -5175,7 +5175,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.65625rem;
+  font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
   box-shadow: inset 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
@@ -5562,7 +5562,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .close {
   float: right;
-  font-size: 1.3125rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -5867,7 +5867,7 @@ a.close.disabled {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -5980,7 +5980,7 @@ a.close.disabled {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -6105,7 +6105,7 @@ a.close.disabled {
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.875rem;
+  font-size: 1rem;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-top-left-radius: calc(0.3rem - 1px);
@@ -9755,6 +9755,18 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+main {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+#portal-related-items .media {
+  position: relative;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("roboto/roboto-light.eot");
@@ -9833,6 +9845,35 @@ a.text-dark:hover, a.text-dark:focus {
   src: local("Roboto Condensed Thin Italic"), url("roboto/robotocondensed-lightitalic.eot?#iefix") format("embedded-opentype"), url("roboto/robotocondensed-lightitalic.woff2") format("woff2"), url("roboto/robotocondensed-lightitalic.woff") format("woff"), url("roboto/robotocondensed-lightitalic.ttf") format("truetype"), url("roboto/robotocondensed-lightitalic.svg#roboto_condensedlight_italic") format("svg");
   font-weight: 300;
   font-style: italic;
+}
+
+#portal-footer-wrapper {
+  background-color: #2e3133;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+
+#portal-footer-wrapper .copyright {
+  padding: 0.5rem;
+}
+
+#portal-footer-wrapper .colophon {
+  padding: 0.5rem;
+}
+
+#portal-footer-wrapper .site-actions {
+  padding: 0.5rem;
+}
+
+#portal-footer-wrapper .site-actions ul {
+  padding: 0;
+  margin: 0;
+}
+
+#portal-footer-wrapper .site-actions ul li {
+  display: inline;
+  margin: 0 0.5rem;
 }
 
 .sr-only,
@@ -10016,14 +10057,6 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0.5em 1em;
 }
 
-#portal-globalnav-wrapper .navbar-nav {
-  font-size: 0.875rem;
-}
-
-#portal-globalnav-wrapper .navbar-nav > li > a {
-  font-size: 1rem;
-}
-
 #portal-globalnav-wrapper .navbar-nav li {
   position: relative;
   display: block;
@@ -10187,14 +10220,28 @@ a.text-dark:hover, a.text-dark:focus {
 
 #plone-breadcrumb {
   background-color: #e9ecef;
-  margin-bottom: 0.765625rem;
-  /* uncomment to hide breadcrumbs on home
-  body.section-front-page & {display: none;} //not breadcrumbs on homepage
-  */
+  margin-bottom: 2rem;
 }
 
 #plone-breadcrumb .breadcrumb {
   background-color: transparent;
+}
+
+.document-byline {
+  margin-bottom: 0.5rem;
+}
+
+.document-byline .byline-section {
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.document-byline .byline-label {
+  font-weight: 500;
+}
+
+.document-byline .document-copyright {
+  margin-bottom: 1rem;
 }
 
 .portlet {
@@ -10205,7 +10252,7 @@ a.text-dark:hover, a.text-dark:focus {
 .portlet .card-footer {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0%, #fcfcfd 50%);
   background-repeat: repeat-x;
-  font-size: 0.765625rem;
+  font-size: 0.875rem;
 }
 
 .portletRecent .card-body,
@@ -10312,7 +10359,7 @@ a.text-dark:hover, a.text-dark:focus {
   content: "⟩";
   position: absolute;
   right: 10px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-top: -3px;
   color: #777777;
 }
@@ -10334,46 +10381,38 @@ a.text-dark:hover, a.text-dark:focus {
   content: "⟩";
   position: absolute;
   right: 10px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-top: -3px;
   color: #777777;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel0 > li a {
-  padding-left: 15px;
+  padding-left: 1rem;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel1 > li a {
-  padding-left: 30px;
+  padding-left: 2rem;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel2 > li a {
-  padding-left: 45px;
+  padding-left: 3rem;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel3 > li a {
-  padding-left: 60px;
+  padding-left: 4rem;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel4 > li a {
-  padding-left: 75px;
+  padding-left: 5rem;
 }
 
 .portletNavigationTree .card-body ul.navTreeLevel5 > li a {
-  padding-left: 90px;
+  padding-left: 6rem;
 }
 
 .switch-portlet-manager {
   margin-top: 0.5em;
   width: auto;
-}
-
-.managedPortlet.inheritedPortlet {
-  margin: 5px 15px;
-}
-
-.managedPortlet.inheritedPortlet .portletHeader {
-  padding: 3px 15px;
 }
 
 .managedPortlet.blockedPortlet {
@@ -10387,8 +10426,13 @@ a.text-dark:hover, a.text-dark:focus {
 .required:after {
   color: #dc3545;
   content: '•';
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1;
+}
+
+/* invalid-feedback */
+.field.error .invalid-feedback {
+  display: block;
 }
 
 .form-group .select2-container {
@@ -10397,16 +10441,31 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* relateditems widget */
 .pattern-relateditems-result .pattern-relateditems-result-browse-wrapper .pattern-relateditems-result-browse {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .select2-results .select2-highlighted {
   color: #004665;
 }
 
-.pattern-relateditems-item-title,
-.pattern-relateditems-result-title {
-  font-size: 1rem;
+.pattern-relateditems-item-title, .pattern-relateditems-item-title[class*="contenttype-"]:before,
+.pattern-relateditems-result-title,
+.pattern-relateditems-result-title[class*="contenttype-"]:before {
+  font-size: 1.25rem;
+}
+
+.controlPanel header {
+  margin-bottom: 2rem;
+}
+
+.controlPanel .configlets .icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+body[class*="-controlpanel"] .custom-select {
+  width: auto;
+  display: block;
 }
 
 [class*="contenttype-"]::before,
