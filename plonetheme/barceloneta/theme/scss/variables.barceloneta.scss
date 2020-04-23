@@ -25,9 +25,10 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base: $font-family-sans-serif;
 
-$font-size-base: 0.875rem;
-$font-size-lg: 1rem;
-$font-size-sm: $font-size-base * .875;
+// use default font-sizes for now
+// $font-size-base: 0.875rem;
+// $font-size-lg: 1rem;
+// $font-size-sm: $font-size-base * .875;
 
 $font-weight-lighter: lighter;
 $font-weight-light: 300;
@@ -35,12 +36,13 @@ $font-weight-normal: 400;
 $font-weight-bold: 700;
 $font-weight-bolder: bolder;
 
-$h1-font-size: $font-size-base * 2.857;
-$h2-font-size: $font-size-base * 2.143;
-$h3-font-size: $font-size-base * 1.7138;
-$h4-font-size: $font-size-base * 1.286;
-$h5-font-size: $font-size-base;
-$h6-font-size: $font-size-base * 0.85;
+// use default font-sizes for now
+// $h1-font-size: $font-size-base * 2.857;
+// $h2-font-size: $font-size-base * 2.143;
+// $h3-font-size: $font-size-base * 1.7138;
+// $h4-font-size: $font-size-base * 1.286;
+// $h5-font-size: $font-size-base;
+// $h6-font-size: $font-size-base * 0.85;
 
 $font-weight-base: $font-weight-normal;
 $line-height-base: 1.428;
