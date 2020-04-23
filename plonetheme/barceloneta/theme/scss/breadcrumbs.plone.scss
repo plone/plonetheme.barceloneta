@@ -2,12 +2,10 @@
 
 #plone-breadcrumb {
   background-color: $breadcrumb-bg;
-  margin-bottom: $breadcrumb-font-size;
- .breadcrumb {
+  margin-bottom: 2rem;
+
+  .breadcrumb {
     background-color: transparent;
   }
 
-  /* uncomment to hide breadcrumbs on home
-  body.section-front-page & {display: none;} //not breadcrumbs on homepage
-  */
 }
