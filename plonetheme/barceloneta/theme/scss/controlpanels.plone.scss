@@ -10,3 +10,19 @@
     }
   }
 }
+
+// [class~="-controlpanel"] {
+//   background-color: yellow;
+// }
+
+body[class*="-controlpanel"] {
+  .custom-select {
+    width: auto;
+    display: block;
+  }
+}
+
+// .template-dateandtime-controlpanel {
+//   background: green!important;
+// }
+
