@@ -143,13 +143,13 @@
 .managedPortlet {
 
   // Parents, groups and content types portlet assignments
-  &.inheritedPortlet {
-    margin: 5px 15px;
+  // &.inheritedPortlet {
+  //   margin: 5px 15px;
 
-    .portletHeader {
-      padding: 3px 15px;
-    }
-  }
+  //   .portletHeader {
+  //     padding: 3px 15px;
+  //   }
+  // }
 
   // Blocked inherited portlet assignments
   &.blockedPortlet {
