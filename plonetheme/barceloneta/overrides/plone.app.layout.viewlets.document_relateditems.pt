@@ -1,0 +1,29 @@
+<section id="portal-related-items" class="portal-related-itemsmb-3" i18n:domain="plone" tal:define="related view/related_items" tal:condition="related">
+
+  <h5 i18n:translate="label_related_items">Related content</h5>
+
+  <tal:related tal:define="plone_view nocall:context/@@plone; plone_layout nocall:context/@@plone_layout; normalizeString nocall:plone_view/normalizeString; context_state nocall:context/@@plone_context_state; use_view_action python:context.portal_registry.get('types_use_view_action_in_listings', []);">
+
+    <div class="media my-3" tal:repeat="item related">
+
+      <tal:media tal:define="desc item/Description;
+        item_type item/portal_type;
+        item_url item/getURL|item/absolute_url;
+        item_url python:(item_type in use_view_action) and item_url+'/view' or item_url">
+
+      <!-- tbd content type icon as svg if available -->
+      <img src="document_icon.png" class="mr-3" alt="Document" width="32">
+
+      <div class="media-body">
+        <h6 class="mt-0">${item/pretty_title_or_id}</h6>
+        <span>${item/Description}</span>
+        <a href="${item_url}" class="stretched-link" i18n:translate="more_url">More&hellip;</a>
+      </div>
+
+      </tal:media>
+
+    </div>
+
+  </tal:related>
+
+</section>
