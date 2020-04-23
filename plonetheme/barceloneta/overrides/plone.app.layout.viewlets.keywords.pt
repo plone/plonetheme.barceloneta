@@ -5,7 +5,7 @@
                      url_quote nocall:modules/Products.PythonScripts.standard/url_quote"
          tal:condition="categories">
 
-  <h5 translate="category_viewlet_title">Categories</h5>
+  <h4 translate="category_viewlet_title">Categories</h4>
 
   <tal:repeat tal:repeat="category categories">
   <a href="#" rel="nofollow" class="badge badge-secondary p-2 m-1"
