@@ -1,10 +1,10 @@
 //*// Site Setup
-.controlPanel {
-  header {
-    margin-bottom: 2rem;
-  }
 
-  body[class*="-controlpanel"] {
+body[class*="-controlpanel"] {
+  .controlPanel {
+    >header {
+      margin-bottom: 2rem;
+    }
     .configlets {
       .icon {
         width: 3rem;
@@ -16,4 +16,22 @@
     width: auto;
     display: block;
   }
+
+
+  ul ul.configlet {
+    li {
+      a {
+        position: relative;
+        &::before {
+          content: "•";
+          position: absolute;
+          font-size: $h3-font-size;
+          line-height: 1;
+          left: -0.75rem;
+          color: $link-color;
+        }
+      }
+    }
+  }
+
 }
