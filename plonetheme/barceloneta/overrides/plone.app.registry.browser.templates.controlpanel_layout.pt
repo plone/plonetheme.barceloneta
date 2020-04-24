@@ -9,6 +9,7 @@
 <body>
 <div metal:fill-slot="prefs_configlet_main">
 
+  <header>
     <a id="setup-link" class="link-parent"
        tal:attributes="href view/control_panel_url"
        i18n:translate="">
@@ -17,15 +18,17 @@
 
     <h1 class="documentFirstHeading" tal:content="view/label">View Title</h1>
 
-    <div metal:use-macro="context/global_statusmessage/macros/portal_message">
-      Portal status message
-    </div>
+  </header>
 
-    <div id="content-core">
-        <div id="layout-contents">
-            <span tal:replace="structure view/contents" />
-        </div>
+  <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+    Portal status message
+  </div>
+
+  <div id="content-core">
+    <div id="layout-contents">
+      <span tal:replace="structure view/contents" />
     </div>
+  </div>
 
 </div>
 </body>
