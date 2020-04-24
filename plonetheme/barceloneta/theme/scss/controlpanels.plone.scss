@@ -1,7 +1,10 @@
 //*// Site Setup
 
 body[class*="-controlpanel"] {
-  .controlPanel {
+
+
+  .controlPanel,
+  article {
     >header {
       margin-bottom: 2rem;
     }
@@ -16,7 +19,9 @@ body[class*="-controlpanel"] {
     width: auto;
     display: block;
   }
-
+  textarea.form-control {
+    height: 10rem;
+  }
 
   ul ul.configlet {
     li {
