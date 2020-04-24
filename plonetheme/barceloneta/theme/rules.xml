@@ -69,14 +69,14 @@
   <!-- Replace footer information with Plone version. -->
   <replace
       css:theme-children="#portal-footer .copyright > div"
-      css:content-children="#portal-footer-wrapper #portal-footer-signature .portletContent"
+      css:content-children="#portal-footer-wrapper #portal-footer-signature .card-body"
       />
   <drop css:theme="#portal-footer .copyright" css:if-not-content="#portal-footer-wrapper #portal-footer-signature" />
 
   <!-- Replace colophon information with Plone version. -->
   <replace
       css:theme-children="#portal-footer .colophon > div"
-      css:content-children="#portal-footer-wrapper #portal-colophon .portletContent"
+      css:content-children="#portal-footer-wrapper #portal-colophon .card-body"
       />
   <drop css:theme="#portal-footer .colophon" css:if-not-content="#portal-footer-wrapper #portal-colophon" />
 
@@ -100,10 +100,10 @@
       <div class="col-xs-12 {$columns}">
         <xsl:for-each select=".">
           <xsl:choose>
-            <xsl:when css:test=".portlet">
+            <xsl:when css:test=".card">
               <xsl:choose>
-                <xsl:when css:test=".portletHeader:not(.titleless)">
-                  <div class="headline"><h2><xsl:value-of css:select=".portletHeader" /></h2></div>
+                <xsl:when css:test=".card-header:not(.titleless)">
+                  <div class="headline"><h2><xsl:value-of css:select=".card-header" /></h2></div>
                 </xsl:when>
               </xsl:choose>
               <xsl:choose>
@@ -118,11 +118,11 @@
                   </ul>
                 </xsl:when>
                 <xsl:otherwise>
-                  <xsl:apply-templates css:select=".portletContent" />
+                  <xsl:apply-templates css:select=".card-body" />
                 </xsl:otherwise>
               </xsl:choose>
-              <xsl:if css:test=".portletFooter">
-                <p><xsl:apply-templates select="./node()[@class='portletFooter']/node()" /></p>
+              <xsl:if css:test=".card-footer">
+                <p><xsl:apply-templates select="./node()[@class='card-footer']/node()" /></p>
               </xsl:if>
             </xsl:when>
             <xsl:otherwise>
