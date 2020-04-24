@@ -135,51 +135,50 @@
     </tal:defs>
   </tal:category>
 
-  <div class="visualClear"><!-- --></div>
+  <section class="controlPanelSectionFooter">
+    <h2 i18n:translate="heading_version_overview">Version Overview</h2>
+    <ul>
+      <tal:list-versions repeat="version view/version_overview">
+        <li tal:content="version">Version</li>
+      </tal:list-versions>
+      <tal:server tal:define="server_info view/server_info;
+                              has_wsgi server_info/wsgi;">
+          <li>
+            <tal:i18n i18n:translate="">WSGI:</tal:i18n>
+            <span i18n:translate="" tal:condition="has_wsgi">On</span>
+            <span i18n:translate="" tal:condition="not:has_wsgi">Off</span>
+          </li>
+          <li>
+            <tal:i18n i18n:translate="">Server:</tal:i18n>
+            <span>${server_info/server_name}</span>
+            <span>${server_info/version}</span>
+          </li>
+      </tal:server>
+    </ul>
 
-  <h2 i18n:translate="heading_version_overview">Version Overview</h2>
-  <ul>
-    <tal:list-versions repeat="version view/version_overview">
-      <li tal:content="version">Version</li>
-    </tal:list-versions>
-    <tal:server tal:define="server_info view/server_info;
-                            has_wsgi server_info/wsgi;">
-        <li>
-          <tal:i18n i18n:translate="">WSGI:</tal:i18n>
-          <span i18n:translate="" tal:condition="has_wsgi">On</span>
-          <span i18n:translate="" tal:condition="not:has_wsgi">Off</span>
-        </li>
-        <li>
-          <tal:i18n i18n:translate="">Server:</tal:i18n>
-          <span>${server_info/server_name}</span>
-          <span>${server_info/version}</span>
-        </li>
-    </tal:server>
-  </ul>
+    <p tal:condition="not:view/is_dev_mode"
+        class="discreet"
+        i18n:translate="description_production_mode">
+      You are running in "production mode". This is the preferred mode of
+      operation for a live Plone site, but means that some
+      configuration changes will not take effect until your server is
+      restarted or a product refreshed. If this is a development instance,
+      and you want to enable debug mode, stop the server, set 'debug-mode=on'
+      in your buildout.cfg, re-run bin/buildout and then restart the server
+      process.
+    </p>
 
-
-  <p tal:condition="not:view/is_dev_mode"
-      class="discreet"
-      i18n:translate="description_production_mode">
-    You are running in "production mode". This is the preferred mode of
-    operation for a live Plone site, but means that some
-    configuration changes will not take effect until your server is
-    restarted or a product refreshed. If this is a development instance,
-    and you want to enable debug mode, stop the server, set 'debug-mode=on'
-    in your buildout.cfg, re-run bin/buildout and then restart the server
-    process.
-  </p>
-
-  <p tal:condition="view/is_dev_mode"
-      class="discreet"
-      i18n:translate="description_debug_mode">
-    You are running in "debug mode". This mode is intended for sites that
-    are under development. This allows many configuration changes to be
-    immediately visible, but will make your site run more slowly. To turn
-    off debug mode, stop the server, set 'debug-mode=off' in your
-    buildout.cfg, re-run bin/buildout and then restart the server
-    process.
-  </p>
+    <p tal:condition="view/is_dev_mode"
+        class="discreet"
+        i18n:translate="description_debug_mode">
+      You are running in "debug mode". This mode is intended for sites that
+      are under development. This allows many configuration changes to be
+      immediately visible, but will make your site run more slowly. To turn
+      off debug mode, stop the server, set 'debug-mode=off' in your
+      buildout.cfg, re-run bin/buildout and then restart the server
+      process.
+    </p>
+  </section>
 
 </div>
 
