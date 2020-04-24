@@ -1,28 +1,42 @@
 //*// Site Setup
-.controlPanel {
-  header {
-    margin-bottom: 2rem;
-  }
-  .configlets {
-    .icon {
-      width: 3rem;
-      height: 3rem;
-    }
-  }
-}
-
-// [class~="-controlpanel"] {
-//   background-color: yellow;
-// }
 
 body[class*="-controlpanel"] {
+
+
+  .controlPanel,
+  article {
+    >header {
+      margin-bottom: 2rem;
+    }
+    .configlets {
+      .icon {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+  }
   .custom-select {
     width: auto;
     display: block;
   }
+  textarea.form-control {
+    height: 10rem;
+  }
+
+  ul ul.configlet {
+    li {
+      a {
+        position: relative;
+        &::before {
+          content: "•";
+          position: absolute;
+          font-size: $h3-font-size;
+          line-height: 1;
+          left: -0.75rem;
+          color: $link-color;
+        }
+      }
+    }
+  }
+
 }
-
-// .template-dateandtime-controlpanel {
-//   background: green!important;
-// }
-

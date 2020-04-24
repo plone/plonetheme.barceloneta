@@ -11,7 +11,7 @@
   }
 
 	.card-footer {
-    @include gradient-y(rgba(0, 0, 0, .02), $plone-portlet-footer-bg, 0%, 50%);
+    // @include gradient-y(rgba(0, 0, 0, .02), $plone-portlet-footer-bg, 0%, 50%);
     font-size: $font-size-sm;
   }
 
@@ -23,6 +23,7 @@
   // }
 }
 
+.portletSiteSetup,
 .portletRecent,
 .portletNavigationTree,
 .portletEvents,
