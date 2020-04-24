@@ -3,26 +3,17 @@
   header {
     margin-bottom: 2rem;
   }
-  .configlets {
-    .icon {
-      width: 3rem;
-      height: 3rem;
+
+  body[class*="-controlpanel"] {
+    .configlets {
+      .icon {
+        width: 3rem;
+        height: 3rem;
+      }
     }
   }
-}
-
-// [class~="-controlpanel"] {
-//   background-color: yellow;
-// }
-
-body[class*="-controlpanel"] {
   .custom-select {
     width: auto;
     display: block;
   }
 }
-
-// .template-dateandtime-controlpanel {
-//   background: green!important;
-// }
-
