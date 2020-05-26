@@ -3,16 +3,16 @@
     condition="batch"
     metal:define-macro="navigation">
 
-  <nav
+  <nav class="pagination"
       i18n:domain="plone"
       tal:condition="batch/multiple_pages">
 
-    <ul class="pagination justify-content-center">
+    <ul class="justify-content-center">
 
       <tal:comment replace="nothing">
         <!-- Previous page -->
       </tal:comment>
-      <li class="page-item" tal:condition="batch/has_previous">
+      <li class="page-item previous" tal:condition="batch/has_previous">
         <a tal:attributes="href python:view.make_link(batch.previouspage)" class="page-link">
           <span aria-hidden="true">&lt;</span>
           <span class="label" i18n:translate="batch_previous_x_items">
@@ -77,7 +77,7 @@
       <tal:comment replace="nothing">
         <!-- Next page -->
       </tal:comment>
-      <li class="page-item" tal:condition="batch/has_next">
+      <li class="page-item next" tal:condition="batch/has_next">
         <a tal:attributes="href python:view.make_link(batch.nextpage)" class="page-link">
           <span class="label" i18n:translate="batch_next_x_items">
             Next
