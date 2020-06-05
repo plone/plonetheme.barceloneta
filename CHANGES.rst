@@ -9,6 +9,20 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.7 (2020-06-05)
+------------------
+
+Bug fixes:
+
+
+- Commented out ``<after css:theme-children="head" css:content="head script" />`` in ``backend.xml`` that caused the scripts being pulled twice,
+  in case that you are using it to style backend views.
+  You should only use this rule once in your ruleset.
+  Using it twice cause leads to JS errors and patterns initialition failures.
+  This fixes `issue 158 <https://github.com/plone/plonetheme.barceloneta/issues/158>`_.
+  [sneridagh] (#159)
+
+
 2.1.6 (2019-10-21)
 ------------------
 
