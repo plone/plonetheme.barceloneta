@@ -6,28 +6,31 @@
 <div class="portlets-manager pat-manage-portlets row"
      tal:attributes="id string:portletmanager-${view/normalized_manager_name};"
      i18n:domain="plone">
-<div class="container">
-  <div metal:use-macro="context/@@manage-portlets-macros/macros/portlet-add-form" />
-</div>
+  
+  <div class="container">
+    <div metal:use-macro="context/@@manage-portlets-macros/macros/portlet-add-form" />
+  </div>
+  
   <div metal:use-macro="context/@@manage-portlets-macros/macros/current-portlets-list" />
 
-  <div class="form-group col-md-6">
-    <div class="portletAssignments">
+  <div class="container portletAssignments">
 
-      <h4 i18n:translate="heading_un_block_portlets">
-          Block/unblock portlets
-      </h4>
+    <h5 i18n:translate="heading_un_block_portlets">
+        Block/unblock portlets
+    </h5>
 
-      <form method="post" tal:attributes="action view/blacklist_status_action" class="portlets-settings form-group">
+    <form method="post" tal:attributes="action view/blacklist_status_action" class="portlets-settings">
+    
         <span tal:replace="structure context/@@authenticator/authenticator" />
         <input type="hidden" name="manager" tal:attributes="value view/manager_name" />
 
         <div tal:define="status view/context_blacklist_status" class="form-group portlet-group">
 
           <div class="form-group">
+            
             <label i18n:translate="label_portlets_parent_folders">Parent portlets:</label>
 
-            <select name="context_status:int" size="1" class="custom-select w-auto ml-1">
+            <select name="context_status:int" size="1" class="form-control custom-select">
 
                 <option value="1"
                         tal:attributes="selected python:status == True and 'selected' or None"
@@ -42,13 +45,15 @@
                 </option>
 
             </select>
+          
           </div>
 
           <tal:block define="portlets view/inherited_portlets;"
                     condition="portlets">
 
-            <div tal:attributes="class python:status and 'managedPortlet inheritedPortlet blockedPortlet card' or 'managedPortlet inheritedPortlet card'" tal:repeat="portlet portlets">
-              <div class="card-header">
+            <div tal:attributes="class python:status and 'managedPortlet inheritedPortlet blockedPortlet list-group' or 'managedPortlet inheritedPortlet list-group'" tal:repeat="portlet portlets">
+              
+              <div class="list-group-item">
 
                 <a tal:omit-tag="not:portlet/editview"
                   tal:attributes="href string:${portlet/editview}?referer=${view/url_quote_referer}"
@@ -61,8 +66,8 @@
                   i18n:attributes="title title_portlet_blocked;">
                   (Blocked)
                 </span>
-
               </div>
+
             </div>
           </tal:block>
 
@@ -72,7 +77,7 @@
 
           <label i18n:translate="label_portlets_group_portlets">Group portlets:</label>
 
-          <select name="group_status:int" size="1" class="custom-select w-auto ml-1">
+          <select name="group_status:int" size="1" class="form-control custom-select">
 
               <option value="0"
                       tal:attributes="selected python:status == None and 'selected' or None"
@@ -98,6 +103,7 @@
                             status python:view.group_blacklist_status(check_parent=True)">
 
             <div tal:attributes="class python:status and 'managedPortlet inheritedPortlet blockedPortlet' or 'managedPortlet inheritedPortlet'" tal:repeat="portlet portlets">
+              
               <div class="portletHeader">
 
                 <a tal:omit-tag="not:portlet/editview"
@@ -113,6 +119,7 @@
                 </span>
 
               </div>
+
             </div>
 
           </tal:block>
@@ -122,10 +129,9 @@
 
         <div tal:define="status view/content_type_blacklist_status" class="form-group portlet-group">
 
-
           <label i18n:translate="label_portlets_content_type_portlets">Content type portlets:</label>
 
-          <select name="content_type_status:int" size="1"  class="custom-select w-auto ml-1">
+          <select name="content_type_status:int" size="1"  class="form-control custom-select">
 
               <option value="0"
                       tal:attributes="selected python:status == None and 'selected' or None"
@@ -180,7 +186,8 @@
         </noscript>
 
       </form>
-    </div>
+  
   </div>
+
 </div>
 </html>
