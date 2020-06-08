@@ -12,7 +12,7 @@
             Add portlet
         </label>
 
-        <select name=":action" class="add-portlet custom-select w-auto"
+        <select name=":action" class="add-portlet form-control custom-select"
                 tal:attributes="data-context-url python: view.context_url()">
             <option tal:attributes="value python:request['ACTUAL_URL'].replace(view.context_url(), '')"
                     i18n:translate="label_add_portlet_ellipsis">
