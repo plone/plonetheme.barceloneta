@@ -3510,7 +3510,7 @@ fieldset[disabled] .link-parent.active {
 }
 .template-usergroup-groupprefs form,
 .template-usergroup-userprefs form {
-  overflow: scroll;
+  overflow-x: auto;
 }
 .template-actions-controlpanel #content-core .addAction {
   height: 2em;
@@ -5326,4 +5326,4 @@ body.template-logged_out #content-core .portletFooter {
 #search-filter input {
   margin-right: 0.5rem;
 }
-/*# sourceMappingURL=++theme++barceloneta/less/barceloneta-compiled.css.map */
+/*# sourceMappingURL=barceloneta-compiled.css.map */
