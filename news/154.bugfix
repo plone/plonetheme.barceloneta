@@ -1,0 +1,3 @@
+Show horizontal scrollbar in Users and Groups controlpanel only if needed.
+This fixes https://github.com/plone/plonetheme.barceloneta/issues/154
+[vincentfretin]
