@@ -63,7 +63,15 @@
         max-width: 50%;
         padding-top: 0;
         position: relative;
-        .searchSection {display: inherit;} //yes for non mobile
+        .searchSection {
+            display: inherit; //yes for non mobile
+            input[type="checkbox"] {
+                margin: 0;
+            }
+            label {
+                vertical-align: middle;
+            }
+        }
         [type="text"] {
             border-bottom-right-radius: 0;
             border-top-right-radius: 0;

@@ -28,6 +28,9 @@
 
 .outer-wrapper {
     .contenttype-file::before   { content: none;    }
+
+    /* On folder_factories view, from toolbar: Add new... -> More... */
+    #quickAdd .contenttype-file::before { content: '\e811'; }
 }
 
 .contenttype-file #crud-edit-File-widgets-view_title::before {
