@@ -3598,8 +3598,14 @@ a.link-category:focus {
 .contenttype-news-item::before {
   content: '\e80f';
 }
+.outer-wrapper {
+  /* On folder_factories view, from toolbar: Add new... -> More... */
+}
 .outer-wrapper .contenttype-file::before {
   content: none;
+}
+.outer-wrapper #quickAdd .contenttype-file::before {
+  content: '\e811';
 }
 .contenttype-file #crud-edit-File-widgets-view_title::before {
   content: '\e811';
@@ -4184,6 +4190,12 @@ ul.picker__list {
   }
   #portal-searchbox .searchSection {
     display: inherit;
+  }
+  #portal-searchbox .searchSection input[type="checkbox"] {
+    margin: 0;
+  }
+  #portal-searchbox .searchSection label {
+    vertical-align: middle;
   }
   #portal-searchbox [type="text"] {
     border-bottom-right-radius: 0;
