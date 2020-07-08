@@ -17,7 +17,7 @@
              <dl tal:define="status view/status"
                  tal:condition="status"
                  role="status"
-                 class="portalMessage info">
+                 class="alert alert-info">
                  <dt i18n:translate="">
                      Info
                  </dt>
