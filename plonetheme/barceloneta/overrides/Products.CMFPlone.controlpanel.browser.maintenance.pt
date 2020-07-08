@@ -26,26 +26,28 @@
 
          </metal:block>
 
-         <a href=""
-            id="setup-link"
-            tal:attributes="href string:$portal_url/@@overview-controlpanel"
-            i18n:translate="">
-             Site Setup
-         </a>
+         <header>
+            <a href=""
+                id="setup-link"
+                tal:attributes="href string:$portal_url/@@overview-controlpanel"
+                i18n:translate="">
+                Site Setup
+            </a>
 
-         <h1 class="documentFirstHeading"
-             i18n:translate=""
-             tal:condition="view/label"
-             tal:content="view/label"
-             metal:define-slot="heading">
-             Do something
-         </h1>
+            <h1 class="documentFirstHeading"
+                i18n:translate=""
+                tal:condition="view/label"
+                tal:content="view/label"
+                metal:define-slot="heading">
+                Do something
+            </h1>
 
-         <div class="documentDescription" i18n:translate=""
-            tal:condition="view/description"
-            tal:content="view/description">
-             Description
-         </div>
+            <div class="documentDescription" i18n:translate=""
+                tal:condition="view/description"
+                tal:content="view/description">
+                Description
+            </div>
+        </header>
 
         <div id="content-core">
 
