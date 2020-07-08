@@ -10,7 +10,7 @@
 
 
 <metal:main metal:fill-slot="prefs_configlet_main" i18n:domain="plone">
-
+  <header>
     <a href=""
        id="setup-link"
        tal:attributes="href string:$portal_url/@@overview-controlpanel"
@@ -26,6 +26,7 @@
       Plone utilizes RequireJS and LESS CSS to build its resources.
       Re-building a Plone bundle TTW requires a modern web browser.
     </div>
+  </header>
 
    <div id="content-core">
       <span tal:replace="structure context/@@authenticator/authenticator"/>
