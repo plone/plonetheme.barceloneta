@@ -1,0 +1,67 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/prefs_main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+
+
+<metal:main metal:fill-slot="prefs_configlet_main" i18n:domain="plone">
+
+    <a href=""
+       id="setup-link"
+       tal:attributes="href string:$portal_url/@@overview-controlpanel"
+       i18n:translate="">
+       Site Setup
+    </a>
+    <h1 class="documentFirstHeading"
+        i18n:translate="">Resource Registries</h1>
+
+    <div class="documentDescription"
+       i18n:translate="">
+      Configure, enable, disable, debug and build Plone JavaScript/LESS/CSS resources.
+      Plone utilizes RequireJS and LESS CSS to build its resources.
+      Re-building a Plone bundle TTW requires a modern web browser.
+    </div>
+
+   <div id="content-core">
+      <span tal:replace="structure context/@@authenticator/authenticator"/>
+      <div class="pat-resourceregistry" tal:attributes="data-pat-resourceregistry view/config">
+        <div class="portalMessage info" role="status">
+          <strong i18n:translate="">Info</strong>
+          <span i18n:translate="">If you see this, it is because there was an error rendering the resource registry
+          configuration. It's possible you saved a bundle that gives a JavaScript error
+          and it is preventing the resource registry from loading.</span>
+        </div>
+        <h2 i18n:translate="">Available Options</h2>
+        <ul>
+          <li i18n:translate="">Reload the page. There could be a intermittent issue.</li>
+          <li i18n:translate="">Go to the <a i18n:name="configuration_registry" i18n:translate=""
+              href="${portal_url}/portal_registry">Configuration Registry</a>
+              and manually edit the configuration to enable development mode
+              on the resource registry and try to rebuild.</li>
+          <li><span i18n:translate="" tal:omit-tag="">You can also attempt to delete your customizations/builds and see if that fixes it.</span>
+            <ul>
+              <tal:overrides tal:repeat="override python: view.get_overrides()">
+                <li>
+                  <form method="POST">
+                    <input type="hidden" name="action" value="delete-file" />
+                    <input type="hidden" name="response" value="html" />
+                    <input type="hidden" name="filepath" value="${override}" />
+                    <input type="submit" value="Delete ${override}" i18n:attributes="value" />
+                  </form>
+                </li>
+              </tal:overrides>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</metal:main>
+
+</body>
+</html>
+
