@@ -69,7 +69,7 @@
                        tal:attributes="name ac_password; id ac_password;" />
             </div>
 
-            <div class="cookiesMessage portalMessage warning"
+            <div class="cookiesMessage alert alert-warning"
                  style="display:none" role="alert">
                 <strong i18n:translate="">
                   Warning
