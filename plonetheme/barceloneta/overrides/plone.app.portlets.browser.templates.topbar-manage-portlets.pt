@@ -6,7 +6,7 @@
       i18n:domain="plone">
 <body>
 
-  <div metal:fill-slot="main" tal:define="plone_view context/@@plone">
+  <metal:main fill-slot="main" tal:define="plone_view context/@@plone">
 
     <div class="quicknav-wrapper">
       <form method="post"
@@ -28,39 +28,41 @@
       </form>
     </div>
 
-    <h1 class="documentFirstHeading"
-      i18n:translate="title_manage_contextual_portlets">
-      Manage portlets for
-      <q i18n:name="context_title" tal:content="context/Title">title</q>
-    </h1>
+    <header>
+      <h1 class="documentFirstHeading"
+        i18n:translate="title_manage_contextual_portlets">
+        Manage portlets for
+        <q i18n:name="context_title" tal:content="context/Title">title</q>
+      </h1>
 
-    <a class="link-parent"
-        tal:attributes="href context/absolute_url"
-        i18n:translate="return_to_view">
-      Return
-    </a>
+      <a class="link-parent"
+          tal:attributes="href context/absolute_url"
+          i18n:translate="return_to_view">
+        Return
+      </a>
 
-    <div class="portalMessage info"
-         role="status"
-         tal:condition="plone_view/isDefaultPageInFolder|nothing">
-      <strong>
-          Info
-      </strong>
-      <div i18n:translate="label_manage_portlets_default_view_container">
-          You are managing the portlets of the default view of a container. If
-          you wanted to manage the portlets of the container itself,
-        <a href=""
-            i18n:name="go_here"
-            i18n:translate="label_manage_portlets_default_view_container_go_here"
-            class="portlets-link-to-parent"
-            tal:attributes="href string:${context/aq_inner/aq_parent/absolute_url}/@@topbar-manage-portlets/${view/manager_name}">go here</a>.
+      <div class="portalMessage info"
+          role="status"
+          tal:condition="plone_view/isDefaultPageInFolder|nothing">
+        <strong>
+            Info
+        </strong>
+        <div i18n:translate="label_manage_portlets_default_view_container">
+            You are managing the portlets of the default view of a container. If
+            you wanted to manage the portlets of the container itself,
+          <a href=""
+              i18n:name="go_here"
+              i18n:translate="label_manage_portlets_default_view_container_go_here"
+              class="portlets-link-to-parent"
+              tal:attributes="href string:${context/aq_inner/aq_parent/absolute_url}/@@topbar-manage-portlets/${view/manager_name}">go here</a>.
+        </div>
       </div>
-    </div>
+    </header>
 
     <h2 tal:content="view/manager_name"></h2>
     <span tal:replace="structure view/render_edit_manager_portlets" />
 
-  </div>
+  </metal:main>
 
 </body>
 </html>
