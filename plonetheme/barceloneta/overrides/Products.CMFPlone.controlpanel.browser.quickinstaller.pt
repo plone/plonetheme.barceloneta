@@ -42,7 +42,7 @@
             id="upgrade-products" class="card mb-4">
         <header class="card-header" i18n:translate="">Upgrades</header>
         <section tal:condition="not:products" class="card-body">
-          <div id="up-to-date-message" class="portalMessage info" role="status">
+          <div id="up-to-date-message" class="alert alert-info" role="status">
                 <strong i18n:translate="">No upgrades in this corner</strong>
                 <span i18n:translate="">You are up to date. High fives.</span>
             </div>
@@ -151,7 +151,7 @@
                   tal:content="product/description">add-on description</tal:span>
                 <em class="discreet"> – (<span tal:replace="pid">plugin.app.name</span> <span tal:replace="product/version">1.0</span>)</em>
               </p>
-              <dl class="portalMessage warning"
+              <dl class="alert alert-warning"
                   role="status"
                   tal:condition="not:product/uninstall_profile">
                 <dt i18n:translate="">Warning</dt>
@@ -193,7 +193,7 @@
                       tal:content="product/description">add-on description</tal:span>
                     <em class="discreet"> – (<span tal:replace="pid">plugin.app.name</span> <span tal:replace="product/version">1.0</span>)</em>
                   </p>
-                  <dl class="portalMessage info"
+                  <dl class="alert alert-info"
                       role="status"
                       tal:condition="not:product/uninstall_profile">
                     <dt i18n:translate="">Info</dt>
