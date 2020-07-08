@@ -9763,6 +9763,15 @@ h1 {
   margin-bottom: 1rem;
 }
 
+article > header {
+  margin-bottom: 2rem;
+}
+
+article .configlets .icon {
+  width: 3rem;
+  height: 3rem;
+}
+
 #portal-related-items .media {
   position: relative;
 }
@@ -10250,11 +10259,10 @@ h1 {
 }
 
 .portlet .card-footer {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0%, #fcfcfd 50%);
-  background-repeat: repeat-x;
   font-size: 0.875rem;
 }
 
+.portletSiteSetup .card-body,
 .portletRecent .card-body,
 .portletNavigationTree .card-body,
 .portletEvents .card-body,
@@ -10264,6 +10272,7 @@ h1 {
   padding: 0;
 }
 
+.portletSiteSetup .card-body img.pull-right,
 .portletRecent .card-body img.pull-right,
 .portletNavigationTree .card-body img.pull-right,
 .portletEvents .card-body img.pull-right,
@@ -10273,6 +10282,7 @@ h1 {
   float: right !important;
 }
 
+.portletSiteSetup .card-body > ul,
 .portletRecent .card-body > ul,
 .portletNavigationTree .card-body > ul,
 .portletEvents .card-body > ul,
@@ -10284,6 +10294,7 @@ h1 {
   list-style: none;
 }
 
+.portletSiteSetup .card-body > ul > li,
 .portletRecent .card-body > ul > li,
 .portletNavigationTree .card-body > ul > li,
 .portletEvents .card-body > ul > li,
@@ -10294,6 +10305,7 @@ h1 {
   padding: 0.75rem 1.25rem;
 }
 
+.portletSiteSetup .card-body > ul > li a,
 .portletRecent .card-body > ul > li a,
 .portletNavigationTree .card-body > ul > li a,
 .portletEvents .card-body > ul > li a,
@@ -10304,6 +10316,7 @@ h1 {
   color: #086ca3;
 }
 
+.portletSiteSetup .card-body > ul > li:first-child,
 .portletRecent .card-body > ul > li:first-child,
 .portletNavigationTree .card-body > ul > li:first-child,
 .portletEvents .card-body > ul > li:first-child,
@@ -10313,6 +10326,7 @@ h1 {
   border-top: 0;
 }
 
+.portletSiteSetup .card-body > ul ul,
 .portletRecent .card-body > ul ul,
 .portletNavigationTree .card-body > ul ul,
 .portletEvents .card-body > ul ul,
@@ -10323,6 +10337,7 @@ h1 {
   list-style: none;
 }
 
+.portletSiteSetup .card-body > ul li:hover,
 .portletRecent .card-body > ul li:hover,
 .portletNavigationTree .card-body > ul li:hover,
 .portletEvents .card-body > ul li:hover,
@@ -10454,11 +10469,13 @@ h1 {
   font-size: 1.25rem;
 }
 
-.controlPanel header {
+body[class*="-controlpanel"] .controlPanel > header,
+body[class*="-controlpanel"] article > header {
   margin-bottom: 2rem;
 }
 
-.controlPanel .configlets .icon {
+body[class*="-controlpanel"] .controlPanel .configlets .icon,
+body[class*="-controlpanel"] article .configlets .icon {
   width: 3rem;
   height: 3rem;
 }
@@ -10466,6 +10483,23 @@ h1 {
 body[class*="-controlpanel"] .custom-select {
   width: auto;
   display: block;
+}
+
+body[class*="-controlpanel"] textarea.form-control {
+  height: 10rem;
+}
+
+body[class*="-controlpanel"] ul ul.configlet li a {
+  position: relative;
+}
+
+body[class*="-controlpanel"] ul ul.configlet li a::before {
+  content: "•";
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 1;
+  left: -0.75rem;
+  color: #007bb1;
 }
 
 [class*="contenttype-"]::before,
