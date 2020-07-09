@@ -6,6 +6,12 @@ h1 {
   margin-bottom: 1rem;
 }
 
+article {
+  >header {
+    margin-bottom: 2rem;
+  }
+}
+
 #portal-related-items {
   .media {
     position: relative;
