@@ -14,7 +14,7 @@ module.exports = function (grunt) {
                     strictMath: false,
                     sourceMap: true,
                     outputSourceFiles: true,
-                    sourceMapURL: '++theme++barceloneta/less/barceloneta-compiled.css.map',
+                    sourceMapBasepath: 'plonetheme/barceloneta/theme/less/',
                     sourceMapFilename: 'plonetheme/barceloneta/theme/less/barceloneta-compiled.css.map',
                     modifyVars: {
                         "isPlone": "false"
