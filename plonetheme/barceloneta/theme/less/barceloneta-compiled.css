@@ -1599,7 +1599,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #696969;
+  color: #4d4d4d;
 }
 /*.form-control,*/
 input[type="color"],
@@ -1624,7 +1624,7 @@ select {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #696969;
+  color: #4d4d4d;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -1655,6 +1655,24 @@ select:focus {
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(100, 190, 232, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(100, 190, 232, 0.6);
+}
+input[type="color"] ::placeholder,
+input[type="date"] ::placeholder,
+input[type="datetime-local"] ::placeholder,
+input[type="email"] ::placeholder,
+input[type="month"] ::placeholder,
+input[type="number"] ::placeholder,
+input[type="password"] ::placeholder,
+input[type="range"] ::placeholder,
+input[type="search"] ::placeholder,
+input[type="tel"] ::placeholder,
+input[type="text"] ::placeholder,
+input[type="time"] ::placeholder,
+input[type="url"] ::placeholder,
+input[type="week"] ::placeholder,
+textarea ::placeholder,
+select ::placeholder {
+  color: #777777;
 }
 input[type="color"]::-moz-placeholder,
 input[type="date"]::-moz-placeholder,

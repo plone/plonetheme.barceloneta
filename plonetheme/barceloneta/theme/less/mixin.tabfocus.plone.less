@@ -9,8 +9,9 @@
 }
 
 .placeholder(@plone-color: @plone-input-color-placeholder) {
-  &::-moz-placeholder           { color: @plone-color;   // Firefox
+  ::placeholder                 { color: @plone-color; } // Almost any modern browser.
+  &::-moz-placeholder           { color: @plone-color;   // Firefox < 51
                                   opacity: 1; } // See https://github.com/twbs/bootstrap/pull/11526
-  &:-ms-input-placeholder       { color: @plone-color; } // Internet Explorer 10+
-  &::-webkit-input-placeholder  { color: @plone-color; } // Safari and Chrome
+  &:-ms-input-placeholder       { color: @plone-color; } // Internet Explorer 10+, old Edge
+  &::-webkit-input-placeholder  { color: @plone-color; } // Safari < 10.1, Chrome < 57
 }
