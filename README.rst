@@ -25,7 +25,5 @@ Source-Code
 Issues
     Please use the `Issue-Tracker <https://github.com/plone/plonetheme.barceloneta/issues>`_
 
-If you made changes to the less files, to rebuild the files ``barceloneta-compiled.css`` and ``barceloneta-compiled.css.map`` you can execute this::
-
-    cd plonetheme.barceloneta/plonetheme/barceloneta/theme/less
-    npx lessc --source-map=barceloneta-compiled.css.map barceloneta.plone.local.less barceloneta-compiled.css
+To modify less files and rebuild the theme in this package, see
+`instructions <https://github.com/plone/plonetheme.barceloneta/blob/2.x/HOWTO_DEVELOP.rst>`.

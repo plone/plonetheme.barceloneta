@@ -16,6 +16,12 @@ If you prefer to do a one time compile of the less files you can run::
 
     grunt less
 
+An alternative way to compile the less files is to execute the following
+commands::
+
+    cd plonetheme.barceloneta/plonetheme/barceloneta/theme/less
+    npx lessc --source-map=barceloneta-compiled.css.map barceloneta.plone.local.less barceloneta-compiled.css
+
 Note
 ----
 
