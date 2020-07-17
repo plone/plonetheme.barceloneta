@@ -9,6 +9,24 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.8 (2020-07-17)
+------------------
+
+Bug fixes:
+
+
+- Show horizontal scrollbar in Users and Groups controlpanel only if needed.
+  This fixes https://github.com/plone/plonetheme.barceloneta/issues/154
+  [vincentfretin] (#154)
+- Fix checkbox and label alignment on the searchbox.
+  [vincentfretin] (#202)
+- Fix File icon missing on folder_factories view (from toolbar: Add new... -> More...).
+  [vincentfretin] (#203)
+- Fix generation of source map links when using grunt.
+  Make input color darker to better distinguish from placeholder text.
+  [thet] (#207)
+
+
 2.1.7 (2020-06-05)
 ------------------
 
