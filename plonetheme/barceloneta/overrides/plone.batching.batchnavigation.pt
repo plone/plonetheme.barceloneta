@@ -3,11 +3,11 @@
     condition="batch"
     metal:define-macro="navigation">
 
-  <nav class="pagination"
+  <nav class="justify-content-center"
       i18n:domain="plone"
       tal:condition="batch/multiple_pages">
 
-    <ul class="justify-content-center">
+    <ul class="pagination">
 
       <tal:comment replace="nothing">
         <!-- Previous page -->
@@ -31,7 +31,7 @@
       <tal:comment replace="nothing">
         <!-- Ellipsis after first item -->
       </tal:comment>
-      <li class="disabled" tal:condition="batch/second_page_not_in_navlist">
+      <li class="page-item disabled" tal:condition="batch/second_page_not_in_navlist">
         <span>...</span>
       </li>
 
@@ -62,16 +62,16 @@
       <tal:comment replace="nothing">
         <!-- Ellipsis before last item -->
       </tal:comment>
-      <li class="disabled" tal:condition="batch/before_last_page_not_in_navlist">
-        <span>...</span>
+      <li class="page-item disabled" tal:condition="batch/before_last_page_not_in_navlist">
+        <span class="page-link">...</span>
       </li>
 
       <tal:comment replace="nothing">
         <!-- Last page -->
       </tal:comment>
-      <li class="last" tal:condition="batch/show_link_to_last">
+      <li class="page-item last" tal:condition="batch/show_link_to_last">
         <a tal:attributes="href python:view.make_link(batch.lastpage)"
-            tal:content="batch/lastpage" />
+           tal:content="batch/lastpage" class="page-link" />
       </li>
 
       <tal:comment replace="nothing">
