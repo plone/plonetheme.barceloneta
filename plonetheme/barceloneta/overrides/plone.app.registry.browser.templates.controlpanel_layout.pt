@@ -7,7 +7,7 @@
       i18n:domain="plone">
 
 <body>
-<div metal:fill-slot="prefs_configlet_main">
+<tal:main metal:fill-slot="prefs_configlet_main">
 
   <header>
     <a id="setup-link" class="link-parent"
@@ -30,6 +30,6 @@
     </div>
   </div>
 
-</div>
+</tal:main>
 </body>
 </html>
