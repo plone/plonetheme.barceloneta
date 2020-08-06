@@ -73,7 +73,7 @@
             <input
                 type="text"
                 name="redirection"
-                value="#"
+                value=""
                 size="40"
                 tal:attributes="value request/redirection | nothing;"/>
 
