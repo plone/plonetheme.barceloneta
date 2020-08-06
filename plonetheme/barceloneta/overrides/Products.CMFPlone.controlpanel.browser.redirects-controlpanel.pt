@@ -80,7 +80,7 @@
             <input class="form-control"
                 type="text"
                 name="redirection"
-                value="#"
+                value=""
                 size="40"
                 required
                 tal:attributes="value request/redirection | nothing;
@@ -115,7 +115,7 @@
             <input class="form-control"
                 type="text"
                 name="target_path"
-                value="#"
+                value=""
                 size="40"
                 required
                 tal:attributes="value request/target_path | nothing;
