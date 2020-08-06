@@ -3,7 +3,7 @@
     condition="batch"
     metal:define-macro="navigation">
 
-  <nav class="justify-content-center"
+  <nav class="d-flex justify-content-center"
       i18n:domain="plone"
       tal:condition="batch/multiple_pages">
 
