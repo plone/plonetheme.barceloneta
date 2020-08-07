@@ -2620,6 +2620,12 @@ fieldset[disabled] .link-parent.active {
   margin: 0 -12px -6px;
   border-radius: 0 0 4px 4px;
 }
+#content-core .autotabs .autotoc-nav a {
+  border: 1px solid #e5e5e5;
+}
+#content-core .autotabs .autotoc-nav a.active {
+  border-bottom: 1px solid #fff;
+}
 @media (max-width: 767px) {
   .autotabs .autotoc-nav {
     overflow-x: scroll;

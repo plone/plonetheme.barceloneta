@@ -43,6 +43,16 @@
 	}
 }
 
+// "#content-core a" rule overrides the border-bottom defined above
+// We need to have a more specific rule to override it again.
+#content-core .autotabs .autotoc-nav a {
+  border: @plone-portlet-border;
+
+  &.active {
+    border-bottom: 1px solid @plone-portlet-content-bg;
+  }
+}
+
 //hide tabs with horizontal scrolling for small devices to avoid line break (remove media if you want to apply everywhere)
 @media (max-width: @plone-screen-xs-max) {
   .autotabs .autotoc-nav {
