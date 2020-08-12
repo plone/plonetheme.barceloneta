@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+  <metal:content-core fill-slot="main">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8">
+
+          <header>
+            <h1 tal:content="context/title">Title</h1>
+            <p class="lead" tal:content="context/description">Lorem ipsum dolor sit amet</p>
+          </header>
+
+          <section tal:define="text context/text" tal:condition="text">
+            <div tal:content="structure python:context.text.output_relative_to(view.context)" />
+          </section>
+
+        </div>
+
+        <tal:define tal:define="image context/@@images/image|nothing; scales context/@@images" tal:condition="image">
+          <div class="col-md-4">
+
+            <figure tal:define="img python:scales.scale('image', width=600, height=400, direction='down')">
+              <img class="img-fluid img-thumbnail" src="${img/url}" width="${img/width}" height="${img/height}">
+            </figure>
+
+          </div>
+        </tal:define>
+
+      </div>
+    </div>
+  </metal:content-core>
+</body>
+
+</html>
