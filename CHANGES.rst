@@ -9,6 +9,15 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.9 (2020-08-14)
+------------------
+
+Bug fixes:
+
+
+- The active autotab is clearly visually distinguishable again. (#210)
+
+
 2.1.8 (2020-07-17)
 ------------------
 
