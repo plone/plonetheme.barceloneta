@@ -206,7 +206,7 @@
                   <input type="hidden" name="form.submitted" value="1" />
 
                   <div class="formControls">
-                      <input class="btn btn-primary"
+                      <button class="btn btn-primary"
                              type="submit"
                              name="form.button.Save"
                              value="Save"
