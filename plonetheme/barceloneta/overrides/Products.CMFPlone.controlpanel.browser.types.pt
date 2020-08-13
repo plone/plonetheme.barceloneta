@@ -5,7 +5,7 @@
       xml:lang="en" lang="en"
       metal:use-macro="context/prefs_main_template/macros/master"
       i18n:domain="plone">
-      
+
 <body>
 
 <metal:main metal:fill-slot="prefs_configlet_main">
@@ -30,7 +30,7 @@
 
             <fieldset>
                 <div class="field form-group">
-                    <select name="type_id" class ="custom-select select-widget required choice-field" onchange="form.submit()">
+                    <select name="type_id" class="custom-select select-widget required choice-field" onchange="form.submit()">
 
                         <tal:option repeat="selectable view/selectable_types">
                             <option tal:content="selectable/title" i18n:translate=""
@@ -47,7 +47,7 @@
                         </option>
                     </select>
                     <noscript>
-                        <input type="submit"
+                        <button type="submit"
                             name="form.button.SelectContentType"
                             class="btn btn-primary"
                             value="Change"
@@ -57,7 +57,7 @@
 
                 <tal:block tal:condition="python:type_id!=''">
 
-                    <p class="discreet"
+                    <p class="text-muted"
                         tal:content="view/selected_type_description"
                         tal:condition="view/selected_type_description"
                         i18n:translate="">
@@ -125,7 +125,7 @@
                         <label for="versionpolicy" i18n:translate="types_controlpanel_versionpolicy">
                             Versioning policy:
                         </label>
-                        <select class ="custom-select select-widget required choice-field" name="versionpolicy"
+                        <select class="custom-select select-widget required choice-field" name="versionpolicy"
                                 tal:define="current_policy view/current_versioning_policy">
                             <option tal:repeat="policy view/versioning_policies"
                                     tal:attributes="value policy/id;
@@ -260,12 +260,12 @@
                 </div>
 
                 <div class="formControls form-group">
-                  <input type="submit"
+                  <button type="submit"
                          value="Save"
                          name="form.button.Save"
                          class="btn btn-primary"
                          i18n:attributes="value Save;" />
-                  <input type="submit"
+                  <button type="submit"
                          value="Cancel"
                          name="form.button.Cancel"
                          class="btn btn-secondary"

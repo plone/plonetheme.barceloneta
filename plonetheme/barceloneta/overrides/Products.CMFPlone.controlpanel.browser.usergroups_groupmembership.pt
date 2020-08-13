@@ -159,7 +159,7 @@
 
                   <p tal:condition="not:view/groupMembers" i18n:translate="decription_no_members_assigned">There is no group or user attached to this group.</p>
 
-                  <input class="destructive"
+                  <button class="btn btn-alert"
                          type="submit"
                          name="form.button.Edit"
                          value="Remove selected groups / users"
@@ -183,12 +183,12 @@
                                    tal:attributes="value view/searchString;"
                                    />
 
-                            <input type="submit"
+                            <button type="submit"
                                    class="searchButton"
                                    name="form.button.Search"
                                    value="Search"
                                    i18n:attributes="value label_search;" />
-                            <input type="submit"
+                            <button type="submit"
                                    class="searchButton"
                                    name="form.button.FindAll"
                                    value="Show all"
@@ -303,7 +303,7 @@
                         </a>
                     </div>
 
-                    <input class="btn btn-primary"
+                    <button class="btn btn-primary"
                             type="submit"
                             name="form.button.Add"
                             value="Add selected groups and users to this group"
