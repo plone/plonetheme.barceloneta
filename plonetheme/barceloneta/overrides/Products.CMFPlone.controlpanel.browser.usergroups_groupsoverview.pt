@@ -22,53 +22,53 @@
                  portal_url context/portal_url;">
 
   <article id="content">
+    <header>
+        <a id="setup-link" class="link-parent"
+        tal:attributes="href string:$portal_url/@@overview-controlpanel"
+        i18n:translate="">
+            Site Setup
+        </a>
 
-    <a id="setup-link" class="link-parent"
-       tal:attributes="href string:$portal_url/@@overview-controlpanel"
-       i18n:translate="">
-        Site Setup
-    </a>
+        <h1 class="documentFirstHeading"
+            i18n:translate="">Users and Groups</h1>
 
-    <h1 class="documentFirstHeading"
-        i18n:translate="">Users and Groups</h1>
-
-    <div metal:use-macro="context/global_statusmessage/macros/portal_message">
-        Portal status message
-    </div>
-
-    <div id="content-core">
-
-      <div class="autotabs">
-        <div class="autotoc-nav">
-          <a href="${portal_url}/@@usergroup-userprefs"
-             i18n:translate="label_users">Users</a>
-          <a class="active"
-             href="${portal_url}/@@usergroup-groupprefs"
-             i18n:translate="label_groups">Groups</a>
-          <a href="${portal_url}/@@usergroup-controlpanel"
-             i18n:translate="label_usergroup_settings">Settings</a>
-          <a href="${portal_url}/@@member-fields"
-             i18n:translate="label_member_fields">Member fields</a>
+        <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+            Portal status message
         </div>
 
-        <p class="discreet">
-          <span tal:omit-tag=""
-                i18n:translate="description_groups_management">
-            Groups are logical collections of users, such as
-            departments and business units. Groups are not directly
-            related to permissions on a global level, you normally
-            use Roles for that - and let certain Groups have a
-            particular role.
-          </span>
-          <span tal:omit-tag=""
-                i18n:translate="description_groups_management2">
-            The symbol
-            <img i18n:name="image_link_icon"
-                 tal:replace="structure context/site_icon.png" />
-            indicates a role inherited from membership in another group.
-          </span>
-        </p>
+            <div class="nav nav-tabs">
+            <a href="${portal_url}/@@usergroup-userprefs" class="nav-link"
+                i18n:translate="label_users">Users</a>
+            <a class="nav-link active"
+                href="${portal_url}/@@usergroup-groupprefs"
+                i18n:translate="label_groups">Groups</a>
+            <a href="${portal_url}/@@usergroup-controlpanel" class="nav-link"
+                i18n:translate="label_usergroup_settings">Settings</a>
+            <a href="${portal_url}/@@member-fields" class="nav-link"
+                i18n:translate="label_member_fields">Member fields</a>
+            </div>
 
+            <div class="text-muted mt-2">
+            <span tal:omit-tag=""
+                    i18n:translate="description_groups_management">
+                Groups are logical collections of users, such as
+                departments and business units. Groups are not directly
+                related to permissions on a global level, you normally
+                use Roles for that - and let certain Groups have a
+                particular role.
+            </span>
+            <span tal:omit-tag=""
+                    i18n:translate="description_groups_management2">
+                The symbol
+                <img i18n:name="image_link_icon"
+                    tal:replace="structure context/site_icon.png" />
+                indicates a role inherited from membership in another group.
+            </span>
+            </div>
+    </header>
+
+    <div id="content-core">
+    
         <p i18n:translate="description_pas_group_listing"
            tal:condition="view/show_group_listing_warning">
             Note: Some or all of your PAS groups
@@ -80,12 +80,11 @@
         <p>
           <a class="pat-plone-modal" id="add-group"
              tal:attributes="href string:${portal_url}/@@usergroup-groupdetails">
-             <button i18n:translate="label_add_new_group" class="btn btn-primary">Add New Group</button>
+             <button i18n:translate="label_add_new_group" class="btn btn-success">Add New Group</button>
           </a>
         </p>
 
         <form action=""
-              class="overflow-auto"
               name="groups_search"
               method="post"
               tal:attributes="action string:$template_id">
@@ -98,41 +97,38 @@
             <input type="hidden" value="" name="showAll"
                    tal:attributes="value showAll"/>
 
-            <div class="field form-group">
+            <div class="form-group">
+                <label tal:omit-tag="" i18n:translate="label_group_search">Group Search</label>
+                <div class="field input-group">
+                        <input class="form-control quickSearch"
+                            type="text"
+                            name="searchstring"
+                            value=""
+                            tal:attributes="value view/searchString;"
+                            />
+                    <div class="input-group-append">
+                        <button type="submit"
+                            class="btn btn-primary"
+                            name="form.button.Search"
+                            value="Search"
+                            i18n:attributes="value label_search;"
+                            i18n:translate=""
+                            >Search</button>
 
-                <span tal:omit-tag=""
-                      i18n:translate="label_group_search">
-                    Group Search
-                </span>
-
-                <input class="quickSearch"
-                       type="text"
-                       name="searchstring"
-                       value=""
-                       tal:attributes="value view/searchString;"
-                       />
-
-                <button type="submit"
-                       class="btn btn-primary"
-                       name="form.button.Search"
-                       value="Search"
-                       i18n:attributes="value label_search;"
-                       i18n:translate=""
-                       >Search</button>
-
-                <button type="submit"
-                       class="btn btn-secondary"
-                       name="form.button.FindAll"
-                       value="Show all"
-                       i18n:translate=""
-                       i18n:attributes="value label_showall;"
-                       tal:condition="not:view/many_groups"
-                       >Show all</button>
-
+                        <button type="submit"
+                            class="btn btn-secondary"
+                            name="form.button.FindAll"
+                            value="Show all"
+                            i18n:translate="label_showall"
+                            i18n:attributes="value label_showall;"
+                            tal:condition="not:view/many_groups"
+                            >Show all</button>
+                    </div>
+                </div>
             </div>
 
 
-            <table class="table table-bordered table-striped overflow-auto"
+            <table class="table table-bordered table-striped table-responsive"
                    summary="Select roles for each group"
                    i18n:attributes="summary summary_roles_for_groups;">
                 <tbody>
@@ -258,7 +254,6 @@
                          i18n:attributes="value label_save;"
                          >Save</button>
               </div>
-      </div>
     </div>
   </article>
 
