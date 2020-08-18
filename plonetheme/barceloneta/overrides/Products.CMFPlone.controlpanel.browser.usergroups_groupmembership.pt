@@ -185,13 +185,13 @@
                                    />
 
                             <button type="submit"
-                                   class="searchButton"
+                                   class="btn btn-primary"
                                    name="form.button.Search"
                                    value="Search"
                                    i18n:translate=""
                                    i18n:attributes="value label_search;">Search</button>
                             <button type="submit"
-                                   class="searchButton"
+                                   class="btn btn-secondary"
                                    name="form.button.FindAll"
                                    value="Show all"
                                    i18n:translate=""
