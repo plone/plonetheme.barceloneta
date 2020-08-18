@@ -14,7 +14,7 @@
                  portal_roles view/portal_roles;">
 
   <article id="content">
-
+  
     <a href=""
        class="link-parent"
        tal:attributes="href string:$portal_url/@@usergroup-groupprefs"
