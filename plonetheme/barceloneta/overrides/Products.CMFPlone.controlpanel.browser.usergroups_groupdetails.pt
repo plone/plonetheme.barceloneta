@@ -210,7 +210,8 @@
                              type="submit"
                              name="form.button.Save"
                              value="Save"
-                             i18n:attributes="value label_save;" />
+                             i18n:translate=""
+                             i18n:attributes="value label_save;">Save</button>
                   </div>
               </fieldset>
 

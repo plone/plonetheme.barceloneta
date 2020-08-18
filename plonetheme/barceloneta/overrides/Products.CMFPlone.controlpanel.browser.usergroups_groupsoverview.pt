@@ -117,15 +117,17 @@
                        name="form.button.Search"
                        value="Search"
                        i18n:attributes="value label_search;"
-                       />
+                       i18n:translate=""
+                       >Search</button>
 
                 <button type="submit"
                        class="btn btn-secondary"
                        name="form.button.FindAll"
                        value="Show all"
+                       i18n:translate=""
                        i18n:attributes="value label_showall;"
                        tal:condition="not:view/many_groups"
-                       />
+                       >Show all</button>
 
             </div>
 
@@ -240,20 +242,22 @@
                     </a>
                 </div>
 
-                <div class="formControls">
-                  <button class="btn btn-primary"
-                         type="submit"
-                         name="form.button.Modify"
-                         value="Save"
-                         i18n:attributes="value label_save;"
-                         />
-                </div>
+               
 
             </tal:block>
 
             <input tal:replace="structure context/@@authenticator/authenticator" />
 
         </form>
+             <div class="formControls">
+                  <button class="btn btn-primary"
+                         type="submit"
+                         name="form.button.Modify"
+                         value="Save"
+                         i18n:translate=""
+                         i18n:attributes="value label_save;"
+                         >Save</button>
+              </div>
       </div>
     </div>
   </article>

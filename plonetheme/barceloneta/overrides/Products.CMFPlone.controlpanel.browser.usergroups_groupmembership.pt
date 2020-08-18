@@ -164,7 +164,8 @@
                          name="form.button.Edit"
                          value="Remove selected groups / users"
                          i18n:attributes="value label_remove_selected_users;"
-                         tal:condition="view/groupMembers" />
+                         i18n:translate=""
+                         tal:condition="view/groupMembers">Remove selected Groups / Users</button>
 
                 <tal:addusers tal:condition="view/canAddUsers">
 
@@ -187,13 +188,15 @@
                                    class="searchButton"
                                    name="form.button.Search"
                                    value="Search"
-                                   i18n:attributes="value label_search;" />
+                                   i18n:translate=""
+                                   i18n:attributes="value label_search;">Search</button>
                             <button type="submit"
                                    class="searchButton"
                                    name="form.button.FindAll"
                                    value="Show all"
+                                   i18n:translate=""
                                    i18n:attributes="value label_search_large;"
-                                   tal:condition="not:many_users" />
+                                   tal:condition="not:many_users">Show all</button>
                         </th>
                       </tr>
                       <tr tal:condition="batch">
@@ -308,7 +311,8 @@
                             name="form.button.Add"
                             value="Add selected groups and users to this group"
                             tal:condition="batch"
-                            i18n:attributes="value label_add_users_to_group;" />
+                            i18n:translate=""
+                            i18n:attributes="value label_add_users_to_group;">Add selected groups and users to this group</button>
 
                 </tal:addusers>
 
