@@ -183,7 +183,7 @@
                         <noscript>
                             <button type="submit"
                                    name="form.button.SelectWorkflow"
-                                   class="standalone"
+                                   class="btn btn-primary"
                                    value="Change"
                                    i18n:attributes="value label_change;">Change</button>
                         </noscript>
