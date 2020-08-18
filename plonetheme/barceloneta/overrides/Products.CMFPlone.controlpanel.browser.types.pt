@@ -51,7 +51,8 @@
                             name="form.button.SelectContentType"
                             class="btn btn-primary"
                             value="Change"
-                            i18n:attributes="value label_change;" />
+                            i18n:translate=""
+                            i18n:attributes="value label_change;">Change</button>
                     </noscript>
                 </div>
 
@@ -180,11 +181,11 @@
                                 i18n:translate="types_controlpanel_no_workflow">No Workflow</option>
                         </select>
                         <noscript>
-                            <input type="submit"
+                            <button type="submit"
                                    name="form.button.SelectWorkflow"
                                    class="standalone"
                                    value="Change"
-                                   i18n:attributes="value label_change;" />
+                                   i18n:attributes="value label_change;">Change</button>
                         </noscript>
                     </div>
 
@@ -264,12 +265,15 @@
                          value="Save"
                          name="form.button.Save"
                          class="btn btn-primary"
-                         i18n:attributes="value Save;" />
+                         i18n:translate=""
+                         i18n:attributes="value Save;">Save</button>
+                        
                   <button type="submit"
                          value="Cancel"
                          name="form.button.Cancel"
                          class="btn btn-secondary"
-                         i18n:attributes="value label_cancel;" />
+                         i18n:translate=""
+                         i18n:attributes="value label_cancel;">Cancel</button>
                 </div>
 
             </fieldset>
