@@ -36,7 +36,9 @@
            href="${portal_url}/@@member-fields"
              i18n:translate="label_member_fields">Member fields</a>
       </div>
+
       <tal:block tal:replace="structure view/contents|view/render" />
+
     </div>
 
   </div>
