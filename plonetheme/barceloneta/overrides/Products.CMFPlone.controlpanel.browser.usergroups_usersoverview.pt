@@ -17,38 +17,38 @@
                 portal_roles view/portal_roles;
                 portal_url context/portal_url;">
 
-  <article id="content">
+    <article id="content">
 
     <header>
-    <a id="setup-link" class="link-parent"
-       tal:attributes="href string:$portal_url/@@overview-controlpanel"
-       i18n:translate="">
-        Site Setup
-    </a>
+        <a id="setup-link" class="link-parent"
+          tal:attributes="href string:$portal_url/@@overview-controlpanel"
+          i18n:translate="">
+            Site Setup
+        </a>
 
-    <h1 class="documentFirstHeading"
-        i18n:translate="">Users and Groups</h1>
+        <h1 class="documentFirstHeading"
+            i18n:translate="">Users and Groups</h1>
 
-    <div metal:use-macro="context/global_statusmessage/macros/portal_message">
-      Portal status message
-    </div>
-    <div class="nav nav-tabs">
-          <a class="nav-link active"
-             href="${portal_url}/@@usergroup-userprefs"
-             i18n:translate="label_users">Users</a>
-          <a href="${portal_url}/@@usergroup-groupprefs" class="nav-link"
-             i18n:translate="label_groups">Groups</a>
-          <a href="${portal_url}/@@usergroup-controlpanel" class="nav-link"
-             i18n:translate="label_usergroup_settings">Settings</a>
-          <a href="${portal_url}/@@member-fields" class="nav-link"
-             i18n:translate="label_member_fields">Member fields</a>
-    </div>
-    <div i18n:translate="user_roles_note" class="text-muted mt-2">
-          Note that roles set here apply directly to a user.
-          The symbol <img i18n:name="image_link_icon" tal:replace="structure context/site_icon.png" />
-          indicates a role inherited from membership in a group.
-    </div>
-    </header>
+        <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+          Portal status message
+        </div>
+        <div class="nav nav-tabs">
+              <a class="nav-link active"
+                href="${portal_url}/@@usergroup-userprefs"
+                i18n:translate="label_users">Users</a>
+              <a href="${portal_url}/@@usergroup-groupprefs" class="nav-link"
+                i18n:translate="label_groups">Groups</a>
+              <a href="${portal_url}/@@usergroup-controlpanel" class="nav-link"
+                i18n:translate="label_usergroup_settings">Settings</a>
+              <a href="${portal_url}/@@member-fields" class="nav-link"
+                i18n:translate="label_member_fields">Member fields</a>
+        </div>
+        <div i18n:translate="user_roles_note" class="text-muted mt-2">
+              Note that roles set here apply directly to a user.
+              The symbol <img i18n:name="image_link_icon" tal:replace="structure context/site_icon.png" />
+              indicates a role inherited from membership in a group.
+        </div>
+      </header>
     
     <div id="content-core">
 
@@ -83,31 +83,31 @@
         <div class="form-group">
           <label for="quickSearch" i18n:translate="label_user_search">User Search</label>
           <div class="field input-group">
-                          <input class="form-control quickSearch"
-                                 id="quickSearch"
-                                 type="text"
-                                 name="searchstring"
-                                 value=""
-                                 tal:attributes="value view/searchString;"
-                                 />
-                        <div class="input-group-append">
-                          <button type="submit"
-                                 class="searchButton btn btn-primary"
-                                 name="form.button.Search"
-                                 value="Search"
-                                 i18n:translate=""
-                                 i18n:attributes="value label_search;"
-                                 >Search</button>
+                <input class="form-control quickSearch"
+                        id="quickSearch"
+                        type="text"
+                        name="searchstring"
+                        value=""
+                        tal:attributes="value view/searchString;"
+                        />
+                <div class="input-group-append">
+                  <button type="submit"
+                          class="searchButton btn btn-primary"
+                          name="form.button.Search"
+                          value="Search"
+                          i18n:translate=""
+                          i18n:attributes="value label_search;"
+                          >Search</button>
 
-                          <button type="submit"
-                                 class="searchButton btn btn-secondary"
-                                 name="form.button.FindAll"
-                                 value="Show all"
-                                 i18n:translate="label_showall"
-                                 i18n:attributes="value label_showall;"
-                                 tal:condition="not:many_users"
-                                 >Show all</button>
-                        </div>
+                  <button type="submit"
+                          class="searchButton btn btn-secondary"
+                          name="form.button.FindAll"
+                          value="Show all"
+                          i18n:translate="label_showall"
+                          i18n:attributes="value label_showall;"
+                          tal:condition="not:many_users"
+                          >Show all</button>
+                </div>
           </div>
         </div>
           <table class="table table-responsive table-bordered table-striped text-center" summary="User Listing">

@@ -36,19 +36,19 @@
             Portal status message
         </div>
 
-            <div class="nav nav-tabs">
-            <a href="${portal_url}/@@usergroup-userprefs" class="nav-link"
-                i18n:translate="label_users">Users</a>
-            <a class="nav-link active"
-                href="${portal_url}/@@usergroup-groupprefs"
-                i18n:translate="label_groups">Groups</a>
-            <a href="${portal_url}/@@usergroup-controlpanel" class="nav-link"
-                i18n:translate="label_usergroup_settings">Settings</a>
-            <a href="${portal_url}/@@member-fields" class="nav-link"
-                i18n:translate="label_member_fields">Member fields</a>
-            </div>
+        <div class="nav nav-tabs">
+        <a href="${portal_url}/@@usergroup-userprefs" class="nav-link"
+            i18n:translate="label_users">Users</a>
+        <a class="nav-link active"
+            href="${portal_url}/@@usergroup-groupprefs"
+            i18n:translate="label_groups">Groups</a>
+        <a href="${portal_url}/@@usergroup-controlpanel" class="nav-link"
+            i18n:translate="label_usergroup_settings">Settings</a>
+        <a href="${portal_url}/@@member-fields" class="nav-link"
+            i18n:translate="label_member_fields">Member fields</a>
+        </div>
 
-            <div class="text-muted mt-2">
+        <div class="text-muted mt-2">
             <span tal:omit-tag=""
                     i18n:translate="description_groups_management">
                 Groups are logical collections of users, such as
@@ -64,7 +64,7 @@
                     tal:replace="structure context/site_icon.png" />
                 indicates a role inherited from membership in another group.
             </span>
-            </div>
+        </div>
     </header>
 
     <div id="content-core">
@@ -80,6 +80,7 @@
         <p>
           <a class="pat-plone-modal" id="add-group"
              tal:attributes="href string:${portal_url}/@@usergroup-groupdetails">
+
              <button i18n:translate="label_add_new_group" class="btn btn-success">Add New Group</button>
           </a>
         </p>
@@ -237,23 +238,19 @@
                         Show all search results
                     </a>
                 </div>
-
-               
-
             </tal:block>
-
             <input tal:replace="structure context/@@authenticator/authenticator" />
-
         </form>
-             <div class="formControls">
-                  <button class="btn btn-primary"
-                         type="submit"
-                         name="form.button.Modify"
-                         value="Save"
-                         i18n:translate=""
-                         i18n:attributes="value label_save;"
-                         >Save</button>
-              </div>
+
+            <div class="formControls">
+                <button class="btn btn-primary"
+                        type="submit"
+                        name="form.button.Modify"
+                        value="Save"
+                        i18n:translate=""
+                        i18n:attributes="value label_save;"
+                        >Save</button>
+            </div>
     </div>
   </article>
 
