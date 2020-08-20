@@ -24,22 +24,27 @@
 
   <div id="content-core">
 
-    <div class="autotabs">
-      <div class="nav nav-tabs">
-        <a href="${portal_url}/@@usergroup-userprefs" class="nav-link"
-           i18n:translate="label_users">Users</a>
-        <a href="${portal_url}/@@usergroup-groupprefs" class="nav-link"
-           i18n:translate="label_groups">Groups</a>
-        <a href="${portal_url}/@@usergroup-controlpanel" class="nav-link"
-           i18n:translate="label_usergroup_settings">Settings</a>
-        <a class="nav-link active"
-           href="${portal_url}/@@member-fields"
-             i18n:translate="label_member_fields">Member fields</a>
-      </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link"
+                href="${portal_url}/@@usergroup-userprefs"
+                i18n:translate="label_users">Users</a>
+            </li>
+            <li class="nav-item">
+              <a href="${portal_url}/@@usergroup-groupprefs" class="nav-link"
+                i18n:translate="label_groups">Groups</a>
+            </li>
+            <li class="nav-item">
+              <a href="${portal_url}/@@usergroup-controlpanel" class="nav-link"
+                i18n:translate="label_usergroup_settings">Settings</a>
+            </li>
+            <li class="nav-item">
+              <a href="${portal_url}/@@member-fields" class="nav-link active"
+                i18n:translate="label_member_fields">Member fields</a>
+            </li>
+        </ul>
 
-      <tal:block tal:replace="structure view/contents|view/render" />
-
-    </div>
+      <tal:block tal:replace="structure view/contents|view/render"/>
 
   </div>
 
