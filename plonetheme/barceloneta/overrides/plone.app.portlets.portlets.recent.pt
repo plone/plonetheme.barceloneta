@@ -4,52 +4,48 @@
       tal:omit-tag=""
       i18n:domain="plone">
 
-  <aside class="card portlet portletRecent">
+  <div class="card portlet portletRecent">
 
-    <header class="card-header">
+    <div class="card-header">
       <a href="#" tal:attributes="href view/recently_modified_link" i18n:translate="" tal:content="view/title" />
-    </header>
+    </div>
 
-    <div class="card-body" tal:condition="view/recent_items" tal:define="plone_layout context/@@plone_layout;
-      portal context/@@plone_portal_state/portal;
-      image_scale portal/@@image_scale;
-      supress_icon view/data/no_icons;
-      supress_thumb view/data/no_thumbs;
-      thumb_scale view/thumb_scale">
-
+    <div class="card-body" tal:condition="view/recent_items"
+        tal:define="plone_layout context/@@plone_layout;
+                    portal context/@@plone_portal_state/portal;
+                    image_scale portal/@@image_scale;
+                    supress_icon view/data/no_icons;
+                    supress_thumb view/data/no_thumbs;
+                    thumb_scale view/thumb_scale">
       <ul>
-        <tal:items tal:define="plone_view context/@@plone;
-                           normalizeString nocall:plone_view/normalizeString;
-                           toLocalizedTime nocall:plone_view/toLocalizedTime;"
-               tal:repeat="obj view/recent_items">
-
-          <li tal:define="oddrow repeat/obj/odd;
-            item_type obj/portal_type;
-            item_wf_state obj/review_state;
-            item_wf_state_class python:'state-' + normalizeString(item_wf_state);
-            item_class python:'contenttype-' + normalizeString(obj.portal_type) if not supress_icon else '';">
-
-            <a href="" tal:attributes="href string:${obj/getURL}/view; title obj/Description; class string:$item_wf_state_class tile $item_class">
-              <img class="mime-icon" tal:condition="python:item_type =='File' and not supress_icon" tal:attributes="href obj/getURL; src python:view.getMimeTypeIcon(obj);">
-              <img tal:condition="python:obj.getIcon and thumb_scale and not supress_thumb and image_scale" tal:replace="structure python:image_scale.tag(obj, 'image', scale=thumb_scale, css_class='pull-right thumb-'+thumb_scale)" />
-              <span tal:content="obj/pretty_title_or_id">Title</span>
-            </a>
-
-            <time tal:content="python:toLocalizedTime(obj.ModificationDate)">May 5</time>
-
-          </li>
+        <tal:items
+            tal:define="plone_view context/@@plone;
+                        normalizeString nocall:plone_view/normalizeString;
+                        toLocalizedTime nocall:plone_view/toLocalizedTime;"
+            tal:repeat="obj view/recent_items">
+        <li tal:define="oddrow repeat/obj/odd;
+                        item_type obj/portal_type;
+                        item_wf_state obj/review_state;
+                        item_wf_state_class python:'state-' + normalizeString(item_wf_state);
+                        item_class python:'contenttype-' + normalizeString(obj.portal_type) if not supress_icon else '';">
+          <a href="" tal:attributes="href string:${obj/getURL}/view; title obj/Description; class string:$item_wf_state_class tile $item_class">
+            <img class="mime-icon" tal:condition="python:item_type =='File' and not supress_icon" tal:attributes="href obj/getURL; src python:view.getMimeTypeIcon(obj);">
+            <img tal:condition="python:obj.getIcon and thumb_scale and not supress_thumb and image_scale" tal:replace="structure python:image_scale.tag(obj, 'image', scale=thumb_scale, css_class='pull-right thumb-'+thumb_scale)" />
+            <span tal:content="obj/pretty_title_or_id">Title</span>
+          </a>
+          <time tal:content="python:toLocalizedTime(obj.ModificationDate)">May 5</time>
+        </li>
         </tal:items>
       </ul>
-
     </div>
 
     <div class="card-body" tal:condition="not: view/recent_items">
       <p i18n:translate="box_recent_no_items">No items changed yet.</p>
     </div>
 
-    <footer class="card-footer">
+    <div class="card-footer">
       <a href="#" class="tile" tal:attributes="href view/recently_modified_link" i18n:translate="box_more_recently_changed">All recent changes&hellip;</a>
-    </footer>
-  </aside>
+    </div>
+  </div>
 
 </html>
