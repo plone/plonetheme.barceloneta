@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag=""
+      i18n:domain="plone">
+
+  <div class="card portlet portletLanguage">
+
+    <div class="card-header">
+      <span class="tile" i18n:translate="box_languages">Languages</span>
+    </div>
+
+    <div class="card-body">
+      <ul tal:define="showFlags view/showFlags">
+        <li class="portletItem" tal:repeat="lang view/languages">
+          <span tal:define="code lang/code;
+                            selected lang/selected"
+              tal:omit-tag="selected">
+            <a href=""
+                tal:define="flag lang/flag;
+                            name lang/name"
+                tal:attributes="href string:${here/absolute_url}/switchLanguage?set_language=${code};
+                                title name">
+              <tal:flag condition="python:showFlags and flag">
+                <img width="14"
+                    height="11"
+                    alt=""
+                    tal:attributes="src string:${view/navigation_root_url}${flag};
+                                    title python: name;
+                                    class python: selected and 'currentItem' or '';" />
+              </tal:flag>
+              <span tal:replace="lang/native|lang/name">Native language name</span>
+            </a>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</html>
