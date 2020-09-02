@@ -1,0 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag=""
+      i18n:domain="plone">
+
+  <div class="card portlet portletActions"
+      tal:define="portal_url context/@@plone_portal_state/portal_url;">
+
+    <div class="card-header" tal:condition="view/showTitle">
+      <span tal:condition="view/title" tal:replace="view/title">
+        Title
+      </span>
+    </div>
+
+    <div class="card-body portletContent">
+      <ul tal:attributes="class string:actions-${view/category}">
+        <tal:loop tal:repeat="link view/actionLinks">
+        <li class="portletItem"
+            tal:define="icon nocall:link/icon">
+          <a href="#"
+              tal:define="modal link/modal|nothing"
+              tal:attributes="href link/url;
+                              class python:'pat-plone-modal' if modal else None;
+                              data-pat-plone-modal python:modal if modal else None;">
+            <span tal:condition="not:icon"
+                tal:content="link/title">
+              Action
+            </span>
+            <span tal:condition="icon"
+                tal:content="link/title"
+                tal:define="icon_url icon/absolute_url|icon"
+                tal:attributes="style string:background-image:url($icon_url);;">
+              Action
+            </span>
+          </a>
+        </li>
+        </tal:loop>
+      </ul>
+    </div>
+
+  </div>
+
+</html>
