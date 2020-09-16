@@ -1,5 +1,8 @@
 //*// SITE NAV //*//
 #portal-globalnav-wrapper {
+  &.navbar {
+    padding: 0;
+  }
 
   .navbar-collapse {
     display: none;
