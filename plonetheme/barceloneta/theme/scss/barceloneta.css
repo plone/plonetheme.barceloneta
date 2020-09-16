@@ -9824,6 +9824,36 @@ body[class*="-controlpanel"] ul ul.configlet li a::before {
   color: #007bb1;
 }
 
+.sr-only,
+.hiddenStructure,
+.crud-form .header-select {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  color: #fff;
+  background-color: #000;
+}
+
+.sr-only a,
+.hiddenStructure a {
+  color: #fff;
+  background-color: #000;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("roboto/roboto-light.eot");
@@ -9902,36 +9932,6 @@ body[class*="-controlpanel"] ul ul.configlet li a::before {
   src: local("Roboto Condensed Thin Italic"), url("roboto/robotocondensed-lightitalic.eot?#iefix") format("embedded-opentype"), url("roboto/robotocondensed-lightitalic.woff2") format("woff2"), url("roboto/robotocondensed-lightitalic.woff") format("woff"), url("roboto/robotocondensed-lightitalic.ttf") format("truetype"), url("roboto/robotocondensed-lightitalic.svg#roboto_condensedlight_italic") format("svg");
   font-weight: 300;
   font-style: italic;
-}
-
-.sr-only,
-.hiddenStructure,
-.crud-form .header-select {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  color: #fff;
-  background-color: #000;
-}
-
-.sr-only a,
-.hiddenStructure a {
-  color: #fff;
-  background-color: #000;
-}
-
-.sr-only-focusable:active, .sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
 }
 
 #portal-header {
@@ -10069,51 +10069,6 @@ body[class*="-controlpanel"] ul ul.configlet li a::before {
   #portal-languageselector {
     float: right;
   }
-}
-
-main {
-  margin-bottom: 1.5rem;
-}
-
-h1 {
-  margin-bottom: 1rem;
-}
-
-article > header {
-  margin-bottom: 2rem;
-}
-
-#portal-related-items .media {
-  position: relative;
-}
-
-#portal-footer-wrapper {
-  background-color: #2e3133;
-  color: #ccc;
-  text-align: center;
-  padding: 1rem;
-}
-
-#portal-footer-wrapper .copyright {
-  padding: 0.5rem;
-}
-
-#portal-footer-wrapper .colophon {
-  padding: 0.5rem;
-}
-
-#portal-footer-wrapper .site-actions {
-  padding: 0.5rem;
-}
-
-#portal-footer-wrapper .site-actions ul {
-  padding: 0;
-  margin: 0;
-}
-
-#portal-footer-wrapper .site-actions ul li {
-  display: inline;
-  margin: 0 0.5rem;
 }
 
 #portal-globalnav-wrapper .navbar-collapse {
@@ -10298,6 +10253,82 @@ article > header {
 
 #plone-breadcrumb .breadcrumb {
   background-color: transparent;
+}
+
+main {
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+article > header {
+  margin-bottom: 2rem;
+}
+
+#portal-related-items .media {
+  position: relative;
+}
+
+[class*="contenttype-"]::before,
+.contenttype-file #crud-edit-File-widgets-view_title::before {
+  font-family: "Fontello";
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: inherit;
+  display: inline-block;
+  color: inherit;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  content: '\e834';
+}
+
+.contenttype-folder::before {
+  content: '\e801';
+}
+
+.contenttype-document::before {
+  content: '\e80e';
+}
+
+.contenttype-file::before {
+  content: '\e811';
+}
+
+.contenttype-link::before {
+  content: '\e806';
+}
+
+.contenttype-image::before {
+  content: '\e810';
+}
+
+.contenttype-collection::before {
+  content: '\e808';
+}
+
+.contenttype-event::before {
+  content: '\e809';
+}
+
+.contenttype-news-item::before {
+  content: '\e80f';
+}
+
+.outer-wrapper .contenttype-file::before {
+  content: none;
+}
+
+.contenttype-file #crud-edit-File-widgets-view_title::before {
+  content: '\e811';
+}
+
+.mime-icon {
+  margin-right: 8px;
 }
 
 .document-byline {
@@ -10502,63 +10533,32 @@ article > header {
   display: inline-block;
 }
 
-[class*="contenttype-"]::before,
-.contenttype-file #crud-edit-File-widgets-view_title::before {
-  font-family: "Fontello";
-  font-size: 100%;
+#portal-footer-wrapper {
+  background-color: #2e3133;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
+
+#portal-footer-wrapper .copyright {
+  padding: 0.5rem;
+}
+
+#portal-footer-wrapper .colophon {
+  padding: 0.5rem;
+}
+
+#portal-footer-wrapper .site-actions {
+  padding: 0.5rem;
+}
+
+#portal-footer-wrapper .site-actions ul {
   padding: 0;
   margin: 0;
-  position: relative;
-  left: inherit;
-  display: inline-block;
-  color: inherit;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  content: '\e834';
 }
 
-.contenttype-folder::before {
-  content: '\e801';
-}
-
-.contenttype-document::before {
-  content: '\e80e';
-}
-
-.contenttype-file::before {
-  content: '\e811';
-}
-
-.contenttype-link::before {
-  content: '\e806';
-}
-
-.contenttype-image::before {
-  content: '\e810';
-}
-
-.contenttype-collection::before {
-  content: '\e808';
-}
-
-.contenttype-event::before {
-  content: '\e809';
-}
-
-.contenttype-news-item::before {
-  content: '\e80f';
-}
-
-.outer-wrapper .contenttype-file::before {
-  content: none;
-}
-
-.contenttype-file #crud-edit-File-widgets-view_title::before {
-  content: '\e811';
-}
-
-.mime-icon {
-  margin-right: 8px;
+#portal-footer-wrapper .site-actions ul li {
+  display: inline;
+  margin: 0 0.5rem;
 }
 /*# sourceMappingURL=barceloneta.css.map */

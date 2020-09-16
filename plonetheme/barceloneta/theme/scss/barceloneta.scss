@@ -2,7 +2,6 @@
 
 @import "base.scss";
 
-
 @import "mixins/mixin.portlets.plone.scss";
 @import "mixins/mixin.font.plone.scss";
 
@@ -10,14 +9,14 @@
 @import "variables.mappings.scss";
 
 // Plone components
-@import "font.roboto.scss";
 @import "scaffolding.scss";
+@import "font.roboto.scss";
 @import "header.scss";
-@import "content.scss";
-@import "footer.scss";
-
 @import "sitenav.scss";
 @import "breadcrumbs.scss";
+@import "content.scss";
+@import "content-icons.scss";
 @import "byline.scss";
 @import "portlets.scss";
-@import "contents.scss";
+@import "footer.scss";
+
