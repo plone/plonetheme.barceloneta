@@ -2,39 +2,39 @@
 //
 // Settings for the `<body>` element.
 
-$body-bg: $plone-body-bg;
-$body-color: $plone-gray-dark;
+$body-bg: $plone-body-bg!default;
+$body-color: $plone-gray-dark!default;
 
-$spacer: 1rem;
+$spacer: 1rem!default;
 
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns: 12;
-$grid-gutter-width: 30px;
-$grid-row-columns: 6;
+$grid-columns: 12!default;
+$grid-gutter-width: 30px!default;
+$grid-row-columns: 6!default;
 
-$grid-main-breakpoint: md;
-$nav-main-breakpoint: $grid-main-breakpoint;
+$grid-main-breakpoint: md!default;
+$nav-main-breakpoint: $grid-main-breakpoint!default;
 
 //*// TYPOGRAPHY
-$font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; // Roboto seems Plone's DIN
-$font-family-condensed: "Roboto Condensed", "Arial Narrow", sans-serif; //just on toolbar
-$font-family-serif: Georgia, "Times New Roman", Times, serif;
-$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-family-base: $font-family-sans-serif;
+$font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif!default; // Roboto seems Plone's DIN
+$font-family-condensed: "Roboto Condensed", "Arial Narrow", sans-serif!default; //just on toolbar
+$font-family-serif: Georgia, "Times New Roman", Times, serif!default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace!default;
+$font-family-base: $font-family-sans-serif!default;
 
 // use default font-sizes for now
 // $font-size-base: 0.875rem;
 // $font-size-lg: 1rem;
 // $font-size-sm: $font-size-base * .875;
 
-$font-weight-lighter: lighter;
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-$font-weight-bolder: bolder;
+$font-weight-lighter: lighter!default;
+$font-weight-light: 300!default;
+$font-weight-normal: 400!default;
+$font-weight-bold: 700!default;
+$font-weight-bolder: bolder!default;
 
 // use default font-sizes for now
 // $h1-font-size: $font-size-base * 2.857;
@@ -44,14 +44,14 @@ $font-weight-bolder: bolder;
 // $h5-font-size: $font-size-base;
 // $h6-font-size: $font-size-base * 0.85;
 
-$font-weight-base: $font-weight-normal;
-$line-height-base: 1.428;
+$font-weight-base: $font-weight-normal!default;
+$line-height-base: 1.428!default;
 
-$headings-margin-bottom: $spacer / 2;
-$headings-font-family: null;
-$headings-font-weight: 400;
-$headings-line-height: 1.2;
-$headings-color: null;
+$headings-margin-bottom: $spacer / 2!default;
+$headings-font-family: null!default;
+$headings-font-weight: 400!default;
+$headings-line-height: 1.2!default;
+$headings-color: null!default;
 
 // TODO use font-base-size variables
 // Buttons + Forms
