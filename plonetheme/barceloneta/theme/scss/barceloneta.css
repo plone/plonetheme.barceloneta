@@ -10071,6 +10071,10 @@ body[class*="-controlpanel"] ul ul.configlet li a::before {
   }
 }
 
+#portal-globalnav-wrapper.navbar {
+  padding: 0;
+}
+
 #portal-globalnav-wrapper .navbar-collapse {
   display: none;
 }
