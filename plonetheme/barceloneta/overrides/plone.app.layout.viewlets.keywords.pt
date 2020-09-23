@@ -1,16 +1,13 @@
-<section i18n:domain="plone"
-         id="portal-categories"
-         class="portal-categories mb-3"
-         tal:define="categories context/Subject|nothing;
-                     url_quote nocall:modules/Products.PythonScripts.standard/url_quote"
-         tal:condition="categories">
+<section id="section-category" i18n:domain="plone" tal:define="categories context/Subject|nothing; url_quote nocall:modules/Products.PythonScripts.standard/url_quote" tal:condition="categories">
 
-  <h5 i18n:translate="category_viewlet_title">Categories</h5>
+  <header class="section-heading" i18n:translate="section_keywords_heading">
+    Keywords
+  </header>
 
   <tal:repeat tal:repeat="category categories">
-  <a href="#" rel="nofollow" class="badge badge-secondary p-2 m-1"
-     tal:define="quotedCat python:url_quote(category)"
-     tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/@@search?Subject%3Alist=${quotedCat}">
+  <a href="#" rel="nofollow" class="btn btn-outline-primary"
+    tal:define="quotedCat python:url_quote(category)"
+    tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/@@search?Subject%3Alist=${quotedCat}">
     <span tal:content="category"></span>
   </a>
   </tal:repeat>
