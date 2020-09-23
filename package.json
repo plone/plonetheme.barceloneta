@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.4.1",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
@@ -14,6 +13,7 @@
     "stylelint-config-twbs-bootstrap": "^2.0.1"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1"
   },
   "scripts": {
     "watch": "nodemon --watch scss/ --ext scss --exec \"yarn css-main\"",
