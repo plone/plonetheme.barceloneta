@@ -1,0 +1,12 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  .card {
+    margin-top: $spacer;
+    margin-bottom: $spacer * 2;
+    max-width: 26rem;
+    #form-widgets-mail_me {
+      display: none;
+    }
+  }
+}
