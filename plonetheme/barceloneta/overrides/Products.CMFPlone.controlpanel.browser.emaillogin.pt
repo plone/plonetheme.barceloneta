@@ -7,6 +7,12 @@
 
     <metal:main metal:fill-slot="prefs_configlet_content">
       <header>
+        <a href=""
+            id="setup-link"
+            tal:attributes="href string:$portal_url/@@security-controlpanel"
+            i18n:translate="">
+            Security Settings
+        </a>
         <h1 class="documentFirstHeading" i18n:translate="heading_find_duplicate_login_names">
           Find duplicate login names
         </h1>
