@@ -6,21 +6,26 @@
       i18n:domain="plone.z3cform">
 <body>
 <metal:slot metal:fill-slot="prefs_configlet_main">
-  <div metal:use-macro="context/global_statusmessage/macros/portal_message">
-    Portal status message
-  </div>
 
-  <h1 class="documentFirstHeading"><tal:block tal:content="context/Title"/> (<tal:block tal:content="python:context.__name__" />)</h1>
+  <header class="mb-4"> 
 
-  <div class="autotabs">
-    <nav class="autotoc-nav">
-      <a tal:repeat="tab view/tabs"
-          tal:attributes="href python:context.absolute_url() + '/' + tab[1];
-                          class python:'active' if tab[0] == view.label else ''"
-          tal:content="python:tab[0]" />
-    </nav>
+    <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+      Portal status message
+    </div>
 
-    <tal:block tal:replace="structure view/contents|view/render"/>
+    <h1 class="documentFirstHeading"><tal:block tal:content="context/Title"/> (<tal:block tal:content="python:context.__name__" />)</h1>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item" tal:repeat="tab view/tabs">
+        <a class="nav-link"
+            tal:attributes="href python:context.absolute_url() + '/' + tab[1];
+                            class python: 'nav-link ' + ('active' if tab[0] == view.label else '')"
+            tal:content="python:tab[0]" />
+      </li>
+    </ul>
+  </header>
+  <div id="content-core">
+      <tal:block tal:replace="structure view/contents|view/render"/>
   </div>
 
 </metal:slot>
