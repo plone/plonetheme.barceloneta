@@ -5,11 +5,8 @@
   <script type="text/javascript"
           tal:attributes="src context/++resource++plone.app.dexterity.types_listing.js"></script>
 
-  <div class="portalMessage info" role="alertdialog" aria-labelledby="dialogTitle"
+  <div class="alert alert-info" role="alert"
        tal:condition="view/status">
-    <strong id="dialogTitle" i18n:translate="">
-      Info
-    </strong>
     <span tal:content="view/status">
       Status
     </span>
@@ -22,12 +19,12 @@
 
   <a class="pat-plone-modal"
       href="${context/absolute_url}/@@add-type">
-    <button i18n:translate="">Add New Content Type&hellip;</button>
+    <button class="btn btn-primary" i18n:translate="">Add New Content Type&hellip;</button>
   </a>
 
   <a class="pat-plone-modal"
       href="${context/absolute_url}/@@import-types">
-    <button i18n:translate="">Import Type Profiles&hellip;</button>
+    <button class="btn btn-primary" i18n:translate="">Import Type Profiles&hellip;</button>
   </a>
 
   <div class="crud-form"
