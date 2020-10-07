@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="here/prefs_main_template/macros/master"
+      i18n:domain="plone.z3cform">
+<body>
+<metal:slot metal:fill-slot="prefs_configlet_main">
+  <div metal:use-macro="context/global_statusmessage/macros/portal_message">
+    Portal status message
+  </div>
+
+  <h1 class="documentFirstHeading"><tal:block tal:content="context/Title"/> (<tal:block tal:content="python:context.__name__" />)</h1>
+
+  <div class="autotabs">
+    <nav class="autotoc-nav">
+      <a tal:repeat="tab view/tabs"
+          tal:attributes="href python:context.absolute_url() + '/' + tab[1];
+                          class python:'active' if tab[0] == view.label else ''"
+          tal:content="python:tab[0]" />
+    </nav>
+
+    <tal:block tal:replace="structure view/contents|view/render"/>
+  </div>
+
+</metal:slot>
+</body>
+</html>
