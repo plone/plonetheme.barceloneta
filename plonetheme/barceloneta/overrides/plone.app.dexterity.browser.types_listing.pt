@@ -16,16 +16,17 @@
       tal:condition="view/description"
       tal:content="structure view/description">
   </p>
+  <header class="mb-4">
+    <a class="pat-plone-modal"
+        href="${context/absolute_url}/@@add-type">
+      <button class="btn btn-primary" i18n:translate="">Add New Content Type&hellip;</button>
+    </a>
 
-  <a class="pat-plone-modal"
-      href="${context/absolute_url}/@@add-type">
-    <button class="btn btn-primary" i18n:translate="">Add New Content Type&hellip;</button>
-  </a>
-
-  <a class="pat-plone-modal"
-      href="${context/absolute_url}/@@import-types">
-    <button class="btn btn-primary" i18n:translate="">Import Type Profiles&hellip;</button>
-  </a>
+    <a class="pat-plone-modal"
+        href="${context/absolute_url}/@@import-types">
+      <button class="btn btn-primary" i18n:translate="">Import Type Profiles&hellip;</button>
+    </a>
+  </header>
 
   <div class="crud-form"
       tal:repeat="form view/subforms"

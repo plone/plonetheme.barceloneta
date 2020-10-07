@@ -12,7 +12,7 @@
        tal:omit-tag="python:widget.mode == 'input' or link is None"
        tal:attributes="href link">
 
-      <span class="error" tal:omit-tag="not:error">
+      <span class="border border-warning" tal:omit-tag="not:error">
         <div tal:condition="error" tal:replace="structure error/render" />
         <input type="text" tal:replace="structure widget/render" />
       </span>
