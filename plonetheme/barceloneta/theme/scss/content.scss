@@ -6,18 +6,52 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.lead {
+  margin-bottom: 2rem;
+}
+
 article {
   >header {
     margin-bottom: 2rem;
   }
 }
 
+.alert {
+  margin-bottom: 2rem;
+}
+
 #content-core {
+  margin-bottom: 2rem;
+}
+
+#section-byline {
+  margin-bottom: 1rem;
+}
+
+#section-image {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#section-leadimage {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#section-rights {
+  margin-bottom: 2rem;
+}
+
+#section-contributors {
   margin-bottom: 2rem;
 }
 
 #section-related {
   margin-bottom: 2rem;
+
+  .media {
+    margin-bottom: 1rem;
+  }
 }
 
 #section-category {
@@ -25,7 +59,7 @@ article {
 }
 
 .section-heading {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
