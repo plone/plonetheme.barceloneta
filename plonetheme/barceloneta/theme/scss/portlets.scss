@@ -1,4 +1,11 @@
 //*// PORTLETS //*//
+
+//*// PORTLETS --> cleanup
+$plone-portlet-list-hover-bg: #fcfcfd!default;
+$plone-portlet-footer-bg: #fcfcfd!default;
+$plone-portlet-list-bullet: #64bee8!default;
+
+
 .portlet {
   margin-bottom: $spacer;
 
@@ -101,7 +108,7 @@
             right: 10px;
             font-size: $font-size-lg;
             margin-top: -3px;
-            color: $plone-gray-light;
+            color: $light;
           }
         }
 
@@ -117,7 +124,7 @@
 
     .navTreeCurrentNode>a {
       background: darken($plone-portlet-footer-bg, 2%);
-      color: $plone-gray;
+      color: $gray;
 
       &::after {
         content: "⟩";
@@ -125,7 +132,7 @@
         right: 10px;
         font-size: $font-size-lg;
         margin-top: -3px;
-        color: $plone-gray-light;
+        color: $light;
       }
     }
 

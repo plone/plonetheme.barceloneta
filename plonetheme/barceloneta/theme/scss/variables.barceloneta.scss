@@ -2,8 +2,10 @@
 //
 // Settings for the `<body>` element.
 
+$theme-colors: (primary: $plone-link-color)!default;
+
 $body-bg: $plone-body-bg!default;
-$body-color: $plone-gray-dark!default;
+$body-color: $dark!default;
 
 $spacer: 1rem!default;
 
@@ -25,24 +27,12 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif!default;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace!default;
 $font-family-base: $font-family-sans-serif!default;
 
-// use default font-sizes for now
-// $font-size-base: 0.875rem;
-// $font-size-lg: 1rem;
-// $font-size-sm: $font-size-base * .875;
 
 $font-weight-lighter: lighter!default;
 $font-weight-light: 300!default;
 $font-weight-normal: 400!default;
 $font-weight-bold: 700!default;
 $font-weight-bolder: bolder!default;
-
-// use default font-sizes for now
-// $h1-font-size: $font-size-base * 2.857;
-// $h2-font-size: $font-size-base * 2.143;
-// $h3-font-size: $font-size-base * 1.7138;
-// $h4-font-size: $font-size-base * 1.286;
-// $h5-font-size: $font-size-base;
-// $h6-font-size: $font-size-base * 0.85;
 
 $font-weight-base: $font-weight-normal!default;
 $line-height-base: 1.428!default;
@@ -53,7 +43,4 @@ $headings-font-weight: 400!default;
 $headings-line-height: 1.2!default;
 $headings-color: null!default;
 
-// TODO use font-base-size variables
-// Buttons + Forms
-// $input-btn-font-size: 0.875rem;
-
+$plone-portlet-navtree-maxlevel: 5!default;

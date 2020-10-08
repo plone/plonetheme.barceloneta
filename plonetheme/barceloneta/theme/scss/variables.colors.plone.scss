@@ -1,16 +1,82 @@
-//colors
-$plone-toolbar-draft-color: #fab82a!default; // lime-yellow //draft is visible
-$plone-toolbar-pending-color: #e2e721!default; // orange
-$plone-toolbar-private-color: #c4183c!default; // red
-$plone-toolbar-internal-color: #fab82a!default; // is draft
-$plone-toolbar-internally-published-color: #883dfa!default; // is intranet
+// Color system
+// These are copied from Bootstrap so that we can use and redefine default values for the theme.
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
 
-//grays
-$plone-gray-darker: lighten(#000, 20%)!default; // #333
-$plone-gray-dark: lighten(#000, 30%)!default; // #4c4c4c
-$plone-gray: lighten(#000, 41%)!default; // #696969
-$plone-gray-light: lighten(#000, 46.5%)!default; // #767676 //discreet
-$plone-gray-lighter: lighten(#000, 80%)!default; // #ccc //disableds like
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+
+
+// Plone specific colors
+//colors
+$state-draft-color: #fab82a!default; // lime-yellow //draft is visible
+$state-pending-color: #e2e721!default; // orange
+$state-private-color: #c4183c!default; // red
+$state-internal-color: #fab82a!default; // is draft
+$state-internally-published-color: #883dfa!default; // is intranet
 
 // Plone
 $plone-link-color: #007bb1!default; //plone blue made slightly darker for wcag 2.0
@@ -19,22 +85,10 @@ $plone-link-color-on-dark: #16a1e3!default; //plone blue
 $plone-link-color-on-grey: #086ca3!default; //valid wcag 2.0
 $plone-link-hover-color: darken($plone-link-color, 15%)!default;
 
+//grays
+$gray:          $gray-600 !default;
+
 //*// SCAFFOLDING
 $plone-body-bg: #fafafa!default; //almost-white
 $plone-footer-bg: #2e3133!default; //blued-darkgray
 
-$theme-colors: (primary: $plone-link-color)!default;
-
-
-//*// PORTLETS
-$plone-portlet-list-hover-bg: #fcfcfd!default;
-$plone-portlet-footer-bg: #fcfcfd!default;
-// @plone-portlet-header-bg: #f2f1f1;
-// @plone-portlet-header-color: @plone-gray;
-// @plone-portlet-content-bg: #fff;
-// @plone-portlet-border: @plone-border-base #e5e5e5;
-// @plone-portlet-contrast-bg: #e5e5e5;
-// @plone-portlet-event-bullet: #dbecfe;
-$plone-portlet-list-bullet: #64bee8!default;
-// @plone-portlet-list-small-text: @plone-gray;
-$plone-portlet-navtree-maxlevel: 5!default;
