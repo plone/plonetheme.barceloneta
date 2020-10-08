@@ -1,0 +1,45 @@
+<tal:root>
+<div class="portalMessage" tal:condition="view/status" tal:content="view/status"></div>
+
+<form action="." method="post" tal:attributes="action request/getURL; enctype view/enctype">
+<tal:widgets repeat="widget view/widgets/values|nothing">
+
+  <div class="field"
+       tal:define="error widget/error;
+                   hidden python:widget.mode == 'hidden'"
+       tal:attributes="class python:'field' + (error and ' error' or '')">
+    <label for=""
+           tal:attributes="for widget/id"
+           tal:condition="not:hidden">
+      <span i18n:translate=""
+            tal:content="widget/label">label</span>
+    </label>
+
+    <span class="fieldRequired" title="Required"
+          tal:condition="python:widget.required and not hidden"
+          i18n:translate="label_required"
+          i18n:attributes="title title_required;">
+      (Required)
+    </span>
+
+    <div tal:condition="error" tal:content="structure error/render">
+      Error
+    </div>
+
+    <div class="widget">
+      <input type="text" tal:replace="structure widget/render" />
+    </div>
+
+    <div class="formHelp"
+      tal:define="description widget/field/description"
+      i18n:translate=""
+      tal:content="description"
+      tal:condition="python:description and not hidden"
+      >field description</div>
+
+  </div>
+
+</tal:widgets>
+<metal:actions metal:use-macro="context/@@ploneform-macros/actions"/>
+</form>
+</tal:root>
