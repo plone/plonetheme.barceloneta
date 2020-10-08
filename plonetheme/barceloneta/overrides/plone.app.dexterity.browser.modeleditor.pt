@@ -1,0 +1,80 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/prefs_main_template/macros/master"
+    i18n:domain="plone">
+
+<body>
+<metal:main fill-slot="prefs_configlet_main">
+<tal:main-macro metal:define-macro="main">
+  <tal:comment tal:condition="python:False">
+    prefs_main_template doesn't have the style_slot
+  </tal:comment>
+  <style type="text/css"
+      tal:content="string:@import url(${portal_url}/++resource++plone.app.dexterity.modeleditor.css);"
+      />
+  <div id="page-intro">
+
+    <h1 class="documentFirstHeading"
+        i18n:translate="heading_model_edit">Edit field model for
+      <span i18n:name="name" tal:content="context/Title">name</span>
+    </h1>
+
+    <p class="description" i18n:translate="description_model_edit">
+      This form allows you to directly edit the XML representation
+      of the field list. This makes it possible to add annotations for fieldsets,
+      validation and widgets. See the <a
+      href="https://docs.plone.org/external/plone.app.dexterity/docs/reference/dexterity-xml.html">Dexterity XML</a>
+      section of the <a href="https://docs.plone.org/external/plone.app.dexterity/docs/index.html">Dexterity Developer Manual</a> for details.
+    </p>
+
+    <a href=""
+        class="link-parent"
+        tal:attributes="href string:${context/absolute_url}/@@fields"
+        i18n:translate="label_back_to_schemaeditor">
+            Back to the schema editor
+    </a>
+
+  </div>
+
+  <div id="rules-editor">
+    <div class="portalMessage info">
+      <span id="messagespan" style="display:none">
+        &nbsp;
+      </span>&nbsp;
+    </div>
+
+    <form id="saveform"
+        tal:attributes="action string:${context/absolute_url}/@@model-edit-save"
+        tal:define="authenticator context/@@authenticator/authenticator | nothing">
+      <input tal:replace="structure authenticator" />
+      <input type="hidden" id="savesource" name="source" value="" />
+      <div class="formControls">
+        <input class="context" type="submit" name="form.button.save" value="Save" disabled="disabled" />
+      </div>
+    </form>
+
+    <div id="modelEditor" tal:content="view/modelSource" />
+  </div>
+
+  <tal:comment tal:condition="python:False">
+      prefs_main_template doesn't have the head_javascript_slot
+  </tal:comment>
+
+  <script src="++plone++static/components/ace-builds/src/ace.js"
+      type="text/javascript"
+      charset="utf-8"
+      tal:attributes="src string:${portal_url}/++plone++static/components/ace-builds/src/ace.js"
+      ></script>
+  <script src="++resource++plone.schemaeditor/modeleditor.js"
+      type="text/javascript"
+      charset="utf-8"
+      tal:attributes="src string:${portal_url}/++resource++plone.app.dexterity.modeleditor.js"
+      ></script>
+
+</tal:main-macro>
+</metal:main>
+</body>
+</html>
