@@ -9811,12 +9811,6 @@ body[class*="-controlpanel"] article > header {
   margin-bottom: 2rem;
 }
 
-body[class*="-controlpanel"] .controlPanel .configlets .icon,
-body[class*="-controlpanel"] article .configlets .icon {
-  width: 3rem;
-  height: 3rem;
-}
-
 body[class*="-controlpanel"] .custom-select {
   width: auto;
   display: block;
@@ -9824,19 +9818,6 @@ body[class*="-controlpanel"] .custom-select {
 
 body[class*="-controlpanel"] textarea.form-control {
   height: 10rem;
-}
-
-body[class*="-controlpanel"] ul ul.configlet li a {
-  position: relative;
-}
-
-body[class*="-controlpanel"] ul ul.configlet li a::before {
-  content: "•";
-  position: absolute;
-  font-size: 1.75rem;
-  line-height: 1;
-  left: -0.75rem;
-  color: #007bb1;
 }
 
 .login-wrapper {
@@ -10405,7 +10386,6 @@ article > header {
   font-size: 0.875rem;
 }
 
-.portletSiteSetup .card-body,
 .portletRecent .card-body,
 .portletNavigationTree .card-body,
 .portletEvents .card-body,
@@ -10415,7 +10395,6 @@ article > header {
   padding: 0;
 }
 
-.portletSiteSetup .card-body img.pull-right,
 .portletRecent .card-body img.pull-right,
 .portletNavigationTree .card-body img.pull-right,
 .portletEvents .card-body img.pull-right,
@@ -10425,7 +10404,6 @@ article > header {
   float: right !important;
 }
 
-.portletSiteSetup .card-body > ul,
 .portletRecent .card-body > ul,
 .portletNavigationTree .card-body > ul,
 .portletEvents .card-body > ul,
@@ -10437,7 +10415,6 @@ article > header {
   list-style: none;
 }
 
-.portletSiteSetup .card-body > ul > li,
 .portletRecent .card-body > ul > li,
 .portletNavigationTree .card-body > ul > li,
 .portletEvents .card-body > ul > li,
@@ -10448,7 +10425,6 @@ article > header {
   padding: 0.75rem 1.25rem;
 }
 
-.portletSiteSetup .card-body > ul > li a,
 .portletRecent .card-body > ul > li a,
 .portletNavigationTree .card-body > ul > li a,
 .portletEvents .card-body > ul > li a,
@@ -10459,7 +10435,6 @@ article > header {
   color: #086ca3;
 }
 
-.portletSiteSetup .card-body > ul > li:first-child,
 .portletRecent .card-body > ul > li:first-child,
 .portletNavigationTree .card-body > ul > li:first-child,
 .portletEvents .card-body > ul > li:first-child,
@@ -10469,7 +10444,6 @@ article > header {
   border-top: 0;
 }
 
-.portletSiteSetup .card-body > ul ul,
 .portletRecent .card-body > ul ul,
 .portletNavigationTree .card-body > ul ul,
 .portletEvents .card-body > ul ul,
@@ -10480,7 +10454,6 @@ article > header {
   list-style: none;
 }
 
-.portletSiteSetup .card-body > ul li:hover,
 .portletRecent .card-body > ul li:hover,
 .portletNavigationTree .card-body > ul li:hover,
 .portletEvents .card-body > ul li:hover,
