@@ -53,19 +53,17 @@
 
                 </dl>
 
-              <div class="formControls">
-                <input class="context"
+              <div class="formControls form-group">
+                <button class="context btn btn-primary"
                        type="submit"
                        name="form.buttons.Save"
                        value="Save"
-                       i18n:attributes="value label_save;"
-                       />
-                <input
+                       i18n:attributes="value label_save;">Save</button>
+                <button class="btn btn-secondary"
                        type="submit"
                        name="form.buttons.Cancel"
                        value="Cancel"
-                       i18n:attributes="value label_cancel;"
-                       />
+                       i18n:attributes="value label_cancel;">Cancel</button>
               </div>
 
             </tal:hasItems>
@@ -74,13 +72,12 @@
                  There are no items in this folder that can be selected as
                  a default view page.
               </div>
-              <div class="formControls">
-                    <input class="context"
+              <div class="formControls form-group">
+                    <button class="context btn btn-primary"
                        type="submit"
                        name="form.button.Cancel"
                        value="Ok"
-                       i18n:attributes="value label_ok;"
-                       />
+                       i18n:attributes="value label_ok;">Ok</button>
               </div>
             </tal:noitems>
             </tal:items>
