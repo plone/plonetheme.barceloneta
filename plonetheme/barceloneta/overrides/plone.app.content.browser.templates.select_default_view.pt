@@ -68,19 +68,17 @@
                     </p>
                 </div>
 
-              <div class="formControls">
-                <input class="context"
+              <div class="formControls form-group">
+                <button class="context btn btn-primary"
                        type="submit"
                        name="form.button.Save"
                        value="Save"
-                       i18n:attributes="value label_save;"
-                       />
-                <input class="standalone"
+                       i18n:attributes="value label_save;">Save</button>
+                <button class="standalone btn btn-secondary"
                        type="submit"
                        name="form.button.Cancel"
                        value="Cancel"
-                       i18n:attributes="value label_cancel;"
-                       />
+                       i18n:attributes="value label_cancel;">Cancel</button>
               </div>
 
           </form>
