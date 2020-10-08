@@ -9,6 +9,7 @@
 @import "variables.mappings.scss";
 
 // Plone components
+@import "cards.scss";
 @import "scaffolding.scss";
 @import "font.roboto.scss";
 @import "header.scss";
@@ -16,6 +17,5 @@
 @import "breadcrumbs.scss";
 @import "content.scss";
 @import "content-icons.scss";
-@import "byline.scss";
 @import "portlets.scss";
 @import "footer.scss";
