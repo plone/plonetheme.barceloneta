@@ -9835,6 +9835,20 @@ body[class*="-controlpanel"] textarea.form-control {
   display: none;
 }
 
+.card-light {
+  border: none;
+}
+
+.card-light .card-body {
+  padding: 0;
+}
+
+.card-icon {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1.25rem;
+}
+
 .sr-only,
 .hiddenStructure,
 .crud-form .header-select {
@@ -10278,7 +10292,15 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.lead {
+  margin-bottom: 2rem;
+}
+
 article > header {
+  margin-bottom: 2rem;
+}
+
+.alert {
   margin-bottom: 2rem;
 }
 
@@ -10286,8 +10308,34 @@ article > header {
   margin-bottom: 2rem;
 }
 
+#section-byline {
+  margin-bottom: 1rem;
+}
+
+#section-image {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#section-leadimage {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#section-rights {
+  margin-bottom: 2rem;
+}
+
+#section-contributors {
+  margin-bottom: 2rem;
+}
+
 #section-related {
   margin-bottom: 2rem;
+}
+
+#section-related .media {
+  margin-bottom: 1rem;
 }
 
 #section-category {
@@ -10295,7 +10343,7 @@ article > header {
 }
 
 .section-heading {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -10358,23 +10406,6 @@ article > header {
 
 .mime-icon {
   margin-right: 8px;
-}
-
-.document-byline {
-  margin-bottom: 0.5rem;
-}
-
-.document-byline .byline-section {
-  margin-right: 0.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.document-byline .byline-label {
-  font-weight: 500;
-}
-
-.document-byline .document-copyright {
-  margin-bottom: 1rem;
 }
 
 .portlet {
