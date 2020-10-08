@@ -22,7 +22,7 @@
 
     <div class="widget">
       <input type="text" tal:replace="structure widget/render" />
-      <div class="ml-4"><small class="form-text text-muted"
+      <div class="custom-control"><small class="form-text text-muted"
         tal:define="description widget/field/description"
         i18n:translate=""
         tal:content="description"
