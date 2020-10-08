@@ -1,0 +1,67 @@
+ <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone.z3cform"
+      tal:omit-tag=""
+      tal:condition="view/subforms">
+
+  <h2 tal:condition="view/label | nothing"
+      tal:content="view/label">Form title</h2>
+
+  <div class="alert alert-info" tal:condition="view/status">
+      <span tal:content="view/status"></span>
+  </div>
+
+  <form action="." method="post" tal:attributes="action view/getURL">
+
+    <tal:batch tal:replace="structure view/render_batch_navigation" />
+
+    <table class="table table-striped table-bordered" tal:define="rows view/subforms">
+        <thead tal:define="row1 python:len(rows) and rows[0] or None"
+               tal:condition="python:row1 is not None">
+          <tr>
+            <th tal:define="widgetsForTitles row1/getTitleWidgets;
+                            niceTitles row1/getNiceTitles"
+                tal:repeat="widget widgetsForTitles">
+
+              <span tal:define="idx repeat/widget/index"
+                    tal:content="python: niceTitles[idx]"
+                    tal:attributes="title widget/field/description;
+                                    class python: 'header-' + niceTitles[idx]">
+                Field
+              </span>
+
+              <span class="fieldRequired"
+                    tal:condition="python:widget.required and widget.mode == 'input'">
+                *
+              </span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tal:block repeat="row view/subforms">
+            <tr tal:content="structure row/render"
+                tal:attributes="class python:repeat['row'].odd() and 'even' or 'odd'">
+            </tr>
+          </tal:block>
+        </tbody>
+    </table>
+
+    <tal:actions define="actions view/actions/values">
+      <tal:single condition="python:len(actions) == 1">
+        <div class="action" tal:repeat="action actions">
+          <input type="submit" tal:replace="structure action/render" />
+        </div>
+      </tal:single>
+      <tal:multiple condition="python:len(actions) > 1">
+        <ul>
+          <li class="action" tal:repeat="action actions">
+            <input type="submit" tal:replace="structure action/render" />
+          </li>
+        </ul>
+      </tal:multiple>
+    </tal:actions>
+
+  </form>
+
+</html>
