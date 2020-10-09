@@ -1,3 +1,10 @@
+.pat-autotoc.autotabs {
+    .autotoc-nav {
+        margin-bottom: $spacer;
+    }
+}
+
+
 .required:after {
     color: $danger;
     content: '•';

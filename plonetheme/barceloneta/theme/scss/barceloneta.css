@@ -9771,6 +9771,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.pat-autotoc.autotabs .autotoc-nav {
+  margin-bottom: 1rem;
+}
+
 .required:after {
   color: #dc3545;
   content: '•';
