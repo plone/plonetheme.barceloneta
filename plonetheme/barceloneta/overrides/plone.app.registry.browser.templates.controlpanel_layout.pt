@@ -17,7 +17,7 @@
     </a>
 
     <h1 class="documentFirstHeading" tal:content="view/label">View Title</h1>
-    <div class="text-muted" tal:content="view/description">View Description</div>
+    <div class="text-muted" tal:condition="view/description | nothing" tal:content="view/description">View Description</div>
 
   </header>
 
