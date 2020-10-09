@@ -20,7 +20,7 @@
     <h1 class="documentFirstHeading"
         i18n:translate="">Resource Registries</h1>
 
-    <div class="documentDescription"
+    <div class="text-muted"
        i18n:translate="">
       Configure, enable, disable, debug and build Plone JavaScript/LESS/CSS resources.
       Plone utilizes RequireJS and LESS CSS to build its resources.

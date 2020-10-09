@@ -19,7 +19,7 @@
     <h1 class="documentFirstHeading"
       i18n:translate="portal_actions_controlpanel_header">Portal actions</h1>
 
-    <div class="documentDescription"
+    <div class="text-muted"
       i18n:translate="portal_actions_controlpanel_description">
         This is the portal actions configuration section, you can manage the
         actions contained in the different action categories.
