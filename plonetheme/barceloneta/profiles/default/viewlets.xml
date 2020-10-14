@@ -21,14 +21,14 @@
     <viewlet name="plone.contentviews" />
   </order>
   <order manager="plone.belowcontentbody" skinname="Plone Default">
-    <viewlet name="plone.documentactions" />
-    <viewlet name="plone.keywords" />
     <viewlet name="plone.contributors" />
     <viewlet name="plone.rights" />
+    <viewlet name="plone.keywords" />
     <viewlet name="plone.belowcontentbody.relateditems" />
   </order>
   <order manager="plone.belowcontent" skinname="Plone Default">
     <viewlet name="plone.nextprevious" />
+    <viewlet name="plone.documentactions" />
   </order>
   <order manager="plone.portalfooter" skinname="Plone Default">
     <viewlet name="plone.footer" />
