@@ -27,8 +27,8 @@
     <viewlet name="plone.belowcontentbody.relateditems" />
   </order>
   <order manager="plone.belowcontent" skinname="Plone Default">
-    <viewlet name="plone.nextprevious" />
     <viewlet name="plone.documentactions" />
+    <viewlet name="plone.nextprevious" />
   </order>
   <order manager="plone.portalfooter" skinname="Plone Default">
     <viewlet name="plone.footer" />
