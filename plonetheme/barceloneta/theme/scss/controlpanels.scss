@@ -9,6 +9,12 @@ body[class*="-controlpanel"] {
     >header {
       margin-bottom: 2rem;
     }
+    .configlets {
+      .icon {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
   }
   .custom-select {
     width: auto;
