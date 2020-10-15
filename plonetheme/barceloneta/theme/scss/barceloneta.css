@@ -9815,6 +9815,12 @@ body[class*="-controlpanel"] article > header {
   margin-bottom: 2rem;
 }
 
+body[class*="-controlpanel"] .controlPanel .configlets .icon,
+body[class*="-controlpanel"] article .configlets .icon {
+  width: 3rem;
+  height: 3rem;
+}
+
 body[class*="-controlpanel"] .custom-select {
   width: auto;
   display: block;
@@ -10318,7 +10324,6 @@ article > header {
 
 #section-image {
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 #section-leadimage {
@@ -10358,6 +10363,11 @@ article > header {
 
 #section-category {
   margin-bottom: 2rem;
+}
+
+.meta-icon {
+  font-size: 1.5em;
+  line-height: 1;
 }
 
 [class*="contenttype-"]::before,
