@@ -39,7 +39,7 @@
 
     <!-- We can't control the bundle from here due to include. Just hard code -->
     <after css:theme-children="head">
-      <link rel="stylesheet" href="++theme++barceloneta/scss/barceloneta.css" />
+      <link rel="stylesheet" href="++theme++barceloneta/css/barceloneta.css" />
     </after>
 
     <rules css:if-content="#portal-top">
