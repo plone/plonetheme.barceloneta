@@ -14,10 +14,11 @@
     "stylelint-config-twbs-bootstrap": "^2.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.0"
   },
   "scripts": {
-    "watch": "nodemon --watch scss/ --ext scss --exec \"yarn css-main\"",
+    "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
+    "build": "npm-run-all css-compile-main css-prefix-main css-minify-main",
     "css-main": "npm-run-all css-compile-main css-prefix-main css-minify-main",
     "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/barceloneta.scss -o plonetheme/barceloneta/theme/css/",
     "css-prefix-main": "postcss --config postcss.config.js --replace \"scss/*.css\" \"!plonetheme/barceloneta/theme/css/*.min.css\"",
