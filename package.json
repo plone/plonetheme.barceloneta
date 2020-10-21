@@ -14,14 +14,15 @@
     "stylelint-config-twbs-bootstrap": "^2.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.0"
   },
   "scripts": {
-    "watch": "nodemon --watch scss/ --ext scss --exec \"yarn css-main\"",
-    "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 plonetheme/barceloneta/theme/scss/barceloneta.scss -o plonetheme/barceloneta/theme/scss/",
-    "css-lint": "stylelint \"plonetheme/barceloneta/theme/scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
+    "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
+    "build": "npm-run-all css-compile-main css-prefix-main css-minify-main",
     "css-main": "npm-run-all css-compile-main css-prefix-main css-minify-main",
-    "css-minify-main": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output plonetheme/barceloneta/theme/scss/barceloneta.min.css plonetheme/barceloneta/theme/scss/barceloneta.css",
-    "css-prefix-main": "postcss --config postcss.config.js --replace \"plonetheme/barceloneta/theme/scss/*.css\" \"!plonetheme/barceloneta/theme/scss/*.min.css\""
+    "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/barceloneta.scss -o plonetheme/barceloneta/theme/css/",
+    "css-prefix-main": "postcss --config postcss.config.js --replace \"scss/*.css\" \"!plonetheme/barceloneta/theme/css/*.min.css\"",
+    "css-minify-main": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output plonetheme/barceloneta/theme/css/barceloneta.min.css plonetheme/barceloneta/theme/css/barceloneta.css",
+    "css-lint": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache"
   }
 }
