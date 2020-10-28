@@ -83,3 +83,14 @@ article {
   font-size: 1.5em;
   line-height: 1;
 }
+
+.event-summary {
+  margin-bottom: $spacer * 2;
+  .meta-icon {
+    margin-right: $spacer * .5;
+    margin-top: -0.2em;
+  }
+  .meta-label {
+    display: none;
+  }
+}
