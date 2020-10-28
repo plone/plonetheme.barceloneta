@@ -10374,6 +10374,19 @@ article > header {
   line-height: 1;
 }
 
+.event-summary {
+  margin-bottom: 2rem;
+}
+
+.event-summary .meta-icon {
+  margin-right: 0.5rem;
+  margin-top: -0.2em;
+}
+
+.event-summary .meta-label {
+  display: none;
+}
+
 [class*="contenttype-"]::before,
 .contenttype-file #crud-edit-File-widgets-view_title::before {
   font-family: "Fontello";
