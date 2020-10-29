@@ -21,7 +21,9 @@ $grid-main-breakpoint: md!default;
 $nav-main-breakpoint: $grid-main-breakpoint!default;
 
 //*// TYPOGRAPHY
-$font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif!default; // Roboto seems Plone's DIN
+// While Plone Logo uses the DIN Font, we use Roboto, which was designed for Android and so mobile optimized
+// A free DIN variant is available here (TTF only): https://www.1001fonts.com/alte-din-1451-mittelschrift-font.html
+$font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
 $font-family-condensed: "Roboto Condensed", "Arial Narrow", sans-serif!default; //just on toolbar
 $font-family-serif: Georgia, "Times New Roman", Times, serif!default;
 $font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace!default;
