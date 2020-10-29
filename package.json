@@ -14,7 +14,8 @@
     "stylelint-config-twbs-bootstrap": "^2.1.0"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.5.0",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
