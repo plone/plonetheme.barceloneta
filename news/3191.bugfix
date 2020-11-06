@@ -1,0 +1,1 @@
+Also leave #edit-bar intact when copying the toolbar html into the theme using backend.xml, as was fixed two years to in the normal rules.xml. [fredvd]
