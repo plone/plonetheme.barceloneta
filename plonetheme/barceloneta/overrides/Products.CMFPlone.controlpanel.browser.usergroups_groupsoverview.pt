@@ -163,7 +163,7 @@
                             <a href="#"
                                tal:attributes="href python:portal_url+'/@@usergroup-groupmembership?'+view.makeQuery(groupname=group_info['groupid']);
                                                title group_info/description|string:''">
-                               ${group_info/title} <span tal:condition="python:group_info['groupid'] != group_info['title']">(${group_info/groupid})</span>
+                               ${group_info/title} <span class="text-muted" tal:condition="python:group_info['groupid'] != group_info['title']">(${group_info/groupid})</span>
                            </a>
                         </td>
 
