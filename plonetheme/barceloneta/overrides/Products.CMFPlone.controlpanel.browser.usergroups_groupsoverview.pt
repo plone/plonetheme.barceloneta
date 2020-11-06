@@ -67,9 +67,8 @@
             </span>
             <span tal:omit-tag=""
                     i18n:translate="description_groups_management2">
-                The symbol
-                <img i18n:name="image_link_icon"
-                    tal:replace="structure context/site_icon.png" />
+                The symbol 
+                <span i18n:name="image_link_icon"><tal:icon tal:replace="structure python:icons.tag('people', tag_alt='Inherited from Group')" /></span>
                 indicates a role inherited from membership in another group.
             </span>
         </div>
@@ -137,36 +136,24 @@
             </div>
 
 
-            <table class="table table-bordered table-striped table-responsive"
+            <table class="table table-responsive table-bordered table-striped text-center"
                    summary="Select roles for each group"
                    i18n:attributes="summary summary_roles_for_groups;">
-                <tbody>
-
-                    <tal:block tal:condition="search_results">
-                    <tr class="odd">
-                        <th rowspan=""
-                            i18n:translate="listingheader_group_name">
-                            Group Name
-                        </th>
-
-                        <tal:header repeat="portal_role portal_roles">
-                            <th tal:content="portal_role"
-                                i18n:translate="">
-                                Role
-                            </th>
-                        </tal:header>
-
-                        <th rowspan=""
-                            i18n:translate="listingheader_remove">
-                            Remove
-                        </th>
+                <thead tal:condition="search_results">
+                    <tr>
+                        <th  class="text-left" i18n:translate="listingheader_group_name">Group name</th>
+                        <th class="rotate" tal:repeat="portal_role portal_roles"><div tal:content="portal_role" i18n:translate="">Role</div></th>
+                        <th class="rotate bg-danger text-white"><div i18n:translate="listingheader_remove">Remove</div></th>                     
                     </tr>
+                </thead>
+                <tbody>
+                    <tal:block tal:condition="search_results">
 
                     <tal:block repeat="group_info batch">
                     <tr tal:define="oddrow repeat/group_info/odd;"
                         tal:attributes="class python:oddrow and 'odd' or 'even'">
 
-                        <td>
+                        <td class="text-left">
                             <input type="hidden"
                                    name=""
                                    tal:attributes="name string:group_${group_info/groupid}:list"
@@ -176,8 +163,7 @@
                             <a href="#"
                                tal:attributes="href python:portal_url+'/@@usergroup-groupmembership?'+view.makeQuery(groupname=group_info['groupid']);
                                                title group_info/description|string:''">
-                               <tal:block replace="structure context/portal_url/group.png" />&nbsp;
-                               <tal:group tal:replace="group_info/title" /> <tal:groupid tal:condition="python:group_info['groupid'] != group_info['title']">(<tal:id tal:replace="group_info/groupid" />)</tal:groupid>
+                               ${group_info/title} <span tal:condition="python:group_info['groupid'] != group_info['title']">(${group_info/groupid})</span>
                            </a>
                         </td>
 
@@ -202,11 +188,11 @@
                                    tal:condition="python:explicit and not enabled and not inherited"
                                    tal:attributes="name string:group_${group_info/groupid}:list;
                                                    value portal_role" />
-                            <img tal:condition="inherited" tal:replace="structure context/site_icon.png" />
+                            <tal:icon tal:condition="inherited" tal:replace="structure python:icons.tag('people', tag_alt='Inherited from Group')" />
                           </tal:block>
                         </td>
 
-                        <td class="listingCheckbox">
+                        <td class="listingCheckbox bg-danger text-white">
                             <input type="checkbox"
                                    class="noborder notify"
                                    name="delete:list"
@@ -256,8 +242,8 @@
                         name="form.button.Modify"
                         value="Save"
                         i18n:translate=""
-                        i18n:attributes="value label_save;"
-                        >Save</button>
+                        i18n:attributes="value label_apply_changes;"
+                        >Apply changes</button>
             </div>
     </div>
   </article>
