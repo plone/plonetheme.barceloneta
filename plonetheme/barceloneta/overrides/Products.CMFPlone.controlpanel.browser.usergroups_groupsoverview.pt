@@ -192,7 +192,7 @@
                           </tal:block>
                         </td>
 
-                        <td class="listingCheckbox bg-danger text-white">
+                        <td class="listingCheckbox alter-danger">
                             <input type="checkbox"
                                    class="noborder notify"
                                    name="delete:list"
