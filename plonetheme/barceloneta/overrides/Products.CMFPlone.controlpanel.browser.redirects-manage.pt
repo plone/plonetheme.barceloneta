@@ -88,9 +88,8 @@
               class="btn btn-primary context"
               type="submit"
               value="Add"
-              name="form.button.Add"
-              i18n:translate="" >
-                Add
+              name="form.button.Add">
+              <tal:icon tal:replace="structure python:icons.tag('plus', tag_alt='Add')" /> <span i18n:translate="">Add</span>
             </button>
           </div>
 
@@ -99,6 +98,7 @@
 
       <form class="mb-4"
           action="${view/view_url}"
+          tal:condition="python:[x for c, x in enumerate(view.redirects()) if c < 2]"
           method="post">
         <fieldset class="form-group">
           <legend i18n:translate="legend_existing_aliases">
@@ -122,12 +122,11 @@
 
           <div class="formControls">
             <button
-              class="btn btn-danger context"
+              class="btn btn-danger"
               type="submit"
               value="Remove"
-              name="form.button.Remove"
-              i18n:attributes="value" >
-                Remove
+              name="form.button.Remove">
+              <tal:icon tal:replace="structure python:icons.tag('trash', tag_alt='Trash')" /> <span i18n:translate="">Remove</span>  
             </button>
           </div>
 
