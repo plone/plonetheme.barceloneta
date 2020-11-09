@@ -85,7 +85,7 @@
 
           <div class="formControls">
             <button
-              class="btn btn-primary context"
+              class="btn btn-success"
               type="submit"
               value="Add"
               name="form.button.Add">
