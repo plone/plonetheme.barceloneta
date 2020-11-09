@@ -135,12 +135,11 @@
           </div>
 
           <div class="formControls">
-            <button class="btn btn-primary context"
+            <button class="btn btn-success"
               type="submit"
               value="Add"
-              name="form.button.Add"
-              i18n:translate="" >
-                Add
+              name="form.button.Add">
+              <tal:icon tal:replace="structure python:icons.tag('plus', tag_alt='Add')" /> <span i18n:translate="">Add</span>
             </button>
           </div>
 
@@ -202,12 +201,11 @@
 
           <div class="formControls">
             <button
-              class="btn btn-primary context"
+              class="btn btn-success"
               type="submit"
               value="Upload"
-              name="form.button.Upload"
-              i18n:translate="" >
-                Upload
+              name="form.button.Upload">
+              <tal:icon tal:replace="structure python:icons.tag('upload', tag_alt='Upload')" /> <span i18n:translate="">Upload</span>
             </button>
           </div>
 
@@ -229,9 +227,8 @@
                 class="btn btn-primary context"
                 type="submit"
                 value="Download all as CSV"
-                name="form.button.Download"
-                i18n:translate="" >
-                Download all as CSV
+                name="form.button.Download">                
+                <tal:icon tal:replace="structure python:icons.tag('download', tag_alt='Download')" /> <span i18n:translate="">Download all as CSV</span>
             </button>
           </div>
 
@@ -267,12 +264,11 @@
 
           <div class="formControls mb-4">
             <button
-              class="btn btn-primary context"
+              class="btn btn-primary"
               type="submit"
               value="Filter"
-              name="form.button.filter"
-              i18n:translate="">
-                Filter
+              name="form.button.filter">
+              <tal:icon tal:replace="structure python:icons.tag('filter', tag_alt='Filter')" /> <span i18n:translate="">Filter</span>
             </button>
           </div>
 
@@ -283,7 +279,7 @@
                tal:condition="error" />
 
         <div class="form-group mb-4">
-          <p i18n:translate="">Alternative url path &rarr; target url path (date and time of creation, manually created yes/no) </p>
+          <p><small i18n:translate="">Alternative url path &rarr; target url path <span class="text-muted">(date and time of creation, manually created yes/no)</span></small></p>
           <tal:redirects repeat="redirect batch">
             <div class="form-check">
               <label class="form-check-label">
@@ -292,7 +288,7 @@
                   class="form-check-input noborder"
                   name="redirects:tuple"
                   value="${redirect/redirect}" />
-              ${redirect/path} &rarr; ${redirect/redirect-to} (${redirect/datetime}, ${redirect/manual})
+              ${redirect/path} &rarr; ${redirect/redirect-to} <span class="text-muted">(${redirect/datetime}, ${redirect/manual})</span>
               </label>
             </div>
           </tal:redirects>
@@ -305,19 +301,18 @@
         </div>
 
           <div class="formControls">
-            <button class="btn btn-danger context"
+            <button class="btn btn-danger"
               type="submit"
               value="Remove selected"
               name="form.button.Remove"
               i18n:translate="" >
-                Remove selected
+                <tal:icon tal:replace="structure python:icons.tag('trash', tag_alt='Trash')" /> <span i18n:translate="">Remove selected</span>                
             </button>
-            <button class="btn btn-danger context"
+            <button class="btn btn-danger"
               type="submit"
               value="Remove all that match filter"
-              name="form.button.MatchRemove"
-              i18n:translate="" >
-                Remove all that match filter
+              name="form.button.MatchRemove">
+                <tal:icon tal:replace="structure python:icons.tag('trash', tag_alt='Trash')" /> <span i18n:translate="">Remove all that match filter</span>
             </button>
           </div>
 
