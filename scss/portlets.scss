@@ -42,9 +42,9 @@ $plone-portlet-list-bullet: #64bee8!default;
     padding: 0;
 
     img {
-      &.pull-right {
-        @include float-right;
-      }
+      // &.pull-right {
+      //   @include float-right;
+      // }
     }
 
     >ul {
