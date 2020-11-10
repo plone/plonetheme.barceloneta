@@ -49,7 +49,7 @@
             class="configlets list-group list-group-flush">
           <tal:products tal:repeat="product products">
           <li tal:define="pid product/id;" class="list-group-item">
-            <form action="upgrade_products" method="post" class="pull-right">
+            <form action="upgrade_products" method="post" class="float-right">
               <input type="hidden"
                       name="prefs_reinstallProducts:list"
                       tal:attributes="value pid;" />
@@ -125,7 +125,7 @@
         <ul class="configlets list-group list-group-flush">
           <li tal:repeat="product products" class="list-group-item">
           <tal:product define="pid product/id">
-            <form action="install_products" method="post" class="pull-right">
+            <form action="install_products" method="post" class="float-right">
                 <input type="hidden"
                         name="install_product"
                         tal:attributes="value pid;" />
@@ -167,7 +167,7 @@
         <ul class="configlets list-group list-group-flush">
           <li tal:repeat="product products" class="list-group-item">
           <tal:product define="pid product/id">
-            <form action="uninstall_products" method="post" class="pull-right">
+            <form action="uninstall_products" method="post" class="float-right">
               <input type="hidden"
                     name="uninstall_product"
                     tal:attributes="value pid;" />

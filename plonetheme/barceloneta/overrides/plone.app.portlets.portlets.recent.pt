@@ -30,7 +30,7 @@
                         item_class python:'contenttype-' + normalizeString(obj.portal_type) if not supress_icon else '';">
           <a href="" tal:attributes="href string:${obj/getURL}/view; title obj/Description; class string:$item_wf_state_class tile $item_class">
             <img class="mime-icon" tal:condition="python:item_type =='File' and not supress_icon" tal:attributes="href obj/getURL; src python:view.getMimeTypeIcon(obj);">
-            <img tal:condition="python:obj.getIcon and thumb_scale and not supress_thumb and image_scale" tal:replace="structure python:image_scale.tag(obj, 'image', scale=thumb_scale, css_class='pull-right thumb-'+thumb_scale)" />
+            <img tal:condition="python:obj.getIcon and thumb_scale and not supress_thumb and image_scale" tal:replace="structure python:image_scale.tag(obj, 'image', scale=thumb_scale, css_class='float-right thumb-'+thumb_scale)" />
             <span tal:content="obj/pretty_title_or_id">Title</span>
           </a>
           <time tal:content="python:toLocalizedTime(obj.ModificationDate)">May 5</time>

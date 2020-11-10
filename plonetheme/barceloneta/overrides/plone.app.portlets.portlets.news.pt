@@ -33,7 +33,7 @@
               tal:attributes="href obj/getURL;
                               title obj/Description">
             <img tal:condition="python:obj.getIcon and thumb_scale"
-                tal:replace="structure python:image_scale.tag(obj, 'image', scale=thumb_scale, css_class='pull-right thumb-'+thumb_scale)" />
+                tal:replace="structure python:image_scale.tag(obj, 'image', scale=thumb_scale, css_class='float-right thumb-'+thumb_scale)" />
             <span tal:replace="obj/pretty_title_or_id">Plone 5.1 announced!</span>
           </a>
           <time class="portletItemDetails"
