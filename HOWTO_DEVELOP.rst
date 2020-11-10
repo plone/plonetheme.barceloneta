@@ -1,11 +1,11 @@
 In order to develop plonetheme.barceloneta you need to execute on the root of
 the package::
 
-     yarn
+     npm install
 
 After executing these commands you can run grunt to watch for any less changes::
 
-     yarn watch
+     npm run watch
 
 This will make sure that the many .scss files are compiled to .css on the fly and then served up from the theme.
 
