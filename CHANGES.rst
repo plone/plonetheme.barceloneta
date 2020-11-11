@@ -9,6 +9,15 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.10 (2020-11-11)
+-------------------
+
+Bug fixes:
+
+
+- Also leave #edit-bar intact when copying the toolbar html into the theme using backend.xml, as was fixed two years to in the normal rules.xml. [fredvd] (#3191)
+
+
 2.1.9 (2020-08-14)
 ------------------
 
