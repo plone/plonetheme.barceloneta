@@ -2,10 +2,8 @@
 //
 // Settings for the `<body>` element.
 
-$theme-colors: (primary: $plone-link-color)!default;
+$primary: $plone-link-color!default;
 
-// $body-bg: $plone-body-bg!default;
-$body-color: $dark!default;
 
 $spacer: 1rem!default;
 
@@ -13,9 +11,9 @@ $spacer: 1rem!default;
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns: 12!default;
-$grid-gutter-width: 30px!default;
-$grid-row-columns: 6!default;
+$grid-columns:                12 !default;
+$grid-gutter-width:           1.5rem !default;
+$grid-row-columns:            6 !default;
 
 $grid-main-breakpoint: md!default;
 $nav-main-breakpoint: $grid-main-breakpoint!default;
@@ -26,9 +24,8 @@ $nav-main-breakpoint: $grid-main-breakpoint!default;
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
 $font-family-condensed: "Roboto Condensed", "Arial Narrow", sans-serif!default; //just on toolbar
 $font-family-serif: Georgia, "Times New Roman", Times, serif!default;
-$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace!default;
-$font-family-base: $font-family-sans-serif!default;
-
+$font-family-base:            var(--bs-font-sans-serif) !default;
+$font-family-code:            var(--bs-font-monospace) !default;
 
 $font-weight-lighter: lighter!default;
 $font-weight-light: 300!default;
