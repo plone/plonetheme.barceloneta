@@ -1,0 +1,110 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/@@main_template/macros/master"
+    i18n:domain="plone">
+<body>
+
+<metal:content-core fill-slot="content-core">
+<metal:block define-macro="content-core">
+
+  <div metal:define-macro="text-field-view" id="parent-fieldname-text" class="stx" tal:define="text view/text" tal:condition="text" tal:attributes="class view/text_class">
+    <div metal:define-slot="inside" tal:replace="structure text">The body</div>
+  </div>
+
+  <metal:listingmacro define-macro="listing">
+  <tal:results define="batch view/batch">
+    <tal:listing condition="batch">
+
+      <div metal:use-macro="context/batch_macros/macros/navigation" />
+
+      <div class="table-responsive">
+
+        <table class="table" tal:define="thumb_scale_table view/get_thumb_scale_table; img_class python:'thumb-%s float-right' % thumb_scale_table; showicons  view/show_icons;" summary="Content listing" i18n:attributes="summary summary_content_listing;">
+
+          <thead>
+            <tr>
+              <th class="text-nowrap"></th>
+              <th class="text-nowrap" tal:repeat="field view/tabular_fields" tal:content="python:view.tabular_field_label(field)">Field name</th>
+              <th class="text-nowrap" i18n:translate="image">Image</th>
+            </tr>
+          </thead>
+
+          <tbody tal:define="portal context/@@plone_portal_state/portal; image_scale portal/@@image_scale">
+            <tal:entries tal:repeat="item batch">
+              <tal:block tal:define="item_url item/getURL;
+                                      item_id item/getId;
+                                      item_title item/Title;
+                                      item_title python:item_title or item_id;
+                                      item_description item/Description;
+                                      item_type item/PortalType;
+                                      item_type_class python:'contenttype-' + view.normalizeString(item_type) if showicons else '';
+                                      item_wf_state item/review_state;
+                                      item_wf_state_class python:'state-' + view.normalizeString(item_wf_state);
+                                      item_creator item/Creator;
+                                      item_has_image python:item.getIcon;
+                                      item_link python:item_type in view.use_view_action and item_url+'/view' or item_url;
+                                      item_mime_type item/mime_type;
+                                      item_mime_type_icon python: 'mimetype-' + item_mime_type;
+                                      ">
+
+                <tr metal:define-macro="listitem" tal:define="oddrow repeat/item/odd;" tal:attributes="class python: oddrow and 'even' or 'odd'">
+
+                  <td>
+                    <tal:icon tal:condition="python: item_type == 'File'" tal:replace="structure python:icons.tag(item_mime_type_icon)" />
+                    <tal:icon tal:condition="python: item_type != 'File'" tal:replace="structure python:icons.tag(item_type_class)" />
+                  </td>
+
+                  <tal:block tal:repeat="field view/tabular_fields">
+
+                  <td class="text-nowrap" tal:condition="python:field not in ['Title', 'Creator', 'getIcon']" tal:define="field_data python:view.tabular_fielddata(item, field)">
+                    <tal:block tal:replace="field_data/value" />
+                  </td>
+
+                  <td class="text-nowrap" tal:condition="python:field == 'Title'">
+                    <a tal:attributes="href item_link; class string:$item_type_class $item_wf_state_class url; title item_type" tal:content="item_title">
+                      Item Title
+                    </a>
+                  </td>
+
+                  <td class="text-nowrap" tal:condition="python:field == 'Creator'" tal:define="author python:view.pas_member.info(item_creator); name python:author['fullname'] or author['username']">
+                    <a tal:condition="author" tal:attributes="href string:${view/navigation_root_url}/author/${item_creator}" tal:content="name">Jos Henken</a>
+                  </td>
+
+                  </tal:block>
+
+                  <td>
+                    <a tal:condition="python:item_has_image and thumb_scale_table">
+                      <img tal:attributes="href item_link" tal:replace="structure python:image_scale.tag(item, 'image', scale=thumb_scale_table, css_class=img_class)" />
+                    </a>                    
+                  </td>
+
+                </tr>
+
+              </tal:block>
+            </tal:entries>
+          </tbody>
+        </table>
+      
+      </div>
+
+      <div metal:use-macro="context/batch_macros/macros/navigation" />
+
+    </tal:listing>
+
+    <metal:empty metal:define-slot="no_items_in_listing">
+    <p tal:condition="not: batch" tal:content="view/no_items_message">
+      There are currently no items in this folder.
+    </p>
+    </metal:empty>
+
+  </tal:results>
+  </metal:listingmacro>
+
+</metal:block>
+</metal:content-core>
+
+</body>
+</html>
