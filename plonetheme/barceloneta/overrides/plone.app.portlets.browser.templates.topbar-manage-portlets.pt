@@ -11,7 +11,7 @@
     <div class="quicknav-wrapper">
       <form method="post"
           tal:attributes="action context/absolute_url">
-        <select id="quicknav" class="switch-portlet-manager custom-select w-auto ml-1 float-right" name=":action"
+        <select id="quicknav" class="switch-portlet-manager form-select w-auto ml-1 float-right" name=":action"
             tal:define="portlet_menu context/@@view_get_menu/plone_contentmenu_portletmanager"
             tal:attributes="data-context-url context/absolute_url">
           <option tal:attributes="value python:request['ACTUAL_URL']"

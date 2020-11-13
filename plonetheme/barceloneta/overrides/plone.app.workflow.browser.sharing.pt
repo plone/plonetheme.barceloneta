@@ -5,14 +5,14 @@
 </head>
 
 <body>
-    <metal:main fill-slot="main" 
+    <metal:main fill-slot="main"
                 tal:define="context_state context/@@plone_context_state;
                             portal_state context/@@plone_portal_state;
                             portal portal_state/portal;
                             portal_url portal_state/portal_url;
                             checkPermission nocall:context/portal_membership/checkPermission;
                             can_view_groups python:checkPermission('Plone Site Setup: Users and Groups', portal)">
-           
+
         <article id="content">
             <header>
                 <div class="alert alert-info" role="alert" tal:condition="context_state/is_default_page">
@@ -40,24 +40,24 @@
                 <div tal:replace="structure provider:plone.abovecontentbody" tal:condition="not:ajax_load" />
 
                 <div id="content-core">
-                    <form method="post" 
+                    <form method="post"
                           class="form-inline pb-4 pt-3"
                           tal:attributes="action string:${context/absolute_url}/@@sharing">
 
                         <input type="hidden" name="form.submitted:boolean" value="True" />
 
-                        <div class="form-group">
-                            <input type="text" 
-                                   id="sharing-user-group-search" size="30" 
+                        <div class="mb-3">
+                            <input type="text"
+                                   id="sharing-user-group-search" size="30"
                                    name="search_term"
-                                    title="Search for user or group" 
+                                    title="Search for user or group"
                                     placeholder="Search for user or group"
                                     i18n:attributes="title; placeholder" class="form-control"
                                     value="${request/search_term|nothing}" />
-                            <button type="submit" 
-                                    id="sharing-search-button" 
+                            <button type="submit"
+                                    id="sharing-search-button"
                                     name="form.button.Search" value="Search"
-                                    class="btn btn-primary" 
+                                    class="btn btn-primary"
                                     i18n:attributes="value label_search"
                                     i18n:translate="label_search">Search</button>
                         </div>
@@ -133,12 +133,12 @@
                             </table>
                         </div>
 
-                        <div class="form-group" id="field-inherit" tal:condition="view/can_edit_inherit">
-                            <div class="custom-control custom-checkbox">
-                                <input class="custom-control-input single-checkbox-bool-widget bool-field"
+                        <div class="mb-3" id="field-inherit" tal:condition="view/can_edit_inherit">
+                            <div class="form-check">
+                                <input class="form-check-input single-checkbox-bool-widget bool-field"
                                     type="checkbox" name="inherit:boolean" value="1" checked="checked" id="inherit"
                                     tal:attributes="checked python:view.inherited() and 'checked' or None" />
-                                <label class="custom-control-label" for="inherit"
+                                <label class="form-check-label" for="inherit"
                                     i18n:translate="label_inherit_local_roles">
                                     Inherit permissions from higher levels
                                 </label>
@@ -156,13 +156,13 @@
                                 </small>
                             </div>
                         </div>
-                        <button id="sharing-save-button" 
-                                class="btn btn-primary" 
+                        <button id="sharing-save-button"
+                                class="btn btn-primary"
                                 type="submit"
-                                name="form.button.Save" 
+                                name="form.button.Save"
                                 i18n:translate="value label_save">Save</button>
-                        <button class="btn btn-secondary" 
-                                type="submit" 
+                        <button class="btn btn-secondary"
+                                type="submit"
                                 name="form.button.Cancel"
                                 i18n:translate="value label_cancel">Cancel</button>
                         <input tal:replace="structure context/@@authenticator/authenticator" />

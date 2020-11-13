@@ -56,7 +56,7 @@
       <form class="mb-4"
           action="${view/view_url}"
           method="post">
-        <fieldset class="form-group">
+        <fieldset class="mb-3">
           <legend i18n:translate="add_alias">
             Add a new alternative url
           </legend>
@@ -64,11 +64,11 @@
             To change the primary url of content, use Actions > Rename.
           </p>
 
-          <div class="field form-group"
+          <div class="field mb-3"
                tal:define="error view/form_errors/redirection|nothing"
-               tal:attributes="class python:error and 'field form-group error' or 'field form-group'">
+               tal:attributes="class python:error and 'field mb-3 error' or 'field mb-3'">
 
-            <label for="redirection">
+            <label class="form-label" for="redirection">
               <span i18n:translate="label_alias">Alternative url path</span>
               <span
                 class="required fieldRequired"
@@ -99,11 +99,11 @@
 
           </div>
 
-          <div class="field form-group"
+          <div class="field mb-3"
                tal:define="error view/form_errors/target_path|nothing"
-               tal:attributes="class python:error and 'field form-group error' or 'field form-group'">
+               tal:attributes="class python:error and 'field mb-3 error' or 'field mb-3'">
 
-            <label for="target_path">
+            <label class="form-label" for="target_path">
               <span i18n:translate="label_target_path">Target Path</span>
               <span
                   class="required fieldRequired"
@@ -151,7 +151,7 @@
           action="${view/view_url}"
           method="post"
           enctype="multipart/form-data">
-        <fieldset class="form-group">
+        <fieldset class="mb-3">
           <legend i18n:translate="legend_bulk_upload">
             Bulk-upload alternative urls
           </legend>
@@ -170,31 +170,29 @@
             </code>
           </p>
 
-          <div class="field form-group"
+          <div class="field mb-3"
                tal:define="error view/form_errors/file|nothing"
-               tal:attributes="class python:error and 'field form-group error' or 'field form-group'">
+               tal:attributes="class python:error and 'field mb-3 error' or 'field mb-3'">
 
-            <div class="custom-file">
-              <label for="file" class="custom-file-label">
-                <span i18n:translate="label_csv_file">CSV file</span>
-                <span
-                  class="required fieldRequired"
-                  title="Required"
-                  i18n:attributes="title label_required">
-                </span>
-              </label>
+            <label class="form-label" for="file" class="form-label">
+              <span i18n:translate="label_csv_file">CSV file</span>
+              <span
+                class="required fieldRequired"
+                title="Required"
+                i18n:attributes="title label_required">
+              </span>
+            </label>
 
-              <input class="custom-file-input"
-                type="file"
-                name="file"
-                required
-                tal:attributes="class python:error and 'form-control is-invalid' or 'form-control'" />
+            <input class="form-control"
+              type="file"
+              name="file"
+              required
+              tal:attributes="class python:error and 'form-control is-invalid' or 'form-control'" />
 
-              <div class="invalid-feedback"
-                tal:content="error"
-                tal:condition="error">
-                  Validation error output
-              </div>
+            <div class="invalid-feedback"
+              tal:content="error"
+              tal:condition="error">
+                Validation error output
             </div>
 
           </div>
@@ -216,24 +214,24 @@
           action="${view/view_url}#manage-existing-aliases"
           method="post"
           id="manage-existing-aliases">
-        <fieldset class="form-group"
+        <fieldset class="mb-3"
           tal:define="batch view/redirects">
           <legend i18n:translate="legend_all_existing_aliases">
             All existing alternative urls for this site
           </legend>
 
-          <div class="form-group mb-4">
+          <div class="mb-4">
             <button
                 class="btn btn-primary context"
                 type="submit"
                 value="Download all as CSV"
-                name="form.button.Download">                
+                name="form.button.Download">
                 <tal:icon tal:replace="structure python:icons.tag('download', tag_alt='Download')" /> <span i18n:translate="">Download all as CSV</span>
             </button>
           </div>
 
-          <div class="form-group">
-            <label for="filter-existing-aliases-q" i18n:translate="">Filter by prefix</label>
+          <div class="mb-3">
+            <label class="form-label" for="filter-existing-aliases-q" i18n:translate="">Filter by prefix</label>
             <input class="form-control"
                 type="text"
                 name="q"
@@ -242,8 +240,8 @@
                 tal:attributes="value python:request.form.get('q', '/')"/>
           </div>
 
-          <div class="form-group">
-            <label for="filter-existing-aliases-manual" i18n:translate="">Manually or automatically added?</label>
+          <div class="mb-3">
+            <label class="form-label" for="filter-existing-aliases-manual" i18n:translate="">Manually or automatically added?</label>
             <div class="form-check"
             id="filter-existing-aliases-manual"
             tal:define="chosen python:request.form.get('manual', '')">
@@ -256,8 +254,8 @@
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="filter-existing-aliases-date" i18n:translate="">Created before</label>
+        <div class="mb-3">
+          <label class="form-label" for="filter-existing-aliases-date" i18n:translate="">Created before</label>
           <input type="date" id="filter-existing-aliases-date" class="form-control" name="datetime"
           tal:attributes="value python:request.form.get('datetime', '')"/>
         </div>
@@ -272,13 +270,13 @@
             </button>
           </div>
 
-          <div class="field form-group"
+          <div class="field mb-3"
                tal:define="error view/form_errors/remove_redirects|nothing"
-               tal:attributes="class python:error and 'field form-group error' or 'field form-group'"
+               tal:attributes="class python:error and 'field mb-3 error' or 'field mb-3'"
                tal:content="error"
                tal:condition="error" />
 
-        <div class="form-group mb-4">
+        <div class="mb-4">
           <p><small i18n:translate="">Alternative url path &rarr; target url path <span class="text-muted">(date and time of creation, manually created yes/no)</span></small></p>
           <tal:redirects repeat="redirect batch">
             <div class="form-check">
@@ -306,7 +304,7 @@
               value="Remove selected"
               name="form.button.Remove"
               i18n:translate="" >
-                <tal:icon tal:replace="structure python:icons.tag('trash', tag_alt='Trash')" /> <span i18n:translate="">Remove selected</span>                
+                <tal:icon tal:replace="structure python:icons.tag('trash', tag_alt='Trash')" /> <span i18n:translate="">Remove selected</span>
             </button>
             <button class="btn btn-danger"
               type="submit"

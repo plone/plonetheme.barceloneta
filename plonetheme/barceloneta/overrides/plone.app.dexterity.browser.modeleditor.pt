@@ -49,9 +49,9 @@
         tal:define="authenticator context/@@authenticator/authenticator | nothing">
       <input tal:replace="structure authenticator" />
       <input type="hidden" id="savesource" name="source" value="" />
-      <div class="form-group">
+      <div class="mb-3">
          <button class="btn btn-primary" type="submit" name="form.button.save" disabled="disabled" i18n:translate="">Save</button>
-         
+
       </div>
     </form>
 

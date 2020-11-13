@@ -59,7 +59,7 @@
               indicates a role inherited from membership in a group.
         </div>
       </header>
-    
+
     <div id="content-core">
 
       <div class="autotabs">
@@ -90,8 +90,8 @@
                           many_users view/many_users">
           <input type="hidden" name="form.submitted" value="1" />
 
-        <div class="form-group">
-          <label for="quickSearch" i18n:translate="label_user_search">User Search</label>
+        <div class="mb-3">
+          <label class="form-label" for="quickSearch" i18n:translate="label_user_search">User Search</label>
           <div class="field input-group">
                 <input class="form-control quickSearch"
                         id="quickSearch"
@@ -127,7 +127,7 @@
                   <th class="rotate" tal:repeat="portal_role portal_roles"><div tal:content="portal_role" i18n:translate="">Role</div></th>
                   <th class="rotate alert-warning"><div i18n:translate="listingheader_reset_password">Reset Password</div></th>
                   <th class="rotate alert-danger"><div i18n:translate="listingheader_remove">Remove</div></th>
-                </tr>        
+                </tr>
               </thead>
               <tbody>
                   <tal:loop repeat="user batch">

@@ -7,7 +7,7 @@
   <div class="field"
        tal:define="error widget/error;
                    hidden python:widget.mode == 'hidden'"
-       tal:attributes="class python:'form-group field' + (error and 'alert alert-warning' or '')">
+       tal:attributes="class python:'mb-3 field' + (error and 'alert alert-warning' or '')">
 
     <span class="fieldRequired" title="Required"
           tal:condition="python:widget.required and not hidden"
@@ -22,7 +22,7 @@
 
     <div class="widget">
       <input type="text" tal:replace="structure widget/render" />
-      <div class="custom-control"><small class="form-text text-muted"
+      <div class="form-control"><small class="form-text text-muted"
         tal:define="description widget/field/description"
         i18n:translate=""
         tal:content="description"
