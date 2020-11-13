@@ -10296,7 +10296,7 @@ fieldset:disabled .btn {
   margin-bottom: 1rem;
 }
 
-.required:after {
+label .required:after {
   color: #dc3545;
   content: '•';
   font-size: 1.25rem;
