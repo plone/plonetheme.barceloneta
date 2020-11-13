@@ -149,7 +149,7 @@
                 tal:content="product/description">add-on description</tal:span>
               <em class="discreet"> – (<span tal:replace="pid">plugin.app.name</span> <span tal:replace="product/version">1.0</span>)</em>
             </div>
-            <div class="alert alert-warning"
+            <div class="alert alert-warning mt-2 mb-2"
                 role="status"
                 tal:condition="not:product/uninstall_profile">
               <strong i18n:translate="">Warning</strong>

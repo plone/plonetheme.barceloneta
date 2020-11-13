@@ -25,8 +25,8 @@
           </metal:title>
 
           <metal:name metal:fill-slot="name">
-              <div class="form-group">
-                  <label for="addname">
+              <div class="mb-3">
+                  <label class="form-label" for="addname">
                     <span i18n:translate="label_name">Name</span>
                     <span class="required" i18n:attributes="title title_required;" title="Required"></span>
                   </label>
@@ -83,8 +83,8 @@
                 tal:define="targetobject context/portal_groupdata;">
 
               <fieldset>
-                  <div class="form-group" metal:define-slot="name">
-                     <label for="groupname" i18n:translate="label_name">Name</label>
+                  <div class="mb-3" metal:define-slot="name">
+                     <label class="form-label" for="groupname" i18n:translate="label_name">Name</label>
                      <p>
                       <strong class="" tal:content="view/groupname | string:"/>
                      </p>
@@ -102,12 +102,12 @@
                    </tal:set>
 
                   <tal:properties repeat="property targetobject/propertyMap">
-                      <div class="field form-group"
+                      <div class="field mb-3"
                            tal:define="id property/id;
                                        type property/type;
                                        propertyvalue python:view.get_group_property(id);">
 
-                      <label for="value"
+                      <label class="form-label" for="value"
                               tal:attributes="for id"
                               i18n:translate=""
                               tal:content="python:targetobject.propertyLabel(id).capitalize()">Property Value</label>

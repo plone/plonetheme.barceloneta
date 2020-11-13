@@ -16,3 +16,7 @@ TO DO:
 - Buttons
   - secondary lighter style
   - link-parent
+
+- Forms
+  - https://v5.getbootstrap.com/docs/5.0/migration/#forms-2
+  - Form labels now require the .form-label class.

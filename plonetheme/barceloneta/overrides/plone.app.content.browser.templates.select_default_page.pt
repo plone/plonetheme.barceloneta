@@ -53,7 +53,7 @@
 
                 </dl>
 
-              <div class="formControls form-group">
+              <div class="formControls mb-3">
                 <button class="context btn btn-primary"
                        type="submit"
                        name="form.buttons.Save"
@@ -72,7 +72,7 @@
                  There are no items in this folder that can be selected as
                  a default view page.
               </div>
-              <div class="formControls form-group">
+              <div class="formControls mb-3">
                     <button class="context btn btn-primary"
                        type="submit"
                        name="form.button.Cancel"
