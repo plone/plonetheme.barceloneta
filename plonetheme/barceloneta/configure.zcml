@@ -29,14 +29,6 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
-  <genericsetup:registerProfile
-      name="registerless"
-      title="Barceloneta Theme - Register less resources as variables"
-      directory="profiles/registerless"
-      description='This enables the compilation with the default scripts for custom Diazo themes.'
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
-
   <!-- Diazo themes -->
   <plone:static directory="theme" name="barceloneta" type="theme"/>
 
