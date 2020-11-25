@@ -44,7 +44,6 @@ setup(name='plonetheme.barceloneta',
           'setuptools',
           'plone.app.theming',
           'plone.batching >1.0.999',
-          'z3c.jbot',
       ],
       extras_require={
           'test': [
