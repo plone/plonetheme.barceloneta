@@ -10337,8 +10337,9 @@ body[class*="-controlpanel"] article > header {
   margin-bottom: 2rem;
 }
 
-body[class*="-controlpanel"] .controlPanel .configlets .icon,
-body[class*="-controlpanel"] article .configlets .icon {
+body[class*="-controlpanel"] .controlPanel .configlets .icon, body[class*="-controlpanel"] .controlPanel .configlets .bi,
+body[class*="-controlpanel"] article .configlets .icon,
+body[class*="-controlpanel"] article .configlets .bi {
   width: 3rem;
   height: 3rem;
 }
