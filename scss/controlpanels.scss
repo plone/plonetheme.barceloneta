@@ -16,6 +16,15 @@ body[class*="-controlpanel"] {
       }
     }
   }
+  .prefs-configlet {
+    a {
+      display: flex;
+      align-items: center;
+      .icon, .bi {
+        margin-right: 0.5rem;
+      }
+    }
+  }
   .custom-select {
     width: auto;
     display: block;
