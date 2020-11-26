@@ -10344,6 +10344,15 @@ body[class*="-controlpanel"] article .configlets .bi {
   height: 3rem;
 }
 
+body[class*="-controlpanel"] .prefs-configlet a {
+  display: flex;
+  align-items: center;
+}
+
+body[class*="-controlpanel"] .prefs-configlet a .icon, body[class*="-controlpanel"] .prefs-configlet a .bi {
+  margin-right: 0.5rem;
+}
+
 body[class*="-controlpanel"] .custom-select {
   width: auto;
   display: block;
