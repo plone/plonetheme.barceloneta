@@ -33,7 +33,7 @@
         &:hover,
         &:focus {
           color: white;
-          background-color: $sitenav-link-hover-bg;
+          background-color: $link-hover-color;
         }
       }
 
@@ -76,11 +76,12 @@
         hyphens: auto;
         word-break: break-word;
         background-color: $sitenav-bg;
+        text-decoration: none;
 
         &:hover,
         &:focus {
           text-decoration: none;
-          background-color: $sitenav-link-hover-bg;
+          background-color: $link-hover-color;
         }
 
       }
