@@ -10,7 +10,7 @@
   <before theme-children="//*[@id='portal-column-content']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-content']/@class" />
-    <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-12 col-md-6</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-12 col-md-6 order-md-2</xsl:if>
     <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-12 col-md-9 </xsl:if>
     <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-9</xsl:if>
     <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-12</xsl:if>
@@ -21,8 +21,8 @@
   <before theme-children="//*[@id='portal-column-one']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-one']/@class" />
-    <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3</xsl:if>
-    <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3 order-md-1</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 order-md-1</xsl:if>
   </xsl:attribute></before>
 
   <!-- ## Configure bootstrap grid for the right column (column-two), depnding on existing column's left and right: ## -->
@@ -30,7 +30,7 @@
   <before theme-children="//*[@id='portal-column-two']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-two']/@class" />
-    <xsl:if test="//aside[@id='portal-column-one']">col-xs-12 col-sm-6 col-md-3</xsl:if>
-    <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-12 col-md-3</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-one']">col-xs-12 col-sm-6 col-md-3 order-md-3</xsl:if>
+    <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-12 col-md-3 order-md-3</xsl:if>
   </xsl:attribute></before>
 </rules>
