@@ -4661,9 +4661,10 @@ fieldset:disabled .btn {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0;
+  padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   list-style: none;
+  background-color: #e9ecef;
 }
 
 .breadcrumb-item + .breadcrumb-item {
@@ -10875,6 +10876,7 @@ body[class*="-controlpanel"] textarea.form-control {
 }
 
 #plone-breadcrumb {
+  background-color: #e9ecef;
   margin-bottom: 2rem;
 }
 
