@@ -1,9 +1,9 @@
 .card-light {
   border: none;
+}
 
-  .card-body {
-    padding: 0;
-  }
+.card-light .card-body {
+  padding: 0;
 }
 
 .card-icon {
