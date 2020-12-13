@@ -5,32 +5,42 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <!-- ## Configure bootstrap grid for content column, depnding on existing columns left and right: ## -->
+
+  <!-- this is done in plone.app.layout.globals.LayoutPolicy.bodyClass(), so we don't need to use xsl at all -->
+  <!-- this adds CSS marker classes to the body tag, so we can set grid definitionas via SCSS mixins opr CSS Grid-->
+  <!-- <before theme-children="/html/body" method="raw">
+    <xsl:attribute name="class"><xsl:value-of select="/html/body/@class" /><xsl:if css:test="#portal-column-one"> col-one</xsl:if><xsl:if css:test="#portal-column-content"> col-content</xsl:if><xsl:if css:test="#portal-column-two"> col-two</xsl:if></xsl:attribute>
+  </before> -->
+
+
+  <!-- == Keeping this as an example or for when your CSS framework does not provide SCSS/LESS mixins to define the grid settings == -->
+
+  <!-- ## Configure bootstrap grid markup classes for content column, depending on existing columns left and right: ## -->
   <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
-  <before theme-children="//*[@id='portal-column-content']"
+  <!-- <before theme-children="//*[@id='portal-column-content']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-content']/@class" />
     <xsl:if test="//aside[@id='portal-column-one'] and //aside[@id='portal-column-two']">col-xs-12 col-sm-12 col-md-6 order-md-2</xsl:if>
     <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-12 col-md-9 </xsl:if>
     <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-9</xsl:if>
     <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-12</xsl:if>
-  </xsl:attribute></before>
+  </xsl:attribute></before> -->
 
   <!-- ## Configure bootstrap grid for the left column (column-one), depnding on existing column's left and right: ## -->
   <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
-  <before theme-children="//*[@id='portal-column-one']"
+  <!-- <before theme-children="//*[@id='portal-column-one']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-one']/@class" />
     <xsl:if test="//aside[@id='portal-column-two']">col-xs-12 col-sm-6 col-md-3 order-md-1</xsl:if>
     <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 order-md-1</xsl:if>
-  </xsl:attribute></before>
+  </xsl:attribute></before>-->
 
   <!-- ## Configure bootstrap grid for the right column (column-two), depnding on existing column's left and right: ## -->
   <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
-  <before theme-children="//*[@id='portal-column-two']"
+  <!-- <before theme-children="//*[@id='portal-column-two']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-two']/@class" />
     <xsl:if test="//aside[@id='portal-column-one']">col-xs-12 col-sm-6 col-md-3 order-md-3</xsl:if>
     <xsl:if test="//aside[@id='portal-column-two'] and not(//aside[@id='portal-column-one'])">col-xs-12 col-sm-12 col-md-3 order-md-3</xsl:if>
-  </xsl:attribute></before>
+  </xsl:attribute></before>-->
 </rules>
