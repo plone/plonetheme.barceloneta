@@ -5,7 +5,8 @@
 }
 
 
-label .required:after {
+label .required:after,
+label.required:after {
     color: $danger;
     content: '•';
     font-size:$font-size-lg;
