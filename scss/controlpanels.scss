@@ -41,15 +41,16 @@ body[class*="-controlpanel"] {
 .template-usergroup-userprefs,
 .template-usergroup-groupprefs {
   table {
-    th.rotate {      
-      height: 10rem;
+    th.rotate {
+      height: 12rem;
       padding-bottom: 1rem;
       white-space: nowrap;
       & > div {
-        transform: 
+        transform:
           /* Magic Numbers */
           // translate(25px, 51px)
           /* 45 is really 360 - 45 */
+          // rotate(315deg);
           rotate(270deg);
         width: 30px;
       }
