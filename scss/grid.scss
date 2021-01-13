@@ -1,0 +1,100 @@
+
+// -- Bootstrap grid definitions --
+// content-column only:
+body.col-two.col-content {
+  #portal-column-content {
+    @include make-col-ready();
+    @include make-col(12);
+  }
+}
+
+// content-column + col-two:
+body.col-two.col-content {
+  #portal-column-content {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(xs) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(8);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(9);
+    }
+  }
+
+  #portal-column-two {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(4);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(3);
+    }
+  }
+}
+
+// content-column + col-one:
+body.col-one.col-content {
+  #portal-column-content {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(9);
+    }
+  }
+
+  #portal-column-one {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(3);
+    }
+  }
+}
+
+// all 3 columns:
+body.col-one.col-two.col-content {
+  #portal-column-content {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+  }
+
+  #portal-column-one {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(3);
+    }
+  }
+  #portal-column-two {
+    @include make-col-ready();
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(md) {
+      @include make-col(3);
+    }
+  }
+}
