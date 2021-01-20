@@ -1,7 +1,7 @@
 
 // -- Bootstrap grid definitions --
 // content-column only:
-body.col-two.col-content {
+body.col-content {
   #portal-column-content {
     @include make-col-ready();
     @include make-col(12);
