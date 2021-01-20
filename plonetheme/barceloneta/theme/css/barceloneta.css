@@ -7683,6 +7683,7 @@ fieldset:disabled .btn {
 .user-select-all {
   -webkit-user-select: all !important;
   -moz-user-select: all !important;
+  -ms-user-select: all !important;
   user-select: all !important;
 }
 
@@ -10337,7 +10338,8 @@ fieldset:disabled .btn {
   margin-bottom: 1rem;
 }
 
-label .required:after {
+label .required:after,
+label.required:after {
   color: #dc3545;
   content: '•';
   font-size: 1.25rem;
@@ -10411,7 +10413,7 @@ body[class*="-controlpanel"] textarea.form-control {
 
 .template-usergroup-userprefs table th.rotate,
 .template-usergroup-groupprefs table th.rotate {
-  height: 10rem;
+  height: 12rem;
   padding-bottom: 1rem;
   white-space: nowrap;
 }
@@ -10442,7 +10444,7 @@ body[class*="-controlpanel"] textarea.form-control {
   display: none;
 }
 
-body.col-two.col-content #portal-column-content {
+body.col-content #portal-column-content {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
