@@ -1,29 +1,28 @@
-@include media-breakpoint-up(xs) {
-  body:before {
-      content: "xs"
-  }
-}
-@include media-breakpoint-up(sm) {
-  body:before {
-      content: "sm"
-  }
-}
-@include media-breakpoint-up(md) {
-  body:before {
-      content: "md"
-  }
-}
-@include media-breakpoint-up(lg) {
-  body:before {
-      content: "lg"
-  }
-}
-@include media-breakpoint-up(xl) {
-  body:before {
-      content: "xl"
-  }
-}
-
+// @include media-breakpoint-up(xs) {
+//   body:before {
+//       content: "xs"
+//   }
+// }
+// @include media-breakpoint-up(sm) {
+//   body:before {
+//       content: "sm"
+//   }
+// }
+// @include media-breakpoint-up(md) {
+//   body:before {
+//       content: "md"
+//   }
+// }
+// @include media-breakpoint-up(lg) {
+//   body:before {
+//       content: "lg"
+//   }
+// }
+// @include media-breakpoint-up(xl) {
+//   body:before {
+//       content: "xl"
+//   }
+// }
 
 // -- Bootstrap grid definitions --
 // content-column only:
