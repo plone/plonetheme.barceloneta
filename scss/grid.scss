@@ -1,3 +1,29 @@
+@include media-breakpoint-up(xs) {
+  body:before {
+      content: "xs"
+  }
+}
+@include media-breakpoint-up(sm) {
+  body:before {
+      content: "sm"
+  }
+}
+@include media-breakpoint-up(md) {
+  body:before {
+      content: "md"
+  }
+}
+@include media-breakpoint-up(lg) {
+  body:before {
+      content: "lg"
+  }
+}
+@include media-breakpoint-up(xl) {
+  body:before {
+      content: "xl"
+  }
+}
+
 
 // -- Bootstrap grid definitions --
 // content-column only:
@@ -13,11 +39,8 @@ body.col-two.col-content {
   #portal-column-content {
     @include make-col-ready();
 
-    @include media-breakpoint-up(xs) {
-      @include make-col(12);
-    }
     @include media-breakpoint-up(md) {
-      @include make-col(8);
+      @include make-col(12);
     }
     @include media-breakpoint-up(lg) {
       @include make-col(9);
@@ -27,13 +50,10 @@ body.col-two.col-content {
   #portal-column-two {
     @include make-col-ready();
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       @include make-col(12);
     }
-    @include media-breakpoint-up(md) {
-      @include make-col(4);
-    }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       @include make-col(3);
     }
   }
@@ -44,10 +64,10 @@ body.col-one.col-content {
   #portal-column-content {
     @include make-col-ready();
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       @include make-col(12);
     }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       @include make-col(9);
     }
   }
@@ -55,10 +75,10 @@ body.col-one.col-content {
   #portal-column-one {
     @include make-col-ready();
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       @include make-col(12);
     }
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       @include make-col(3);
     }
   }
@@ -73,17 +93,24 @@ body.col-one.col-two.col-content {
       @include make-col(12);
     }
     @include media-breakpoint-up(md) {
+      @include make-col(12);
+    }
+    @include media-breakpoint-up(lg) {
+      order: 2;
       @include make-col(6);
     }
   }
 
   #portal-column-one {
     @include make-col-ready();
-
     @include media-breakpoint-up(sm) {
       @include make-col(12);
     }
     @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      order: 1;
       @include make-col(3);
     }
   }
@@ -94,6 +121,10 @@ body.col-one.col-two.col-content {
       @include make-col(12);
     }
     @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      order: 3;
       @include make-col(3);
     }
   }
