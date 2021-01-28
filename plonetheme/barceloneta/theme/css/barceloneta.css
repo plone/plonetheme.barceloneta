@@ -7683,6 +7683,7 @@ fieldset:disabled .btn {
 .user-select-all {
   -webkit-user-select: all !important;
   -moz-user-select: all !important;
+  -ms-user-select: all !important;
   user-select: all !important;
 }
 
@@ -10899,14 +10900,6 @@ body.col-one.col-two.col-content #portal-column-two {
 
 #portal-globalnav-wrapper.navbar {
   padding: 0;
-}
-
-#portal-globalnav-wrapper .navbar-collapse {
-  display: none;
-}
-
-#portal-globalnav-wrapper .navbar-collapse.in {
-  display: block;
 }
 
 #portal-globalnav-wrapper .navbar-toggler {
