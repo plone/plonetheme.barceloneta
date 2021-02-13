@@ -14,16 +14,16 @@ long_description = (
 
 setup(name='plonetheme.barceloneta',
       version=version,
-      description="The default theme for Plone 5.",
+      description="The default theme for Plone 6.",
       long_description=long_description,
       classifiers=[
           "Development Status :: 5 - Production/Stable",
           "Environment :: Web Environment",
           "Framework :: Plone",
-          "Framework :: Plone :: 5.2",
+          "Framework :: Plone :: 6.0",
           "Framework :: Plone :: Core",
           "Framework :: Plone :: Theme",
-          "Framework :: Zope :: 4",
+          "Framework :: Zope :: 5",
           "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
           "Operating System :: OS Independent",
           "Programming Language :: Python",
@@ -44,7 +44,6 @@ setup(name='plonetheme.barceloneta',
           'setuptools',
           'plone.app.theming',
           'plone.batching >1.0.999',
-          'z3c.jbot',
       ],
       extras_require={
           'test': [

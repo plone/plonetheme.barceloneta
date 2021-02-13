@@ -1,0 +1,82 @@
+// These are copied from Bootstrap so that we can use and redefine default values for the theme.
+
+// Color system
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// fusv-disable
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+) !default;
+// fusv-enable
+
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+
+// scss-docs-start colors-map
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-800
+) !default;
+// scss-docs-end colors-map
+
+
+
+// Plone specific colors
+//colors
+$state-draft-color: #fab82a!default; // lime-yellow //draft is visible
+$state-pending-color: #e2e721!default; // orange
+$state-private-color: #c4183c!default; // red
+$state-internal-color: #fab82a!default; // is draft
+$state-internally-published-color: #883dfa!default; // is intranet
+
+// Plone
+$plone-link-color: #007bb1!default; //plone blue made slightly darker for wcag 2.0
+$plone-link-color-on-dark: #16a1e3!default; //plone blue
+//if you need different contrast
+$plone-link-color-on-grey: #086ca3!default; //valid wcag 2.0
+$plone-link-hover-color: darken($plone-link-color, 15%)!default;
+
+//grays
+$gray:          $gray-600!default;
+
+//*// SCAFFOLDING
+// $plone-body-bg: #fafafa!default; //almost-white
+$plone-footer-bg: #2e3133!default; //blued-darkgray
+

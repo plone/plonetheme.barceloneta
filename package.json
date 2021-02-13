@@ -4,23 +4,23 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "bootstrap": "^4.4.1",
+    "autoprefixer": "^10.0.1",
+    "bootstrap": "^5.0.0-beta2",
     "clean-css-cli": "^4.3.0",
-    "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.0",
-    "stylelint": "^13.1.0",
-    "stylelint-config-twbs-bootstrap": "^2.0.1"
-  },
-  "dependencies": {
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.1.0",
+    "sass": "^1.32.6",
+    "stylelint-config-twbs-bootstrap": "^2.1.0"
   },
   "scripts": {
-    "watch": "nodemon --watch scss/ --ext scss --exec \"yarn css-main\"",
-    "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 plonetheme/barceloneta/theme/scss/barceloneta.scss -o plonetheme/barceloneta/theme/scss/",
-    "css-lint": "stylelint \"plonetheme/barceloneta/theme/scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
+    "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
+    "build": "npm-run-all css-compile-main css-prefix-main css-minify-main",
     "css-main": "npm-run-all css-compile-main css-prefix-main css-minify-main",
-    "css-minify-main": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output plonetheme/barceloneta/theme/scss/barceloneta.min.css plonetheme/barceloneta/theme/scss/barceloneta.css",
-    "css-prefix-main": "postcss --config postcss.config.js --replace \"plonetheme/barceloneta/theme/scss/*.css\" \"!plonetheme/barceloneta/theme/scss/*.min.css\""
+    "css-compile-main": "sass --style expanded --source-map --embed-sources --no-error-css scss/barceloneta.scss:plonetheme/barceloneta/theme/css/barceloneta.css",
+    "css-prefix-main": "postcss --config postcss.config.js --replace \"plonetheme/barceloneta/theme/css/*.css\" \"!plonetheme/barceloneta/theme/css/*.min.css\"",
+    "css-minify-main": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output plonetheme/barceloneta/theme/css/barceloneta.min.css plonetheme/barceloneta/theme/css/barceloneta.css",
+    "css-lint": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache"
   }
 }

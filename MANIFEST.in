@@ -5,3 +5,9 @@ prune design
 include pyproject.toml
 recursive-exclude news *
 exclude news
+# npm/yarn world exludes
+exclude /scss
+exclude yarn.lock
+exclude package.json
+exclude postcss.config.js
+exclude .stylelint*

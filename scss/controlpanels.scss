@@ -1,0 +1,62 @@
+//*// Site Setup
+
+// todo convert "portlet" into several cards
+
+body[class*="-controlpanel"] {
+
+  .controlPanel,
+  article {
+    >header {
+      margin-bottom: 2rem;
+    }
+    .configlets {
+      .overview-icon {
+        width: 3rem;
+        height: 3rem;
+      }
+      .btn .bi,
+      .btn .icon {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+  .prefs-configlet {
+    a {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .custom-select {
+    width: auto;
+    display: block;
+  }
+  textarea.form-control {
+    height: 10rem;
+  }
+}
+
+.template-usergroup-userprefs,
+.template-usergroup-groupprefs {
+  table {
+    th.rotate {
+      height: 12rem;
+      padding-bottom: 1rem;
+      white-space: nowrap;
+      & > div {
+        transform:
+          /* Magic Numbers */
+          // translate(25px, 51px)
+          /* 45 is really 360 - 45 */
+          // rotate(315deg);
+          rotate(270deg);
+        width: 30px;
+      }
+    }
+    .listingcheckbox {
+      width: 30px;
+    }
+  }
+}

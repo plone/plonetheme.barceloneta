@@ -1,0 +1,50 @@
+.pat-autotoc.autotabs {
+    .autotoc-nav {
+        margin-bottom: $spacer;
+    }
+}
+
+
+label .required:after,
+label.required:after {
+    color: $danger;
+    content: '•';
+    font-size:$font-size-lg;
+    line-height: 1;
+}
+
+/* invalid-feedback */
+.field.error .invalid-feedback {
+    display:block;
+}
+
+.form-group {
+    .select2-container {
+        display:block;
+    }
+}
+
+.formControls {
+    margin-top: $spacer * 1.5;
+    margin-bottom: $spacer * 0.5;
+}
+
+/* relateditems widget */
+.pattern-relateditems-result {
+    .pattern-relateditems-result-browse-wrapper {
+        .pattern-relateditems-result-browse {
+            font-size: $font-size-base;
+        }
+    }
+}
+
+.select2-results .select2-highlighted {
+    color:$link-hover-color;
+}
+
+.pattern-relateditems-item-title,
+.pattern-relateditems-result-title {
+    &, &[class*="contenttype-"]:before {
+        font-size: $font-size-lg;
+    }
+}

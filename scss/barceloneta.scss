@@ -1,0 +1,22 @@
+// Plone Barceloneta Styling & components
+
+@import "base.scss";
+
+@import "mixins/mixin.portlets.plone.scss";
+@import "mixins/mixin.font.plone.scss";
+
+// todo cleanup
+@import "variables.mappings.scss";
+
+// Plone components
+@import "grid.scss";
+@import "cards.scss";
+@import "scaffolding.scss";
+@import "font.roboto.scss";
+@import "header.scss";
+@import "sitenav.scss";
+@import "breadcrumbs.scss";
+@import "content.scss";
+@import "portlets.scss";
+@import "footer.scss";
+

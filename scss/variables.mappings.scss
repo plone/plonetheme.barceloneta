@@ -1,0 +1,26 @@
+// TODO CLEANUP
+//*// SITE NAV
+$sitenav-height: 50px !default;
+$sitenav-margin-bottom: $line-height-base !default;
+$sitenav-border-radius: $border-radius !default;
+$sitenav-padding-horizontal: floor(($grid-gutter-width / 2)) !default;
+$sitenav-padding-vertical: ($sitenav-height) !default;
+$sitenav-collapse-max-height: 340px !default;
+$sitenav-link-hover-bg: #7099bf !default;
+$sitenav-bg: $link-color !default;
+$sitenav-hover-bg: $link-color !default;
+
+$sitenav-link-padding: $spacer * 0.75 $spacer !default;
+
+$navbar-padding-y: 0 !default;
+$navbar-padding-x: 0 !default;
+
+// Breadcrumbs
+
+$breadcrumb-font-size: $font-size-sm !default;
+
+
+//*// COMPONENTS
+$padding-base-y: $font-size-base * 0.5 !default;
+$padding-base-x: $font-size-base !default;
+

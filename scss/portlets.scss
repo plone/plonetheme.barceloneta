@@ -1,0 +1,174 @@
+//*// PORTLETS //*//
+
+//*// PORTLETS --> cleanup
+$plone-portlet-list-hover-bg: #fcfcfd!default;
+$plone-portlet-footer-bg: #fcfcfd!default;
+$plone-portlet-list-bullet: #64bee8!default;
+
+
+.portlet {
+  margin-bottom: $spacer;
+
+  @if $enable-shadows==true {
+    @include box-shadow($box-shadow);
+  }
+
+  @else {
+    box-shadow: None;
+  }
+
+	.card-footer {
+    // @include gradient-y(rgba(0, 0, 0, .02), $plone-portlet-footer-bg, 0%, 50%);
+    font-size: $font-size-sm;
+  }
+
+  // .formControls {
+  //   border: 0;
+  //   background: none;
+  //   padding: 0;
+  //   box-shadow: none;
+  // }
+}
+
+// .portletSiteSetup,
+.portletRecent,
+.portletNavigationTree,
+.portletEvents,
+.portletNews,
+.portletCollection,
+.portletRss {
+  .card-body {
+
+    padding: 0;
+
+    img {
+      // &.pull-right {
+      //   @include float-right;
+      // }
+    }
+
+    >ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      >li {
+        border-top: $list-group-border-width solid $list-group-border-color;
+        padding: $card-spacer-y $card-spacer-x;
+
+        a {
+          display: block;
+        }
+
+        &:first-child {
+          border-top: 0;
+        }
+      }
+
+      ul {
+        padding-left: 15px;
+        list-style: none;
+      }
+
+      li:hover {
+        background: $plone-portlet-list-hover-bg;
+      }
+    }
+  }
+}
+
+//*// Navigation
+.portletNavigationTree {
+  .card-body {
+    ul {
+			ul {
+			  padding-left: 0;
+			}
+      li {
+        padding: 0;
+
+        a {
+          display: block;
+          padding: $spacer * .75 $spacer;
+
+          &:hover {
+            text-decoration: none;
+            background: darken($plone-portlet-footer-bg, 2%);
+            color: $plone-portlet-list-bullet;
+          }
+
+          &:hover::before {
+            color: $plone-portlet-list-bullet;
+          }
+
+          &:hover::after {
+            content: "⟩";
+            position: absolute;
+            right: 10px;
+            font-size: $font-size-lg;
+            margin-top: -3px;
+            color: $light;
+          }
+        }
+
+      }
+      li {
+        border-top: $list-group-border-width solid $list-group-border-color;
+      }
+    }
+
+    >ul>li>a>img.image-icon {
+      max-height: $line-height-base;
+    }
+
+    .navTreeCurrentNode>a {
+      background: darken($plone-portlet-footer-bg, 2%);
+      color: $gray;
+
+      &::after {
+        content: "⟩";
+        position: absolute;
+        right: 10px;
+        font-size: $font-size-lg;
+        margin-top: -3px;
+        color: $light;
+      }
+    }
+
+    @include navtree-level-loop($plone-portlet-navtree-maxlevel);
+  }
+}
+
+//*// Manage portlets
+// Jumplist for quick navigation across portlet managers
+.switch-portlet-manager {
+  margin-top: 0.5em;
+  width: auto;
+}
+
+// Assigned portlet
+.managedPortlet {
+
+  // Parents, groups and content types portlet assignments
+  // &.inheritedPortlet {
+  //   margin: 5px 15px;
+
+  //   .portletHeader {
+  //     padding: 3px 15px;
+  //   }
+  // }
+
+  // Blocked inherited portlet assignments
+  &.blockedPortlet {
+    opacity: 0.7;
+  }
+}
+
+// Buttons for hide/show and remove assigned portlet
+.managedPortletActions {
+
+  // margin-top: -$plone-padding-base-vertical;
+  form {
+    display: inline-block;
+  }
+}
