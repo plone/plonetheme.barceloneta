@@ -7441,7 +7441,6 @@ textarea.form-control-lg {
 .user-select-all {
   -webkit-user-select: all !important;
   -moz-user-select: all !important;
-  -ms-user-select: all !important;
   user-select: all !important;
 }
 
@@ -11580,6 +11579,55 @@ article > header {
 }
 .event-summary .meta-label {
   display: none;
+}
+
+.discussion {
+  margin-bottom: 2em;
+}
+.discussion .comment {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #dee2e6;
+}
+.discussion .comment .comment-image img {
+  width: 50px;
+  height: 50px;
+}
+.discussion .comment .actions-workflow {
+  margin-left: 0.5em;
+}
+.discussion .comment .comment-action {
+  margin-left: 0.25em;
+}
+.discussion .level-1 {
+  margin-left: 1em;
+}
+.discussion .level-2 {
+  margin-left: 2em;
+}
+.discussion .level-3 {
+  margin-left: 3em;
+}
+.discussion .level-4 {
+  margin-left: 4em;
+}
+.discussion .level-5 {
+  margin-left: 5em;
+}
+.discussion .level-6 {
+  margin-left: 6em;
+}
+.discussion .level-7 {
+  margin-left: 7em;
+}
+.discussion .level-8 {
+  margin-left: 8em;
+}
+.discussion .level-9 {
+  margin-left: 9em;
+}
+.discussion .level-10 {
+  margin-left: 10em;
 }
 
 .portlet {
