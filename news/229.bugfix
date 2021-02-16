@@ -1,0 +1,4 @@
+Cleanup code base:
+- Black code style,
+- Remove unnecessary code snippets, e.g. the magic utf8 header not needed in Python 3 and unused ZCML namespaces,
+- Remove skins.xml GS import step.
