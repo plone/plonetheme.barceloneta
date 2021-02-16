@@ -1,0 +1,67 @@
+.discussion {
+
+  margin-bottom: 2em;
+
+  .comment {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid $gray-300;
+
+    .comment-image {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .actions-workflow {
+      margin-left: 0.5em;
+    }
+
+    .comment-action {
+      margin-left: 0.25em;
+    }
+
+  }
+
+  .level-1 {
+    margin-left: 1em;
+  }
+
+  .level-2 {
+    margin-left: 2em;
+  }
+
+  .level-3 {
+    margin-left: 3em;
+  }
+
+  .level-4 {
+    margin-left: 4em;
+  }
+
+  .level-5 {
+    margin-left: 5em;
+  }
+
+  .level-6 {
+    margin-left: 6em;
+  }
+
+  .level-7 {
+    margin-left: 7em;
+  }
+
+  .level-8 {
+    margin-left: 8em;
+  }
+
+  .level-9 {
+    margin-left: 9em;
+  }
+
+  .level-10 {
+    margin-left: 10em;
+  }
+
+}
