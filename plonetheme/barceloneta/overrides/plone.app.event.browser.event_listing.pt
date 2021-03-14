@@ -1,0 +1,146 @@
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="plone">
+  <body>
+
+    <metal:custom_title
+        fill-slot="content-title"
+        tal:define="header view/header_string">
+      <h1 class="documentFirstHeading">
+        <span
+            tal:replace="header/main"
+            tal:condition="header/main" />
+      </h1>
+      <nav tal:define="mode request/mode|string:future; show_filter view/show_filter">
+        <ul class="mode_selector nav justify-content-end">
+          <tal:cond condition="show_filter">
+            <li
+                class="nav-item"
+                tal:condition="python:mode=='past'">
+              <a
+                  class="mode_future nav-link"
+                  href=""
+                  tal:attributes="href view/mode_future_url"
+                  i18n:translate="mode_future_link">Upcoming</a>
+            </li>
+            <li
+                class="nav-item"
+                tal:condition="python:mode=='future'">
+              <a
+                  class="mode_past nav-link"
+                  href=""
+                  tal:attributes="href view/mode_past_url"
+                  i18n:translate="mode_past_link">Past</a>
+            </li>
+          </tal:cond>
+          <li class="nav-item">
+            <a
+                class="mode_ical nav-link"
+                href=""
+                tal:attributes="href view/ical_url"
+                title="Download this event in iCal format"
+                i18n:attributes="title title_add_to_ical;">
+              <span i18n:translate="label_add_to_ical">iCal</span>
+            </a>
+
+          </li>
+        </ul>
+      </nav>
+      <h2
+          tal:content="header/sub"
+          tal:condition="header/sub" />
+    </metal:custom_title>
+
+    <metal:content-core fill-slot="content-core">
+      <metal:block define-macro="content-core">
+        <tal:def define="batch view/events;
+                 toLocalizedTime nocall: context/@@plone/toLocalizedTime;">
+
+          <section>
+
+            <tal:items repeat="data batch">
+
+              <article
+                  itemscope
+                  itemtype="https://schema.org/Event"
+                  class="vevent tileItem"
+                  tal:define="startf python:view.date_speller(data.start)">
+
+                <ul class="hiddenStructure">
+                  <li
+                      itemprop="startDate"
+                      class="dtstart"
+                      tal:content="data/start/isoformat">end</li>
+                  <li
+                      itemprop="endDate"
+                      class="dtend"
+                      tal:content="data/end/isoformat">end</li>
+                  <li
+                      class="location"
+                      itemscope
+                      itemprop="location"
+                      itemtype="http://schema.org/Place">
+                    <span
+                        itemprop="address"
+                        tal:content="data/location">location</span>
+                  </li>
+                </ul>
+
+                <div class="cal_date">
+                  <span
+                      class="cal_month"
+                      tal:content="string:${startf/month_name}">Oct.</span>
+                  <span
+                      class="cal_day"
+                      tal:content="string:${startf/day}">15</span>
+                  <span
+                      class="cal_wkday"
+                      tal:content="python:startf['wkday_name']">Tue</span>
+                </div>
+
+                <div class="cal_info clearfix">
+                  <h2 class="tileHeadline">
+                    <a
+                        href=""
+                        itemprop="url"
+                        class="url"
+                        tal:attributes="href data/url">
+                      <span
+                          itemprop="name"
+                          class="summary"
+                          tal:content="data/title">Title</span>
+                    </a>
+                  </h2>
+                  <div class="documentByLine">
+                    <tal:date tal:replace="structure python:view.formatted_date(data)" />
+                  </div>
+
+                  <p
+                      itemprop="description"
+                      class="description"
+                      tal:condition="data/description"
+                      tal:content="data/description" />
+
+
+                </div>
+
+              </article>
+
+            </tal:items>
+
+          </section>
+
+          <div metal:use-macro="context/batch_macros/macros/navigation" />
+
+        </tal:def>
+      </metal:block>
+    </metal:content-core>
+
+  </body>
+</html>

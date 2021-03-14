@@ -1,7 +1,8 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-    xmlns:plone="http://namespaces.plone.org/plone">
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser">
 
   <include package="plone.resource" />
   <include package="plone.app.theming" />
@@ -11,10 +12,16 @@
       title="Barceloneta Theme"
       directory="profiles/default"
       description='Barceloneta is a modern, minimalist theme for Plone 5.'
-      provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+      provides="Products.GenericSetup.interfaces.EXTENSION" />
 
   <!-- Diazo themes -->
-  <plone:static directory="theme" name="barceloneta" type="theme"/>
+  <plone:static
+      directory="theme"
+      name="barceloneta"
+      type="theme" />
+
+  <browser:jbot
+      directory="overrides"
+      layer="plonetheme.barceloneta.interfaces.IBarcelonetaLayer" />
 
 </configure>
