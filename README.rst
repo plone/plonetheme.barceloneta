@@ -1,9 +1,9 @@
-============
- Barceloneta
-============
-------------------------------
- The default theme for Plone 5
-------------------------------
+===========
+Barceloneta
+===========
+------------------------------------------------
+Default theme for Plone 6 - based on Bootstrap 5
+------------------------------------------------
 
 `Latest version on PyPI <https://pypi.python.org/pypi/plonetheme.barceloneta>`_
 
