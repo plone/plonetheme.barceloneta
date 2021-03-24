@@ -35,11 +35,6 @@
   <!-- move global nav -->
   <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
 
-  <!-- move hero to top -->
-  <replace css:theme-children="#hero .gigantic" css:content-children=".hero"/>
-  <drop css:theme="#hero" css:if-not-content=".hero" />
-  <drop css:content=".hero" />
-
   <!-- Content header -->
   <replace css:theme="#portal-top" css:content-children="#portal-top" />
 
