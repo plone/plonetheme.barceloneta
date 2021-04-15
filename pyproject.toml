@@ -18,3 +18,18 @@ showcontent = true
 directory = "bugfix"
 name = "Bug fixes:"
 showcontent = true
+
+[tool.poetry]
+name = "plonetheme.barceloneta"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+
+[tool.poetry.dev-dependencies]
+"zest.releaser" = "6.20.1"
+"zestreleaser.towncrier" = "1.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
