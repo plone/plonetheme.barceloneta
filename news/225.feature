@@ -1,2 +1,2 @@
-- Add styling for comments.
-  [santonelli]
+Add styling for comments.
+[santonelli]

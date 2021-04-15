@@ -1,1 +1,2 @@
-Remove hero move to top from rules. [jensens]
+Remove hero move to top from rules.
+[jensens]

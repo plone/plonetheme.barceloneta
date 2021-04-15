@@ -1,2 +1,2 @@
-- Change Templates to Bootstrap 4.
-  [agitator, santonelli] (#137)
+Change Templates to Bootstrap 4.
+[agitator, santonelli]

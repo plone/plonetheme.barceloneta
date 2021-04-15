@@ -1,2 +1,2 @@
-- Update markup for document byline
-  [santonelli] (#235)
+Update markup for document byline
+[santonelli]
