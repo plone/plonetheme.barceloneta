@@ -42,5 +42,6 @@
 		src: local(quote($local)), $src;
 		font-weight: $weight;
 		font-style: $style;
+		font-display: swap;
 	}
 }
