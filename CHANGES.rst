@@ -9,6 +9,37 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a1 (2021-04-20)
+--------------------
+
+New features:
+
+
+- Remove hero move to top from rules. [jensens] (hero)
+- - Change Templates to Bootstrap 4.
+    [agitator, santonelli] (#137) (#137)
+- - Change to relative xml include path to make external includes possible
+    [gomez] (#212) (#212)
+- - Add styling for comments.
+    [santonelli] (#225)
+- - Update markup for document byline
+    [santonelli] (#235) (#235)
+- - Use CSS class grid marker in body tag and Bootstrap mixins to define the grid, instead injecting them with Diazo. This will work even without Diazo and is more flexible.
+    [MrTango] (#245)
+
+
+Bug fixes:
+
+
+- Update ``lodash`` via @dependabot notification. [jensens] (#209)
+- Cleanup code base:
+  - Black code style,
+  - Remove unnecessary code snippets, e.g. the magic utf8 header not needed in Python 3 and unused ZCML namespaces,
+  - Remove skins.xml GS import step,
+  - Remove unused less resource directory. (#229)
+- Also leave #edit-bar intact when copying the toolbar html into the theme using backend.xml, as was fixed two years to in the normal rules.xml. [fredvd] (#3191)
+
+
 2.1.6 (2019-10-21)
 ------------------
 
