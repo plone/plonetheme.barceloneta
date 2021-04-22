@@ -73,12 +73,6 @@ article {
   margin-bottom: 2rem;
 }
 
-// .section-heading {
-//   font-size: 1.25rem;
-//   line-height: 1.2;
-//   margin-bottom: 1rem;
-// }
-
 .meta-icon {
   font-size: 1.5em;
   line-height: 1;
@@ -93,4 +87,25 @@ article {
   .meta-label {
     display: none;
   }
+}
+
+.section {
+  margin-bottom: 1em;
+
+  header {
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+}
+
+.section-main {
+  text-align: center;
+  padding: 2em 1em 1em 1em;
+
+}
+
+.section-actions {
+  text-align: center;
+  margin-bottom: 3em;
 }
