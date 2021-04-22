@@ -4,7 +4,15 @@
 }
 
 .icon-inline {
-  margin-bottom: 0.25em;
+  // margin-bottom: 0.25em;
+  vertical-align: middle;
+  bottom: -0.125em;
+  position: relative;
+}
+
+.icon-x15 {
+  height: 1.5em;
+  width: auto;
 }
 
 .icon-x2 {
