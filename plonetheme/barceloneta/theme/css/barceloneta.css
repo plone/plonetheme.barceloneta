@@ -11128,7 +11128,14 @@ body.col-one.col-two.col-content #portal-column-two {
 }
 
 .icon-inline {
-  margin-bottom: 0.25em;
+  vertical-align: middle;
+  bottom: -0.125em;
+  position: relative;
+}
+
+.icon-x15 {
+  height: 1.5em;
+  width: auto;
 }
 
 .icon-x2 {
@@ -11519,22 +11526,12 @@ article > header {
 
 .section-main {
   text-align: center;
-  padding: 1em;
-  margin-bottom: 0;
-}
-.section-main .plone-icon {
-  width: 3em;
-  height: 3em;
-  margin-bottom: 0.5em;
-}
-
-.section-metadata {
-  margin-bottom: 2em;
+  padding: 2em 1em 1em 1em;
 }
 
 .section-actions {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .discussion {
