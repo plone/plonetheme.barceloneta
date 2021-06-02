@@ -16,7 +16,7 @@ New features:
 
 
 - Remove hero move to top from rules. [jensens] (hero)
-- - Change Templates to Bootstrap 4.
+- - Change Templates to Bootstrap 5.
     [agitator, santonelli] (#137) (#137)
 - - Change to relative xml include path to make external includes possible
     [gomez] (#212) (#212)
