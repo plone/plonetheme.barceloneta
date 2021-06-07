@@ -101,11 +101,6 @@
   <!-- Content header -->
   <replace css:theme="#portal-top" css:content-children="#portal-top" />
 
-  <!-- Footer -->
-  <xsl:variable name="footer_portlets" select="//footer[@id='portal-footer-wrapper']//div[@class='portletWrapper']/*[not(contains(@id,'portal-colophon')) and not(contains(@id,'portal-footer-signature')) and not(contains(@class,'portletActions'))]"></xsl:variable>
-  <xsl:variable name="footer_portlets_count" select="count($footer_portlets)"></xsl:variable>
-
-
   <!-- Replace footer information with Plone version. -->
   <replace
       css:theme-children="#portal-footer .copyright > div"
@@ -129,6 +124,8 @@
 
   <!-- Move all other footer portlets into doormat area. -->
   <replace css:theme-children="#portal-footer .doormat">
+    <xsl:variable name="footer_portlets" select="//footer[@id='portal-footer-wrapper']//div[@class='portletWrapper']/*[not(contains(@id,'portal-colophon')) and not(contains(@id,'portal-footer-signature')) and not(contains(@class,'portletActions'))]"></xsl:variable>
+    <xsl:variable name="footer_portlets_count" select="count($footer_portlets)"></xsl:variable>
     <xsl:variable name="columns">
       <xsl:if test="$footer_portlets_count=1">col-md-12</xsl:if>
       <xsl:if test="$footer_portlets_count=2">col-md-6</xsl:if>
