@@ -9,6 +9,19 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a2 (2021-06-14)
+--------------------
+
+New features:
+
+
+- Rework contenttype views.
+  Update to Bootstrap 5.0.0-beta3
+  [agitator] (#236)
+- Update to Bootstrap 5.0.1
+  [agitator] (#238)
+
+
 3.0.0a1 (2021-04-20)
 --------------------
 
