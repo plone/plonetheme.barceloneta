@@ -17,6 +17,14 @@ $grid-row-columns:            6 !default;
 $grid-main-breakpoint: md!default;
 $nav-main-breakpoint: $grid-main-breakpoint!default;
 
+$navbar-nav-link-padding-x:   $spacer * 0.75 $spacer !default;
+
+$navbar-dark-color:                 $white !default;
+$navbar-dark-hover-color:           $white !default;
+$navbar-dark-active-color:          $white !default;
+$navbar-dark-toggler-border-color:  $white !default;
+
+
 //*// TYPOGRAPHY
 // While Plone Logo uses the DIN Font, we use Roboto, which was designed for Android and so mobile optimized
 // A free DIN variant is available here (TTF only): https://www.1001fonts.com/alte-din-1451-mittelschrift-font.html
