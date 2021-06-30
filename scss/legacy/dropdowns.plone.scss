@@ -50,7 +50,7 @@ $dropdown-header-color:          $plone-gray-light;
 
 @mixin nav-divider($color: #e5e5e5) {
   height: 1px;
-  margin: (($plone-line-height-computed / 2) - 1) 0;
+  margin: (($plone-line-height-computed * 0.5) - 1) 0;
   overflow: hidden;
   background-color: $color;
 }

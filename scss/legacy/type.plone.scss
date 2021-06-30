@@ -6,15 +6,15 @@ body { word-wrap: break-word; }
 //*// Headings
 h1, h2, h3, .h1, .h2, .h3 {
   margin-top: $plone-line-height-computed;
-  margin-bottom: ($plone-line-height-computed / 2);
+  margin-bottom: ($plone-line-height-computed * 0.5);
   a:hover, a:focus {
     text-decoration: none;
     border-bottom: 2px $plone-link-hover-color solid;
   }
 }
 h4, h5, h6, .h4, .h5, .h6 {
-  margin-top: ($plone-line-height-computed / 2);
-  margin-bottom: ($plone-line-height-computed / 2);
+  margin-top: ($plone-line-height-computed * 0.5);
+  margin-bottom: ($plone-line-height-computed * 0.5);
 }
 
 h1, .h1 { font-size: $plone-font-size-h1; font-weight: $plone-font-weight-regular; }
@@ -25,7 +25,7 @@ h5, .h5 { font-size: $plone-font-size-h5; font-weight: $plone-font-weight-regula
 h6, .h6 { font-size: $plone-font-size-h6; font-weight: $plone-font-weight-regular; }
 
 //*// Body text
-p { margin: 0 0 ($plone-line-height-computed / 2); }
+p { margin: 0 0 ($plone-line-height-computed * 0.5); }
 
 .documentDescription {
   font-size: $plone-font-size-h4;
@@ -39,12 +39,12 @@ small { font-size: 85%; }
 cite { font-style: normal; }
 mark { background-color: $plone-state-warning-bg; padding: .2em; }
 .discreet { color: $plone-text-discreet; font-weight: $plone-font-weight-regular;}
-.documentByLine {color: $plone-text-discreet; font-weight: $plone-font-weight-regular; margin-bottom: ($plone-line-height-computed / 2); }
+.documentByLine {color: $plone-text-discreet; font-weight: $plone-font-weight-regular; margin-bottom: ($plone-line-height-computed * 0.5); }
 
 //*// Page header
 .documentFirstHeading {
-  padding-bottom: (($plone-line-height-computed / 2) - 1);
-  margin: 0 0 ($plone-line-height-computed / 2);
+  padding-bottom: (($plone-line-height-computed * 0.5) - 1);
+  margin: 0 0 ($plone-line-height-computed * 0.5);
   border-bottom: 1px solid $plone-page-header-border-color;
 }
 
@@ -52,7 +52,7 @@ mark { background-color: $plone-state-warning-bg; padding: .2em; }
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: ($plone-line-height-computed / 2);
+  margin-bottom: ($plone-line-height-computed * 0.5);
   ul,
   ol {
     margin-bottom: 0;

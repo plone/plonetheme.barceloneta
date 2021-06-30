@@ -3,7 +3,7 @@
 $sitenav-height: 50px !default;
 $sitenav-margin-bottom: $line-height-base !default;
 $sitenav-border-radius: $border-radius !default;
-$sitenav-padding-horizontal: floor(($grid-gutter-width / 2)) !default;
+$sitenav-padding-horizontal: floor(($grid-gutter-width * 0.5)) !default;
 $sitenav-padding-vertical: ($sitenav-height) !default;
 $sitenav-collapse-max-height: 340px !default;
 $sitenav-link-hover-bg: #7099bf !default;
