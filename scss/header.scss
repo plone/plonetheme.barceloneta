@@ -47,8 +47,7 @@
 
   @include media-breakpoint-up($nav-main-breakpoint) {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    @include make-row(0rem);
   }
 
 }
