@@ -11271,12 +11271,7 @@ body.col-one.col-two.col-content #portal-column-two {
 }
 
 #portal-header {
-  margin: 1rem auto 1.25rem;
-}
-#portal-header::after {
-  display: block;
-  clear: both;
-  content: "";
+  margin: 1.25rem auto 1.25rem;
 }
 @media (min-width: 768px) {
   #portal-header {
@@ -11288,6 +11283,7 @@ body.col-one.col-two.col-content #portal-column-two {
     margin-top: calc(var(--bs-gutter-y) * -1);
     margin-right: calc(var(--bs-gutter-x) * -.5);
     margin-left: calc(var(--bs-gutter-x) * -.5);
+    margin: 1.25rem auto 1.25rem;
   }
 }
 
