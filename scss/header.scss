@@ -42,15 +42,15 @@
 
 //*// HEADER //*//
 #portal-header {
-  margin: $spacer auto $spacer * 1.25;
-  @include clearfix(); //clear floats
+  margin: $spacer * 1.25 auto $spacer * 1.25;
 
   @include media-breakpoint-up($nav-main-breakpoint) {
     position: relative;
     @include make-row(0rem);
+    margin: $spacer * 1.25 auto $spacer * 1.25;
   }
-
 }
+
 
 #portal-logo {
   flex-grow: 1;
