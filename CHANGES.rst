@@ -9,6 +9,19 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a3 (2021-08-04)
+--------------------
+
+New features:
+
+
+- Update to Bootstrap 5.0.1
+  [agitator] (#241)
+- Update to Bootstrap 5.0.2
+  Update sitenav with Bootstrap defaults and cleanup.
+  [agitator] (#243)
+
+
 3.0.0a2 (2021-06-14)
 --------------------
 
