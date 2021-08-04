@@ -11271,6 +11271,9 @@ body.col-one.col-two.col-content #portal-column-two {
 }
 
 #portal-header {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
   margin: 1.25rem auto 1.25rem;
 }
 @media (min-width: 768px) {
@@ -11284,12 +11287,20 @@ body.col-one.col-two.col-content #portal-column-two {
     margin-right: calc(var(--bs-gutter-x) * -.5);
     margin-left: calc(var(--bs-gutter-x) * -.5);
     margin: 1.25rem auto 1.25rem;
+    flex-wrap: wrap-reverse;
   }
 }
 
 #portal-logo {
-  flex-grow: 1;
   order: -1;
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  #portal-logo {
+    width: 50%;
+  }
 }
 
 #portal-languageselector {
@@ -11308,15 +11319,9 @@ body.col-one.col-two.col-content #portal-column-two {
   padding-top: 5px;
   margin-left: 1rem;
 }
-@media (max-width: 767.98px) {
-  #portal-anontools {
-    position: absolute;
-    top: 0;
-    right: 0.5rem;
-  }
-}
 #portal-anontools ul {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 #portal-anontools ul li {
@@ -11328,24 +11333,25 @@ body.col-one.col-two.col-content #portal-column-two {
   margin-left: 1.5rem;
   margin-right: 0.5rem;
 }
-@media (max-width: 767.98px) {
-  #portal-membertools-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0.5rem;
-  }
-}
 #portal-membertools-wrapper ul {
   margin: 0 0 1rem 1rem;
   padding-right: 0;
 }
 
 #portal-searchbox {
+  order: -2;
   margin-left: 3px;
-  position: relative;
   white-space: nowrap;
   z-index: 2;
-  order: 50;
+  width: 100%;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  #portal-searchbox {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
 }
 @media (max-width: 767.98px) {
   #portal-searchbox {
@@ -11370,11 +11376,8 @@ body.col-one.col-two.col-content #portal-column-two {
 
 @media (min-width: 768px) {
   #portal-searchbox {
-    margin-left: 2rem;
     margin-top: 5px;
     max-width: 50%;
-    padding-top: 0;
-    position: relative;
   }
   #portal-searchbox [type=text] {
     border-bottom-right-radius: 0;
@@ -11387,11 +11390,6 @@ body.col-one.col-two.col-content #portal-column-two {
     vertical-align: top;
     width: auto;
     display: inline-block;
-  }
-}
-@media (max-width: 767.98px) {
-  #portal-languageselector {
-    float: right;
   }
 }
 #portal-globalnav-wrapper.navbar {
