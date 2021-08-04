@@ -9,6 +9,15 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a4 (2021-08-04)
+--------------------
+
+Bug fixes:
+
+
+- Optimize responsive header behavior.  [agitator] (#1)
+
+
 3.0.0a3 (2021-08-04)
 --------------------
 
