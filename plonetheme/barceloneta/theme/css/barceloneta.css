@@ -10946,6 +10946,331 @@ body[class*=-controlpanel] textarea.form-control {
   display: none;
 }
 
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  border: 3px solid transparent;
+  border-radius: 0.25rem;
+  -webkit-animation-fill-mode: forwards !important;
+  animation-fill-mode: forwards !important;
+  -webkit-animation-delay: 2s !important;
+  animation-delay: 2s !important;
+  transition: border-width 0.6s linear;
+}
+
+.alert a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0px;
+  bottom: 0px;
+  -webkit-animation: 1.5s ease-in alert-link-animation;
+  animation: 1.5s ease-in alert-link-animation;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.alert-heading {
+  color: inherit;
+}
+
+a {
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+}
+
+@-webkit-keyframes alert-link-animation {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes alert-link-animation {
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+.alert-dismissible {
+  padding-right: 3rem;
+}
+
+.alert-dismissible .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.25rem 1rem;
+}
+
+.alert-primary {
+  color: #004a6a;
+  background-color: #cce5ef;
+  -webkit-animation: 2s ease-in alert-primary-animation;
+  animation: 2s ease-in alert-primary-animation;
+}
+
+.alert-primary a {
+  color: #003b55;
+}
+
+.alert-primary a::after {
+  background-color: #003b55;
+}
+
+@-webkit-keyframes alert-primary-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #b3d7e8;
+  }
+}
+
+@keyframes alert-primary-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #b3d7e8;
+  }
+}
+.alert-secondary {
+  color: #41464b;
+  background-color: #e2e3e5;
+  -webkit-animation: 2s ease-in alert-secondary-animation;
+  animation: 2s ease-in alert-secondary-animation;
+}
+
+.alert-secondary a {
+  color: #34383c;
+}
+
+.alert-secondary a::after {
+  background-color: #34383c;
+}
+
+@-webkit-keyframes alert-secondary-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #d3d6d8;
+  }
+}
+
+@keyframes alert-secondary-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #d3d6d8;
+  }
+}
+.alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  -webkit-animation: 2s ease-in alert-success-animation;
+  animation: 2s ease-in alert-success-animation;
+}
+
+.alert-success a {
+  color: #0c4128;
+}
+
+.alert-success a::after {
+  background-color: #0c4128;
+}
+
+@-webkit-keyframes alert-success-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #badbcc;
+  }
+}
+
+@keyframes alert-success-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #badbcc;
+  }
+}
+.alert-info {
+  color: #055160;
+  background-color: #cff4fc;
+  -webkit-animation: 2s ease-in alert-info-animation;
+  animation: 2s ease-in alert-info-animation;
+}
+
+.alert-info a {
+  color: #04414d;
+}
+
+.alert-info a::after {
+  background-color: #04414d;
+}
+
+@-webkit-keyframes alert-info-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #a3d7e1;
+  }
+}
+
+@keyframes alert-info-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #a3d7e1;
+  }
+}
+.alert-warning {
+  color: #664d03;
+  background-color: #fff3cd;
+  -webkit-animation: 2s ease-in alert-warning-animation;
+  animation: 2s ease-in alert-warning-animation;
+}
+
+.alert-warning a {
+  color: #523e02;
+}
+
+.alert-warning a::after {
+  background-color: #523e02;
+}
+
+@-webkit-keyframes alert-warning-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #ffecb5;
+  }
+}
+
+@keyframes alert-warning-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #ffecb5;
+  }
+}
+.alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  -webkit-animation: 2s ease-in alert-danger-animation;
+  animation: 2s ease-in alert-danger-animation;
+}
+
+.alert-danger a {
+  color: #6a1a21;
+}
+
+.alert-danger a::after {
+  background-color: #6a1a21;
+}
+
+@-webkit-keyframes alert-danger-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #f5c2c7;
+  }
+}
+
+@keyframes alert-danger-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #f5c2c7;
+  }
+}
+.alert-light {
+  color: #636464;
+  background-color: #fefefe;
+  -webkit-animation: 2s ease-in alert-light-animation;
+  animation: 2s ease-in alert-light-animation;
+}
+
+.alert-light a {
+  color: #4f5050;
+}
+
+.alert-light a::after {
+  background-color: #4f5050;
+}
+
+@-webkit-keyframes alert-light-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #fdfdfe;
+  }
+}
+
+@keyframes alert-light-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #fdfdfe;
+  }
+}
+.alert-dark {
+  color: #141619;
+  background-color: #d3d3d4;
+  -webkit-animation: 2s ease-in alert-dark-animation;
+  animation: 2s ease-in alert-dark-animation;
+}
+
+.alert-dark a {
+  color: #101214;
+}
+
+.alert-dark a::after {
+  background-color: #101214;
+}
+
+@-webkit-keyframes alert-dark-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #bcbebf;
+  }
+}
+
+@keyframes alert-dark-animation {
+  0% {
+    border: 3px solid transparent;
+  }
+  100% {
+    border: 3px solid #bcbebf;
+  }
+}
 body.col-content #portal-column-content {
   flex-shrink: 0;
   width: 100%;
