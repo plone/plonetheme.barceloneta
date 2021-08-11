@@ -8,7 +8,7 @@ def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 
-version = "3.0.0a2.dev0"
+version = "3.0.0a5.dev0"
 
 long_description = read("README.rst") + "\n" + read("CHANGES.rst") + "\n"
 
@@ -28,9 +28,9 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
     ],
     keywords="web zope plone theme",
     author="Plone Foundation",

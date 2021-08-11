@@ -5,17 +5,16 @@
   }
 
   .navbar-toggler {
-    color: rgba(255, 255, 255, 1);
-    border-color: rgba(255, 255, 255, 0.75);
-    margin: 0.5em 1em;
+    border-color: $navbar-dark-toggler-border-color;
+    margin: $navbar-padding-y 0;
   }
 
   .navbar-nav {
-
+    flex-wrap: wrap;
     li {
       position: relative;
       display: block;
-
+      background-color: $link-color;
       &.inPath>a,
       &.current>a,
       &.selected>a {
@@ -62,11 +61,9 @@
       a {
         position: relative;
         display: block;
-        padding: $sitenav-link-padding;
-        color: $white;
+        padding: $navbar-nav-link-padding-x;
         hyphens: auto;
         word-break: break-word;
-        background-color: $sitenav-bg;
         text-decoration: none;
 
         &:hover,
@@ -159,7 +156,7 @@
 
         &:after {
           background: darken($link-color, 7%);
-          color: $white;
+          color: $navbar-dark-color;
           border-radius: $input-border-radius;
           content: "▼";
           cursor: pointer;

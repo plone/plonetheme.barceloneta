@@ -42,20 +42,29 @@
 
 //*// HEADER //*//
 #portal-header {
-  margin: $spacer auto $spacer * 1.25;
-  @include clearfix(); //clear floats
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  margin: $spacer * 1.25 auto $spacer * 1.25;
 
   @include media-breakpoint-up($nav-main-breakpoint) {
     position: relative;
-    display: flex;
-    flex-direction: row;
+    @include make-row(0rem);
+    margin: $spacer * 1.25 auto $spacer * 1.25;
+    flex-wrap: wrap-reverse;
   }
-
 }
 
+
 #portal-logo {
-  flex-grow: 1;
   order: -1;
+  flex-grow: 1;
+  width: 100%;
+  margin-top: 1rem;
+
+  @include media-breakpoint-up(md) {
+    width: 50%;
+  }
 }
 
 #portal-languageselector {
@@ -72,17 +81,12 @@
 }
 
 #portal-anontools {
-  @include media-breakpoint-down($nav-main-breakpoint) {
-    position: absolute;
-    top: 0;
-    right: $spacer * 0.5;
-  }
-
   padding-top: 5px;
   margin-left: $spacer;
 
   ul {
     padding: 0;
+    margin: 0;
     list-style: none;
 
     li {
@@ -92,12 +96,6 @@
 }
 
 #portal-membertools-wrapper {
-  @include media-breakpoint-down($nav-main-breakpoint) {
-    position: absolute;
-    top: 0;
-    right: $spacer * 0.5;
-  }
-
   margin-top: 5px;
   margin-left: $spacer * 1.5;
   margin-right: $spacer * 0.5;
@@ -110,11 +108,18 @@
 
 //mobile search
 #portal-searchbox {
+  order: -2;
   margin-left: 3px;
-  position: relative;
   white-space: nowrap;
   z-index: 2;
-  order: 50;
+  width: 100%;
+  margin: 0;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
 
   @include media-breakpoint-down($nav-main-breakpoint) {
     .form-inline {
@@ -147,20 +152,12 @@
 //non mobile search
 @include media-breakpoint-up($nav-main-breakpoint) {
   #portal-searchbox {
-    margin-left: $spacer * 2;
     margin-top: 5px; //visual balance
     max-width: 50%;
-    padding-top: 0;
-    position: relative;
-
-    .searchSection {
-      // display: flex;
-    }
 
     [type="text"] {
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
-      // float: left;
       width: 20rem;
     }
 
@@ -171,12 +168,5 @@
       width: auto;
       display: inline-block;
     }
-  }
-}
-
-@include media-breakpoint-down($nav-main-breakpoint) {
-  #portal-languageselector {
-    // clear: none;
-    float: right;
   }
 }

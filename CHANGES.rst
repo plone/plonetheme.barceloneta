@@ -9,6 +9,41 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a4 (2021-08-04)
+--------------------
+
+Bug fixes:
+
+
+- Optimize responsive header behavior.  [agitator] (#1)
+
+
+3.0.0a3 (2021-08-04)
+--------------------
+
+New features:
+
+
+- Update to Bootstrap 5.0.1
+  [agitator] (#241)
+- Update to Bootstrap 5.0.2
+  Update sitenav with Bootstrap defaults and cleanup.
+  [agitator] (#243)
+
+
+3.0.0a2 (2021-06-14)
+--------------------
+
+New features:
+
+
+- Rework contenttype views.
+  Update to Bootstrap 5.0.0-beta3
+  [agitator] (#236)
+- Update to Bootstrap 5.0.1
+  [agitator] (#238)
+
+
 3.0.0a1 (2021-04-20)
 --------------------
 
@@ -16,7 +51,7 @@ New features:
 
 
 - Remove hero move to top from rules. [jensens] (hero)
-- - Change Templates to Bootstrap 4.
+- - Change Templates to Bootstrap 5.
     [agitator, santonelli] (#137) (#137)
 - - Change to relative xml include path to make external includes possible
     [gomez] (#212) (#212)
