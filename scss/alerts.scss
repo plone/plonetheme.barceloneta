@@ -6,6 +6,11 @@
   animation-fill-mode: forwards !important;
   animation-delay: 2s !important;
   transition: border-width 0.6s linear;
+  a {
+      font-weight: 700;
+      position: relative;
+      text-decoration: none;
+    }
 }
 .alert a::after{
     content: '';
@@ -20,11 +25,7 @@
 .alert-heading {
   color: inherit;
 }
-a {
-  font-weight: 700;
-  position: relative;
-  text-decoration: none;
-}
+
 @keyframes alert-link-animation{
     0% {
         width:0%;
