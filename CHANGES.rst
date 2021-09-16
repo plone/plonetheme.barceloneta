@@ -9,6 +9,18 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a5 (2021-09-15)
+--------------------
+
+New features:
+
+
+- Update to Bootstrap 5.1.0
+  [petschki] (#247)
+- Update to Bootstrap 5.1.1
+  [petschki] (#248)
+
+
 3.0.0a4 (2021-08-04)
 --------------------
 
