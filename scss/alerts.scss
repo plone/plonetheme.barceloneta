@@ -49,161 +49,161 @@
 }
 
 .alert-primary {
-  color: #004a6a;
-  background-color: #cce5ef;
+  color: $cyan-800;
+  background-color: $cyan-300;
   animation: 2s ease-in alert-primary-animation;
 }
 .alert-primary a {
-  color: #003b55;
+  color: $cyan-800;
 }
 .alert-primary a::after {
-  background-color: #003b55;
+  background-color: $cyan-800;
 }
 @keyframes alert-primary-animation{
     0% {
         border: 3px solid transparent;
     }
     100% {
-        border: 3px solid #b3d7e8;
+        border: 3px solid $cyan-400;
     }
 }
 
 .alert-secondary {
-  color: #41464b;
-  background-color: #e2e3e5;
+  color: $gray-700;
+  background-color: $gray-200;
   animation: 2s ease-in alert-secondary-animation;
 }
 .alert-secondary a {
-  color: #34383c;
+  color: $gray-700;
 }
 .alert-secondary a::after {
-  background-color: #34383c;
+  background-color: $gray-700;
 }
 @keyframes alert-secondary-animation{
     0% {
         border: 3px solid transparent;
     }
     100% {
-        border: 3px solid #d3d6d8;
+        border: 3px solid $gray-300;
     }
 }
 
 .alert-success {
-  color: #0f5132;
-  background-color: #d1e7dd;
+  color: $green-700;
+  background-color: $green-200;
   animation: 2s ease-in alert-success-animation;
 }
 .alert-success a {
-  color: #0c4128;
+  color: $green-700;
 }
 .alert-success a::after {
-  background-color: #0c4128;
+  background-color: $green-700;
 }
 @keyframes alert-success-animation{
     0% {
         border: 3px solid transparent;
     }
     100% {
-        border: 3px solid #badbcc;
+        border: 3px solid $green-300;
     }
 }
 
 .alert-info {
-  color: #055160;
-  background-color: #cff4fc;
+  color: $cyan-700;
+  background-color: $cyan-200;
   animation: 2s ease-in alert-info-animation;
 }
 .alert-info a {
-  color: #04414d;
+  color: $cyan-700;
 }
 .alert-info a::after {
-  background-color: #04414d;
+  background-color: $cyan-700;
 }
 @keyframes alert-info-animation{
     0% {
         border: 3px solid transparent;
     }
     100% {
-        border: 3px solid #a3d7e1;
+        border: 3px solid $cyan-300;
     }
 }
 
 .alert-warning {
-  color: #664d03;
-  background-color: #fff3cd;
+  color: $orange-700;
+  background-color: $orange-200;
   animation: 2s ease-in alert-warning-animation;
 }
 .alert-warning a {
-  color: #523e02;
+  color: $orange-700;
 }
 .alert-warning a::after {
-  background-color: #523e02;
+  background-color: $orange-700;
 }
 @keyframes alert-warning-animation{
     0% {
         border: 3px solid transparent;
     }
     100% {
-        border: 3px solid #ffecb5;
+        border: 3px solid $orange-300;
     }
 }
 
 .alert-danger {
-  color: #842029;
-  background-color: #f8d7da;
+  color: $red-700;
+  background-color: $red-200;
   animation: 2s ease-in alert-danger-animation;
 }
 .alert-danger a {
-  color: #6a1a21;
+  color: $red-700;
 }
 .alert-danger a::after {
-  background-color: #6a1a21;
+  background-color: $red-700;
 }
 @keyframes alert-danger-animation{
     0% {
         border: 3px solid transparent;
     }
     100% {
-        border: 3px solid #f5c2c7;
+        border: 3px solid $red-300;
     }
 }
 
 .alert-light {
-  color: #636464;
-  background-color: #fefefe;
+  color: $gray-600;
+  background-color: $gray-100;
   animation: 2s ease-in alert-light-animation;
 }
 .alert-light a {
-  color: #4f5050;
+  color: $gray-600;
 }
 .alert-light a::after {
-  background-color: #4f5050;
+  background-color: $gray-600;
 }
 @keyframes alert-light-animation{
     0% {
         border: 3px solid transparent;
     }
     100% {
-        border: 3px solid #fdfdfe;
+        border: 3px solid $gray-200;
     }
 }
 
 .alert-dark {
-  color: #141619;
-  background-color: #d3d3d4;
+  color: $gray-900;
+  background-color: $gray-400;
   animation: 2s ease-in alert-dark-animation;
 }
 .alert-dark a {
-  color: #101214;
+  color: $gray-900;
 }
 .alert-dark a::after {
-  background-color: #101214;
+  background-color: $gray-900;
 }
 @keyframes alert-dark-animation{
     0% {
         border: 3px solid transparent;
     }
     100% {
-        border: 3px solid #bcbebf;
+        border: 3px solid $gray-500;
     }
 }
