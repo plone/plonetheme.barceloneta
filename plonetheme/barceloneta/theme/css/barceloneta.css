@@ -11351,18 +11351,18 @@ textarea.form-control-lg {
 }
 
 .alert-primary {
-  color: #004a6a;
-  background-color: #cce5ef;
+  color: #055160;
+  background-color: #6edff6;
   -webkit-animation: 2s ease-in alert-primary-animation;
   animation: 2s ease-in alert-primary-animation;
 }
 
 .alert-primary a {
-  color: #003b55;
+  color: #055160;
 }
 
 .alert-primary a::after {
-  background-color: #003b55;
+  background-color: #055160;
 }
 
 @-webkit-keyframes alert-primary-animation {
@@ -11370,7 +11370,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #b3d7e8;
+    border: 3px solid #3dd5f3;
   }
 }
 
@@ -11379,22 +11379,22 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #b3d7e8;
+    border: 3px solid #3dd5f3;
   }
 }
 .alert-secondary {
-  color: #41464b;
-  background-color: #e2e3e5;
+  color: #495057;
+  background-color: #e9ecef;
   -webkit-animation: 2s ease-in alert-secondary-animation;
   animation: 2s ease-in alert-secondary-animation;
 }
 
 .alert-secondary a {
-  color: #34383c;
+  color: #495057;
 }
 
 .alert-secondary a::after {
-  background-color: #34383c;
+  background-color: #495057;
 }
 
 @-webkit-keyframes alert-secondary-animation {
@@ -11402,7 +11402,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #d3d6d8;
+    border: 3px solid #dee2e6;
   }
 }
 
@@ -11411,22 +11411,22 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #d3d6d8;
+    border: 3px solid #dee2e6;
   }
 }
 .alert-success {
   color: #0f5132;
-  background-color: #d1e7dd;
+  background-color: #a3cfbb;
   -webkit-animation: 2s ease-in alert-success-animation;
   animation: 2s ease-in alert-success-animation;
 }
 
 .alert-success a {
-  color: #0c4128;
+  color: #0f5132;
 }
 
 .alert-success a::after {
-  background-color: #0c4128;
+  background-color: #0f5132;
 }
 
 @-webkit-keyframes alert-success-animation {
@@ -11434,7 +11434,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #badbcc;
+    border: 3px solid #75b798;
   }
 }
 
@@ -11443,22 +11443,22 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #badbcc;
+    border: 3px solid #75b798;
   }
 }
 .alert-info {
-  color: #055160;
-  background-color: #cff4fc;
+  color: #087990;
+  background-color: #9eeaf9;
   -webkit-animation: 2s ease-in alert-info-animation;
   animation: 2s ease-in alert-info-animation;
 }
 
 .alert-info a {
-  color: #04414d;
+  color: #087990;
 }
 
 .alert-info a::after {
-  background-color: #04414d;
+  background-color: #087990;
 }
 
 @-webkit-keyframes alert-info-animation {
@@ -11466,7 +11466,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #a3d7e1;
+    border: 3px solid #6edff6;
   }
 }
 
@@ -11475,22 +11475,22 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #a3d7e1;
+    border: 3px solid #6edff6;
   }
 }
 .alert-warning {
-  color: #664d03;
-  background-color: #fff3cd;
+  color: #984c0c;
+  background-color: #fecba1;
   -webkit-animation: 2s ease-in alert-warning-animation;
   animation: 2s ease-in alert-warning-animation;
 }
 
 .alert-warning a {
-  color: #523e02;
+  color: #984c0c;
 }
 
 .alert-warning a::after {
-  background-color: #523e02;
+  background-color: #984c0c;
 }
 
 @-webkit-keyframes alert-warning-animation {
@@ -11498,7 +11498,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #ffecb5;
+    border: 3px solid #feb272;
   }
 }
 
@@ -11507,22 +11507,22 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #ffecb5;
+    border: 3px solid #feb272;
   }
 }
 .alert-danger {
   color: #842029;
-  background-color: #f8d7da;
+  background-color: #f1aeb5;
   -webkit-animation: 2s ease-in alert-danger-animation;
   animation: 2s ease-in alert-danger-animation;
 }
 
 .alert-danger a {
-  color: #6a1a21;
+  color: #842029;
 }
 
 .alert-danger a::after {
-  background-color: #6a1a21;
+  background-color: #842029;
 }
 
 @-webkit-keyframes alert-danger-animation {
@@ -11530,7 +11530,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #f5c2c7;
+    border: 3px solid #ea868f;
   }
 }
 
@@ -11539,22 +11539,22 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #f5c2c7;
+    border: 3px solid #ea868f;
   }
 }
 .alert-light {
-  color: #636464;
-  background-color: #fefefe;
+  color: #6c757d;
+  background-color: #f8f9fa;
   -webkit-animation: 2s ease-in alert-light-animation;
   animation: 2s ease-in alert-light-animation;
 }
 
 .alert-light a {
-  color: #4f5050;
+  color: #6c757d;
 }
 
 .alert-light a::after {
-  background-color: #4f5050;
+  background-color: #6c757d;
 }
 
 @-webkit-keyframes alert-light-animation {
@@ -11562,7 +11562,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #fdfdfe;
+    border: 3px solid #e9ecef;
   }
 }
 
@@ -11571,22 +11571,22 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #fdfdfe;
+    border: 3px solid #e9ecef;
   }
 }
 .alert-dark {
-  color: #141619;
-  background-color: #d3d3d4;
+  color: #212529;
+  background-color: #ced4da;
   -webkit-animation: 2s ease-in alert-dark-animation;
   animation: 2s ease-in alert-dark-animation;
 }
 
 .alert-dark a {
-  color: #101214;
+  color: #212529;
 }
 
 .alert-dark a::after {
-  background-color: #101214;
+  background-color: #212529;
 }
 
 @-webkit-keyframes alert-dark-animation {
@@ -11594,7 +11594,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #bcbebf;
+    border: 3px solid #adb5bd;
   }
 }
 
@@ -11603,7 +11603,7 @@ textarea.form-control-lg {
     border: 3px solid transparent;
   }
   100% {
-    border: 3px solid #bcbebf;
+    border: 3px solid #adb5bd;
   }
 }
 .pat-autotoc.autotabs .autotoc-nav {
