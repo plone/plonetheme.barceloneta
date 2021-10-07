@@ -1,8 +1,23 @@
 {
-  "name": "plonetheme.barceloneta",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@plone/plonetheme-barceloneta-base",
+  "description": "Plone Theme Barceloneta Resources",
+  "version": "3.0.0-alpha5",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:plone/plonetheme.barceloneta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plone/plonetheme.barceloneta/issues",
+    "email": "plone-developers@lists.sourceforge.net"
+  },
+  "homepage": "https://plone.org",
   "license": "MIT",
+  "keywords": [
+    "plone",
+    "front-end",
+    "sass",
+    "css"
+  ],
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "bootstrap": "^5.1.1",
