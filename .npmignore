@@ -1,0 +1,17 @@
+*.py
+/news/
+/node_modules/
+/plonetheme/
+/plonetheme.barceloneta.egg-info/
+/scss/legacy/
+CHANGES.rst
+CONTRIBUTING.rst
+index.html
+MANIFEST.in
+NOTES_TO_DO.rst
+pyproject.toml
+README.rst 
+setup.cfg
+setup.py
+*.rst
+.vscode/
