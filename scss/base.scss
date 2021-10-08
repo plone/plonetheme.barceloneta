@@ -8,11 +8,10 @@
 @import "variables.properties.scss";
 @import "variables.barceloneta.scss";
 
-// Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+// Bootstrap - imported with --load-path=node_modules
+@import "bootstrap/scss/bootstrap";
 
 // Plone backend or minimal styles
 @import "forms.scss";
 @import "controlpanels.scss";
 @import "login";
-// .. mockup specifics ...
