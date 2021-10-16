@@ -9,6 +9,16 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a6 (2021-10-16)
+--------------------
+
+New features:
+
+
+- Added npm packaging info
+  [agitator] (#251)
+
+
 3.0.0a5 (2021-09-15)
 --------------------
 
