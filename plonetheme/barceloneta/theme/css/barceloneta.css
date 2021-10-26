@@ -12249,4 +12249,10 @@ article > header {
   margin: 0 0.5rem;
 }
 
+article.vevent .cal_cate {
+  width: 7rem;
+}
+
+/* more event specific definitions here */
+
 /*# sourceMappingURL=barceloneta.css.map */
