@@ -1,5 +1,12 @@
 // Plone Barceloneta Styling & components
 
+// Plone colors
+@import "variables.colors.plone.scss";
+
+// Plone specific default variables & properties
+@import "variables.properties.scss";
+@import "variables.barceloneta.scss";
+
 @import "base.scss";
 
 @import "mixins/mixin.portlets.plone.scss";
@@ -7,10 +14,11 @@
 
 
 // Plone components
-@import "grid.scss";
 @import "cards.scss";
 @import "scaffolding.scss";
-@import "font.roboto.scss";
+
+
+// // style.scss
 @import "icons.scss";
 @import "header.scss";
 @import "sitenav.scss";
@@ -20,3 +28,4 @@
 @import "portlets.scss";
 @import "footer.scss";
 
+@import "roboto-webfont.scss";

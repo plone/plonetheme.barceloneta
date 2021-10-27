@@ -1,13 +1,6 @@
 // Use this file as base for base styling
 // for example to use with backend.xml
 
-// Plone colors
-@import "variables.colors.plone.scss";
-
-// Plone specific default variables & properties
-@import "variables.properties.scss";
-@import "variables.barceloneta.scss";
-
 // Bootstrap - imported with --load-path=node_modules
 @import "bootstrap/scss/bootstrap";
 
@@ -15,3 +8,4 @@
 @import "forms.scss";
 @import "controlpanels.scss";
 @import "login";
+@import "grid.scss";
