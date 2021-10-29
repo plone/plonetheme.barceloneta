@@ -34,6 +34,9 @@ $font-family-serif: Georgia, "Times New Roman", Times, serif!default;
 $font-family-base:            var(--bs-font-sans-serif) !default;
 $font-family-code:            var(--bs-font-monospace) !default;
 
+// Include Robot as webfont
+$enable-roboto-webfont: true !default;
+
 $font-weight-lighter: lighter!default;
 $font-weight-light: 300!default;
 $font-weight-normal: 400!default;
