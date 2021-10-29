@@ -35,7 +35,7 @@ $font-family-base:            var(--bs-font-sans-serif) !default;
 $font-family-code:            var(--bs-font-monospace) !default;
 
 // Include Robot as webfont
-$enable-roboto-webfont: false !default;
+$enable-roboto-webfont: true !default;
 
 $font-weight-lighter: lighter!default;
 $font-weight-light: 300!default;
