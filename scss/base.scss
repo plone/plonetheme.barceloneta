@@ -5,7 +5,8 @@
 @import "bootstrap/scss/bootstrap";
 
 // Plone backend or minimal styles
-@import "forms.scss";
-@import "controlpanels.scss";
+@import "alerts";
+@import "forms";
+@import "controlpanels";
 @import "login";
-@import "grid.scss";
+@import "grid";
