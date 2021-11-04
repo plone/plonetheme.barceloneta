@@ -4,8 +4,8 @@
   border: 3px solid transparent;
   border-radius: 0.25rem;
   animation-fill-mode: forwards !important;
-  animation-delay: 2s !important;
-  transition: border-width 0.6s linear;
+  animation-delay: 1.0s !important;
+  transition: border-width 1s linear;
   a {
       font-weight: 700;
       position: relative;
@@ -18,8 +18,8 @@
     height: 2px;
     left: 0px;
     bottom: 0px;
-    animation: 1.5s ease-in alert-link-animation;
-    animation-delay: 4.5s;
+    animation: 1.6s ease-in alert-link-animation;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
 }
 .alert-heading {
@@ -60,10 +60,13 @@
 }
 @keyframes alert-primary-animation{
     0% {
-        border: 3px solid transparent;
+        border: 3px solid shift-color($cyan, $alert-bg-scale);
+    }
+    50% {
+        border: 3px solid shift-color($cyan, -20%);
     }
     100% {
-        border: 3px solid shift-color($cyan, $alert-border-scale);
+        border: 3px solid shift-color($cyan, -60%);
     }
 }
 
@@ -80,10 +83,13 @@
 }
 @keyframes alert-secondary-animation{
     0% {
-        border: 3px solid transparent;
+        border: 3px solid shift-color($gray, $alert-bg-scale);
+    }
+    50% {
+        border: 3px solid shift-color($gray, -20%);
     }
     100% {
-        border: 3px solid shift-color($gray, $alert-border-scale);
+        border: 3px solid shift-color($gray, -60%);
     }
 }
 
@@ -100,16 +106,20 @@
 }
 @keyframes alert-success-animation{
     0% {
-        border: 3px solid transparent;
+        border: 3px solid shift-color($green, $alert-bg-scale);
+    }
+    50% {
+        border: 3px solid shift-color($green, -20%);
     }
     100% {
-        border: 3px solid shift-color($green, $alert-border-scale);
+        border: 3px solid shift-color($green, -60%);
     }
 }
 
 .alert-info {
   color: shift-color($cyan, $alert-color-scale);
   background-color: shift-color($cyan, $alert-bg-scale);
+  border: 3px solid shift-color($cyan, $alert-bg-scale);
   animation: 2s ease-in alert-info-animation;
 }
 .alert-info a {
@@ -120,10 +130,13 @@
 }
 @keyframes alert-info-animation{
     0% {
-        border: 3px solid transparent;
+        border: 3px solid shift-color($cyan, $alert-bg-scale);
+    }
+    50% {
+        border: 3px solid shift-color($cyan, -20%);
     }
     100% {
-        border: 3px solid shift-color($cyan, $alert-border-scale);
+        border: 3px solid shift-color($cyan, -60%);
     }
 }
 
@@ -140,10 +153,13 @@
 }
 @keyframes alert-warning-animation{
     0% {
-        border: 3px solid transparent;
+        border: 3px solid shift-color($orange, $alert-bg-scale);
+    }
+    50% {
+        border: 3px solid shift-color($orange, -20%);
     }
     100% {
-        border: 3px solid shift-color($orange, $alert-border-scale);
+        border: 3px solid shift-color($orange, -60%);
     }
 }
 
@@ -160,10 +176,13 @@
 }
 @keyframes alert-danger-animation{
     0% {
-        border: 3px solid transparent;
+        border: 3px solid shift-color($red, $alert-bg-scale);
+    }
+    50% {
+        border: 3px solid shift-color($red, -20%);
     }
     100% {
-        border: 3px solid shift-color($red, $alert-border-scale);
+        border: 3px solid shift-color($red, -60%);
     }
 }
 
@@ -180,10 +199,13 @@
 }
 @keyframes alert-light-animation{
     0% {
-        border: 3px solid transparent;
+        border: 3px solid shift-color($gray, $alert-bg-scale);
+    }
+    50% {
+        border: 3px solid shift-color($gray, -20%);
     }
     100% {
-        border: 3px solid shift-color($gray, $alert-border-scale);
+        border: 3px solid shift-color($gray, -60%);
     }
 }
 
@@ -200,9 +222,12 @@
 }
 @keyframes alert-dark-animation{
     0% {
-        border: 3px solid transparent;
+        border: 3px solid shift-color($dark, $alert-bg-scale);
+    }
+    50% {
+        border: 3px solid shift-color($dark, -20%);
     }
     100% {
-        border: 3px solid shift-color($dark, $alert-border-scale);
+        border: 3px solid shift-color($dark, -60%);
     }
 }

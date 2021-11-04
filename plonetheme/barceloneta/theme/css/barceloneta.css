@@ -11289,9 +11289,9 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
   -webkit-animation-fill-mode: forwards !important;
   animation-fill-mode: forwards !important;
-  -webkit-animation-delay: 2s !important;
-  animation-delay: 2s !important;
-  transition: border-width 0.6s linear;
+  -webkit-animation-delay: 1s !important;
+  animation-delay: 1s !important;
+  transition: border-width 1s linear;
 }
 .alert a {
   font-weight: 700;
@@ -11305,10 +11305,10 @@ textarea.form-control-lg {
   height: 2px;
   left: 0px;
   bottom: 0px;
-  -webkit-animation: 1.5s ease-in alert-link-animation;
-  animation: 1.5s ease-in alert-link-animation;
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 4.5s;
+  -webkit-animation: 1.6s ease-in alert-link-animation;
+  animation: 1.6s ease-in alert-link-animation;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -11367,19 +11367,25 @@ textarea.form-control-lg {
 
 @-webkit-keyframes alert-primary-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #cff4fc;
+  }
+  50% {
+    border: 3px solid #3dd5f3;
   }
   100% {
-    border: 3px solid #b6effb;
+    border: 3px solid #9eeaf9;
   }
 }
 
 @keyframes alert-primary-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #cff4fc;
+  }
+  50% {
+    border: 3px solid #3dd5f3;
   }
   100% {
-    border: 3px solid #b6effb;
+    border: 3px solid #9eeaf9;
   }
 }
 .alert-secondary {
@@ -11399,19 +11405,25 @@ textarea.form-control-lg {
 
 @-webkit-keyframes alert-secondary-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #e2e3e5;
+  }
+  50% {
+    border: 3px solid #899197;
   }
   100% {
-    border: 3px solid #d3d6d8;
+    border: 3px solid #c4c8cb;
   }
 }
 
 @keyframes alert-secondary-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #e2e3e5;
+  }
+  50% {
+    border: 3px solid #899197;
   }
   100% {
-    border: 3px solid #d3d6d8;
+    border: 3px solid #c4c8cb;
   }
 }
 .alert-success {
@@ -11431,24 +11443,31 @@ textarea.form-control-lg {
 
 @-webkit-keyframes alert-success-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #d1e7dd;
+  }
+  50% {
+    border: 3px solid #479f76;
   }
   100% {
-    border: 3px solid #badbcc;
+    border: 3px solid #a3cfbb;
   }
 }
 
 @keyframes alert-success-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #d1e7dd;
+  }
+  50% {
+    border: 3px solid #479f76;
   }
   100% {
-    border: 3px solid #badbcc;
+    border: 3px solid #a3cfbb;
   }
 }
 .alert-info {
   color: #087990;
   background-color: #cff4fc;
+  border: 3px solid #cff4fc;
   -webkit-animation: 2s ease-in alert-info-animation;
   animation: 2s ease-in alert-info-animation;
 }
@@ -11463,19 +11482,25 @@ textarea.form-control-lg {
 
 @-webkit-keyframes alert-info-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #cff4fc;
+  }
+  50% {
+    border: 3px solid #3dd5f3;
   }
   100% {
-    border: 3px solid #b6effb;
+    border: 3px solid #9eeaf9;
   }
 }
 
 @keyframes alert-info-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #cff4fc;
+  }
+  50% {
+    border: 3px solid #3dd5f3;
   }
   100% {
-    border: 3px solid #b6effb;
+    border: 3px solid #9eeaf9;
   }
 }
 .alert-warning {
@@ -11495,19 +11520,25 @@ textarea.form-control-lg {
 
 @-webkit-keyframes alert-warning-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #ffe5d0;
+  }
+  50% {
+    border: 3px solid #fd9843;
   }
   100% {
-    border: 3px solid #fed8b9;
+    border: 3px solid #fecba1;
   }
 }
 
 @keyframes alert-warning-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #ffe5d0;
+  }
+  50% {
+    border: 3px solid #fd9843;
   }
   100% {
-    border: 3px solid #fed8b9;
+    border: 3px solid #fecba1;
   }
 }
 .alert-danger {
@@ -11527,19 +11558,25 @@ textarea.form-control-lg {
 
 @-webkit-keyframes alert-danger-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #f8d7da;
+  }
+  50% {
+    border: 3px solid #e35d6a;
   }
   100% {
-    border: 3px solid #f5c2c7;
+    border: 3px solid #f1aeb5;
   }
 }
 
 @keyframes alert-danger-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #f8d7da;
+  }
+  50% {
+    border: 3px solid #e35d6a;
   }
   100% {
-    border: 3px solid #f5c2c7;
+    border: 3px solid #f1aeb5;
   }
 }
 .alert-light {
@@ -11559,19 +11596,25 @@ textarea.form-control-lg {
 
 @-webkit-keyframes alert-light-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #e2e3e5;
+  }
+  50% {
+    border: 3px solid #899197;
   }
   100% {
-    border: 3px solid #d3d6d8;
+    border: 3px solid #c4c8cb;
   }
 }
 
 @keyframes alert-light-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #e2e3e5;
+  }
+  50% {
+    border: 3px solid #899197;
   }
   100% {
-    border: 3px solid #d3d6d8;
+    border: 3px solid #c4c8cb;
   }
 }
 .alert-dark {
@@ -11591,19 +11634,25 @@ textarea.form-control-lg {
 
 @-webkit-keyframes alert-dark-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #d3d3d4;
+  }
+  50% {
+    border: 3px solid #4d5154;
   }
   100% {
-    border: 3px solid #bcbebf;
+    border: 3px solid #a6a8a9;
   }
 }
 
 @keyframes alert-dark-animation {
   0% {
-    border: 3px solid transparent;
+    border: 3px solid #d3d3d4;
+  }
+  50% {
+    border: 3px solid #4d5154;
   }
   100% {
-    border: 3px solid #bcbebf;
+    border: 3px solid #a6a8a9;
   }
 }
 .pat-autotoc.autotabs .autotoc-nav {
