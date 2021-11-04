@@ -11353,6 +11353,7 @@ textarea.form-control-lg {
 .alert-primary {
   color: #087990;
   background-color: #cff4fc;
+  border: 3px solid #cff4fc;
   -webkit-animation: 2s ease-in alert-primary-animation;
   animation: 2s ease-in alert-primary-animation;
 }
@@ -11391,6 +11392,7 @@ textarea.form-control-lg {
 .alert-secondary {
   color: #41464b;
   background-color: #e2e3e5;
+  border: 3px solid #e2e3e5;
   -webkit-animation: 2s ease-in alert-secondary-animation;
   animation: 2s ease-in alert-secondary-animation;
 }
@@ -11429,6 +11431,7 @@ textarea.form-control-lg {
 .alert-success {
   color: #0f5132;
   background-color: #d1e7dd;
+  border: 3px solid #d1e7dd;
   -webkit-animation: 2s ease-in alert-success-animation;
   animation: 2s ease-in alert-success-animation;
 }
@@ -11506,6 +11509,7 @@ textarea.form-control-lg {
 .alert-warning {
   color: #984c0c;
   background-color: #ffe5d0;
+  border: 3px solid #ffe5d0;
   -webkit-animation: 2s ease-in alert-warning-animation;
   animation: 2s ease-in alert-warning-animation;
 }
@@ -11544,6 +11548,7 @@ textarea.form-control-lg {
 .alert-danger {
   color: #842029;
   background-color: #f8d7da;
+  border: 3px solid #f8d7da;
   -webkit-animation: 2s ease-in alert-danger-animation;
   animation: 2s ease-in alert-danger-animation;
 }
@@ -11582,6 +11587,7 @@ textarea.form-control-lg {
 .alert-light {
   color: #41464b;
   background-color: #e2e3e5;
+  border: 3px solid #e2e3e5;
   -webkit-animation: 2s ease-in alert-light-animation;
   animation: 2s ease-in alert-light-animation;
 }
@@ -11620,6 +11626,7 @@ textarea.form-control-lg {
 .alert-dark {
   color: #141619;
   background-color: #d3d3d4;
+  border: 3px solid #d3d3d4;
   -webkit-animation: 2s ease-in alert-dark-animation;
   animation: 2s ease-in alert-dark-animation;
 }

@@ -50,6 +50,7 @@
 .alert-primary {
   color: shift-color($cyan, $alert-color-scale);
   background-color: shift-color($cyan, $alert-bg-scale);
+  border: 3px solid shift-color($cyan, $alert-bg-scale);
   animation: 2s ease-in alert-primary-animation;
 }
 .alert-primary a {
@@ -73,6 +74,7 @@
 .alert-secondary {
   color: shift-color($gray, $alert-color-scale);
   background-color: shift-color($gray, $alert-bg-scale);
+  border: 3px solid shift-color($gray, $alert-bg-scale);
   animation: 2s ease-in alert-secondary-animation;
 }
 .alert-secondary a {
@@ -96,6 +98,7 @@
 .alert-success {
   color: shift-color($green, $alert-color-scale);
   background-color: shift-color($green, $alert-bg-scale);
+  border: 3px solid shift-color($green, $alert-bg-scale);
   animation: 2s ease-in alert-success-animation;
 }
 .alert-success a {
@@ -143,6 +146,7 @@
 .alert-warning {
   color: shift-color($orange, $alert-color-scale);
   background-color: shift-color($orange, $alert-bg-scale);
+  border: 3px solid shift-color($orange, $alert-bg-scale);
   animation: 2s ease-in alert-warning-animation;
 }
 .alert-warning a {
@@ -166,6 +170,7 @@
 .alert-danger {
   color: shift-color($red, $alert-color-scale);
   background-color: shift-color($red, $alert-bg-scale);
+  border: 3px solid shift-color($red, $alert-bg-scale);
   animation: 2s ease-in alert-danger-animation;
 }
 .alert-danger a {
@@ -189,6 +194,7 @@
 .alert-light {
   color: shift-color($gray, $alert-color-scale);
   background-color: shift-color($gray, $alert-bg-scale);
+  border: 3px solid shift-color($gray, $alert-bg-scale);
   animation: 2s ease-in alert-light-animation;
 }
 .alert-light a {
@@ -212,6 +218,7 @@
 .alert-dark {
   color: shift-color($dark, $alert-color-scale);
   background-color: shift-color($dark, $alert-bg-scale);
+  border: 3px solid shift-color($dark, $alert-bg-scale);
   animation: 2s ease-in alert-dark-animation;
 }
 .alert-dark a {
