@@ -1,34 +1,34 @@
 // Plone Barceloneta Styling & components
 
 // Plone colors
-@import "variables.colors.plone.scss";
+@import "variables.colors.plone";
 
 // Plone specific default variables & properties
-@import "variables.properties.scss";
-@import "variables.barceloneta.scss";
+@import "variables.properties";
+@import "variables.barceloneta";
 
-@import "base.scss";
+@import "base";
 
-@import "mixins/mixin.portlets.plone.scss";
-@import "mixins/mixin.font.plone.scss";
+@import "mixins/mixin.portlets.plone";
+@import "mixins/mixin.font.plone";
 
 
 // Plone components
-@import "cards.scss";
-@import "scaffolding.scss";
+@import "cards";
+@import "scaffolding";
 
 
 // // style.scss
-@import "icons.scss";
-@import "header.scss";
-@import "sitenav.scss";
-@import "breadcrumbs.scss";
-@import "content.scss";
-@import "comments.scss";
-@import "portlets.scss";
-@import "footer.scss";
-@import "event.scss";
+@import "icons";
+@import "header";
+@import "sitenav";
+@import "breadcrumbs";
+@import "content";
+@import "comments";
+@import "portlets";
+@import "footer";
+@import "event";
 
 @import "print";
 
-@import "roboto-webfont.scss";
+@import "roboto-webfont";
