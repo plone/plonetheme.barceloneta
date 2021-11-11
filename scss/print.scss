@@ -1,0 +1,20 @@
+@media print {
+  * {
+    text-shadow: none !important;
+    color: $black !important; // Black prints faster: h5bp.com/s
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  #content-header,
+  #edit-zone,
+  #mainnavigation-wrapper,
+  #portal-breadcrumbs,
+  #portal-footer-wrapper,
+  #portal-personaltools,
+  #portal-searchbox,
+  .link-https .sidebar-offcanvas {
+    display: none;
+    visibility: hidden;
+  }
+}
