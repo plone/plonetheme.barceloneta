@@ -60,23 +60,18 @@ $colors: (
 
 // Plone specific colors
 //colors
-$state-draft-color: #fab82a!default; // lime-yellow //draft is visible
-$state-pending-color: #e2e721!default; // orange
-$state-private-color: #c4183c!default; // red
-$state-internal-color: #fab82a!default; // is draft
-$state-internally-published-color: #883dfa!default; // is intranet
+$state-draft-color:                 #fab82a!default; // lime-yellow //draft is visible
+$state-pending-color:               #e2e721!default; // orange
+$state-private-color:               #c4183c!default; // red
+$state-internal-color:              #fab82a!default; // is draft
+$state-internally-published-color:  #883dfa!default; // is intranet
 
 // Plone
-$plone-link-color: #007bb1!default; //plone blue made slightly darker for wcag 2.0
-$plone-link-color-on-dark: #16a1e3!default; //plone blue
+$plone-link-color:                  #007bb1!default; //plone blue made slightly darker for wcag 2.0
+$plone-link-color-on-dark:          #16a1e3!default; //plone blue
 //if you need different contrast
-$plone-link-color-on-grey: #086ca3!default; //valid wcag 2.0
-$plone-link-hover-color: darken($plone-link-color, 15%)!default;
+$plone-link-color-on-grey:          #086ca3!default; //valid wcag 2.0
+$plone-link-hover-color:            darken($plone-link-color, 15%)!default;
 
 //grays
-$gray:          $gray-600!default;
-
-//*// SCAFFOLDING
-// $plone-body-bg: #fafafa!default; //almost-white
-$plone-footer-bg: #2e3133!default; //blued-darkgray
-
+$gray:                              $gray-600!default;
