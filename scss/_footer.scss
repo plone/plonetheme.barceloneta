@@ -1,21 +1,19 @@
 #portal-footer-wrapper {
-    background-color: #2e3133;
-    color: #ccc;
-    text-align: center;
-    padding: 1rem;
-
-  .doormat {}
+  background-color: $footer-bg;
+  color: $footer-color;
+  text-align: center;
+  padding: $spacer;
 
   .copyright {
-    padding: 0.5rem;
+    padding: $spacer * .5;
   }
 
   .colophon {
-    padding: 0.5rem;
+    padding: $spacer * .5;
   }
 
   .site-actions {
-    padding: 0.5rem;
+    padding: $spacer * .5;
 
     ul {
       padding: 0;
@@ -23,7 +21,7 @@
 
       li {
         display: inline;
-        margin: 0 0.5rem;
+        margin: 0 $spacer * .5;
       }
 
     }
