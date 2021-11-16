@@ -35,7 +35,7 @@ setup(
     keywords="web zope plone theme",
     author="Plone Foundation",
     author_email="plone-developers@lists.sourceforge.net",
-    url="https://pypi.org/project/plonetheme.barceloneta",
+    url="https://github.com/plone/plonetheme.barceloneta",
     license="GPL version 2",
     packages=find_packages(),
     namespace_packages=["plonetheme"],
