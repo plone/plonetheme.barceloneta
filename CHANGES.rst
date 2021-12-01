@@ -9,6 +9,26 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a8 (2021-12-01)
+--------------------
+
+New features:
+
+
+- Refactored the scss for the alerts. [klye] (#250)
+
+
+Bug fixes:
+
+
+- Remove unused IBarcelonetaLayer.
+  [agitator] (#254)
+- Add print styles.
+  Disable important for utility classes.
+  Enable negative margin utility classes.
+  [agitator] (#255)
+
+
 3.0.0a7 (2021-10-29)
 --------------------
 
