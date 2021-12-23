@@ -1,0 +1,31 @@
+#portal-footer-wrapper {
+  background-color: $footer-bg;
+  color: $footer-color;
+  text-align: center;
+  padding: $spacer;
+
+  .copyright {
+    padding: $spacer * .5;
+  }
+
+  .colophon {
+    padding: $spacer * .5;
+  }
+
+  .site-actions {
+    padding: $spacer * .5;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline;
+        margin: 0 $spacer * .5;
+      }
+
+    }
+
+  }
+
+}

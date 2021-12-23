@@ -9,6 +9,55 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a8 (2021-12-01)
+--------------------
+
+New features:
+
+
+- Refactored the scss for the alerts. [klye] (#250)
+
+
+Bug fixes:
+
+
+- Remove unused IBarcelonetaLayer.
+  [agitator] (#254)
+- Add print styles.
+  Disable important for utility classes.
+  Enable negative margin utility classes.
+  [agitator] (#255)
+
+
+3.0.0a7 (2021-10-29)
+--------------------
+
+New features:
+
+
+- Make loading of webfont optional.
+  Move Barceloneta specific styles out of base.scss.
+  Update to Bootstrap 5.1.3.
+  [agitator] (#253)
+
+
+Bug fixes:
+
+
+- event listing datecard style
+  [petschki] (#252)
+
+
+3.0.0a6 (2021-10-16)
+--------------------
+
+New features:
+
+
+- Added npm packaging info
+  [agitator] (#251)
+
+
 3.0.0a5 (2021-09-15)
 --------------------
 

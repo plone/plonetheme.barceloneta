@@ -7,3 +7,4 @@ node_modules
 .idea
 plonetheme/barceloneta/static/vendor/
 plonetheme/barceloneta/static/barceloneta.css.map
+.vscode

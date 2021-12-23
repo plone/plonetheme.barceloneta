@@ -18,4 +18,4 @@ Note
 Fonts
 -----
 
-Read `plonetheme.barceloneta/plonetheme/barceloneta/theme/less/roboto/README.rst if you need to update the shipped fonts.
+Read `plonetheme.barceloneta/plonetheme/barceloneta/theme/roboto/README.rst if you need to update the shipped fonts.

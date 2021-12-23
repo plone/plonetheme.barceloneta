@@ -1,26 +1,43 @@
 {
-  "name": "plonetheme.barceloneta",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@plone/plonetheme-barceloneta-base",
+  "description": "Plone Theme Barceloneta Resources",
+  "version": "3.0.0-alpha8",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:plone/plonetheme.barceloneta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plone/plonetheme.barceloneta/issues",
+    "email": "plone-developers@lists.sourceforge.net"
+  },
+  "homepage": "https://plone.org",
   "license": "MIT",
+  "keywords": [
+    "plone",
+    "front-end",
+    "sass",
+    "css"
+  ],
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "bootstrap": "^5.1.1",
-    "clean-css-cli": "^5.3.0",
-    "nodemon": "^2.0.7",
+    "autoprefixer": "^10.3.7",
+    "clean-css-cli": "^5.4.0",
+    "nodemon": "^2.0.14",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.2.15",
-    "postcss-cli": "^8.3.1",
-    "sass": "^1.32.13",
-    "stylelint-config-twbs-bootstrap": "^2.2.0"
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.1",
+    "sass": "^1.43.3",
+    "stylelint-config-twbs-bootstrap": "^2.2.4"
   },
   "scripts": {
     "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
     "build": "npm-run-all css-compile-main css-prefix-main css-minify-main",
     "css-main": "npm-run-all css-compile-main css-prefix-main css-minify-main",
-    "css-compile-main": "sass --style expanded --source-map --embed-sources --no-error-css scss/barceloneta.scss:plonetheme/barceloneta/theme/css/barceloneta.css",
+    "css-compile-main": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css scss/barceloneta.scss:plonetheme/barceloneta/theme/css/barceloneta.css",
     "css-prefix-main": "postcss --config postcss.config.js --replace \"plonetheme/barceloneta/theme/css/*.css\" \"!plonetheme/barceloneta/theme/css/*.min.css\"",
     "css-minify-main": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output plonetheme/barceloneta/theme/css/barceloneta.min.css plonetheme/barceloneta/theme/css/barceloneta.css",
     "css-lint": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   }
 }

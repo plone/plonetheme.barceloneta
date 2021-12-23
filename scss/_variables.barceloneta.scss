@@ -1,0 +1,66 @@
+// Body
+//
+// Settings for the `<body>` element.
+
+$primary:                           $plone-link-color!default;
+
+$spacer:                            1rem!default;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                      12 !default;
+$grid-gutter-width:                 1.5rem !default;
+$grid-row-columns:                  6 !default;
+
+$grid-main-breakpoint:              md!default;
+$nav-main-breakpoint:               $grid-main-breakpoint!default;
+
+$navbar-nav-link-padding-x:         $spacer * 0.75 $spacer !default;
+
+$navbar-dark-color:                 $white !default;
+$navbar-dark-hover-color:           $white !default;
+$navbar-dark-active-color:          $white !default;
+$navbar-dark-toggler-border-color:  $white !default;
+
+
+//*// TYPOGRAPHY
+// While Plone Logo uses the DIN Font, we use Roboto, which was designed for Android and so mobile optimized
+// A free DIN variant is available here (TTF only): https://www.1001fonts.com/alte-din-1451-mittelschrift-font.html
+$font-family-sans-serif:            "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
+$font-family-condensed:             "Roboto Condensed", "Arial Narrow", sans-serif!default; //just on toolbar
+$font-family-serif:                 Georgia, "Times New Roman", Times, serif!default;
+$font-family-base:                  var(--bs-font-sans-serif) !default;
+$font-family-code:                  var(--bs-font-monospace) !default;
+
+// Include Roboto as webfont
+$enable-roboto-webfont:             true !default;
+
+$font-weight-lighter:               lighter!default;
+$font-weight-light:                 300!default;
+$font-weight-normal:                400!default;
+$font-weight-bold:                  700!default;
+$font-weight-bolder:                bolder!default;
+
+$font-weight-base:                  $font-weight-normal!default;
+$line-height-base:                  1.428!default;
+
+$headings-margin-bottom:            $spacer * 0.5!default;
+$headings-font-family:              null!default;
+$headings-font-weight:              400!default;
+$headings-line-height:              1.2!default;
+$headings-color:                    null!default;
+
+$plone-portlet-navtree-maxlevel:    5!default;
+
+
+// Breadcrumbs
+$breadcrumb-bg:                     $gray-200 !default;
+$breadcrumb-padding-y:              $spacer * 0.5 !default;
+$breadcrumb-padding-x:              $spacer * 1 !default;
+
+
+// Footer
+$footer-bg:                         $gray-900 !default;
+$footer-color:                      $gray-300 !default;
