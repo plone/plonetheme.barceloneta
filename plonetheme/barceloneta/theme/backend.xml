@@ -50,7 +50,7 @@
       <!-- Base tag -->
       <before css:theme="title" css:content="base" />
       <!-- Title -->
-      <replace css:theme="title" css:content="title" />
+      <replace css:theme="head title" css:content="head title" />
       <!-- Pull in Plone Meta -->
       <after css:theme-children="head" css:content="head meta" />
       <!-- Don't use Plone icons, use the theme's -->
