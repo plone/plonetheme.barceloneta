@@ -12850,11 +12850,18 @@ body.col-one.col-two.col-content #portal-column-two {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .offcanvas-toggler .toggler-header {
+  display: block;
+  width: 100%;
   background-color: #007bb1;
   padding: 0.5rem;
-}
-.offcanvas-toggler .toggler-header a {
   color: rgba(255, 255, 255, 0.9);
+}
+.offcanvas-toggler .toggler-header:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+.offcanvas-toggler .toggler-hover {
+  display: block;
+  height: 100%;
 }
 
 /* general collapsed dark mode */
@@ -12866,6 +12873,12 @@ body.col-one.col-two.col-content #portal-column-two {
 #edit-zone .offcanvas-header {
   background-color: #007bb1;
   padding: 0.5rem 1rem;
+}
+#edit-zone .offcanvas-header a {
+  color: rgba(255, 255, 255, 0.9);
+}
+#edit-zone .offcanvas-header a:hover {
+  color: rgba(0, 0, 0, 0.9);
 }
 #edit-zone .nav-link {
   border-radius: 0;

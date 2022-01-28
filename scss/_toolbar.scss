@@ -13,11 +13,18 @@
     }
 
     .toggler-header {
+        display:block;
+        width:100%;
         background-color:$plone-toolbar-link;
         padding:calc($spacer * .5);
-        a {
-            color:$plone-toolbar-text-color;
+        color:$plone-toolbar-text-color;
+        &:hover {
+            color:$plone-toolbar-bg;
         }
+    }
+    .toggler-hover {
+        display:block;
+        height:100%;
     }
 }
 
@@ -31,6 +38,13 @@
     .offcanvas-header {
         background-color:$plone-toolbar-link;
         padding:calc($spacer * .5) $spacer;
+
+        a {
+            color:$plone-toolbar-text-color;
+            &:hover {
+                color:$plone-toolbar-bg;
+            }
+        }
     }
 
     .nav-link {
