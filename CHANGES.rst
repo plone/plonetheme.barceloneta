@@ -9,6 +9,22 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a9 (2022-01-28)
+--------------------
+
+New features:
+
+
+- del favicons from index.html and rules
+  [talarias] (plip-favicon)
+
+
+Bug fixes:
+
+
+- Be more specific where replacing the head title element [ale-rt] (#264)
+
+
 3.0.0a8 (2021-12-01)
 --------------------
 
