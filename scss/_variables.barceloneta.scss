@@ -76,15 +76,10 @@ $plone-toolbar-link: $plone-link-color;
 $plone-toolbar-text-color: rgba(255, 255, 255, 0.9);
 $plone-toolbar-submenu-text-color: #fff;
 $plone-toolbar-submenu-header-color: lighten(#000, 80%);
-$plone-toolbar-published-color: $plone-link-color; // published and external same color
-$plone-toolbar-draft-color: #fab82a; // lime-yellow //draft is visible
-$plone-toolbar-pending-color: #e2e721; // orange
-$plone-toolbar-private-color: #c4183c; // red
-$plone-toolbar-internal-color: #fab82a; // is draft
-$plone-toolbar-internally-published-color: #883dfa; // is intranet
+
 $plone-toolbar-locked-color: var(--bs-warning); // is intranet
 
 $plone-toolbar-width: 220px;
-$plone-toolbar-width-collapsed: calc($spacer * 2);
+$plone-toolbar-width-collapsed: calc($spacer * 2.25);
 $plone-toolbar-top-height: calc($spacer * 2.5);
 

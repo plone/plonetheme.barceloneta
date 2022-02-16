@@ -58,15 +58,15 @@
 
     .label-state-published,
     .label-state-external {
-        color: $plone-toolbar-published-color !important;
+        color: $link-color !important;
     }
 
     .label-state-internally_published {
-        color: $plone-toolbar-internally-published-color !important;
+        color: $state-internally-published-color !important;
     }
 
     .label-state-pending {
-        color: $plone-toolbar-pending-color !important;
+        color: $state-pending-color !important;
     }
 
     li.active .label-state-pending,
@@ -76,11 +76,11 @@
 
     .label-state-draft,
     .label-state-internal {
-        color: $plone-toolbar-draft-color !important;
+        color: $state-draft-color !important;
     }
 
     .label-state-private {
-        color: $plone-toolbar-private-color !important;
+        color: $state-private-color !important;
     }
 
     .personaltools-wrapper {
