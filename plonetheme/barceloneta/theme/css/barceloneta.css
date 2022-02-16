@@ -12840,7 +12840,7 @@ body.col-one.col-two.col-content #portal-column-two {
 /* TOOLBAR */
 /* offcanvas toggler */
 .offcanvas-toggler {
-  width: 2rem;
+  width: 2.25rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -12934,7 +12934,7 @@ body.col-one.col-two.col-content #portal-column-two {
 }
 
 body.plone-toolbar-left {
-  padding-left: 2rem;
+  padding-left: 2.25rem;
 }
 body.plone-toolbar-left .offcanvas-pin,
 body.plone-toolbar-left .offcanvas-unpin {
@@ -12983,7 +12983,7 @@ body.plone-toolbar-left #edit-zone.bg-dark .personaltools-wrapper {
 
 /* extending dropdown from BS5 outside media query */
 body.plone-toolbar-top {
-  padding-left: 2rem;
+  padding-left: 2.25rem;
   padding-top: 0;
 }
 body.plone-toolbar-top .offcanvas-pin,
