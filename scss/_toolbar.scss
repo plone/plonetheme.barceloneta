@@ -7,6 +7,7 @@
     top:0;
     left:0;
     border-right:solid 1px $gray-300;
+    cursor:pointer;
 
     &.bg-dark {
         background-color:$plone-toolbar-bg;

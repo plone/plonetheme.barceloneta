@@ -12845,6 +12845,7 @@ body.col-one.col-two.col-content #portal-column-two {
   top: 0;
   left: 0;
   border-right: solid 1px #dee2e6;
+  cursor: pointer;
 }
 .offcanvas-toggler.bg-dark {
   background-color: rgba(0, 0, 0, 0.9);
