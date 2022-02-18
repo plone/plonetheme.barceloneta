@@ -13049,6 +13049,16 @@ img, picture {
   height: auto;
 }
 
+.text-columns-2 {
+  -moz-columns: 2;
+  columns: 2;
+}
+
+.text-columns-3 {
+  -moz-columns: 3;
+  columns: 3;
+}
+
 .card-light {
   border: none;
 }
