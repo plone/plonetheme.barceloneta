@@ -13044,6 +13044,11 @@ body.plone-toolbar-top #edit-zone .collapsing {
     right: 0;
   }
 }
+img, picture {
+  max-width: 100%;
+  height: auto;
+}
+
 .card-light {
   border: none;
 }
