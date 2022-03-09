@@ -80,25 +80,25 @@ body.template-history {
 
     .delete {
         background-color: $red-200;
-        padding: 0px 2px 0px 2px;
+        padding: 0 0.2em 0 0.2em;
     }
 
     .insert {
         background-color: $teal-200;
-        padding: 0px 2px 0px 2px;
+        padding: 0 0.2em 0 0.2em;
     }
 
     .tagInsert {
         background-color: $success;
         font-weight: bold;
-        padding: 0px 2px 0px 2px;
+        padding: 0 0.2em 0 0.2em;
         color: white;
     }
 
     .tagDelete {
         background-color: $danger;
         font-weight: bold;
-        padding: 0px 2px 0px 2px;
+        padding: 0 0.2em 0 0.2em;
         color: white;
     }
 
