@@ -32,16 +32,25 @@
 
         <nav class="navbar navbar-expand-md navbar-dark bg-primary pat-navigationmarker" id="portal-globalnav-wrapper">
           <div class="container">
-            <button class="navbar-toggler"></button>
-
-            <div class="collapse navbar-collapse" id="portal-globalnav-collapse">
-              <ul class="navbar-nav me-auto" id="portal-globalnav">
-              </ul>
-              <div id="portal-searchbox">
+            <!-- <a class="navbar-brand" href="#">Offcanvas navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="visibility: hidden;" aria-hidden="true">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto" id="portal-globalnav">
+                </ul>
+                <div id="portal-searchbox">
+                </div>
+                </div>
             </div>
           </div>
         </nav>
+
 
       </div>
     </div>
