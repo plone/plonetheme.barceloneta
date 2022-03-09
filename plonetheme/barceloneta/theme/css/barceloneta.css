@@ -12603,6 +12603,70 @@ label.required:after {
   font-size: 1.25rem;
 }
 
+body.template-history .inline-diff {
+  font-size: 100%;
+  padding: 1em;
+}
+body.template-history .diff-head {
+  padding-bottom: 1em;
+}
+body.template-history .diff-legend-label {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+body.template-history #diff-legend {
+  position: relative;
+}
+body.template-history #diff-table {
+  float: right;
+  width: 22.5em;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+body.template-history .delete {
+  background-color: #f1aeb5;
+  padding: 0 0.2em 0 0.2em;
+}
+body.template-history .insert {
+  background-color: #a6e9d5;
+  padding: 0 0.2em 0 0.2em;
+}
+body.template-history .tagInsert {
+  background-color: #198754;
+  font-weight: bold;
+  padding: 0 0.2em 0 0.2em;
+  color: white;
+}
+body.template-history .tagDelete {
+  background-color: #dc3545;
+  font-weight: bold;
+  padding: 0 0.2em 0 0.2em;
+  color: white;
+}
+body.template-history .diff_header {
+  background-color: #e0e0e0;
+}
+body.template-history td.diff_header {
+  text-align: right;
+}
+body.template-history .diff_next {
+  background-color: #c0c0c0;
+}
+body.template-history .diff_add {
+  background-color: #a6e9d5;
+}
+body.template-history .diff_chg {
+  background-color: #ffe69c;
+}
+body.template-history .diff_sub {
+  background-color: #f1aeb5;
+}
+body.template-history table.diff td {
+  border-top: 1px solid #dee2e6;
+}
+
 body[class*=-controlpanel] .controlPanel > header,
 body[class*=-controlpanel] article > header {
   margin-bottom: 2rem;
