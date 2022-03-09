@@ -32,7 +32,7 @@
   <copy attributes="*" css:content="body" css:theme="body" />
 
   <!-- move global nav and livesearch -->
-  <replace css:theme="#portal-globalnav" css:content="#portal-globalnav" />
+  <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
   <drop css:content="#portal-searchbox"  />
   <replace css:theme="#portal-searchbox" css:content="#portal-searchbox" mode="raw" />
   <replace css:theme="button.navbar-toggler" css:content="button.navbar-toggler" mode="raw" />
