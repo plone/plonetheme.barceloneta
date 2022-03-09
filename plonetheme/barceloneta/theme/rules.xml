@@ -31,8 +31,14 @@
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
   <copy attributes="*" css:content="body" css:theme="body" />
 
-  <!-- move global nav -->
-  <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
+  <!-- move global nav and livesearch -->
+  <replace css:theme="#portal-globalnav" css:content="#portal-globalnav" />
+  <drop css:content="#portal-searchbox"  />
+  <replace css:theme="#portal-searchbox" css:content="#portal-searchbox" mode="raw" />
+  <replace css:theme="button.navbar-toggler" css:content="button.navbar-toggler" mode="raw" />
+
+  <!-- <copy attributes="aria-label" css:theme=".navbar-toggler" css:content=".navbar-toggler" /> -->
+
 
   <!-- Content header -->
   <replace css:theme="#portal-top" css:content-children="#portal-top" />
