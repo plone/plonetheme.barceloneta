@@ -4,3 +4,44 @@
 .text-columns-3{
   columns: 3;
 }
+
+.image-right{
+  @extend .mx-auto;
+  @extend .my-2;
+  @extend .d-block;
+  &.scale-large{
+    @extend .float-xxl-end;
+    @extend .ms-xxl-2;
+    @extend .d-xxl-inline-block;
+  }
+  &.scale-preview{
+    @extend .float-lg-end;
+    @extend .ms-lg-2;
+    @extend .d-lg-inline-block;
+  }
+  &.scale-mini{
+    @extend .float-md-end;
+    @extend .ms-md-2;
+    @extend .d-md-inline-block;
+  }
+}
+.image-left{
+  @extend .mx-auto;
+  @extend .my-2;
+  @extend .d-block;
+  &.scale-large{
+    @extend .float-xxl-start;
+    @extend .me-xxl-2;
+    @extend .d-xxl-inline-block;
+  }
+  &.scale-preview{
+    @extend .float-lg-start;
+    @extend .me-lg-2;
+    @extend .d-lg-inline-block;
+  }
+  &.scale-mini{
+    @extend .float-md-start;
+    @extend .me-md-2;
+    @extend .d-md-inline-block;
+  }
+}

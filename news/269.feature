@@ -1,0 +1,1 @@
+Optimize image floating for content [MrTango]
