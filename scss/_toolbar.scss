@@ -1,0 +1,252 @@
+/* TOOLBAR */
+
+/* offcanvas toggler */
+.offcanvas-toggler {
+    width:$plone-toolbar-width-collapsed;
+    position:fixed;
+    top:0;
+    left:0;
+    border-right:solid 1px $gray-300;
+    cursor:pointer;
+
+    &.bg-dark {
+        background-color:$plone-toolbar-bg;
+    }
+
+    .toggler-header {
+        display:block;
+        width:100%;
+        background-color:$plone-toolbar-link;
+        padding:calc($spacer * .5);
+        color:$plone-toolbar-text-color;
+        &:hover {
+            color:$plone-toolbar-bg;
+        }
+    }
+    .toggler-hover {
+        display:block;
+        height:100%;
+    }
+}
+
+/* general collapsed dark mode */
+#edit-zone {
+    // font-family: $plone-toolbar-font-primary;
+    width: $plone-toolbar-width;
+    border-right:solid 1px $gray-300;
+    overflow-y: auto;
+
+    .offcanvas-header {
+        background-color:$plone-toolbar-link;
+        padding:calc($spacer * .5) $spacer;
+
+        a {
+            color:$plone-toolbar-text-color;
+            &:hover {
+                color:$plone-toolbar-bg;
+            }
+        }
+    }
+
+    .nav-link {
+        border-radius:0;
+        color:var(--bs-body-color);
+
+        &.locked {
+            color:$plone-toolbar-locked-color !important;
+        }
+    }
+
+    .label-state-published,
+    .label-state-external {
+        color: $link-color !important;
+    }
+
+    .label-state-internally_published {
+        color: $state-internally-published-color !important;
+    }
+
+    .label-state-pending {
+        color: $state-pending-color !important;
+    }
+
+    li.active .label-state-pending,
+    .label-state-pending:hover {
+        color: $plone-toolbar-text-color !important;
+    } //contrast
+
+    .label-state-draft,
+    .label-state-internal {
+        color: $state-draft-color !important;
+    }
+
+    .label-state-private {
+        color: $state-private-color !important;
+    }
+
+    .personaltools-wrapper {
+        margin-top:auto;
+        border-top:solid 1px darken($plone-toolbar-separator-color, 80%);
+        padding:calc($spacer * 0.5) 0;
+    }
+
+    &.bg-dark {
+        color:$plone-toolbar-text-color;
+        background-color:$plone-toolbar-bg;
+        border-right:none;
+
+        .nav-link {
+            color: color-contrast($plone-toolbar-link);
+            &:focus {
+                background: $plone-toolbar-link;
+            }
+            &:hover {
+                background: $plone-toolbar-link;
+                color: color-contrast($plone-toolbar-link);
+                .label-state-published,
+                .label-state-external {
+                    color: lighten($plone-link-color, 10%) !important;
+                }
+            }
+        }
+    }
+}
+
+body.plone-toolbar-left {
+    padding-left:$plone-toolbar-width-collapsed;
+
+    .offcanvas-pin,
+    .offcanvas-unpin {
+        display:none;
+    }
+
+    @include media-breakpoint-up(md) {
+        .offcanvas-pin {
+            display:block;
+        }
+
+        &.plone-toolbar-left-expanded {
+            .offcanvas-dismiss,
+            .offcanvas-pin,
+            .offcanvas-toggler {
+                display:none;
+            }
+            .offcanvas-unpin {
+                display:block;
+            }
+            padding-left:$plone-toolbar-width;
+            #edit-zone {
+                // show offcanvas always if expanded
+                visibility:visible !important;
+                transform:none;
+                transition:none;
+            }
+        }
+    }
+
+    #edit-zone {
+        .nav-link {
+            &.dropdown-toggle {
+                padding-bottom:0.25rem;
+            }
+        }
+
+        .collapse, .collapsing {
+            ul li {
+                padding-left:$spacer;
+            }
+            .nav-link {
+                padding:0.25rem 1rem;
+            }
+        }
+
+        .border-top {
+            border-top-color:darken($plone-toolbar-separator-color, 80%);
+        }
+
+        .personaltools-wrapper li {
+            padding-left:$spacer;
+        }
+
+        &.bg-dark {
+            .border-top,
+            .personaltools-wrapper {
+                border-top-color: $plone-toolbar-separator-color;
+            }
+        }
+    }
+}
+
+/* extending dropdown from BS5 outside media query */
+body.plone-toolbar-top {
+    padding-left:$plone-toolbar-width-collapsed;
+    padding-top:0;
+
+    .offcanvas-pin,
+    .offcanvas-unpin {
+        display:none;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    body.plone-toolbar-top {
+        padding-top:$plone-toolbar-top-height;
+        padding-left:0;
+
+        .offcanvas-toggler,
+        .offcanvas-header > a,
+        .offcanvas-unpin {
+            display:none;
+        }
+
+        .offcanvas-header {
+            height:100%;
+        }
+
+        #edit-zone {
+            visibility:visible !important;
+            transform:none;
+            transition:none;
+            width:100%;
+            flex-direction:row;
+            height:$plone-toolbar-top-height;
+            overflow-y:visible;
+
+            /* took from .dropdown-menu */
+            .collapse,
+            .collapsing {
+                position:absolute;
+                z-index:1000;
+                transition:none;
+                min-width:10rem;
+            }
+
+            .plone-toolbar-main {
+                flex-direction:row;
+
+                > .border-top {
+                    border-top:none;
+                    border-right:solid 1px $plone-toolbar-separator-color;
+                }
+                li.border-top:last-child {
+                    display:none;
+                }
+            }
+
+            &.bg-dark div.collapse {
+                background-color: $plone-toolbar-bg;
+            }
+
+            .personaltools-wrapper {
+                margin-left:auto;
+                margin-top:0;
+                padding:0;
+
+                .collapse {
+                    right:0;
+                }
+            }
+
+        }
+    }
+}
