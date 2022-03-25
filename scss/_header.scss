@@ -41,30 +41,48 @@
 // }
 
 //*// HEADER //*//
-#portal-header {
-  display: flex;
-  flex-wrap: wrap-reverse;
-  flex-direction: row-reverse;
-  margin: $spacer * 1.25 auto $spacer * 1.25;
 
+#content-header {}
+
+#portal-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: $spacer *.5;
   @include media-breakpoint-up($nav-main-breakpoint) {
-    position: relative;
-    @include make-row(0rem);
-    margin: $spacer * 1.25 auto $spacer * 1.25;
-    flex-wrap: wrap-reverse;
-  }
+    margin-bottom:  0;
+}
 }
 
 
-#portal-logo {
-  order: -1;
-  flex-grow: 1;
-  width: 100%;
-  margin-top: 1rem;
 
-  @include media-breakpoint-up(md) {
-    width: 50%;
-  }
+#portal-header {
+  display: flex;
+  justify-content: flex-end;
+//   flex-wrap: wrap-reverse;
+//   flex-direction: row-reverse;
+//   margin: $spacer * 1.25 auto $spacer * 1.25;
+
+//   @include media-breakpoint-up($nav-main-breakpoint) {
+//     position: relative;
+//     @include make-row(0rem);
+//     margin: $spacer * 1.25 auto $spacer * 1.25;
+//     flex-wrap: wrap-reverse;
+//   }
+}
+
+#portal-logo-wrapper {
+  align-items: center;
+}
+#portal-logo {
+  // order: -1;
+  flex-grow: 1;
+  // width: 100%;
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+
+  // @include media-breakpoint-up(md) {
+  //   width: 50%;
+  // }
 }
 
 #portal-languageselector {
@@ -106,67 +124,9 @@
   }
 }
 
-//mobile search
-#portal-searchbox {
-  order: -2;
-  margin-left: 3px;
-  white-space: nowrap;
-  z-index: 2;
-  width: 100%;
-  margin: 0;
-
-  @include media-breakpoint-up(md) {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
+.livesearch-results {
+      @include media-breakpoint-up($nav-main-breakpoint) {
+        position: absolute;
+        z-index: $zindex-offcanvas + 1;
+      }
   }
-
-  @include media-breakpoint-down($nav-main-breakpoint) {
-    .form-inline {
-      display: block;
-    }
-
-    margin: $spacer 0;
-
-    .searchField {
-      width: 100%;
-    }
-
-    .searchSection {
-      display: none;
-    }
-
-    //non on mobile
-    [type="submit"] {
-      display: none;
-    }
-
-    //submit hidden on mobile
-    label {
-      font-size: 86.667%
-    }
-  }
-
-}
-
-//non mobile search
-@include media-breakpoint-up($nav-main-breakpoint) {
-  #portal-searchbox {
-    margin-top: 5px; //visual balance
-    max-width: 50%;
-
-    [type="text"] {
-      border-bottom-right-radius: 0;
-      border-top-right-radius: 0;
-      width: 20rem;
-    }
-
-    [type="submit"] {
-      display: inline-block;
-      margin-left: -1px;
-      vertical-align: top;
-      width: auto;
-      display: inline-block;
-    }
-  }
-}
