@@ -13202,37 +13202,30 @@ img, picture {
   width: auto;
 }
 
-#portal-header {
+#portal-top {
   display: flex;
-  flex-wrap: wrap-reverse;
-  flex-direction: row-reverse;
-  margin: 1.25rem auto 1.25rem;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
 }
 @media (min-width: 768px) {
-  #portal-header {
-    position: relative;
-    --bs-gutter-x: 0rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-0.5 * var(--bs-gutter-x));
-    margin-left: calc(-0.5 * var(--bs-gutter-x));
-    margin: 1.25rem auto 1.25rem;
-    flex-wrap: wrap-reverse;
+  #portal-top {
+    margin-bottom: 0;
   }
 }
 
-#portal-logo {
-  order: -1;
-  flex-grow: 1;
-  width: 100%;
-  margin-top: 1rem;
+#portal-header {
+  display: flex;
+  justify-content: flex-end;
 }
-@media (min-width: 768px) {
-  #portal-logo {
-    width: 50%;
-  }
+
+#portal-logo-wrapper {
+  align-items: center;
+}
+
+#portal-logo {
+  flex-grow: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 #portal-languageselector {
@@ -13270,60 +13263,13 @@ img, picture {
   padding-right: 0;
 }
 
-#portal-searchbox {
-  order: -2;
-  margin-left: 3px;
-  white-space: nowrap;
-  z-index: 2;
-  width: 100%;
-  margin: 0;
-}
 @media (min-width: 768px) {
-  #portal-searchbox {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-  }
-}
-@media (max-width: 767.98px) {
-  #portal-searchbox {
-    margin: 1rem 0;
-  }
-  #portal-searchbox .form-inline {
-    display: block;
-  }
-  #portal-searchbox .searchField {
-    width: 100%;
-  }
-  #portal-searchbox .searchSection {
-    display: none;
-  }
-  #portal-searchbox [type=submit] {
-    display: none;
-  }
-  #portal-searchbox label {
-    font-size: 86.667%;
+  .livesearch-results {
+    position: absolute;
+    z-index: 1046;
   }
 }
 
-@media (min-width: 768px) {
-  #portal-searchbox {
-    margin-top: 5px;
-    max-width: 50%;
-  }
-  #portal-searchbox [type=text] {
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    width: 20rem;
-  }
-  #portal-searchbox [type=submit] {
-    display: inline-block;
-    margin-left: -1px;
-    vertical-align: top;
-    width: auto;
-    display: inline-block;
-  }
-}
 #portal-globalnav-wrapper.navbar {
   padding: 0;
 }
