@@ -128,5 +128,8 @@
       @include media-breakpoint-up($nav-main-breakpoint) {
         position: absolute;
         z-index: $zindex-offcanvas + 1;
+        @if $enable-shadows==true {
+          @include box-shadow($box-shadow);
+        }
       }
   }
