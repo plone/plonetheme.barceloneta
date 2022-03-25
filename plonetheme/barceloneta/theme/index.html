@@ -1,67 +1,107 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Plone Theme</title>
-    <link rel="apple-touch-icon"
-          href="barceloneta-apple-touch-icon.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-          href="barceloneta-apple-touch-icon-144x144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-          href="barceloneta-apple-touch-icon-114x114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-          href="barceloneta-apple-touch-icon-72x72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57"
-          href="barceloneta-apple-touch-icon-57x57-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed"
-          href="barceloneta-apple-touch-icon-precomposed.png" />
-  </head>
-  <body>
-    <section id="portal-toolbar">
-    </section>
-    <div class="outer-wrapper">
-      <header id="content-header">
-        <div class="container">
-          <header id="portal-top">
-          </header>
-          <div id="anonymous-actions">
-          </div>
-        </div>
-      </header>
-      <div id="mainnavigation-wrapper">
-        <div id="mainnavigation">
-        </div>
+
+<head>
+  <title>Plone Theme</title>
+  <link rel="apple-touch-icon" href="barceloneta-apple-touch-icon.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144"
+    href="barceloneta-apple-touch-icon-144x144-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114"
+    href="barceloneta-apple-touch-icon-114x114-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="barceloneta-apple-touch-icon-72x72-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="barceloneta-apple-touch-icon-57x57-precomposed.png" />
+  <link rel="apple-touch-icon-precomposed" href="barceloneta-apple-touch-icon-precomposed.png" />
+</head>
+
+<body>
+  <section id="portal-toolbar">
+  </section>
+
+  <div class="outer-wrapper">
+    <header id="content-header">
+
+      <div id="portal-top" class="container">
       </div>
-      <div id="hero" class="principal">
-        <div class="container">
-          <div class="gigantic">
-          </div>
+
+      <div id="portal-logo-wrapper" class="container d-flex">
+        <div id="portal-logo"></div>
+        <div class="navbar-expand-md">
+          <button class="navbar-toggler navbar-light border-secondary" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon "></span>
+          </button>
         </div>
       </div>
-      <div id="above-content-wrapper">
-          <div id="above-content">
+
+    </header>
+
+    <div id="mainnavigation-wrapper">
+      <div id="mainnavigation">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary pat-navigationmarker" id="portal-globalnav-wrapper">
+          <div class="container">
+            <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="visibility: hidden;" aria-hidden="true">
+              <div class="offcanvas-header justify-content-end">
+                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body align-items-center">
+                <ul class="navbar-nav me-auto" id="portal-globalnav">
+                </ul>
+                <div id="portal-searchbox">
+                </div>
+                </div>
+            </div>
           </div>
+        </nav>
       </div>
+    </div>
+
+    <div id="hero" class="principal">
       <div class="container">
-        <div class="row">
-          <aside id="global_statusmessage" class="col-12"></aside>
+        <div class="gigantic">
         </div>
-        <main id="main-container" class="row">
-          <section id="portal-column-content">
-          </section>
-          <aside id="portal-column-one">
-          </aside>
-          <aside id="portal-column-two" role="complementary">
-          </aside>
-        </main><!--/row-->
-      </div><!--/container-->
-    </div> <!--/outer-wrapper -->
-      <footer id="portal-footer-wrapper">
-        <div class="container" id="portal-footer">
-          <div class="doormat row"></div>
-          <div class="copyright row"><div class="col-12"></div></div>
-          <div class="colophon row"><div class="col-12"></div></div>
-          <div class="site-actions row"><div class="col-12"></div></div>
-        </div>
-      </footer>
-  </body>
+      </div>
+    </div>
+
+    <div id="above-content-wrapper">
+      <div id="above-content">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <aside id="global_statusmessage" class="col-12"></aside>
+      </div>
+      <main id="main-container" class="row">
+        <section id="portal-column-content">
+        </section>
+        <aside id="portal-column-one">
+        </aside>
+        <aside id="portal-column-two" role="complementary">
+        </aside>
+      </main>
+      <!--/row-->
+    </div>
+    <!--/container-->
+
+  </div>
+  <!--/outer-wrapper -->
+
+  <footer id="portal-footer-wrapper">
+    <div class="container" id="portal-footer">
+      <div class="doormat row"></div>
+      <div class="copyright row">
+        <div class="col-12"></div>
+      </div>
+      <div class="colophon row">
+        <div class="col-12"></div>
+      </div>
+      <div class="site-actions row">
+        <div class="col-12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>

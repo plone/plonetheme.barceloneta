@@ -31,11 +31,20 @@
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
   <copy attributes="*" css:content="body" css:theme="body" />
 
-  <!-- move global nav -->
-  <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
+  <!-- move global nav and livesearch -->
+  <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
+  <drop css:content="#portal-searchbox"  />
+  <replace css:theme="#portal-searchbox" css:content="#portal-searchbox" mode="raw" />
+  <copy attributes="aria-label" css:theme=".navbar-toggler" css:content=".navbar-toggler" />
+  <!-- <replace css:theme="button.navbar-toggler" css:content="button.navbar-toggler" mode="raw" /> -->
+
+
 
   <!-- Content header -->
-  <replace css:theme="#portal-top" css:content-children="#portal-top" />
+  <replace css:theme="#portal-logo" css:content="#portal-logo" mode="raw" />
+   <drop css:content="#portal-logo"  />
+
+  <replace css:theme-children="#portal-top" css:content-children="#portal-top" />
 
   <!-- full-width breadcrumb -->
   <replace css:theme="#above-content" css:content="#viewlet-above-content" />
@@ -137,6 +146,6 @@
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
   <drop css:theme="#portal-toolbar" css:if-content=".userrole-anonymous" />
-  <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
+  <!-- <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" /> -->
 
 </rules>
