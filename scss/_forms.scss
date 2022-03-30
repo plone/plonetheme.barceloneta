@@ -13,8 +13,10 @@ label.required:after {
     line-height: 1;
 }
 
-/* invalid-feedback */
-.field.error .invalid-feedback {
+/* show validation feedback always since it comes from
+   server-side rendering or pat-validation
+*/
+.invalid-feedback, .valid-feedback {
     display:block;
 }
 
