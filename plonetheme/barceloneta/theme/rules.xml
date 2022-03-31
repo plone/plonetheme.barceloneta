@@ -37,16 +37,7 @@
   <!-- set aria-label for toggler button -->
   <copy attributes="aria-label" css:theme=".navbar-toggler" css:content=".navbar-toggler" />
   <!-- move searchbox into place -->
-  <replace css:theme-children="#portal-searchbox" css:content-children="#portal-searchbox" />
-  <!-- set bs styling for search button -->
-  <replace css:content=".searchButton">
-      <xsl:copy>
-          <!-- set class -->
-          <xsl:attribute name="class">searchButton btn btn-outline-light</xsl:attribute>
-          <!-- add button content -->
-          <xsl:apply-templates/>
-      </xsl:copy>
-  </replace>
+  <replace css:theme="#portal-searchbox" css:content="#portal-searchbox" mode="raw" />
   <drop css:content="#portal-header #portal-searchbox" />
 
   <!-- Content header -->
