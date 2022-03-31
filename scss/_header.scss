@@ -42,48 +42,6 @@
 
 //*// HEADER //*//
 
-#content-header {}
-
-#portal-top {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: $spacer *.5;
-  @include media-breakpoint-up($nav-main-breakpoint) {
-    margin-bottom:  0;
-}
-}
-
-
-
-#portal-header {
-  display: flex;
-  justify-content: flex-end;
-//   flex-wrap: wrap-reverse;
-//   flex-direction: row-reverse;
-//   margin: $spacer * 1.25 auto $spacer * 1.25;
-
-//   @include media-breakpoint-up($nav-main-breakpoint) {
-//     position: relative;
-//     @include make-row(0rem);
-//     margin: $spacer * 1.25 auto $spacer * 1.25;
-//     flex-wrap: wrap-reverse;
-//   }
-}
-
-#portal-logo-wrapper {
-  align-items: center;
-}
-#portal-logo {
-  // order: -1;
-  flex-grow: 1;
-  // width: 100%;
-  margin-top: $spacer;
-  margin-bottom: $spacer;
-
-  // @include media-breakpoint-up(md) {
-  //   width: 50%;
-  // }
-}
 
 #portal-languageselector {
   display: inline-block;
@@ -125,11 +83,12 @@
 }
 
 .livesearch-results {
-      @include media-breakpoint-up($nav-main-breakpoint) {
-        position: absolute;
-        z-index: $zindex-offcanvas + 1;
-        @if $enable-shadows==true {
-          @include box-shadow($box-shadow);
-        }
-      }
+  @include media-breakpoint-up($nav-main-breakpoint) {
+    position: absolute;
+    z-index: $zindex-offcanvas + 1;
+
+    @if $enable-shadows==true {
+      @include box-shadow($box-shadow);
+    }
   }
+}

@@ -13204,32 +13204,6 @@ img, picture {
   width: auto;
 }
 
-#portal-top {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-}
-@media (min-width: 768px) {
-  #portal-top {
-    margin-bottom: 0;
-  }
-}
-
-#portal-header {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#portal-logo-wrapper {
-  align-items: center;
-}
-
-#portal-logo {
-  flex-grow: 1;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 #portal-languageselector {
   display: inline-block;
   margin-bottom: 0;
