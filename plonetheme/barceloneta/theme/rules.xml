@@ -29,8 +29,8 @@
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
-  <copy attributes="*" css:content="body" css:theme="body" />
-  <merge attributes="class" css:content="body" css:theme="body" />
+  <!-- <copy attributes="*" css:content="body" css:theme="body" /> -->
+  <merge attributes="*" css:content="body" css:theme="body" />
 
   <!-- move global nav and livesearch -->
   <replace css:theme-children="#portal-globalnav" css:content-children="#portal-globalnav" />
