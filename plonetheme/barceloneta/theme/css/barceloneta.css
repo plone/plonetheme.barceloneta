@@ -13239,7 +13239,7 @@ img, picture {
   padding-right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .livesearch-results {
     position: absolute;
     z-index: 1046;
@@ -13265,7 +13265,7 @@ img, picture {
   color: white;
   background-color: #00628e;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #portal-globalnav-wrapper .navbar-nav li.has_subtree:hover > ul, #portal-globalnav-wrapper .navbar-nav li.has_subtree .has_subtree:hover > ul {
     opacity: 1;
     visibility: visible;
@@ -13306,19 +13306,19 @@ img, picture {
   opacity: 0;
   height: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #portal-globalnav-wrapper .navbar-nav li ul {
     padding-left: 0em;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #portal-globalnav-wrapper .navbar-nav li ul {
     position: absolute;
     z-index: 1000;
     transition: ease-out 0.75s;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #portal-globalnav-wrapper .navbar-nav li ul li a {
     min-width: 16em;
   }
@@ -13334,7 +13334,7 @@ img, picture {
   transform: rotate(-180deg);
   transition: ease-in 0.35s;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #portal-globalnav-wrapper .navbar-nav li .opener:checked + label:after {
     transform: rotate(0);
   }
@@ -13346,7 +13346,7 @@ img, picture {
   height: auto;
   transition: ease-in 0.35s;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   #portal-globalnav-wrapper .navbar-nav li .opener:checked ~ ul {
     visibility: visible;
     opacity: 1;
@@ -13365,7 +13365,7 @@ img, picture {
   align-items: flex-end;
   padding-right: 0.5em;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #portal-globalnav-wrapper .navbar-nav li label {
     align-items: flex-start;
     width: auto;
@@ -13382,7 +13382,7 @@ img, picture {
   font-size: 1.25em;
   padding: 0.25em;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #portal-globalnav-wrapper .navbar-nav li label:after {
     font-size: 0.75em;
     background: transparent;
