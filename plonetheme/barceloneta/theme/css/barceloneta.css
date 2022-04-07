@@ -13239,10 +13239,31 @@ img, picture {
   padding-right: 0;
 }
 
+.livesearch-results {
+  margin-top: 1rem;
+  width: 100%;
+}
 @media (min-width: 992px) {
   .livesearch-results {
     position: absolute;
     z-index: 1046;
+    margin-top: 3rem;
+    right: 0;
+    width: 28rem;
+  }
+}
+.livesearch-results .heading {
+  font-size: 1.25rem;
+}
+.livesearch-results .col.img {
+  flex: 0 0 auto;
+  max-width: 50%;
+  width: auto;
+}
+
+@media (min-width: 992px) {
+  .pat-livesearch.show_images + .livesearch-results {
+    width: 34rem;
   }
 }
 
