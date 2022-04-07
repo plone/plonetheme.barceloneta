@@ -9,6 +9,16 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a11 (2022-04-08)
+---------------------
+
+New features:
+
+
+- Styling for liveSearch results with images.
+  [agitator] (#278)
+
+
 3.0.0a10 (2022-04-07)
 ---------------------
 
