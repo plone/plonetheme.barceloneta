@@ -82,13 +82,36 @@
   }
 }
 
+
 .livesearch-results {
+  margin-top: 1rem;
+  width: 100%;
+
   @include media-breakpoint-up($nav-main-breakpoint) {
     position: absolute;
     z-index: $zindex-offcanvas + 1;
+    margin-top: 3rem;
+    right: 0;
+    width: 28rem;
 
     @if $enable-shadows==true {
       @include box-shadow($box-shadow);
     }
+  }
+
+  .heading {
+    font-size: $h5-font-size;
+  }
+
+  .col.img {
+    flex: 0 0 auto;
+    max-width: 50%;
+    width: auto;
+  }
+}
+
+.pat-livesearch.show_images+.livesearch-results {
+  @include media-breakpoint-up($nav-main-breakpoint) {
+    width: 34rem;
   }
 }
