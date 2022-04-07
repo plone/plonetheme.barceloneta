@@ -1,2 +1,0 @@
-Sticky footer
-[agitator]

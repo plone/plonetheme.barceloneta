@@ -9,6 +9,31 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0a10 (2022-04-07)
+---------------------
+
+New features:
+
+
+- moved toolbar css from mockup to barceloneta
+  [petschki] (#267)
+- Optimize image floating for content [MrTango] (#269)
+- Mobile navigation as offcanvas sidebar and integration of search into main navigation.
+  [agitator] (#271)
+- Sticky footer
+  [agitator] (#274)
+- update title and preview for Plone 6
+  [petschki] (#275)
+
+
+Bug fixes:
+
+
+- Reintroduce diff-styles for CMFEditions [pbauer] (#268)
+- Update main grid breakpoint to lg.
+  [agitator] (#277)
+
+
 3.0.0a9 (2022-01-28)
 --------------------
 
