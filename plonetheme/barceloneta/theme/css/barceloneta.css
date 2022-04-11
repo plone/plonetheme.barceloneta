@@ -12796,6 +12796,7 @@ body.col-one.col-content #portal-column-content {
 }
 @media (min-width: 992px) {
   body.col-one.col-content #portal-column-content {
+    order: 2;
     flex: 0 0 auto;
     width: 75%;
   }
@@ -12816,6 +12817,7 @@ body.col-one.col-content #portal-column-one {
 }
 @media (min-width: 992px) {
   body.col-one.col-content #portal-column-one {
+    order: 1;
     flex: 0 0 auto;
     width: 25%;
   }

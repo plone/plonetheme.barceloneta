@@ -72,6 +72,7 @@ body.col-one.col-content {
       @include make-col(12);
     }
     @include media-breakpoint-up(lg) {
+      order: 2;
       @include make-col(9);
     }
   }
@@ -83,6 +84,7 @@ body.col-one.col-content {
       @include make-col(12);
     }
     @include media-breakpoint-up(lg) {
+      order: 1;
       @include make-col(3);
     }
   }
