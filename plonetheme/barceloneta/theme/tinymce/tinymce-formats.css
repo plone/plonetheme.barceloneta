@@ -1,0 +1,13 @@
+/* tinyMCE format examples
+   Styles in will be automatically added to the formats menu.
+   Condition is that the file is named tinymce-formats.css and registered in the TinyMCE controlpanel
+*/
+
+.highlight {
+  background: #FFFE14;
+}
+
+p.highlight {
+  background: #FFFE14;
+  padding: 1rem;
+}
