@@ -2,7 +2,7 @@
 
 /* offcanvas toggler */
 .offcanvas-toggler {
-    width:$plone-toolbar-width-collapsed;
+    width:$plone-toolbar-width-offcanvas-toggler;
     position:fixed;
     top:0;
     left:0;
@@ -32,9 +32,8 @@
 /* general collapsed dark mode */
 #edit-zone {
     // font-family: $plone-toolbar-font-primary;
-    width: $plone-toolbar-width;
     border-right:solid 1px $gray-300;
-    overflow-y: auto;
+    width: $plone-toolbar-width;
 
     .offcanvas-header {
         background-color:$plone-toolbar-link;
@@ -55,6 +54,11 @@
         &.locked {
             color:$plone-toolbar-locked-color !important;
         }
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+        min-width: 12rem;
     }
 
     .label-state-published,
@@ -92,17 +96,23 @@
 
     &.bg-dark {
         color:$plone-toolbar-text-color;
-        background-color:$plone-toolbar-bg;
         border-right:none;
 
-        .nav-link {
-            color: color-contrast($plone-toolbar-link);
+        &, .dropdown-menu {
+            background-color:$plone-toolbar-bg;
+        }
+
+        .dropdown-header {
+            color:darken($plone-toolbar-text-color, 20%);
+        }
+        .nav-link, .dropdown-item {
+            color: $plone-toolbar-text-color;
             &:focus {
                 background: $plone-toolbar-link;
             }
-            &:hover {
+            &:hover, &:focus {
                 background: $plone-toolbar-link;
-                color: color-contrast($plone-toolbar-link);
+                color: $plone-toolbar-text-color;
                 .label-state-published,
                 .label-state-external {
                     color: lighten($plone-link-color, 10%) !important;
@@ -120,9 +130,48 @@ body.plone-toolbar-left {
         display:none;
     }
 
+    #edit-zone {
+        .nav-link {
+            padding-right:$spacer * .5;
+
+            &.dropdown-toggle {
+                padding-bottom:0.25rem;
+            }
+        }
+
+        .border-top {
+            border-top-color:darken($plone-toolbar-separator-color, 80%);
+        }
+
+        &.bg-dark {
+            .border-top,
+            .personaltools-wrapper {
+                border-top-color: $plone-toolbar-separator-color;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-left:$plone-toolbar-width-offcanvas-toggler;
+
+    }
     @include media-breakpoint-up(md) {
+        .offcanvas-dismiss {
+            display:none;
+        }
         .offcanvas-pin {
             display:block;
+        }
+
+        #edit-zone {
+            visibility:visible !important;
+            transform:none;
+            transition:none;
+            width: $plone-toolbar-width-collapsed;
+
+            .toolbar-label {
+                display:none;
+            }
         }
 
         &.plone-toolbar-left-expanded {
@@ -136,42 +185,10 @@ body.plone-toolbar-left {
             }
             padding-left:$plone-toolbar-width;
             #edit-zone {
-                // show offcanvas always if expanded
-                visibility:visible !important;
-                transform:none;
-                transition:none;
-            }
-        }
-    }
-
-    #edit-zone {
-        .nav-link {
-            &.dropdown-toggle {
-                padding-bottom:0.25rem;
-            }
-        }
-
-        .collapse, .collapsing {
-            ul li {
-                padding-left:$spacer;
-            }
-            .nav-link {
-                padding:0.25rem 1rem;
-            }
-        }
-
-        .border-top {
-            border-top-color:darken($plone-toolbar-separator-color, 80%);
-        }
-
-        .personaltools-wrapper li {
-            padding-left:$spacer;
-        }
-
-        &.bg-dark {
-            .border-top,
-            .personaltools-wrapper {
-                border-top-color: $plone-toolbar-separator-color;
+                width: $plone-toolbar-width;
+                .toolbar-label {
+                    display:inline-block;
+                }
             }
         }
     }
@@ -210,16 +227,6 @@ body.plone-toolbar-top {
             width:100%;
             flex-direction:row;
             height:$plone-toolbar-top-height;
-            overflow-y:visible;
-
-            /* took from .dropdown-menu */
-            .collapse,
-            .collapsing {
-                position:absolute;
-                z-index:1000;
-                transition:none;
-                min-width:10rem;
-            }
 
             .plone-toolbar-main {
                 flex-direction:row;
@@ -233,18 +240,10 @@ body.plone-toolbar-top {
                 }
             }
 
-            &.bg-dark div.collapse {
-                background-color: $plone-toolbar-bg;
-            }
-
             .personaltools-wrapper {
                 margin-left:auto;
                 margin-top:0;
                 padding:0;
-
-                .collapse {
-                    right:0;
-                }
             }
 
         }
