@@ -73,5 +73,22 @@ $plone-link-color-on-dark:          #16a1e3!default; //plone blue
 $plone-link-color-on-grey:          #086ca3!default; //valid wcag 2.0
 $plone-link-hover-color:            darken($plone-link-color, 15%)!default;
 
+
+
 //grays
 $gray:                              $gray-600!default;
+
+$plone-colors: (
+  "link-color": $plone-link-color,
+  "link-color-on-dark": $plone-link-color-on-dark,
+  "link-color-on-grey": $plone-link-color-on-grey,
+  "link-hover-color": $plone-link-hover-color,
+) !default;
+
+$state-colors: (
+  "draft":       $state-draft-color,
+  "pending":       $state-pending-color,
+  "private":       $state-private-color,
+  "internal":       $state-internal-color,
+  "internally-published":       $state-internally-published-color,
+) !default;
