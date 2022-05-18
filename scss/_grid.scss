@@ -46,6 +46,7 @@ body.col-two.col-content {
     @include media-breakpoint-up(md) {
       @include make-col(12);
     }
+
     @include media-breakpoint-up(lg) {
       @include make-col(9);
     }
@@ -57,6 +58,7 @@ body.col-two.col-content {
     @include media-breakpoint-up(md) {
       @include make-col(12);
     }
+
     @include media-breakpoint-up(lg) {
       @include make-col(3);
     }
@@ -71,6 +73,7 @@ body.col-one.col-content {
     @include media-breakpoint-up(md) {
       @include make-col(12);
     }
+
     @include media-breakpoint-up(lg) {
       order: 2;
       @include make-col(9);
@@ -83,6 +86,7 @@ body.col-one.col-content {
     @include media-breakpoint-up(md) {
       @include make-col(12);
     }
+
     @include media-breakpoint-up(lg) {
       order: 1;
       @include make-col(3);
@@ -98,9 +102,11 @@ body.col-one.col-two.col-content {
     @include media-breakpoint-up(sm) {
       @include make-col(12);
     }
+
     @include media-breakpoint-up(md) {
       @include make-col(12);
     }
+
     @include media-breakpoint-up(lg) {
       order: 2;
       @include make-col(6);
@@ -109,26 +115,32 @@ body.col-one.col-two.col-content {
 
   #portal-column-one {
     @include make-col-ready();
+
     @include media-breakpoint-up(sm) {
       @include make-col(12);
     }
+
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+
     @include media-breakpoint-up(lg) {
       order: 1;
       @include make-col(3);
     }
   }
+
   #portal-column-two {
     @include make-col-ready();
 
     @include media-breakpoint-up(sm) {
       @include make-col(12);
     }
+
     @include media-breakpoint-up(md) {
       @include make-col(6);
     }
+
     @include media-breakpoint-up(lg) {
       order: 3;
       @include make-col(3);
