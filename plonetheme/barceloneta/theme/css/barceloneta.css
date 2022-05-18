@@ -1,4 +1,16 @@
 @charset "UTF-8";
+:root {
+  --plone-link-color: #007bb1;
+  --plone-link-color-on-dark: #16a1e3;
+  --plone-link-color-on-grey: #086ca3;
+  --plone-link-hover-color: #004665;
+  --plone-state-draft: #fab82a;
+  --plone-state-pending: #e2e721;
+  --plone-state-private: #c4183c;
+  --plone-state-internal: #fab82a;
+  --plone-state-internally-published: #883dfa;
+}
+
 /*!
  * Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -12802,18 +12814,6 @@ textarea.form-control-lg {
     display: none;
   }
 }
-:root {
-  --plone-link-color: #007bb1;
-  --plone-link-color-on-dark: #16a1e3;
-  --plone-link-color-on-grey: #086ca3;
-  --plone-link-hover-color: #004665;
-  --plone-state-draft: #fab82a;
-  --plone-state-pending: #e2e721;
-  --plone-state-private: #c4183c;
-  --plone-state-internal: #fab82a;
-  --plone-state-internally-published: #883dfa;
-}
-
 .alert {
   position: relative;
   padding: 1rem 1rem;
