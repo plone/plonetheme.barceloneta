@@ -4,7 +4,6 @@
 $plone-portlet-list-hover-bg: #fcfcfd!default;
 $plone-portlet-footer-bg: #fcfcfd!default;
 $plone-portlet-list-bullet: #64bee8!default;
-$gray: $gray-600;
 
 .portlet {
   margin-bottom: $spacer;
@@ -123,7 +122,7 @@ $gray: $gray-600;
 
     .navTreeCurrentNode>a {
       background: darken($plone-portlet-footer-bg, 2%);
-      color: $gray;
+      color: $gray-600;
 
       &::after {
         content: "⟩";
