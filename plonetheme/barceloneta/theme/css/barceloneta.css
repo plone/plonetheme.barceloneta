@@ -4708,7 +4708,7 @@ textarea.form-control-lg {
 .breadcrumb {
   --bs-breadcrumb-padding-x: 1rem;
   --bs-breadcrumb-padding-y: 0.5rem;
-  --bs-breadcrumb-margin-bottom: 1rem;
+  --bs-breadcrumb-margin-bottom: 2rem;
   --bs-breadcrumb-bg: #e9ecef;
   --bs-breadcrumb-border-radius: ;
   --bs-breadcrumb-divider-color: #6c757d;
@@ -13209,7 +13209,8 @@ label.required:after {
 /* show validation feedback always since it comes from
    server-side rendering or pat-validation
 */
-.invalid-feedback, .valid-feedback {
+.invalid-feedback,
+.valid-feedback {
   display: block;
 }
 
@@ -13744,7 +13745,8 @@ body.col-one.col-two.col-content #portal-column-two {
   }
 }
 
-img, picture {
+img,
+picture {
   max-width: 100%;
   height: auto;
 }
@@ -14373,11 +14375,6 @@ article > header {
   margin: 0 0.5rem;
 }
 
-article.vevent .cal_cate {
-  width: 7rem;
-}
-
-/* more event specific definitions here */
 @media print {
   * {
     text-shadow: none !important;
