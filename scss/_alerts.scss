@@ -48,170 +48,170 @@
 
 }
 .alert-primary {
-  color: shift-color($cyan, $alert-color-scale);
-  background-color: shift-color($cyan, $alert-bg-scale);
-  border: 3px solid shift-color($cyan, $alert-bg-scale);
+  color: shift-color($primary, $alert-color-scale);
+  background-color: shift-color($primary, $alert-bg-scale);
+  border: 3px solid shift-color($primary, $alert-bg-scale);
   animation: 2s ease-in alert-primary-animation;
 }
 .alert-primary a {
-  color: shift-color($cyan, $alert-color-scale);
+  color: shift-color($primary, $alert-color-scale);
 }
 .alert-primary a::after {
-  background-color: shift-color($cyan, $alert-color-scale);
+  background-color: shift-color($primary, $alert-color-scale);
 }
 @keyframes alert-primary-animation{
     0% {
-        border: 3px solid shift-color($cyan, $alert-bg-scale);
+        border: 3px solid shift-color($primary, $alert-bg-scale);
     }
     50% {
-        border: 3px solid shift-color($cyan, -20%);
+        border: 3px solid shift-color($primary, -20%);
     }
     100% {
-        border: 3px solid shift-color($cyan, -60%);
+        border: 3px solid shift-color($primary, -60%);
     }
 }
 
 .alert-secondary {
-  color: shift-color($gray, $alert-color-scale);
-  background-color: shift-color($gray, $alert-bg-scale);
-  border: 3px solid shift-color($gray, $alert-bg-scale);
+  color: shift-color($secondary, $alert-color-scale);
+  background-color: shift-color($secondary, $alert-bg-scale);
+  border: 3px solid shift-color($secondary, $alert-bg-scale);
   animation: 2s ease-in alert-secondary-animation;
 }
 .alert-secondary a {
-  color: shift-color($gray, $alert-color-scale);
+  color: shift-color($secondary, $alert-color-scale);
 }
 .alert-secondary a::after {
-  background-color: shift-color($gray, $alert-color-scale);
+  background-color: shift-color($secondary, $alert-color-scale);
 }
 @keyframes alert-secondary-animation{
     0% {
-        border: 3px solid shift-color($gray, $alert-bg-scale);
+        border: 3px solid shift-color($secondary, $alert-bg-scale);
     }
     50% {
-        border: 3px solid shift-color($gray, -20%);
+        border: 3px solid shift-color($secondary, -20%);
     }
     100% {
-        border: 3px solid shift-color($gray, -60%);
+        border: 3px solid shift-color($secondary, -60%);
     }
 }
 
 .alert-success {
-  color: shift-color($green, $alert-color-scale);
-  background-color: shift-color($green, $alert-bg-scale);
-  border: 3px solid shift-color($green, $alert-bg-scale);
+  color: shift-color($success, $alert-color-scale);
+  background-color: shift-color($success, $alert-bg-scale);
+  border: 3px solid shift-color($success, $alert-bg-scale);
   animation: 2s ease-in alert-success-animation;
 }
 .alert-success a {
-  color: shift-color($green, $alert-color-scale);
+  color: shift-color($success, $alert-color-scale);
 }
 .alert-success a::after {
-  background-color: shift-color($green, $alert-color-scale);
+  background-color: shift-color($success, $alert-color-scale);
 }
 @keyframes alert-success-animation{
     0% {
-        border: 3px solid shift-color($green, $alert-bg-scale);
+        border: 3px solid shift-color($success, $alert-bg-scale);
     }
     50% {
-        border: 3px solid shift-color($green, -20%);
+        border: 3px solid shift-color($success, -20%);
     }
     100% {
-        border: 3px solid shift-color($green, -60%);
+        border: 3px solid shift-color($success, -60%);
     }
 }
 
 .alert-info {
-  color: shift-color($cyan, $alert-color-scale);
-  background-color: shift-color($cyan, $alert-bg-scale);
-  border: 3px solid shift-color($cyan, $alert-bg-scale);
+  color: shift-color($info, $alert-color-scale);
+  background-color: shift-color($info, $alert-bg-scale);
+  border: 3px solid shift-color($info, $alert-bg-scale);
   animation: 2s ease-in alert-info-animation;
 }
 .alert-info a {
-  color: shift-color($cyan, $alert-color-scale);
+  color: shift-color($info, $alert-color-scale);
 }
 .alert-info a::after {
-  background-color: shift-color($cyan, $alert-color-scale);
+  background-color: shift-color($info, $alert-color-scale);
 }
 @keyframes alert-info-animation{
     0% {
-        border: 3px solid shift-color($cyan, $alert-bg-scale);
+        border: 3px solid shift-color($info, $alert-bg-scale);
     }
     50% {
-        border: 3px solid shift-color($cyan, -20%);
+        border: 3px solid shift-color($info, -20%);
     }
     100% {
-        border: 3px solid shift-color($cyan, -60%);
+        border: 3px solid shift-color($info, -60%);
     }
 }
 
 .alert-warning {
-  color: shift-color($orange, $alert-color-scale);
-  background-color: shift-color($orange, $alert-bg-scale);
-  border: 3px solid shift-color($orange, $alert-bg-scale);
+  color: shift-color($warning, $alert-color-scale);
+  background-color: shift-color($warning, $alert-bg-scale);
+  border: 3px solid shift-color($warning, $alert-bg-scale);
   animation: 2s ease-in alert-warning-animation;
 }
 .alert-warning a {
-  color: shift-color($orange, $alert-color-scale);
+  color: shift-color($warning, $alert-color-scale);
 }
 .alert-warning a::after {
-  background-color: shift-color($orange, $alert-color-scale);
+  background-color: shift-color($warning, $alert-color-scale);
 }
 @keyframes alert-warning-animation{
     0% {
-        border: 3px solid shift-color($orange, $alert-bg-scale);
+        border: 3px solid shift-color($warning, $alert-bg-scale);
     }
     50% {
-        border: 3px solid shift-color($orange, -20%);
+        border: 3px solid shift-color($warning, -20%);
     }
     100% {
-        border: 3px solid shift-color($orange, -60%);
+        border: 3px solid shift-color($warning, -60%);
     }
 }
 
 .alert-danger {
-  color: shift-color($red, $alert-color-scale);
-  background-color: shift-color($red, $alert-bg-scale);
-  border: 3px solid shift-color($red, $alert-bg-scale);
+  color: shift-color($danger, $alert-color-scale);
+  background-color: shift-color($danger, $alert-bg-scale);
+  border: 3px solid shift-color($danger, $alert-bg-scale);
   animation: 2s ease-in alert-danger-animation;
 }
 .alert-danger a {
-  color: shift-color($red, $alert-color-scale);
+  color: shift-color($danger, $alert-color-scale);
 }
 .alert-danger a::after {
-  background-color: shift-color($red, $alert-color-scale);
+  background-color: shift-color($danger, $alert-color-scale);
 }
 @keyframes alert-danger-animation{
     0% {
-        border: 3px solid shift-color($red, $alert-bg-scale);
+        border: 3px solid shift-color($danger, $alert-bg-scale);
     }
     50% {
-        border: 3px solid shift-color($red, -20%);
+        border: 3px solid shift-color($danger, -20%);
     }
     100% {
-        border: 3px solid shift-color($red, -60%);
+        border: 3px solid shift-color($danger, -60%);
     }
 }
 
 .alert-light {
-  color: shift-color($gray, $alert-color-scale);
-  background-color: shift-color($gray, $alert-bg-scale);
-  border: 3px solid shift-color($gray, $alert-bg-scale);
+  color: shift-color($light, $alert-color-scale);
+  background-color: shift-color($light, $alert-bg-scale);
+  border: 3px solid shift-color($light, $alert-bg-scale);
   animation: 2s ease-in alert-light-animation;
 }
 .alert-light a {
-  color: shift-color($gray, $alert-color-scale);
+  color: shift-color($light, $alert-color-scale);
 }
 .alert-light a::after {
-  background-color: shift-color($gray, $alert-color-scale);
+  background-color: shift-color($light, $alert-color-scale);
 }
 @keyframes alert-light-animation{
     0% {
-        border: 3px solid shift-color($gray, $alert-bg-scale);
+        border: 3px solid shift-color($light, $alert-bg-scale);
     }
     50% {
-        border: 3px solid shift-color($gray, -20%);
+        border: 3px solid shift-color($light, -20%);
     }
     100% {
-        border: 3px solid shift-color($gray, -60%);
+        border: 3px solid shift-color($light, -60%);
     }
 }
 
