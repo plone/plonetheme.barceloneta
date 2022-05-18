@@ -56,6 +56,7 @@ article {
 
 #section-related {
   margin-top: 3rem;
+
   .section-heading {
     @include font-size($h5-font-size);
     margin-bottom: $headings-margin-bottom;
@@ -64,6 +65,7 @@ article {
     line-height: $headings-line-height;
 
   }
+
   .media {
     margin-bottom: 1rem;
   }
@@ -80,10 +82,12 @@ article {
 
 .event-summary {
   margin-bottom: $spacer * 2;
+
   .meta-icon {
     margin-right: $spacer * .5;
     margin-top: -0.2em;
   }
+
   .meta-label {
     display: none;
   }
