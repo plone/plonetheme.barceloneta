@@ -1,67 +1,74 @@
-// Body
-//
-// Settings for the `<body>` element.
+// Barceloneta settings
 
-$primary:                           $plone-link-color!default;
+$primary:                               $plone-link-color!default;
 
-$spacer:                            1rem!default;
+$spacer:                                1rem!default; // not changed but needed to calc other definitions
+
 
 // Grid columns
-//
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                      12 !default;
-$grid-gutter-width:                 1.5rem !default;
-$grid-row-columns:                  6 !default;
+// $grid-columns:                      12 !default;
+// $grid-gutter-width:                 1.5rem !default;
+// $grid-row-columns:                  6 !default;
 
-$grid-main-breakpoint:              lg!default;
-$nav-main-breakpoint:               $grid-main-breakpoint!default;
+$grid-main-breakpoint:                  lg!default;
+$nav-main-breakpoint:                   $grid-main-breakpoint!default;
 
-$navbar-nav-link-padding-x:         $spacer * 0.75 $spacer !default;
+$navbar-nav-link-padding-x:             $spacer * 0.75 $spacer !default;
 
-$navbar-dark-color:                 $white !default;
-$navbar-dark-hover-color:           $white !default;
-$navbar-dark-active-color:          $white !default;
-$navbar-dark-toggler-border-color:  $white !default;
+$navbar-dark-color:                     $white !default;
+$navbar-dark-hover-color:               $white !default;
+$navbar-dark-active-color:              $white !default;
+$navbar-dark-toggler-border-color:      $white !default;
+
+$plone-portlet-navtree-maxlevel:        5!default;
 
 
-//*// TYPOGRAPHY
+// Typography
 // While Plone Logo uses the DIN Font, we use Roboto, which was designed for Android and so mobile optimized
 // A free DIN variant is available here (TTF only): https://www.1001fonts.com/alte-din-1451-mittelschrift-font.html
-$font-family-sans-serif:            "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
-$font-family-condensed:             "Roboto Condensed", "Arial Narrow", sans-serif!default; //just on toolbar
-$font-family-serif:                 Georgia, "Times New Roman", Times, serif!default;
-$font-family-base:                  var(--bs-font-sans-serif) !default;
-$font-family-code:                  var(--bs-font-monospace) !default;
+$font-family-sans-serif:                "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
+$font-family-condensed:                 "Roboto Condensed", "Arial Narrow", sans-serif!default; //just on toolbar
+$font-family-serif:                     Georgia, "Times New Roman", Times, serif!default;
+// $font-family-base:                  var(--bs-font-sans-serif) !default;
+// $font-family-code:                  var(--bs-font-monospace) !default;
 
 // Include Roboto as webfont
-$enable-roboto-webfont:             true !default;
+$enable-roboto-webfont:                 true !default;
 
-$font-weight-lighter:               lighter!default;
-$font-weight-light:                 300!default;
-$font-weight-normal:                400!default;
-$font-weight-bold:                  700!default;
-$font-weight-bolder:                bolder!default;
+// $font-size-base:                    1rem !default; // Assumes the browser default, typically `16px`
+// $font-size-sm:                      $font-size-base * .875 !default;
+// $font-size-lg:                      $font-size-base * 1.25 !default;
 
-$font-weight-base:                  $font-weight-normal!default;
-$line-height-base:                  1.428!default;
+// $font-weight-lighter:               lighter !default;
+// $font-weight-light:                 300 !default;
+// $font-weight-normal:                400 !default;
+// $font-weight-semibold:              600 !default;
+// $font-weight-bold:                  700 !default;
+// $font-weight-bolder:                bolder !default;
 
-$headings-margin-bottom:            $spacer * 0.5!default;
-$headings-font-family:              null!default;
-$headings-font-weight:              400!default;
-$headings-line-height:              1.2!default;
-$headings-color:                    null!default;
+// $font-weight-base:                  $font-weight-normal !default;
 
-$plone-portlet-navtree-maxlevel:    5!default;
+// $line-height-base:                  1.5 !default;
+// $line-height-sm:                    1.25 !default;
+// $line-height-lg:                    2 !default;
+
+// $h1-font-size:                      $font-size-base * 2.5 !default;
+// $h2-font-size:                      $font-size-base * 2 !default;
+// $h3-font-size:                      $font-size-base * 1.75 !default;
+// $h4-font-size:                      $font-size-base * 1.5 !default;
+// $h5-font-size:                      $font-size-base * 1.25 !default;
+// $h6-font-size:                      $font-size-base !default;
 
 
 // Breadcrumbs
-$breadcrumb-bg:                     $gray-200 !default;
-$breadcrumb-padding-y:              $spacer * 0.5 !default;
-$breadcrumb-padding-x:              $spacer * 1 !default;
+$breadcrumb-bg:                         $gray-200 !default;
+$breadcrumb-padding-y:                  $spacer * 0.5 !default;
+$breadcrumb-padding-x:                  $spacer * 1 !default;
 
 
 // Footer
-$footer-bg:                         $gray-900 !default;
-$footer-color:                      $gray-300 !default;
+$footer-bg:                             $gray-900 !default;
+$footer-color:                          $gray-300 !default;
 
