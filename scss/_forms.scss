@@ -1,133 +1,137 @@
 .pat-autotoc.autotabs {
-    .autotoc-nav {
-        margin-bottom: $spacer;
-    }
+  .autotoc-nav {
+    margin-bottom: $spacer;
+  }
 }
 
 
 label .required:after,
 label.required:after {
-    color: $danger;
-    content: '•';
-    font-size:$font-size-lg;
-    line-height: 1;
+  color: $danger;
+  content: '•';
+  font-size: $font-size-lg;
+  line-height: 1;
 }
 
 /* show validation feedback always since it comes from
    server-side rendering or pat-validation
 */
-.invalid-feedback, .valid-feedback {
-    display:block;
+.invalid-feedback,
+.valid-feedback {
+  display: block;
 }
 
 .form-group {
-    .select2-container {
-        display:block;
-    }
+  .select2-container {
+    display: block;
+  }
 }
 
 .formControls {
-    margin-top: $spacer * 1.5;
-    margin-bottom: $spacer * 0.5;
+  margin-top: $spacer * 1.5;
+  margin-bottom: $spacer * 0.5;
 }
 
 /* relateditems widget */
 .pattern-relateditems-result {
-    .pattern-relateditems-result-browse-wrapper {
-        .pattern-relateditems-result-browse {
-            font-size: $font-size-base;
-        }
+  .pattern-relateditems-result-browse-wrapper {
+    .pattern-relateditems-result-browse {
+      font-size: $font-size-base;
     }
+  }
 }
 
 .select2-results .select2-highlighted {
-    color:$link-hover-color;
+  color: $link-hover-color;
 }
 
 .pattern-relateditems-item-title,
 .pattern-relateditems-result-title {
-    &, &[class*="contenttype-"]:before {
-        font-size: $font-size-lg;
-    }
+
+  &,
+  &[class*="contenttype-"]:before {
+    font-size: $font-size-lg;
+  }
 }
 
 // Diff styles for CMFEditions from old compare.css
 body.template-history {
-    .inline-diff {
-        font-size: 100%;
-        padding: 1em;
-    }
+  .inline-diff {
+    font-size: 100%;
+    padding: 1em;
+  }
 
-    .diff-head {
-        padding-bottom: 1em
-    }
+  .diff-head {
+    padding-bottom: 1em
+  }
 
-    .diff-legend-label {
-        border-style: solid;
-        border-width: 1px;
-        text-align: center
-    }
+  .diff-legend-label {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center
+  }
 
-    #diff-legend {
-        position: relative;
-    }
+  #diff-legend {
+    position: relative;
+  }
 
-    #diff-table {
-        float: right;
-        width: 22.5em;
-        text-align: left;
-        padding: 0px;
-        margin: 0px;
-    }
+  #diff-table {
+    float: right;
+    width: 22.5em;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+  }
 
-    .delete {
-        background-color: $red-200;
-        padding: 0 0.2em 0 0.2em;
-    }
+  .delete {
+    background-color: $red-200;
+    padding: 0 0.2em 0 0.2em;
+  }
 
-    .insert {
-        background-color: $teal-200;
-        padding: 0 0.2em 0 0.2em;
-    }
+  .insert {
+    background-color: $teal-200;
+    padding: 0 0.2em 0 0.2em;
+  }
 
-    .tagInsert {
-        background-color: $success;
-        font-weight: bold;
-        padding: 0 0.2em 0 0.2em;
-        color: white;
-    }
+  .tagInsert {
+    background-color: $success;
+    font-weight: bold;
+    padding: 0 0.2em 0 0.2em;
+    color: white;
+  }
 
-    .tagDelete {
-        background-color: $danger;
-        font-weight: bold;
-        padding: 0 0.2em 0 0.2em;
-        color: white;
-    }
+  .tagDelete {
+    background-color: $danger;
+    font-weight: bold;
+    padding: 0 0.2em 0 0.2em;
+    color: white;
+  }
 
-    .diff_header {
-        background-color:#e0e0e0;
-    }
+  .diff_header {
+    background-color: #e0e0e0;
+  }
 
-    td.diff_header {
-        text-align:right;
-    }
-    .diff_next {
-        background-color:#c0c0c0;
-    }
+  td.diff_header {
+    text-align: right;
+  }
 
-    .diff_add {
-        background-color:$teal-200;
-    }
+  .diff_next {
+    background-color: #c0c0c0;
+  }
 
-    .diff_chg {
-        background-color:$yellow-200;
-    }
+  .diff_add {
+    background-color: $teal-200;
+  }
 
-    .diff_sub {
-        background-color:$red-200;
-    }
+  .diff_chg {
+    background-color: $yellow-200;
+  }
 
-    table.diff td {
-        border-top: 1px solid $gray-300;
-    }
+  .diff_sub {
+    background-color: $red-200;
+  }
+
+  table.diff td {
+    border-top: 1px solid $gray-300;
+  }
 }

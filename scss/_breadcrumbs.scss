@@ -2,7 +2,7 @@
 
 #portal-breadcrumbs {
   background-color: $breadcrumb-bg;
-  margin-bottom: 2rem;
+  margin-bottom: $breadcrumb-margin-bottom;
 
   .breadcrumb {
     background-color: transparent;

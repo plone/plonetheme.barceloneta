@@ -6,6 +6,7 @@
 // Plone specific default variables & properties
 @import "variables.properties";
 @import "variables.barceloneta";
+@import "root_variables";
 
 @import "base";
 
@@ -27,7 +28,6 @@
 @import "comments";
 @import "portlets";
 @import "footer";
-@import "event";
 
 @import "print";
 

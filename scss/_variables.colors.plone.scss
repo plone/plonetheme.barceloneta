@@ -13,20 +13,6 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-// fusv-disable
-$grays: (
-  "100": $gray-100,
-  "200": $gray-200,
-  "300": $gray-300,
-  "400": $gray-400,
-  "500": $gray-500,
-  "600": $gray-600,
-  "700": $gray-700,
-  "800": $gray-800,
-  "900": $gray-900
-) !default;
-// fusv-enable
-
 $blue:    #0d6efd !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -74,21 +60,17 @@ $plone-link-color-on-grey:          #086ca3!default; //valid wcag 2.0
 $plone-link-hover-color:            darken($plone-link-color, 15%)!default;
 
 
-
-//grays
-$gray:                              $gray-600!default;
-
 $plone-colors: (
-  "link-color": $plone-link-color,
-  "link-color-on-dark": $plone-link-color-on-dark,
-  "link-color-on-grey": $plone-link-color-on-grey,
-  "link-hover-color": $plone-link-hover-color,
+  "link-color":                     $plone-link-color,
+  "link-color-on-dark":             $plone-link-color-on-dark,
+  "link-color-on-grey":             $plone-link-color-on-grey,
+  "link-hover-color":               $plone-link-hover-color,
 ) !default;
 
 $state-colors: (
-  "draft":       $state-draft-color,
-  "pending":       $state-pending-color,
-  "private":       $state-private-color,
-  "internal":       $state-internal-color,
-  "internally-published":       $state-internally-published-color,
+  "draft":                          $state-draft-color,
+  "pending":                        $state-pending-color,
+  "private":                        $state-private-color,
+  "internal":                       $state-internal-color,
+  "internally-published":           $state-internally-published-color,
 ) !default;

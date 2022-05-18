@@ -11,10 +11,12 @@
 
   .navbar-nav {
     flex-wrap: wrap;
+
     li {
       position: relative;
       display: block;
       background-color: $link-color;
+
       &.inPath>a,
       &.current>a,
       &.selected>a {
