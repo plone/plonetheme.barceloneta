@@ -66,7 +66,7 @@
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.428;
+  --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
@@ -122,7 +122,7 @@ hr {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
   color: var(--bs-heading-color);
 }
@@ -2202,7 +2202,7 @@ progress {
   padding-bottom: calc(0.375rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
-  line-height: 1.428;
+  line-height: 1.5;
 }
 
 .col-form-label-lg {
@@ -2229,7 +2229,7 @@ progress {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.428;
+  line-height: 1.5;
   color: #212529;
   background-color: #fff;
   background-clip: padding-box;
@@ -2259,7 +2259,7 @@ progress {
   box-shadow: 0 0 0 0.25rem rgba(0, 123, 177, 0.25);
 }
 .form-control::-webkit-date-and-time-value {
-  height: 1.428em;
+  height: 1.5em;
 }
 .form-control::-moz-placeholder {
   color: #6c757d;
@@ -2329,7 +2329,7 @@ progress {
   width: 100%;
   padding: 0.375rem 0;
   margin-bottom: 0;
-  line-height: 1.428;
+  line-height: 1.5;
   color: #212529;
   background-color: transparent;
   border: solid transparent;
@@ -2341,7 +2341,7 @@ progress {
 }
 
 .form-control-sm {
-  min-height: calc(1.428em + 0.5rem + 2px);
+  min-height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.25rem;
@@ -2360,7 +2360,7 @@ progress {
 }
 
 .form-control-lg {
-  min-height: calc(1.428em + 1rem + 2px);
+  min-height: calc(1.5em + 1rem + 2px);
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.5rem;
@@ -2379,13 +2379,13 @@ progress {
 }
 
 textarea.form-control {
-  min-height: calc(1.428em + 0.75rem + 2px);
+  min-height: calc(1.5em + 0.75rem + 2px);
 }
 textarea.form-control-sm {
-  min-height: calc(1.428em + 0.5rem + 2px);
+  min-height: calc(1.5em + 0.5rem + 2px);
 }
 textarea.form-control-lg {
-  min-height: calc(1.428em + 1rem + 2px);
+  min-height: calc(1.5em + 1rem + 2px);
 }
 
 .form-control-color {
@@ -2397,11 +2397,11 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 .form-control-color::-moz-color-swatch {
-  height: 1.428em;
+  height: 1.5em;
   border-radius: 0.375rem;
 }
 .form-control-color::-webkit-color-swatch {
-  height: 1.428em;
+  height: 1.5em;
   border-radius: 0.375rem;
 }
 
@@ -2412,7 +2412,7 @@ textarea.form-control-lg {
   -moz-padding-start: calc(0.75rem - 3px);
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.428;
+  line-height: 1.5;
   color: #212529;
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
@@ -2466,7 +2466,7 @@ textarea.form-control-lg {
 
 .form-check {
   display: block;
-  min-height: 1.428rem;
+  min-height: 1.5rem;
   padding-left: 1.5em;
   margin-bottom: 0.125rem;
 }
@@ -2489,7 +2489,7 @@ textarea.form-control-lg {
 .form-check-input {
   width: 1em;
   height: 1em;
-  margin-top: 0.214em;
+  margin-top: 0.25em;
   vertical-align: top;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -2795,7 +2795,7 @@ textarea.form-control-lg {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.428;
+  line-height: 1.5;
   color: #212529;
   text-align: center;
   white-space: nowrap;
@@ -2874,11 +2874,11 @@ textarea.form-control-lg {
 
 .was-validated .form-control:valid, .form-control.is-valid {
   border-color: #198754;
-  padding-right: calc(1.428em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.357em + 0.1875rem) center;
-  background-size: calc(0.714em + 0.375rem) calc(0.714em + 0.375rem);
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #198754;
@@ -2886,8 +2886,8 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
-  padding-right: calc(1.428em + 0.75rem);
-  background-position: top calc(0.357em + 0.1875rem) right calc(0.357em + 0.1875rem);
+  padding-right: calc(1.5em + 0.75rem);
+  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
 .was-validated .form-select:valid, .form-select.is-valid {
@@ -2897,7 +2897,7 @@ textarea.form-control-lg {
   padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
-  background-size: 16px 12px, calc(0.714em + 0.375rem) calc(0.714em + 0.375rem);
+  background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 .was-validated .form-select:valid:focus, .form-select.is-valid:focus {
   border-color: #198754;
@@ -2905,7 +2905,7 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-control-color:valid, .form-control-color.is-valid {
-  width: calc(3rem + calc(1.428em + 0.75rem));
+  width: calc(3rem + calc(1.5em + 0.75rem));
 }
 
 .was-validated .form-check-input:valid, .form-check-input.is-valid {
@@ -2967,11 +2967,11 @@ textarea.form-control-lg {
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color: #dc3545;
-  padding-right: calc(1.428em + 0.75rem);
+  padding-right: calc(1.5em + 0.75rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.357em + 0.1875rem) center;
-  background-size: calc(0.714em + 0.375rem) calc(0.714em + 0.375rem);
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #dc3545;
@@ -2979,8 +2979,8 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
-  padding-right: calc(1.428em + 0.75rem);
-  background-position: top calc(0.357em + 0.1875rem) right calc(0.357em + 0.1875rem);
+  padding-right: calc(1.5em + 0.75rem);
+  background-position: top calc(0.375em + 0.1875rem) right calc(0.375em + 0.1875rem);
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
@@ -2990,7 +2990,7 @@ textarea.form-control-lg {
   padding-right: 4.125rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
   background-position: right 0.75rem center, center right 2.25rem;
-  background-size: 16px 12px, calc(0.714em + 0.375rem) calc(0.714em + 0.375rem);
+  background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
   border-color: #dc3545;
@@ -2998,7 +2998,7 @@ textarea.form-control-lg {
 }
 
 .was-validated .form-control-color:invalid, .form-control-color.is-invalid {
-  width: calc(3rem + calc(1.428em + 0.75rem));
+  width: calc(3rem + calc(1.5em + 0.75rem));
 }
 
 .was-validated .form-check-input:invalid, .form-check-input.is-invalid {
@@ -3035,7 +3035,7 @@ textarea.form-control-lg {
   --bs-btn-font-family: ;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
-  --bs-btn-line-height: 1.428;
+  --bs-btn-line-height: 1.5;
   --bs-btn-color: #212529;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
@@ -3973,7 +3973,7 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.3215rem;
+  --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
@@ -5497,7 +5497,7 @@ textarea.form-control-lg {
   --bs-modal-header-padding: 1rem 1rem;
   --bs-modal-header-border-color: var(--bs-border-color);
   --bs-modal-header-border-width: 1px;
-  --bs-modal-title-line-height: 1.428;
+  --bs-modal-title-line-height: 1.5;
   --bs-modal-footer-gap: 0.5rem;
   --bs-modal-footer-bg: ;
   --bs-modal-footer-border-color: var(--bs-border-color);
@@ -5794,7 +5794,7 @@ textarea.form-control-lg {
   font-family: var(--bs-font-sans-serif);
   font-style: normal;
   font-weight: 400;
-  line-height: 1.428;
+  line-height: 1.5;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -5904,7 +5904,7 @@ textarea.form-control-lg {
   font-family: var(--bs-font-sans-serif);
   font-style: normal;
   font-weight: 400;
-  line-height: 1.428;
+  line-height: 1.5;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -6859,7 +6859,7 @@ textarea.form-control-lg {
 
 .offcanvas-title {
   margin-bottom: 0;
-  line-height: 1.428;
+  line-height: 1.5;
 }
 
 .offcanvas-body {
@@ -8426,7 +8426,7 @@ textarea.form-control-lg {
 }
 
 .lh-base {
-  line-height: 1.428;
+  line-height: 1.5;
 }
 
 .lh-lg {
@@ -12883,42 +12883,42 @@ textarea.form-control-lg {
 }
 
 .alert-primary {
-  color: #087990;
-  background-color: #cff4fc;
-  border: 3px solid #cff4fc;
+  color: #004a6a;
+  background-color: #cce5ef;
+  border: 3px solid #cce5ef;
   -webkit-animation: 2s ease-in alert-primary-animation;
   animation: 2s ease-in alert-primary-animation;
 }
 
 .alert-primary a {
-  color: #087990;
+  color: #004a6a;
 }
 
 .alert-primary a::after {
-  background-color: #087990;
+  background-color: #004a6a;
 }
 
 @-webkit-keyframes alert-primary-animation {
   0% {
-    border: 3px solid #cff4fc;
+    border: 3px solid #cce5ef;
   }
   50% {
-    border: 3px solid #3dd5f3;
+    border: 3px solid #3395c1;
   }
   100% {
-    border: 3px solid #9eeaf9;
+    border: 3px solid #99cae0;
   }
 }
 
 @keyframes alert-primary-animation {
   0% {
-    border: 3px solid #cff4fc;
+    border: 3px solid #cce5ef;
   }
   50% {
-    border: 3px solid #3dd5f3;
+    border: 3px solid #3395c1;
   }
   100% {
-    border: 3px solid #9eeaf9;
+    border: 3px solid #99cae0;
   }
 }
 .alert-secondary {
@@ -13039,42 +13039,42 @@ textarea.form-control-lg {
   }
 }
 .alert-warning {
-  color: #984c0c;
-  background-color: #ffe5d0;
-  border: 3px solid #ffe5d0;
+  color: #997404;
+  background-color: #fff3cd;
+  border: 3px solid #fff3cd;
   -webkit-animation: 2s ease-in alert-warning-animation;
   animation: 2s ease-in alert-warning-animation;
 }
 
 .alert-warning a {
-  color: #984c0c;
+  color: #997404;
 }
 
 .alert-warning a::after {
-  background-color: #984c0c;
+  background-color: #997404;
 }
 
 @-webkit-keyframes alert-warning-animation {
   0% {
-    border: 3px solid #ffe5d0;
+    border: 3px solid #fff3cd;
   }
   50% {
-    border: 3px solid #fd9843;
+    border: 3px solid #ffcd39;
   }
   100% {
-    border: 3px solid #fecba1;
+    border: 3px solid #ffe69c;
   }
 }
 
 @keyframes alert-warning-animation {
   0% {
-    border: 3px solid #ffe5d0;
+    border: 3px solid #fff3cd;
   }
   50% {
-    border: 3px solid #fd9843;
+    border: 3px solid #ffcd39;
   }
   100% {
-    border: 3px solid #fecba1;
+    border: 3px solid #ffe69c;
   }
 }
 .alert-danger {
@@ -13117,42 +13117,42 @@ textarea.form-control-lg {
   }
 }
 .alert-light {
-  color: #41464b;
-  background-color: #e2e3e5;
-  border: 3px solid #e2e3e5;
+  color: #959596;
+  background-color: #fefefe;
+  border: 3px solid #fefefe;
   -webkit-animation: 2s ease-in alert-light-animation;
   animation: 2s ease-in alert-light-animation;
 }
 
 .alert-light a {
-  color: #41464b;
+  color: #959596;
 }
 
 .alert-light a::after {
-  background-color: #41464b;
+  background-color: #959596;
 }
 
 @-webkit-keyframes alert-light-animation {
   0% {
-    border: 3px solid #e2e3e5;
+    border: 3px solid #fefefe;
   }
   50% {
-    border: 3px solid #899197;
+    border: 3px solid #f9fafb;
   }
   100% {
-    border: 3px solid #c4c8cb;
+    border: 3px solid #fcfdfd;
   }
 }
 
 @keyframes alert-light-animation {
   0% {
-    border: 3px solid #e2e3e5;
+    border: 3px solid #fefefe;
   }
   50% {
-    border: 3px solid #899197;
+    border: 3px solid #f9fafb;
   }
   100% {
-    border: 3px solid #c4c8cb;
+    border: 3px solid #fcfdfd;
   }
 }
 .alert-dark {
@@ -13377,7 +13377,7 @@ body[class*=-controlpanel] textarea.form-control {
 #edit-zone {
   font-family: var(--plone-toolbar-font);
   position: fixed;
-  z-index: 1045;
+  z-index: 1040;
   top: 0;
   left: 0;
   bottom: 0;
@@ -14110,7 +14110,7 @@ article > header {
 #section-related .section-heading {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
 }
 #section-related .media {
@@ -14303,7 +14303,7 @@ article > header {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .portletNavigationTree .card-body > ul > li > a > img.image-icon {
-  max-height: 1.428;
+  max-height: 1.5;
 }
 .portletNavigationTree .card-body .navTreeCurrentNode > a {
   background: #f6f6f9;
