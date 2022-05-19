@@ -13456,6 +13456,7 @@ body[class*=-controlpanel] textarea.form-control {
   color: var(--plone-state-private) !important;
 }
 #edit-zone .personaltools-wrapper {
+  display: block;
   margin-top: auto;
   border-top: solid 1px var(--plone-toolbar-separator-color);
   padding: 0.5rem 0;
