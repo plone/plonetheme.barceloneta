@@ -41,12 +41,12 @@ $enable-roboto-webfont:                 true !default;
 // $font-size-sm:                      $font-size-base * .875 !default;
 // $font-size-lg:                      $font-size-base * 1.25 !default;
 
-// $font-weight-lighter:               lighter !default;
-// $font-weight-light:                 300 !default;
-// $font-weight-normal:                400 !default;
-// $font-weight-semibold:              600 !default;
-// $font-weight-bold:                  700 !default;
-// $font-weight-bolder:                bolder !default;
+$font-weight-lighter:                   lighter !default;
+$font-weight-light:                     300 !default;
+$font-weight-normal:                    400 !default;
+$font-weight-semibold:                  600 !default;
+$font-weight-bold:                      700 !default;
+$font-weight-bolder:                    bolder !default;
 
 // $font-weight-base:                  $font-weight-normal !default;
 
@@ -61,6 +61,12 @@ $enable-roboto-webfont:                 true !default;
 // $h5-font-size:                      $font-size-base * 1.25 !default;
 // $h6-font-size:                      $font-size-base !default;
 
+// $headings-margin-bottom:      $spacer * .5 !default;
+// $headings-font-family:        null !default;
+// $headings-font-style:         null !default;
+$headings-font-weight:        $font-weight-normal !default;
+// $headings-line-height:        1.2 !default;
+// $headings-color:              null !default;
 
 // Breadcrumbs
 $breadcrumb-margin-bottom:              2rem !default;
