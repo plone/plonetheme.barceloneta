@@ -1,180 +1,217 @@
 //*// SITE NAV //*//
-#portal-globalnav-wrapper {
-  &.navbar {
-    padding: 0;
-  }
+.navbar {
+  // plone specific vars
+  --#{$prefix}navbar-nav-link-padding-y: #{$navbar-nav-link-padding-y};
+  --#{$prefix}navbar-nav-link-padding-x: #{$navbar-nav-link-padding-x};
 
-  .navbar-toggler {
-    border-color: $navbar-dark-toggler-border-color;
-    margin: $navbar-padding-y 0;
-  }
+  --#{$prefix}navbar-color: #{$navbar-light-color};
+  --#{$prefix}navbar-active-color: #{$navbar-light-active-color};
+  --#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};
 
-  .navbar-nav {
-    flex-wrap: wrap;
+  --#{$prefix}navbar-background: #{$navbar-light-background};
+  --#{$prefix}navbar-active-background: #{$navbar-light-active-background};
+  --#{$prefix}navbar-hover-background: #{$navbar-light-hover-background};
 
-    li {
+  padding: var(--#{$prefix}navbar-padding-y) var(--#{$prefix}navbar-padding-x);
+}
+
+.navbar-nav {
+  flex-wrap: wrap;
+
+  li {
+    position: relative;
+    display: block;
+    background-color: var(--#{$prefix}navbar-background);
+    color: var(--#{$prefix}navbar-color);
+
+    &.inPath>a,
+    &.current>a,
+    &.active>a,
+    &.selected>a {
+      background-color: var(--#{$prefix}navbar-active-background);
+
+      &,
+      &:hover,
+      &:focus {
+        color: var(--#{$prefix}navbar-hover-color);
+      }
+    }
+
+    @include media-breakpoint-up($nav-main-breakpoint) {
+
+      &.has_subtree:hover>ul,
+      &.has_subtree .has_subtree:hover>ul {
+        opacity: 1;
+        visibility: visible;
+        transition: ease-in .35s;
+      }
+
+      &.has_subtree .has_subtree ul {
+        z-index: -1;
+        left: 0em;
+        top: 0px;
+      }
+
+      &.has_subtree .has_subtree:hover>ul {
+        // we only shift the submenus to the right if visible
+        // to prevent horizontal scrollers if not needed
+        left: 16em;
+      }
+
+      &.has_subtree ul li {
+
+        // 2nd level openers pointing sideways on desktop
+        .opener+label:after {
+          transform: rotate(-90deg);
+        }
+      }
+
+
+    }
+
+    &.has_subtree a.nav-link {
+      padding-right: 2.0em;
+    }
+
+    label {
+      margin: 0;
+    }
+
+    a {
       position: relative;
       display: block;
-      background-color: $link-color;
+      padding: var(--#{$prefix}navbar-nav-link-padding-y) var(--#{$prefix}navbar-nav-link-padding-x);
+      hyphens: auto;
+      word-break: break-word;
+      text-decoration: none;
 
-      &.inPath>a,
-      &.current>a,
-      &.selected>a {
-
-        &,
-        &:hover,
-        &:focus {
-          color: white;
-          background-color: $link-hover-color;
-        }
-      }
-
-      @include media-breakpoint-up($nav-main-breakpoint) {
-
-        &.has_subtree:hover>ul,
-        &.has_subtree .has_subtree:hover>ul {
-          opacity: 1;
-          visibility: visible;
-          transition: ease-in .35s;
-        }
-
-        &.has_subtree .has_subtree ul {
-          z-index: -1;
-          left: 0em;
-          top: 0px;
-        }
-
-        &.has_subtree .has_subtree:hover>ul {
-          // we only shift the submenus to the right if visible
-          // to prevent horizontal scrollers if not needed
-          left: 16em;
-        }
-
-      }
-
-      &.has_subtree a {
-        padding-right: 2.0em;
-      }
-
-      label {
-        margin: 0;
-      }
-
-      a {
-        position: relative;
-        display: block;
-        padding: $navbar-nav-link-padding-x;
-        hyphens: auto;
-        word-break: break-word;
+      &:hover,
+      &:focus {
         text-decoration: none;
-
-        &:hover,
-        &:focus {
-          text-decoration: none;
-          background-color: $link-hover-color;
-        }
-
-      }
-
-      // Navigation sublevels
-      ul {
-        @include media-breakpoint-up($nav-main-breakpoint) {
-          padding-left: 0em;
-
-        }
-
-        padding-left: 0.5em;
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-
-        @include media-breakpoint-up($nav-main-breakpoint) {
-          position: absolute;
-          z-index: $zindex-dropdown;
-          transition: ease-out 0.75s;
-        }
-
-        li {
-          a {
-            @include media-breakpoint-up($nav-main-breakpoint) {
-              min-width: 16em;
-            }
-          }
-
-        }
-      }
-
-      .opener {
-        display: none;
-
-        &+label:after {
-          transform: rotate(0deg);
-          transition: ease-in 0.35s;
-        }
-
-        &:checked+label:after {
-          transform: rotate(-180deg);
-          transition: ease-in 0.35s;
-
-          @include media-breakpoint-up($nav-main-breakpoint) {
-            transform: rotate(0);
-          }
-        }
-
-        &~ul {
-          transition: ease-out 0.35s;
-        }
-
-        &:checked~ul {
-          height: auto;
-          transition: ease-in 0.35s;
-        }
-
-        &:checked~ul {
-          @include media-breakpoint-down($nav-main-breakpoint) {
-            visibility: visible;
-            opacity: 1;
-          }
-        }
-      }
-
-      label {
-        position: absolute;
-        right: 0em;
-        top: 0em;
-        height: 3em;
-        width: 4em;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        padding-right: 0.5em;
-
-        @include media-breakpoint-up($nav-main-breakpoint) {
-          align-items: flex-start;
-          width: auto;
-        }
-
-        &:after {
-          background: darken($link-color, 7%);
-          color: $navbar-dark-color;
-          border-radius: $input-border-radius;
-          content: "▼";
-          cursor: pointer;
-          display: inline-block;
-          line-height: 1;
-          font-size: 1.25em;
-          padding: 0.25em;
-
-          @include media-breakpoint-up($nav-main-breakpoint) {
-            font-size: 0.75em;
-            background: transparent;
-          }
-        }
+        background-color: var(--#{$prefix}navbar-hover-background);
       }
 
     }
-  }
 
+    // Navigation sublevels
+    ul {
+      @include media-breakpoint-up($nav-main-breakpoint) {
+        padding-left: 0em;
+
+      }
+
+      padding-left: 0.5em;
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+
+      @include media-breakpoint-up($nav-main-breakpoint) {
+        position: absolute;
+        z-index: $zindex-dropdown;
+        transition: ease-out 0.75s;
+      }
+
+      li {
+        background-color: var(--#{$prefix}navbar-background);
+
+        a {
+          @include media-breakpoint-up($nav-main-breakpoint) {
+            min-width: 16em;
+          }
+        }
+
+      }
+    }
+
+    .opener {
+      display: none;
+
+      &+label:after {
+        transform: rotate(0deg);
+        transition: ease-in 0.35s;
+      }
+
+      &:checked+label:after {
+        transform: rotate(-180deg);
+        transition: ease-in 0.35s;
+
+        @include media-breakpoint-up($nav-main-breakpoint) {
+          transform: rotate(0deg);
+        }
+      }
+
+      &~ul {
+        transition: ease-out 0.35s;
+      }
+
+      &:checked~ul {
+        height: auto;
+        transition: ease-in 0.35s;
+      }
+
+      &:checked~ul {
+        @include media-breakpoint-down($nav-main-breakpoint) {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    label {
+      position: absolute;
+      right: 0em;
+      top: 0em;
+      height: 3em;
+      width: 4em;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      padding-right: 0.5em;
+
+      @include media-breakpoint-up($nav-main-breakpoint) {
+        align-items: flex-start;
+        width: auto;
+      }
+
+      &:after {
+        background: darken($link-color, 7%);
+        color: var(--#{$prefix}navbar-color);
+        border-radius: $input-border-radius;
+        content: "▼";
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1;
+        font-size: 1.25em;
+        padding: 0.25em;
+
+        @include media-breakpoint-up($nav-main-breakpoint) {
+          font-size: 0.75em;
+          background: transparent;
+        }
+      }
+    }
+
+  }
+}
+
+.navbar-dark {
+  --#{$prefix}navbar-color: #{$navbar-dark-color};
+  --#{$prefix}navbar-active-color: #{$navbar-dark-active-color};
+  --#{$prefix}navbar-hover-color: #{$navbar-dark-hover-color};
+
+  --#{$prefix}navbar-background: #{$navbar-dark-background};
+  --#{$prefix}navbar-active-background: #{$navbar-dark-active-background};
+  --#{$prefix}navbar-hover-background: #{$navbar-dark-hover-background};
+}
+
+.navbar-primary {
+  --#{$prefix}navbar-color: #{$navbar-primary-color};
+  --#{$prefix}navbar-active-color: #{$navbar-primary-active-color};
+  --#{$prefix}navbar-hover-color: #{$navbar-primary-hover-color};
+
+  --#{$prefix}navbar-background: #{$navbar-primary-background};
+  --#{$prefix}navbar-active-background: #{$navbar-primary-active-background};
+  --#{$prefix}navbar-hover-background: #{$navbar-primary-hover-background};
 }
