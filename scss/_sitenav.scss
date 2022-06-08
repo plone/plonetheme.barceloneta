@@ -215,7 +215,7 @@
   --#{$prefix}navbar-active-color: #{$navbar-barceloneta-active-color};
   --#{$prefix}navbar-hover-color: #{$navbar-barceloneta-hover-color};
 
-  --#{$prefix}navbar-background: var(--#{$prefix}primary);
+  --#{$prefix}navbar-background: #{$navbar-barceloneta-background};
   --#{$prefix}navbar-active-background: #{$navbar-barceloneta-active-background};
   --#{$prefix}navbar-hover-background: #{$navbar-barceloneta-hover-background};
   //
