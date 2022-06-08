@@ -159,6 +159,11 @@ body.plone-toolbar-left {
 
                 .toolbar-label {
                     display: inline-block;
+                    white-space: initial;
+                    hyphens: auto;
+                    word-break: break-word;
+                    vertical-align: top;
+                    max-width: 80%;
                 }
             }
         }
