@@ -1,6 +1,5 @@
-//*// SITE NAV //*//
 .navbar {
-  // plone specific vars
+  // Barceloneta specific css variables
   --#{$prefix}navbar-nav-link-padding-y: #{$navbar-nav-link-padding-y};
   --#{$prefix}navbar-nav-link-padding-x: #{$navbar-nav-link-padding-x};
 
@@ -8,11 +7,15 @@
   --#{$prefix}navbar-active-color: #{$navbar-light-active-color};
   --#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};
 
-  --#{$prefix}navbar-background: #{$navbar-light-background};
+  --#{$prefix}navbar-background: var(--#{$prefix}light);
   --#{$prefix}navbar-active-background: #{$navbar-light-active-background};
   --#{$prefix}navbar-hover-background: #{$navbar-light-hover-background};
+  //
 
-  padding: var(--#{$prefix}navbar-padding-y) var(--#{$prefix}navbar-padding-x);
+  .offcanvas {
+    // offcanvas background within navigation is navbar background
+    --bs-offcanvas-bg: var(--#{$prefix}navbar-background);
+  }
 }
 
 .navbar-nav {
@@ -59,13 +62,11 @@
       }
 
       &.has_subtree ul li {
-
         // 2nd level openers pointing sideways on desktop
         .opener+label:after {
           transform: rotate(-90deg);
         }
       }
-
 
     }
 
@@ -176,7 +177,7 @@
       }
 
       &:after {
-        background: darken($link-color, 7%);
+        background-color:  var(--#{$prefix}navbar-hover-background);
         color: var(--#{$prefix}navbar-color);
         border-radius: $input-border-radius;
         content: "▼";
@@ -197,21 +198,28 @@
 }
 
 .navbar-dark {
+  // Dark scheme highlight overrides
   --#{$prefix}navbar-color: #{$navbar-dark-color};
   --#{$prefix}navbar-active-color: #{$navbar-dark-active-color};
   --#{$prefix}navbar-hover-color: #{$navbar-dark-hover-color};
 
-  --#{$prefix}navbar-background: #{$navbar-dark-background};
+  --#{$prefix}navbar-background: var(--#{$prefix}dark);
   --#{$prefix}navbar-active-background: #{$navbar-dark-active-background};
   --#{$prefix}navbar-hover-background: #{$navbar-dark-hover-background};
+  //
 }
 
-.navbar-primary {
-  --#{$prefix}navbar-color: #{$navbar-primary-color};
-  --#{$prefix}navbar-active-color: #{$navbar-primary-active-color};
-  --#{$prefix}navbar-hover-color: #{$navbar-primary-hover-color};
+.navbar-barceloneta {
+  // Barceloneta specific highlight overrides
+  --#{$prefix}navbar-color: #{$navbar-barceloneta-color};
+  --#{$prefix}navbar-active-color: #{$navbar-barceloneta-active-color};
+  --#{$prefix}navbar-hover-color: #{$navbar-barceloneta-hover-color};
 
-  --#{$prefix}navbar-background: #{$navbar-primary-background};
-  --#{$prefix}navbar-active-background: #{$navbar-primary-active-background};
-  --#{$prefix}navbar-hover-background: #{$navbar-primary-hover-background};
+  --#{$prefix}navbar-background: var(--#{$prefix}primary);
+  --#{$prefix}navbar-active-background: #{$navbar-barceloneta-active-background};
+  --#{$prefix}navbar-hover-background: #{$navbar-barceloneta-hover-background};
+  //
+
+  padding: var(--#{$prefix}navbar-padding-y) var(--#{$prefix}navbar-padding-x);
+  background-color: var(--#{$prefix}navbar-background);
 }
