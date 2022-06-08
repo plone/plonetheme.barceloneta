@@ -13501,6 +13501,13 @@ body.plone-toolbar-left #edit-zone .toolbar-label {
   }
   body.plone-toolbar-left.plone-toolbar-left-expanded #edit-zone .toolbar-label {
     display: inline-block;
+    white-space: initial;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-break: break-word;
+    vertical-align: top;
+    max-width: 80%;
   }
 }
 
