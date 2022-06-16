@@ -12,50 +12,50 @@ picture {
   columns: 3;
 }
 
+figure{
+  display: table;
+}
+figcaption{
+  display: table-caption;
+  caption-side: bottom;
+}
+
 .image-right {
   @extend .mx-auto;
   @extend .my-2;
-  @extend .d-block;
 
   &.picture-variant-large {
     @extend .float-xxl-end;
     @extend .ms-xxl-2;
-    @extend .d-xxl-inline-block;
   }
 
   &.picture-variant-medium {
     @extend .float-xl-end;
     @extend .ms-xl-2;
-    @extend .d-xl-inline-block;
   }
 
   &.picture-variant-small {
     @extend .float-md-end;
     @extend .ms-md-2;
-    @extend .d-md-inline-block;
   }
 }
 
 .image-left {
   @extend .mx-auto;
   @extend .my-2;
-  @extend .d-block;
 
   &.picture-variant-large {
     @extend .float-xxl-start;
     @extend .me-xxl-2;
-    @extend .d-xxl-inline-block;
   }
 
   &.picture-variant-medium {
     @extend .float-xl-start;
     @extend .me-xl-2;
-    @extend .d-xl-inline-block;
   }
 
   &.picture-variant-small {
     @extend .float-md-start;
     @extend .me-md-2;
-    @extend .d-md-inline-block;
   }
 }
