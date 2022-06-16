@@ -118,7 +118,22 @@ body.plone-toolbar-left {
 
     #edit-zone {
         .nav-link {
+            display: flex;
+            width: 100%;
             padding-right: 0.5rem;
+            .plone-icon {
+                margin-top: 0.25em;
+                margin-right: 0.5em;
+                flex-shrink: 0;
+            }
+            .toolbar-label {
+                flex-grow: 1;
+            }
+            &:after {
+                margin-top: 0.5em;
+                width: 0.3em;
+                height: 0.3em;
+            }
         }
 
         .border-top {
@@ -163,7 +178,6 @@ body.plone-toolbar-left {
                     hyphens: auto;
                     word-break: break-word;
                     vertical-align: top;
-                    max-width: 80%;
                 }
             }
         }
