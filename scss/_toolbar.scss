@@ -65,6 +65,7 @@
 
         a {
             color: var(--plone-toolbar-text-color);
+            cursor: pointer;
 
             @include media-breakpoint-down(md) {
                 display: none;

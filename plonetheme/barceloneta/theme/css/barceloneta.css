@@ -13428,6 +13428,7 @@ body[class*=-controlpanel] textarea.form-control {
 }
 #edit-zone .toolbar-header a {
   color: var(--plone-toolbar-text-color);
+  cursor: pointer;
 }
 @media (max-width: 767.98px) {
   #edit-zone .toolbar-header a {
