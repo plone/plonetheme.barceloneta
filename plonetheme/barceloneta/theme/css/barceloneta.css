@@ -13906,6 +13906,10 @@ figcaption {
   padding-right: 0;
 }
 
+#portal-searchbox {
+  flex-shrink: 0;
+}
+
 .livesearch-results {
   margin-top: 1rem;
   width: 100%;
