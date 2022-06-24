@@ -9,6 +9,36 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0b1 (2022-06-24)
+--------------------
+
+New features:
+
+
+- Example for extra styles that get automatically populated to the TinyMCE formats menu added.
+  [agitator] (#282)
+- Reimplement dropout toolbar submenus and collapsed icons.
+  Create CSS variables for Plone colors.
+  [petschki, agitator] (#283)
+- Update to Bootstrap 5.2.0-beta1 and make use of CSS variables.
+  [agitator] (#286)
+- Global sections: add support for css variables and color modes barceloneta, dark, light
+  [agitator] (#288)
+
+
+Bug fixes:
+
+
+- Fix columns-order when only col-one is displayed.
+  [pbauer] (#279)
+- Fix text wrapping of long toolbar labels.
+  [agitator] (#289)
+- Toolbar width and wrapping tweaks.
+  [agitator] (#292)
+- Ensure pointer cursor on toolbar toggle icon.
+  [petschki] (#294)
+
+
 3.0.0a11 (2022-04-08)
 ---------------------
 
