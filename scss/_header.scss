@@ -82,6 +82,8 @@
   }
 }
 
+//*// Don't shrink search input when navigation has many items
+#portal-searchbox {flex-shrink: 0;}
 
 .livesearch-results {
   margin-top: 1rem;
