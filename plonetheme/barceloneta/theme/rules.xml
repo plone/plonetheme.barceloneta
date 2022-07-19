@@ -107,7 +107,7 @@
             <xsl:when css:test=".card">
               <xsl:choose>
                 <xsl:when css:test=".card-header:not(.titleless)">
-                  <div class="headline"><h2><xsl:value-of css:select=".card-header" /></h2></div>
+                  <div class="headline"><h2><xsl:apply-templates select="./node()[@class='card-header']/node()" /></h2></div>
                 </xsl:when>
               </xsl:choose>
               <xsl:choose>
