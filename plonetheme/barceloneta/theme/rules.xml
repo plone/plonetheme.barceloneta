@@ -63,6 +63,8 @@
   <after css:theme-children="#portal-column-two" css:content-children="#portal-column-two"></after>
   <drop css:theme="#portal-column-two" css:if-not-content="#portal-column-two" />
 
+  <!-- manage-portlets Footer portlets -->
+  <after css:theme-children="#portal-footer-wrapper" css:content-children="#portal-footer-wrapper" css:if-content="#portal-footer-wrapper #portletmanager-plone-footerportlets"></after>
 
   <!-- Footer -->
   <xsl:variable name="footer_portlets" select="//footer[@id='portal-footer-wrapper']//div[@class='portletWrapper']/*[not(contains(@id,'portal-colophon')) and not(contains(@id,'portal-footer-signature')) and not(contains(@class,'portletActions'))]"></xsl:variable>
@@ -105,7 +107,7 @@
             <xsl:when css:test=".card">
               <xsl:choose>
                 <xsl:when css:test=".card-header:not(.titleless)">
-                  <div class="headline"><h2><xsl:value-of css:select=".card-header" /></h2></div>
+                  <div class="headline"><h2><xsl:apply-templates select="./node()[@class='card-header']/node()" /></h2></div>
                 </xsl:when>
               </xsl:choose>
               <xsl:choose>
