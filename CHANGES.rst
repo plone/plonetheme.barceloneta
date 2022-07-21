@@ -9,6 +9,23 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0b2 (2022-07-21)
+--------------------
+
+New features:
+
+
+- Update Bootstrap 5.2.0
+  [petschki] (#300)
+
+
+Bug fixes:
+
+
+- Show footer portlets when managing all portlets from @@manage-portlets
+  [frapell] (#281)
+
+
 3.0.0b1 (2022-06-24)
 --------------------
 
