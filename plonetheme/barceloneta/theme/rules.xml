@@ -9,6 +9,7 @@
 
   <theme href="index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
+  <notheme css:if-content=".template-manage-viewlets" />
 
   <rules css:if-content="#portal-top">
     <!-- Attributes -->
