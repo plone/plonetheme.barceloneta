@@ -9,6 +9,20 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0b3 (2022-09-07)
+--------------------
+
+Bug fixes:
+
+
+- Include tinymce-formats.css in theme, so that they have an effect.
+    [MrTango] (#301)
+- Define max-height for toolbar dropdown so it scrolls if item list is too long.
+  [petschki] (#302)
+- disable diazo for manage-viewlets view, because Diazo is messing with viewlets and viewlet manager, which is more confusing than helpful
+    [MrTango] (#303)
+
+
 3.0.0b2 (2022-07-21)
 --------------------
 

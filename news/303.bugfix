@@ -1,2 +1,0 @@
-disable diazo for manage-viewlets view, because Diazo is messing with viewlets and viewlet manager, which is more confusing than helpful
-  [MrTango]
