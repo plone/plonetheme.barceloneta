@@ -9,6 +9,17 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0b4 (2022-09-09)
+--------------------
+
+Bug fixes:
+
+
+- prefix icon ptch in index.html with ++theme++barceloneta to prevent broken icon in other themes [MrTango] (#304)
+- Fixed missing files in previous release, remove scss/legacy which was never shipped.
+  [MrTango] (#305)
+
+
 3.0.0b3 (2022-09-07)
 --------------------
 
