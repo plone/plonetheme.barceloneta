@@ -1,0 +1,1 @@
+Fix npm release, rm npmignore, use explicite whitelist in package.json, rm legacy scss [MrTango]
