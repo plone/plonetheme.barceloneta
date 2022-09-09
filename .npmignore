@@ -5,7 +5,6 @@
 /node_modules/
 /plonetheme.barceloneta.egg-info/
 /plonetheme/
-/scss/legacy/
 CHANGES.rst
 CONTRIBUTING.rst
 MANIFEST.in
