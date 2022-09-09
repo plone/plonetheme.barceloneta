@@ -9,6 +9,15 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0b5 (2022-09-09)
+--------------------
+
+Bug fixes:
+
+
+- Fix npm release, rm npmignore, use explicite whitelist in package.json, rm legacy scss [MrTango] (#306)
+
+
 3.0.0b4 (2022-09-09)
 --------------------
 
