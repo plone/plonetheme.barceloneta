@@ -30,16 +30,18 @@
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.1",
     "sass": "^1.43.3",
-    "stylelint-config-twbs-bootstrap": "^2.2.4"
+    "stylelint-config-twbs-bootstrap": "^2.2.4",
+    "tinymce": "^5.10.2"
   },
   "scripts": {
     "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
-    "build": "npm-run-all css-compile-main css-prefix-main css-minify-main",
+    "build": "npm-run-all css-compile-main css-prefix-main css-minify-main copy-tinymce-ui-css",
     "css-main": "npm-run-all css-compile-main css-prefix-main css-minify-main",
     "css-compile-main": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css scss/barceloneta.scss:plonetheme/barceloneta/theme/css/barceloneta.css",
     "css-prefix-main": "postcss --config postcss.config.js --replace \"plonetheme/barceloneta/theme/css/*.css\" \"!plonetheme/barceloneta/theme/css/*.min.css\"",
     "css-minify-main": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output plonetheme/barceloneta/theme/css/barceloneta.min.css plonetheme/barceloneta/theme/css/barceloneta.css",
-    "css-lint": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache"
+    "css-lint": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
+    "copy-tinymce-ui-css": "cp \"node_modules/tinymce/skins/ui/oxide/content.css\" \"plonetheme/barceloneta/theme/tinymce/tinymce-ui-content.css\""
   },
   "dependencies": {
     "bootstrap": "^5.2.1"

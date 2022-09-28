@@ -15,6 +15,14 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <!-- upgrade step -->
+  <genericsetup:upgradeDepends
+      title="Upgrade registry"
+      source="1"
+      destination="2"
+      profile="plonetheme.barceloneta:default"
+      import_steps="plone.app.registry" />
+
   <!-- Diazo themes -->
   <plone:static directory="theme" name="barceloneta" type="theme"/>
 
