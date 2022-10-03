@@ -1,0 +1,18 @@
+table.listing{
+  @extend .table;
+}
+
+table.listing-compact{
+  @extend .table;
+  @extend .table-sm;
+}
+
+table.plain{
+  @extend .table;
+  @extend .table-bordered;
+}
+
+table.invisible-grid{
+  @extend .table;
+  @extend .table-borderless;
+}
