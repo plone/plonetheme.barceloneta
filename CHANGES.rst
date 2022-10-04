@@ -9,6 +9,24 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0b6 (2022-10-04)
+--------------------
+
+New features:
+
+
+- Bootstrap 5.2.2
+  [petschki] (#313)
+
+
+Bug fixes:
+
+
+- Add TinyMCE ui styles in non-inline mode.
+  [petschki] (#307)
+- Add content table styles [MrTango] (#311)
+
+
 3.0.0b5 (2022-09-09)
 --------------------
 
