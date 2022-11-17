@@ -4,7 +4,7 @@ Classic theme resources for Plone 6 - based on Bootstrap 5
 
 This package provides scss resources to build your own theme based on the Plone default theme for (backend rendered) Classic UI of Plone.
 
-Latest version on [npmjs.com](https://www.npmjs.com/package/@plone/plonetheme-barceloneta)
+Latest version on [npmjs.com](https://www.npmjs.com/package/@plone/plonetheme-barceloneta-base)
 
 ## Documentation
 Plonetheme.barceloneta documentation http://docs.plone.org/adapt-and-extend/theming/barceloneta.html is part of the official Plone documentation.
