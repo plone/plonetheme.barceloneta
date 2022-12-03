@@ -9,6 +9,16 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.0 (2022-12-03)
+------------------
+
+New features:
+
+
+- Update Bootstrap -> 5.2.3
+  [petschki] (#316)
+
+
 3.0.0b6 (2022-10-04)
 --------------------
 
