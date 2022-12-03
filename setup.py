@@ -42,6 +42,7 @@ setup(
     namespace_packages=["plonetheme"],
     include_package_data=True,
     zip_safe=False,
+    python_requires=">=3.8",
     install_requires=[
         "setuptools",
         "plone.app.theming",
