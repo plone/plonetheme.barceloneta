@@ -1,16 +1,4 @@
 @charset "UTF-8";
-:root {
-  --plone-link-color: #007bb1;
-  --plone-link-color-on-dark: #16a1e3;
-  --plone-link-color-on-grey: #086ca3;
-  --plone-link-hover-color: #004665;
-  --plone-state-draft: #fab82a;
-  --plone-state-pending: #e2e721;
-  --plone-state-private: #c4183c;
-  --plone-state-internal: #fab82a;
-  --plone-state-internally-published: #883dfa;
-}
-
 /*!
  * Bootstrap  v5.3.0-alpha1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -12926,7 +12914,7 @@ body[class*=-controlpanel] textarea.form-control {
 #edit-zone .dropdown-menu {
   border-radius: 0;
   min-width: 12rem;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 100vh;
 }
 #edit-zone .nav-link,
@@ -13317,6 +13305,31 @@ figure {
 figcaption {
   display: table-caption;
   caption-side: bottom;
+}
+
+:root,
+[data-bs-theme=light] {
+  --plone-link-color: #007bb1;
+  --plone-link-color-on-dark: #16a1e3;
+  --plone-link-color-on-grey: #086ca3;
+  --plone-link-hover-color: #004665;
+  --plone-state-draft: #fab82a;
+  --plone-state-pending: #ccd111;
+  --plone-state-private: #c4183c;
+  --plone-state-internal: #fab82a;
+  --plone-state-internally-published: #883dfa;
+}
+
+[data-bs-theme=dark] {
+  --plone-link-color: #007bb1;
+  --plone-link-color-on-dark: #16a1e3;
+  --plone-link-color-on-grey: #086ca3;
+  --plone-link-hover-color: #004665;
+  --plone-state-draft: #fab82a;
+  --plone-state-pending: #e2e721;
+  --plone-state-private: #f96483;
+  --plone-state-internal: #fab82a;
+  --plone-state-internally-published: #ab75ff;
 }
 
 .card-light {
