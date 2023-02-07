@@ -7,6 +7,7 @@ $plone-portlet-list-bullet: #64bee8!default;
 
 .portlet {
   margin-bottom: $spacer;
+  overflow: hidden;
 
   @if $enable-shadows==true {
     @include box-shadow($box-shadow);

@@ -4609,7 +4609,7 @@ textarea.form-control-lg {
   --bs-breadcrumb-padding-x: 1rem;
   --bs-breadcrumb-padding-y: 0.5rem;
   --bs-breadcrumb-margin-bottom: 2rem;
-  --bs-breadcrumb-bg: #e9ecef;
+  --bs-breadcrumb-bg: var(--bs-secondary-bg);
   --bs-breadcrumb-border-radius: ;
   --bs-breadcrumb-divider-color: var(--bs-secondary-color);
   --bs-breadcrumb-item-padding-x: 0.5rem;
@@ -13657,7 +13657,7 @@ figcaption {
 }
 
 #portal-breadcrumbs {
-  background-color: #e9ecef;
+  background-color: var(--bs-secondary-bg);
   margin-bottom: 2rem;
 }
 #portal-breadcrumbs .breadcrumb {
@@ -13818,6 +13818,7 @@ article > header {
 
 .portlet {
   margin-bottom: 1rem;
+  overflow: hidden;
   box-shadow: None;
 }
 .portlet .card-footer {
