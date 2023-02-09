@@ -1,10 +1,5 @@
 //*// PORTLETS //*//
 
-//*// PORTLETS --> cleanup
-$plone-portlet-list-hover-bg: #fcfcfd!default;
-$plone-portlet-footer-bg: #fcfcfd!default;
-$plone-portlet-list-bullet: #64bee8!default;
-
 .portlet {
   margin-bottom: $spacer;
   overflow: hidden;
@@ -71,7 +66,7 @@ $plone-portlet-list-bullet: #64bee8!default;
       }
 
       li:hover {
-        background: $plone-portlet-list-hover-bg;
+        background: var(--plone-portlet-footer-bg);
       }
     }
   }
@@ -93,7 +88,7 @@ $plone-portlet-list-bullet: #64bee8!default;
 
           &:hover {
             text-decoration: none;
-            background: darken($plone-portlet-footer-bg, 2%);
+            background: var(--plone-portlet-footer-bg);
             color: $plone-portlet-list-bullet;
           }
 
@@ -122,8 +117,8 @@ $plone-portlet-list-bullet: #64bee8!default;
     }
 
     .navTreeCurrentNode>a {
-      background: darken($plone-portlet-footer-bg, 2%);
-      color: $gray-600;
+      background: var(--plone-portlet-footer-bg);
+      color: var(--bs-secondary-text);
 
       &::after {
         content: "⟩";
