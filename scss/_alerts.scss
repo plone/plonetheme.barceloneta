@@ -1,32 +1,67 @@
+.alert-info {
+    --bs-alert-border-secondary: #00c9f16e;
+}
+.alert-success {
+    --bs-alert-border-secondary: #479f7696;
+}
+.alert-primary {
+    --bs-alert-border-secondary: #327be794;
+}
+.alert-secondary {
+    --bs-alert-border-secondary: #899197ab;
+}
+.alert-warning {
+    --bs-alert-border-secondary: #f5c412ad;
+}
+.alert-danger {
+    --bs-alert-border-secondary: #e75260bf;
+}
+.alert-light {
+    --bs-alert-border-secondary: #f9fafb;
+}
+.alert-dark {
+    --bs-alert-border-secondary: #4d5154;
+}
+
 .alert {
   position: relative;
   padding: 1rem 1rem;
-  border: 3px solid var(--bs-alert-border-color);
+  border: 3px solid transparent;
   border-radius: 0.25rem;
   animation-fill-mode: forwards !important;
   animation-delay: 1.0s !important;
-  transition: border-width 1s linear;
+  animation: 1.5s ease-in alert-animation;
 
   a {
-    font-weight: 700;
-    position: relative;
-    text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  color: var(--bs-alert-color);
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      left: 0px;
+      bottom: 0px;
+      background-color: var(--bs-alert-color);
+      animation: 1.6s ease-in alert-link-animation;
+      animation-delay: 3s;
+      animation-fill-mode: forwards;
+    }
   }
 }
 
-.alert a::after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  left: 0px;
-  bottom: 0px;
-  animation: 1.6s ease-in alert-link-animation;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-
-.alert-heading {
-  color: inherit;
+@keyframes alert-animation {
+  0% {
+    border-color: var(--bs-alert-bg);
+  }
+  50% {
+    border-color: var(--bs-alert-border-secondary);
+  }
+  100% {
+    border-color: var(--bs-alert-border-color);
+  }
 }
 
 @keyframes alert-link-animation {
@@ -41,14 +76,18 @@
   }
 }
 
-.alert-dismissible {
-  padding-right: 3rem;
+.alert-heading {
+  color: inherit;
 }
 
-.alert-dismissible .btn-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  padding: 1.25rem 1rem;
+.alert-dismissible {
+  padding-right: 3rem;
+
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 1.25rem 1rem;
+  }
 }
