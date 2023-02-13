@@ -14,6 +14,11 @@ Changelog
 
 New features:
 
+- Simplify alert related styles.
+  [lenadax] (#321)
+
+- Adopt colormode related variables from Bootstrap 5.3.
+  [lenadax] (#321)
 
 - Update Bootstrap -> 5.3.0
   [agitator] (#320)
