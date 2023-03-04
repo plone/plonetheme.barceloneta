@@ -9,6 +9,21 @@ Changelog
 
 .. towncrier release notes start
 
+3.1.0 (unreleased)
+------------------
+
+New features:
+
+- Simplify alert related styles.
+  [lenadax] (#321)
+
+- Adopt colormode related variables from Bootstrap 5.3.
+  [lenadax] (#321)
+
+- Update Bootstrap -> 5.3.0
+  [agitator] (#320)
+
+
 3.0.0 (2022-12-03)
 ------------------
 

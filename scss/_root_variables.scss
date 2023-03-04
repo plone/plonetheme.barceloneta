@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-bs-theme="light"] {
   // Note: Custom variable values only support SassScript inside `#{}`.
 
   // Colors
@@ -14,4 +15,19 @@
   $value in $state-colors {
     --plone-state-#{$color}: #{$value};
   }
+}
+
+@if $enable-dark-mode {
+    @include color-mode(dark, true) {
+      // scss-docs-start root-dark-mode-vars
+      @each $color,
+      $value in $plone-colors-dark {
+        --plone-#{$color}: #{$value};
+      }
+    
+      @each $color,
+      $value in $state-colors-dark {
+        --plone-state-#{$color}: #{$value};
+      }
+    }
 }

@@ -1,0 +1,37 @@
+// Plone specific colors
+//colors
+$state-draft-color-dark:                 #fab82a!default; // lime-yellow //draft is visible
+$state-pending-color-dark:               #e2e721!default; // orange
+$state-private-color-dark:               #f96483!default; // red
+$state-internal-color-dark:              #fab82a!default; // is draft
+$state-internally-published-color-dark:  #ab75ff!default; // is intranet
+
+// Plone
+$plone-link-color-dark:                  #007bb1!default; //plone blue made slightly darker for wcag 2.0
+$plone-link-color-on-dark:               #16a1e3!default; //plone blue
+//if you need different contrast
+$plone-link-color-on-grey:               #086ca3!default; //valid wcag 2.0
+$plone-link-hover-color-dark:            darken($plone-link-color, 15%)!default;
+
+// Portlets
+$plone-portlet-list-hover-bg-dark:       var(--bs-secondary-bg-subtle)!default;
+$plone-portlet-footer-bg-dark:           var(--bs-secondary-bg-subtle)!default;
+$plone-portlet-list-bullet-dark:         #64bee8!default;
+
+$plone-colors-dark: (
+  "link-color":                            $plone-link-color-dark,
+  "link-color-on-dark":                    $plone-link-color-on-dark, // only used once
+  "link-color-on-grey":                    $plone-link-color-on-grey, // never used
+  "link-hover-color":                      $plone-link-hover-color-dark,
+  "portlet-list-hover-bg":                 $plone-portlet-list-hover-bg-dark,
+  "portlet-footer-bg":                     $plone-portlet-footer-bg-dark,
+  "portlet-list-bullet":                   $plone-portlet-list-bullet-dark,
+) !default;
+
+$state-colors-dark: (
+  "draft":                                 $state-draft-color-dark,
+  "pending":                               $state-pending-color-dark,
+  "private":                               $state-private-color-dark,
+  "internal":                              $state-internal-color-dark,
+  "internally-published":                  $state-internally-published-color-dark,
+) !default;

@@ -2,13 +2,14 @@
 
 // Plone colors
 @import "variables.colors.plone";
+@import "variables.colors.dark.plone";
 
 // Plone specific default variables & properties
 @import "variables.properties";
 @import "variables.barceloneta";
-@import "root_variables";
 
 @import "base";
+@import "root_variables";
 
 @import "mixins/mixin.portlets.plone";
 @import "mixins/mixin.font.plone";

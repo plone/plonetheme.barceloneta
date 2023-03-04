@@ -91,7 +91,7 @@ $headings-font-weight:                      $font-weight-normal !default;
 
 // Breadcrumbs
 $breadcrumb-margin-bottom:                  2rem !default;
-$breadcrumb-bg:                             $gray-200 !default;
+$breadcrumb-bg:                             var(--bs-secondary-bg) !default;
 $breadcrumb-padding-y:                      $spacer * 0.5 !default;
 $breadcrumb-padding-x:                      $spacer * 1 !default;
 
