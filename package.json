@@ -30,6 +30,7 @@
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "sass": "^1.58.3",
+    "stylelint": "^14.16.1",
     "stylelint-config-twbs-bootstrap": "^7.0.0",
     "tinymce": "^5.10.7"
   },
