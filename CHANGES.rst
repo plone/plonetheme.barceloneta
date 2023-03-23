@@ -12,18 +12,8 @@ Changelog
 3.1.0 (2023-03-05)
 ------------------
 
-Bug fixes:
-
-
-- Fix Diazo rule problem with undefined footer_portlets and footer_portlets_count variables.
-
-  See: https://community.plone.org/t/error-theme-inherited-from-barceloneta-footer-portlets-count/8455 (#239)
-
-
-3.1.0 (unreleased)
-------------------
-
 New features:
+
 
 - Simplify alert related styles.
   [lenadax] (#321)
@@ -33,6 +23,12 @@ New features:
 
 - Update Bootstrap -> 5.3.0
   [agitator] (#320)
+
+Bug fixes:
+
+
+- Fix Diazo rule problem with undefined footer_portlets and footer_portlets_count variables.
+  See: https://community.plone.org/t/error-theme-inherited-from-barceloneta-footer-portlets-count/8455 (#239)
 
 
 3.0.0 (2022-12-03)
