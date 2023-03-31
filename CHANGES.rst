@@ -9,6 +9,16 @@ Changelog
 
 .. towncrier release notes start
 
+3.1.1 (2023-03-31)
+------------------
+
+New features:
+
+
+- Update to Bootstrap 5.3.0-alpha2.
+  [toalba,lenadax] (#324)
+
+
 3.1.0 (2023-03-05)
 ------------------
 
