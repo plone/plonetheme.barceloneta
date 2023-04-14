@@ -9,6 +9,17 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.11 (2023-04-14)
+-------------------
+
+Bug fixes:
+
+
+- Fix Diazo rule problem with undefined footer_portlets and footer_portlets_count variables.
+
+  See: https://community.plone.org/t/error-theme-inherited-from-barceloneta-footer-portlets-count/8455 (#239)
+
+
 2.1.10 (2020-11-11)
 -------------------
 
