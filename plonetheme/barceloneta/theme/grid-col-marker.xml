@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rules xmlns="http://namespaces.plone.org/diazo"
-  xmlns:css="http://namespaces.plone.org/diazo/css"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-  xmlns:xi="http://www.w3.org/2001/XInclude">
+       xmlns:css="http://namespaces.plone.org/diazo/css"
+       xmlns:xhtml="http://www.w3.org/1999/xhtml"
+       xmlns:xi="http://www.w3.org/2001/XInclude"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+>
 
 
   <!-- this is done in plone.app.layout.globals.LayoutPolicy.bodyClass(), so we don't need to use xsl at all -->
@@ -16,7 +17,7 @@
   <!-- == Keeping this as an example or for when your CSS framework does not provide SCSS/LESS mixins to define the grid settings == -->
 
   <!-- ## Configure bootstrap grid markup classes for content column, depending on existing columns left and right: ## -->
-  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
+  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breaks!  -->
   <!-- <before theme-children="//*[@id='portal-column-content']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-content']/@class" />
@@ -27,7 +28,7 @@
   </xsl:attribute></before> -->
 
   <!-- ## Configure bootstrap grid for the left column (column-one), depnding on existing column's left and right: ## -->
-  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
+  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breaks!  -->
   <!-- <before theme-children="//*[@id='portal-column-one']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-one']/@class" />
@@ -36,7 +37,7 @@
   </xsl:attribute></before>-->
 
   <!-- ## Configure bootstrap grid for the right column (column-two), depnding on existing column's left and right: ## -->
-  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breakes!  -->
+  <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breaks!  -->
   <!-- <before theme-children="//*[@id='portal-column-two']"
     method="raw"><xsl:attribute name="class">
     <xsl:value-of select="//*[@id='portal-column-two']/@class" />
