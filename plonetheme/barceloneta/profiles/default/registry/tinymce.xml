@@ -1,8 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <registry>
   <records interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
-           prefix="plone">
+           prefix="plone"
+  >
 
-    <value key="content_css" purge="false">
+    <value key="content_css"
+           purge="false"
+    >
       <element>++theme++barceloneta/tinymce/tinymce-formats.css</element>
       <element>++theme++barceloneta/tinymce/tinymce-ui-content.css</element>
     </value>

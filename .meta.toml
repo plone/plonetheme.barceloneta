@@ -1,0 +1,8 @@
+# Generated from:
+# https://github.com/plone/meta/tree/master/config/default
+[meta]
+template = "default"
+commit-id = "7032e1d4"
+
+[codespell]
+skip = "*.map,pyproject.toml,package-lock.json"

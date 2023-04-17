@@ -1,11 +1,11 @@
 recursive-include plonetheme *
-include *.rst *.js *.json *.html
+include *.rst *.js *.json *.html *.md
 global-exclude *.pyc
 prune design
 include pyproject.toml
 recursive-exclude news *
 exclude news
-# npm/yarn world exludes
+# npm/yarn world excludes
 prune scss
 exclude yarn.lock
 exclude package.json
