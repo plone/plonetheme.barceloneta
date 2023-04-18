@@ -9,6 +9,23 @@ Changelog
 
 .. towncrier release notes start
 
+3.1.2 (2023-04-18)
+------------------
+
+New features:
+
+
+- Upgrade Bootstrap `5.3.0-alpha3`
+  [petschki] (#325)
+
+
+Internal:
+
+
+- Update configuration files.
+  [plone devs] (7032e1d4)
+
+
 3.1.1 (2023-03-31)
 ------------------
 
