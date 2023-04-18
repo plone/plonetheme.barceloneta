@@ -75,7 +75,7 @@ Bug fixes:
 Bug fixes:
 
 
-- Fix npm release, rm npmignore, use explicite whitelist in package.json, rm legacy scss [MrTango] (#306)
+- Fix npm release, rm npmignore, use explicit whitelist in package.json, rm legacy scss [MrTango] (#306)
 
 
 3.0.0b4 (2022-09-09)
@@ -798,7 +798,7 @@ Fixes:
 1.6.13 (2015-09-20)
 -------------------
 
-- Add spaces beetween checks and labels in search filter (closes `#982`_).
+- Add spaces between checks and labels in search filter (closes `#982`_).
   [rodfersou]
 
 - Center buttons on ordered selection lists (closes `#1017`_).
