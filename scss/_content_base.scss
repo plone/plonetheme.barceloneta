@@ -25,18 +25,18 @@ figcaption{
   @extend .my-2;
 
   &.picture-variant-large {
-    @extend .float-xxl-end;
-    @extend .ms-xxl-2;
+    @extend .float-xxl-end !optional;
+    @extend .ms-xxl-2 !optional;
   }
 
   &.picture-variant-medium {
-    @extend .float-xl-end;
-    @extend .ms-xl-2;
+    @extend .float-xl-end !optional;
+    @extend .ms-xl-2 !optional;
   }
 
   &.picture-variant-small {
-    @extend .float-md-end;
-    @extend .ms-md-2;
+    @extend .float-md-end !optional;
+    @extend .ms-md-2 !optional;
   }
 }
 
@@ -45,17 +45,17 @@ figcaption{
   @extend .my-2;
 
   &.picture-variant-large {
-    @extend .float-xxl-start;
-    @extend .me-xxl-2;
+    @extend .float-xxl-start !optional;
+    @extend .me-xxl-2 !optional;
   }
 
   &.picture-variant-medium {
-    @extend .float-xl-start;
-    @extend .me-xl-2;
+    @extend .float-xl-start !optional;
+    @extend .me-xl-2 !optional;
   }
 
   &.picture-variant-small {
-    @extend .float-md-start;
-    @extend .me-md-2;
+    @extend .float-md-start !optional;
+    @extend .me-md-2 !optional;
   }
 }
