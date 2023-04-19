@@ -1,0 +1,2 @@
+Add "!optional" to extended grid breakpoints selectors to avoid errors when `$grid-breakpoints` is customized.
+[petschki]
