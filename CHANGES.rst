@@ -9,6 +9,23 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.2 (2023-04-20)
+------------------
+
+Bug fixes:
+
+
+- Add "!optional" to extended grid breakpoints selectors to avoid errors when `$grid-breakpoints` is customized.
+  [petschki] (#328)
+
+
+Internal:
+
+
+- Update configuration files.
+  [plone devs] (7032e1d4)
+
+
 3.0.1 (2023-03-23)
 ------------------
 
