@@ -10,13 +10,14 @@ def read(*rnames):
 
 version = "3.1.3.dev0"
 
-long_description = read("README.rst") + "\n" + read("CHANGES.rst") + "\n"
+long_description = read("README.md") + "\n" + read("CHANGES.md") + "\n"
 
 setup(
     name="plonetheme.barceloneta",
     version=version,
     description="The default theme for Plone 6.",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
