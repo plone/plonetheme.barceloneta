@@ -47,7 +47,9 @@ setup(
     install_requires=[
         "setuptools",
         "plone.app.theming",
-        "plone.batching >1.0.999",
+        "plone.resource",
+        "plone.theme",
+        "Products.GenericSetup",
     ],
     extras_require={"test": []},
     entry_points="""

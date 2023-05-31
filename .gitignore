@@ -16,6 +16,7 @@ node_modules/
 __pycache__/
 .tox
 .vscode/
+forest.*
 
 # venv / buildout related
 bin/
