@@ -9,6 +9,21 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.3 (2023-06-05)
+
+
+### New features:
+
+- Update to Bootstrap 5.3 final release.
+  [petschki] #333
+
+
+### Bug fixes:
+
+- Add "!optional" to extended grid breakpoints selectors to avoid errors when `$grid-breakpoints` is customized.
+  [petschki] #329
+
+
 ## 3.1.2 (2023-04-18)
 
 ### New features:
