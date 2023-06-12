@@ -2,6 +2,15 @@
 NPM Release Instructions
 ========================
 
+.. note::
+    You need the correct access rights to publish to npm or pypi.
+
+
+- First create a pypi release using zest.releaser. This tool also creates the correct tag based on the setup.py version.
+- After the pypi release edit the release version in package.json.
+- Run: `npm publish`
+
+
 ------------
 Pre-Releases
 ------------
