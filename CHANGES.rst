@@ -9,6 +9,16 @@ Changelog
 
 .. towncrier release notes start
 
+3.0.3 (2023-06-19)
+------------------
+
+Bug fixes:
+
+
+- Fix version pins of `package.json` to get only patch updates of Bootstrap 5.2.x
+  [petschki] (#336)
+
+
 3.0.2 (2023-04-20)
 ------------------
 
