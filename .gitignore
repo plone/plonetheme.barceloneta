@@ -8,3 +8,4 @@ node_modules
 plonetheme/barceloneta/static/vendor/
 plonetheme/barceloneta/static/barceloneta.css.map
 .vscode
+yarn.lock
