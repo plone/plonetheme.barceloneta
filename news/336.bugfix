@@ -1,0 +1,2 @@
+Fix version pins of `package.json` to get only patch updates of Bootstrap 5.2.x
+[petschki]
