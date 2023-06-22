@@ -6,7 +6,7 @@ directory = "news/"
 filename = "CHANGES.md"
 start_string = "<!-- towncrier release notes start -->\n"
 title_format = "## {version} ({project_date})"
-template = "news/changelog_template.jinja"
+template = "news/.changelog_template.jinja"
 underlines = ["", "", ""]
 
 [[tool.towncrier.type]]
