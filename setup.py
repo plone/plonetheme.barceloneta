@@ -1,16 +1,11 @@
+from pathlib import Path
 from setuptools import find_packages
 from setuptools import setup
-
-import os
-
-
-def read(*rnames):
-    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 
 version = "3.1.4.dev0"
 
-long_description = read("README.md") + "\n" + read("CHANGES.md") + "\n"
+long_description = f"{Path('README.md').read_text()}\n{Path('CHANGES.md').read_text()}"
 
 setup(
     name="plonetheme.barceloneta",
@@ -18,6 +13,8 @@ setup(
     description="The default theme for Plone 6.",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    # Get more strings from
+    # https://pypi.org/classifiers/
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",

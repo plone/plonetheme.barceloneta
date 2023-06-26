@@ -12,11 +12,10 @@ build/
 coverage.xml
 dist/
 docs/_build
-node_modules/
 __pycache__/
 .tox
 .vscode/
-forest.*
+node_modules/
 
 # venv / buildout related
 bin/
@@ -25,6 +24,7 @@ eggs/
 .eggs/
 etc/
 .installed.cfg
+include/
 lib/
 lib64
 .mr.developer.cfg
@@ -44,7 +44,7 @@ var/
 
 ##
 # Add extra configuration options in .meta.toml:
-#  [pre_commit]
+#  [gitignore]
 #  extra_lines = """
 #  _your own configuration lines_
 #  """

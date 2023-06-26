@@ -15,14 +15,14 @@ on:
 
 jobs:
   qa:
-    uses: plone/meta/.github/workflows/qa.yml@master
+    uses: plone/meta/.github/workflows/qa.yml@main
   test:
-    uses: plone/meta/.github/workflows/test.yml@master
+    uses: plone/meta/.github/workflows/test.yml@main
   coverage:
-    uses: plone/meta/.github/workflows/coverage.yml@master
+    uses: plone/meta/.github/workflows/coverage.yml@main
   dependencies:
-    uses: plone/meta/.github/workflows/dependencies.yml@master
+    uses: plone/meta/.github/workflows/dependencies.yml@main
   release-ready:
-    uses: plone/meta/.github/workflows/release_ready.yml@master
+    uses: plone/meta/.github/workflows/release_ready.yml@main
   circular:
-    uses: plone/meta/.github/workflows/circular.yml@master
+    uses: plone/meta/.github/workflows/circular.yml@main
