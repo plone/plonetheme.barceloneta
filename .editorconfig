@@ -33,6 +33,10 @@ indent_size = 4
 # 2 space indentation
 indent_size = 2
 
+[*.{json,jsonl,js,jsx,ts,tsx,css,less,scss,html}]  # Frontend development
+# 2 space indentation
+indent_size = 2
+
 [{Makefile,.gitmodules}]
 # Tab indentation (no size specified, but view as 4 spaces)
 indent_style = tab
