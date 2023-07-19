@@ -14,7 +14,7 @@
            xmlns:xhtml="http://www.w3.org/1999/xhtml"
            xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
            xmlns:xi="http://www.w3.org/2001/XInclude">
-        <xi:include href="++theme++barceloneta/backend.xml" />
+        <xi:include href="{$portal_url}/++theme++barceloneta/backend.xml" />
         <rules css:if-content="body.viewpermission-view, body.viewpermission-none">
            <theme href="index.html" />
            ... your rules
@@ -25,7 +25,7 @@
     all your backend pages such as site setup and edit.
     -->
 
-  <!-- <xi:include href="++theme++barceloneta/grid-col-marker.xml"/> -->
+  <!-- <xi:include href="{$portal_url}/++theme++barceloneta/grid-col-marker.xml"/> -->
 
   <!-- Toolbar -->
   <before css:content="#edit-bar"
@@ -47,12 +47,12 @@
   <!-- Cut down barceloneta without just for backend UI -->
   <rules css:if-not-content="body.viewpermission-view, body.viewpermission-none">
 
-    <theme href="../++theme++barceloneta/index.html" />
+    <theme href="{$portal_url}/++theme++barceloneta/index.html" />
     <notheme css:if-not-content="#visual-portal-wrapper" />
 
     <!-- We can't control the bundle from here due to include. Just hard code -->
     <after css:theme-children="head">
-      <link href="++theme++barceloneta/css/barceloneta.css"
+      <link href="{$portal_url}/++theme++barceloneta/css/barceloneta.css"
             rel="stylesheet"
       />
     </after>
