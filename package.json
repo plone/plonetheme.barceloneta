@@ -45,6 +45,6 @@
     "copy-tinymce-ui-css": "cp \"node_modules/tinymce/skins/ui/oxide/content.css\" \"plonetheme/barceloneta/theme/tinymce/tinymce-ui-content.css\""
   },
   "dependencies": {
-    "bootstrap": "5.3.0"
+    "bootstrap": "5.3.1"
   }
 }
