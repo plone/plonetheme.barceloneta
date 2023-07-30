@@ -9,6 +9,27 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.4 (2023-07-30)
+
+
+### Bug fixes:
+
+- Update Bootstrap to ``5.3.1``
+  [petschki] #343
+
+
+### Internal:
+
+- Update configuration files.
+  [plone devs] cfffba8c
+
+
+### Documentation:
+
+- Fix broken links in the readme.
+  [maurits] #338
+
+
 ## 3.1.3 (2023-06-05)
 
 
