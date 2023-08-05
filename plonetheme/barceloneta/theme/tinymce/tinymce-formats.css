@@ -1,5 +1,5 @@
 /* tinyMCE format examples
-   Styles in will be automatically added to the top level of the formats menu.
+   CSS classes defined in this file will be automatically added to the top level of the formats menu.
    Condition is that the file is named tinymce-formats.css and registered in the TinyMCE controlpanel.
 */
 
