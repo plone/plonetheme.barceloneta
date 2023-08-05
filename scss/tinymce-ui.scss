@@ -1,0 +1,13 @@
+// main UI CSS from TinyMCE
+@import "tinymce/skins/ui/oxide/content";
+
+// Plone colors
+@import "variables.colors.plone";
+@import "variables.colors.dark.plone";
+
+// Plone specific default variables & properties
+@import "variables.properties";
+@import "variables.barceloneta";
+
+// plone base content CSS
+@import "base";
