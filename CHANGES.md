@@ -9,6 +9,15 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.5 (2023-09-19)
+
+
+### Bug fixes:
+
+- Update Bootstrap to ``5.2.3``
+  [petschki] #346
+
+
 ## 3.1.4 (2023-07-30)
 
 
