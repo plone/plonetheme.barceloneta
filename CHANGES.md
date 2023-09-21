@@ -14,7 +14,7 @@
 
 ### Bug fixes:
 
-- Update Bootstrap to ``5.2.3``
+- Update Bootstrap to ``5.3.2``
   [petschki] #346
 
 
