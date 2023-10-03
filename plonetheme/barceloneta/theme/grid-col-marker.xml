@@ -27,7 +27,7 @@
     <xsl:if test="not(//aside[@id='portal-column-one']) and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-12</xsl:if>
   </xsl:attribute></before> -->
 
-  <!-- ## Configure bootstrap grid for the left column (column-one), depnding on existing column's left and right: ## -->
+  <!-- ## Configure bootstrap grid for the left column (column-one), depending on existing column's left and right: ## -->
   <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breaks!  -->
   <!-- <before theme-children="//*[@id='portal-column-one']"
     method="raw"><xsl:attribute name="class">
@@ -36,7 +36,7 @@
     <xsl:if test="//aside[@id='portal-column-one'] and not(//aside[@id='portal-column-two'])">col-xs-12 col-sm-12 col-md-3 order-md-1</xsl:if>
   </xsl:attribute></before>-->
 
-  <!-- ## Configure bootstrap grid for the right column (column-two), depnding on existing column's left and right: ## -->
+  <!-- ## Configure bootstrap grid for the right column (column-two), depending on existing column's left and right: ## -->
   <!-- NOTE: between the before and the xsl:attribute tag must not be any empty spaces or line breaks!  -->
   <!-- <before theme-children="//*[@id='portal-column-two']"
     method="raw"><xsl:attribute name="class">
