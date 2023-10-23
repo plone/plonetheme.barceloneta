@@ -42,9 +42,6 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-$plone-light-color: $gray-100 !default;
-$plone-dark-color: $gray-900 !default;
-
 // Plone specific colors
 //colors
 $state-draft-color:                 #fab82a!default; // lime-yellow //draft is visible
@@ -54,11 +51,17 @@ $state-internal-color:              #fab82a!default; // is draft
 $state-internally-published-color:  #883dfa!default; // is intranet
 
 // Plone
-$plone-link-color:                  #007bb1!default; //plone blue made slightly darker for wcag 2.0
+// Bootstrap $primary color is Plone blue
+$primary:                           #007bb1!default; //plone blue made slightly darker for wcag 2.0
+
+$plone-link-color:                  $primary !default;
 $plone-link-color-on-dark:          #16a1e3!default; //plone blue
 //if you need different contrast
 $plone-link-color-on-grey:          #086ca3!default; //valid wcag 2.0
 $plone-link-hover-color:            darken($plone-link-color, 15%)!default;
+
+$plone-light-color: $gray-100 !default;
+$plone-dark-color: $gray-900 !default;
 
 // Portlets
 $plone-portlet-list-hover-bg:       #fcfcfd!default;
