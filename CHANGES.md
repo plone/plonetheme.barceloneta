@@ -14,7 +14,7 @@
 
 ### Internal:
 
-- Fix typo (BS verison) in README
+- Fix typo (BS version) in README
   [petschki] #0
 
 
