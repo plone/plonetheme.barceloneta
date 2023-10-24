@@ -9,6 +9,15 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.6 (2023-10-24)
+
+
+### Internal:
+
+- Fix typo (BS verison) in README
+  [petschki] #0
+
+
 ## 3.1.5 (2023-09-19)
 
 
