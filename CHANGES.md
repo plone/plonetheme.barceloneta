@@ -9,6 +9,15 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.0a1 (2023-10-24)
+
+
+### New features:
+
+- Upgrade TinyMCE styles to version 6
+  [petschki] #350
+
+
 ## 3.1.6 (2023-10-24)
 
 
