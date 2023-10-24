@@ -30,9 +30,9 @@
     "postcss": "^8.4.21",
     "postcss-cli": "^10.1.0",
     "sass": "^1.58.3",
-    "stylelint": "^14.16.1",
-    "stylelint-config-twbs-bootstrap": "^7.0.0",
-    "tinymce": "^5.10.7"
+    "stylelint": "^15.11.0",
+    "stylelint-config-twbs-bootstrap": "^11.0.1",
+    "tinymce": "^6.7.1"
   },
   "scripts": {
     "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
