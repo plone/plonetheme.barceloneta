@@ -9,6 +9,17 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.0a2 (2023-12-12)
+
+
+### Bug fixes:
+
+- Sanitize color variables to more Bootstrap like approach with main `$primary` color.
+  [petschki] #251
+- Upgrade dependencies.
+  [petschki] #356
+
+
 ## 3.2.0a1 (2023-10-24)
 
 
