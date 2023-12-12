@@ -9,6 +9,15 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.7 (2023-12-12)
+
+
+### Bug fixes:
+
+- Upgrade dependencies.
+  [petschki] #355
+
+
 ## 3.1.6 (2023-10-24)
 
 
