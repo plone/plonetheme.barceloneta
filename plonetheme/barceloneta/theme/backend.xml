@@ -39,11 +39,6 @@
            css:theme="#anonymous-actions"
   />
 
-  <!-- We don't want overlays -->
-  <drop attributes="class"
-        css:content="#edit-bar a.pat-plone-modal"
-  />
-
   <!-- Cut down barceloneta without just for backend UI -->
   <rules css:if-not-content="body.viewpermission-view, body.viewpermission-none">
 
