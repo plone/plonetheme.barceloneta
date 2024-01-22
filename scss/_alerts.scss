@@ -11,7 +11,7 @@
   font-weight: 700;
   position: relative;
   text-decoration: none;
-  color: var(--bs-alert-color);
+  color: var(--#{$prefix}alert-color);
 
     &::after {
       content: '';
@@ -19,7 +19,7 @@
       height: 2px;
       left: 0px;
       bottom: 0px;
-      background-color: var(--bs-alert-color);
+      background-color: var(--#{$prefix}alert-color);
       animation: 1.6s ease-in alert-link-animation;
       animation-delay: 3s;
       animation-fill-mode: forwards;
@@ -29,13 +29,13 @@
 
 @keyframes alert-animation {
   0% {
-    border-color: var(--bs-alert-bg);
+    border-color: var(--#{$prefix}alert-bg);
   }
   50% {
-    border-color: var(--bs-alert-border-secondary);
+    border-color: var(--#{$prefix}alert-border-secondary);
   }
   100% {
-    border-color: var(--bs-alert-border-color);
+    border-color: var(--#{$prefix}alert-border-color);
   }
 }
 

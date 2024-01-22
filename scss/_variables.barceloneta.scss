@@ -48,8 +48,8 @@ $plone-portlet-navtree-maxlevel:            5!default;
 $font-family-sans-serif:                    "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif!default;
 $font-family-condensed:                     "Roboto Condensed", "Arial Narrow", sans-serif!default; //just on toolbar
 $font-family-serif:                         Georgia, "Times New Roman", Times, serif!default;
-// $font-family-base:                       var(--bs-font-sans-serif) !default;
-// $font-family-code:                       var(--bs-font-monospace) !default;
+// $font-family-base:                       var(--#{$prefix}font-sans-serif) !default;
+// $font-family-code:                       var(--#{$prefix}font-monospace) !default;
 
 // Include Roboto as webfont
 $enable-roboto-webfont:                     true !default;
