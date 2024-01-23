@@ -9,6 +9,17 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.0a3 (2024-01-23)
+
+
+### Bug fixes:
+
+- pat-plone-modal works fine now and also this would remove "nav-link dropdown-item" classes, unstyling the menu entries
+  [yurj] #358
+- Sticky formControls in edit forms.
+  Dependency updates.
+  [petschki] #361
+
 ## 3.2.0a2 (2023-12-12)
 
 
