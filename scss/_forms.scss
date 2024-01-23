@@ -30,6 +30,12 @@ label.required:after {
 .formControls {
   margin-top: $spacer * 1.5;
   margin-bottom: $spacer * 0.5;
+  background-color: var(--#{$prefix}body-bg);
+  padding:$spacer 0;
+  border-top: solid 1px var(--#{$prefix}border-color);
+
+  /* sticky bottom */
+  @extend .sticky-bottom;
 }
 
 /* relateditems widget */

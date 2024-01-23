@@ -1,9 +1,9 @@
 :root {
-    --plone-toolbar-bg: var(--bs-dark);
-    --plone-toolbar-text-color: var(--bs-white);
-    --plone-toolbar-locked-color: var(--bs-warning);
+    --plone-toolbar-bg: var(--#{$prefix}dark);
+    --plone-toolbar-text-color: var(--#{$prefix}white);
+    --plone-toolbar-locked-color: var(--#{$prefix}warning);
     --plone-toolbar-font: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --plone-toolbar-separator-color: var(--bs-gray-500);
+    --plone-toolbar-separator-color: var(--#{$prefix}gray-500);
     --plone-toolbar-link-color: var(--plone-link-color);
     --plone-toolbar-link-hover-color: var(--plone-link-hover-color);
     --plone-toolbar-width: 220px;
@@ -60,7 +60,7 @@
     }
 
     .toolbar-header {
-        background: var(--bs-primary);
+        background: var(--#{$prefix}primary);
         padding: 0.5rem 1rem;
         margin-bottom: 0.5rem;
         height: var(--plone-toolbar-top-height);

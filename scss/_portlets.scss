@@ -118,7 +118,7 @@
 
     .navTreeCurrentNode>a {
       background: var(--plone-portlet-footer-bg);
-      color: var(--bs-secondary-text);
+      color: var(--#{$prefix}secondary-text);
 
       &::after {
         content: "⟩";

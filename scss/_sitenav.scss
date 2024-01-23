@@ -14,7 +14,7 @@
 
   .offcanvas {
     // offcanvas background within navigation is navbar background
-    --bs-offcanvas-bg: var(--#{$prefix}navbar-background);
+    --#{$prefix}offcanvas-bg: var(--#{$prefix}navbar-background);
   }
 }
 
