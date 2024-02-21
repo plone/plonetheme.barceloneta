@@ -9,6 +9,16 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.8 (2024-02-21)
+
+
+### Bug fixes:
+
+- pat-plone-modal works fine now and also this would remove "nav-link dropdown-item" classes, unstyling the menu entries
+  [yurj] #359
+- update dependencies: Bootstrap 5.3.3
+  [petschki] #363
+
 ## 3.1.7 (2023-12-12)
 
 
