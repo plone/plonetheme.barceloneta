@@ -7011,7 +7011,7 @@ textarea.form-control-lg {
   z-index: 1020;
 }
 
-.sticky-bottom, .formControls {
+.sticky-bottom, form.pat-autotoc > .formControls {
   position: sticky;
   bottom: 0;
   z-index: 1020;
@@ -12790,6 +12790,9 @@ label.required:after {
 .formControls {
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+form.pat-autotoc > .formControls {
   background-color: var(--bs-body-bg);
   padding: 1rem 0;
   border-top: solid 1px var(--bs-border-color);
