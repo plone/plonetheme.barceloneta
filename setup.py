@@ -3,7 +3,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-version = "3.1.9"
+version = "3.1.10.dev0"
 
 long_description = f"{Path('README.md').read_text()}\n{Path('CHANGES.md').read_text()}"
 
