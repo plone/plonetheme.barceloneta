@@ -9,6 +9,23 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.0a4 (2024-04-26)
+
+
+### New features:
+
+- TinyMCE 7.0
+  this is a version bump only. There are no CSS changes from TinyMCE 6 -> 7
+  [petschki] #371
+
+
+### Bug fixes:
+
+- Remove deprecated SVG font resources
+  [petschki] #357
+- Fix sticky `.formControls` to not break modals with buttons.
+  [petschki] #367
+
 ## 3.2.0a3 (2024-01-23)
 
 
