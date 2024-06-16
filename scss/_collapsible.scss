@@ -1,0 +1,36 @@
+// Extra styles to the Bootstrap accordion to work with a details/summary based collapsible.
+// The structure should be like this:
+//
+//  <div class="accordion">
+//     <details class="accordion-item ">
+//         <summary class="accordion-header accordion-button">
+//           HEADER
+//         </summary>
+//         <div>
+//           CONTENT
+//         </div>
+//     </details>
+//   </div>
+
+// Let the default details button not look like a button.
+// raise specificity with double class selector.
+details .accordion-button.accordion-button {
+  background-color: var(--#{$prefix}accordion-bg);
+}
+
+// Apply accordion styles to the details button element.
+details[open] .accordion-button {
+  color: var(--#{$prefix}accordion-active-color);
+  background-color: var(--#{$prefix}accordion-active-bg);
+  box-shadow: inset 0 calc(-1 * var(--#{$prefix}accordion-border-width)) 0 var(--#{$prefix}accordion-border-color); // stylelint-disable-line function-disallowed-list
+
+  &::after {
+    background-image: var(--#{$prefix}accordion-btn-active-icon);
+    transform: var(--#{$prefix}accordion-btn-icon-transform);
+  }
+}
+
+// Fix the details button arror to reflect open/closed states correctly.
+details:not([open]) .accordion-button::after {
+  transform: none;
+}
