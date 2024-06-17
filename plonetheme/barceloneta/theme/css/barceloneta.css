@@ -12756,6 +12756,17 @@ textarea.form-control-lg {
   margin-bottom: 1rem;
 }
 
+label:has(input, select, textarea) {
+  display: block;
+}
+
+label input,
+label select,
+label textarea {
+  margin: 0.5rem 0;
+  display: block;
+}
+
 label .required:after,
 label.required:after {
   color: #dc3545;
@@ -12865,6 +12876,24 @@ body.template-history .diff_sub {
 }
 body.template-history table.diff td {
   border-top: 1px solid #dee2e6;
+}
+
+details .accordion-button.accordion-button {
+  background-color: var(--bs-accordion-bg);
+}
+
+details[open] .accordion-button {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--bs-accordion-active-bg);
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+details[open] .accordion-button::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+details:not([open]) .accordion-button::after {
+  transform: none;
 }
 
 body[class*=-controlpanel] .controlPanel > header,
