@@ -47,7 +47,7 @@
 
     <!-- We can't control the bundle from here due to include. Just hard code -->
     <after css:theme-children="head">
-      <link href="++theme++barceloneta/css/barceloneta.css"
+      <link href="{$portal_url}/++theme++barceloneta/css/barceloneta.css"
             rel="stylesheet"
       />
     </after>
