@@ -9,6 +9,17 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.0a5 (2024-08-01)
+
+
+### New features:
+
+- Add styles for details/summary based collapsibles.
+  Add support for labels wrapping input fields.
+
+  Ref: https://github.com/plone/Products.CMFPlone/pull/3976 #374
+- [yurj] Add the portal_url parameter to be used with Diazo rules and implement it in backend.xml #376
+
 ## 3.2.0a4 (2024-04-26)
 
 
