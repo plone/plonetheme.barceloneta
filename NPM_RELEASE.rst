@@ -8,6 +8,7 @@ NPM Release Instructions
 
 - First create a pypi release using zest.releaser. This tool also creates the correct tag based on the setup.py version.
 - After the pypi release edit the release version in package.json.
+  Or better yet, run something like `npm version 3.2.0-alpha.5`
 - Run: `npm publish`
 
 
