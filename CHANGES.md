@@ -9,6 +9,14 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.10 (2024-09-03)
+
+
+### Bug fixes:
+
+- Upgrade development resources.
+  [petschki] #379
+
 ## 3.1.9 (2024-04-23)
 
 
