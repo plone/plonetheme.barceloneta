@@ -9,6 +9,20 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.1 (2024-12-17)
+
+
+### Bug fixes:
+
+- Upgrade TinyMCE 7.6.0
+  [petschki] #384
+
+
+### Internal:
+
+- Upgrade development dependencies.
+  [petschki] #384
+
 ## 3.2.0 (2024-10-30)
 
 
