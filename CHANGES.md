@@ -9,6 +9,14 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.11 (2024-12-18)
+
+
+### Internal:
+
+- Upgrade dev dependencies.
+  [petschki] #385
+
 ## 3.1.10 (2024-09-03)
 
 
