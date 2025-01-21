@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <registry>
-  <records interface="Products.CMFPlone.interfaces.controlpanel.ITinyMCESchema"
+  <records interface="plone.base.interfaces.ITinyMCESchema"
            prefix="plone"
   >
 
