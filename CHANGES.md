@@ -9,6 +9,19 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.2 (2025-01-27)
+
+
+### Bug fixes:
+
+- Fix DeprecationWarnings. [maurits] #4090
+
+
+### Internal:
+
+- TinyMCE = 7.6.1
+  [petschki] #389
+
 ## 3.2.1 (2024-12-17)
 
 
