@@ -1,9 +1,9 @@
 # Generated from:
-# https://github.com/plone/meta/tree/master/config/default
+# https://github.com/plone/meta/tree/main/src/plone/meta/default
 # See the inline comments on how to expand/tweak this configuration file
 [meta]
 template = "default"
-commit-id = "cfffba8c"
+commit-id = "770f41af"
 
 [pyproject]
 codespell_skip = "*.css.map,package-lock.json"
