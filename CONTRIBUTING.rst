@@ -1,1 +1,1 @@
-Please see http://docs.plone.org/develop/coredev/docs/guidelines.html
+Please see https://6.docs.plone.org/contributing/core/
