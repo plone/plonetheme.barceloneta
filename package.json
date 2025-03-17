@@ -1,7 +1,7 @@
 {
   "name": "@plone/plonetheme-barceloneta-base",
   "description": "Plone Theme Barceloneta Resources",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "files": [
     "/scss",
     "/plonetheme/barceloneta/theme/tinymce/*.css"
