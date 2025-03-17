@@ -9,6 +9,17 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.3 (2025-03-18)
+
+
+### Bug fixes:
+
+- Switch from npm to pnpm. @petschki
+
+  Update `TinyMCE=7.7.1`. @petschki
+
+  Update Developer documentation. @petschki #392
+
 ## 3.2.2 (2025-01-27)
 
 
