@@ -10,7 +10,7 @@ long_description = f"{Path('README.md').read_text()}\n{Path('CHANGES.md').read_t
 setup(
     name="plonetheme.barceloneta",
     version=version,
-    description="The default theme for Plone 6.",
+    description="The Classic-UI theme for Plone 6.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     # Get more strings from
@@ -20,6 +20,8 @@ setup(
         "Environment :: Web Environment",
         "Framework :: Plone",
         "Framework :: Plone :: 6.0",
+        "Framework :: Plone :: 6.1",
+        "Framework :: Plone :: 6.2",
         "Framework :: Plone :: Core",
         "Framework :: Plone :: Theme",
         "Framework :: Zope :: 5",
@@ -30,6 +32,8 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
     ],
     keywords="web zope plone theme",
     author="Plone Foundation",
