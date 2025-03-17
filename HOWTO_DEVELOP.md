@@ -28,6 +28,12 @@ In order to develop plonetheme.barceloneta you need to execute on the root of th
 pnpm install
 ```
 
+You can also updated depencencies with
+
+```shell
+pnpm update
+```
+
 After executing this you can run the following command to watch for any scss changes
 in the path `plonetheme.barceloneta/scss`::
 
