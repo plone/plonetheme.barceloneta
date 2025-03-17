@@ -28,7 +28,7 @@ In order to develop plonetheme.barceloneta you need to execute on the root of th
 pnpm install
 ```
 
-You can also updated depencencies with
+You can also updated dependencies with
 
 ```shell
 pnpm update

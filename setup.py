@@ -21,7 +21,6 @@ setup(
         "Framework :: Plone",
         "Framework :: Plone :: 6.0",
         "Framework :: Plone :: 6.1",
-        "Framework :: Plone :: 6.2",
         "Framework :: Plone :: Core",
         "Framework :: Plone :: Theme",
         "Framework :: Zope :: 5",

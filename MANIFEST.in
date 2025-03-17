@@ -11,3 +11,4 @@ exclude yarn.lock
 exclude package.json
 exclude postcss.config.js
 exclude .stylelint*
+exclude pnpm-lock.yaml

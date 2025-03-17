@@ -6,4 +6,4 @@ template = "default"
 commit-id = "2.0.1.dev0"
 
 [pyproject]
-codespell_skip = "*.css.map,package-lock.json"
+codespell_skip = "*.css.map,pnpm-lock.yaml"

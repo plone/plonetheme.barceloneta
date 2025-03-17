@@ -74,7 +74,7 @@ target-version = ["py38"]
 
 [tool.codespell]
 ignore-words-list = "discreet,assertin,thet,"
-skip = "*.po,*.css.map,package-lock.json"
+skip = "*.po,*.css.map,pnpm-lock.yaml"
 ##
 # Add extra configuration options in .meta.toml:
 #  [pyproject]
