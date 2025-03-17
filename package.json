@@ -23,16 +23,16 @@
     "css"
   ],
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
+    "autoprefixer": "^10.4.21",
     "clean-css-cli": "^5.6.3",
     "nodemon": "^3.1.9",
     "npm-run-all2": "^7.0.2",
-    "postcss": "^8.5.1",
-    "postcss-cli": "^11.0.0",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
     "sass": "1.77.6",
-    "stylelint": "^16.14.0",
+    "stylelint": "^16.16.0",
     "stylelint-config-twbs-bootstrap": "^15.1.0",
-    "tinymce": "^7.6.1"
+    "tinymce": "^7.7.1"
   },
   "scripts": {
     "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
