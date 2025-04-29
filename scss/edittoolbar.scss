@@ -1,0 +1,36 @@
+// Plone Barceloneta Styling & components
+
+// Plone colors
+@import "variables.colors.plone";
+@import "variables.colors.dark.plone";
+
+// Plone specific default variables & properties
+@import "variables.properties";
+@import "variables.barceloneta";
+
+@import "base";
+
+@import "root_variables";
+
+// @import "mixins/mixin.portlets.plone";
+// @import "mixins/mixin.font.plone";
+
+// // Plone components
+// @import "cards";
+// @import "scaffolding";
+
+// // // style.scss
+// @import "icons";
+// @import "header";
+// @import "sitenav";
+// @import "breadcrumbs";
+// @import "content";
+// @import "comments";
+// @import "portlets";
+// @import "footer";
+
+// @import "print";
+
+// @import "roboto-webfont";
+
+// @import "../plonetheme/barceloneta/theme/tinymce/tinymce-formats";
