@@ -34,6 +34,12 @@ You can also updated dependencies with
 pnpm update
 ```
 
+or you can inspect latest versions of dependencies with
+
+```shell
+pnpm update --interactive --latest
+```
+
 After executing this you can run the following command to watch for any scss changes
 in the path `plonetheme.barceloneta/scss`::
 
