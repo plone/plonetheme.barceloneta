@@ -12757,11 +12757,20 @@ textarea.form-control-lg {
 }
 
 label .required:after,
-label.required:after {
+label.required:after,
+.autotoc-nav .required:after {
+  display: inline-block;
   color: #dc3545;
   content: "•";
-  font-size: 1.25rem;
-  line-height: 1;
+  transform: scale(2);
+  margin-left: 0.3rem;
+}
+
+.pat-autotoc.autotabs .autotoc-nav a.invalid,
+.pat-autotoc.autotabs .autotoc-nav a.active.invalid,
+.autotoc-nav .invalid {
+  color: #dc3545;
+  font-style: italic;
 }
 
 /* show validation feedback always since it comes from
