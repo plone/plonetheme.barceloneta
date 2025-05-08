@@ -5,12 +5,25 @@
 }
 
 
+// Required style on input fields and form tabs
 label .required:after,
-label.required:after {
+label.required:after,
+.autotoc-nav .required:after {
+  display: inline-block;
   color: $danger;
-  content: '•';
-  font-size: $font-size-lg;
-  line-height: 1;
+  content: "•";
+  transform:scale(2);
+  margin-left: 0.3rem;
+}
+
+// Invalid on form tabs
+// Override specific styles from pat-autotoc and provide a general selector,
+// if autotoc is used with different UI elements.
+.pat-autotoc.autotabs .autotoc-nav a.invalid,
+.pat-autotoc.autotabs .autotoc-nav a.active.invalid,
+.autotoc-nav .invalid {
+  color: $danger;
+  font-style: italic;
 }
 
 /* show validation feedback always since it comes from
