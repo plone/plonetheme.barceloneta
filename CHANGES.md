@@ -9,6 +9,14 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.12 (2025-05-09)
+
+
+### New features:
+
+- Support for required and invalid styles on form tabs.
+  [thet] 
+
 ## 3.1.11 (2024-12-18)
 
 
