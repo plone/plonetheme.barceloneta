@@ -9,6 +9,20 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.4 (2025-05-16)
+
+
+### New features:
+
+- Support for required and invalid styles on form tabs.
+  [thet] 
+
+
+### Bug fixes:
+
+- Update dependencies: Bootstrap 5.3.5, TinyMCE 7.8.0. @petschki #397
+- Update dependencies: Bootstrap 5.3.6, TinyMCE 7.9.0. @petschki 
+
 ## 3.2.3 (2025-03-18)
 
 
