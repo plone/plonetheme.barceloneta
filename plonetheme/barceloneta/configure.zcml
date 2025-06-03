@@ -7,6 +7,7 @@
 
   <include package="plone.resource" />
   <include package="plone.app.theming" />
+  <include package=".upgrades" />
 
   <!-- Diazo themes -->
   <plone:static
@@ -21,15 +22,6 @@
       description="Barceloneta is a modern, minimalist theme for Plone 5."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"
-      />
-
-  <!-- upgrade step -->
-  <genericsetup:upgradeDepends
-      title="Upgrade registry"
-      profile="plonetheme.barceloneta:default"
-      source="1"
-      destination="2"
-      import_steps="plone.app.registry"
       />
 
 </configure>
