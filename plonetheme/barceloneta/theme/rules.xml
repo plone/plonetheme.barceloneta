@@ -9,6 +9,7 @@
   <!-- <xi:include href="++theme++barceloneta/grid-col-marker.xml"/> -->
 
   <theme href="index.html" />
+  <notheme if="$ajax_load" /><!-- don't theme ajax requests -->
   <notheme css:if-not-content="#visual-portal-wrapper" />
   <notheme css:if-content=".template-manage-viewlets" />
 
