@@ -1,0 +1,27 @@
+// Barceloneta toolbar-specific styles
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/nav";
+
+@import "variables.colors.plone";
+@import "variables.colors.dark.plone";
+@import "root_variables";
+@import "toolbar";
+
+
+// Define the utilities, we need.
+$utilities: map-get-multiple(
+  $utilities,
+  (
+    "flex-direction",
+  )
+);
+
+// Build the utilities map
+@import "bootstrap/scss/utilities/api";
