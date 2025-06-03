@@ -8,6 +8,13 @@
   <include package="plone.resource" />
   <include package="plone.app.theming" />
 
+  <!-- Diazo themes -->
+  <plone:static
+      directory="theme"
+      name="barceloneta"
+      type="theme"
+      />
+
   <genericsetup:registerProfile
       name="default"
       title="Barceloneta Theme"
@@ -23,13 +30,6 @@
       source="1"
       destination="2"
       import_steps="plone.app.registry"
-      />
-
-  <!-- Diazo themes -->
-  <plone:static
-      directory="theme"
-      name="barceloneta"
-      type="theme"
       />
 
 </configure>
