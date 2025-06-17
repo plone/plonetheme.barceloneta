@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    >
+
+  <genericsetup:upgradeDepends
+      title="Upgrade registry"
+      profile="plonetheme.barceloneta:default"
+      source="1"
+      destination="2"
+      import_steps="plone.app.registry"
+      />
+
+  <genericsetup:upgradeStep
+      title="Add ajax_load theme parameter."
+      profile="plonetheme.barceloneta:default"
+      source="2"
+      destination="3"
+      handler=".upgrades.reload_theme"
+      />
+
+</configure>
