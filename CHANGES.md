@@ -9,6 +9,24 @@
 
 <!-- towncrier release notes start -->
 
+## 3.3.0 (2025-06-20)
+
+
+### New features:
+
+- (Re)Introduce the ajax_load theme parameter and skip diazo theming, if set. 
+- Add a dedicated barceloneta-toolbar stylesheet.
+
+  Add a new stylesheet which only compiles the barceloneta toolbar styles.
+  This stylesheet can be used in situations where only the toolbar is wanted but
+  not the whole Barceloneta design system.
+  [thet] 
+
+
+### Bug fixes:
+
+- Update dependencies: Bootstrap 5.3.7, TinyMCE 7.9.1. @petschki 
+
 ## 3.2.4 (2025-05-16)
 
 
