@@ -26,11 +26,11 @@
     "autoprefixer": "^10.4.21",
     "clean-css-cli": "^5.6.3",
     "nodemon": "^3.1.10",
-    "npm-run-all2": "^7.0.2",
+    "npm-run-all2": "^8.0.4",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "sass": "1.77.6",
-    "stylelint": "^16.21.0",
+    "stylelint": "^16.23.1",
     "stylelint-config-twbs-bootstrap": "^16.1.0",
     "tinymce": "^7.9.1"
   },
@@ -47,7 +47,7 @@
     "copy-tinymce-ui-css": "cp \"node_modules/tinymce/skins/ui/oxide/content.css\" \"plonetheme/barceloneta/theme/tinymce/tinymce-ui-content.css\""
   },
   "dependencies": {
-    "bootstrap": "5.3.7"
+    "bootstrap": "5.3.8"
   },
   "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
 }
