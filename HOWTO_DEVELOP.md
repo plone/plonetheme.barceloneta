@@ -83,9 +83,9 @@ To consume the test version, users have to use `pnpm install @plone/plonetheme-b
 
 ## Theme
 
-See `plonetheme.barceloneta/plonetheme/barceloneta/theme/rules.xml` for the relevant Diazo theme rules.
+See `plonetheme.barceloneta/src/plonetheme/barceloneta/theme/rules.xml` for the relevant Diazo theme rules.
 
 
 ## Fonts
 
-Read `plonetheme.barceloneta/plonetheme/barceloneta/theme/roboto/README.rst` if you need to update the shipped fonts.
+Read `plonetheme.barceloneta/src/plonetheme/barceloneta/theme/roboto/README.rst` if you need to update the shipped fonts.
