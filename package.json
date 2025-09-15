@@ -38,13 +38,13 @@
     "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
     "build": "npm-run-all css-compile-main css-prefix-main css-minify-main copy-tinymce-ui-css css-compile-toolbar css-minify-toolbar",
     "css-main": "npm-run-all css-compile-main css-prefix-main css-minify-main",
-    "css-compile-main": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css scss/barceloneta.scss:plonetheme/barceloneta/theme/css/barceloneta.css",
-    "css-prefix-main": "postcss --config postcss.config.js --replace \"plonetheme/barceloneta/theme/css/*.css\" \"!plonetheme/barceloneta/theme/css/*.min.css\"",
-    "css-minify-main": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output plonetheme/barceloneta/theme/css/barceloneta.min.css plonetheme/barceloneta/theme/css/barceloneta.css",
-    "css-compile-toolbar": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css scss/barceloneta-toolbar.scss:plonetheme/barceloneta/theme/css/barceloneta-toolbar.css",
-    "css-minify-toolbar": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output plonetheme/barceloneta/theme/css/barceloneta-toolbar.min.css plonetheme/barceloneta/theme/css/barceloneta-toolbar.css",
+    "css-compile-main": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css scss/barceloneta.scss:src/plonetheme/barceloneta/theme/css/barceloneta.css",
+    "css-prefix-main": "postcss --config postcss.config.js --replace \"src/plonetheme/barceloneta/theme/css/*.css\" \"!src/plonetheme/barceloneta/theme/css/*.min.css\"",
+    "css-minify-main": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output src/plonetheme/barceloneta/theme/css/barceloneta.min.css src/plonetheme/barceloneta/theme/css/barceloneta.css",
+    "css-compile-toolbar": "sass --load-path=node_modules --style expanded --source-map --embed-sources --no-error-css scss/barceloneta-toolbar.scss:src/plonetheme/barceloneta/theme/css/barceloneta-toolbar.css",
+    "css-minify-toolbar": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output src/plonetheme/barceloneta/theme/css/barceloneta-toolbar.min.css src/plonetheme/barceloneta/theme/css/barceloneta-toolbar.css",
     "css-lint": "stylelint \"scss/**/*.scss\" --cache --cache-location .cache/.stylelintcache",
-    "copy-tinymce-ui-css": "cp \"node_modules/tinymce/skins/ui/oxide/content.css\" \"plonetheme/barceloneta/theme/tinymce/tinymce-ui-content.css\""
+    "copy-tinymce-ui-css": "cp \"node_modules/tinymce/skins/ui/oxide/content.css\" \"src/plonetheme/barceloneta/theme/tinymce/tinymce-ui-content.css\""
   },
   "dependencies": {
     "bootstrap": "5.3.8"
