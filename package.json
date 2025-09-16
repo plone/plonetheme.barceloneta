@@ -4,7 +4,7 @@
   "version": "3.3.0",
   "files": [
     "/scss",
-    "/plonetheme/barceloneta/theme/tinymce/*.css"
+    "/src/plonetheme/barceloneta/theme/tinymce/*.css"
   ],
   "repository": {
     "type": "git",
