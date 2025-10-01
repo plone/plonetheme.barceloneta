@@ -9,6 +9,18 @@
 
 <!-- towncrier release notes start -->
 
+## 3.3.1 (2025-10-01)
+
+
+### Bug fixes:
+
+- Update: Bootstrap 5.3.8  @petschki 
+
+
+### Internal:
+
+- Move distribution to src layout [gforcada] #4217
+
 ## 3.3.0 (2025-06-20)
 
 
