@@ -12901,6 +12901,12 @@ body.template-history table.diff td {
   border-top: 1px solid #dee2e6;
 }
 
+.tox .tox-edit-area {
+  /* Spacing between editor border and text to improve readability and make
+     the cursor visible. */
+  padding: 1em;
+}
+
 details .accordion-button.accordion-button {
   background-color: var(--bs-accordion-bg);
 }
