@@ -166,3 +166,9 @@ body.template-history {
     border-top: 1px solid $gray-300;
   }
 }
+
+.tox .tox-edit-area {
+    /* Spacing between editor border and text to improve readability and make
+       the cursor visible. */
+    padding: 1em;
+}
