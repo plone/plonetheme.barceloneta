@@ -195,6 +195,11 @@
     }
 
   }
+
+  @include media-breakpoint-down($nav-main-breakpoint) {
+    /* Mobile menu variant */
+    margin-bottom: 1em; /* Separator between navbar and search field */
+  }
 }
 
 .navbar-dark {

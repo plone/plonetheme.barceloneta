@@ -13744,6 +13744,12 @@ figcaption {
     background: transparent;
   }
 }
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    /* Mobile menu variant */
+    margin-bottom: 1em; /* Separator between navbar and search field */
+  }
+}
 
 .navbar-dark {
   --bs-navbar-color: white;
