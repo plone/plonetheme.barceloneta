@@ -9,6 +9,29 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.0a1 (2025-11-29)
+
+
+### Breaking changes:
+
+- Replace ``pkg_resources`` namespace with PEP 420 native namespace.
+  Support only Plone 6.2 and Python 3.10+. #3928
+
+
+### New features:
+
+- Add a bit more separation between the menu and the search field in the mobile menu.
+  [thet] 
+
+
+### Bug fixes:
+
+- Add padding to the TinyMCE‌ content area.
+
+  Add a padding to the TinyMCE‌ content area to make the cursor visible and avoid
+  text touching the border.
+  [thet] 
+
 ## 3.3.1 (2025-10-01)
 
 
