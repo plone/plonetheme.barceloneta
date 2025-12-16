@@ -211,6 +211,10 @@
   <drop css:if-content=".userrole-anonymous"
         css:theme="#portal-toolbar"
   />
+  <replace css:content="#section-related">
+    <xi:include href="relateditems.pt" />
+</replace>
+
   <!-- <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" /> -->
 
 </rules>

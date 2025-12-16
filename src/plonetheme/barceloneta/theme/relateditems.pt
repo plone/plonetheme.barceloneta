@@ -1,0 +1,28 @@
+<div id="section-related">
+  <h3 class="section-heading">Related content</h3>
+
+  <tal:loop repeat="item related">
+    <div class="related-item">
+
+      <tal:image tal:condition="item/preview_image">
+        <img tal:attributes="src string:${item/absolute_url}/@@images/preview_image" />
+      </tal:image>
+
+      <div class="info">
+        <div class="item-title">
+          <a tal:attributes="href item/absolute_url"
+             tal:content="item/title">
+             Title
+          </a>
+        </div>
+
+        <div class="item-description"
+             tal:content="item/description">
+          Description here
+        </div>
+      </div>
+
+    </div>
+  </tal:loop>
+
+</div>

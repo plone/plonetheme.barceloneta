@@ -56,20 +56,55 @@ article {
 
 #section-related {
   margin-top: 3rem;
+  padding: 1.5rem;
+  background: $gray-100;
+  border-radius: 0.5rem;
 
   .section-heading {
     @include font-size($h5-font-size);
-    margin-bottom: $headings-margin-bottom;
+    margin-bottom: 1rem;
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
-
   }
 
-  .media {
-    margin-bottom: 1rem;
+  .related-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid $gray-300;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    img {
+      width: 120px;
+      height: auto;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+
+    .item-title {
+      @include font-size($font-size-base);
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+      a {
+        color: $primary;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .item-description {
+      color: $gray-700;
+      font-size: $font-size-sm;
+    }
   }
 }
+
 
 #section-category {
   margin-bottom: 2rem;
