@@ -9,6 +9,18 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.0a2 (2025-12-18)
+
+
+### New features:
+
+- Upgrade TinyMCE v8.  @petschki 
+
+
+### Bug fixes:
+
+- Fix TinyMCE content padding.  @petschki #462
+
 ## 4.0.0a1 (2025-11-29)
 
 
