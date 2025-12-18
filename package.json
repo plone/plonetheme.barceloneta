@@ -1,7 +1,7 @@
 {
   "name": "@plone/plonetheme-barceloneta-base",
   "description": "Plone Theme Barceloneta Resources",
-  "version": "4.0.0-alpha.1",
+  "version": "4.0.0-alpha.2",
   "files": [
     "/scss",
     "/src/plonetheme/barceloneta/theme/tinymce/*.css"
@@ -49,5 +49,5 @@
   "dependencies": {
     "bootstrap": "5.3.8"
   },
-  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
+  "packageManager": "pnpm@10.26.0+sha512.3b3f6c725ebe712506c0ab1ad4133cf86b1f4b687effce62a9b38b4d72e3954242e643190fc51fa1642949c735f403debd44f5cb0edd657abe63a8b6a7e1e402"
 }
