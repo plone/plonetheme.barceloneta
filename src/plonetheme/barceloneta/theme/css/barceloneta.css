@@ -12901,10 +12901,10 @@ body.template-history table.diff td {
   border-top: 1px solid #dee2e6;
 }
 
-.tox .tox-edit-area {
+.mce-content-body {
   /* Spacing between editor border and text to improve readability and make
      the cursor visible. */
-  padding: 1em;
+  padding: 0.375rem 0.75rem;
 }
 
 details .accordion-button.accordion-button {
@@ -13143,7 +13143,6 @@ body.plone-toolbar-left #edit-zone .toolbar-label {
   body.plone-toolbar-left.plone-toolbar-left-expanded #edit-zone .toolbar-label {
     display: inline-block;
     white-space: initial;
-    -webkit-hyphens: auto;
     hyphens: auto;
     word-break: break-word;
     vertical-align: top;
@@ -13650,7 +13649,6 @@ figcaption {
   position: relative;
   display: block;
   padding: var(--bs-navbar-nav-link-padding-y) var(--bs-navbar-nav-link-padding-x);
-  -webkit-hyphens: auto;
   hyphens: auto;
   word-break: break-word;
   text-decoration: none;
