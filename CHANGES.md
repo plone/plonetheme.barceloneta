@@ -9,6 +9,14 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.0a3 (2026-01-10)
+
+
+### Internal:
+
+- Update build dependencies.  @petschki 
+- Update configuration files @plone 
+
 ## 4.0.0a2 (2025-12-18)
 
 
