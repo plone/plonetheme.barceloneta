@@ -13143,7 +13143,6 @@ body.plone-toolbar-left #edit-zone .toolbar-label {
   body.plone-toolbar-left.plone-toolbar-left-expanded #edit-zone .toolbar-label {
     display: inline-block;
     white-space: initial;
-    -webkit-hyphens: auto;
     hyphens: auto;
     word-break: break-word;
     vertical-align: top;
@@ -13650,7 +13649,6 @@ figcaption {
   position: relative;
   display: block;
   padding: var(--bs-navbar-nav-link-padding-y) var(--bs-navbar-nav-link-padding-x);
-  -webkit-hyphens: auto;
   hyphens: auto;
   word-break: break-word;
   text-decoration: none;
