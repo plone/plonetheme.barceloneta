@@ -20,6 +20,27 @@ body[class*="-controlpanel"] {
       .btn .icon {
         margin-right: 0.25rem;
       }
+
+      a {
+        display: block;
+        width: 100%;
+
+        .inner-configlet {
+          width: 100%;
+        }
+
+        &:hover .inner-configlet {
+          width: 100%;
+        }
+      }
+
+      .inner-configlet {
+        width: 100%;
+
+        &:hover {
+          width: 100%;
+        }
+      }
     }
   }
 
