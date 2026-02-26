@@ -167,8 +167,8 @@ body.template-history {
   }
 }
 
-.tox .tox-edit-area {
+.mce-content-body {
     /* Spacing between editor border and text to improve readability and make
        the cursor visible. */
-    padding: 1em;
+    padding: $input-padding-y $input-padding-x;
 }
