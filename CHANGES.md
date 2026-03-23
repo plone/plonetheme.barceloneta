@@ -9,6 +9,14 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.0 (2026-03-23)
+
+
+### Internal
+
+- Update configuration files @plone 
+- Upgrade dependencies: TinyMCE 8.3.2.  @petschki 
+
 ## 4.0.0a3 (2026-01-10)
 
 
