@@ -1,0 +1,2 @@
+Fix portal message overflow: add ``overflow-wrap: anywhere`` to ``.alert`` CSS rule so long unbroken text (e.g., long group names or URLs) wraps instead of overflowing the container.
+@jensens
