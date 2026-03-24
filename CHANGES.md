@@ -9,6 +9,14 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.1 (2026-03-24)
+
+
+### Bug fixes
+
+- Fix portal message overflow: add ``overflow-wrap: anywhere`` to ``.alert`` CSS rule so long unbroken text (e.g., long group names or URLs) wraps instead of overflowing the container.
+  @jensens #3597
+
 ## 4.0.0 (2026-03-23)
 
 
