@@ -3,6 +3,7 @@
   padding: 1rem 1rem;
   border: 3px solid transparent;
   border-radius: 0.25rem;
+  overflow-wrap: anywhere;
   animation-fill-mode: forwards !important;
   animation-delay: 1.0s !important;
   animation: 1.5s ease-in alert-animation;
