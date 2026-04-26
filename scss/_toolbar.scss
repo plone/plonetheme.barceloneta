@@ -22,6 +22,8 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     background: var(--plone-toolbar-bg);
     width: var(--plone-toolbar-width);
     color: var(--plone-toolbar-text-color);
