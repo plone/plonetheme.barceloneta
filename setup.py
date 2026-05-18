@@ -1,7 +1,7 @@
 from pathlib import Path
 from setuptools import setup
 
-version = "4.0.3"
+version = "4.0.4.dev0"
 
 long_description = f"{Path('README.md').read_text()}\n{Path('CHANGES.md').read_text()}"
 
