@@ -2,7 +2,6 @@ from plone.app.theming import utils as theme_utils
 
 import logging
 
-
 logger = logging.getLogger(__name__)
 
 
