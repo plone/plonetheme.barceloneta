@@ -10,3 +10,11 @@ codespell_skip = "*.css.map,pnpm-lock.yaml"
 
 [tox]
 test_matrix = {"6.1" = ["*"]}
+
+[github]
+jobs = [
+   "qa",
+   "coverage",
+   "release_ready",
+   "circular",
+]
