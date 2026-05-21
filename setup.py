@@ -2,7 +2,6 @@ from pathlib import Path
 from setuptools import find_packages
 from setuptools import setup
 
-
 version = "3.3.4.dev0"
 
 long_description = f"{Path('README.md').read_text()}\n{Path('CHANGES.md').read_text()}"
@@ -44,7 +43,7 @@ setup(
     package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
-    python_requires=">=3.8",
+    python_requires=">=3.8, <3.14",
     install_requires=[
         "setuptools",
         "plone.app.theming",
