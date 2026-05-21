@@ -9,6 +9,19 @@
 
 <!-- towncrier release notes start -->
 
+## 3.3.4 (2026-05-21)
+
+
+### Bug fixes
+
+- Fix TinyMCE content padding.
+  @petschki #462
+
+
+### Internal
+
+- Update dependencies.  @petschki 
+
 ## 3.3.3 (2026-01-10)
 
 
