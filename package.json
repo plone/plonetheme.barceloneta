@@ -32,7 +32,7 @@
     "sass": "1.77.6",
     "stylelint": "^17.11.1",
     "stylelint-config-twbs-bootstrap": "^16.1.0",
-    "tinymce": "^8.5.0"
+    "tinymce": "8.6.0"
   },
   "scripts": {
     "watch": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
