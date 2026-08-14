@@ -8,22 +8,9 @@
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
-
 @import "variables.colors.plone";
 @import "variables.colors.dark.plone";
-
 @import "root_variables";
-
-#edit-zone {
-    @import "bootstrap/scss/root";
-    @import "bootstrap/scss/reboot";
-    @import "bootstrap/scss/nav";
-}
-
-// The partial keeps its body layout rules global so they can match the page
-// body; its toolbar rules already target #edit-zone.
-@import "toolbar";
-
 
 // Define the utilities we need.
 $utilities: map-get-multiple(
@@ -33,7 +20,13 @@ $utilities: map-get-multiple(
   )
 );
 
-// Build the utilities map inside the toolbar root as well.
 #edit-zone {
+    @import "bootstrap/scss/root";
+    @import "bootstrap/scss/reboot";
+    @import "bootstrap/scss/nav";
     @import "bootstrap/scss/utilities/api";
 }
+
+// The partial keeps its body layout rules global so they can match the page
+// body; its toolbar rules already target #edit-zone.
+@import "toolbar";
