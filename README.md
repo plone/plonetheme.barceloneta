@@ -27,3 +27,9 @@ Plone code repository hosted at Github https://github.com/plone/plonetheme.barce
 ### Issues
 
 Please use the [Issue-Tracker](https://github.com/plone/plonetheme.barceloneta/issues)
+
+### Toolbar styles
+
+For themes which do not base on Barceloneta but need the Plone toolbar styled in the Barceloneta way can use the `++theme++barceloneta/css/barceloneta-toolbar.min.css` styles or the unminified version of it.
+
+The styles are scoped to the `#edit-bar` selector and do not bleed out to the rest of the site. This way you can use the Barceloneta toolbar in the frontend and mix the default Plone Bootstrap 5 integration with other frameworks, including earlier versions of Bootstrap 5.
