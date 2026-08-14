@@ -7,9 +7,11 @@ This package provides scss resources to build your own theme based on the Plone 
 Latest version on [npmjs.com](https://www.npmjs.com/package/@plone/plonetheme-barceloneta-base)
 
 ## Documentation
-The documentation for `plonetheme.barceloneta` is part of the official Plone documentation, [Classic UI theming based on Barceloneta](https://6.docs.plone.org/classic-ui/theming/barceloneta.html).
+
+The documentation for `plonetheme.barceloneta` is part of the official Plone documentation, [Classic UI theming](https://6.docs.plone.org/classic-ui/theming/).
 
 ## Changelog
+
 https://github.com/plone/plonetheme.barceloneta/blob/master/CHANGES.md
 
 ## Source Code and Contribution
