@@ -1,3 +1,5 @@
+$plone-dark-selector: "[data-bs-theme=\"dark\"]" !default;
+
 :root,
 [data-bs-theme="light"] {
   // Note: Custom variable values only support SassScript inside `#{}`.
@@ -24,7 +26,7 @@
       $value in $plone-colors-dark {
         --plone-#{$color}: #{$value};
       }
-    
+
       @each $color,
       $value in $state-colors-dark {
         --plone-state-#{$color}: #{$value};

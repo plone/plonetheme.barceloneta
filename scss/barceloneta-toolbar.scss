@@ -1,21 +1,18 @@
 // Barceloneta toolbar-specific styles
+// Can be used in different themes without bootstrap or with different bootstrap
+// versions without polluting the original styles.
+// This is done by SASS scoping, as @scope isn't fully supported by the Dart
+// SASS compiler.
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
-
-@import "bootstrap/scss/root";
-@import "bootstrap/scss/reboot";
-@import "bootstrap/scss/nav";
-
 @import "variables.colors.plone";
 @import "variables.colors.dark.plone";
 @import "root_variables";
-@import "toolbar";
 
-
-// Define the utilities, we need.
+// Define the utilities we need.
 $utilities: map-get-multiple(
   $utilities,
   (
@@ -23,5 +20,13 @@ $utilities: map-get-multiple(
   )
 );
 
-// Build the utilities map
-@import "bootstrap/scss/utilities/api";
+#edit-zone {
+    @import "bootstrap/scss/root";
+    @import "bootstrap/scss/reboot";
+    @import "bootstrap/scss/nav";
+    @import "bootstrap/scss/utilities/api";
+}
+
+// The partial keeps its body layout rules global so they can match the page
+// body; its toolbar rules already target #edit-zone.
+@import "toolbar";
