@@ -6,9 +6,9 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
 
-  <!-- <xi:include href="{$portal_url}/++theme++barceloneta/grid-col-marker.xml"/> -->
+  <!-- <xi:include href="++theme++barceloneta/grid-col-marker.xml"/> -->
 
-  <theme href="{$portal_url}/++theme++barceloneta/index.html" />
+  <theme href="index.html" />
   <notheme if="$ajax_load" /><!-- don't theme ajax requests -->
   <notheme css:if-not-content="#visual-portal-wrapper" />
   <notheme css:if-content=".template-manage-viewlets" />
