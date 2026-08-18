@@ -10,7 +10,7 @@ requires = ["setuptools>=68.2,<83", "wheel"]
 
 [project]
 name = "plonetheme.barceloneta"
-version = "4.0.4.dev0"
+version = "4.1.0"
 description = "The Classic-UI theme for Plone 6."
 classifiers = [
     "Development Status :: 5 - Production/Stable",

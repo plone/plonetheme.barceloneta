@@ -9,6 +9,33 @@
 
 <!-- towncrier release notes start -->
 
+## 4.1.0 (2026-08-18)
+
+
+### New features
+
+- barceloneta-toolbar.css: Scope CSS declarations.
+
+  Scope the CSS for the barceloneta-toolbar.css file, so that it's styles do not
+  pollute the rest of the site.
+  This way you can use barceloneta-toolbar.css in a site without Bootstrap or
+  with a Bootstrap version other than 5 without breaking your site's design.
+
+  @thet 
+
+
+### Bug fixes
+
+- Apply diff-styles for iterate_diff view.
+  @pbauer 
+
+
+### Internal
+
+- Move package metadata from `setup.py` to `pyproject.toml` @plone 
+- Update dependencies. 
+- package.json: Synchronize tinymce version with Mockup. 
+
 ## 4.0.3 (2026-05-18)
 
 
