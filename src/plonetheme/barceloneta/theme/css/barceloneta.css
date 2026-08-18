@@ -12838,21 +12838,26 @@ form.pat-autotoc > .formControls {
   font-size: 1.25rem;
 }
 
+body.template-iterate_diff .inline-diff,
 body.template-history .inline-diff {
   font-size: 100%;
   padding: 1em;
 }
+body.template-iterate_diff .diff-head,
 body.template-history .diff-head {
   padding-bottom: 1em;
 }
+body.template-iterate_diff .diff-legend-label,
 body.template-history .diff-legend-label {
   border-style: solid;
   border-width: 1px;
   text-align: center;
 }
+body.template-iterate_diff #diff-legend,
 body.template-history #diff-legend {
   position: relative;
 }
+body.template-iterate_diff #diff-table,
 body.template-history #diff-table {
   float: right;
   width: 22.5em;
@@ -12860,44 +12865,55 @@ body.template-history #diff-table {
   padding: 0px;
   margin: 0px;
 }
+body.template-iterate_diff .delete,
 body.template-history .delete {
   background-color: #f1aeb5;
   padding: 0 0.2em 0 0.2em;
 }
+body.template-iterate_diff .insert,
 body.template-history .insert {
   background-color: #a6e9d5;
   padding: 0 0.2em 0 0.2em;
 }
+body.template-iterate_diff .tagInsert,
 body.template-history .tagInsert {
   background-color: #198754;
   font-weight: bold;
   padding: 0 0.2em 0 0.2em;
   color: white;
 }
+body.template-iterate_diff .tagDelete,
 body.template-history .tagDelete {
   background-color: #dc3545;
   font-weight: bold;
   padding: 0 0.2em 0 0.2em;
   color: white;
 }
+body.template-iterate_diff .diff_header,
 body.template-history .diff_header {
   background-color: #e0e0e0;
 }
+body.template-iterate_diff td.diff_header,
 body.template-history td.diff_header {
   text-align: right;
 }
+body.template-iterate_diff .diff_next,
 body.template-history .diff_next {
   background-color: #c0c0c0;
 }
+body.template-iterate_diff .diff_add,
 body.template-history .diff_add {
   background-color: #a6e9d5;
 }
+body.template-iterate_diff .diff_chg,
 body.template-history .diff_chg {
   background-color: #ffe69c;
 }
+body.template-iterate_diff .diff_sub,
 body.template-history .diff_sub {
   background-color: #f1aeb5;
 }
+body.template-iterate_diff table.diff td,
 body.template-history table.diff td {
   border-top: 1px solid #dee2e6;
 }
