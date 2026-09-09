@@ -9,6 +9,13 @@
 
 <!-- towncrier release notes start -->
 
+## 4.1.1 (2026-09-09)
+
+
+### Internal
+
+- Update dependencies.  @petschki 
+
 ## 4.1.0 (2026-08-18)
 
 
