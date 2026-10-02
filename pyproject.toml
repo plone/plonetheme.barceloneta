@@ -49,7 +49,7 @@ keywords = ["web", "zope", "plone", "theme"]
 target = "plone"
 
 [project.optional-dependencies]
-test = []
+test = ["diazo", "lxml"]
 
 [project.urls]
 Source = "https://github.com/plone/plonetheme.barceloneta"
