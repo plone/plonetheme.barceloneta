@@ -1,0 +1,3 @@
+Preserve the source order of head metadata, links, styles, and scripts in the Diazo transform.
+This keeps import maps ahead of module preloads and module scripts, fixing module resolution in Firefox, and preserves CSS/classic-script ordering.
+[mrtango]

@@ -27,21 +27,12 @@
     <replace css:content="head title"
              css:theme="head title"
     />
-    <!-- Pull in Plone Meta -->
-    <after css:content="head meta"
-           css:theme-children="head"
-    />
     <!-- Don't use Plone icons, use the theme's -->
     <drop css:content="head link[rel='apple-touch-icon']" />
-    <!-- CSS -->
-    <after css:content="head link"
-           css:theme-children="head"
-    />
-    <after css:content="head style"
-           css:theme-children="head"
-    />
-    <!-- Script -->
-    <after css:content="head script"
+    <!-- Keep head resources in source order. Import maps must precede module
+         scripts and modulepreload links; CSS and classic scripts also depend
+         on their relative order. -->
+    <after css:content="head meta, head link, head style, head script"
            css:theme-children="head"
     />
   </rules>
