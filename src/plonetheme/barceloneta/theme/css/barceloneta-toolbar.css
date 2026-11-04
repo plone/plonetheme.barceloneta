@@ -12,6 +12,8 @@
   --plone-state-private: #c4183c;
   --plone-state-internal: #fab82a;
   --plone-state-internally-published: #883dfa;
+  --plone-state-published: #198754;
+  --plone-state-internally_published: var(--plone-state-internally-published);
 }
 
 [data-bs-theme=dark] {
@@ -27,6 +29,7 @@
   --plone-state-private: #f96483;
   --plone-state-internal: #fab82a;
   --plone-state-internally-published: #ab75ff;
+  --plone-state-published: #75b798;
 }
 
 #edit-zone {
@@ -293,8 +296,10 @@
   margin-bottom: 1rem;
 }
 #edit-zone abbr[title] {
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
+  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 #edit-zone address {
