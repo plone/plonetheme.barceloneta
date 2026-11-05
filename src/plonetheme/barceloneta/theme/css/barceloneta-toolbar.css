@@ -8,7 +8,7 @@
   --plone-portlet-footer-bg: #fcfcfd;
   --plone-portlet-list-bullet: #64bee8;
   --plone-state-draft: #fab82a;
-  --plone-state-pending: #ccd111;
+  --plone-state-pending: #fd7e14;
   --plone-state-private: #c4183c;
   --plone-state-internal: #fab82a;
   --plone-state-internally-published: #883dfa;
@@ -296,10 +296,8 @@
   margin-bottom: 1rem;
 }
 #edit-zone abbr[title] {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 #edit-zone address {
