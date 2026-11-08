@@ -9,6 +9,13 @@
 
 <!-- towncrier release notes start -->
 
+## 3.1.13 (2026-11-08)
+
+
+### Bug fixes:
+
+- Update dependencies: Bootstrap 5.3.8. @petschki 
+
 ## 3.1.12 (2025-05-09)
 
 
