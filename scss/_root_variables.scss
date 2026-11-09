@@ -17,6 +17,10 @@ $plone-dark-selector: "[data-bs-theme=\"dark\"]" !default;
   $value in $state-colors {
     --plone-state-#{$color}: #{$value};
   }
+
+  // Alias with the workflow state ID spelling used by the structure pattern
+  // for row classes and inline review state colors.
+  --plone-state-internally_published: var(--plone-state-internally-published);
 }
 
 @if $enable-dark-mode {

@@ -16,3 +16,30 @@ table.invisible-grid{
   @extend .table;
   @extend .table-borderless;
 }
+
+// Review state colors in the Contents view.
+//
+// The structure pattern adds a `state-<review_state>` class to each row and
+// colors only the Review state cell inline. Spread the state color to the
+// text of the whole row for easier scanning.
+//
+// Published items keep the default row text color on purpose.
+$plone-content-state-colors: (
+  "draft": var(--plone-state-draft),
+  "pending": var(--plone-state-pending),
+  "private": var(--plone-state-private),
+  "internal": var(--plone-state-internal),
+  "internally_published": var(--plone-state-internally-published),
+);
+
+@each $state, $color in $plone-content-state-colors {
+  .pat-structure table.pat-datatables > tbody > tr.state-#{$state} {
+    // Bootstrap 5.3 uses this custom property for the text color of the cells.
+    --bs-table-color-state: #{$color};
+
+    // The structure pattern sets an explicit color on the title link.
+    .title a {
+      color: inherit;
+    }
+  }
+}
