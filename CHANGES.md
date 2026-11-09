@@ -9,6 +9,21 @@
 
 <!-- towncrier release notes start -->
 
+## 4.1.2 (2026-11-09)
+
+
+### Bug fixes
+
+- Preserve the source order of head metadata, links, styles, and scripts in the Diazo transform.
+  This keeps import maps ahead of module preloads and module scripts, fixing module resolution in Firefox, and preserves CSS/classic-script ordering.
+  @mrtango #465
+
+
+### Internal
+
+- package.json: Synchronize tinymce version with Mockup (8.9.3).
+  @petschki 
+
 ## 4.1.1 (2026-09-09)
 
 
