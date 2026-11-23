@@ -8,10 +8,12 @@
   --plone-portlet-footer-bg: #fcfcfd;
   --plone-portlet-list-bullet: #64bee8;
   --plone-state-draft: #fab82a;
-  --plone-state-pending: #ccd111;
+  --plone-state-pending: #fd7e14;
   --plone-state-private: #c4183c;
   --plone-state-internal: #fab82a;
   --plone-state-internally-published: #883dfa;
+  --plone-state-published: #198754;
+  --plone-state-internally_published: var(--plone-state-internally-published);
 }
 
 [data-bs-theme=dark] {
@@ -27,6 +29,7 @@
   --plone-state-private: #f96483;
   --plone-state-internal: #fab82a;
   --plone-state-internally-published: #ab75ff;
+  --plone-state-published: #75b798;
 }
 
 #edit-zone {

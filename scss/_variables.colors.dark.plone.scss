@@ -5,6 +5,7 @@ $state-pending-color-dark:               #e2e721!default; // orange
 $state-private-color-dark:               #f96483!default; // red
 $state-internal-color-dark:              #fab82a!default; // is draft
 $state-internally-published-color-dark:  #ab75ff!default; // is intranet
+$state-published-color-dark:             #75b798!default; // green // published
 
 // Plone
 $plone-link-color-dark:                  #007bb1!default; //plone blue made slightly darker for wcag 2.0
@@ -34,4 +35,5 @@ $state-colors-dark: (
   "private":                               $state-private-color-dark,
   "internal":                              $state-internal-color-dark,
   "internally-published":                  $state-internally-published-color-dark,
+  "published":                             $state-published-color-dark,
 ) !default;
